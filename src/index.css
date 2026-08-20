@@ -35,11 +35,16 @@
   --color-pl-green: #00ff87; /* Manager of the month, money won, positive */
   --color-pl-amber: #ffc233; /* doubtful flag, stale data, error copy */
 
-  /* The pitch is drawn in CSS and is the one surface that is not aubergine. */
-  --color-pitch: #1f9d55;
-  --color-pitch-light: #2aa85f;
-  --color-pitch-dark: #239a55;
-  --color-pitch-line: rgba(255, 255, 255, 0.22);
+  /* The pitch is drawn in CSS and is the one surface that is not aubergine.
+     Sampled from the reference pitch: the grass averages the base value,
+     lifts to the light value under the centre lighting and falls to the edge
+     value in the corners, which is what the vignette runs to. The stripe pair
+     sits close in value so it reads as texture rather than pattern. */
+  --color-pitch: #3a7240;
+  --color-pitch-light: #438049;
+  --color-pitch-dark: #356b3c;
+  --color-pitch-edge: #1f4723;
+  --color-pitch-line: rgba(255, 255, 255, 0.18);
 
   /* The chevron ribbons on every banner: the slope of their long edges and
      of the fold that makes the point, as tangents. Measured from the brand
@@ -164,6 +169,27 @@
     text-transform: uppercase;
   }
 
+  /* A player card on the pitch. The photo area is lit from the top: a
+     vertical run from the lifted surface down to the base surface, so the cut
+     out separates from its ground, and a one pixel light edge along the top
+     where the light catches. That edge and the gradient are the depth; there
+     is no shadow, which would vanish on a dark ground. */
+  .player-card {
+    border-top: 1px solid color-mix(in srgb, var(--color-pl-text) 28%, transparent);
+  }
+  .player-card-photo {
+    --hatch: color-mix(in srgb, var(--color-pl-text) 4%, transparent);
+    --lift: color-mix(in srgb, var(--color-pl-text) 9%, transparent);
+    background-color: var(--color-pl-surface);
+    background-image:
+      /* a soft lift behind the head */
+      radial-gradient(ellipse 70% 55% at 50% 38%, var(--lift), transparent 70%),
+      /* fine hatching on the banner's chevron slope, faint enough to be texture */
+      repeating-linear-gradient(-84deg, var(--hatch) 0 1px, transparent 1px 5px),
+      /* the light from the top */
+      linear-gradient(to bottom, var(--color-pl-surface-2), var(--color-pl-surface));
+  }
+
   /* Flat surface, hairline border, no shadow. */
   .card {
     background-color: var(--color-pl-surface);
@@ -225,33 +251,97 @@
   }
 }
 
-/* The pitch. Banded stripes and markings drawn in CSS rather than shipped as
-   an image — it scales to any width and costs nothing to download. */
+/* The pitch. Addendum 03, A2. Drawn in CSS rather than shipped as an image:
+   it scales to any width and costs nothing to download.
+
+   Three layers. The field itself (grass, vertical stripes, markings, a lift
+   of light under the centre) is painted on ::after, which is tilted away in
+   3D so the stripes narrow and the far penalty area flattens toward the top:
+   the perspective is in the markings, never in the cards, which sit flat and
+   upright above it. ::before is the vignette, darkening the corners to the
+   edge tone and fading the outer margin toward the page background so the
+   pitch belongs to the page rather than sitting on it as a rectangle. */
 .pitch {
-  background-color: var(--color-pitch);
-  background-image:
-    /* centre circle and halfway line */
-    radial-gradient(circle at 50% 50%, transparent 68px, var(--color-pitch-line) 68px 70px, transparent 70px),
-    linear-gradient(
-      to bottom,
-      transparent calc(50% - 1px),
-      var(--color-pitch-line) calc(50% - 1px) calc(50% + 1px),
-      transparent calc(50% + 1px)
-    ),
-    /* mown stripes */
-    repeating-linear-gradient(to bottom, var(--color-pitch-light) 0 56px, var(--color-pitch-dark) 56px 112px);
+  --line: var(--color-pitch-line);
+  --stripe: 56px;
+  --box-w: 44%;
+  --box-d: 96px;
+  --six-w: 20%;
+  --six-d: 34px;
+  --circle: 80px;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background-color: var(--color-pitch-edge);
 }
 
-@media (min-width: 640px) {
+.pitch::after {
+  content: '';
+  position: absolute;
+  z-index: -2;
+  left: -18%;
+  right: -18%;
+  top: -6%;
+  bottom: -2%;
+  pointer-events: none;
+  transform-origin: 50% 100%;
+  transform: perspective(1100px) rotateX(22deg);
+  background-color: var(--color-pitch);
+  background-repeat: no-repeat;
+  background-image:
+    /* far penalty area and six-yard box */
+    linear-gradient(var(--line), var(--line)),
+    linear-gradient(var(--line), var(--line)),
+    linear-gradient(var(--line), var(--line)),
+    linear-gradient(var(--line), var(--line)),
+    linear-gradient(var(--line), var(--line)),
+    linear-gradient(var(--line), var(--line)),
+    /* near penalty area and six-yard box */
+    linear-gradient(var(--line), var(--line)),
+    linear-gradient(var(--line), var(--line)),
+    linear-gradient(var(--line), var(--line)),
+    linear-gradient(var(--line), var(--line)),
+    linear-gradient(var(--line), var(--line)),
+    linear-gradient(var(--line), var(--line)),
+    /* centre circle, halfway line, touchlines */
+    radial-gradient(circle at 50% 50%, transparent var(--circle), var(--line) var(--circle) calc(var(--circle) + 2px), transparent calc(var(--circle) + 2px)),
+    linear-gradient(var(--line), var(--line)),
+    linear-gradient(var(--line), var(--line)),
+    linear-gradient(var(--line), var(--line)),
+    /* lighting */
+    radial-gradient(ellipse 60% 55% at 50% 50%, var(--color-pitch-light), transparent 75%),
+    /* stripes */
+    repeating-linear-gradient(to right, var(--color-pitch-dark) 0 var(--stripe), transparent var(--stripe) calc(var(--stripe) * 2));
+  background-size:
+    var(--box-w) 2px, 2px var(--box-d), 2px var(--box-d), var(--six-w) 2px, 2px var(--six-d), 2px var(--six-d),
+    var(--box-w) 2px, 2px var(--box-d), 2px var(--box-d), var(--six-w) 2px, 2px var(--six-d), 2px var(--six-d),
+    auto, 100% 2px, 2px 100%, 2px 100%,
+    auto, auto;
+  background-position:
+    50% var(--box-d), calc(50% - var(--box-w) / 2) 0, calc(50% + var(--box-w) / 2) 0, 50% var(--six-d), calc(50% - var(--six-w) / 2) 0, calc(50% + var(--six-w) / 2) 0,
+    50% calc(100% - var(--box-d)), calc(50% - var(--box-w) / 2) 100%, calc(50% + var(--box-w) / 2) 100%, 50% calc(100% - var(--six-d)), calc(50% - var(--six-w) / 2) 100%, calc(50% + var(--six-w) / 2) 100%,
+    0 0, 0 50%, 12% 0, 88% 0,
+    0 0, 0 0;
+}
+
+.pitch::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    radial-gradient(ellipse 85% 80% at 50% 55%, transparent 45%, var(--color-pitch-edge) 100%),
+    linear-gradient(to right, var(--color-pl-bg), transparent 8%, transparent 92%, var(--color-pl-bg)),
+    linear-gradient(to bottom, var(--color-pl-bg), transparent 9%, transparent 94%, var(--color-pl-bg));
+  opacity: 0.8;
+}
+
+@media (max-width: 639px) {
   .pitch {
-    background-image:
-      radial-gradient(circle at 50% 50%, transparent 88px, var(--color-pitch-line) 88px 90px, transparent 90px),
-      linear-gradient(
-        to bottom,
-        transparent calc(50% - 1px),
-        var(--color-pitch-line) calc(50% - 1px) calc(50% + 1px),
-        transparent calc(50% + 1px)
-      ),
-      repeating-linear-gradient(to bottom, var(--color-pitch-light) 0 72px, var(--color-pitch-dark) 72px 144px);
+    --stripe: 40px;
+    --box-d: 64px;
+    --six-d: 22px;
+    --circle: 56px;
   }
 }

@@ -11,7 +11,8 @@ import type { FixturesFile, SquadFile } from '../types'
  * wanted to look at the league table.
  *
  * A missing squad file is an expected state, not an error: picks do not exist
- * until a deadline has passed, so the page shows the current squad instead.
+ * until a deadline has passed. The slider only offers weeks that have one, so
+ * the page should only meet a missing file if the data is mid-update.
  */
 
 const cache = new Map<string, unknown>()
@@ -50,8 +51,7 @@ export function useSquad(gameweek: number | null) {
     setLoading(true)
     setError(null)
 
-    // Loaded independently: a gameweek with no squad file must still get its
-    // fixtures, which is exactly the pre-deadline case.
+    // Loaded independently, so a failed squad fetch still leaves fixtures.
     Promise.allSettled([
       gameweek === null ? Promise.resolve(null) : loadJson<SquadFile>(`data/squads/gw${gameweek}.json`),
       loadJson<FixturesFile>('data/fixtures.json'),

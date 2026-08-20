@@ -2,9 +2,9 @@ import { useMemo } from 'react'
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom'
 import { Banner } from '../components/Banner'
 import { GameweekSlider } from '../components/GameweekSlider'
-import { ManagerAvatar, PlayerPhoto } from '../components/Img'
+import { ManagerAvatar } from '../components/Img'
+import { PlayerCard, PlayerCardCompact } from '../components/PlayerCard'
 import { PageBody } from '../components/Layout'
-import { PlayerFlag } from '../components/PlayerFlag'
 import { useData } from '../data'
 import { useSquad } from '../lib/useSquad'
 import type { Fixture, ManagerKey, Position, SquadPick, SquadPlayer } from '../types'
@@ -25,79 +25,18 @@ function fixtureLabel(fixtures: Fixture[] | undefined, shortNameOf: (id: number)
   return fixtures.map((f) => `${shortNameOf(f.opponent)} (${f.home ? 'H' : 'A'})`).join(' · ')
 }
 
-/**
- * One player on the pitch.
- *
- * Follows the FPL layout: photo, then the surname on a dark band, then one
- * line on a lighter band beneath. FPL puts a price in that slot and Draft has
- * no prices, so it carries the points or the fixture instead.
- */
-function PlayerCard({
-  entry,
-  mode,
-  fixtureText,
-  compact,
-}: {
-  entry: PitchPlayer
-  mode: CardMode
-  fixtureText: string
-  compact: boolean
-}) {
-  const { player, pick } = entry
-  const line =
-    mode === 'points'
-      ? String(pick?.points ?? 0)
-      : mode === 'pick'
-        ? `Pick ${pick?.pick ?? '?'}`
-        : fixtureText
+/** What the card's info band says for this player in this view. */
+function cardLine(entry: PitchPlayer, mode: CardMode, fixtureText: string): string {
+  const { pick } = entry
+  if (mode === 'points') return String(pick?.points ?? 0)
+  if (mode === 'pick') return `Pick ${pick?.pick ?? '?'}`
+  return fixtureText
+}
 
-  return (
-    <div className={`flex flex-col items-center ${compact ? 'w-[64px]' : 'w-[104px]'}`}>
-      <div className="relative">
-        <PlayerPhoto
-          photoCode={player.photoCode}
-          name={player.name}
-          size={compact ? 'tiny' : 'small'}
-          className={`${compact ? 'h-11 w-11' : 'h-16 w-16'} rounded-full bg-pl-surface-2 object-cover object-top ring-1 ring-pl-border`}
-        />
-        {/* Availability flag, tucked into the corner as FPL draws it. */}
-        <PlayerFlag player={player} size={compact ? 12 : 15} className="absolute -top-0.5 -right-0.5" />
-        {pick?.subbedOn && (
-          <span
-            title="Came on as an automatic substitute"
-            className="absolute -bottom-1 -left-1 rounded-full bg-pl-green px-1 text-[9px] font-bold text-pl-bg"
-          >
-            ▲
-          </span>
-        )}
-        {pick?.subbedOff && (
-          <span
-            title="Replaced by an automatic substitute"
-            className="absolute -bottom-1 -left-1 rounded-full bg-pl-surface-2 px-1 text-[9px] font-bold text-pl-text"
-          >
-            ▼
-          </span>
-        )}
-      </div>
-
-      <p
-        className={`mt-1 w-full truncate rounded-t bg-pl-bg px-1 text-center font-semibold text-pl-text ${
-          compact ? 'text-[10px] leading-4' : 'text-xs leading-5'
-        }`}
-        title={player.name}
-      >
-        {player.name}
-      </p>
-      <p
-        className={`w-full truncate rounded-b bg-pl-text px-1 text-center font-semibold text-pl-bg ${
-          compact ? 'text-[10px] leading-4' : 'text-xs leading-5'
-        }`}
-        title={line}
-      >
-        {line}
-      </p>
-    </div>
-  )
+function subOf(entry: PitchPlayer): 'on' | 'off' | null {
+  if (entry.pick?.subbedOn) return 'on'
+  if (entry.pick?.subbedOff) return 'off'
+  return null
 }
 
 export function Squad() {
@@ -149,13 +88,9 @@ export function Squad() {
     )
   }
 
-  /* Which players to show, and what the bottom line says.
-
-     A gameweek whose deadline has passed has real picks, so the pitch is that
-     week's actual eleven. Before the deadline there are no picks at all — the
-     XI is not decided — so the currently owned fifteen are shown instead,
-     grouped by position and clearly marked as not yet locked. */
-  const hasPicks = Boolean(squad)
+  /* What the bottom line of each card says. Every selectable gameweek has a
+     squad file — picks exist once a deadline passes, and GW0 is the draft —
+     so there is no pre-deadline "current squad" view. Addendum 02 §6. */
   const isDraft = gameweek === 0
   const started = squad?.started ?? false
   const mode: CardMode = isDraft ? 'pick' : started ? 'points' : 'fixture'
@@ -182,7 +117,11 @@ export function Squad() {
   const fixtureFor = (entry: PitchPlayer) =>
     fixtureLabel(fixtures?.byEvent?.[String(gameweek)]?.[String(entry.player.teamId)], shortNameOf)
 
-  const setGameweek = (next: number) => {
+  const setGameweek = (wanted: number) => {
+    // The slider is a range input, so it can land on a week between two
+    // available ones if a week's picks were ever skipped. Snap to the nearest
+    // week that has a squad rather than showing nothing.
+    const next = available.reduce((best, gw) => (Math.abs(gw - wanted) < Math.abs(best - wanted) ? gw : best))
     // Same page, different week. `replace` keeps the back button useful, and
     // `preventScrollReset` stops the scroll position being thrown away mid
     // drag. Routed through navigate() rather than the useSearchParams setter
@@ -271,7 +210,6 @@ export function Squad() {
                 rows={ROWS.map((row) => byRow(row))}
                 mode={mode}
                 fixtureFor={fixtureFor}
-                locked={hasPicks}
               />
 
               {bench.length > 0 && <Bench bench={bench} mode={mode} fixtureFor={fixtureFor} />}
@@ -305,26 +243,22 @@ function Pitch({
   rows,
   mode,
   fixtureFor,
-  locked,
 }: {
   rows: PitchPlayer[][]
   mode: CardMode
   fixtureFor: (entry: PitchPlayer) => string
-  locked: boolean
 }) {
   // Full-bleed on mobile: PageBody's 16px each side would drop the fifth card
   // in a five-across row onto its own line.
   return (
-    <div className="-mx-4 overflow-hidden border-y border-pl-border sm:mx-0 sm:rounded-lg sm:border">
-      <div className="pitch relative px-1.5 py-5 sm:px-4 sm:py-7">
-        {!locked && (
-          <p className="mb-3 text-center text-[11px] font-semibold tracking-wider text-pl-text uppercase">
-            Current squad, not locked
-          </p>
-        )}
-        <div className="flex flex-col gap-4 sm:gap-6">
+    <div className="-mx-4 overflow-hidden sm:mx-0 sm:rounded-xl">
+      {/* Rows are spaced by position with more air between the lines than a
+          grid would give, so it reads as a formation. Each row centres its
+          cards, so a row of two balances against a row of five. */}
+      <div className="pitch px-1 pt-6 pb-8 sm:px-6 sm:pt-10 sm:pb-12">
+        <div className="flex flex-col gap-7 sm:gap-10">
           {rows.map((row, i) => (
-            <div key={i} className="flex flex-wrap items-start justify-center gap-x-1 gap-y-3 sm:gap-x-4">
+            <div key={i} className="flex flex-wrap items-start justify-center gap-x-1.5 gap-y-4 sm:gap-x-6">
               {row.map((entry) => (
                 <PlayerCardResponsive key={entry.key} entry={entry} mode={mode} fixtureFor={fixtureFor} />
               ))}
@@ -356,15 +290,19 @@ function Bench({
   fixtureFor: (entry: PitchPlayer) => string
 }) {
   return (
-    <div className="-mx-4 mt-3 overflow-hidden border-y border-pl-border bg-pl-surface-2 sm:mx-0 sm:rounded-lg sm:border">
-      <p className="border-b border-pl-border px-3 py-2 text-[11px] font-semibold tracking-wider text-pl-muted uppercase">
+    /* A shelf, clearly not part of the playing surface: the card surface tone
+       with a hairline border, and the cards a size down and a touch quieter
+       so the XI reads as primary. Slots are labelled as FPL does: GK, then
+       the outfield bench in substitution order. */
+    <div className="-mx-4 mt-4 overflow-hidden border-y border-pl-border bg-pl-surface sm:mx-0 sm:rounded-xl sm:border">
+      <p className="border-b border-pl-border px-4 py-2.5 text-[11px] font-semibold tracking-wider text-pl-muted uppercase">
         Bench
       </p>
-      <div className="flex flex-wrap items-start justify-center gap-x-1 gap-y-3 px-1.5 py-4 sm:gap-x-4">
+      <div className="flex flex-wrap items-start justify-center gap-x-3 gap-y-4 px-2 py-5 sm:gap-x-8">
         {bench.map((entry) => (
-          <div key={entry.key} className="flex flex-col items-center">
-            <PlayerCardResponsive entry={entry} mode={mode} fixtureFor={fixtureFor} />
-            <span className="mt-1 text-[10px] font-semibold text-pl-muted">{benchLabel(entry, bench)}</span>
+          <div key={entry.key} className="flex flex-col items-center gap-1.5">
+            <span className="text-[10px] font-bold tracking-wider text-pl-muted uppercase">{benchLabel(entry, bench)}</span>
+            <PlayerCardResponsive entry={entry} mode={mode} fixtureFor={fixtureFor} bench />
           </div>
         ))}
       </div>
@@ -381,19 +319,22 @@ function PlayerCardResponsive({
   entry,
   mode,
   fixtureFor,
+  bench = false,
 }: {
   entry: PitchPlayer
   mode: CardMode
   fixtureFor: (entry: PitchPlayer) => string
+  bench?: boolean
 }) {
-  const fixtureText = fixtureFor(entry)
+  const line = cardLine(entry, mode, fixtureFor(entry))
+  const sub = subOf(entry)
   return (
     <>
       <span className="sm:hidden">
-        <PlayerCard entry={entry} mode={mode} fixtureText={fixtureText} compact />
+        <PlayerCardCompact player={entry.player} line={line} sub={sub} bench={bench} />
       </span>
       <span className="hidden sm:block">
-        <PlayerCard entry={entry} mode={mode} fixtureText={fixtureText} compact={false} />
+        <PlayerCard player={entry.player} line={line} sub={sub} bench={bench} />
       </span>
     </>
   )
