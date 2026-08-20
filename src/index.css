@@ -1,47 +1,68 @@
 @import 'tailwindcss';
 
 /* ---------------------------------------------------------------------------
-   Palette. Confirmed in the brief — light theme, PL purple reserved for banners
-   and chrome.
+   Tokens. Addendum 05 — the dark Premier League theme.
 
-   The bright green and cyan are FILL-ONLY. #00FF87 on white is roughly 1.4:1
-   and #04F5FF about 1.5:1; both are effectively invisible as text. The `-ink`
-   variants are the text-safe substitutes, and palette.test.ts asserts that no
-   className puts a bright one on a light surface.
+   This block is the only place a colour is written down. Components reach
+   for `bg-pl-surface`, `text-pl-muted` and so on; palette.test.ts fails the
+   build if a hex, rgb() or stock Tailwind colour appears anywhere else, so a
+   re-theme is a change to this file and nothing more.
 
-   Two deviations from the brief's stated hexes, both for the reason the brief
-   gives for having `-ink` variants at all. #00A550 measures 3.23:1 on white
-   and #0090A8 measures 3.78:1 — under the 4.5:1 normal text needs, and both
-   are used at 11–16px here. Darkened to #008040 (5.05:1) and #007A8A (5.06:1),
-   which stay in the same hue family. The `-ink` colours only ever sit on
-   white, so nothing is lost by tuning them for it.
+   Names are `--color-pl-*` rather than the brief's `--pl-*` because Tailwind
+   v4 derives its utilities from the `--color-` namespace. The semantics are
+   the brief's exactly.
+
+   On aubergine the contrast rules invert from the old light theme: cyan and
+   green are legible as text (≈11:1 and ≈14:1 on the background), so there
+   are no `-ink` variants any more. Body text is white or muted white; cyan is
+   for accents and numerals, not paragraphs. Pink is reserved for Koch and
+   negative balances only. Amber is the one addition to the brief's list — the
+   FPL doubtful flag is yellow, and it doubles as the warning tone for stale
+   data and error copy, which keeps pink reserved.
 --------------------------------------------------------------------------- */
 @theme {
-  --color-pl-purple: #37003c;
-  --color-pl-purple-deep: #2a002e;
-  --color-pl-navy: #1b1b3a;
-  --color-pl-white: #ffffff;
-  --color-pl-off: #f7f7f9;
-  --color-pl-border: #e5e5eb;
-  --color-pl-pink: #e90052;
-  --color-pl-green: #00ff87;
-  --color-pl-green-ink: #008040;
-  --color-pl-cyan: #04f5ff;
-  --color-pl-cyan-ink: #007a8a;
-  --color-pl-muted: #6b6b7b;
+  --color-pl-bg: #1e0021; /* page background, sampled from premierleague.com */
+  --color-pl-surface: #28002b; /* rows, cards, raised panels — the site's table row */
+  --color-pl-surface-2: #33003a; /* hover, selected, nested panels */
+  --color-pl-border: rgba(255, 255, 255, 0.1); /* hairlines, one pixel */
+
+  --color-pl-text: #ffffff; /* primary text and all scores */
+  --color-pl-muted: rgba(255, 255, 255, 0.65); /* labels, secondary text */
+
+  --color-pl-cyan: #04f5ff; /* accents, active nav, links, countdown */
+  --color-pl-violet: #963cff; /* gradient start, secondary accent */
+  --color-pl-pink: #ff2882; /* Koch of the week, negative balances */
+  --color-pl-green: #00ff87; /* Manager of the month, money won, positive */
+  --color-pl-amber: #ffc233; /* doubtful flag, stale data, error copy */
+
+  /* The pitch is drawn in CSS and is the one surface that is not aubergine. */
+  --color-pitch: #1f9d55;
+  --color-pitch-light: #2aa85f;
+  --color-pitch-dark: #239a55;
+  --color-pitch-line: rgba(255, 255, 255, 0.22);
+
+  /* The chevron ribbons on every banner: the slope of their long edges and
+     of the fold that makes the point, as tangents. Measured from the brand
+     asset, about 6° and 48°. One place, so every page reads the same. */
+  --chevron-slope: 0.105;
+  --chevron-fold: 1.11;
 
   --font-sans: 'Archivo', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
   --font-display: 'Archivo Narrow', 'Archivo', ui-sans-serif, system-ui, sans-serif;
+  /* The Fantasy Draft mark only. A round geometric sans, after the Premier
+     League's own Fantasy lockup. */
+  --font-mark: 'Outfit', ui-sans-serif, system-ui, sans-serif;
 }
 
 @layer base {
   html {
     -webkit-text-size-adjust: 100%;
+    color-scheme: dark;
   }
 
   body {
-    background-color: var(--color-pl-off);
-    color: var(--color-pl-navy);
+    background-color: var(--color-pl-bg);
+    color: var(--color-pl-text);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
   }
@@ -53,15 +74,70 @@
   }
 
   :focus-visible {
-    outline: 2px solid var(--color-pl-cyan-ink);
+    outline: 2px solid var(--color-pl-cyan);
     outline-offset: 2px;
   }
 }
 
 @layer components {
-  /* The one place a gradient is allowed. */
+  /* The gradient banner — the one flourish in the design.
+
+     Violet to cyan, left to right, as the site's page banners. Sampled across
+     the reference the run is a plain sRGB blend of the two end tokens, so no
+     intermediate stop is needed.
+
+     Over it, the chevron device from the brand asset: ribbons in the page
+     colour that fold back on themselves once, the fold tips making the sharp
+     points. Two enter from the right — one high, one low — so the title on
+     the left sits on clean gradient. Both share one geometry: long edges at
+     --chevron-slope (tan 6°, measured from the asset) and the fold at
+     --chevron-fold (tan 48°). Lengths are in container-width units, so the
+     angles are true in pixels and every page reads as the same device. */
   .banner-gradient {
-    background-image: linear-gradient(115deg, #37003c 0%, #4b0a52 42%, #8c1157 74%, #e90052 130%);
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    container-type: inline-size;
+    background-image: linear-gradient(90deg, var(--color-pl-violet), var(--color-pl-cyan));
+  }
+
+  .banner-gradient::before,
+  .banner-gradient::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-color: var(--color-pl-bg);
+  }
+
+  /* Upper ribbon: its top edge falls from the right to a tip at mid-banner,
+     folds back down-right, and the lower edge rises away to the right. */
+  .banner-gradient::before {
+    --tip-x: 50cqw;
+    --tip-y: calc(10px + 50cqw * var(--chevron-slope));
+    --fold-x: calc(var(--tip-x) + 30px);
+    --fold-y: calc(var(--tip-y) + 30px * var(--chevron-fold));
+    clip-path: polygon(
+      100% 10px,
+      var(--tip-x) var(--tip-y),
+      var(--fold-x) var(--fold-y),
+      100% calc(var(--fold-y) - (100cqw - var(--fold-x)) * var(--chevron-slope))
+    );
+  }
+
+  /* Lower ribbon, the same shape turned over and set further right. */
+  .banner-gradient::after {
+    --tip-x: 62cqw;
+    --tip-y: calc(100% - 10px - 38cqw * var(--chevron-slope));
+    --fold-x: calc(var(--tip-x) + 22px);
+    --fold-y: calc(var(--tip-y) - 22px * var(--chevron-fold));
+    clip-path: polygon(
+      100% calc(100% - 10px),
+      var(--tip-x) var(--tip-y),
+      var(--fold-x) var(--fold-y),
+      100% calc(var(--fold-y) + (100cqw - var(--fold-x)) * var(--chevron-slope))
+    );
   }
 
   /* The cyan/green/pink strip that sits under every banner. */
@@ -88,8 +164,9 @@
     text-transform: uppercase;
   }
 
+  /* Flat surface, hairline border, no shadow. */
   .card {
-    background-color: var(--color-pl-white);
+    background-color: var(--color-pl-surface);
     border: 1px solid var(--color-pl-border);
     border-radius: 0.5rem;
   }
@@ -106,33 +183,37 @@
   cursor: pointer;
 }
 .gw-slider::-webkit-slider-runnable-track {
-  height: 8px;
+  height: 6px;
   border-radius: 999px;
-  background: linear-gradient(to right, var(--color-pl-purple) 0%, var(--color-pl-cyan) 100%);
+  background: var(--color-pl-surface-2);
+  border: 1px solid var(--color-pl-border);
 }
 .gw-slider::-moz-range-track {
-  height: 8px;
+  height: 6px;
   border-radius: 999px;
-  background: linear-gradient(to right, var(--color-pl-purple) 0%, var(--color-pl-cyan) 100%);
+  background: var(--color-pl-surface-2);
+  border: 1px solid var(--color-pl-border);
 }
 .gw-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   height: 22px;
   width: 22px;
-  margin-top: -7px;
+  margin-top: -9px;
   border-radius: 999px;
-  background: var(--color-pl-white);
-  border: 3px solid var(--color-pl-purple);
-  box-shadow: 0 1px 3px rgb(27 27 58 / 0.3);
+  background: var(--color-pl-text);
+  border: 3px solid var(--color-pl-cyan);
 }
 .gw-slider::-moz-range-thumb {
   height: 22px;
   width: 22px;
   border-radius: 999px;
-  background: var(--color-pl-white);
-  border: 3px solid var(--color-pl-purple);
-  box-shadow: 0 1px 3px rgb(27 27 58 / 0.3);
+  background: var(--color-pl-text);
+  border: 3px solid var(--color-pl-cyan);
+}
+.gw-slider:disabled {
+  cursor: default;
+  opacity: 0.5;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -147,20 +228,30 @@
 /* The pitch. Banded stripes and markings drawn in CSS rather than shipped as
    an image — it scales to any width and costs nothing to download. */
 .pitch {
-  background-color: #1f9d55;
+  background-color: var(--color-pitch);
   background-image:
     /* centre circle and halfway line */
-    radial-gradient(circle at 50% 50%, transparent 68px, rgb(255 255 255 / 0.22) 68px 70px, transparent 70px),
-    linear-gradient(to bottom, transparent calc(50% - 1px), rgb(255 255 255 / 0.22) calc(50% - 1px) calc(50% + 1px), transparent calc(50% + 1px)),
+    radial-gradient(circle at 50% 50%, transparent 68px, var(--color-pitch-line) 68px 70px, transparent 70px),
+    linear-gradient(
+      to bottom,
+      transparent calc(50% - 1px),
+      var(--color-pitch-line) calc(50% - 1px) calc(50% + 1px),
+      transparent calc(50% + 1px)
+    ),
     /* mown stripes */
-    repeating-linear-gradient(to bottom, #2aa85f 0 56px, #239a55 56px 112px);
+    repeating-linear-gradient(to bottom, var(--color-pitch-light) 0 56px, var(--color-pitch-dark) 56px 112px);
 }
 
 @media (min-width: 640px) {
   .pitch {
     background-image:
-      radial-gradient(circle at 50% 50%, transparent 88px, rgb(255 255 255 / 0.22) 88px 90px, transparent 90px),
-      linear-gradient(to bottom, transparent calc(50% - 1px), rgb(255 255 255 / 0.22) calc(50% - 1px) calc(50% + 1px), transparent calc(50% + 1px)),
-      repeating-linear-gradient(to bottom, #2aa85f 0 72px, #239a55 72px 144px);
+      radial-gradient(circle at 50% 50%, transparent 88px, var(--color-pitch-line) 88px 90px, transparent 90px),
+      linear-gradient(
+        to bottom,
+        transparent calc(50% - 1px),
+        var(--color-pitch-line) calc(50% - 1px) calc(50% + 1px),
+        transparent calc(50% + 1px)
+      ),
+      repeating-linear-gradient(to bottom, var(--color-pitch-light) 0 72px, var(--color-pitch-dark) 72px 144px);
   }
 }

@@ -7,14 +7,15 @@ import { useData } from '../data'
 import type { Player, Position } from '../types'
 
 /**
- * Four tints that stay distinguishable on the purple banner and on white, and
- * that don't collide with pink's reserved meaning.
+ * Position badges are quiet: an outlined chip in muted white. The letters do
+ * the work, and four colours in every row would fight the one-accent rule and
+ * risk pink's reserved meaning.
  */
 const POSITION_STYLE: Record<Position, string> = {
-  GKP: 'bg-amber-100 text-amber-900',
-  DEF: 'bg-sky-100 text-sky-900',
-  MID: 'bg-emerald-100 text-emerald-900',
-  FWD: 'bg-violet-100 text-violet-900',
+  GKP: 'border border-pl-border text-pl-muted',
+  DEF: 'border border-pl-border text-pl-muted',
+  MID: 'border border-pl-border text-pl-muted',
+  FWD: 'border border-pl-border text-pl-muted',
 }
 
 const POSITIONS: (Position | 'ALL')[] = ['ALL', 'GKP', 'DEF', 'MID', 'FWD']
@@ -33,21 +34,21 @@ function Pill({
   active,
   onClick,
   children,
-  tone = 'navy',
 }: {
   active: boolean
   onClick: () => void
   children: React.ReactNode
-  tone?: 'navy' | 'pink'
 }) {
-  const activeClass = tone === 'pink' ? 'bg-pl-pink text-pl-white' : 'bg-pl-navy text-pl-white'
+  /* Transparent with a light border; selected gets a solid fill. */
   return (
     <button
       type="button"
       onClick={onClick}
       className={[
-        'rounded px-2.5 py-1.5 text-xs font-bold tracking-wide uppercase',
-        active ? activeClass : 'border border-pl-border bg-pl-white text-pl-navy hover:bg-pl-off',
+        'rounded-full border px-3 py-1.5 text-xs font-bold tracking-wide uppercase transition-colors',
+        active
+          ? 'border-pl-text bg-pl-text text-pl-bg'
+          : 'border-pl-border bg-transparent text-pl-text hover:bg-pl-surface-2',
       ].join(' ')}
     >
       {children}
@@ -62,18 +63,18 @@ function LeadingScorer({ player, ownerName }: { player: Player; ownerName: strin
         photoCode={player.photoCode}
         name={player.name}
         size="large"
-        className="h-16 w-16 shrink-0 rounded-full bg-white/10 object-cover object-top"
+        className="h-16 w-16 shrink-0 rounded-full bg-pl-bg/40 object-cover object-top"
       />
       <div className="min-w-0">
-        <p className="eyebrow text-pl-cyan">Leading scorer</p>
-        <p className="display truncate text-2xl leading-none text-pl-white">{player.name}</p>
-        <p className="mt-1 truncate text-xs text-white/70">
+        <p className="eyebrow text-pl-text/80">Leading scorer</p>
+        <p className="display truncate text-2xl leading-none text-pl-text">{player.name}</p>
+        <p className="mt-1 truncate text-xs text-pl-text/80">
           {player.position} · {player.clubShort} · {ownerName ?? 'free agent'}
         </p>
       </div>
       <div className="shrink-0 text-right">
-        <p className="display tnum text-4xl leading-none text-pl-white">{player.points}</p>
-        <p className="text-[10px] font-semibold tracking-wider text-white/60 uppercase">points</p>
+        <p className="display tnum text-4xl leading-none text-pl-text">{player.points}</p>
+        <p className="text-[10px] font-semibold tracking-wider text-pl-text/80 uppercase">points</p>
       </div>
     </div>
   )
@@ -91,11 +92,11 @@ function MobileDetail({ player }: { player: Player }) {
     { label: `${player.position} rank`, value: player.positionRank },
   ]
   return (
-    <div className="grid grid-cols-3 gap-3 border-t border-pl-border bg-pl-off px-4 py-3">
+    <div className="grid grid-cols-3 gap-3 border-t border-pl-border bg-pl-surface-2 px-4 py-3">
       {stats.map((stat) => (
         <div key={stat.label}>
           <p className="text-[10px] font-semibold tracking-wider text-pl-muted uppercase">{stat.label}</p>
-          <p className="tnum mt-0.5 font-bold text-pl-navy">{stat.value}</p>
+          <p className="tnum mt-0.5 font-bold text-pl-text">{stat.value}</p>
         </div>
       ))}
     </div>
@@ -156,7 +157,7 @@ export function Players() {
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search player or club"
             aria-label="Search player or club"
-            className="w-full min-w-0 rounded-md border border-pl-border px-3 py-2 text-sm placeholder:text-pl-muted sm:w-auto sm:max-w-xs sm:flex-1"
+            className="w-full min-w-0 rounded-md border border-pl-border bg-pl-bg px-3 py-2 text-sm text-pl-text placeholder:text-pl-muted sm:w-auto sm:max-w-xs sm:flex-1"
           />
 
           <div className="flex gap-1.5">
@@ -184,10 +185,10 @@ export function Players() {
           <div className="ml-auto flex items-center gap-3">
             <span className="tnum text-xs text-pl-muted">{filtered.length} players</span>
             <div className="flex gap-1.5">
-              <Pill active={sort === 'points'} onClick={() => setSort('points')} tone="pink">
+              <Pill active={sort === 'points'} onClick={() => setSort('points')}>
                 Pts
               </Pill>
-              <Pill active={sort === 'ppg'} onClick={() => setSort('ppg')} tone="pink">
+              <Pill active={sort === 'ppg'} onClick={() => setSort('ppg')}>
                 PPG
               </Pill>
             </div>
@@ -196,7 +197,7 @@ export function Players() {
 
         {filtered.length === 0 ? (
           <div className="card p-8 text-center">
-            <p className="display text-xl text-pl-navy">Nothing matches</p>
+            <p className="display text-xl text-pl-text">Nothing matches</p>
             <p className="mt-1.5 text-sm text-pl-muted">
               {data.players.owned.length === 0 && ownership === 'owned'
                 ? 'No squads yet. Ownership appears once the draft has happened.'
@@ -220,26 +221,26 @@ export function Players() {
                         <PlayerPhoto
                           photoCode={player.photoCode}
                           name={player.name}
-                          className="h-9 w-9 rounded-full bg-pl-off object-cover object-top"
+                          className="h-9 w-9 rounded-full bg-pl-surface-2 object-cover object-top"
                         />
                         <PlayerFlag player={player} size={14} className="absolute -top-0.5 -right-0.5" />
                       </span>
                       <div className="min-w-0 flex-1">
-                        <p className="truncate font-semibold text-pl-navy">{player.name}</p>
+                        <p className="truncate font-semibold text-pl-text">{player.name}</p>
                         <p className="mt-0.5 flex items-center gap-1.5 text-xs text-pl-muted">
                           <PositionBadge position={player.position} />
                           <ClubBadge clubCode={player.clubCode} club={player.club} size={14} />
                           <span className="truncate">
                             {player.clubShort} ·{' '}
                             {owner ? (
-                              <span className="text-pl-navy">{owner}</span>
+                              <span className="text-pl-text">{owner}</span>
                             ) : (
-                              <span className="text-pl-green-ink">Free agent</span>
+                              <span className="text-pl-green">Free agent</span>
                             )}
                           </span>
                         </p>
                       </div>
-                      <span className="tnum shrink-0 font-bold text-pl-navy">{player.points}</span>
+                      <span className="tnum shrink-0 font-bold text-pl-text">{player.points}</span>
                       <button
                         type="button"
                         onClick={() => setExpanded(isOpen ? null : player.id)}
@@ -260,16 +261,16 @@ export function Players() {
               <thead>
                 <tr className="border-b border-pl-border text-left">
                   {[
-                    ['Player', 'py-2.5 pl-3'],
-                    ['Pos', 'w-14 py-2.5'],
-                    ['Club', 'w-20 py-2.5'],
-                    ['Owner', 'w-36 py-2.5'],
-                    ['Pts', 'w-16 py-2.5 text-right'],
-                    ['PPG', 'w-14 py-2.5 text-right'],
-                    ['G', 'w-12 py-2.5 text-right'],
-                    ['A', 'w-12 py-2.5 text-right'],
-                    ['CS', 'w-12 py-2.5 text-right'],
-                    ['Bon', 'w-14 py-2.5 pr-4 text-right'],
+                    ['Player', 'py-3 pl-3'],
+                    ['Pos', 'w-14 py-3'],
+                    ['Club', 'w-20 py-3'],
+                    ['Owner', 'w-36 py-3'],
+                    ['Pts', 'w-16 py-3 text-right'],
+                    ['PPG', 'w-14 py-3 text-right'],
+                    ['G', 'w-12 py-3 text-right'],
+                    ['A', 'w-12 py-3 text-right'],
+                    ['CS', 'w-12 py-3 text-right'],
+                    ['Bon', 'w-14 py-3 pr-4 text-right'],
                   ].map(([label, className]) => (
                     <th
                       key={label}
@@ -285,18 +286,18 @@ export function Players() {
                 {visible.map((player) => {
                   const owner = nameOf(player.owner)
                   return (
-                    <tr key={player.id} className="border-b border-pl-border last:border-0 hover:bg-pl-off">
+                    <tr key={player.id} className="border-b border-pl-border last:border-0 hover:bg-pl-surface-2">
                       <td className="py-2 pl-3">
                         <span className="flex min-w-0 items-center gap-2.5">
                           <span className="relative shrink-0">
                             <PlayerPhoto
                               photoCode={player.photoCode}
                               name={player.name}
-                              className="h-8 w-8 rounded-full bg-pl-off object-cover object-top"
+                              className="h-8 w-8 rounded-full bg-pl-surface-2 object-cover object-top"
                             />
                             <PlayerFlag player={player} size={13} className="absolute -top-0.5 -right-0.5" />
                           </span>
-                          <span className="truncate font-semibold text-pl-navy">{player.name}</span>
+                          <span className="truncate font-semibold text-pl-text">{player.name}</span>
                         </span>
                       </td>
                       <td className="py-2">
@@ -312,13 +313,13 @@ export function Players() {
                         {owner ? (
                           <span className="flex min-w-0 items-center gap-2">
                             <ManagerAvatar managerKey={player.owner!} size={24} />
-                            <span className="truncate text-sm text-pl-navy">{owner}</span>
+                            <span className="truncate text-sm text-pl-text">{owner}</span>
                           </span>
                         ) : (
-                          <span className="text-sm text-pl-green-ink">Free agent</span>
+                          <span className="text-sm text-pl-green">Free agent</span>
                         )}
                       </td>
-                      <td className="tnum py-2 text-right font-bold text-pl-navy">{player.points}</td>
+                      <td className="tnum py-2 text-right font-bold text-pl-text">{player.points}</td>
                       <td className="tnum py-2 text-right text-sm text-pl-muted">{player.ppg.toFixed(1)}</td>
                       <td className="tnum py-2 text-right text-sm text-pl-muted">{player.goals}</td>
                       <td className="tnum py-2 text-right text-sm text-pl-muted">{player.assists}</td>
@@ -331,7 +332,7 @@ export function Players() {
             </table>
 
             {filtered.length > visible.length && (
-              <p className="border-t border-pl-border bg-pl-off px-4 py-3 text-sm text-pl-muted">
+              <p className="border-t border-pl-border bg-pl-surface-2 px-4 py-3 text-sm text-pl-muted">
                 Showing the top {visible.length} of {filtered.length}. Narrow it with search or a filter.
               </p>
             )}

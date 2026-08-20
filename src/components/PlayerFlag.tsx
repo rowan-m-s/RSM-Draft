@@ -57,7 +57,7 @@ export function PlayerFlag({
   if (colour === 'none') return null
 
   const label = flagLabel(player.status) ?? 'Unavailable'
-  const fill = colour === 'red' ? 'var(--color-pl-pink)' : '#F5C518'
+  const fill = colour === 'red' ? 'var(--color-pl-pink)' : 'var(--color-pl-amber)'
 
   return (
     <span className={`inline-flex ${className}`}>
@@ -89,9 +89,9 @@ export function PlayerFlag({
           <span
             role="tooltip"
             style={{ top: box.top, left: box.left, width: TOOLTIP_WIDTH }}
-            className="pointer-events-none fixed z-50 rounded-md border border-pl-border bg-pl-white px-2.5 py-2 text-left text-xs leading-snug font-normal text-pl-navy shadow-lg"
+            className="pointer-events-none fixed z-50 rounded-md border border-pl-border bg-pl-surface-2 px-2.5 py-2 text-left text-xs leading-snug font-normal text-pl-text"
           >
-            <span className={`block font-semibold ${colour === 'red' ? 'text-pl-pink' : 'text-amber-700'}`}>
+            <span className={`block font-semibold ${colour === 'red' ? 'text-pl-pink' : 'text-pl-amber'}`}>
               {label}
             </span>
             <span className="mt-0.5 block text-pl-muted">{text}</span>

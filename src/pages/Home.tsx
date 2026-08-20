@@ -16,9 +16,9 @@ function AwaitingAward({ title, eyebrow, when }: { title: string; eyebrow: strin
   return (
     <section className="card p-6">
       <p className="eyebrow text-pl-muted">{eyebrow}</p>
-      <p className="display mt-2 text-2xl text-pl-navy">{title}</p>
+      <p className="display mt-2 text-2xl text-pl-text">{title}</p>
       <p className="mt-1.5 text-sm text-pl-muted">{when}</p>
-      <div className="mt-4 flex h-32 items-center justify-center rounded-md border border-dashed border-pl-border bg-pl-off">
+      <div className="mt-4 flex h-32 items-center justify-center rounded-md border border-dashed border-pl-border bg-pl-bg/40">
         <p className="text-sm text-pl-muted">No card yet</p>
       </div>
     </section>
@@ -41,7 +41,7 @@ function KochCard({ gameweek, nameOf }: { gameweek: Gameweek; nameOf: (key: Mana
 
       <div className={`grid gap-px bg-pl-border ${tied ? 'lg:grid-cols-2' : ''}`}>
         {koches.map((key) => (
-          <div key={key} className="flex flex-col gap-5 bg-pl-white p-5 sm:flex-row sm:items-center">
+          <div key={key} className="flex flex-col gap-5 bg-pl-surface p-5 sm:flex-row sm:items-center">
             {/* Square frame. The cards are all square today, but the frame
                 letterboxes anything that isn't rather than cropping a head off. */}
             <CardImage
@@ -53,7 +53,7 @@ function KochCard({ gameweek, nameOf }: { gameweek: Gameweek; nameOf: (key: Mana
             <div className="min-w-0 flex-1">
               <div className="flex items-center gap-3">
                 <ManagerAvatar managerKey={key} size={48} className="h-12 w-12" />
-                <p className="display min-w-0 truncate text-4xl leading-none text-pl-navy">{nameOf(key)}</p>
+                <p className="display min-w-0 truncate text-4xl leading-none text-pl-text">{nameOf(key)}</p>
               </div>
               <p className="mt-4 flex items-baseline gap-2">
                 <span className="display tnum text-6xl leading-none text-pl-pink">{gameweek.scores[key]}</span>
@@ -65,7 +65,7 @@ function KochCard({ gameweek, nameOf }: { gameweek: Gameweek; nameOf: (key: Mana
         ))}
       </div>
 
-      <p className="border-t border-pl-border bg-pl-off px-5 py-3 text-sm text-pl-navy">
+      <p className="border-t border-pl-border bg-pl-surface-2 px-5 py-3 text-sm text-pl-text">
         {tied ? (
           <>
             All {koches.length} tied on {gameweek.scores[koches[0]]}, so all {koches.length} pay.{' '}
@@ -88,7 +88,7 @@ function MotmCard({ month, nameOf }: { month: Month; nameOf: (key: ManagerKey) =
   return (
     <section className="card overflow-hidden">
       <div className="flex items-baseline justify-between gap-3 border-b border-pl-border px-5 py-3">
-        <p className="eyebrow text-pl-cyan-ink">Manager of the month</p>
+        <p className="eyebrow text-pl-green">Manager of the month</p>
         <p className="text-xs text-pl-muted">
           {month.label}
           {split && ` · split ${winners.length} ways`}
@@ -97,7 +97,7 @@ function MotmCard({ month, nameOf }: { month: Month; nameOf: (key: ManagerKey) =
 
       <div className={`grid gap-px bg-pl-border ${split ? 'sm:grid-cols-2' : ''}`}>
         {winners.map((key) => (
-          <div key={key} className="flex gap-4 bg-pl-white p-5">
+          <div key={key} className="flex gap-4 bg-pl-surface p-5">
             <CardImage
               set="motm"
               managerKey={key}
@@ -105,13 +105,13 @@ function MotmCard({ month, nameOf }: { month: Month; nameOf: (key: ManagerKey) =
               className="aspect-square w-28 shrink-0 sm:w-36"
             />
             <div className="flex min-w-0 flex-1 flex-col justify-center">
-              <p className="display truncate text-2xl leading-none text-pl-navy">{nameOf(key)}</p>
+              <p className="display truncate text-2xl leading-none text-pl-text">{nameOf(key)}</p>
               <p className="mt-1.5 text-sm text-pl-muted">
-                <span className="tnum font-semibold text-pl-navy">{month.totals[key]}</span> points across{' '}
+                <span className="tnum font-semibold text-pl-text">{month.totals[key]}</span> points across{' '}
                 {month.gameweekIds.length} gameweeks
               </p>
               <p className="mt-2">
-                <span className="display tnum text-2xl text-pl-green-ink">{money(month.potPerWinner)}</span>{' '}
+                <span className="display tnum text-2xl text-pl-green">{money(month.potPerWinner)}</span>{' '}
                 <span className="text-sm text-pl-muted">won</span>
               </p>
             </div>
@@ -120,7 +120,7 @@ function MotmCard({ month, nameOf }: { month: Month; nameOf: (key: ManagerKey) =
       </div>
 
       {month.topPerformer && (
-        <p className="border-t border-pl-border bg-pl-off px-5 py-3 text-sm text-pl-navy">
+        <p className="border-t border-pl-border bg-pl-surface-2 px-5 py-3 text-sm text-pl-text">
           Top performer: <strong className="font-semibold">{month.topPerformer.playerName}</strong> for{' '}
           {nameOf(month.topPerformer.managerKey)},{' '}
           <span className="tnum font-semibold">{month.topPerformer.points}</span> pts
@@ -140,23 +140,23 @@ function MoneyStrip({ month, prize, nameOf }: { month: Month | null; prize: numb
 
   return (
     <section className="card grid gap-px overflow-hidden bg-pl-border sm:grid-cols-2">
-      <div className="bg-pl-white p-5">
+      <div className="bg-pl-surface p-5">
         <p className="eyebrow text-pl-muted">{month ? `${month.shortLabel} pot so far` : 'This month’s pot'}</p>
-        <p className="display tnum mt-2 text-4xl leading-none text-pl-navy">{money(month?.pot ?? 0)}</p>
+        <p className="display tnum mt-2 text-4xl leading-none text-pl-text">{money(month?.pot ?? 0)}</p>
         <p className="mt-2 text-sm text-pl-muted">
           {month
             ? `£5 per Koch across ${confirmed} confirmed gameweek${confirmed === 1 ? '' : 's'}. Winner takes all.`
             : 'Grows by £5 every time someone finishes bottom.'}
         </p>
       </div>
-      <div className="bg-pl-white p-5">
+      <div className="bg-pl-surface p-5">
         <p className="eyebrow text-pl-muted">Season prize</p>
-        <p className="display tnum mt-2 text-4xl leading-none text-pl-navy">{money(prize)}</p>
+        <p className="display tnum mt-2 text-4xl leading-none text-pl-text">{money(prize)}</p>
         <p className="mt-2 text-sm text-pl-muted">
           {anyPlayed ? (
             <>
               Top of the table at season end. Currently{' '}
-              <strong className="font-semibold text-pl-navy">{nameOf(leader.key)}</strong>.
+              <strong className="font-semibold text-pl-text">{nameOf(leader.key)}</strong>.
             </>
           ) : (
             'Top of the table at season end. £10 each, eleven managers.'
@@ -192,11 +192,11 @@ export function Home() {
       />
 
       <PageBody>
-        <div className="space-y-5">
+        <div className="space-y-6">
           <DeadlineStrip gameweeks={data.gameweeks} />
 
           {provisional && (
-            <p className="rounded-md border border-pl-border bg-pl-white px-4 py-3 text-sm text-pl-muted">
+            <p className="rounded-md border border-pl-border bg-pl-surface px-4 py-3 text-sm text-pl-muted">
               Gameweek {provisional.id} has finished but FPL has not confirmed the final points yet. It shows as
               provisional and no money is attached until it does.
             </p>

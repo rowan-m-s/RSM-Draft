@@ -130,6 +130,15 @@ export function money(amount: number): string {
   return `${sign}£${body}`
 }
 
+/**
+ * Rank as the tables print it: zero padded to two digits, 01 to 11. The
+ * reference site does this and it is a large part of why its table reads as
+ * considered rather than default. Unranked (nothing played yet) is a dash.
+ */
+export function rankLabel(rank: number, ranked = true): string {
+  return ranked ? String(rank).padStart(2, '0') : '–'
+}
+
 /** Balance including the sign, for the Managers page. £0 renders as '£0'. */
 export function signedMoney(amount: number): string {
   if (amount === 0) return '£0'

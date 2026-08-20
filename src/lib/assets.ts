@@ -152,3 +152,5 @@ export const clubBadge = (clubCode: number, size: 20 | 50 | 70 | 100 = 50) => `$
 export const PLAYER_FALLBACK = asset('images/player-silhouette.svg')
 export const BADGE_FALLBACK = asset('images/badge-placeholder.svg')
 export const LION = asset('images/premier-league-logo.png')
+/** The lion alone, cropped from the lockup, for the Fantasy Draft mark. */
+export const LION_ONLY = asset('images/premier-league-lion.png')

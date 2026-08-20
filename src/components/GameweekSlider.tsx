@@ -58,7 +58,7 @@ export function GameweekSlider({
           type="button"
           onClick={play}
           aria-label={playing ? 'Stop' : 'Play through the season'}
-          className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-pl-purple text-pl-white hover:bg-pl-purple-deep"
+          className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-pl-text text-pl-bg hover:bg-pl-muted"
         >
           {playing ? '■' : '▶'}
         </button>
@@ -76,7 +76,7 @@ export function GameweekSlider({
         aria-label="Gameweek"
         className="gw-slider flex-1"
       />
-      <span className="display tnum shrink-0 text-right text-xl whitespace-nowrap text-pl-navy">
+      <span className="display tnum shrink-0 text-right text-xl whitespace-nowrap text-pl-text">
         {labelFor(value)}
       </span>
     </div>

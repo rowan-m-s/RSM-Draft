@@ -59,10 +59,13 @@ export function Img({ webp, sources, fallback, alt, className, width, height, lo
   )
 }
 
+/* A data URI cannot read CSS variables, so the placeholder is white at the
+   same alphas as --color-pl-border and --color-pl-muted: it reads as a ghost
+   of a face on whichever aubergine surface it lands on. */
 const AVATAR_FALLBACK =
   'data:image/svg+xml,' +
   encodeURIComponent(
-    `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" fill="#E5E5EB"/><circle cx="32" cy="25" r="11" fill="#B9B9C6"/><path d="M10 64c0-12 10-20 22-20s22 8 22 20z" fill="#B9B9C6"/></svg>`
+    `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="white"><rect width="64" height="64" fill-opacity=".1"/><circle cx="32" cy="25" r="11" fill-opacity=".35"/><path d="M10 64c0-12 10-20 22-20s22 8 22 20z" fill-opacity=".35"/></svg>`
   )
 
 /**
@@ -88,7 +91,7 @@ export function ManagerAvatar({
       alt=""
       width={size}
       height={size}
-      className={`shrink-0 rounded-full bg-pl-white object-cover ring-1 ring-pl-border ${className}`}
+      className={`shrink-0 rounded-full bg-pl-surface-2 object-cover ring-1 ring-pl-border ${className}`}
     />
   )
 }
@@ -146,7 +149,7 @@ export function CardImage({
   className?: string
 }) {
   return (
-    <div className={`overflow-hidden rounded-md bg-pl-navy ${className}`}>
+    <div className={`overflow-hidden rounded-md bg-pl-bg ${className}`}>
       <Img
         webp={managerImage(set, managerKey, 'webp')}
         sources={[managerImage(set, managerKey, 'jpg')]}

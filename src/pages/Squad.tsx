@@ -58,14 +58,14 @@ function PlayerCard({
           photoCode={player.photoCode}
           name={player.name}
           size={compact ? 'tiny' : 'small'}
-          className={`${compact ? 'h-11 w-11' : 'h-16 w-16'} rounded-full bg-white/85 object-cover object-top ring-1 ring-black/10`}
+          className={`${compact ? 'h-11 w-11' : 'h-16 w-16'} rounded-full bg-pl-surface-2 object-cover object-top ring-1 ring-pl-border`}
         />
         {/* Availability flag, tucked into the corner as FPL draws it. */}
         <PlayerFlag player={player} size={compact ? 12 : 15} className="absolute -top-0.5 -right-0.5" />
         {pick?.subbedOn && (
           <span
             title="Came on as an automatic substitute"
-            className="absolute -bottom-1 -left-1 rounded-full bg-pl-green-ink px-1 text-[9px] font-bold text-white"
+            className="absolute -bottom-1 -left-1 rounded-full bg-pl-green px-1 text-[9px] font-bold text-pl-bg"
           >
             ▲
           </span>
@@ -73,7 +73,7 @@ function PlayerCard({
         {pick?.subbedOff && (
           <span
             title="Replaced by an automatic substitute"
-            className="absolute -bottom-1 -left-1 rounded-full bg-pl-muted px-1 text-[9px] font-bold text-white"
+            className="absolute -bottom-1 -left-1 rounded-full bg-pl-surface-2 px-1 text-[9px] font-bold text-pl-text"
           >
             ▼
           </span>
@@ -81,7 +81,7 @@ function PlayerCard({
       </div>
 
       <p
-        className={`mt-1 w-full truncate rounded-t bg-pl-purple px-1 text-center font-semibold text-pl-white ${
+        className={`mt-1 w-full truncate rounded-t bg-pl-bg px-1 text-center font-semibold text-pl-text ${
           compact ? 'text-[10px] leading-4' : 'text-xs leading-5'
         }`}
         title={player.name}
@@ -89,7 +89,7 @@ function PlayerCard({
         {player.name}
       </p>
       <p
-        className={`w-full truncate rounded-b bg-white/90 px-1 text-center font-semibold text-pl-navy ${
+        className={`w-full truncate rounded-b bg-pl-text px-1 text-center font-semibold text-pl-bg ${
           compact ? 'text-[10px] leading-4' : 'text-xs leading-5'
         }`}
         title={line}
@@ -140,8 +140,8 @@ export function Squad() {
     return (
       <PageBody>
         <div className="card p-8 text-center">
-          <p className="display text-xl text-pl-navy">No such manager</p>
-          <Link to="/managers" className="mt-2 inline-block text-sm text-pl-cyan-ink underline">
+          <p className="display text-xl text-pl-text">No such manager</p>
+          <Link to="/managers" className="mt-2 inline-block text-sm text-pl-cyan underline">
             Back to Managers
           </Link>
         </div>
@@ -208,7 +208,7 @@ export function Squad() {
           <button
             type="button"
             onClick={() => navigate(-1)}
-            className="rounded-md border border-pl-border bg-pl-white px-3 py-2 text-sm font-semibold text-pl-navy hover:bg-pl-off"
+            className="rounded-md border border-pl-border bg-pl-surface px-3 py-2 text-sm font-semibold text-pl-text hover:bg-pl-surface-2"
           >
             ← Back
           </button>
@@ -218,10 +218,10 @@ export function Squad() {
                 key={m.key}
                 to={`/managers/${m.key}/squad?gw=${gameweek}`}
                 className={[
-                  'rounded px-2.5 py-1.5 text-xs font-semibold',
+                  'rounded-full border px-3 py-1.5 text-xs font-semibold transition-colors',
                   m.key === manager.key
-                    ? 'bg-pl-purple text-pl-white'
-                    : 'border border-pl-border bg-pl-white text-pl-navy hover:bg-pl-off',
+                    ? 'border-pl-text bg-pl-text text-pl-bg'
+                    : 'border-pl-border bg-transparent text-pl-text hover:bg-pl-surface-2',
                 ].join(' ')}
               >
                 {m.displayName}
@@ -242,7 +242,7 @@ export function Squad() {
 
         {error && (
           <div className="card mb-4 p-4">
-            <p className="text-sm text-pl-pink">Couldn’t load that gameweek: {error}</p>
+            <p className="text-sm text-pl-amber">Couldn’t load that gameweek: {error}</p>
           </div>
         )}
 
@@ -250,7 +250,7 @@ export function Squad() {
           <div className="card p-10 text-center text-sm text-pl-muted">Loading…</div>
         ) : starters.length === 0 ? (
           <div className="card p-10 text-center">
-            <p className="display text-xl text-pl-navy">Nothing to show for gameweek {gameweek}</p>
+            <p className="display text-xl text-pl-text">Nothing to show for gameweek {gameweek}</p>
             <p className="mt-1.5 text-sm text-pl-muted">
               {gameweekMeta && new Date(gameweekMeta.deadlineUtc).getTime() > Date.now()
                 ? 'Squads lock at the deadline. Until then there is no eleven to show.'
@@ -318,7 +318,7 @@ function Pitch({
     <div className="-mx-4 overflow-hidden border-y border-pl-border sm:mx-0 sm:rounded-lg sm:border">
       <div className="pitch relative px-1.5 py-5 sm:px-4 sm:py-7">
         {!locked && (
-          <p className="mb-3 text-center text-[11px] font-semibold tracking-wider text-white/90 uppercase">
+          <p className="mb-3 text-center text-[11px] font-semibold tracking-wider text-pl-text uppercase">
             Current squad, not locked
           </p>
         )}
@@ -356,7 +356,7 @@ function Bench({
   fixtureFor: (entry: PitchPlayer) => string
 }) {
   return (
-    <div className="-mx-4 mt-3 overflow-hidden border-y border-pl-border bg-pl-off sm:mx-0 sm:rounded-lg sm:border">
+    <div className="-mx-4 mt-3 overflow-hidden border-y border-pl-border bg-pl-surface-2 sm:mx-0 sm:rounded-lg sm:border">
       <p className="border-b border-pl-border px-3 py-2 text-[11px] font-semibold tracking-wider text-pl-muted uppercase">
         Bench
       </p>

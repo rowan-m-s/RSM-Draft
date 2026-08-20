@@ -13,7 +13,7 @@ import type { HonoursEntry } from '../types'
 
 function SectionHeading({ title, count }: { title: string; count?: number }) {
   return (
-    <h2 className="eyebrow flex items-baseline gap-2 border-b-2 border-pl-cyan pb-1.5 text-pl-purple">
+    <h2 className="eyebrow flex items-baseline gap-2 border-b border-pl-border pb-2 text-pl-text">
       {title}
       {count !== undefined && count > 0 && <span className="text-pl-muted">{count}</span>}
     </h2>
@@ -22,7 +22,7 @@ function SectionHeading({ title, count }: { title: string; count?: number }) {
 
 function EmptySection({ children }: { children: React.ReactNode }) {
   return (
-    <div className="mt-3 rounded-md border border-dashed border-pl-border bg-pl-white px-4 py-8 text-center">
+    <div className="mt-3 rounded-md border border-dashed border-pl-border px-4 py-8 text-center">
       <p className="text-sm text-pl-muted">{children}</p>
     </div>
   )
@@ -69,7 +69,7 @@ export function Honours() {
                       className="aspect-square w-full rounded-none"
                     />
                     <figcaption className="flex items-baseline justify-between gap-2 px-4 py-3">
-                      <span className="display truncate text-xl text-pl-navy">{nameOf(entry.key)}</span>
+                      <span className="display truncate text-xl text-pl-text">{nameOf(entry.key)}</span>
                       <span className="tnum text-sm text-pl-muted">{entry.season}</span>
                     </figcaption>
                   </figure>
@@ -96,10 +96,10 @@ export function Honours() {
                         className="aspect-square w-full rounded-none"
                       />
                       <figcaption className="px-4 py-3">
-                        <p className="display truncate text-lg leading-none text-pl-navy">{nameOf(key)}</p>
+                        <p className="display truncate text-lg leading-none text-pl-text">{nameOf(key)}</p>
                         <p className="mt-1 text-xs text-pl-muted">
                           {month.label} · {month.totals[key]} pts ·{' '}
-                          <span className="font-semibold text-pl-green-ink">{money(month.potPerWinner)}</span>
+                          <span className="font-semibold text-pl-green">{money(month.potPerWinner)}</span>
                           {month.winnerKeys.length > 1 && ' (split)'}
                         </p>
                       </figcaption>
@@ -132,7 +132,7 @@ export function Honours() {
                               className="aspect-square w-full rounded-none"
                             />
                             <figcaption className="px-4 py-3">
-                              <p className="display truncate text-lg leading-none text-pl-navy">{nameOf(key)}</p>
+                              <p className="display truncate text-lg leading-none text-pl-text">{nameOf(key)}</p>
                               <p className="mt-1 text-xs text-pl-muted">
                                 GW{gw.id} · {gw.scores[key]} pts ·{' '}
                                 <span className="font-semibold text-pl-pink">−£5</span>

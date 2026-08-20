@@ -19,7 +19,7 @@ function useAge(generatedAt: string | null) {
  *
  * A silently dead fetch job is this design's main failure mode — the site keeps
  * rendering last week's numbers and looks fine. So the age is always on screen,
- * and turns pink past three hours.
+ * and turns amber past three hours.
  */
 export function Freshness({ compact = false }: { compact?: boolean }) {
   const { state, reload, reloading } = useDataState()
@@ -27,7 +27,7 @@ export function Freshness({ compact = false }: { compact?: boolean }) {
 
   if (!age) return null
 
-  const tone = age.stale ? 'font-semibold text-pl-pink' : 'text-pl-muted'
+  const tone = age.stale ? 'font-semibold text-pl-amber' : 'text-pl-muted'
   const label = reloading ? 'Reloading…' : `Updated ${age.text}`
 
   if (compact) return <span className={`text-xs ${tone}`}>{label}</span>
@@ -39,7 +39,7 @@ export function Freshness({ compact = false }: { compact?: boolean }) {
         type="button"
         onClick={reload}
         disabled={reloading}
-        className="rounded border border-pl-border px-2 py-1 text-xs font-semibold text-pl-navy hover:bg-pl-off disabled:opacity-50"
+        className="rounded border border-pl-border px-2 py-1 text-xs font-semibold text-pl-text hover:bg-pl-surface-2 disabled:opacity-50"
       >
         Reload
       </button>
@@ -63,7 +63,7 @@ export function DataFooter() {
   return (
     <section className="card p-5">
       <p className="eyebrow text-pl-muted">Data</p>
-      <p className={`mt-2 text-sm ${age?.stale ? 'font-semibold text-pl-pink' : 'text-pl-navy'}`}>
+      <p className={`mt-2 text-sm ${age?.stale ? 'font-semibold text-pl-amber' : 'text-pl-text'}`}>
         {reloading ? 'Reloading…' : `Updated ${age?.text ?? 'never'}`}
         {age?.stale && '. The update job may have stopped.'}
       </p>
@@ -72,7 +72,7 @@ export function DataFooter() {
           type="button"
           onClick={reload}
           disabled={reloading}
-          className="rounded-md bg-pl-purple px-4 py-2 text-sm font-semibold text-pl-white hover:bg-pl-purple-deep disabled:opacity-50"
+          className="rounded-md bg-pl-text px-4 py-2 text-sm font-semibold text-pl-bg hover:bg-pl-muted disabled:opacity-50"
         >
           Reload
         </button>
@@ -80,7 +80,7 @@ export function DataFooter() {
           href={REPO_ACTIONS_URL}
           target="_blank"
           rel="noreferrer"
-          className="rounded-md border border-pl-border px-4 py-2 text-sm font-semibold text-pl-navy hover:bg-pl-off"
+          className="rounded-md border border-pl-border px-4 py-2 text-sm font-semibold text-pl-text hover:bg-pl-surface-2"
         >
           Force update (admin)
         </a>
