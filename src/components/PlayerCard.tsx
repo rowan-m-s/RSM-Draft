@@ -8,8 +8,11 @@ import type { Position } from '../types'
  *
  * A portrait card rather than a circle: the photos are head-and-shoulders
  * cut outs, and a circular mask crops the shoulders and leaves a head
- * floating. Here the cut out is anchored to the bottom of the photo area so
- * the shoulders meet the card's lower boundary and the head has clearance.
+ * floating. Here the cut out fills the photo area's width from the top, so
+ * the head keeps its clearance and the figure runs into the name band at the
+ * chest, where the Premier League's own photos are cropped. The photos are
+ * all 220×280, so this also sizes every player alike; what remains is how
+ * tightly each club's photographer framed them, which is in the source.
  *
  * Anatomy, top to bottom: photo area on a vertical surface gradient, lighter
  * at the top; a solid aubergine name band; a lifted info band carrying the
@@ -70,7 +73,7 @@ export function PlayerCard({ player, line, bench = false, sub = null }: PlayerCa
           photoCode={player.photoCode}
           name={player.name}
           size="small"
-          className="absolute inset-x-0 bottom-0 h-full w-full object-contain object-bottom"
+          className="absolute inset-0 h-full w-full object-cover object-top"
         />
         <PlayerFlag player={player} size={14} className="absolute top-0 right-0" />
         {sub && <SubMarker sub={sub} />}
@@ -99,7 +102,7 @@ export function PlayerCardCompact({ player, line, bench = false, sub = null }: P
           photoCode={player.photoCode}
           name={player.name}
           size="tiny"
-          className="absolute inset-x-0 bottom-0 h-full w-full object-contain object-bottom"
+          className="absolute inset-0 h-full w-full object-cover object-top"
         />
         <PlayerFlag player={player} size={11} className="absolute top-0 right-0" />
         {sub && <SubMarker sub={sub} />}

@@ -2,8 +2,7 @@ import { Fragment, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Banner } from '../components/Banner'
 import { GameweekSlider } from '../components/GameweekSlider'
-import { ManagerAvatar } from '../components/Img'
-import { PageBody, rankAccent } from '../components/Layout'
+import { ManagerCell, PageBody, rankAccent } from '../components/Layout'
 import { Segmented } from '../components/Segmented'
 import { useData } from '../data'
 import { money, rankLabel } from '../lib/season'
@@ -81,6 +80,7 @@ function Overall() {
   const [open, setOpen] = useState<ManagerKey | null>(null)
   const rows = data.season.rows
   const nameOf = (key: string) => data.league.managers.find((m) => m.key === key)?.displayName ?? key
+  const teamOf = (key: string) => data.league.managers.find((m) => m.key === key)?.teamName ?? ''
   const ranked = data.gameweeks.some((gw) => gw.finished)
 
   return (
@@ -88,19 +88,19 @@ function Overall() {
       <table className="w-full">
         <thead>
           <tr className="border-b border-pl-border text-left">
-            <th scope="col" className="w-10 py-3 pl-3 text-[11px] font-semibold tracking-wider text-pl-muted uppercase">
+            <th scope="col" className="w-8 py-3 pl-3 text-[11px] sm:w-10 font-semibold tracking-wider text-pl-muted uppercase">
               #
             </th>
             <th scope="col" className="py-3 text-[11px] font-semibold tracking-wider text-pl-muted uppercase">
               Manager
             </th>
-            <th scope="col" className="w-14 py-3 text-right text-[11px] font-semibold tracking-wider text-pl-muted uppercase">
+            <th scope="col" className="w-10 py-3 text-right text-[11px] font-semibold tracking-wider text-pl-muted uppercase sm:w-14">
               GW
             </th>
-            <th scope="col" className="w-16 py-3 text-right text-[11px] font-semibold tracking-wider text-pl-muted uppercase">
+            <th scope="col" className="w-12 py-3 text-right text-[11px] font-semibold tracking-wider text-pl-muted uppercase sm:w-16">
               Month
             </th>
-            <th scope="col" className="w-20 py-3 pr-4 text-right text-[11px] font-semibold tracking-wider text-pl-muted uppercase">
+            <th scope="col" className="w-14 py-3 pr-3 text-right text-[11px] font-semibold tracking-wider text-pl-muted uppercase sm:w-20 sm:pr-4">
               Total
             </th>
           </tr>
@@ -123,15 +123,12 @@ function Overall() {
                       <span className="tnum text-sm text-pl-muted">{rankLabel(row.rank, ranked)}</span>
                     </span>
                   </td>
-                  <td className="py-3">
-                    <span className="flex min-w-0 items-center gap-2.5">
-                      <ManagerAvatar managerKey={row.key} size={28} />
-                      <span className="truncate font-semibold text-pl-text">{nameOf(row.key)}</span>
-                    </span>
+                  <td className="max-w-0 py-2.5">
+                    <ManagerCell managerKey={row.key} name={nameOf(row.key)} team={teamOf(row.key)} />
                   </td>
                   <td className="tnum py-3 text-right text-sm text-pl-muted">{row.gw}</td>
                   <td className="tnum py-3 text-right text-sm text-pl-muted">{row.month}</td>
-                  <td className="tnum py-3 pr-4 text-right text-lg font-bold text-pl-text">{row.total}</td>
+                  <td className="tnum py-3 pr-3 text-right text-lg font-bold text-pl-text sm:pr-4">{row.total}</td>
                 </tr>
                 {expanded && (
                   <tr>
@@ -181,6 +178,7 @@ function GameweekView() {
 
 function GameweekTable({ gameweek, nameOf }: { gameweek: Gameweek; nameOf: (k: ManagerKey) => string }) {
   const { data } = useData()
+  const teamOf = (key: string) => data.league.managers.find((m) => m.key === key)?.teamName ?? ''
   const mvpOf = useMvp()
   const [open, setOpen] = useState<ManagerKey | null>(null)
 
@@ -230,10 +228,9 @@ function GameweekTable({ gameweek, nameOf }: { gameweek: Gameweek; nameOf: (k: M
                     {rankLabel(i + 1)}
                   </span>
                 </td>
-                <td className="py-3">
+                <td className="max-w-0 py-2.5">
                   <span className="flex min-w-0 items-center gap-2.5">
-                    <ManagerAvatar managerKey={row.key} size={28} />
-                    <span className="truncate font-semibold text-pl-text">{nameOf(row.key)}</span>
+                    <ManagerCell managerKey={row.key} name={nameOf(row.key)} team={teamOf(row.key)} />
                     {isKoch && (
                       <span className="shrink-0 rounded bg-pl-pink px-1.5 py-0.5 text-[10px] font-bold tracking-wide text-pl-bg uppercase">
                         Koch
@@ -326,6 +323,7 @@ function MonthView() {
 
 function MonthTable({ month, nameOf }: { month: Month; nameOf: (k: ManagerKey) => string }) {
   const { data } = useData()
+  const teamOf = (key: string) => data.league.managers.find((m) => m.key === key)?.teamName ?? ''
   const mvpOf = useMvp()
   const [open, setOpen] = useState<ManagerKey | null>(null)
 
@@ -411,10 +409,9 @@ function MonthTable({ month, nameOf }: { month: Month; nameOf: (k: ManagerKey) =
                   <td className="w-10 py-3 pl-3">
                     <span className="tnum text-sm text-pl-muted">{rankLabel(i + 1)}</span>
                   </td>
-                  <td className="py-3">
+                  <td className="max-w-0 py-2.5">
                     <span className="flex min-w-0 items-center gap-2.5">
-                      <ManagerAvatar managerKey={row.key} size={28} />
-                      <span className="truncate font-semibold text-pl-text">{nameOf(row.key)}</span>
+                      <ManagerCell managerKey={row.key} name={nameOf(row.key)} team={teamOf(row.key)} />
                       {isWinner && (
                         <span className="shrink-0 rounded bg-pl-green px-1.5 py-0.5 text-[10px] font-bold tracking-wide text-pl-bg uppercase">
                           MOTM

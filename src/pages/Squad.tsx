@@ -132,12 +132,12 @@ export function Squad() {
   return (
     <>
       <Banner
-        season={isDraft ? 'First Draft' : `Gameweek ${gameweek}`}
-        title={`${manager.displayName}'s squad`}
+        season={isDraft ? '1st Draft' : `Gameweek ${gameweek}`}
+        title={manager.teamName}
         subtitle={
           isDraft
-            ? `${formation} · XI inferred from draft order, not an official lineup`
-            : `${formation} · ${started ? 'points shown' : 'fixtures shown, the week has not kicked off'}`
+            ? `${manager.displayName} · ${formation} · XI inferred from draft order, not an official lineup`
+            : `${manager.displayName} · ${formation} · ${started ? 'points shown' : 'fixtures shown, the week has not kicked off'}`
         }
         aside={<ManagerAvatar managerKey={manager.key} size={64} className="h-16 w-16" />}
       />
@@ -176,7 +176,7 @@ export function Squad() {
           max={lastGameweek}
           onChange={setGameweek}
           playTo={lastGameweek > firstGameweek ? lastGameweek : undefined}
-          labelFor={(gw) => (gw === 0 ? 'First Draft' : `GW${gw}`)}
+          labelFor={(gw) => (gw === 0 ? '1st Draft' : `GW${gw}`)}
         />
 
         {error && (

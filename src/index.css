@@ -272,16 +272,20 @@
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  background-color: var(--color-pitch-edge);
+  background-color: var(--color-pitch);
 }
 
+/* The tilted layer foreshortens toward the top, so it is given far more
+   height than the box above it and extra width either side: after the
+   rotation its far edge still clears the top of the pitch and its sides
+   still clear the corners. */
 .pitch::after {
   content: '';
   position: absolute;
   z-index: -2;
-  left: -18%;
-  right: -18%;
-  top: -6%;
+  left: -22%;
+  right: -22%;
+  top: -45%;
   bottom: -2%;
   pointer-events: none;
   transform-origin: 50% 100%;

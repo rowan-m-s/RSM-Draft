@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Banner } from '../components/Banner'
 import { CardImage, ManagerAvatar, PlayerPhoto } from '../components/Img'
-import { PageBody } from '../components/Layout'
+import { ManagerCell, PageBody } from '../components/Layout'
 import { useData } from '../data'
 import { money, rankLabel, signedMoney } from '../lib/season'
 import type { ManagerKey, SeasonRow } from '../types'
@@ -39,9 +39,10 @@ function ManagerProfile({ row, onClose }: { row: SeasonRow; onClose: () => void 
           <ManagerAvatar managerKey={row.key} size={64} className="h-16 w-16" />
           <div className="min-w-0 flex-1">
             <p className="display truncate text-3xl leading-none text-pl-text">{manager.displayName}</p>
-            <p className="mt-1 truncate text-sm text-pl-muted">
-              {manager.realName} · {manager.teamName}
+            <p className="mt-1.5 truncate text-base font-semibold text-pl-text" title={manager.teamName}>
+              {manager.teamName}
             </p>
+            <p className="mt-0.5 truncate text-sm text-pl-text/80">{manager.realName}</p>
           </div>
           <button
             type="button"
@@ -198,6 +199,7 @@ export function Managers() {
   const { data } = useData()
   const [open, setOpen] = useState<ManagerKey | null>(null)
   const nameOf = (key: string) => data.league.managers.find((m) => m.key === key)?.displayName ?? key
+  const teamOf = (key: string) => data.league.managers.find((m) => m.key === key)?.teamName ?? ''
 
   // Sorted worst first — this is the page about who owes what.
   const rows = [...data.season.rows].sort((a, b) => a.balance - b.balance || b.total - a.total)
@@ -244,20 +246,9 @@ export function Managers() {
             <tbody>
               {rows.map((row) => (
                 <tr key={row.key} className="border-b border-pl-border last:border-0 hover:bg-pl-surface-2">
-                  <td className="py-2.5 pl-4">
-                    <button
-                      type="button"
-                      onClick={() => setOpen(row.key)}
-                      className="flex min-w-0 items-center gap-2.5 text-left"
-                    >
-                      <ManagerAvatar managerKey={row.key} size={32} />
-                      <span className="min-w-0">
-                        <span className="block truncate font-semibold text-pl-text">{nameOf(row.key)}</span>
-                        <span className="block truncate text-xs text-pl-muted sm:hidden">
-                          {ranked && `${row.rank}${['st', 'nd', 'rd'][row.rank - 1] ?? 'th'} · `}
-                          {row.total} pts
-                        </span>
-                      </span>
+                  <td className="max-w-0 py-2.5 pl-4">
+                    <button type="button" onClick={() => setOpen(row.key)} className="flex w-full min-w-0 text-left">
+                      <ManagerCell managerKey={row.key} name={nameOf(row.key)} team={teamOf(row.key)} />
                     </button>
                   </td>
                   <td className="tnum hidden py-2 text-right text-sm text-pl-muted sm:table-cell">

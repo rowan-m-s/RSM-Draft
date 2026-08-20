@@ -224,19 +224,35 @@ export function PageBody({ children }: { children: React.ReactNode }) {
   return <div className="mx-auto max-w-6xl px-4 py-6 sm:px-6 sm:py-8">{children}</div>
 }
 
-export function ManagerAvatarWithName({
+/**
+ * The manager cell in a table: face, nickname in white, team name beneath in
+ * muted and smaller. Nickname first because that is how people here know
+ * each other; the team name is the detail. Both truncate with an ellipsis,
+ * never wrap — team names run to nineteen characters in this league.
+ *
+ * The wrapping cell must be allowed to shrink for the truncation to happen:
+ * give the <td> `max-w-0` so the table lets it, rather than growing to fit.
+ */
+export function ManagerCell({
   managerKey,
   name,
-  size = 28,
+  team,
+  size = 32,
 }: {
   managerKey: string
   name: string
+  team: string
   size?: number
 }) {
   return (
     <span className="flex min-w-0 items-center gap-2.5">
       <ManagerAvatar managerKey={managerKey} size={size} />
-      <span className="truncate font-semibold text-pl-text">{name}</span>
+      <span className="min-w-0 leading-tight">
+        <span className="block truncate font-semibold text-pl-text">{name}</span>
+        <span className="block truncate text-xs text-pl-muted" title={team}>
+          {team}
+        </span>
+      </span>
     </span>
   )
 }
