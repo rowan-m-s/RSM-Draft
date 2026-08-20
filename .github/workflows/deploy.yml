@@ -1,0 +1,63 @@
+name: Deploy to Pages
+
+# Builds and publishes whenever the site or the data changes. The data job
+# commits with [skip ci] in the message but that does not stop workflows on
+# GitHub — the paths filter is what keeps this from running on unrelated
+# commits, and a data-only commit *should* redeploy, since the JSON is baked
+# into the published output.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'public/**'
+      - 'index.html'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'vite.config.ts'
+      - 'tsconfig*.json'
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Let a running deploy finish; queue at most one behind it.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+
+      - run: npm ci
+
+      # `npm run build` runs the image check first, so a missing Koch or MOTM
+      # card fails the deploy rather than shipping a blank card.
+      - run: npm run build
+
+      - run: npm test
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

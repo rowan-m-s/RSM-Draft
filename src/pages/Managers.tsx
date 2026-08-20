@@ -17,6 +17,7 @@ function Balance({ amount, className = '' }: { amount: number; className?: strin
 
 function ManagerProfile({ row, onClose }: { row: SeasonRow; onClose: () => void }) {
   const { data } = useData()
+  const ranked = data.gameweeks.some((gw) => gw.finished)
   const manager = data.league.managers.find((m) => m.key === row.key)!
   const nameOf = (key: string) => data.league.managers.find((m) => m.key === key)?.displayName ?? key
 
@@ -55,7 +56,7 @@ function ManagerProfile({ row, onClose }: { row: SeasonRow; onClose: () => void 
 
         <div className="grid grid-cols-2 gap-px border-b border-pl-border bg-pl-border sm:grid-cols-4">
           {[
-            { label: 'Rank', value: String(row.rank) },
+            { label: 'Rank', value: ranked ? String(row.rank) : '–' },
             { label: 'Points', value: String(row.total) },
             { label: 'Koch', value: String(row.kochCount) },
             { label: 'MOTM', value: String(row.motmCount) },
@@ -200,6 +201,8 @@ export function Managers() {
 
   // Sorted worst first — this is the page about who owes what.
   const rows = [...data.season.rows].sort((a, b) => a.balance - b.balance || b.total - a.total)
+  // Before anyone has played there is no order to report, only an eleven-way tie.
+  const ranked = data.gameweeks.some((gw) => gw.finished)
   const openRow = rows.find((r) => r.key === open) ?? null
 
   const totalBalance = rows.reduce((sum, r) => sum + r.balance, 0)
@@ -251,13 +254,15 @@ export function Managers() {
                       <span className="min-w-0">
                         <span className="block truncate font-semibold text-pl-navy">{nameOf(row.key)}</span>
                         <span className="block truncate text-xs text-pl-muted sm:hidden">
-                          {row.rank}
-                          {['st', 'nd', 'rd'][row.rank - 1] ?? 'th'} · {row.total} pts
+                          {ranked && `${row.rank}${['st', 'nd', 'rd'][row.rank - 1] ?? 'th'} · `}
+                          {row.total} pts
                         </span>
                       </span>
                     </button>
                   </td>
-                  <td className="tnum hidden py-2 text-right text-sm text-pl-muted sm:table-cell">{row.rank}</td>
+                  <td className="tnum hidden py-2 text-right text-sm text-pl-muted sm:table-cell">
+                    {ranked ? row.rank : '–'}
+                  </td>
                   <td className="tnum hidden py-2 text-right font-semibold text-pl-navy sm:table-cell">{row.total}</td>
                   <td className="tnum py-2 text-right text-sm text-pl-navy">{row.kochCount}</td>
                   <td className="tnum py-2 text-right text-sm text-pl-navy">{row.motmCount}</td>

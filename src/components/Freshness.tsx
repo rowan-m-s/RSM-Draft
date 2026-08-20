@@ -1,8 +1,18 @@
 import { useEffect, useState } from 'react'
 import { relativeAge } from '../lib/season'
-import { useData } from '../data'
+import { useDataState } from '../data'
 
 const REPO_ACTIONS_URL = 'https://github.com/rowanmat/RSM-Draft/actions'
+
+/** Ticks every 30s so "14 minutes ago" ages without a reload. */
+function useAge(generatedAt: string | null) {
+  const [now, setNow] = useState(() => new Date())
+  useEffect(() => {
+    const id = setInterval(() => setNow(new Date()), 30_000)
+    return () => clearInterval(id)
+  }, [])
+  return generatedAt ? relativeAge(generatedAt, now) : null
+}
 
 /**
  * How old the data is.
@@ -12,33 +22,24 @@ const REPO_ACTIONS_URL = 'https://github.com/rowanmat/RSM-Draft/actions'
  * and turns pink past three hours.
  */
 export function Freshness({ compact = false }: { compact?: boolean }) {
-  const { data, reload } = useData()
-  const [now, setNow] = useState(() => new Date())
+  const { state, reload, reloading } = useDataState()
+  const age = useAge(state.status === 'ready' ? state.data.generatedAt : null)
 
-  useEffect(() => {
-    const id = setInterval(() => setNow(new Date()), 30_000)
-    return () => clearInterval(id)
-  }, [])
+  if (!age) return null
 
-  const age = relativeAge(data.generatedAt, now)
+  const tone = age.stale ? 'font-semibold text-pl-pink' : 'text-pl-muted'
+  const label = reloading ? 'Reloading…' : `Updated ${age.text}`
 
-  if (compact) {
-    return (
-      <span className={`text-xs ${age.stale ? 'font-semibold text-pl-pink' : 'text-pl-muted'}`}>
-        Updated {age.text}
-      </span>
-    )
-  }
+  if (compact) return <span className={`text-xs ${tone}`}>{label}</span>
 
   return (
     <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
-      <span className={`text-xs ${age.stale ? 'font-semibold text-pl-pink' : 'text-pl-muted'}`}>
-        Updated {age.text}
-      </span>
+      <span className={`text-xs ${tone}`}>{label}</span>
       <button
         type="button"
         onClick={reload}
-        className="rounded border border-pl-border px-2 py-1 text-xs font-semibold text-pl-navy hover:bg-pl-off"
+        disabled={reloading}
+        className="rounded border border-pl-border px-2 py-1 text-xs font-semibold text-pl-navy hover:bg-pl-off disabled:opacity-50"
       >
         Reload
       </button>
@@ -56,21 +57,22 @@ export function Freshness({ compact = false }: { compact?: boolean }) {
  * repo owner can do.
  */
 export function DataFooter() {
-  const { data, reload } = useData()
-  const age = relativeAge(data.generatedAt)
+  const { state, reload, reloading } = useDataState()
+  const age = useAge(state.status === 'ready' ? state.data.generatedAt : null)
 
   return (
     <section className="card p-5">
       <p className="eyebrow text-pl-muted">Data</p>
-      <p className={`mt-2 text-sm ${age.stale ? 'font-semibold text-pl-pink' : 'text-pl-navy'}`}>
-        Updated {age.text}
-        {age.stale && ' — the update job may have stopped.'}
+      <p className={`mt-2 text-sm ${age?.stale ? 'font-semibold text-pl-pink' : 'text-pl-navy'}`}>
+        {reloading ? 'Reloading…' : `Updated ${age?.text ?? 'never'}`}
+        {age?.stale && ' — the update job may have stopped.'}
       </p>
       <div className="mt-4 flex flex-wrap items-center gap-3">
         <button
           type="button"
           onClick={reload}
-          className="rounded-md bg-pl-purple px-4 py-2 text-sm font-semibold text-pl-white hover:bg-pl-purple-deep"
+          disabled={reloading}
+          className="rounded-md bg-pl-purple px-4 py-2 text-sm font-semibold text-pl-white hover:bg-pl-purple-deep disabled:opacity-50"
         >
           Reload
         </button>

@@ -89,6 +89,8 @@ export interface Month {
   /** pot / winnerKeys.length, or 0. */
   potPerWinner: number
   topPerformer: TopPerformer | null
+  /** Each manager's own best player that month. Null until a week is confirmed. */
+  topPerformerByManager: Record<ManagerKey, TopPerformer | null>
 }
 
 export interface SeasonRow {

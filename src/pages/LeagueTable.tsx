@@ -29,6 +29,7 @@ function Overall() {
   const { data } = useData()
   const rows = data.season.rows
   const nameOf = (key: string) => data.league.managers.find((m) => m.key === key)?.displayName ?? key
+  const ranked = data.gameweeks.some((gw) => gw.finished)
 
   return (
     <div className="card overflow-hidden">
@@ -57,8 +58,8 @@ function Overall() {
             <tr key={row.key} className="border-b border-pl-border last:border-0 hover:bg-pl-off">
               <td className="py-2.5 pl-3">
                 <span className="flex items-center gap-2">
-                  <span className={`h-7 w-1 shrink-0 rounded-full ${rankAccent(row.rank, rows.length)}`} />
-                  <span className="tnum text-sm text-pl-muted">{row.rank}</span>
+                  <span className={`h-7 w-1 shrink-0 rounded-full ${rankAccent(row.rank, rows.length, ranked)}`} />
+                  <span className="tnum text-sm text-pl-muted">{ranked ? row.rank : '–'}</span>
                 </span>
               </td>
               <td className="py-2.5">

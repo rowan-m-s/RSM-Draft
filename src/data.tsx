@@ -1,7 +1,6 @@
-import { createContext, useCallback, useContext, useMemo, useState, type ReactNode } from 'react'
+import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react'
 import type { Gameweek, League, Month, PlayersFile, Season } from './types'
-import { mockGameweeks, mockLeague, mockMonths, mockPlayers, mockSeason, MOCK_GENERATED_AT } from './mock'
-import { preseason } from './mock/preseason'
+import { asset } from './lib/assets'
 
 export interface Dataset {
   league: League
@@ -12,48 +11,113 @@ export interface Dataset {
   generatedAt: string
 }
 
-const live: Dataset = {
-  league: mockLeague,
-  gameweeks: mockGameweeks,
-  months: mockMonths,
-  season: mockSeason,
-  players: mockPlayers,
-  generatedAt: MOCK_GENERATED_AT,
-}
+type State =
+  | { status: 'loading' }
+  | { status: 'ready'; data: Dataset }
+  | { status: 'error'; message: string }
 
 interface DataContextValue {
-  data: Dataset
-  /** Bumped by the reload control; nothing reads it yet in the design pass. */
-  reloadedAt: number
+  state: State
+  /**
+   * Re-reads the JSON past the browser cache. Deliberately not called
+   * "refresh": nothing here can pull new scores from FPL. GitHub Pages has no
+   * serverless functions and a token must never reach the browser of a public
+   * repo, so new data only arrives when the scheduled Action commits it.
+   */
   reload: () => void
+  reloading: boolean
 }
 
 const DataContext = createContext<DataContextValue | null>(null)
 
-/**
- * Phase 2 seam. The design pass reads hardcoded mock data; Phase 4 replaces the
- * body of this provider with a fetch of public/data/*.json and nothing else in
- * the app changes.
- *
- * `?state=preseason` swaps in a dataset with no gameweeks played, so the empty
- * states can be reviewed without waiting until August.
- */
+const FILES = ['league', 'gameweeks', 'months', 'season', 'players'] as const
+
+async function loadDataset(cacheBust: number | null): Promise<Dataset> {
+  const suffix = cacheBust === null ? '' : `?t=${cacheBust}`
+
+  const responses = await Promise.all(
+    FILES.map(async (name) => {
+      const url = asset(`data/${name}.json${suffix}`)
+      const response = await fetch(url, { cache: cacheBust === null ? 'default' : 'reload' })
+      if (!response.ok) throw new Error(`${name}.json — HTTP ${response.status}`)
+      return [name, await response.json()] as const
+    })
+  )
+
+  const files = Object.fromEntries(responses) as {
+    league: League
+    gameweeks: { gameweeks: Gameweek[]; generatedAt: string }
+    months: { months: Month[]; generatedAt: string }
+    season: Season
+    players: PlayersFile
+  }
+
+  return {
+    league: files.league,
+    gameweeks: files.gameweeks.gameweeks,
+    months: files.months.months,
+    season: files.season,
+    players: files.players,
+    // The oldest of the five, so a file that stopped updating is what gets
+    // reported rather than being hidden by its fresher neighbours.
+    generatedAt: [
+      files.league.generatedAt,
+      files.gameweeks.generatedAt,
+      files.months.generatedAt,
+      files.season.generatedAt,
+      files.players.generatedAt,
+    ].sort()[0],
+  }
+}
+
 export function DataProvider({ children }: { children: ReactNode }) {
-  const [reloadedAt, setReloadedAt] = useState(0)
+  const [state, setState] = useState<State>({ status: 'loading' })
+  const [reloadToken, setReloadToken] = useState<number | null>(null)
+  const [reloading, setReloading] = useState(false)
 
-  const data = useMemo(() => {
-    const state = new URLSearchParams(window.location.search).get('state')
-    return state === 'preseason' ? preseason : live
-  }, [])
+  useEffect(() => {
+    let cancelled = false
+    if (reloadToken !== null) setReloading(true)
 
-  const reload = useCallback(() => setReloadedAt(Date.now()), [])
+    loadDataset(reloadToken)
+      .then((data) => {
+        if (!cancelled) setState({ status: 'ready', data })
+      })
+      .catch((error: unknown) => {
+        if (cancelled) return
+        const message = error instanceof Error ? error.message : String(error)
+        // Keep showing the data we already had rather than blanking the page:
+        // stale numbers with a visible age beat an empty screen.
+        setState((previous) => (previous.status === 'ready' ? previous : { status: 'error', message }))
+      })
+      .finally(() => {
+        if (!cancelled) setReloading(false)
+      })
 
-  const value = useMemo(() => ({ data, reloadedAt, reload }), [data, reloadedAt, reload])
+    return () => {
+      cancelled = true
+    }
+  }, [reloadToken])
+
+  const reload = useCallback(() => setReloadToken(Date.now()), [])
+  const value = useMemo(() => ({ state, reload, reloading }), [state, reload, reloading])
+
   return <DataContext.Provider value={value}>{children}</DataContext.Provider>
 }
 
-export function useData() {
+/** For the chrome, which renders around whatever state the data is in. */
+export function useDataState() {
   const context = useContext(DataContext)
-  if (!context) throw new Error('useData must be used inside DataProvider')
+  if (!context) throw new Error('useDataState must be used inside DataProvider')
   return context
+}
+
+/**
+ * For pages, which only ever render once the data is ready — the shell holds
+ * them back until then, so they can treat it as present.
+ */
+export function useData() {
+  const { state, reload, reloading } = useDataState()
+  if (state.status !== 'ready') throw new Error('useData used outside a ready Dataset')
+  return { data: state.data, reload, reloading }
 }

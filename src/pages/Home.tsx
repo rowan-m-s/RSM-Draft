@@ -227,7 +227,11 @@ export function Home() {
           {/* The compact table appears inline on Home for mobile, since the
               sidebar that normally holds it is not there. */}
           <section className="card p-4 lg:hidden">
-            <MiniTable rows={data.season.rows} nameOf={nameOf} />
+            <MiniTable
+              rows={data.season.rows}
+              nameOf={nameOf}
+              ranked={data.gameweeks.some((gw) => gw.finished)}
+            />
           </section>
 
           <DataFooter />

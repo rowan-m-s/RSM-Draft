@@ -1,5 +1,5 @@
 import { NavLink, Outlet } from 'react-router-dom'
-import { useData } from '../data'
+import { useDataState } from '../data'
 import { Freshness } from './Freshness'
 import { ManagerAvatar } from './Img'
 import type { SeasonRow } from '../types'
@@ -15,8 +15,13 @@ const NAV = [
 /**
  * The accent bar on the left of a table row. Cyan for first, muted for second
  * and third, pink for last. Everyone else gets nothing.
+ *
+ * Before a gameweek has been played everyone is level on nothing, so the whole
+ * table would light up cyan for an eleven-way tie for first. Correct, but it
+ * reads as a bug — so there are no leaders until there is something to lead.
  */
-export function rankAccent(rank: number, total: number): string {
+export function rankAccent(rank: number, total: number, ranked = true): string {
+  if (!ranked) return 'bg-transparent'
   if (rank === 1) return 'bg-pl-cyan'
   if (rank === 2 || rank === 3) return 'bg-pl-border'
   if (rank === total && total > 1) return 'bg-pl-pink'
@@ -28,15 +33,23 @@ export function rankAccent(rank: number, total: number): string {
  * nickname, total. It persists on every page on desktop; on mobile it appears
  * inline on Home only, never in the tab bar.
  */
-export function MiniTable({ rows, nameOf }: { rows: SeasonRow[]; nameOf: (key: string) => string }) {
+export function MiniTable({
+  rows,
+  nameOf,
+  ranked = true,
+}: {
+  rows: SeasonRow[]
+  nameOf: (key: string) => string
+  ranked?: boolean
+}) {
   return (
     <div>
       <p className="eyebrow border-b-2 border-pl-cyan pb-1 text-pl-purple">League table</p>
       <ol className="mt-2">
         {rows.map((row) => (
           <li key={row.key} className="flex items-center gap-2 border-b border-pl-border py-1 last:border-0">
-            <span className={`h-5 w-0.5 shrink-0 rounded-full ${rankAccent(row.rank, rows.length)}`} />
-            <span className="tnum w-4 shrink-0 text-xs text-pl-muted">{row.rank}</span>
+            <span className={`h-5 w-0.5 shrink-0 rounded-full ${rankAccent(row.rank, rows.length, ranked)}`} />
+            <span className="tnum w-4 shrink-0 text-xs text-pl-muted">{ranked ? row.rank : '–'}</span>
             <span className="min-w-0 flex-1 truncate text-sm text-pl-navy">{nameOf(row.key)}</span>
             <span className="tnum text-sm font-bold text-pl-navy">{row.total}</span>
           </li>
@@ -74,10 +87,33 @@ function NavItems({ onNavigate }: { onNavigate?: () => void }) {
   )
 }
 
+/** Shown while the five JSON files are being read, and if they cannot be. */
+function DataGate({ state }: { state: ReturnType<typeof useDataState>['state'] }) {
+  if (state.status === 'loading') {
+    return (
+      <div className="mx-auto max-w-6xl px-4 py-16 text-center sm:px-6">
+        <p className="text-sm text-pl-muted">Loading…</p>
+      </div>
+    )
+  }
+  return (
+    <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
+      <div className="card p-6">
+        <p className="eyebrow text-pl-pink">Data unavailable</p>
+        <p className="display mt-2 text-2xl text-pl-navy">Couldn’t load the league</p>
+        <p className="mt-2 text-sm text-pl-muted">
+          {state.status === 'error' ? state.message : 'Unknown error'}. The scheduled job may not have run yet.
+        </p>
+      </div>
+    </div>
+  )
+}
+
 export function Layout() {
-  const { data } = useData()
+  const { state } = useDataState()
+  const data = state.status === 'ready' ? state.data : null
   const nameOf = (key: string) =>
-    data.league.managers.find((m) => m.key === key)?.displayName ?? key
+    data?.league.managers.find((m) => m.key === key)?.displayName ?? key
 
   return (
     <div className="min-h-dvh lg:flex">
@@ -101,7 +137,13 @@ export function Layout() {
         </div>
 
         <div className="mt-auto min-h-0 overflow-y-auto px-4 py-3">
-          <MiniTable rows={data.season.rows} nameOf={nameOf} />
+          {data && (
+            <MiniTable
+              rows={data.season.rows}
+              nameOf={nameOf}
+              ranked={data.gameweeks.some((gw) => gw.finished)}
+            />
+          )}
         </div>
 
         <div className="border-t border-pl-border px-4 py-2.5">
@@ -119,7 +161,7 @@ export function Layout() {
       </div>
 
       <main className="min-w-0 flex-1 pb-20 lg:pb-0">
-        <Outlet />
+        {data ? <Outlet /> : <DataGate state={state} />}
       </main>
 
       {/* Mobile bottom tabs. The mini table is not one of them — it lives
