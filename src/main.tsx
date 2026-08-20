@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { HashRouter, Route, Routes } from 'react-router-dom'
+import { RouterProvider, createHashRouter } from 'react-router-dom'
 import './index.css'
 import { DataProvider } from './data'
 import { Layout } from './components/Layout'
@@ -12,26 +12,34 @@ import { Players } from './pages/Players'
 import { Honours } from './pages/Honours'
 
 /**
- * HashRouter rather than BrowserRouter: GitHub Pages serves static files only,
- * so a deep link to /players would 404 without a 404.html redirect dance.
+ * Hash routing rather than browser routing: GitHub Pages serves static files
+ * only, so a deep link to /players would 404 without a 404.html redirect dance.
  * Hash routing needs no server cooperation at all.
+ *
+ * A data router rather than the declarative <Routes> form, so that
+ * <ScrollRestoration> can be used. Restoring scroll by hand means an effect
+ * that fires on every render and cannot tell a fresh navigation from a back
+ * button, which is the distinction that matters most here.
  */
+const router = createHashRouter([
+  {
+    element: <Layout />,
+    children: [
+      { index: true, element: <Home /> },
+      { path: 'table', element: <LeagueTable /> },
+      { path: 'managers', element: <Managers /> },
+      { path: 'managers/:key/squad', element: <Squad /> },
+      { path: 'players', element: <Players /> },
+      { path: 'honours', element: <Honours /> },
+      { path: '*', element: <Home /> },
+    ],
+  },
+])
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <DataProvider>
-      <HashRouter>
-        <Routes>
-          <Route element={<Layout />}>
-            <Route index element={<Home />} />
-            <Route path="table" element={<LeagueTable />} />
-            <Route path="managers" element={<Managers />} />
-            <Route path="managers/:key/squad" element={<Squad />} />
-            <Route path="players" element={<Players />} />
-            <Route path="honours" element={<Honours />} />
-            <Route path="*" element={<Home />} />
-          </Route>
-        </Routes>
-      </HashRouter>
+      <RouterProvider router={router} />
     </DataProvider>
   </StrictMode>
 )

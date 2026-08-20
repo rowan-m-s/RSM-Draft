@@ -97,7 +97,7 @@ function PlayerCard({
 
 export function Squad() {
   const { key } = useParams<{ key: string }>()
-  const [params, setParams] = useSearchParams()
+  const [params] = useSearchParams()
   const navigate = useNavigate()
   const { data } = useData()
 
@@ -189,8 +189,11 @@ export function Squad() {
     fixtureLabel(fixtures?.byEvent?.[String(gameweek)]?.[String(entry.player.teamId)], shortNameOf)
 
   const setGameweek = (next: number) => {
-    params.set('gw', String(next))
-    setParams(params, { replace: true })
+    // Same page, different week. `replace` keeps the back button useful, and
+    // `preventScrollReset` stops the scroll position being thrown away mid
+    // drag. Routed through navigate() rather than the useSearchParams setter
+    // because that setter does not forward the flag.
+    navigate(`?gw=${next}`, { replace: true, preventScrollReset: true })
   }
 
   return (
@@ -248,7 +251,7 @@ export function Squad() {
           </div>
         )}
 
-        {loading ? (
+        {starters.length === 0 && loading ? (
           <div className="card p-10 text-center text-sm text-pl-muted">Loading…</div>
         ) : starters.length === 0 ? (
           <div className="card p-10 text-center">
@@ -261,14 +264,23 @@ export function Squad() {
           </div>
         ) : (
           <>
-            <Pitch
-              rows={ROWS.map((row) => byRow(row))}
-              mode={mode}
-              fixtureFor={fixtureFor}
-              locked={hasPicks}
-            />
+            {/*
+              Kept on screen while the next gameweek loads rather than being
+              swapped for a spinner. Replacing it collapses the page to a
+              fraction of its height, and the browser clamps the scroll
+              position to fit, so a slider drag threw the reader back to the
+              top. Nothing was scrolling; the page was simply getting shorter.
+            */}
+            <div className={loading ? 'opacity-60 transition-opacity' : 'transition-opacity'}>
+              <Pitch
+                rows={ROWS.map((row) => byRow(row))}
+                mode={mode}
+                fixtureFor={fixtureFor}
+                locked={hasPicks}
+              />
 
-            {bench.length > 0 && <Bench bench={bench} mode={mode} fixtureFor={fixtureFor} />}
+              {bench.length > 0 && <Bench bench={bench} mode={mode} fixtureFor={fixtureFor} />}
+            </div>
 
             <p className="mt-3 text-xs leading-relaxed text-pl-muted">
               {started

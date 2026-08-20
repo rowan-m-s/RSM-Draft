@@ -1,4 +1,4 @@
-import { NavLink, Outlet } from 'react-router-dom'
+import { NavLink, Outlet, ScrollRestoration } from 'react-router-dom'
 import { useDataState } from '../data'
 import { Freshness } from './Freshness'
 import { ManagerAvatar } from './Img'
@@ -117,6 +117,19 @@ export function Layout() {
 
   return (
     <div className="min-h-dvh lg:flex">
+      {/*
+        Scroll handling. Keyed per history entry, which is the default: a fresh
+        navigation has no saved position and therefore starts at the top, while
+        going back replays the position saved for that entry.
+
+        Navigations that only rewrite the query string opt out individually
+        with `preventScrollReset`, so dragging the gameweek slider does not
+        yank the reader to the top mid interaction. Keying this component on
+        the pathname instead looks like it would solve that, but does not: it
+        restores the last position *saved* for the path, which on a slider drag
+        is whatever it was when the page first loaded.
+      */}
+      <ScrollRestoration />
       {/* Desktop sidebar. Fixed, white, table pinned at the bottom. */}
       {/* The sidebar mark is a wordmark, not a second logo. The Premier League
           lion is white and would be invisible here; it belongs on the purple
