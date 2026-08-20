@@ -22,7 +22,16 @@ export function Banner({
   return (
     <header>
       <div className="banner-gradient flex flex-col gap-4 px-4 py-5 sm:flex-row sm:items-center sm:gap-6 sm:px-6 sm:py-6">
-        <img src={LION} alt="" width={48} height={48} className="hidden h-12 w-12 shrink-0 sm:block" />
+        {/* The supplied artwork is the full lockup — lion plus wordmark, 500×210,
+            so about 2.38:1. Height is fixed and width follows; giving it a
+            square box squashes it. */}
+        <img
+          src={LION}
+          alt="Premier League"
+          width={114}
+          height={48}
+          className="hidden h-12 w-auto shrink-0 object-contain sm:block"
+        />
         <div className="min-w-0 flex-1">
           <p className="eyebrow text-pl-cyan">{season}</p>
           <h1 className="display mt-0.5 text-3xl leading-none text-pl-white sm:text-4xl">{title}</h1>

@@ -188,7 +188,7 @@ export function Home() {
       <Banner
         season={`Season ${data.league.season.replace('20', '').replace('/20', '/')}`}
         title="RSM Draft"
-        subtitle="Eleven managers. £5 a week for finishing bottom. £110 for finishing top."
+        subtitle="Eleven managers. Weekly punishments and monthly prizes."
       />
 
       <PageBody>

@@ -15,7 +15,15 @@
 import { mkdir, readdir, stat, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import sharp from 'sharp'
-import { FORMATS, MANAGER_SETS, OUT_DIR, SEASON_SETS, SOURCE_DIR, parseSourceName } from './images.shared.mjs'
+import {
+  FORMATS,
+  MANAGER_KEYS,
+  MANAGER_SETS,
+  OUT_DIR,
+  SEASON_SETS,
+  SOURCE_DIR,
+  parseSourceName,
+} from './images.shared.mjs'
 
 const force = process.argv.includes('--force')
 
@@ -36,26 +44,119 @@ const RECIPES = {
 }
 
 /**
- * All eleven icons are the same studio headshot: square, white background,
- * head about 8–48% down and horizontally centred. Resizing the whole square
- * into a 28px circle leaves a recognisable tie and an unrecognisable face, so
- * take a square off the top instead.
+ * Where the head actually is, measured rather than assumed.
  *
- * Fixed proportions rather than sharp's `attention` strategy: the sources are
- * already square, so `cover` never crops, and attention on a white-background
- * portrait latches onto the suit as often as the face. These eleven are
- * consistent enough that fixed numbers beat a heuristic.
+ * The eleven icons are the same studio setup — square, white background,
+ * subject centred — but the framing is not consistent: the top of the head
+ * ranges from 11% to 24% down the image, and the heads differ in size. A fixed
+ * crop that suits one person clips the next one's chin.
+ *
+ * The subject is dark on white, so a row-by-row width profile finds the shape
+ * directly. Reading down: nothing, then the head (widening, then narrowing),
+ * then a minimum at the neck, then a sharp jump at the shoulders. The neck
+ * minimum is the reliable landmark; the chin sits just above it.
+ *
+ * sharp's `attention` strategy is no use here — the sources are already square
+ * so `cover` never crops, and on a white-background portrait attention latches
+ * onto the suit and tie as often as the face.
  */
-const FACE_CROP = { side: 0.6, top: 0.04 }
+const ANALYSIS_SIZE = 400
+/** Anything darker than this is subject, not backdrop. */
+const SUBJECT_THRESHOLD = 235
 
-function faceRegion(meta) {
-  const side = Math.round(Math.min(meta.width, meta.height) * FACE_CROP.side)
-  return {
-    left: Math.round((meta.width - side) / 2),
-    top: Math.round(meta.height * FACE_CROP.top),
-    width: side,
-    height: side,
+async function measureHead(file) {
+  const { data, info } = await sharp(file)
+    .flatten({ background: '#ffffff' })
+    .resize(ANALYSIS_SIZE, ANALYSIS_SIZE, { fit: 'fill' })
+    .greyscale()
+    .raw()
+    .toBuffer({ resolveWithObject: true })
+
+  const rows = []
+  for (let y = 0; y < info.height; y++) {
+    let minX = -1
+    let maxX = -1
+    let count = 0
+    for (let x = 0; x < info.width; x++) {
+      if (data[y * info.width + x] < SUBJECT_THRESHOLD) {
+        if (minX < 0) minX = x
+        maxX = x
+        count++
+      }
+    }
+    rows.push({ width: maxX < 0 ? 0 : maxX - minX + 1, count, minX, maxX })
   }
+
+  // A few stray dark pixels are compression noise, not hair.
+  const headTop = rows.findIndex((r) => r.count > 3)
+  if (headTop < 0) return null
+
+  let peakY = headTop
+  let peakWidth = 0
+  for (let y = headTop; y < headTop + (info.height - headTop) * 0.5; y++) {
+    if (rows[y].width > peakWidth) {
+      peakWidth = rows[y].width
+      peakY = y
+    }
+  }
+
+  let shoulderY = rows.findIndex((r, y) => y > peakY && r.width > peakWidth * 1.6)
+  if (shoulderY < 0) shoulderY = info.height - 1
+
+  let chinY = peakY
+  let neckWidth = Infinity
+  for (let y = peakY; y < shoulderY; y++) {
+    if (rows[y].width <= neckWidth) {
+      neckWidth = rows[y].width
+      chinY = y
+    }
+  }
+
+  // Horizontal centre taken across the head only, so a turned shoulder or a
+  // raised arm cannot drag the framing sideways.
+  let sumX = 0
+  let n = 0
+  for (let y = peakY; y < chinY; y++) {
+    if (rows[y].width > peakWidth * 0.5) {
+      sumX += (rows[y].minX + rows[y].maxX) / 2
+      n++
+    }
+  }
+
+  return {
+    headTop: headTop / info.height,
+    chin: chinY / info.height,
+    centreX: (n ? sumX / n : info.width / 2) / info.width,
+  }
+}
+
+/**
+ * Headroom above the hairline and below the chin, as multiples of head height.
+ * Slightly more below than above so the head sits a touch high in the circle,
+ * which is how portraits are normally cropped.
+ */
+const HEAD_PADDING = { above: 0.26, below: 0.42 }
+
+function faceRegion(meta, head) {
+  const size = Math.min(meta.width, meta.height)
+  if (!head) {
+    // Fallback if the profile could not be read — the old fixed crop.
+    const side = Math.round(size * 0.6)
+    return { left: Math.round((meta.width - side) / 2), top: Math.round(meta.height * 0.04), width: side, height: side }
+  }
+
+  const headHeight = (head.chin - head.headTop) * meta.height
+  let side = Math.round(headHeight * (1 + HEAD_PADDING.above + HEAD_PADDING.below))
+  let top = Math.round(head.headTop * meta.height - headHeight * HEAD_PADDING.above)
+  let left = Math.round(head.centreX * meta.width - side / 2)
+
+  // Clamp inside the image without changing the crop size, so every icon keeps
+  // the same head-to-frame ratio.
+  side = Math.min(side, meta.width, meta.height)
+  top = Math.max(0, Math.min(top, meta.height - side))
+  left = Math.max(0, Math.min(left, meta.width - side))
+
+  return { left, top, width: side, height: side }
 }
 
 const QUALITY = { webp: 82, jpg: 80 }
@@ -111,6 +212,8 @@ async function main() {
     const sourceTime = await mtime(job.source)
     const meta = await sharp(job.source).metadata()
     const orientation = meta.width >= meta.height ? 'landscape' : 'portrait'
+    const head = recipe.faceCrop ? await measureHead(job.source) : null
+    const crop = recipe.faceCrop ? faceRegion(meta, head) : null
 
     for (const size of recipe.sizes) {
       for (const format of FORMATS) {
@@ -121,7 +224,7 @@ async function main() {
         }
 
         let pipeline = sharp(job.source).rotate()
-        if (recipe.faceCrop) pipeline = pipeline.extract(faceRegion(meta))
+        if (crop) pipeline = pipeline.extract(crop)
         pipeline = pipeline.resize({
           width: size,
           height: size,
@@ -147,6 +250,7 @@ async function main() {
       source: `${(sourceSize / 1024 / 1024).toFixed(1)} MB`,
       out: `${(outSize.size / 1024).toFixed(0)} KB`,
       dimensions: `${meta.width}×${meta.height}`,
+      head: head ? `top ${(head.headTop * 100).toFixed(0)}% chin ${(head.chin * 100).toFixed(0)}%` : '',
     })
   }
 
@@ -159,11 +263,19 @@ async function main() {
   // The Premier League lion, used in the header and every page banner.
   const logoSource = path.join(SOURCE_DIR, 'PremierLeagueLogo.png')
   if (await mtime(logoSource)) {
+    // The supplied file is a 500×210 lockup — the lion *and* the wordmark, so
+    // roughly 2.4:1. It is not a square lion, and anything that renders it in a
+    // square box squashes it. `fit: inside` preserves the ratio here; the
+    // markup has to do the same.
+    const logoMeta = await sharp(logoSource).metadata()
     await sharp(logoSource)
-      .resize({ width: 240, fit: 'inside', withoutEnlargement: true })
+      .resize({ width: 480, fit: 'inside', withoutEnlargement: true })
       .png({ compressionLevel: 9 })
       .toFile(path.join(OUT_DIR, 'premier-league-logo.png'))
-    console.log('Wrote public/images/premier-league-logo.png')
+    console.log(
+      `Wrote public/images/premier-league-logo.png ` +
+        `(source ${logoMeta.width}×${logoMeta.height}, aspect ${(logoMeta.width / logoMeta.height).toFixed(2)}:1 — render with width:auto)`
+    )
   } else {
     console.warn(`Missing ${logoSource} — the banner lion will not render.`)
   }
@@ -186,6 +298,57 @@ async function main() {
 </svg>\n`
   )
   console.log('Wrote fallback silhouette and badge placeholder.')
+
+  if (process.argv.includes('--preview')) await writeIconContactSheet()
+}
+
+/**
+ * `--preview` writes a contact sheet of every icon masked into a circle, which
+ * is the only honest way to check a face crop. A number in a config file tells
+ * you nothing about whether someone's chin is missing.
+ */
+async function writeIconContactSheet() {
+  const size = 150
+  const inner = size - 10
+  const mask = Buffer.from(
+    `<svg width="${inner}" height="${inner}"><circle cx="${inner / 2}" cy="${inner / 2}" r="${inner / 2}" fill="#fff"/></svg>`
+  )
+
+  const tiles = []
+  for (const key of MANAGER_KEYS) {
+    const circle = await sharp(path.join(OUT_DIR, 'icon', `${key}@2x.webp`))
+      .resize(inner, inner)
+      .composite([{ input: mask, blend: 'dest-in' }])
+      .png()
+      .toBuffer()
+    const frame = Buffer.from(
+      `<svg width="${size}" height="${size + 20}"><rect width="${size}" height="${size + 20}" fill="#f7f7f9"/>` +
+        `<circle cx="${size / 2}" cy="${size / 2}" r="${inner / 2}" fill="#fff" stroke="#e5e5eb"/>` +
+        `<text x="${size / 2}" y="${size + 14}" font-family="monospace" font-size="13" text-anchor="middle" fill="#1b1b3a">${key}</text></svg>`
+    )
+    tiles.push(await sharp(frame).composite([{ input: circle, left: 5, top: 5 }]).png().toBuffer())
+  }
+
+  const columns = 6
+  const out = 'icon-contact-sheet.png'
+  await sharp({
+    create: {
+      width: size * columns,
+      height: (size + 20) * Math.ceil(tiles.length / columns),
+      channels: 3,
+      background: '#f7f7f9',
+    },
+  })
+    .composite(
+      tiles.map((input, i) => ({
+        input,
+        left: (i % columns) * size,
+        top: Math.floor(i / columns) * (size + 20),
+      }))
+    )
+    .png()
+    .toFile(out)
+  console.log(`Wrote ${out} — check every chin and hairline before committing.`)
 }
 
 main().catch((err) => {
