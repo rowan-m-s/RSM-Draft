@@ -366,7 +366,70 @@ async function main() {
   )
   console.log('Wrote fallback silhouette and badge placeholder.')
 
+  await optimiseOverrides()
+
   if (process.argv.includes('--preview')) await writeIconContactSheet()
+}
+
+/**
+ * Shrink the local player photo overrides, in place.
+ *
+ * These are dropped into public/images/players/ by hand and served straight
+ * from there, so nothing else in the pipeline ever touches them. Left alone a
+ * single 2048px source can be 4 MB, which is twenty times the largest manager
+ * card and lands on a phone in a pub.
+ *
+ * Capped at the CDN's own largest variant, 500px, which is far more than the
+ * 64px circles they are actually rendered in. Alpha is preserved: these are
+ * cut-outs and a flattened background would show as a box on the pitch.
+ */
+const OVERRIDE_MAX_EDGE = 500
+
+async function optimiseOverrides() {
+  const dir = path.join(OUT_DIR, 'players')
+  let files
+  try {
+    files = (await readdir(dir)).filter((name) => /^\d+\.png$/.test(name))
+  } catch {
+    return
+  }
+  if (files.length === 0) return
+
+  const report = []
+  for (const name of files) {
+    const file = path.join(dir, name)
+    const before = (await stat(file)).size
+    const meta = await sharp(file).metadata()
+
+    const oversized = Math.max(meta.width, meta.height) > OVERRIDE_MAX_EDGE
+    // Already small and already within the cap: nothing to gain.
+    if (!oversized && before < 120_000) {
+      report.push({ file: name, size: `${(before / 1024).toFixed(0)} KB`, action: 'already small' })
+      continue
+    }
+
+    const optimised = await sharp(file)
+      .resize({ width: OVERRIDE_MAX_EDGE, height: OVERRIDE_MAX_EDGE, fit: 'inside', withoutEnlargement: true })
+      .png({ compressionLevel: 9, effort: 10 })
+      .toBuffer()
+
+    // Never make a file bigger by "optimising" it.
+    if (optimised.length >= before && !oversized) {
+      report.push({ file: name, size: `${(before / 1024).toFixed(0)} KB`, action: 'left alone' })
+      continue
+    }
+
+    await writeFile(file, optimised)
+    const after = (await sharp(optimised).metadata())
+    report.push({
+      file: name,
+      size: `${(before / 1024).toFixed(0)} KB -> ${(optimised.length / 1024).toFixed(0)} KB`,
+      action: `${meta.width}x${meta.height} -> ${after.width}x${after.height}`,
+    })
+  }
+
+  console.log('\nPlayer photo overrides:')
+  console.table(report)
 }
 
 /**
