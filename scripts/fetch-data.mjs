@@ -548,7 +548,7 @@ async function main() {
   const gameweeks = buildGameweeks({ events, classicDataCheckedById, scoresByGw, perGw, elementName })
   const months = buildMonths({ gameweeks, managerKeys, perGw, elementName })
   const season = buildSeason({ gameweeks, months, managerKeys, generatedAt, perGw, elementName })
-  const fixtures = buildFixtures({ fixtures: allFixtures, generatedAt })
+  const fixtures = buildFixtures({ fixtures: allFixtures, teams, generatedAt })
   const players = buildPlayers({
     elements,
     teams,

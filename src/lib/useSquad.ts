@@ -73,3 +73,30 @@ export function useSquad(gameweek: number | null) {
 
   return { squad, fixtures, loading, error }
 }
+
+/** The season's fixtures alone, for the Fixtures page. Same cache as above. */
+export function useFixtures() {
+  const [fixtures, setFixtures] = useState<FixturesFile | null>(null)
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
+
+  useEffect(() => {
+    let cancelled = false
+    loadJson<FixturesFile>('data/fixtures.json')
+      .then((data) => {
+        if (cancelled) return
+        setFixtures(data)
+        setLoading(false)
+      })
+      .catch((reason) => {
+        if (cancelled) return
+        setError(String(reason))
+        setLoading(false)
+      })
+    return () => {
+      cancelled = true
+    }
+  }, [])
+
+  return { fixtures, loading, error }
+}

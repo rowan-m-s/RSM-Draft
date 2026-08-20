@@ -192,9 +192,39 @@ export interface Fixture {
   kickoff: string | null
 }
 
+/** One real Premier League match, for the Fixtures page. */
+export interface Match {
+  id: number
+  /** Null when postponed and not yet rescheduled. */
+  event: number | null
+  /** Kickoff in UTC. Null when not yet scheduled. */
+  kickoff: string | null
+  home: number
+  away: number
+  homeScore: number | null
+  awayScore: number | null
+  started: boolean
+  finished: boolean
+  finishedProvisional: boolean
+  /** FPL's own fixture difficulty rating per side, 1 to 5. */
+  homeDifficulty: number | null
+  awayDifficulty: number | null
+}
+
+export interface Team {
+  id: number
+  name: string
+  shortName: string
+  /** Drives the badge URL: /badges/{size}/t{code}.png */
+  code: number
+}
+
 export interface FixturesFile {
   /** event id → team id → fixtures (an array: double gameweeks exist). */
   byEvent: Record<string, Record<string, Fixture[]>>
+  /** Every match of the season, gameweek then kickoff order; unscheduled last. */
+  matches: Match[]
+  teams: Team[]
   generatedAt: string
 }
 

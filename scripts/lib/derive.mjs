@@ -377,7 +377,9 @@ export function checkBalanceInvariant({ season, months }) {
  * assumed. Stored as an array per team because a double gameweek gives a side
  * two fixtures in one event, and a blank gives it none.
  */
-export function buildFixtures({ fixtures, generatedAt }) {
+export function buildFixtures({ fixtures, teams = [], generatedAt }) {
+  // Per team per gameweek, for the squad cards. Unscheduled fixtures have no
+  // gameweek to file under, so they only appear in the flat list below.
   const byEvent = {}
   for (const fixture of fixtures) {
     if (fixture.event == null) continue
@@ -388,7 +390,39 @@ export function buildFixtures({ fixtures, generatedAt }) {
     add(fixture.team_h, fixture.team_a, true)
     add(fixture.team_a, fixture.team_h, false)
   }
-  return { byEvent, generatedAt }
+
+  // The full season, one record per match, for the Fixtures page. Kept
+  // whole rather than trimmed to the weeks in use: it is small, and the page
+  // then loads without a second request. Difficulty is FPL's own rating per
+  // side, kept because the payload carries it, not invented where it does
+  // not. Postponed fixtures keep a null gameweek and kickoff; the page groups
+  // those separately rather than dropping them.
+  const matches = fixtures
+    .map((f) => ({
+      id: f.id,
+      event: f.event ?? null,
+      kickoff: f.kickoff_time ?? null,
+      home: f.team_h,
+      away: f.team_a,
+      homeScore: f.team_h_score ?? null,
+      awayScore: f.team_a_score ?? null,
+      started: Boolean(f.started),
+      finished: Boolean(f.finished),
+      finishedProvisional: Boolean(f.finished_provisional),
+      homeDifficulty: f.team_h_difficulty ?? null,
+      awayDifficulty: f.team_a_difficulty ?? null,
+    }))
+    .sort((a, b) => {
+      if ((a.event ?? 99) !== (b.event ?? 99)) return (a.event ?? 99) - (b.event ?? 99)
+      if (a.kickoff !== b.kickoff) return (a.kickoff ?? '') < (b.kickoff ?? '') ? -1 : 1
+      return a.id - b.id
+    })
+
+  const teamList = teams
+    .map((t) => ({ id: t.id, name: t.name, shortName: t.short_name, code: t.code }))
+    .sort((a, b) => a.name.localeCompare(b.name))
+
+  return { byEvent, matches, teams: teamList, generatedAt }
 }
 
 /**

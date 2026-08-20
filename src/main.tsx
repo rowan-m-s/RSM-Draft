@@ -9,6 +9,7 @@ import { LeagueTable } from './pages/LeagueTable'
 import { Managers } from './pages/Managers'
 import { Squad } from './pages/Squad'
 import { Players } from './pages/Players'
+import { Fixtures } from './pages/Fixtures'
 import { Honours } from './pages/Honours'
 
 /**
@@ -30,6 +31,7 @@ const router = createHashRouter([
       { path: 'managers', element: <Managers /> },
       { path: 'managers/:key/squad', element: <Squad /> },
       { path: 'players', element: <Players /> },
+      { path: 'fixtures', element: <Fixtures /> },
       { path: 'honours', element: <Honours /> },
       { path: '*', element: <Home /> },
     ],

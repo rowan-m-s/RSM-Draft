@@ -401,6 +401,30 @@ describe('buildFixtures', () => {
     expect(Object.keys(byEvent)).toEqual(['1'])
   })
 
+  it('keeps every match in a flat list, unscheduled ones last', () => {
+    const full = [
+      { id: 3, event: 1, team_h: 10, team_a: 6, kickoff_time: '2026-08-24T19:00:00Z', started: true, finished: true, team_h_score: 2, team_a_score: 0, team_h_difficulty: 2, team_a_difficulty: 4 },
+      { id: 1, event: 1, team_h: 9, team_a: 8, kickoff_time: '2026-08-22T14:00:00Z' },
+      { id: 2, event: null, team_h: 1, team_a: 2, kickoff_time: null },
+    ]
+    const { matches } = buildFixtures({ fixtures: full, generatedAt: 'x' })
+    expect(matches.map((m) => m.id)).toEqual([1, 3, 2])
+    expect(matches[1]).toMatchObject({ homeScore: 2, awayScore: 0, finished: true, homeDifficulty: 2, awayDifficulty: 4 })
+    expect(matches[2]).toMatchObject({ event: null, kickoff: null, started: false, homeScore: null, homeDifficulty: null })
+  })
+
+  it('carries the team table, alphabetically', () => {
+    const teams = [
+      { id: 2, name: 'Brentford', short_name: 'BRE', code: 94 },
+      { id: 1, name: 'Arsenal', short_name: 'ARS', code: 3 },
+    ]
+    const { teams: out } = buildFixtures({ fixtures: [], teams, generatedAt: 'x' })
+    expect(out).toEqual([
+      { id: 1, name: 'Arsenal', shortName: 'ARS', code: 3 },
+      { id: 2, name: 'Brentford', shortName: 'BRE', code: 94 },
+    ])
+  })
+
   it('keeps both games of a double gameweek', () => {
     const { byEvent } = buildFixtures({
       fixtures: [

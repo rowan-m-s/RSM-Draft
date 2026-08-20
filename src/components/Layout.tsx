@@ -11,6 +11,7 @@ const NAV = [
   { to: '/table', label: 'League Table', end: false },
   { to: '/managers', label: 'Managers', end: false },
   { to: '/players', label: 'Players', end: false },
+  { to: '/fixtures', label: 'Fixtures', end: false },
   { to: '/honours', label: 'Honours', end: false },
 ]
 
@@ -196,7 +197,7 @@ export function Layout() {
         aria-label="Main"
         className="fixed inset-x-0 bottom-0 z-20 border-t border-pl-border bg-pl-bg pb-[env(safe-area-inset-bottom)] lg:hidden"
       >
-        <ul className="grid grid-cols-5">
+        <ul className="grid grid-cols-6">
           {NAV.map((item) => (
             <li key={item.to}>
               <NavLink
@@ -204,7 +205,7 @@ export function Layout() {
                 end={item.end}
                 className={({ isActive }) =>
                   [
-                    'flex h-14 flex-col items-center justify-center gap-1 border-t-2 px-1 text-center text-[11px] leading-tight',
+                    'flex h-14 flex-col items-center justify-center gap-1 border-t-2 px-0.5 text-center text-[10px] leading-tight',
                     isActive ? 'border-pl-cyan font-semibold text-pl-text' : 'border-transparent text-pl-muted',
                   ].join(' ')
                 }
