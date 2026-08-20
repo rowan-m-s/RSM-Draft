@@ -184,11 +184,59 @@ export function buildSeason({ gameweeks, months, managerKeys, generatedAt }) {
 
 const POSITIONS = { 1: 'GKP', 2: 'DEF', 3: 'MID', 4: 'FWD' }
 
-export function buildPlayers({ elements, teams, ownerByElementId, generatedAt }) {
+/**
+ * Before a ball is kicked, FPL's `elements` carry *last* season's statistics.
+ *
+ * That is deliberate on their side — the draft is ranked off those numbers, so
+ * people can see who was good last year. But publishing them under a "Season
+ * 26/27" banner would show Haaland on 239 points and 27 goals before the
+ * season has started, which is simply false.
+ *
+ * So the stats are zeroed until a gameweek has actually been played, and there
+ * is no leading scorer to name. Once GW1 lands FPL resets the counters and the
+ * real figures flow through.
+ */
+export function buildPlayers({ elements, teams, ownerByElementId, generatedAt, gameweeksPlayed = 0 }) {
   const teamById = new Map(teams.map((t) => [t.id, t]))
+  const seasonStarted = gameweeksPlayed > 0
+
+  // If FPL ever stops resetting at the rollover, last season's totals would
+  // silently inflate this season's table. Nobody can play more minutes than
+  // there have been minutes to play — allowing for double gameweeks and a
+  // generous margin. Tripping this means the reset assumption has broken.
+  if (seasonStarted) {
+    const ceiling = 90 * 2 * gameweeksPlayed + 90
+    const worst = elements.reduce((max, e) => (e.minutes > max.minutes ? e : max), elements[0])
+    if (worst.minutes > ceiling) {
+      throw new Error(
+        `${worst.web_name} has ${worst.minutes} minutes after ${gameweeksPlayed} gameweek(s), which is ` +
+          `impossible (ceiling ${ceiling}). FPL looks to be serving last season's statistics, so every ` +
+          `points figure would be wrong. Refusing to publish.`
+      )
+    }
+  }
 
   const all = elements.map((element) => {
     const team = teamById.get(element.team)
+    if (!seasonStarted) {
+      return {
+        id: element.id,
+        name: element.web_name,
+        position: POSITIONS[element.element_type],
+        club: team?.name ?? 'Unknown',
+        clubShort: team?.short_name ?? '???',
+        clubCode: team?.code ?? 0,
+        photoCode: element.code,
+        owner: ownerByElementId.get(element.id) ?? null,
+        points: 0,
+        ppg: 0,
+        goals: 0,
+        assists: 0,
+        cleanSheets: 0,
+        bonus: 0,
+        positionRank: 0,
+      }
+    }
     return {
       id: element.id,
       name: element.web_name,
@@ -212,11 +260,13 @@ export function buildPlayers({ elements, teams, ownerByElementId, generatedAt })
 
   // Rank within position, computed by us. FPL Draft has no prices — players are
   // drafted, not bought — so there is no fee or value to show instead.
-  for (const position of Object.values(POSITIONS)) {
-    all
-      .filter((p) => p.position === position)
-      .sort((a, b) => b.points - a.points)
-      .forEach((p, i) => (p.positionRank = i + 1))
+  if (seasonStarted) {
+    for (const position of Object.values(POSITIONS)) {
+      all
+        .filter((p) => p.position === position)
+        .sort((a, b) => b.points - a.points)
+        .forEach((p, i) => (p.positionRank = i + 1))
+    }
   }
 
   const byPoints = (a, b) => b.points - a.points || a.name.localeCompare(b.name)
@@ -226,8 +276,9 @@ export function buildPlayers({ elements, teams, ownerByElementId, generatedAt })
   return {
     owned,
     freeAgents,
-    // The banner shows the best player in the league, owned or not.
-    leadingScorer: [...all].sort(byPoints)[0] ?? null,
+    // The banner shows the best player in the league, owned or not — but there
+    // is no such thing before anyone has scored.
+    leadingScorer: seasonStarted ? ([...all].sort(byPoints)[0] ?? null) : null,
     generatedAt,
   }
 }

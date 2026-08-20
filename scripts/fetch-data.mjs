@@ -430,7 +430,13 @@ async function main() {
   const gameweeks = buildGameweeks({ events, classicDataCheckedById, scoresByGw })
   const months = buildMonths({ gameweeks, managerKeys, perGw, elementName })
   const season = buildSeason({ gameweeks, months, managerKeys, generatedAt })
-  const players = buildPlayers({ elements, teams, ownerByElementId, generatedAt })
+  const players = buildPlayers({
+    elements,
+    teams,
+    ownerByElementId,
+    generatedAt,
+    gameweeksPlayed: finished.length,
+  })
 
   const invariant = checkBalanceInvariant({ season, months })
   if (!invariant.ok) {
