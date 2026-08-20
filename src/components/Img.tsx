@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import type { PhotoSize } from '../lib/assets'
 import {
   BADGE_FALLBACK,
   PLAYER_FALLBACK,
@@ -6,7 +7,6 @@ import {
   managerIcon2x,
   managerImage,
   playerPhoto,
-  playerPhotoLarge,
 } from '../lib/assets'
 
 interface ImgProps {
@@ -96,12 +96,12 @@ export function PlayerPhoto({
 }: {
   photoCode: number
   name: string
-  size?: 'small' | 'large'
+  size?: PhotoSize
   className?: string
 }) {
   return (
     <Img
-      src={size === 'large' ? playerPhotoLarge(photoCode) : playerPhoto(photoCode)}
+      src={playerPhoto(photoCode, size)}
       fallback={PLAYER_FALLBACK}
       alt={name}
       className={className}
