@@ -35,7 +35,7 @@ const MANAGERS_CONFIG = 'src/config/managers.json'
 
 /** Courtesy to FPL: identify ourselves and stay well clear of their limits. */
 const USER_AGENT =
-  'RSM-Draft-Tracker/1.0 (11-manager private league tracker; https://github.com/rowanmat/RSM-Draft; rowanmat@gmail.com)'
+  'RSM-Draft-Tracker/1.0 (11-manager private league tracker; https://github.com/rowan-m-s/RSM-Draft; rowan-m-s on GitHub)'
 const REQUEST_GAP_MS = 200
 
 /**

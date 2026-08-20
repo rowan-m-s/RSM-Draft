@@ -15,7 +15,7 @@ import path from 'node:path'
 const LEAGUE_ID = 23939
 const API = 'https://draft.premierleague.com/api'
 const OUT = path.resolve('.api-samples')
-const UA = 'RSM-Draft-Tracker/0.1 (league tracker for 11 mates; contact rowanmat@gmail.com)'
+const UA = 'RSM-Draft-Tracker/0.1 (league tracker; https://github.com/rowan-m-s/RSM-Draft)'
 
 const line = (s = '') => console.log(s)
 const head = (s) => {

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { relativeAge } from '../lib/season'
 import { useDataState } from '../data'
 
-const REPO_ACTIONS_URL = 'https://github.com/rowanmat/RSM-Draft/actions'
+const REPO_ACTIONS_URL = 'https://github.com/rowan-m-s/RSM-Draft/actions'
 
 /** Ticks every 30s so "14 minutes ago" ages without a reload. */
 function useAge(generatedAt: string | null) {
