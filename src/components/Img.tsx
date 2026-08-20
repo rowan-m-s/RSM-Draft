@@ -6,12 +6,13 @@ import {
   clubBadge,
   managerIcon2x,
   managerImage,
-  playerPhotoSrc,
+  playerPhotoSources,
 } from '../lib/assets'
 
 interface ImgProps {
   webp?: string
-  src: string
+  /** Tried in order. The first that loads wins. */
+  sources: string[]
   fallback: string
   alt: string
   className?: string
@@ -24,23 +25,27 @@ interface ImgProps {
  * An image that always renders something.
  *
  * Every player image needs this: new signings routinely have no photo for
- * weeks, and a broken-image icon in every third row looks awful. Manager
- * images are asserted at build time so they should never fall back, but the
- * cost of the guard is nil.
+ * weeks, and a broken-image icon in every third row looks awful. Player photos
+ * walk a chain of up to three sources before the fallback, so a missing one
+ * steps down rather than giving up. Manager images are asserted at build time
+ * so they should never fall back, but the cost of the guard is nil.
  */
-export function Img({ webp, src, fallback, alt, className, width, height, loading = 'lazy' }: ImgProps) {
-  const [failed, setFailed] = useState(false)
+export function Img({ webp, sources, fallback, alt, className, width, height, loading = 'lazy' }: ImgProps) {
+  const [index, setIndex] = useState(0)
 
-  // A changed src is a different image, so give it its own chance to load.
-  useEffect(() => setFailed(false), [src])
+  // A different set of sources is a different image, so start again at the top.
+  const key = sources.join('|')
+  useEffect(() => setIndex(0), [key])
 
-  if (failed) {
+  const src = sources[index]
+  if (!src) {
     return <img src={fallback} alt={alt} className={className} width={width} height={height} />
   }
 
   return (
-    <picture>
-      {webp && <source srcSet={webp} type="image/webp" />}
+    <picture key={key}>
+      {/* The webp variant only ever accompanies the first source. */}
+      {webp && index === 0 && <source srcSet={webp} type="image/webp" />}
       <img
         src={src}
         alt={alt}
@@ -48,7 +53,7 @@ export function Img({ webp, src, fallback, alt, className, width, height, loadin
         width={width}
         height={height}
         loading={loading}
-        onError={() => setFailed(true)}
+        onError={() => setIndex((current) => current + 1)}
       />
     </picture>
   )
@@ -78,7 +83,7 @@ export function ManagerAvatar({
   return (
     <Img
       webp={large ? managerIcon2x(managerKey, 'webp') : managerImage('icon', managerKey, 'webp')}
-      src={large ? managerIcon2x(managerKey, 'jpg') : managerImage('icon', managerKey, 'jpg')}
+      sources={[large ? managerIcon2x(managerKey, 'jpg') : managerImage('icon', managerKey, 'jpg')]}
       fallback={AVATAR_FALLBACK}
       alt=""
       width={size}
@@ -101,7 +106,7 @@ export function PlayerPhoto({
 }) {
   return (
     <Img
-      src={playerPhotoSrc(photoCode, size)}
+      sources={playerPhotoSources(photoCode, size)}
       fallback={PLAYER_FALLBACK}
       alt={name}
       className={className}
@@ -112,7 +117,7 @@ export function PlayerPhoto({
 export function ClubBadge({ clubCode, club, size = 20 }: { clubCode: number; club: string; size?: number }) {
   return (
     <Img
-      src={clubBadge(clubCode, 50)}
+      sources={[clubBadge(clubCode, 50)]}
       fallback={BADGE_FALLBACK}
       alt={club}
       width={size}
@@ -144,7 +149,7 @@ export function CardImage({
     <div className={`overflow-hidden rounded-md bg-pl-navy ${className}`}>
       <Img
         webp={managerImage(set, managerKey, 'webp')}
-        src={managerImage(set, managerKey, 'jpg')}
+        sources={[managerImage(set, managerKey, 'jpg')]}
         fallback={AVATAR_FALLBACK}
         alt={alt}
         className="h-full w-full object-contain"

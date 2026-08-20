@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { clubBadge, playerPhoto, playerPhotoSrc, setPlayerImageOverrides } from './assets'
+import { clubBadge, playerPhoto, playerPhotoSources, setPlayerImageOverrides } from './assets'
 
 /**
  * These pin the resolved pattern rather than testing logic.
@@ -45,29 +45,42 @@ describe('club badge URL', () => {
   })
 })
 
-describe('local image overrides', () => {
+describe('the image resolution chain', () => {
   const PALESTRA = 620109
+  const HAALAND = 223094
 
-  it('falls through to the CDN when there is no override', () => {
+  it('is current CDN then legacy CDN when there is no override', () => {
     setPlayerImageOverrides([])
-    expect(playerPhotoSrc(PALESTRA)).toContain('resources.premierleague.com')
+    const [first, second, ...rest] = playerPhotoSources(HAALAND)
+    expect(first).toContain('premierleague25/photos/players/110x140/223094.png')
+    expect(second).toContain('premierleague/photos/players/110x140/p223094.png')
+    expect(rest).toEqual([])
   })
 
-  it('prefers a local file when one exists', () => {
+  it('puts a local override in front of both', () => {
     setPlayerImageOverrides([PALESTRA])
-    expect(playerPhotoSrc(PALESTRA)).toContain(`images/players/${PALESTRA}.png`)
-    expect(playerPhotoSrc(PALESTRA)).not.toContain('resources.premierleague.com')
+    const sources = playerPhotoSources(PALESTRA)
+    expect(sources).toHaveLength(3)
+    expect(sources[0]).toContain(`images/players/${PALESTRA}.png`)
+    expect(sources[1]).toContain('premierleague25')
+    expect(sources[2]).toContain('/p' + PALESTRA)
   })
 
   it('overrides only the player it names', () => {
     setPlayerImageOverrides([PALESTRA])
-    expect(playerPhotoSrc(223094)).toContain('resources.premierleague.com')
+    expect(playerPhotoSources(HAALAND)[0]).toContain('resources.premierleague.com')
   })
 
   it('is keyed on code, so it survives an id reshuffle between seasons', () => {
     // The override list holds element codes. Nothing here ever sees an id.
     setPlayerImageOverrides([PALESTRA])
-    expect(playerPhotoSrc(PALESTRA)).toContain(String(PALESTRA))
+    expect(playerPhotoSources(PALESTRA)[0]).toContain(String(PALESTRA))
     setPlayerImageOverrides([])
+  })
+
+  it('uses 250x250 for the legacy large size, which has no 500x500', () => {
+    setPlayerImageOverrides([])
+    expect(playerPhotoSources(HAALAND, 'large')[0]).toContain('/500x500/')
+    expect(playerPhotoSources(HAALAND, 'large')[1]).toContain('/250x250/')
   })
 })

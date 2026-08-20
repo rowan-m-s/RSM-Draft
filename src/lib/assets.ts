@@ -42,12 +42,28 @@ const RESOURCES = 'https://resources.premierleague.com'
  * that was an old-path size. Files are served at roughly 2× the name.
  *
  * Coverage is not total: 173 of 595 players have no photo, 23 of them owned in
- * this league. Those fall back to the silhouette rather than to the old path,
- * deliberately — the players missing a current photo are overwhelmingly the
- * ones who just transferred, so the old path would show precisely the wrong
- * kit for precisely the players most likely to be looked up.
+ * this league. Of those 23, eleven do resolve on the OLD path, and every one
+ * of the eleven is wearing their previous club's shirt: Bruno G. in Newcastle
+ * stripes, Rogers in Aston Villa, Welbeck in Brighton. That is the cost of the
+ * legacy tier below, and it is accepted knowingly: those photos are stale
+ * precisely because the player just transferred, so FPL will publish a current
+ * one within weeks and the fallback stops firing on its own.
  */
 const PHOTO_SEASON = 'premierleague25'
+
+/**
+ * The previous season's folder, kept as a last resort before the silhouette.
+ *
+ * It holds no players who arrived this summer, and for anyone who moved
+ * between Premier League clubs it shows the old kit. A recognisable player in
+ * the wrong shirt was judged better than an anonymous silhouette, on the basis
+ * that it corrects itself: the moment FPL publishes a current photo the tier
+ * above wins and this one is never reached.
+ *
+ * Note the different filename convention. The legacy path prefixes the code
+ * with `p`; the current one does not.
+ */
+const LEGACY_SEASON = 'premierleague'
 
 /**
  * ── CLUB BADGE PATH ────────────────────────────────────────────────────────
@@ -84,6 +100,13 @@ const PHOTO_SEGMENT: Record<PhotoSize, string> = {
   large: '500x500',
 }
 
+/** The legacy folder has no 500x500; 250x250 is its largest. */
+const LEGACY_SEGMENT: Record<PhotoSize, string> = {
+  tiny: '40x40',
+  small: '110x140',
+  large: '250x250',
+}
+
 export const playerPhoto = (photoCode: number, size: PhotoSize = 'small') =>
   `${RESOURCES}/${PHOTO_SEASON}/photos/players/${PHOTO_SEGMENT[size]}/${photoCode}.png`
 
@@ -109,8 +132,20 @@ export const playerImageOverride = (photoCode: number) =>
   overrides.has(photoCode) ? asset(`images/players/${photoCode}.png`) : null
 
 /** The image to try first: a local override if there is one, else the CDN. */
-export const playerPhotoSrc = (photoCode: number, size: PhotoSize = 'small') =>
-  playerImageOverride(photoCode) ?? playerPhoto(photoCode, size)
+export const playerPhotoLegacy = (photoCode: number, size: PhotoSize = 'small') =>
+  `${RESOURCES}/${LEGACY_SEASON}/photos/players/${LEGACY_SEGMENT[size]}/p${photoCode}.png`
+
+/**
+ * Every source to try for a player, in order, before giving up and showing the
+ * silhouette: local override, current CDN, legacy CDN.
+ *
+ * Walking the list costs a failed request only for the players who need it,
+ * and the browser caches the failure for the session.
+ */
+export function playerPhotoSources(photoCode: number, size: PhotoSize = 'small'): string[] {
+  const override = playerImageOverride(photoCode)
+  return [...(override ? [override] : []), playerPhoto(photoCode, size), playerPhotoLegacy(photoCode, size)]
+}
 
 export const clubBadge = (clubCode: number, size: 20 | 50 | 70 | 100 = 50) => `${PL}/badges/${size}/t${clubCode}.png`
 

@@ -41,9 +41,9 @@ export async function readOverrides() {
  * A missing one answers 403 rather than 404, which still means "no image".
  * Only the existence matters here, so the smallest size is requested.
  */
-async function cdnHasPhoto(code, { userAgent, photoUrl }) {
+async function resolves(url, userAgent) {
   try {
-    const response = await fetch(photoUrl(code), {
+    const response = await fetch(url, {
       headers: { 'User-Agent': userAgent },
       signal: AbortSignal.timeout(15_000),
     })
@@ -71,34 +71,89 @@ async function mapWithLimit(items, limit, worker) {
 }
 
 /**
- * Owned players with neither a local override nor a CDN photo.
+ * Owned players not being served a current photo, split by what to do next.
+ *
+ * The split is the useful part. A player falling through to the legacy CDN is
+ * showing their old club's shirt, but that fixes itself the moment FPL
+ * publishes a current photo, so it needs no action. A player with nothing
+ * anywhere shows a silhouette until somebody finds an image, and those are the
+ * only ones worth spending time on.
  *
  * Scoped to owned players deliberately: several hundred unowned players also
  * lack photos and nobody is going to go looking for those.
  */
-export async function findMissingPhotos({ owned, overrides, userAgent, photoUrl, concurrency = 8 }) {
+export async function findMissingPhotos({
+  owned,
+  overrides,
+  userAgent,
+  photoUrl,
+  legacyPhotoUrl,
+  concurrency = 8,
+}) {
   const candidates = owned.filter((player) => !overrides.has(player.photoCode))
-  const present = await mapWithLimit(candidates, concurrency, (player) =>
-    cdnHasPhoto(player.photoCode, { userAgent, photoUrl })
+  const onCurrent = await mapWithLimit(candidates, concurrency, (player) =>
+    resolves(photoUrl(player.photoCode), userAgent)
   )
-  return candidates.filter((_, i) => !present[i])
+  const withoutCurrent = candidates.filter((_, i) => !onCurrent[i])
+
+  const onLegacy = await mapWithLimit(withoutCurrent, concurrency, (player) =>
+    resolves(legacyPhotoUrl(player.photoCode), userAgent)
+  )
+
+  return {
+    /** Nothing anywhere. Silhouette until an override is supplied. */
+    noImage: withoutCurrent.filter((_, i) => !onLegacy[i]),
+    /** Showing last season's photo. Self-heals; no action needed. */
+    legacyOnly: withoutCurrent.filter((_, i) => onLegacy[i]),
+  }
 }
 
-export function formatMissingReport(missing, nameOf) {
-  if (missing.length === 0) return 'Every owned player has a photo.'
+function table(players, nameOf, withFilename) {
+  const nameWidth = Math.max(...players.map((p) => p.name.length))
+  const pathWidth = withFilename
+    ? Math.max(...players.map((p) => `${OVERRIDE_DIR}/${p.photoCode}.png`.length))
+    : 0
+  return players
+    .sort((a, b) => a.name.localeCompare(b.name))
+    .map((player) => {
+      const prefix = withFilename
+        ? `${`${OVERRIDE_DIR}/${player.photoCode}.png`.padEnd(pathWidth)}   `
+        : `${String(player.photoCode).padEnd(7)}  `
+      return `  ${prefix}${player.name.padEnd(nameWidth)}  ${player.clubShort.padEnd(4)} ${nameOf(player.owner)}`
+    })
+}
 
-  const lines = [
-    `${missing.length} owned player(s) have no photo. Save a square image as the filename shown:`,
-    '',
-  ]
-  const nameWidth = Math.max(...missing.map((p) => p.name.length))
-  const pathWidth = Math.max(...missing.map((p) => `${OVERRIDE_DIR}/${p.photoCode}.png`.length))
-  for (const player of missing.sort((a, b) => a.name.localeCompare(b.name))) {
+export function formatMissingReport({ noImage, legacyOnly }, nameOf) {
+  if (noImage.length === 0 && legacyOnly.length === 0) {
+    return 'Every owned player has a current photo.'
+  }
+
+  const lines = []
+
+  if (noImage.length > 0) {
     lines.push(
-      `  ${`${OVERRIDE_DIR}/${player.photoCode}.png`.padEnd(pathWidth)}` +
-        `   ${player.name.padEnd(nameWidth)}  ${player.clubShort.padEnd(4)} ${nameOf(player.owner)}`
+      `${noImage.length} owned player(s) have no image anywhere and show a silhouette.`,
+      'These are the ones worth sourcing by hand. Save each as the filename shown:',
+      '',
+      ...table(noImage, nameOf, true),
+      ''
     )
   }
-  lines.push('', 'Anything dropped in there is picked up on the next fetch. No rebuild needed.')
+
+  if (legacyOnly.length > 0) {
+    lines.push(
+      `${legacyOnly.length} owned player(s) are falling back to last season's photo,`,
+      'so they appear in their previous club\'s shirt. Ignore these: FPL publishes a',
+      'current photo within a few weeks of a transfer and they correct themselves.',
+      '',
+      ...table(legacyOnly, nameOf, false),
+      ''
+    )
+  }
+
+  if (noImage.length > 0) {
+    lines.push('Anything dropped into the override folder is picked up on the next fetch.')
+    lines.push('Match the CDN: 219x280 PNG, transparent background, subject filling the frame.')
+  }
   return lines.join('\n')
 }

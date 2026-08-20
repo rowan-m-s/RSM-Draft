@@ -39,6 +39,10 @@ import { findMissingPhotos, formatMissingReport, readOverrides } from './lib/pho
 const playerPhotoUrl = (code) =>
   `https://resources.premierleague.com/premierleague25/photos/players/40x40/${code}.png`
 
+/** The last-resort tier, checked so the report can say which players hit it. */
+const legacyPhotoUrl = (code) =>
+  `https://resources.premierleague.com/premierleague/photos/players/40x40/p${code}.png`
+
 const LEAGUE_ID = 23939
 const LEAGUE_DISPLAY_NAME = 'FPL Draft 26/27'
 const SEASON = '2026/27'
@@ -616,6 +620,7 @@ async function main() {
       overrides,
       userAgent: USER_AGENT,
       photoUrl: playerPhotoUrl,
+      legacyPhotoUrl,
     })
     const nameOf = (key) => enrichedManagers.find((m) => m.key === key)?.displayName ?? key
     log(formatMissingReport(missing, nameOf))
