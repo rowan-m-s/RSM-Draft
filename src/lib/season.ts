@@ -30,6 +30,48 @@ export function monthOfDeadline(deadlineIso: string): string {
   return `${year}-${month}`
 }
 
+/**
+ * The same instant written in Europe/London, with its offset — so
+ * '2026-08-21T17:30:00Z' becomes '2026-08-21T18:30:00+01:00'.
+ *
+ * Stored alongside the UTC value so the committed JSON is readable by a human
+ * checking whether a gameweek landed in the right month, without having to do
+ * BST arithmetic in their head. The UI still formats from the UTC value.
+ */
+export function londonIso(iso: string): string {
+  const date = new Date(iso)
+  const parts = new Intl.DateTimeFormat('en-GB', {
+    timeZone: 'Europe/London',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hour12: false,
+  }).formatToParts(date)
+  const get = (type: string) => parts.find((p) => p.type === type)!.value
+
+  // The offset is whatever London is from UTC at that instant: +01:00 in BST,
+  // +00:00 in GMT. Derived from the formatted wall time rather than assumed.
+  const asUtc = Date.UTC(
+    Number(get('year')),
+    Number(get('month')) - 1,
+    Number(get('day')),
+    Number(get('hour')) % 24,
+    Number(get('minute')),
+    Number(get('second'))
+  )
+  const offsetMinutes = Math.round((asUtc - date.getTime()) / 60_000)
+  const sign = offsetMinutes < 0 ? '-' : '+'
+  const pad = (n: number) => String(Math.floor(Math.abs(n))).padStart(2, '0')
+
+  return (
+    `${get('year')}-${get('month')}-${get('day')}T${String(Number(get('hour')) % 24).padStart(2, '0')}:` +
+    `${get('minute')}:${get('second')}${sign}${pad(offsetMinutes / 60)}:${pad(offsetMinutes % 60)}`
+  )
+}
+
 const MONTH_NAMES = [
   'January',
   'February',

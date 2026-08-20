@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest'
 import {
   chargeFor,
   kochesOf,
+  londonIso,
   monthOfDeadline,
   monthWinnersOf,
   nextDeadline,
@@ -32,6 +33,27 @@ describe('monthOfDeadline', () => {
     // 31 Oct 2026 11:00Z — clocks went back on 25 Oct, so this is 11:00 GMT.
     expect(monthOfDeadline('2026-10-31T11:00:00Z')).toBe('2026-10')
     expect(monthOfDeadline('2027-01-02T13:30:00Z')).toBe('2027-01')
+  })
+})
+
+describe('londonIso', () => {
+  it('adds the BST offset in summer', () => {
+    expect(londonIso('2026-08-21T17:30:00Z')).toBe('2026-08-21T18:30:00+01:00')
+  })
+
+  it('stays on UTC in winter', () => {
+    expect(londonIso('2026-12-26T13:30:00Z')).toBe('2026-12-26T13:30:00+00:00')
+  })
+
+  it('rolls the date over when BST pushes past midnight', () => {
+    // The case the month-boundary rule exists for.
+    expect(londonIso('2026-08-31T23:30:00Z')).toBe('2026-09-01T00:30:00+01:00')
+  })
+
+  it('agrees with monthOfDeadline', () => {
+    for (const iso of ['2026-08-31T23:30:00Z', '2026-12-31T23:30:00Z', '2026-10-31T11:00:00Z']) {
+      expect(londonIso(iso).slice(0, 7)).toBe(monthOfDeadline(iso))
+    }
   })
 })
 
