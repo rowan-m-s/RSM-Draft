@@ -37,7 +37,7 @@ export function isSettled(event, classicDataChecked) {
   return Boolean(event.finished) && Boolean(classicDataChecked)
 }
 
-export function buildGameweeks({ events, classicDataCheckedById, scoresByGw }) {
+export function buildGameweeks({ events, classicDataCheckedById, scoresByGw, perGw = {}, elementName = String }) {
   return events.map((event) => {
     const dataChecked = isSettled(event, classicDataCheckedById.get(event.id))
     const scores = scoresByGw[event.id] ?? {}
@@ -59,8 +59,27 @@ export function buildGameweeks({ events, classicDataCheckedById, scoresByGw }) {
       scores: hasScores ? scores : {},
       kochKeys,
       charged: chargeFor(kochKeys),
+      // Each manager's best player that week. Carried here rather than looked
+      // up from a squad file, so expanding a league-table row costs no fetch.
+      topPerformerByManager: topPerformersForGameweek({ event, perGw, elementName }),
     }
   })
+}
+
+function topPerformersForGameweek({ event, perGw, elementName }) {
+  const record = perGw[event.id]
+  if (!record) return {}
+  const out = {}
+  for (const [key, picks] of Object.entries(record.squads ?? {})) {
+    let best = null
+    for (const pick of picks) {
+      if (!pick.starter) continue
+      const points = record.elementPoints?.[pick.element] ?? 0
+      if (!best || points > best.points) best = { playerName: elementName(pick.element), points, managerKey: key }
+    }
+    out[key] = best
+  }
+  return out
 }
 
 /**
@@ -73,7 +92,8 @@ function playerPointsForManager({ gameweekIds, perGw, managerKey }) {
   for (const gwId of gameweekIds) {
     const gw = perGw[gwId]
     if (!gw) continue
-    for (const elementId of gw.scoringXI?.[managerKey] ?? []) {
+    const xi = gw.scoringXI?.[managerKey] ?? (gw.squads?.[managerKey] ?? []).filter((p) => p.starter).map((p) => p.element)
+    for (const elementId of xi) {
       const points = gw.elementPoints?.[elementId] ?? 0
       totals.set(elementId, (totals.get(elementId) ?? 0) + points)
     }
@@ -141,7 +161,17 @@ export function buildMonths({ gameweeks, managerKeys, perGw, elementName }) {
   })
 }
 
-export function buildSeason({ gameweeks, months, managerKeys, generatedAt }) {
+export function buildSeason({ gameweeks, months, managerKeys, generatedAt, perGw = {}, elementName = String }) {
+  // Season-long best player per manager: points counted only for the weeks
+  // they were in that manager's scoring XI, same rule as the monthly figure.
+  const confirmedIds = gameweeks.filter((gw) => gw.dataChecked).map((gw) => gw.id)
+  const seasonBest = {}
+  for (const key of managerKeys) {
+    const totals = playerPointsForManager({ gameweekIds: confirmedIds, perGw, managerKey: key })
+    const best = bestOf(totals, elementName)
+    seasonBest[key] = best ? { ...best, managerKey: key } : null
+  }
+
   const settledGameweeks = gameweeks.filter((gw) => gw.dataChecked)
   const playedGameweeks = gameweeks.filter((gw) => gw.finished)
   const latestSettledGameweek = settledGameweeks.at(-1)?.id ?? null
@@ -169,6 +199,7 @@ export function buildSeason({ gameweeks, months, managerKeys, generatedAt }) {
       forfeits,
       potsWon,
       balance: potsWon - forfeits,
+      topPerformer: seasonBest[key] ?? null,
     }
   })
 
@@ -183,6 +214,36 @@ export function buildSeason({ gameweeks, months, managerKeys, generatedAt }) {
 }
 
 const POSITIONS = { 1: 'GKP', 2: 'DEF', 3: 'MID', 4: 'FWD' }
+
+/**
+ * Injury and availability, verified against the live Draft payload on
+ * 20 August 2026 rather than assumed to match the classic game.
+ *
+ * Draft carries the same fields, and the status codes in use are:
+ *
+ *   a  available    480 players, never carries news
+ *   d  doubtful      28 players, chance 25/50/75  → yellow flag
+ *   i  injured       47 players, chance 0         → red flag
+ *   s  suspended      3 players, chance 0         → red flag
+ *   u  unavailable   37 players, chance 0         → red flag
+ *                    (u is mostly players who have left the league —
+ *                     "Has joined Paris Saint-Germain permanently")
+ *
+ * Every non-available player had news text, and no available player did, so
+ * the news field is a reliable companion to the flag. The reason is more
+ * useful than the colour, which is why it is carried through to the UI.
+ */
+export function availabilityOf(element) {
+  const status = element.status ?? 'a'
+  return {
+    status,
+    // `this_round` is the one that matters once a deadline has passed;
+    // before that it is usually null and `next_round` carries the number.
+    chanceOfPlaying: element.chance_of_playing_this_round ?? element.chance_of_playing_next_round ?? null,
+    news: element.news || null,
+    newsAdded: element.news_added ?? null,
+  }
+}
 
 /**
  * Before a ball is kicked, FPL's `elements` carry *last* season's statistics.
@@ -226,8 +287,10 @@ export function buildPlayers({ elements, teams, ownerByElementId, generatedAt, g
         club: team?.name ?? 'Unknown',
         clubShort: team?.short_name ?? '???',
         clubCode: team?.code ?? 0,
+        teamId: element.team,
         photoCode: element.code,
         owner: ownerByElementId.get(element.id) ?? null,
+        ...availabilityOf(element),
         points: 0,
         ppg: 0,
         goals: 0,
@@ -243,11 +306,15 @@ export function buildPlayers({ elements, teams, ownerByElementId, generatedAt, g
       position: POSITIONS[element.element_type],
       club: team?.name ?? 'Unknown',
       clubShort: team?.short_name ?? '???',
+      // clubCode drives the badge URL; teamId is what fixtures are keyed by.
+      // They are different numbers for the same club.
       clubCode: team?.code ?? 0,
+      teamId: element.team,
       // Draft's elements carry no `photo` field — the classic API has one, this
-      // does not. `code` is the photo reference: /photos/players/*/p{code}.png
+      // does not. `code` is the photo reference.
       photoCode: element.code,
       owner: ownerByElementId.get(element.id) ?? null,
+      ...availabilityOf(element),
       points: element.total_points,
       ppg: Number(element.points_per_game) || 0,
       goals: element.goals_scored,
@@ -300,4 +367,70 @@ export function checkBalanceInvariant({ season, months }) {
   // Pots split between tied managers can leave thirds; compare with tolerance.
   const ok = Math.abs(sum - expected) < 0.005
   return { ok, sum, expected, unpaidPot }
+}
+
+/**
+ * Fixtures per event, per team.
+ *
+ * Draft has no fixtures endpoint of its own, but the classic game serves all
+ * 380 in a single call and the two APIs use identical team ids — checked, not
+ * assumed. Stored as an array per team because a double gameweek gives a side
+ * two fixtures in one event, and a blank gives it none.
+ */
+export function buildFixtures({ fixtures, generatedAt }) {
+  const byEvent = {}
+  for (const fixture of fixtures) {
+    if (fixture.event == null) continue
+    const event = (byEvent[fixture.event] ??= {})
+    const add = (teamId, opponent, home) => {
+      ;(event[teamId] ??= []).push({ opponent, home, kickoff: fixture.kickoff_time ?? null })
+    }
+    add(fixture.team_h, fixture.team_a, true)
+    add(fixture.team_a, fixture.team_h, false)
+  }
+  return { byEvent, generatedAt }
+}
+
+/**
+ * One manager's fifteen for one gameweek, as they actually stood that week.
+ *
+ * Squads change through waivers and trades, so a historical gameweek has to be
+ * rendered from that week's picks — showing the current squad with old points
+ * attached would list players the manager did not own at the time.
+ *
+ * Positions 1–11 are the starting XI and 12–15 the bench, in bench order.
+ * Draft applies automatic substitutions after the gameweek finishes and reports
+ * them in a `subs` array; `starter` reflects the final position after those are
+ * applied, and the two flags record who moved so the UI can mark it.
+ */
+export function buildSquad({ picks, subs = [] }) {
+  const subbedOn = new Set()
+  const subbedOff = new Set()
+  for (const sub of subs) {
+    const off = sub.element_out ?? sub.out
+    const on = sub.element_in ?? sub.in
+    if (typeof off === 'number') subbedOff.add(off)
+    if (typeof on === 'number') subbedOn.add(on)
+  }
+
+  return picks
+    .map((pick) => {
+      const startedTheWeek = pick.position >= 1 && pick.position <= 11
+      return {
+        element: pick.element,
+        position: pick.position,
+        // Who actually scored: the XI after auto-subs, not before.
+        starter: (startedTheWeek && !subbedOff.has(pick.element)) || subbedOn.has(pick.element),
+        subbedOn: subbedOn.has(pick.element),
+        subbedOff: subbedOff.has(pick.element),
+      }
+    })
+    .sort((a, b) => a.position - b.position)
+}
+
+/** The formation a starting XI adds up to, as "3-5-2". */
+export function formationOf(starters, positionOf) {
+  const counts = { GKP: 0, DEF: 0, MID: 0, FWD: 0 }
+  for (const entry of starters) counts[positionOf(entry.element)] = (counts[positionOf(entry.element)] ?? 0) + 1
+  return `${counts.DEF}-${counts.MID}-${counts.FWD}`
 }

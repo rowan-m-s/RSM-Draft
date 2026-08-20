@@ -11,6 +11,11 @@ on:
     - cron: '*/15 10-23 * * 6,0'
     # Every 30 minutes, Mon–Fri 16:00–23:00 UTC — evening kick-offs.
     - cron: '*/30 16-23 * * 1-5'
+    # Every 30 minutes, Thu–Fri 08:00–20:00 UTC — press-conference days.
+    # Injury news breaks at Thursday and Friday pressers, and a flag sitting
+    # three hours stale is worst exactly when people are checking it before a
+    # deadline. Actions minutes are unlimited on a public repo, so this is free.
+    - cron: '*/30 8-20 * * 4,5'
     # Every 3 hours otherwise, so a quiet day still proves the job is alive.
     - cron: '0 */3 * * *'
   workflow_dispatch:

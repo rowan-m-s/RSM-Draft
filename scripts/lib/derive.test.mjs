@@ -1,5 +1,14 @@
 import { describe, expect, it } from 'vitest'
-import { buildGameweeks, buildMonths, buildPlayers, buildSeason, checkBalanceInvariant, isSettled } from './derive.mjs'
+import {
+  buildFixtures,
+  buildGameweeks,
+  buildMonths,
+  buildPlayers,
+  buildSeason,
+  buildSquad,
+  checkBalanceInvariant,
+  isSettled,
+} from './derive.mjs'
 
 const KEYS = ['rushy', 'kellett', 'wallis', 'jls', 'paddy', 'bennett', 'wood', 'rowan', 'jason', 'dj', 'ollie']
 
@@ -316,5 +325,88 @@ describe('pre-season statistics', () => {
     expect(() =>
       buildPlayers({ elements, teams, ownerByElementId: new Map(), generatedAt: 'x', gameweeksPlayed: 1 })
     ).toThrow(/impossible/)
+  })
+})
+
+describe('buildSquad', () => {
+  // 1–11 start, 12–15 are the bench in order.
+  const picks = Array.from({ length: 15 }, (_, i) => ({ element: 100 + i, position: i + 1 }))
+
+  it('marks the starting eleven', () => {
+    const squad = buildSquad({ picks })
+    expect(squad.filter((p) => p.starter)).toHaveLength(11)
+    expect(squad.find((p) => p.position === 12).starter).toBe(false)
+  })
+
+  it('applies an automatic substitution to the scoring eleven', () => {
+    // 104 started and did not play; 112 came off the bench for him.
+    const squad = buildSquad({ picks, subs: [{ element_out: 104, element_in: 112 }] })
+    const out = squad.find((p) => p.element === 104)
+    const on = squad.find((p) => p.element === 112)
+
+    expect(out.starter).toBe(false)
+    expect(out.subbedOff).toBe(true)
+    expect(on.starter).toBe(true)
+    expect(on.subbedOn).toBe(true)
+    // Still eleven scoring players after the swap.
+    expect(squad.filter((p) => p.starter)).toHaveLength(11)
+  })
+
+  it('keeps the original position so the bench order still reads correctly', () => {
+    // element 100 + i sits at position i + 1, so 112 is the second substitute.
+    const squad = buildSquad({ picks, subs: [{ element_out: 104, element_in: 112 }] })
+    expect(squad.find((p) => p.element === 112).position).toBe(13)
+    // The first substitute is untouched and stays at position 12.
+    expect(squad.find((p) => p.position === 12)).toMatchObject({ element: 111, starter: false })
+  })
+
+  it('handles several substitutions in one week', () => {
+    const squad = buildSquad({
+      picks,
+      subs: [
+        { element_out: 101, element_in: 112 },
+        { element_out: 105, element_in: 113 },
+      ],
+    })
+    expect(squad.filter((p) => p.starter)).toHaveLength(11)
+    expect(squad.filter((p) => p.subbedOn).map((p) => p.element).sort()).toEqual([112, 113])
+  })
+
+  it('accepts the shorter in/out field names too', () => {
+    // The exact key names could not be verified before a gameweek was played,
+    // so both spellings are handled rather than guessed at.
+    const squad = buildSquad({ picks, subs: [{ out: 104, in: 112 }] })
+    expect(squad.find((p) => p.element === 112).starter).toBe(true)
+  })
+})
+
+describe('buildFixtures', () => {
+  const fixtures = [
+    { event: 1, team_h: 9, team_a: 8, kickoff_time: '2026-08-22T14:00:00Z' },
+    { event: 1, team_h: 10, team_a: 6, kickoff_time: '2026-08-24T19:00:00Z' },
+    { event: null, team_h: 1, team_a: 2, kickoff_time: null },
+  ]
+
+  it('indexes both sides of every fixture by team', () => {
+    const { byEvent } = buildFixtures({ fixtures, generatedAt: 'x' })
+    expect(byEvent['1']['9']).toEqual([{ opponent: 8, home: true, kickoff: '2026-08-22T14:00:00Z' }])
+    expect(byEvent['1']['8']).toEqual([{ opponent: 9, home: false, kickoff: '2026-08-22T14:00:00Z' }])
+  })
+
+  it('skips fixtures with no gameweek assigned yet', () => {
+    const { byEvent } = buildFixtures({ fixtures, generatedAt: 'x' })
+    expect(byEvent['null']).toBeUndefined()
+    expect(Object.keys(byEvent)).toEqual(['1'])
+  })
+
+  it('keeps both games of a double gameweek', () => {
+    const { byEvent } = buildFixtures({
+      fixtures: [
+        { event: 5, team_h: 3, team_a: 4, kickoff_time: 'a' },
+        { event: 5, team_h: 7, team_a: 3, kickoff_time: 'b' },
+      ],
+      generatedAt: 'x',
+    })
+    expect(byEvent['5']['3']).toHaveLength(2)
   })
 })

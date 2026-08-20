@@ -19,7 +19,16 @@
 
 import { mkdir, readFile, readdir, rename, writeFile } from 'node:fs/promises'
 import path from 'node:path'
-import { buildGameweeks, buildMonths, buildPlayers, buildSeason, checkBalanceInvariant } from './lib/derive.mjs'
+import {
+  buildFixtures,
+  buildGameweeks,
+  buildMonths,
+  buildPlayers,
+  buildSeason,
+  buildSquad,
+  availabilityOf,
+  checkBalanceInvariant,
+} from './lib/derive.mjs'
 import { MANAGER_KEYS } from './images.shared.mjs'
 
 const LEAGUE_ID = 23939
@@ -31,6 +40,7 @@ const CLASSIC_API = 'https://fantasy.premierleague.com/api'
 
 const DATA_DIR = 'public/data'
 const CACHE_DIR = path.join(DATA_DIR, 'cache')
+const SQUAD_DIR = path.join(DATA_DIR, 'squads')
 const MANAGERS_CONFIG = 'src/config/managers.json'
 
 /** Courtesy to FPL: identify ourselves and stay well clear of their limits. */
@@ -117,25 +127,29 @@ function readHistoryPoints(payload, entryId) {
 }
 
 /**
- * The eleven players who actually scored for a manager that week.
+ * One manager's fifteen for one gameweek, validated before use.
  *
  * Positions 1–11 are the starting XI and 12–15 the bench. Draft applies
  * automatic substitutions after the gameweek finishes and reports them in a
- * `subs` array; this is only ever called for confirmed gameweeks, by which
- * point that array is final.
+ * `subs` array.
  */
-function readScoringXI(payload, entryId, event) {
+function readPicks(payload, entryId, event) {
   const picks = payload?.picks
   if (!Array.isArray(picks) || picks.length === 0) {
     throw new FetchError(
       `entry/${entryId}/event/${event}: expected a "picks" array, got keys [${Object.keys(payload ?? {})}]`
     )
   }
-
-  const starters = new Set(picks.filter((p) => p.position >= 1 && p.position <= 11).map((p) => p.element))
-  if (starters.size !== 11) {
+  if (picks.some((p) => typeof p.element !== 'number' || typeof p.position !== 'number')) {
     throw new FetchError(
-      `entry/${entryId}/event/${event}: expected 11 starters at positions 1-11, found ${starters.size}`
+      `entry/${entryId}/event/${event}: a pick is missing element/position — keys [${Object.keys(picks[0])}]`
+    )
+  }
+
+  const starters = picks.filter((p) => p.position >= 1 && p.position <= 11)
+  if (starters.length !== 11) {
+    throw new FetchError(
+      `entry/${entryId}/event/${event}: expected 11 starters at positions 1-11, found ${starters.length}`
     )
   }
 
@@ -147,11 +161,9 @@ function readScoringXI(payload, entryId, event) {
         `entry/${entryId}/event/${event}: cannot read a substitution from keys [${Object.keys(sub)}]`
       )
     }
-    starters.delete(out)
-    starters.add(on)
   }
 
-  return [...starters]
+  return buildSquad({ picks, subs: payload.subs ?? [] })
 }
 
 function readLivePoints(payload, event) {
@@ -287,6 +299,9 @@ async function main() {
   const classicBootstrap = await getJson(`${CLASSIC_API}/bootstrap-static/`)
   const leagueDetails = await getJson(`${DRAFT_API}/league/${LEAGUE_ID}/details`)
   const elementStatus = await getJson(`${DRAFT_API}/league/${LEAGUE_ID}/element-status`)
+  // Draft has no fixtures endpoint. The classic game serves all 380 in one
+  // call and the two use identical team ids — verified, not assumed.
+  const allFixtures = await getJson(`${CLASSIC_API}/fixtures/`)
 
   const events = draftBootstrap.events?.data ?? []
   const elements = draftBootstrap.elements ?? []
@@ -309,6 +324,20 @@ async function main() {
     )
   }
   const classicDataCheckedById = new Map(classicEvents.map((e) => [e.id, Boolean(e.data_checked)]))
+
+  // The fixtures come from the classic game but are rendered against Draft's
+  // teams, so the id spaces have to line up.
+  const draftTeamsById = new Map(teams.map((t) => [t.id, t.short_name]))
+  const teamMismatch = (classicBootstrap.teams ?? []).filter(
+    (t) => draftTeamsById.has(t.id) && draftTeamsById.get(t.id) !== t.short_name
+  )
+  if (teamMismatch.length > 0) {
+    throw new FetchError(
+      `Draft and classic disagree on ${teamMismatch.length} team id(s) — e.g. ${teamMismatch[0].id} is ` +
+        `"${draftTeamsById.get(teamMismatch[0].id)}" in Draft and "${teamMismatch[0].short_name}" in classic. ` +
+        `Fixtures would be attributed to the wrong clubs.`
+    )
+  }
 
   // The league's own entries must line up exactly with the hand-filled mapping.
   const leagueEntries = leagueDetails.league_entries ?? []
@@ -377,32 +406,68 @@ async function main() {
     }
   }
 
-  /* Squads per confirmed gameweek, for the top-performer figures. Cached: a
-     confirmed gameweek never changes again. */
+  /* Squads per gameweek.
+     Picks exist once a deadline has passed, so this covers more than the
+     confirmed weeks: the current in-flight week is fetched too, which is what
+     lets the squad page show a live gameweek. Only confirmed weeks are cached,
+     because auto-subs can still move players before then. */
   const perGw = {}
-  const confirmed = finished.filter((e) => classicDataCheckedById.get(e.id))
-  for (const event of confirmed) {
-    const cached = await readCache(event.id)
+  const squadFiles = []
+  const now = Date.now()
+  const locked = events.filter((e) => new Date(e.deadline_time).getTime() <= now)
+
+  for (const event of locked) {
+    const dataChecked = classicDataCheckedById.get(event.id) && event.finished
+    const cached = dataChecked ? await readCache(event.id) : null
     if (cached) {
       perGw[event.id] = cached
+      squadFiles.push(cached)
       continue
     }
 
-    log(`Fetching squads and live points for GW${event.id}...`)
-    const scoringXI = {}
+    log(`Fetching squads and points for GW${event.id}...`)
+    const squads = {}
+    let unavailable = false
     for (const manager of enrichedManagers) {
-      const payload = await getJson(`${DRAFT_API}/entry/${manager.entryId}/event/${event.id}`)
-      scoringXI[manager.key] = readScoringXI(payload, manager.entryId, event.id)
+      try {
+        const payload = await getJson(`${DRAFT_API}/entry/${manager.entryId}/event/${event.id}`)
+        squads[manager.key] = readPicks(payload, manager.entryId, event.id)
+      } catch (error) {
+        // FPL can lag between a deadline passing and picks being published.
+        // That is a "not yet", not a failure — skip the week rather than
+        // failing the whole run and blocking the scores from updating.
+        if (String(error.message).includes('404')) {
+          log(`  GW${event.id} picks not published yet (${manager.key}) — skipping this gameweek.`)
+          unavailable = true
+          break
+        }
+        throw error
+      }
     }
+    if (unavailable) continue
 
     const live = readLivePoints(await getJson(`${DRAFT_API}/event/${event.id}/live`), event.id)
-    // Keep only the players who actually scored for someone — the full live
-    // payload is ~600 players and this file is committed.
-    const used = new Set(Object.values(scoringXI).flat().map(String))
+    const used = new Set(Object.values(squads).flat().map((pick) => String(pick.element)))
     const elementPoints = Object.fromEntries(Object.entries(live).filter(([id]) => used.has(id)))
 
-    perGw[event.id] = { event: event.id, scoringXI, elementPoints }
-    await writeCache(event.id, perGw[event.id])
+    // The top-performer maths wants the scoring XI only.
+    const scoringXI = Object.fromEntries(
+      Object.entries(squads).map(([key, picks]) => [key, picks.filter((p) => p.starter).map((p) => p.element)])
+    )
+
+    const record = {
+      event: event.id,
+      deadlineUtc: event.deadline_time,
+      started: Boolean(event.finished) || Object.keys(live).length > 0,
+      finished: Boolean(event.finished),
+      dataChecked: Boolean(dataChecked),
+      squads,
+      scoringXI,
+      elementPoints,
+    }
+    perGw[event.id] = record
+    squadFiles.push(record)
+    if (dataChecked) await writeCache(event.id, record)
   }
 
   /* Ownership. One call covers all eleven squads and every free agent. */
@@ -427,9 +492,10 @@ async function main() {
   const managerKeys = enrichedManagers.map((m) => m.key)
   const elementName = (id) => elements.find((e) => e.id === Number(id))?.web_name ?? `Player ${id}`
 
-  const gameweeks = buildGameweeks({ events, classicDataCheckedById, scoresByGw })
+  const gameweeks = buildGameweeks({ events, classicDataCheckedById, scoresByGw, perGw, elementName })
   const months = buildMonths({ gameweeks, managerKeys, perGw, elementName })
-  const season = buildSeason({ gameweeks, months, managerKeys, generatedAt })
+  const season = buildSeason({ gameweeks, months, managerKeys, generatedAt, perGw, elementName })
+  const fixtures = buildFixtures({ fixtures: allFixtures, generatedAt })
   const players = buildPlayers({
     elements,
     teams,
@@ -466,8 +532,52 @@ async function main() {
     ['months.json', { months, generatedAt }],
     ['season.json', season],
     ['players.json', players],
+    ['fixtures.json', fixtures],
   ]) {
     results.push(await writeIfChanged(file, payload, startedAt))
+  }
+
+  /* One file per gameweek, so the squad page loads only the week it needs.
+     Eleven managers x fifteen players x thirty-eight weeks in a single file
+     would be a needless payload on every visit. */
+  await mkdir(SQUAD_DIR, { recursive: true })
+  const elementById = new Map(elements.map((e) => [e.id, e]))
+  for (const record of squadFiles) {
+    // Carry the player details the page needs. A player traded away weeks ago
+    // will not be in players.json's owned list, so the file has to stand alone.
+    const referenced = new Set(Object.values(record.squads).flat().map((pick) => pick.element))
+    const playerDetails = {}
+    for (const id of referenced) {
+      const element = elementById.get(id)
+      if (!element) continue
+      const team = teams.find((t) => t.id === element.team)
+      playerDetails[id] = {
+        name: element.web_name,
+        position: ['', 'GKP', 'DEF', 'MID', 'FWD'][element.element_type],
+        teamId: element.team,
+        clubShort: team?.short_name ?? '???',
+        clubCode: team?.code ?? 0,
+        photoCode: element.code,
+        ...availabilityOf(element),
+      }
+    }
+
+    const payload = {
+      event: record.event,
+      deadlineUtc: record.deadlineUtc,
+      started: record.started,
+      finished: record.finished,
+      dataChecked: record.dataChecked,
+      squads: Object.fromEntries(
+        Object.entries(record.squads).map(([key, picks]) => [
+          key,
+          picks.map((pick) => ({ ...pick, points: record.elementPoints[pick.element] ?? 0 })),
+        ])
+      ),
+      players: playerDetails,
+      generatedAt,
+    }
+    results.push(await writeIfChanged(path.join('squads', `gw${record.event}.json`), payload, startedAt))
   }
 
   const written = results.filter((r) => r.written)

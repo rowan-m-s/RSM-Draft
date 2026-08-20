@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import { Banner } from '../components/Banner'
 import { ClubBadge, ManagerAvatar, PlayerPhoto } from '../components/Img'
 import { PageBody } from '../components/Layout'
+import { PlayerFlag } from '../components/PlayerFlag'
 import { useData } from '../data'
 import type { Player, Position } from '../types'
 
@@ -215,11 +216,14 @@ export function Players() {
                 return (
                   <li key={player.id} className="border-b border-pl-border last:border-0">
                     <div className="flex items-center gap-3 py-2 pr-2 pl-3">
-                      <PlayerPhoto
-                        photoCode={player.photoCode}
-                        name={player.name}
-                        className="h-9 w-9 shrink-0 rounded-full bg-pl-off object-cover object-top"
-                      />
+                      <span className="relative shrink-0">
+                        <PlayerPhoto
+                          photoCode={player.photoCode}
+                          name={player.name}
+                          className="h-9 w-9 rounded-full bg-pl-off object-cover object-top"
+                        />
+                        <PlayerFlag player={player} size={14} className="absolute -top-0.5 -right-0.5" />
+                      </span>
                       <div className="min-w-0 flex-1">
                         <p className="truncate font-semibold text-pl-navy">{player.name}</p>
                         <p className="mt-0.5 flex items-center gap-1.5 text-xs text-pl-muted">
@@ -284,11 +288,14 @@ export function Players() {
                     <tr key={player.id} className="border-b border-pl-border last:border-0 hover:bg-pl-off">
                       <td className="py-2 pl-3">
                         <span className="flex min-w-0 items-center gap-2.5">
-                          <PlayerPhoto
-                            photoCode={player.photoCode}
-                            name={player.name}
-                            className="h-8 w-8 shrink-0 rounded-full bg-pl-off object-cover object-top"
-                          />
+                          <span className="relative shrink-0">
+                            <PlayerPhoto
+                              photoCode={player.photoCode}
+                              name={player.name}
+                              className="h-8 w-8 rounded-full bg-pl-off object-cover object-top"
+                            />
+                            <PlayerFlag player={player} size={13} className="absolute -top-0.5 -right-0.5" />
+                          </span>
                           <span className="truncate font-semibold text-pl-navy">{player.name}</span>
                         </span>
                       </td>

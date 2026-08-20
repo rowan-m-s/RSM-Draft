@@ -143,3 +143,24 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+/* The pitch. Banded stripes and markings drawn in CSS rather than shipped as
+   an image — it scales to any width and costs nothing to download. */
+.pitch {
+  background-color: #1f9d55;
+  background-image:
+    /* centre circle and halfway line */
+    radial-gradient(circle at 50% 50%, transparent 68px, rgb(255 255 255 / 0.22) 68px 70px, transparent 70px),
+    linear-gradient(to bottom, transparent calc(50% - 1px), rgb(255 255 255 / 0.22) calc(50% - 1px) calc(50% + 1px), transparent calc(50% + 1px)),
+    /* mown stripes */
+    repeating-linear-gradient(to bottom, #2aa85f 0 56px, #239a55 56px 112px);
+}
+
+@media (min-width: 640px) {
+  .pitch {
+    background-image:
+      radial-gradient(circle at 50% 50%, transparent 88px, rgb(255 255 255 / 0.22) 88px 90px, transparent 90px),
+      linear-gradient(to bottom, transparent calc(50% - 1px), rgb(255 255 255 / 0.22) calc(50% - 1px) calc(50% + 1px), transparent calc(50% + 1px)),
+      repeating-linear-gradient(to bottom, #2aa85f 0 72px, #239a55 72px 144px);
+  }
+}

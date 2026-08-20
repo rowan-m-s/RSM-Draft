@@ -63,6 +63,8 @@ export interface Gameweek {
   kochKeys: ManagerKey[]
   /** £5 per Koch. Zero until the week is settled. */
   charged: number
+  /** Each manager's best player that week. Empty before the week is played. */
+  topPerformerByManager: Record<ManagerKey, TopPerformer | null>
 }
 
 export interface TopPerformer {
@@ -110,6 +112,8 @@ export interface SeasonRow {
   potsWon: number
   /** potsWon − forfeits. Starts at £0; entry fee is not part of it. */
   balance: number
+  /** Best player across the season, counted only for weeks they started. */
+  topPerformer: TopPerformer | null
 }
 
 export interface Season {
@@ -132,6 +136,8 @@ export interface Player {
   clubShort: string
   /** Drives the badge URL: /badges/{size}/t{clubCode}.png */
   clubCode: number
+  /** What fixtures are keyed by. A different number from clubCode. */
+  teamId: number
   /** Drives the photo URL: /photos/players/{size}/p{photoCode}.png */
   photoCode: number
   /** null for a free agent. */
@@ -144,6 +150,11 @@ export interface Player {
   bonus: number
   /** Rank within position by points. Computed by us; FPL Draft has no prices. */
   positionRank: number
+  /** FPL availability: 'a' available, 'd' doubtful, 'i'/'s'/'u' ruled out. */
+  status: string
+  chanceOfPlaying: number | null
+  news: string | null
+  newsAdded: string | null
 }
 
 export interface PlayersFile {
@@ -167,4 +178,56 @@ export interface Award {
   /** Sortable: gameweek id, or the month's YYYY-MM. */
   monthId: string
   detail: string
+}
+
+/** One fixture for one team in one gameweek. */
+export interface Fixture {
+  /** Opponent's team id. */
+  opponent: number
+  home: boolean
+  kickoff: string | null
+}
+
+export interface FixturesFile {
+  /** event id → team id → fixtures (an array: double gameweeks exist). */
+  byEvent: Record<string, Record<string, Fixture[]>>
+  generatedAt: string
+}
+
+/** A player as they sat in one manager's squad for one gameweek. */
+export interface SquadPick {
+  element: number
+  /** 1–11 started, 12–15 bench in bench order. */
+  position: number
+  /** In the scoring XI after auto-subs were applied. */
+  starter: boolean
+  subbedOn: boolean
+  subbedOff: boolean
+  points: number
+}
+
+/** Enough detail to render a player without consulting players.json — a
+ *  player traded away weeks ago will not be in the current owned list. */
+export interface SquadPlayer {
+  name: string
+  position: Position
+  teamId: number
+  clubShort: string
+  clubCode: number
+  photoCode: number
+  status: string
+  chanceOfPlaying: number | null
+  news: string | null
+  newsAdded: string | null
+}
+
+export interface SquadFile {
+  event: number
+  deadlineUtc: string
+  started: boolean
+  finished: boolean
+  dataChecked: boolean
+  squads: Record<ManagerKey, SquadPick[]>
+  players: Record<string, SquadPlayer>
+  generatedAt: string
 }
