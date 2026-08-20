@@ -22,7 +22,7 @@ import {
   OUT_DIR,
   SEASON_SETS,
   SOURCE_DIR,
-  parseSourceName,
+  classifySourceFile,
 } from './images.shared.mjs'
 
 const force = process.argv.includes('--force')
@@ -187,17 +187,84 @@ async function main() {
     process.exit(1)
   }
 
-  const jobs = []
-  for (const filename of sources) {
-    const parsed = parseSourceName(filename)
-    if (!parsed) continue
-    jobs.push({ ...parsed, source: path.join(SOURCE_DIR, filename) })
+  /**
+   * Classify everything in the folder and say what happened to each file.
+   *
+   * `assets-src/` holds more than manager images — the banner lockup and the
+   * reference screenshots live there too. Skipping them quietly would be fine
+   * right up until someone misnames a real asset, at which point a typo and a
+   * deliberate exclusion look identical. So every file is accounted for.
+   */
+  const classified = sources.map(classifySourceFile)
+  const jobs = classified
+    .filter((entry) => entry.status === 'asset')
+    .map((entry) => ({ ...entry, source: path.join(SOURCE_DIR, entry.filename) }))
+
+  const ignored = classified.filter((entry) => entry.status === 'ignored')
+  const knownOther = classified.filter((entry) => entry.status === 'known-other')
+  const badKeys = classified.filter((entry) => entry.status === 'unknown-key')
+
+  console.log(`Scanned ${SOURCE_DIR}/ — ${classified.length} files.\n`)
+
+  if (knownOther.length > 0) {
+    console.log(`Not manager images, expected (${knownOther.length}):`)
+    for (const entry of knownOther) console.log(`  · ${entry.filename.padEnd(24)} ${entry.reason}`)
+    console.log()
+  }
+
+  if (ignored.length > 0) {
+    console.log(`Skipped (${ignored.length}):`)
+    for (const entry of ignored) console.log(`  · ${entry.filename.padEnd(24)} ${entry.reason}`)
+    console.log()
+  }
+
+  // A near-miss key is a typo, and a typo silently produces an image nobody
+  // ever renders. Stop rather than write it.
+  if (badKeys.length > 0) {
+    console.error(`Unrecognised manager key in ${badKeys.length} file(s):\n`)
+    for (const entry of badKeys) console.error(`  ✗ ${entry.filename}\n      ${entry.reason}`)
+    console.error(`\nRename the file, or add the key to MANAGER_KEYS if it is a new manager.\n`)
+    process.exit(1)
   }
 
   if (jobs.length === 0) {
-    console.error(`No recognisable images in ${SOURCE_DIR}/. Expected {name}.{icon|koch|motm|winner}.{png|jpg}`)
+    console.error(`No manager images in ${SOURCE_DIR}/. Expected {key}.{icon|koch|motm|winner}.{png|jpg}`)
     process.exit(1)
   }
+
+  // Two sources for the same slot means the winner is decided by directory
+  // order, which is nobody's intention.
+  const bySlot = new Map()
+  for (const job of jobs) {
+    const slot = `${job.set}/${job.key}`
+    if (bySlot.has(slot)) {
+      console.error(
+        `Two sources for ${slot}: ${bySlot.get(slot)} and ${job.filename}. ` +
+          `Delete one — otherwise which is used depends on directory order.`
+      )
+      process.exit(1)
+    }
+    bySlot.set(slot, job.filename)
+  }
+
+  // Report the manager set's completeness here, at import, rather than leaving
+  // it to the build. 11 keys × 3 sets = 33.
+  const missing = []
+  for (const set of MANAGER_SETS) {
+    for (const key of MANAGER_KEYS) {
+      if (!bySlot.has(`${set}/${key}`)) missing.push(`${key}.${set}.*`)
+    }
+  }
+  const found = MANAGER_KEYS.length * MANAGER_SETS.length - missing.length
+  console.log(`Manager sources: ${found}/${MANAGER_KEYS.length * MANAGER_SETS.length}`)
+  if (missing.length > 0) {
+    console.error(`\nMissing ${missing.length} manager source(s):`)
+    for (const name of missing) console.error(`  ✗ ${name}`)
+    console.error()
+    process.exit(1)
+  }
+  const winners = jobs.filter((job) => job.set === 'winner')
+  console.log(`Winner cards:    ${winners.length} (${winners.map((w) => w.key).join(', ') || 'none'}) — validated against honours.json, not the eleven keys.\n`)
 
   for (const set of [...MANAGER_SETS, ...SEASON_SETS]) {
     await mkdir(path.join(OUT_DIR, set), { recursive: true })
