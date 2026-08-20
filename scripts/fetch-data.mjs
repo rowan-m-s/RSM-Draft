@@ -26,6 +26,7 @@ import {
   buildPlayers,
   buildSeason,
   buildSquad,
+  buildDraftSquads,
   availabilityOf,
   checkBalanceInvariant,
 } from './lib/derive.mjs'
@@ -314,6 +315,9 @@ async function main() {
   // Draft has no fixtures endpoint. The classic game serves all 380 in one
   // call and the two use identical team ids — verified, not assumed.
   const allFixtures = await getJson(`${CLASSIC_API}/fixtures/`)
+  // The draft picks. Note the path: league/{id}/choices is a 404, it is
+  // draft/{id}/choices. Verified against the live payload.
+  const draftChoices = await getJson(`${DRAFT_API}/draft/${LEAGUE_ID}/choices`)
 
   const events = draftBootstrap.events?.data ?? []
   const elements = draftBootstrap.elements ?? []
@@ -482,6 +486,43 @@ async function main() {
     if (dataChecked) await writeCache(event.id, record)
   }
 
+  /* GW0, the initial draft. Always available, and the only squad view there
+     is until the first deadline passes. */
+  const choices = draftChoices?.choices ?? []
+  if (choices.length > 0) {
+    const positionById = new Map(
+      elements.map((e) => [e.id, ['', 'GKP', 'DEF', 'MID', 'FWD'][e.element_type]])
+    )
+    const keyByEntryId = new Map(managers.map((m) => [m.entryId, m.key]))
+    const { squads, formations } = buildDraftSquads({
+      choices,
+      keyByEntryId,
+      positionOf: (id) => positionById.get(id),
+    })
+
+    const covered = Object.keys(squads)
+    if (covered.length !== managers.length) {
+      throw new FetchError(
+        `Draft covers ${covered.length}/${managers.length} managers. ` +
+          `Missing: ${managers.filter((m) => !covered.includes(m.key)).map((m) => m.key).join(', ')}.`
+      )
+    }
+    log(`GW0 draft: ${choices.length} picks, inferred XIs ${Object.values(formations).join(' ')}`)
+
+    squadFiles.push({
+      event: 0,
+      isDraft: true,
+      deadlineUtc: leagueDetails.league?.draft_dt ?? null,
+      started: false,
+      finished: false,
+      dataChecked: false,
+      squads,
+      elementPoints: {},
+    })
+  } else {
+    log('No draft picks yet, so no GW0.')
+  }
+
   /* Ownership. One call covers all eleven squads and every free agent. */
   const ownerByElementId = new Map()
   for (const row of elementStatus.element_status ?? []) {
@@ -536,6 +577,10 @@ async function main() {
     season: SEASON,
     managers: enrichedManagers,
     playerImageOverrides: [...overrides].sort((a, b) => a - b),
+    // Which gameweeks have a squad to show. Picks do not exist in Draft until
+    // a deadline passes, so a future week has nothing to render and is simply
+    // not offered on the slider.
+    availableSquads: squadFiles.map((r) => r.event).sort((a, b) => a - b),
     generatedAt,
   }
 
@@ -581,6 +626,7 @@ async function main() {
 
     const payload = {
       event: record.event,
+      isDraft: Boolean(record.isDraft),
       deadlineUtc: record.deadlineUtc,
       started: record.started,
       finished: record.finished,

@@ -40,6 +40,8 @@ export interface League {
   managers: Manager[]
   /** Element codes with a file in public/images/players/. */
   playerImageOverrides: number[]
+  /** Gameweeks that have a squad to show. 0 is the initial draft. */
+  availableSquads: number[]
   generatedAt: string
 }
 
@@ -199,13 +201,17 @@ export interface FixturesFile {
 /** A player as they sat in one manager's squad for one gameweek. */
 export interface SquadPick {
   element: number
-  /** 1–11 started, 12–15 bench in bench order. */
+  /** 1-11 started, 12-15 bench in bench order. */
   position: number
   /** In the scoring XI after auto-subs were applied. */
   starter: boolean
   subbedOn: boolean
   subbedOff: boolean
   points: number
+  /** GW0 only: overall draft pick number, 1 to 165. */
+  pick?: number
+  /** GW0 only: draft round. */
+  round?: number
 }
 
 /** Enough detail to render a player without consulting players.json — a
@@ -225,6 +231,8 @@ export interface SquadPlayer {
 
 export interface SquadFile {
   event: number
+  /** GW0: the initial draft, with an XI inferred from pick order. */
+  isDraft?: boolean
   deadlineUtc: string
   started: boolean
   finished: boolean

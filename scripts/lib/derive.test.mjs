@@ -6,7 +6,9 @@ import {
   buildPlayers,
   buildSeason,
   buildSquad,
+  buildDraftSquads,
   checkBalanceInvariant,
+  inferDraftXI,
   isSettled,
 } from './derive.mjs'
 
@@ -408,5 +410,127 @@ describe('buildFixtures', () => {
       generatedAt: 'x',
     })
     expect(byEvent['5']['3']).toHaveLength(2)
+  })
+})
+
+describe('inferDraftXI', () => {
+  /** A squad as 2 GKP, 5 DEF, 5 MID, 3 FWD, drafted in the order given. */
+  const squadOf = (positions) => {
+    const positionOf = (element) => positions[element - 1]
+    const picks = positions.map((_, i) => ({ element: i + 1, pick: i + 1, round: i + 1 }))
+    return { picks, positionOf }
+  }
+  const NORMAL = ['GKP','DEF','MID','FWD','DEF','MID','DEF','MID','FWD','DEF','MID','GKP','DEF','MID','FWD']
+
+  const countBy = (entries, positionOf) =>
+    entries.reduce((acc, e) => ((acc[positionOf(e.element)] = (acc[positionOf(e.element)] ?? 0) + 1), acc), {})
+
+  it('picks eleven and benches four', () => {
+    const { picks, positionOf } = squadOf(NORMAL)
+    const { starters, bench } = inferDraftXI({ picks, positionOf })
+    expect(starters).toHaveLength(11)
+    expect(bench).toHaveLength(4)
+  })
+
+  it('produces a legal formation from a normal draft', () => {
+    const { picks, positionOf } = squadOf(NORMAL)
+    const { starters, formation } = inferDraftXI({ picks, positionOf })
+    const counts = countBy(starters, positionOf)
+    expect(counts.GKP).toBe(1)
+    expect(counts.DEF).toBeGreaterThanOrEqual(3)
+    expect(counts.MID).toBeGreaterThanOrEqual(2)
+    expect(counts.FWD).toBeGreaterThanOrEqual(1)
+    expect(formation).toMatch(/^\d-\d-\d$/)
+  })
+
+  it('stays legal when a manager loads up on one position early', () => {
+    // Seven midfielders and both keepers in the first nine picks. Taking the
+    // first eleven by draft order would give two keepers and one defender.
+    const greedy = ['MID','MID','MID','GKP','MID','MID','GKP','MID','MID','DEF','DEF','DEF','DEF','DEF','FWD']
+    const { picks, positionOf } = squadOf([...greedy, 'FWD', 'FWD'].slice(0, 15))
+    const { starters, bench } = inferDraftXI({ picks, positionOf })
+    const counts = countBy(starters, positionOf)
+    expect(counts.GKP).toBe(1)
+    expect(counts.DEF).toBeGreaterThanOrEqual(3)
+    expect(counts.MID).toBeLessThanOrEqual(5)
+    expect(counts.FWD).toBeGreaterThanOrEqual(1)
+    expect(starters).toHaveLength(11)
+    expect(bench).toHaveLength(4)
+  })
+
+  it('never starts two keepers even when both were drafted early', () => {
+    const twoKeepersFirst = ['GKP','GKP','DEF','DEF','DEF','MID','MID','MID','FWD','DEF','MID','DEF','MID','FWD','FWD']
+    const { picks, positionOf } = squadOf(twoKeepersFirst)
+    const { starters } = inferDraftXI({ picks, positionOf })
+    expect(countBy(starters, positionOf).GKP).toBe(1)
+  })
+
+  it('benches exactly one keeper and three outfielders, keeper first', () => {
+    const { picks, positionOf } = squadOf(NORMAL)
+    const { bench } = inferDraftXI({ picks, positionOf })
+    expect(positionOf(bench[0].element)).toBe('GKP')
+    expect(bench.slice(1).map((p) => positionOf(p.element))).not.toContain('GKP')
+    expect(bench.filter((p) => positionOf(p.element) === 'GKP')).toHaveLength(1)
+  })
+
+  it('prefers the higher pick when filling a minimum', () => {
+    // The first defender drafted must start, whoever else is around.
+    const { picks, positionOf } = squadOf(NORMAL)
+    const { starters } = inferDraftXI({ picks, positionOf })
+    const firstDefender = picks.find((p) => positionOf(p.element) === 'DEF')
+    expect(starters.map((p) => p.element)).toContain(firstDefender.element)
+  })
+
+  it('orders the bench by draft order after the keeper', () => {
+    const { picks, positionOf } = squadOf(NORMAL)
+    const { bench } = inferDraftXI({ picks, positionOf })
+    const outfield = bench.slice(1).map((p) => p.pick)
+    expect(outfield).toEqual([...outfield].sort((a, b) => a - b))
+  })
+
+  it('fails loudly rather than rendering a broken pitch', () => {
+    // A squad with no forward at all cannot make a legal eleven.
+    const noForward = ['GKP','GKP','DEF','DEF','DEF','DEF','DEF','MID','MID','MID','MID','MID','DEF','MID','DEF']
+    const { picks, positionOf } = squadOf(noForward)
+    expect(() => inferDraftXI({ picks, positionOf })).toThrow(/legal XI/)
+  })
+})
+
+describe('buildDraftSquads', () => {
+  const POSITIONS = ['GKP','DEF','MID','FWD','DEF','MID','DEF','MID','FWD','DEF','MID','GKP','DEF','MID','FWD']
+  const positionOf = (element) => POSITIONS[(element - 1) % 15]
+  const choices = []
+  for (let manager = 0; manager < 2; manager++) {
+    for (let i = 0; i < 15; i++) {
+      choices.push({ entry: 100 + manager, element: manager * 15 + i + 1, index: manager * 15 + i + 1, round: i + 1 })
+    }
+  }
+  const keyByEntryId = new Map([[100, 'rowan'], [101, 'rushy']])
+
+  it('builds a fifteen for every manager, eleven starting', () => {
+    const { squads } = buildDraftSquads({ choices, keyByEntryId, positionOf })
+    for (const key of ['rowan', 'rushy']) {
+      expect(squads[key]).toHaveLength(15)
+      expect(squads[key].filter((p) => p.starter)).toHaveLength(11)
+    }
+  })
+
+  it('numbers the bench 12 to 15 with the keeper at 12', () => {
+    const { squads } = buildDraftSquads({ choices, keyByEntryId, positionOf })
+    const bench = squads.rowan.filter((p) => !p.starter).sort((a, b) => a.position - b.position)
+    expect(bench.map((p) => p.position)).toEqual([12, 13, 14, 15])
+    expect(positionOf(bench[0].element)).toBe('GKP')
+  })
+
+  it('carries the overall pick number, which is what the cards show', () => {
+    const { squads } = buildDraftSquads({ choices, keyByEntryId, positionOf })
+    const picks = squads.rowan.map((p) => p.pick).sort((a, b) => a - b)
+    expect(picks).toEqual(Array.from({ length: 15 }, (_, i) => i + 1))
+  })
+
+  it('ignores choices from entries outside the mapping', () => {
+    const withStranger = [...choices, { entry: 999, element: 1, index: 999, round: 1 }]
+    const { squads } = buildDraftSquads({ choices: withStranger, keyByEntryId, positionOf })
+    expect(Object.keys(squads).sort()).toEqual(['rowan', 'rushy'])
   })
 })

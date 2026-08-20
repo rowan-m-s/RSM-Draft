@@ -434,3 +434,144 @@ export function formationOf(starters, positionOf) {
   for (const entry of starters) counts[positionOf(entry.element)] = (counts[positionOf(entry.element)] ?? 0) + 1
   return `${counts.DEF}-${counts.MID}-${counts.FWD}`
 }
+
+/**
+ * The squad rules this league plays under, read from the Draft settings
+ * payload rather than assumed. Squads are 15 and eleven play.
+ */
+export const SQUAD_RULES = {
+  play: 11,
+  min: { GKP: 1, DEF: 3, MID: 2, FWD: 1 },
+  max: { GKP: 1, DEF: 5, MID: 5, FWD: 3 },
+}
+
+/**
+ * Infer a starting eleven from draft order.
+ *
+ * A drafted squad has no XI: before the first deadline it is just fifteen
+ * players. So GW0 shows a plausible one and says so. The rule is the highest
+ * drafted valid eleven.
+ *
+ * Taking the first eleven by draft order alone would routinely produce an
+ * illegal team: two keepers, or two defenders if someone went heavy on
+ * midfielders early. So the minimums are filled first from each position's
+ * highest picks, and only then are the remaining slots filled by draft order
+ * across whoever is left.
+ *
+ * The four not selected become the bench, with the second keeper in the
+ * keeper slot, which is where Draft locks it.
+ */
+export function inferDraftXI({ picks, positionOf }) {
+  const byDraftOrder = [...picks].sort((a, b) => a.pick - b.pick)
+  const chosen = []
+  const taken = new Set()
+
+  const take = (pick) => {
+    chosen.push(pick)
+    taken.add(pick.element)
+  }
+
+  // 1. Minimums, from each position's highest drafted players.
+  for (const [position, minimum] of Object.entries(SQUAD_RULES.min)) {
+    const available = byDraftOrder.filter((p) => !taken.has(p.element) && positionOf(p.element) === position)
+    if (available.length < minimum) {
+      throw new Error(
+        `Cannot build a legal XI: needs ${minimum} ${position} but the squad has ${available.length}.`
+      )
+    }
+    for (const pick of available.slice(0, minimum)) take(pick)
+  }
+
+  // 2. Remaining slots by draft order, respecting the per-position maximum.
+  for (const pick of byDraftOrder) {
+    if (chosen.length >= SQUAD_RULES.play) break
+    if (taken.has(pick.element)) continue
+    const position = positionOf(pick.element)
+    const already = chosen.filter((p) => positionOf(p.element) === position).length
+    if (already >= SQUAD_RULES.max[position]) continue
+    take(pick)
+  }
+
+  if (chosen.length !== SQUAD_RULES.play) {
+    throw new Error(`Cannot build a legal XI: assembled ${chosen.length} of ${SQUAD_RULES.play}.`)
+  }
+
+  const counts = { GKP: 0, DEF: 0, MID: 0, FWD: 0 }
+  for (const pick of chosen) counts[positionOf(pick.element)]++
+  for (const position of Object.keys(counts)) {
+    if (counts[position] < SQUAD_RULES.min[position] || counts[position] > SQUAD_RULES.max[position]) {
+      throw new Error(
+        `Inferred XI is not a legal formation: ${counts.GKP}-${counts.DEF}-${counts.MID}-${counts.FWD} ` +
+          `(${position} is ${counts[position]}, allowed ${SQUAD_RULES.min[position]} to ${SQUAD_RULES.max[position]}).`
+      )
+    }
+  }
+
+  // Bench in draft order, except the spare keeper, which Draft locks to the
+  // first bench slot because an outfielder can never replace him.
+  const remaining = byDraftOrder.filter((p) => !taken.has(p.element))
+  const benchKeepers = remaining.filter((p) => positionOf(p.element) === 'GKP')
+  const benchOutfield = remaining.filter((p) => positionOf(p.element) !== 'GKP')
+  const bench = [...benchKeepers, ...benchOutfield]
+
+  // The pitch reads better with each row in draft order within its position.
+  const order = { GKP: 0, DEF: 1, MID: 2, FWD: 3 }
+  const starters = [...chosen].sort(
+    (a, b) => order[positionOf(a.element)] - order[positionOf(b.element)] || a.pick - b.pick
+  )
+
+  return { starters, bench, formation: `${counts.DEF}-${counts.MID}-${counts.FWD}` }
+}
+
+/**
+ * GW0: every manager's squad as drafted, with an inferred XI.
+ *
+ * `index` from the choices payload is the overall pick number, 1 to 165, which
+ * is what the cards show. `round` and `pick` are the round and the pick within
+ * it, kept because they are the natural way to talk about a draft.
+ */
+export function buildDraftSquads({ choices, keyByEntryId, positionOf }) {
+  const byManager = {}
+  for (const choice of choices) {
+    const key = keyByEntryId.get(choice.entry)
+    if (!key) continue
+    ;(byManager[key] ??= []).push({ element: choice.element, pick: choice.index, round: choice.round })
+  }
+
+  const squads = {}
+  const formations = {}
+  for (const [key, picks] of Object.entries(byManager)) {
+    let inferred
+    try {
+      inferred = inferDraftXI({ picks, positionOf })
+    } catch (error) {
+      throw new Error(`${key}: ${error.message}`)
+    }
+    formations[key] = inferred.formation
+
+    squads[key] = [
+      ...inferred.starters.map((p, i) => ({
+        element: p.element,
+        position: i + 1,
+        starter: true,
+        subbedOn: false,
+        subbedOff: false,
+        points: 0,
+        pick: p.pick,
+        round: p.round,
+      })),
+      ...inferred.bench.map((p, i) => ({
+        element: p.element,
+        position: 12 + i,
+        starter: false,
+        subbedOn: false,
+        subbedOff: false,
+        points: 0,
+        pick: p.pick,
+        round: p.round,
+      })),
+    ]
+  }
+
+  return { squads, formations }
+}

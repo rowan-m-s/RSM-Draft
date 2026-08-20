@@ -7,12 +7,12 @@ import { PageBody } from '../components/Layout'
 import { PlayerFlag } from '../components/PlayerFlag'
 import { useData } from '../data'
 import { useSquad } from '../lib/useSquad'
-import type { Fixture, ManagerKey, Player, Position, SquadPick, SquadPlayer } from '../types'
+import type { Fixture, ManagerKey, Position, SquadPick, SquadPlayer } from '../types'
 
 const ROWS: Position[] = ['GKP', 'DEF', 'MID', 'FWD']
 
-/** What the card's bottom line says. Never a user choice — the week decides. */
-type CardMode = 'points' | 'fixture'
+/** What the card's bottom line says. Never a user choice; the week decides. */
+type CardMode = 'points' | 'fixture' | 'pick'
 
 interface PitchPlayer {
   key: number
@@ -44,7 +44,12 @@ function PlayerCard({
   compact: boolean
 }) {
   const { player, pick } = entry
-  const line = mode === 'points' ? String(pick?.points ?? 0) : fixtureText
+  const line =
+    mode === 'points'
+      ? String(pick?.points ?? 0)
+      : mode === 'pick'
+        ? `Pick ${pick?.pick ?? '?'}`
+        : fixtureText
 
   return (
     <div className={`flex flex-col items-center ${compact ? 'w-[64px]' : 'w-[104px]'}`}>
@@ -103,12 +108,20 @@ export function Squad() {
 
   const manager = data.league.managers.find((m) => m.key === key)
 
-  const played = data.gameweeks.filter((gw) => gw.finished)
-  const locked = data.gameweeks.filter((gw) => new Date(gw.deadlineUtc).getTime() <= Date.now())
-  // Defaults to the latest finished gameweek, as the league table does.
-  const fallback = played.at(-1)?.id ?? locked.at(-1)?.id ?? data.gameweeks[0]?.id ?? 1
+  /* Only gameweeks that actually have a squad are offered. Picks do not exist
+     in Draft until a deadline passes, so a future week has nothing to render
+     and showing an empty pitch would be worse than not offering it. GW0, the
+     initial draft, is always there. */
+  const available = data.league.availableSquads?.length ? data.league.availableSquads : [0]
+  const firstGameweek = available[0]
+  const lastGameweek = available[available.length - 1]
+
+  // Defaults to the latest week with points, which until GW1 completes is GW0.
+  const withPoints = data.gameweeks.filter((gw) => gw.finished).map((gw) => gw.id)
+  const fallback = available.filter((gw) => withPoints.includes(gw)).at(-1) ?? lastGameweek
   const requested = Number(params.get('gw'))
-  const gameweek = Number.isFinite(requested) && requested > 0 ? requested : fallback
+  const gameweek =
+    Number.isFinite(requested) && available.includes(requested) ? requested : fallback
 
   const { squad, fixtures, loading, error } = useSquad(gameweek)
   const gameweekMeta = data.gameweeks.find((gw) => gw.id === gameweek)
@@ -143,44 +156,25 @@ export function Squad() {
      XI is not decided — so the currently owned fifteen are shown instead,
      grouped by position and clearly marked as not yet locked. */
   const hasPicks = Boolean(squad)
+  const isDraft = gameweek === 0
   const started = squad?.started ?? false
-  const mode: CardMode = started ? 'points' : 'fixture'
-
-  const currentSquad: Player[] = data.players.owned.filter((p) => p.owner === (key as ManagerKey))
+  const mode: CardMode = isDraft ? 'pick' : started ? 'points' : 'fixture'
 
   const asPitchPlayer = (pick: SquadPick): PitchPlayer | null => {
     const player = squad?.players[String(pick.element)]
     return player ? { key: pick.element, player, pick } : null
   }
 
-  const fromCurrent = (player: Player): PitchPlayer => ({
-    key: player.id,
-    player: {
-      name: player.name,
-      position: player.position,
-      teamId: player.teamId,
-      clubShort: player.clubShort,
-      clubCode: player.clubCode,
-      photoCode: player.photoCode,
-      status: player.status,
-      chanceOfPlaying: player.chanceOfPlaying,
-      news: player.news,
-      newsAdded: player.newsAdded,
-    },
-    pick: null,
-  })
-
   const picks = squad?.squads[key as ManagerKey] ?? []
-  const starters = hasPicks
-    ? picks.filter((p) => p.starter).map(asPitchPlayer).filter((x): x is PitchPlayer => x !== null)
-    : currentSquad.map(fromCurrent)
-  const bench = hasPicks
-    ? picks
-        .filter((p) => !p.starter)
-        .sort((a, b) => a.position - b.position)
-        .map(asPitchPlayer)
-        .filter((x): x is PitchPlayer => x !== null)
-    : []
+  const starters = picks
+    .filter((p) => p.starter)
+    .map(asPitchPlayer)
+    .filter((x): x is PitchPlayer => x !== null)
+  const bench = picks
+    .filter((p) => !p.starter)
+    .sort((a, b) => a.position - b.position)
+    .map(asPitchPlayer)
+    .filter((x): x is PitchPlayer => x !== null)
 
   const byRow = (row: Position) => starters.filter((entry) => entry.player.position === row)
   const formation = `${byRow('DEF').length}-${byRow('MID').length}-${byRow('FWD').length}`
@@ -199,12 +193,12 @@ export function Squad() {
   return (
     <>
       <Banner
-        season={`Gameweek ${gameweek}`}
+        season={isDraft ? 'First Draft' : `Gameweek ${gameweek}`}
         title={`${manager.displayName}'s squad`}
         subtitle={
-          hasPicks
-            ? `${formation} · ${started ? 'points shown' : 'fixtures shown, the week has not kicked off'}`
-            : 'Not locked yet. This is the current squad, with fixtures.'
+          isDraft
+            ? `${formation} · XI inferred from draft order, not an official lineup`
+            : `${formation} · ${started ? 'points shown' : 'fixtures shown, the week has not kicked off'}`
         }
         aside={<ManagerAvatar managerKey={manager.key} size={64} className="h-16 w-16" />}
       />
@@ -239,10 +233,11 @@ export function Squad() {
         <GameweekSlider
           className="mb-4"
           value={gameweek}
-          min={data.gameweeks[0]?.id ?? 1}
-          max={data.gameweeks.at(-1)?.id ?? 38}
+          min={firstGameweek}
+          max={lastGameweek}
           onChange={setGameweek}
-          playTo={played.at(-1)?.id}
+          playTo={lastGameweek > firstGameweek ? lastGameweek : undefined}
+          labelFor={(gw) => (gw === 0 ? 'First Draft' : `GW${gw}`)}
         />
 
         {error && (
@@ -283,13 +278,21 @@ export function Squad() {
             </div>
 
             <p className="mt-3 text-xs leading-relaxed text-pl-muted">
-              {started
-                ? 'Points are shown because the gameweek has started. '
-                : 'Fixtures are shown because the gameweek has not started. '}
-              {hasPicks
-                ? 'This is the squad as it stood that week. Squads change through waivers and trades.'
-                : 'Picks are published when the deadline passes; until then this is the current fifteen.'}
-              {bench.some((b) => b.pick?.subbedOn) && ' ▲ marks an automatic substitute who came on.'}
+              {isDraft ? (
+                <>
+                  These are the fifteen as drafted, with the overall pick number on each card. A drafted squad
+                  has no eleven, so this one is inferred: the highest drafted legal team, one keeper, at least
+                  three defenders, two midfielders and a forward. It is not an official lineup.
+                </>
+              ) : (
+                <>
+                  {started
+                    ? 'Points are shown because the gameweek has started. '
+                    : 'Fixtures are shown because the gameweek has not started. '}
+                  This is the squad as it stood that week. Squads change through waivers and trades.
+                  {bench.some((b) => b.pick?.subbedOn) && ' The green arrow marks an automatic substitute.'}
+                </>
+              )}
             </p>
           </>
         )}

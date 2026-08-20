@@ -13,6 +13,7 @@ export function GameweekSlider({
   max,
   onChange,
   playTo,
+  labelFor = (gameweek) => `GW${gameweek}`,
   className = '',
 }: {
   value: number
@@ -21,6 +22,8 @@ export function GameweekSlider({
   onChange: (gameweek: number) => void
   /** Highest gameweek the play button steps to. Omit to hide the button. */
   playTo?: number
+  /** How to name a position. GW0 is the draft, not a gameweek. */
+  labelFor?: (gameweek: number) => string
   className?: string
 }) {
   const [playing, setPlaying] = useState(false)
@@ -62,6 +65,7 @@ export function GameweekSlider({
       )}
       <input
         type="range"
+        disabled={min >= max}
         min={min}
         max={max}
         value={value}
@@ -72,7 +76,9 @@ export function GameweekSlider({
         aria-label="Gameweek"
         className="gw-slider flex-1"
       />
-      <span className="display tnum w-14 shrink-0 text-right text-xl text-pl-navy">GW{value}</span>
+      <span className="display tnum shrink-0 text-right text-xl whitespace-nowrap text-pl-navy">
+        {labelFor(value)}
+      </span>
     </div>
   )
 }
