@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.api-samples/
+.DS_Store
+*.local
+
+# Source photographs: ~140 MB of multi-megabyte PNGs. Only the optimised
+# output in public/images/ is committed. Keep these safe elsewhere.
+assets-src/
