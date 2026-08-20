@@ -61,6 +61,6 @@ export function availabilityText(player: Availability): string | null {
   const chance = player.chanceOfPlaying
   const worthAdding = chance !== null && chance > 0 && !(player.news && /\d+%/.test(player.news))
 
-  if (!player.news) return worthAdding ? `${label} — ${chance}% chance of playing` : label
-  return worthAdding ? `${player.news} — ${chance}% chance of playing` : player.news
+  if (!player.news) return worthAdding ? `${label}, ${chance}% chance of playing` : label
+  return worthAdding ? `${player.news}. ${chance}% chance of playing` : player.news
 }

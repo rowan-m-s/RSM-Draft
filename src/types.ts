@@ -38,6 +38,8 @@ export interface League {
   displayName: string
   season: string
   managers: Manager[]
+  /** Element codes with a file in public/images/players/. */
+  playerImageOverrides: number[]
   generatedAt: string
 }
 

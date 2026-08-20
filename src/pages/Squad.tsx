@@ -200,8 +200,8 @@ export function Squad() {
         title={`${manager.displayName}'s squad`}
         subtitle={
           hasPicks
-            ? `${formation} · ${started ? 'points shown' : 'fixtures shown — the week has not kicked off'}`
-            : 'Not locked yet — this is the current squad, fixtures shown'
+            ? `${formation} · ${started ? 'points shown' : 'fixtures shown, the week has not kicked off'}`
+            : 'Not locked yet. This is the current squad, with fixtures.'
         }
         aside={<ManagerAvatar managerKey={manager.key} size={64} className="h-16 w-16" />}
       />
@@ -275,7 +275,7 @@ export function Squad() {
                 ? 'Points are shown because the gameweek has started. '
                 : 'Fixtures are shown because the gameweek has not started. '}
               {hasPicks
-                ? 'This is the squad as it stood that week — squads change through waivers and trades.'
+                ? 'This is the squad as it stood that week. Squads change through waivers and trades.'
                 : 'Picks are published when the deadline passes; until then this is the current fifteen.'}
               {bench.some((b) => b.pick?.subbedOn) && ' ▲ marks an automatic substitute who came on.'}
             </p>
@@ -304,7 +304,7 @@ function Pitch({
       <div className="pitch relative px-1.5 py-5 sm:px-4 sm:py-7">
         {!locked && (
           <p className="mb-3 text-center text-[11px] font-semibold tracking-wider text-white/90 uppercase">
-            Not locked — current squad
+            Current squad, not locked
           </p>
         )}
         <div className="flex flex-col gap-4 sm:gap-6">

@@ -6,7 +6,7 @@ import {
   clubBadge,
   managerIcon2x,
   managerImage,
-  playerPhoto,
+  playerPhotoSrc,
 } from '../lib/assets'
 
 interface ImgProps {
@@ -101,7 +101,7 @@ export function PlayerPhoto({
 }) {
   return (
     <Img
-      src={playerPhoto(photoCode, size)}
+      src={playerPhotoSrc(photoCode, size)}
       fallback={PLAYER_FALLBACK}
       alt={name}
       className={className}

@@ -51,7 +51,7 @@ describe('availabilityText', () => {
 
   it('adds the percentage when the news omits it and it says something', () => {
     expect(availabilityText(player({ status: 'd', chanceOfPlaying: 50, news: 'Knock' }))).toBe(
-      'Knock — 50% chance of playing'
+      'Knock. 50% chance of playing'
     )
   })
 

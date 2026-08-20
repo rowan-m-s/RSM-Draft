@@ -164,7 +164,7 @@ function ManagerProfile({ row, onClose }: { row: SeasonRow; onClose: () => void 
               Current squad {squad.length > 0 && <span className="text-pl-muted">({squad.length})</span>}
             </h3>
             {squad.length === 0 ? (
-              <p className="mt-3 text-sm text-pl-muted">No squad yet — it appears once the draft has happened.</p>
+              <p className="mt-3 text-sm text-pl-muted">No squad yet. It appears once the draft has happened.</p>
             ) : (
               <table className="mt-2 w-full">
                 <tbody>
@@ -278,7 +278,7 @@ export function Managers() {
         <p className="mt-3 text-xs leading-relaxed text-pl-muted">
           Balance is pots won minus £5 forfeits. The £10 entry fee is not part of it, and the £110 season prize is
           separate and still pending. Money only moves between managers, so once every gameweek in a month is
-          confirmed the eleven balances cancel out —{' '}
+          confirmed the eleven balances cancel out. They stand at{' '}
           <span className="tnum font-semibold text-pl-navy">{signedMoney(totalBalance)}</span> right now, which is
           the {money(unpaidPot)} still sitting in an unsettled pot.
         </p>

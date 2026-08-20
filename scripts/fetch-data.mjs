@@ -30,6 +30,14 @@ import {
   checkBalanceInvariant,
 } from './lib/derive.mjs'
 import { MANAGER_KEYS } from './images.shared.mjs'
+import { findMissingPhotos, formatMissingReport, readOverrides } from './lib/photos.mjs'
+
+/**
+ * Must match src/lib/assets.ts. Only used to ask the CDN whether a photo
+ * exists, so the smallest size is enough.
+ */
+const playerPhotoUrl = (code) =>
+  `https://resources.premierleague.com/premierleague25/photos/players/40x40/${code}.png`
 
 const LEAGUE_ID = 23939
 const LEAGUE_DISPLAY_NAME = 'FPL Draft 26/27'
@@ -514,11 +522,16 @@ async function main() {
   }
   log(`Balances sum to ${invariant.sum} against an unpaid pot of ${invariant.unpaidPot}. Invariant holds.`)
 
+  // Published with the data so the browser never has to probe for an override
+  // that is not there.
+  const overrides = await readOverrides()
+
   const league = {
     name: leagueDetails.league?.name ?? 'RSM Draft',
     displayName: LEAGUE_DISPLAY_NAME,
     season: SEASON,
     managers: enrichedManagers,
+    playerImageOverrides: [...overrides].sort((a, b) => a - b),
     generatedAt,
   }
 
@@ -591,6 +604,24 @@ async function main() {
     `Owned ${players.owned.length}, free agents ${players.freeAgents.length}, ` +
       `months ${months.length}, confirmed gameweeks ${gameweeks.filter((g) => g.dataChecked).length}.`
   )
+  if (overrides.size > 0) log(`Local photo overrides in use: ${overrides.size}.`)
+
+  /* Which owned players still have no picture. Runs after everything is
+     written, and never fails the job: a missing photo is cosmetic, and the
+     scores must not be held up by the CDN being slow. */
+  log('\nChecking photos for owned players...')
+  try {
+    const missing = await findMissingPhotos({
+      owned: players.owned,
+      overrides,
+      userAgent: USER_AGENT,
+      photoUrl: playerPhotoUrl,
+    })
+    const nameOf = (key) => enrichedManagers.find((m) => m.key === key)?.displayName ?? key
+    log(formatMissingReport(missing, nameOf))
+  } catch (error) {
+    log(`Photo check skipped: ${error.message}`)
+  }
 }
 
 main().catch((error) => {

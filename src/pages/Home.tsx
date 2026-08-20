@@ -122,7 +122,7 @@ function MotmCard({ month, nameOf }: { month: Month; nameOf: (key: ManagerKey) =
       {month.topPerformer && (
         <p className="border-t border-pl-border bg-pl-off px-5 py-3 text-sm text-pl-navy">
           Top performer: <strong className="font-semibold">{month.topPerformer.playerName}</strong> for{' '}
-          {nameOf(month.topPerformer.managerKey)} —{' '}
+          {nameOf(month.topPerformer.managerKey)},{' '}
           <span className="tnum font-semibold">{month.topPerformer.points}</span> pts
         </p>
       )}

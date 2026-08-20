@@ -128,7 +128,7 @@ export function Layout() {
             <span className="h-1 w-5 rounded-full bg-pl-green" />
             <span className="h-1 w-5 rounded-full bg-pl-pink" />
           </span>
-          <p className="display mt-2 text-2xl leading-none text-pl-purple">RSM</p>
+          <p className="display mt-2 text-2xl leading-none text-pl-purple">FPL</p>
           <p className="text-xs text-pl-muted">Draft 26/27</p>
         </div>
 
@@ -154,8 +154,8 @@ export function Layout() {
       {/* Mobile top bar. */}
       <div className="flex items-center justify-between border-b border-pl-border bg-pl-white px-4 py-3 lg:hidden">
         <div>
-          <p className="display text-base leading-none text-pl-purple">RSM Draft</p>
-          <p className="text-[11px] text-pl-muted">26/27</p>
+          <p className="display text-base leading-none text-pl-purple">FPL</p>
+          <p className="text-[11px] text-pl-muted">Draft 26/27</p>
         </div>
         <Freshness compact />
       </div>

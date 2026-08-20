@@ -199,7 +199,7 @@ export function Players() {
             <p className="display text-xl text-pl-navy">Nothing matches</p>
             <p className="mt-1.5 text-sm text-pl-muted">
               {data.players.owned.length === 0 && ownership === 'owned'
-                ? 'No squads yet — ownership appears once the draft has happened.'
+                ? 'No squads yet. Ownership appears once the draft has happened.'
                 : 'Try a different search or filter.'}
             </p>
           </div>

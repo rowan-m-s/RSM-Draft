@@ -1,6 +1,6 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react'
 import type { Gameweek, League, Month, PlayersFile, Season } from './types'
-import { asset } from './lib/assets'
+import { asset, setPlayerImageOverrides } from './lib/assets'
 
 export interface Dataset {
   league: League
@@ -39,7 +39,7 @@ async function loadDataset(cacheBust: number | null): Promise<Dataset> {
     FILES.map(async (name) => {
       const url = asset(`data/${name}.json${suffix}`)
       const response = await fetch(url, { cache: cacheBust === null ? 'default' : 'reload' })
-      if (!response.ok) throw new Error(`${name}.json — HTTP ${response.status}`)
+      if (!response.ok) throw new Error(`${name}.json failed with HTTP ${response.status}`)
       return [name, await response.json()] as const
     })
   )
@@ -51,6 +51,9 @@ async function loadDataset(cacheBust: number | null): Promise<Dataset> {
     season: Season
     players: PlayersFile
   }
+
+  // Published once with the data rather than probed per image.
+  setPlayerImageOverrides(files.league.playerImageOverrides)
 
   return {
     league: files.league,

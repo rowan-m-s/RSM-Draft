@@ -31,7 +31,7 @@ async function loadJson<T>(path: string): Promise<T | null> {
       cache.set(path, null)
       return null
     }
-    throw new Error(`${path} — HTTP ${response.status}`)
+    throw new Error(`${path} failed with HTTP ${response.status}`)
   }
 
   const data = (await response.json()) as T

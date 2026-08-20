@@ -28,29 +28,32 @@ const SUBTITLES: Record<View, string> = {
  *
  * Kept out of the row itself: the collapsed table stays five columns and
  * nothing else, which is the whole point of it reading in one second.
+ *
+ * The MVP is season long and deliberately does not follow the Gameweek /
+ * Month / Overall toggle. It answers "who has been this manager's best player
+ * this season", which is a fact about the squad rather than about whichever
+ * slice of the table happens to be on screen.
  */
 function RowDetail({
   managerKey,
-  best,
-  scopeLabel,
+  mvp,
   gameweek,
 }: {
   managerKey: ManagerKey
-  best: TopPerformer | null
-  scopeLabel: string
+  mvp: TopPerformer | null
   gameweek: number | null
 }) {
   return (
     <div className="flex flex-wrap items-center justify-between gap-3 border-t border-pl-border bg-pl-off px-4 py-3">
       <div className="min-w-0">
-        <p className="eyebrow text-pl-muted">Best performer · {scopeLabel}</p>
-        {best ? (
+        <p className="eyebrow text-pl-muted">MVP</p>
+        {mvp ? (
           <p className="mt-1 truncate text-sm text-pl-navy">
-            <strong className="font-semibold">{best.playerName}</strong>{' '}
-            <span className="tnum text-pl-muted">{best.points} pts</span>
+            <strong className="font-semibold">{mvp.playerName}</strong>{' '}
+            <span className="tnum text-pl-muted">{mvp.points} pts</span>
           </p>
         ) : (
-          <p className="mt-1 text-sm text-pl-muted">Nothing counted yet.</p>
+          <p className="mt-1 text-sm text-pl-muted">No points scored yet.</p>
         )}
       </div>
       <Link
@@ -61,6 +64,12 @@ function RowDetail({
       </Link>
     </div>
   )
+}
+
+/** Season-long MVP for a manager, wherever the panel is opened from. */
+function useMvp() {
+  const { data } = useData()
+  return (key: ManagerKey) => data.season.rows.find((row) => row.key === key)?.topPerformer ?? null
 }
 
 /**
@@ -129,8 +138,7 @@ function Overall() {
                     <td colSpan={5} className="p-0">
                       <RowDetail
                         managerKey={row.key}
-                        best={row.topPerformer}
-                        scopeLabel="season"
+                        mvp={row.topPerformer}
                         gameweek={data.season.latestSettledGameweek}
                       />
                     </td>
@@ -173,6 +181,7 @@ function GameweekView() {
 
 function GameweekTable({ gameweek, nameOf }: { gameweek: Gameweek; nameOf: (k: ManagerKey) => string }) {
   const { data } = useData()
+  const mvpOf = useMvp()
   const [open, setOpen] = useState<ManagerKey | null>(null)
 
   if (!gameweek.finished) {
@@ -245,12 +254,7 @@ function GameweekTable({ gameweek, nameOf }: { gameweek: Gameweek; nameOf: (k: M
               {expanded && (
                 <tr>
                   <td colSpan={3} className="p-0">
-                    <RowDetail
-                      managerKey={row.key}
-                      best={gameweek.topPerformerByManager?.[row.key] ?? null}
-                      scopeLabel={`GW${gameweek.id}`}
-                      gameweek={gameweek.id}
-                    />
+                    <RowDetail managerKey={row.key} mvp={mvpOf(row.key)} gameweek={gameweek.id} />
                   </td>
                 </tr>
               )}
@@ -264,8 +268,8 @@ function GameweekTable({ gameweek, nameOf }: { gameweek: Gameweek; nameOf: (k: M
         <p className="border-t border-pl-border bg-pl-off px-4 py-3 text-sm text-pl-navy">
           {gameweek.kochKeys.length > 1 ? (
             <>
-              {gameweek.kochKeys.length} managers tied on {lowest}. Each pays £5 —{' '}
-              <strong className="font-semibold text-pl-pink">{money(gameweek.charged)}</strong> into the pot.
+              {gameweek.kochKeys.length} managers tied on {lowest}. Each pays £5, so{' '}
+              <strong className="font-semibold text-pl-pink">{money(gameweek.charged)}</strong> goes into the pot.
             </>
           ) : (
             <>
@@ -322,6 +326,7 @@ function MonthView() {
 
 function MonthTable({ month, nameOf }: { month: Month; nameOf: (k: ManagerKey) => string }) {
   const { data } = useData()
+  const mvpOf = useMvp()
   const [open, setOpen] = useState<ManagerKey | null>(null)
 
   if (month.gameweekIds.length === 0) {
@@ -369,7 +374,7 @@ function MonthTable({ month, nameOf }: { month: Month; nameOf: (k: ManagerKey) =
           ) : (
             <>
               <p className="display mt-1.5 truncate text-2xl leading-none text-pl-navy">{nameOf(ranked[0].key)}</p>
-              <p className="mt-1.5 text-xs text-pl-muted">Not settled — the month is still running</p>
+              <p className="mt-1.5 text-xs text-pl-muted">Still running, not settled yet</p>
             </>
           )}
         </div>
@@ -381,7 +386,7 @@ function MonthTable({ month, nameOf }: { month: Month; nameOf: (k: ManagerKey) =
                 {month.topPerformer.playerName}
               </p>
               <p className="mt-1.5 text-xs text-pl-muted">
-                for {nameOf(month.topPerformer.managerKey)} — {month.topPerformer.points} pts
+                for {nameOf(month.topPerformer.managerKey)}, {month.topPerformer.points} pts
               </p>
             </>
           ) : (
@@ -426,8 +431,7 @@ function MonthTable({ month, nameOf }: { month: Month; nameOf: (k: ManagerKey) =
                     <td colSpan={3} className="p-0">
                       <RowDetail
                         managerKey={row.key}
-                        best={month.topPerformerByManager?.[row.key] ?? null}
-                        scopeLabel={month.label}
+                        mvp={mvpOf(row.key)}
                         gameweek={month.gameweekIds.at(-1) ?? null}
                       />
                     </td>

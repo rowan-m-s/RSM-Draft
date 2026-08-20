@@ -65,7 +65,7 @@ export function DataFooter() {
       <p className="eyebrow text-pl-muted">Data</p>
       <p className={`mt-2 text-sm ${age?.stale ? 'font-semibold text-pl-pink' : 'text-pl-navy'}`}>
         {reloading ? 'Reloading…' : `Updated ${age?.text ?? 'never'}`}
-        {age?.stale && ' — the update job may have stopped.'}
+        {age?.stale && '. The update job may have stopped.'}
       </p>
       <div className="mt-4 flex flex-wrap items-center gap-3">
         <button
@@ -87,7 +87,7 @@ export function DataFooter() {
       </div>
       <p className="mt-3 text-xs leading-relaxed text-pl-muted">
         Reload re-reads the stored data so you are not looking at a stale copy held by your browser. It does not
-        pull new scores from FPL — that happens on a schedule, every 15 minutes on match days. Force update runs
+        pull new scores from FPL. That happens on a schedule, every 15 minutes on match days. Force update runs
         the job by hand and needs repo access; it takes a couple of minutes, then reload.
       </p>
     </section>

@@ -87,6 +87,31 @@ const PHOTO_SEGMENT: Record<PhotoSize, string> = {
 export const playerPhoto = (photoCode: number, size: PhotoSize = 'small') =>
   `${RESOURCES}/${PHOTO_SEASON}/photos/players/${PHOTO_SEGMENT[size]}/${photoCode}.png`
 
+/**
+ * Local overrides for players the CDN has no photo for.
+ *
+ * Keyed on the element `code`, which is stable across seasons; the id is not,
+ * so a file named by id could silently attach to a different player next
+ * August.
+ *
+ * The set is published in league.json rather than probed from the browser.
+ * Trying the local path first and falling back on error would mean a 404 for
+ * every one of the ~150 players who do not have an override, on every page
+ * load. The fetch job already knows what is in the folder, so it says so.
+ */
+let overrides: ReadonlySet<number> = new Set()
+
+export function setPlayerImageOverrides(codes: readonly number[] | undefined) {
+  overrides = new Set(codes ?? [])
+}
+
+export const playerImageOverride = (photoCode: number) =>
+  overrides.has(photoCode) ? asset(`images/players/${photoCode}.png`) : null
+
+/** The image to try first: a local override if there is one, else the CDN. */
+export const playerPhotoSrc = (photoCode: number, size: PhotoSize = 'small') =>
+  playerImageOverride(photoCode) ?? playerPhoto(photoCode, size)
+
 export const clubBadge = (clubCode: number, size: 20 | 50 | 70 | 100 = 50) => `${PL}/badges/${size}/t${clubCode}.png`
 
 export const PLAYER_FALLBACK = asset('images/player-silhouette.svg')
