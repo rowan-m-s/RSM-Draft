@@ -1,0 +1,145 @@
+@import 'tailwindcss';
+
+/* ---------------------------------------------------------------------------
+   Palette. Confirmed in the brief — light theme, PL purple reserved for banners
+   and chrome.
+
+   The bright green and cyan are FILL-ONLY. #00FF87 on white is roughly 1.4:1
+   and #04F5FF about 1.5:1; both are effectively invisible as text. The `-ink`
+   variants are the text-safe substitutes, and palette.test.ts asserts that no
+   className puts a bright one on a light surface.
+
+   Two deviations from the brief's stated hexes, both for the reason the brief
+   gives for having `-ink` variants at all. #00A550 measures 3.23:1 on white
+   and #0090A8 measures 3.78:1 — under the 4.5:1 normal text needs, and both
+   are used at 11–16px here. Darkened to #008040 (5.05:1) and #007A8A (5.06:1),
+   which stay in the same hue family. The `-ink` colours only ever sit on
+   white, so nothing is lost by tuning them for it.
+--------------------------------------------------------------------------- */
+@theme {
+  --color-pl-purple: #37003c;
+  --color-pl-purple-deep: #2a002e;
+  --color-pl-navy: #1b1b3a;
+  --color-pl-white: #ffffff;
+  --color-pl-off: #f7f7f9;
+  --color-pl-border: #e5e5eb;
+  --color-pl-pink: #e90052;
+  --color-pl-green: #00ff87;
+  --color-pl-green-ink: #008040;
+  --color-pl-cyan: #04f5ff;
+  --color-pl-cyan-ink: #007a8a;
+  --color-pl-muted: #6b6b7b;
+
+  --font-sans: 'Archivo', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: 'Archivo Narrow', 'Archivo', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-pl-off);
+    color: var(--color-pl-navy);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Proportional digits make leaderboard columns wobble as scores change. */
+  table,
+  .tnum {
+    font-variant-numeric: tabular-nums;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-pl-cyan-ink);
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  /* The one place a gradient is allowed. */
+  .banner-gradient {
+    background-image: linear-gradient(115deg, #37003c 0%, #4b0a52 42%, #8c1157 74%, #e90052 130%);
+  }
+
+  /* The cyan/green/pink strip that sits under every banner. */
+  .banner-strip {
+    height: 5px;
+    background-image: linear-gradient(
+      to right,
+      var(--color-pl-cyan) 0 38%,
+      var(--color-pl-green) 38% 62%,
+      var(--color-pl-pink) 62% 100%
+    );
+  }
+
+  .display {
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  .eyebrow {
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  .card {
+    background-color: var(--color-pl-white);
+    border: 1px solid var(--color-pl-border);
+    border-radius: 0.5rem;
+  }
+}
+
+/* The range input for the gameweek picker — needs vendor pseudo-elements that
+   Tailwind utilities cannot reach. */
+.gw-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  height: 28px;
+  width: 100%;
+  cursor: pointer;
+}
+.gw-slider::-webkit-slider-runnable-track {
+  height: 8px;
+  border-radius: 999px;
+  background: linear-gradient(to right, var(--color-pl-purple) 0%, var(--color-pl-cyan) 100%);
+}
+.gw-slider::-moz-range-track {
+  height: 8px;
+  border-radius: 999px;
+  background: linear-gradient(to right, var(--color-pl-purple) 0%, var(--color-pl-cyan) 100%);
+}
+.gw-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 22px;
+  width: 22px;
+  margin-top: -7px;
+  border-radius: 999px;
+  background: var(--color-pl-white);
+  border: 3px solid var(--color-pl-purple);
+  box-shadow: 0 1px 3px rgb(27 27 58 / 0.3);
+}
+.gw-slider::-moz-range-thumb {
+  height: 22px;
+  width: 22px;
+  border-radius: 999px;
+  background: var(--color-pl-white);
+  border: 3px solid var(--color-pl-purple);
+  box-shadow: 0 1px 3px rgb(27 27 58 / 0.3);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
