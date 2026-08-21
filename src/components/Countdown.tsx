@@ -26,6 +26,30 @@ function Unit({ value, label }: { value: number; label: string }) {
   )
 }
 
+/**
+ * A secondary button out to the Draft site. Outlined rather than filled so
+ * the countdown stays the loudest thing on the card. Opens in a new tab,
+ * marked as leaving the site; the label names the destination rather than
+ * an action, because anyone not signed in to FPL Draft lands on its login
+ * screen first and should still recognise where they were headed.
+ */
+function DraftLink({ href, children }: { href: string; children: React.ReactNode }) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex shrink-0 items-center gap-1.5 rounded-md border border-pl-border px-3 py-1.5 text-xs font-semibold text-pl-text transition-colors hover:bg-pl-surface-2"
+    >
+      {children}
+      <svg width="11" height="11" viewBox="0 0 12 12" aria-hidden="true" className="opacity-70">
+        <path d="M4.5 1.5h6v6M10.5 1.5 5 7M8.5 7.5v3h-7v-7h3" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+      </svg>
+      <span className="sr-only">, opens FPL Draft in a new tab</span>
+    </a>
+  )
+}
+
 function Clock({ target, now }: { target: string; now: Date }) {
   const { days, hours, minutes, seconds } = remainingUntil(target, now)
   return (
@@ -81,7 +105,10 @@ export function DeadlineStrip({ gameweeks }: { gameweeks: Gameweek[] }) {
             <div className="mt-3">
               <Clock target={waiver.waiversUtc!} now={now} />
             </div>
-            <p className="mt-3 text-xs text-pl-muted">{formatLondon(waiver.waiversUtc!)}</p>
+            <div className="mt-3 flex items-end justify-between gap-3">
+              <p className="text-xs text-pl-muted">{formatLondon(waiver.waiversUtc!)}</p>
+              <DraftLink href="https://draft.premierleague.com/team/transactions">Waivers Portal</DraftLink>
+            </div>
           </div>
         )}
         <div className="bg-pl-surface p-5">
@@ -94,7 +121,10 @@ export function DeadlineStrip({ gameweeks }: { gameweeks: Gameweek[] }) {
           <div className="mt-3">
             <Clock target={deadline.deadlineUtc} now={now} />
           </div>
-          <p className="mt-3 text-xs text-pl-muted">{formatLondon(deadline.deadlineUtc)}</p>
+          <div className="mt-3 flex items-end justify-between gap-3">
+            <p className="text-xs text-pl-muted">{formatLondon(deadline.deadlineUtc)}</p>
+            <DraftLink href="https://draft.premierleague.com/team/my">My Team</DraftLink>
+          </div>
         </div>
       </div>
     </section>
