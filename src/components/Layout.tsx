@@ -135,8 +135,7 @@ function DataGate({ state }: { state: ReturnType<typeof useDataState>['state'] }
 export function Layout() {
   const { state } = useDataState()
   const data = state.status === 'ready' ? state.data : null
-  const nameOf = (key: string) =>
-    data?.league.managers.find((m) => m.key === key)?.displayName ?? key
+  const nameOf = (key: string) => data?.league.managers.find((m) => m.key === key)?.displayName ?? key
 
   return (
     <div className="min-h-dvh lg:flex">
@@ -168,11 +167,7 @@ export function Layout() {
         <div className="mt-auto min-h-0 overflow-y-auto p-3">
           {data && (
             <div className="card px-3 py-3">
-              <MiniTable
-                rows={data.season.rows}
-                nameOf={nameOf}
-                ranked={data.gameweeks.some((gw) => gw.finished)}
-              />
+              <MiniTable rows={data.season.rows} nameOf={nameOf} ranked={data.gameweeks.some((gw) => gw.started)} />
             </div>
           )}
         </div>

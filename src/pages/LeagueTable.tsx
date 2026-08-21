@@ -81,26 +81,38 @@ function Overall() {
   const rows = data.season.rows
   const nameOf = (key: string) => data.league.managers.find((m) => m.key === key)?.displayName ?? key
   const teamOf = (key: string) => data.league.managers.find((m) => m.key === key)?.teamName ?? ''
-  const ranked = data.gameweeks.some((gw) => gw.finished)
+  const ranked = data.gameweeks.some((gw) => gw.started)
 
   return (
     <div className="card overflow-hidden">
       <table className="w-full">
         <thead>
           <tr className="border-b border-pl-border text-left">
-            <th scope="col" className="w-10 py-3 pl-3 text-[11px] sm:w-12 font-semibold tracking-wider text-pl-muted uppercase">
+            <th
+              scope="col"
+              className="w-10 py-3 pl-3 text-[11px] sm:w-12 font-semibold tracking-wider text-pl-muted uppercase"
+            >
               #
             </th>
             <th scope="col" className="py-3 text-[11px] font-semibold tracking-wider text-pl-muted uppercase">
               Manager
             </th>
-            <th scope="col" className="w-10 py-3 text-right text-[11px] font-semibold tracking-wider text-pl-muted uppercase sm:w-14">
+            <th
+              scope="col"
+              className="w-10 py-3 text-right text-[11px] font-semibold tracking-wider text-pl-muted uppercase sm:w-14"
+            >
               GW
             </th>
-            <th scope="col" className="w-12 py-3 text-right text-[11px] font-semibold tracking-wider text-pl-muted uppercase sm:w-16">
+            <th
+              scope="col"
+              className="w-12 py-3 text-right text-[11px] font-semibold tracking-wider text-pl-muted uppercase sm:w-16"
+            >
               Month
             </th>
-            <th scope="col" className="w-14 py-3 pr-3 text-right text-[11px] font-semibold tracking-wider text-pl-muted uppercase sm:w-20 sm:pr-4">
+            <th
+              scope="col"
+              className="w-14 py-3 pr-3 text-right text-[11px] font-semibold tracking-wider text-pl-muted uppercase sm:w-20 sm:pr-4"
+            >
               Total
             </th>
           </tr>
@@ -154,7 +166,8 @@ function GameweekView() {
   const { data } = useData()
   const nameOf = (key: string) => data.league.managers.find((m) => m.key === key)?.displayName ?? key
 
-  const played = data.gameweeks.filter((gw) => gw.finished)
+  // Finished weeks and the one in play, which shows live.
+  const played = data.gameweeks.filter((gw) => gw.started)
   const latest = played.at(-1)?.id ?? data.gameweeks[0].id
   const [selected, setSelected] = useState(latest)
 
@@ -182,11 +195,11 @@ function GameweekTable({ gameweek, nameOf }: { gameweek: Gameweek; nameOf: (k: M
   const mvpOf = useMvp()
   const [open, setOpen] = useState<ManagerKey | null>(null)
 
-  if (!gameweek.finished) {
+  if (!gameweek.started) {
     return (
       <div className="card p-8 text-center">
         <p className="display text-xl text-pl-text">Gameweek {gameweek.id} hasn't been played</p>
-        <p className="mt-1.5 text-sm text-pl-muted">Scores appear once the gameweek starts.</p>
+        <p className="mt-1.5 text-sm text-pl-muted">Scores appear once the first match kicks off.</p>
       </div>
     )
   }
@@ -202,8 +215,12 @@ function GameweekTable({ gameweek, nameOf }: { gameweek: Gameweek; nameOf: (k: M
     <div className={`card overflow-hidden ${provisional ? 'opacity-90' : ''}`}>
       {provisional && (
         <p className="border-b border-pl-border bg-pl-surface-2 px-4 py-3 text-sm text-pl-muted">
-          <strong className="font-semibold text-pl-text">Provisional.</strong> FPL hasn't confirmed the final points
-          for this gameweek, so no Koch and no money yet.
+          <strong className="font-semibold text-pl-text">
+            {gameweek.scoresProvisional ? 'Live.' : 'Provisional.'}
+          </strong>{' '}
+          {gameweek.scoresProvisional
+            ? 'Scores are the XI as it stands; FPL applies automatic substitutions and confirms the points once the gameweek ends. No Koch and no money yet.'
+            : "FPL hasn't confirmed the final points for this gameweek, so no Koch and no money yet."}
         </p>
       )}
 
@@ -215,46 +232,46 @@ function GameweekTable({ gameweek, nameOf }: { gameweek: Gameweek; nameOf: (k: M
             const expanded = open === row.key
             return (
               <Fragment key={row.key}>
-              <tr
-                onClick={() => setOpen(expanded ? null : row.key)}
-                aria-expanded={expanded}
-                className={[
-                  'cursor-pointer border-b border-pl-border last:border-0',
-                  isKoch ? 'bg-pl-pink/10' : expanded ? 'bg-pl-surface-2' : 'hover:bg-pl-surface-2',
-                ].join(' ')}
-              >
-                <td className="w-10 py-3 pl-3">
-                  <span className={`tnum text-sm ${isKoch ? 'font-semibold text-pl-pink' : 'text-pl-muted'}`}>
-                    {rankLabel(i + 1)}
-                  </span>
-                </td>
-                <td className="max-w-0 py-2.5 pl-3">
-                  <span className="flex min-w-0 items-center gap-2.5">
-                    <ManagerCell managerKey={row.key} name={nameOf(row.key)} team={teamOf(row.key)} />
-                    {isKoch && (
-                      <span className="shrink-0 rounded bg-pl-pink px-1.5 py-0.5 text-[10px] font-bold tracking-wide text-pl-bg uppercase">
-                        Koch
-                      </span>
-                    )}
-                  </span>
-                </td>
-                <td className="w-20 py-3 pr-4 text-right">
-                  <span
-                    className={`display tnum text-xl ${
-                      provisional ? 'text-pl-muted' : isKoch ? 'text-pl-pink' : 'text-pl-text'
-                    }`}
-                  >
-                    {row.points}
-                  </span>
-                </td>
-              </tr>
-              {expanded && (
-                <tr>
-                  <td colSpan={3} className="p-0">
-                    <RowDetail managerKey={row.key} mvp={mvpOf(row.key)} gameweek={gameweek.id} />
+                <tr
+                  onClick={() => setOpen(expanded ? null : row.key)}
+                  aria-expanded={expanded}
+                  className={[
+                    'cursor-pointer border-b border-pl-border last:border-0',
+                    isKoch ? 'bg-pl-pink/10' : expanded ? 'bg-pl-surface-2' : 'hover:bg-pl-surface-2',
+                  ].join(' ')}
+                >
+                  <td className="w-10 py-3 pl-3">
+                    <span className={`tnum text-sm ${isKoch ? 'font-semibold text-pl-pink' : 'text-pl-muted'}`}>
+                      {rankLabel(i + 1)}
+                    </span>
+                  </td>
+                  <td className="max-w-0 py-2.5 pl-3">
+                    <span className="flex min-w-0 items-center gap-2.5">
+                      <ManagerCell managerKey={row.key} name={nameOf(row.key)} team={teamOf(row.key)} />
+                      {isKoch && (
+                        <span className="shrink-0 rounded bg-pl-pink px-1.5 py-0.5 text-[10px] font-bold tracking-wide text-pl-bg uppercase">
+                          Koch
+                        </span>
+                      )}
+                    </span>
+                  </td>
+                  <td className="w-20 py-3 pr-4 text-right">
+                    <span
+                      className={`display tnum text-xl ${
+                        provisional ? 'text-pl-muted' : isKoch ? 'text-pl-pink' : 'text-pl-text'
+                      }`}
+                    >
+                      {row.points}
+                    </span>
                   </td>
                 </tr>
-              )}
+                {expanded && (
+                  <tr>
+                    <td colSpan={3} className="p-0">
+                      <RowDetail managerKey={row.key} mvp={mvpOf(row.key)} gameweek={gameweek.id} />
+                    </td>
+                  </tr>
+                )}
               </Fragment>
             )
           })}
@@ -339,7 +356,7 @@ function MonthTable({ month, nameOf }: { month: Month; nameOf: (k: ManagerKey) =
 
   // The pot only counts confirmed gameweeks, so say which ones those are
   // rather than listing every week the month has played.
-  const inMonth = data.gameweeks.filter((gw) => gw.month === month.id && gw.finished)
+  const inMonth = data.gameweeks.filter((gw) => gw.month === month.id && gw.started)
   const confirmed = inMonth.filter((gw) => gw.dataChecked)
   const provisional = inMonth.filter((gw) => !gw.dataChecked)
   // Everyone level on top leads together, as the settled view does with winners.
@@ -404,39 +421,39 @@ function MonthTable({ month, nameOf }: { month: Month; nameOf: (k: ManagerKey) =
               const expanded = open === row.key
               return (
                 <Fragment key={row.key}>
-                <tr
-                  onClick={() => setOpen(expanded ? null : row.key)}
-                  aria-expanded={expanded}
-                  className={`cursor-pointer border-b border-pl-border last:border-0 ${expanded ? 'bg-pl-surface-2' : 'hover:bg-pl-surface-2'}`}
-                >
-                  <td className="w-10 py-3 pl-3">
-                    <span className="tnum text-sm text-pl-muted">{rankLabel(i + 1)}</span>
-                  </td>
-                  <td className="max-w-0 py-2.5 pl-3">
-                    <span className="flex min-w-0 items-center gap-2.5">
-                      <ManagerCell managerKey={row.key} name={nameOf(row.key)} team={teamOf(row.key)} />
-                      {isWinner && (
-                        <span className="shrink-0 rounded bg-pl-green px-1.5 py-0.5 text-[10px] font-bold tracking-wide text-pl-bg uppercase">
-                          MOTM
-                        </span>
-                      )}
-                    </span>
-                  </td>
-                  <td className="w-20 py-3 pr-4 text-right">
-                    <span className="display tnum text-xl text-pl-text">{row.points}</span>
-                  </td>
-                </tr>
-                {expanded && (
-                  <tr>
-                    <td colSpan={3} className="p-0">
-                      <RowDetail
-                        managerKey={row.key}
-                        mvp={mvpOf(row.key)}
-                        gameweek={month.gameweekIds.at(-1) ?? null}
-                      />
+                  <tr
+                    onClick={() => setOpen(expanded ? null : row.key)}
+                    aria-expanded={expanded}
+                    className={`cursor-pointer border-b border-pl-border last:border-0 ${expanded ? 'bg-pl-surface-2' : 'hover:bg-pl-surface-2'}`}
+                  >
+                    <td className="w-10 py-3 pl-3">
+                      <span className="tnum text-sm text-pl-muted">{rankLabel(i + 1)}</span>
+                    </td>
+                    <td className="max-w-0 py-2.5 pl-3">
+                      <span className="flex min-w-0 items-center gap-2.5">
+                        <ManagerCell managerKey={row.key} name={nameOf(row.key)} team={teamOf(row.key)} />
+                        {isWinner && (
+                          <span className="shrink-0 rounded bg-pl-green px-1.5 py-0.5 text-[10px] font-bold tracking-wide text-pl-bg uppercase">
+                            MOTM
+                          </span>
+                        )}
+                      </span>
+                    </td>
+                    <td className="w-20 py-3 pr-4 text-right">
+                      <span className="display tnum text-xl text-pl-text">{row.points}</span>
                     </td>
                   </tr>
-                )}
+                  {expanded && (
+                    <tr>
+                      <td colSpan={3} className="p-0">
+                        <RowDetail
+                          managerKey={row.key}
+                          mvp={mvpOf(row.key)}
+                          gameweek={month.gameweekIds.at(-1) ?? null}
+                        />
+                      </td>
+                    </tr>
+                  )}
                 </Fragment>
               )
             })}
@@ -471,9 +488,7 @@ export function LeagueTable() {
   const [view, setView] = useState<View>('overall')
 
   const withGameweeks = data.months.filter((m) => m.gameweekIds.length > 0)
-  const [selectedMonth, setSelectedMonth] = useState<string | undefined>(
-    withGameweeks.at(-1)?.id ?? data.months[0]?.id
-  )
+  const [selectedMonth, setSelectedMonth] = useState<string | undefined>(withGameweeks.at(-1)?.id ?? data.months[0]?.id)
   const month = data.months.find((m) => m.id === selectedMonth) ?? data.months[0] ?? null
 
   const pot =

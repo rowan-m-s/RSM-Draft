@@ -320,7 +320,7 @@ function MoneyStrip({
 }) {
   const { data } = useData()
   const leader = data.season.rows[0]
-  const anyPlayed = data.gameweeks.some((gw) => gw.finished)
+  const anyPlayed = data.gameweeks.some((gw) => gw.started)
   // Only confirmed gameweeks have money attached, so count those rather than
   // every gameweek the month has played.
   const confirmed = month ? data.gameweeks.filter((gw) => gw.month === month.id && gw.dataChecked).length : 0
@@ -443,7 +443,7 @@ export function Home() {
           {/* The compact table appears inline on Home for mobile, since the
               sidebar that normally holds it is not there. */}
           <section className="card p-4 lg:hidden">
-            <MiniTable rows={data.season.rows} nameOf={nameOf} ranked={data.gameweeks.some((gw) => gw.finished)} />
+            <MiniTable rows={data.season.rows} nameOf={nameOf} ranked={data.gameweeks.some((gw) => gw.started)} />
           </section>
 
           <DataFooter />

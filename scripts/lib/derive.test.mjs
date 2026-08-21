@@ -7,6 +7,7 @@ import {
   buildGameweeks,
   buildMonths,
   buildPlayers,
+  provisionalScores,
   readElementStats,
   buildSeason,
   buildSquad,
@@ -20,11 +21,41 @@ const KEYS = ['rushy', 'kellett', 'wallis', 'jls', 'paddy', 'bennett', 'wood', '
 
 /** Two August gameweeks and three September ones, matching the real calendar. */
 const EVENTS = [
-  { id: 1, deadline_time: '2026-08-21T17:30:00Z', waivers_time: '2026-08-20T17:30:00Z', trades_time: '2026-08-19T17:30:00Z', finished: true },
-  { id: 2, deadline_time: '2026-08-28T17:30:00Z', waivers_time: '2026-08-27T17:30:00Z', trades_time: '2026-08-26T17:30:00Z', finished: true },
-  { id: 3, deadline_time: '2026-09-04T17:30:00Z', waivers_time: '2026-09-03T17:30:00Z', trades_time: '2026-09-02T17:30:00Z', finished: true },
-  { id: 4, deadline_time: '2026-09-12T12:30:00Z', waivers_time: '2026-09-11T12:30:00Z', trades_time: '2026-09-10T12:30:00Z', finished: true },
-  { id: 5, deadline_time: '2026-09-18T17:30:00Z', waivers_time: '2026-09-17T17:30:00Z', trades_time: '2026-09-16T17:30:00Z', finished: false },
+  {
+    id: 1,
+    deadline_time: '2026-08-21T17:30:00Z',
+    waivers_time: '2026-08-20T17:30:00Z',
+    trades_time: '2026-08-19T17:30:00Z',
+    finished: true,
+  },
+  {
+    id: 2,
+    deadline_time: '2026-08-28T17:30:00Z',
+    waivers_time: '2026-08-27T17:30:00Z',
+    trades_time: '2026-08-26T17:30:00Z',
+    finished: true,
+  },
+  {
+    id: 3,
+    deadline_time: '2026-09-04T17:30:00Z',
+    waivers_time: '2026-09-03T17:30:00Z',
+    trades_time: '2026-09-02T17:30:00Z',
+    finished: true,
+  },
+  {
+    id: 4,
+    deadline_time: '2026-09-12T12:30:00Z',
+    waivers_time: '2026-09-11T12:30:00Z',
+    trades_time: '2026-09-10T12:30:00Z',
+    finished: true,
+  },
+  {
+    id: 5,
+    deadline_time: '2026-09-18T17:30:00Z',
+    waivers_time: '2026-09-17T17:30:00Z',
+    trades_time: '2026-09-16T17:30:00Z',
+    finished: false,
+  },
 ]
 
 const score = (values) => Object.fromEntries(KEYS.map((k, i) => [k, values[i]]))
@@ -394,7 +425,12 @@ describe('buildSquad', () => {
       ],
     })
     expect(squad.filter((p) => p.starter)).toHaveLength(11)
-    expect(squad.filter((p) => p.subbedOn).map((p) => p.element).sort()).toEqual([112, 113])
+    expect(
+      squad
+        .filter((p) => p.subbedOn)
+        .map((p) => p.element)
+        .sort()
+    ).toEqual([112, 113])
   })
 
   it('accepts the shorter in/out field names too', () => {
@@ -426,14 +462,38 @@ describe('buildFixtures', () => {
 
   it('keeps every match in a flat list, unscheduled ones last', () => {
     const full = [
-      { id: 3, event: 1, team_h: 10, team_a: 6, kickoff_time: '2026-08-24T19:00:00Z', started: true, finished: true, team_h_score: 2, team_a_score: 0, team_h_difficulty: 2, team_a_difficulty: 4 },
+      {
+        id: 3,
+        event: 1,
+        team_h: 10,
+        team_a: 6,
+        kickoff_time: '2026-08-24T19:00:00Z',
+        started: true,
+        finished: true,
+        team_h_score: 2,
+        team_a_score: 0,
+        team_h_difficulty: 2,
+        team_a_difficulty: 4,
+      },
       { id: 1, event: 1, team_h: 9, team_a: 8, kickoff_time: '2026-08-22T14:00:00Z' },
       { id: 2, event: null, team_h: 1, team_a: 2, kickoff_time: null },
     ]
     const { matches } = buildFixtures({ fixtures: full, generatedAt: 'x' })
     expect(matches.map((m) => m.id)).toEqual([1, 3, 2])
-    expect(matches[1]).toMatchObject({ homeScore: 2, awayScore: 0, finished: true, homeDifficulty: 2, awayDifficulty: 4 })
-    expect(matches[2]).toMatchObject({ event: null, kickoff: null, started: false, homeScore: null, homeDifficulty: null })
+    expect(matches[1]).toMatchObject({
+      homeScore: 2,
+      awayScore: 0,
+      finished: true,
+      homeDifficulty: 2,
+      awayDifficulty: 4,
+    })
+    expect(matches[2]).toMatchObject({
+      event: null,
+      kickoff: null,
+      started: false,
+      homeScore: null,
+      homeDifficulty: null,
+    })
   })
 
   it('carries the team table, alphabetically', () => {
@@ -467,7 +527,23 @@ describe('inferDraftXI', () => {
     const picks = positions.map((_, i) => ({ element: i + 1, pick: i + 1, round: i + 1 }))
     return { picks, positionOf }
   }
-  const NORMAL = ['GKP','DEF','MID','FWD','DEF','MID','DEF','MID','FWD','DEF','MID','GKP','DEF','MID','FWD']
+  const NORMAL = [
+    'GKP',
+    'DEF',
+    'MID',
+    'FWD',
+    'DEF',
+    'MID',
+    'DEF',
+    'MID',
+    'FWD',
+    'DEF',
+    'MID',
+    'GKP',
+    'DEF',
+    'MID',
+    'FWD',
+  ]
 
   const countBy = (entries, positionOf) =>
     entries.reduce((acc, e) => ((acc[positionOf(e.element)] = (acc[positionOf(e.element)] ?? 0) + 1), acc), {})
@@ -493,7 +569,23 @@ describe('inferDraftXI', () => {
   it('stays legal when a manager loads up on one position early', () => {
     // Seven midfielders and both keepers in the first nine picks. Taking the
     // first eleven by draft order would give two keepers and one defender.
-    const greedy = ['MID','MID','MID','GKP','MID','MID','GKP','MID','MID','DEF','DEF','DEF','DEF','DEF','FWD']
+    const greedy = [
+      'MID',
+      'MID',
+      'MID',
+      'GKP',
+      'MID',
+      'MID',
+      'GKP',
+      'MID',
+      'MID',
+      'DEF',
+      'DEF',
+      'DEF',
+      'DEF',
+      'DEF',
+      'FWD',
+    ]
     const { picks, positionOf } = squadOf([...greedy, 'FWD', 'FWD'].slice(0, 15))
     const { starters, bench } = inferDraftXI({ picks, positionOf })
     const counts = countBy(starters, positionOf)
@@ -506,7 +598,23 @@ describe('inferDraftXI', () => {
   })
 
   it('never starts two keepers even when both were drafted early', () => {
-    const twoKeepersFirst = ['GKP','GKP','DEF','DEF','DEF','MID','MID','MID','FWD','DEF','MID','DEF','MID','FWD','FWD']
+    const twoKeepersFirst = [
+      'GKP',
+      'GKP',
+      'DEF',
+      'DEF',
+      'DEF',
+      'MID',
+      'MID',
+      'MID',
+      'FWD',
+      'DEF',
+      'MID',
+      'DEF',
+      'MID',
+      'FWD',
+      'FWD',
+    ]
     const { picks, positionOf } = squadOf(twoKeepersFirst)
     const { starters } = inferDraftXI({ picks, positionOf })
     expect(countBy(starters, positionOf).GKP).toBe(1)
@@ -537,14 +645,46 @@ describe('inferDraftXI', () => {
 
   it('fails loudly rather than rendering a broken pitch', () => {
     // A squad with no forward at all cannot make a legal eleven.
-    const noForward = ['GKP','GKP','DEF','DEF','DEF','DEF','DEF','MID','MID','MID','MID','MID','DEF','MID','DEF']
+    const noForward = [
+      'GKP',
+      'GKP',
+      'DEF',
+      'DEF',
+      'DEF',
+      'DEF',
+      'DEF',
+      'MID',
+      'MID',
+      'MID',
+      'MID',
+      'MID',
+      'DEF',
+      'MID',
+      'DEF',
+    ]
     const { picks, positionOf } = squadOf(noForward)
     expect(() => inferDraftXI({ picks, positionOf })).toThrow(/legal XI/)
   })
 })
 
 describe('buildDraftSquads', () => {
-  const POSITIONS = ['GKP','DEF','MID','FWD','DEF','MID','DEF','MID','FWD','DEF','MID','GKP','DEF','MID','FWD']
+  const POSITIONS = [
+    'GKP',
+    'DEF',
+    'MID',
+    'FWD',
+    'DEF',
+    'MID',
+    'DEF',
+    'MID',
+    'FWD',
+    'DEF',
+    'MID',
+    'GKP',
+    'DEF',
+    'MID',
+    'FWD',
+  ]
   const positionOf = (element) => POSITIONS[(element - 1) % 15]
   const choices = []
   for (let manager = 0; manager < 2; manager++) {
@@ -552,7 +692,10 @@ describe('buildDraftSquads', () => {
       choices.push({ entry: 100 + manager, element: manager * 15 + i + 1, index: manager * 15 + i + 1, round: i + 1 })
     }
   }
-  const keyByEntryId = new Map([[100, 'rowan'], [101, 'rushy']])
+  const keyByEntryId = new Map([
+    [100, 'rowan'],
+    [101, 'rushy'],
+  ])
 
   it('builds a fifteen for every manager, eleven starting', () => {
     const { squads } = buildDraftSquads({ choices, keyByEntryId, positionOf })
@@ -593,7 +736,14 @@ describe('buildDraftSquads', () => {
       overall[key].push(n)
     }
     for (const [key, nums] of Object.entries(overall)) {
-      nums.forEach((n, i) => snake.push({ entry: key === 'rowan' ? 100 : 101, element: (key === 'rowan' ? 0 : 15) + i + 1, index: n, round: Math.ceil(n / 2) }))
+      nums.forEach((n, i) =>
+        snake.push({
+          entry: key === 'rowan' ? 100 : 101,
+          element: (key === 'rowan' ? 0 : 15) + i + 1,
+          index: n,
+          round: Math.ceil(n / 2),
+        })
+      )
     }
     snake.reverse()
     const { squads } = buildDraftSquads({ choices: snake, keyByEntryId, positionOf })
@@ -608,7 +758,9 @@ describe('buildDraftSquads', () => {
 
   it('fails loudly if a manager does not have fifteen distinct picks', () => {
     const fourteen = choices.filter((c) => !(c.entry === 100 && c.index === 7))
-    expect(() => buildDraftSquads({ choices: fourteen, keyByEntryId, positionOf })).toThrow(/rowan: expected 15 distinct draft picks, found 14/)
+    expect(() => buildDraftSquads({ choices: fourteen, keyByEntryId, positionOf })).toThrow(
+      /rowan: expected 15 distinct draft picks, found 14/
+    )
     const duplicated = choices.map((c) => (c.entry === 101 && c.index === 20 ? { ...c, index: 19 } : c))
     expect(() => buildDraftSquads({ choices: duplicated, keyByEntryId, positionOf })).toThrow(/rushy: .*14 distinct/)
   })
@@ -622,10 +774,22 @@ describe('buildFixturePoints', () => {
   it("splits a double gameweek into each fixture's own contribution", () => {
     const live = {
       elements: {
-        10: { stats: { total_points: 12 }, explain: [[[mins(90, 2), goal(1, 5)], 101], [[mins(70, 2), goal(0, 0), bonus(3, 3)], 102]] },
+        10: {
+          stats: { total_points: 12 },
+          explain: [
+            [[mins(90, 2), goal(1, 5)], 101],
+            [[mins(70, 2), goal(0, 0), bonus(3, 3)], 102],
+          ],
+        },
         // Points that the explain attributes 2 + 5 = 7 and 2 + 0 + 3 = 5, and
         // the stated week total is 7 + 5 + 1: the parts do not add up.
-        11: { stats: { total_points: 13 }, explain: [[[mins(90, 2), goal(1, 5)], 101], [[mins(70, 2), bonus(3, 3)], 102]] },
+        11: {
+          stats: { total_points: 13 },
+          explain: [
+            [[mins(90, 2), goal(1, 5)], 101],
+            [[mins(70, 2), bonus(3, 3)], 102],
+          ],
+        },
       },
     }
     const { byFixture, mismatched } = buildFixturePoints({ live })
@@ -639,8 +803,14 @@ describe('buildFixturePoints', () => {
   it('accepts the object form and limits to the elements asked for', () => {
     const live = {
       elements: {
-        5: { stats: { total_points: 2 }, explain: [{ fixture: 7, stats: [{ identifier: 'minutes', value: 60, points: 2 }] }] },
-        6: { stats: { total_points: 2 }, explain: [{ fixture: 7, stats: [{ identifier: 'minutes', value: 60, points: 2 }] }] },
+        5: {
+          stats: { total_points: 2 },
+          explain: [{ fixture: 7, stats: [{ identifier: 'minutes', value: 60, points: 2 }] }],
+        },
+        6: {
+          stats: { total_points: 2 },
+          explain: [{ fixture: 7, stats: [{ identifier: 'minutes', value: 60, points: 2 }] }],
+        },
       },
     }
     const { byFixture } = buildFixturePoints({ live, elementIds: [5] })
@@ -725,5 +895,64 @@ describe('londonNextDayAt', () => {
   it('rolls over month ends', () => {
     expect(londonNextDayAt('2026-08-31T19:00:00Z', 9)).toBe('2026-09-01T08:00:00.000Z')
     expect(londonNextDayAt('2026-10-24T16:00:00Z', 9)).toBe('2026-10-25T09:00:00.000Z') // clocks go back 25 Oct
+  })
+})
+
+describe('a gameweek in play', () => {
+  const record = {
+    event: 5,
+    started: true,
+    squads: {
+      rushy: [
+        { element: 1, starter: true },
+        { element: 2, starter: true },
+        { element: 3, starter: false },
+      ],
+      ollie: [{ element: 4, starter: true }],
+    },
+    elementPoints: { 1: 6, 2: 2, 3: 9, 4: 0 },
+  }
+
+  it('sums the scoring XI, not the bench', () => {
+    expect(provisionalScores(record)).toEqual({ rushy: 8, ollie: 0 })
+  })
+
+  it('publishes provisional scores for the week in play and official ones once finished', () => {
+    const gameweeks = buildGameweeks({
+      events: EVENTS,
+      classicDataCheckedById: checked(1, 2, 3, 4),
+      scoresByGw: SCORES,
+      perGw: { 5: record },
+    })
+    const live = gameweeks.find((gw) => gw.id === 5)
+    expect(live.started).toBe(true)
+    expect(live.scoresProvisional).toBe(true)
+    expect(live.scores).toEqual({ rushy: 8, ollie: 0 })
+    // No Koch and no charge off a live table.
+    expect(live.kochKeys).toEqual([])
+    const done = gameweeks.find((gw) => gw.id === 4)
+    expect(done.scoresProvisional).toBe(false)
+    expect(done.scores).toEqual(SCORES[4])
+  })
+
+  it('counts the live week in season totals', () => {
+    const gameweeks = buildGameweeks({
+      events: EVENTS,
+      classicDataCheckedById: checked(1, 2, 3, 4),
+      scoresByGw: SCORES,
+      perGw: { 5: record },
+    })
+    const months = buildMonths({ gameweeks, managerKeys: KEYS, perGw: {}, elementName: String })
+    const season = buildSeason({
+      gameweeks,
+      months,
+      managerKeys: KEYS,
+      generatedAt: 'x',
+      perGw: {},
+      elementName: String,
+    })
+    const rushy = season.rows.find((r) => r.key === 'rushy')
+    expect(rushy.total).toBe(51 + 40 + 45 + 38 + 8)
+    expect(rushy.gw).toBe(8)
   })
 })

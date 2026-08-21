@@ -18,7 +18,7 @@ function Balance({ amount, className = '' }: { amount: number; className?: strin
 
 function ManagerProfile({ row, onClose }: { row: SeasonRow; onClose: () => void }) {
   const { data } = useData()
-  const ranked = data.gameweeks.some((gw) => gw.finished)
+  const ranked = data.gameweeks.some((gw) => gw.started)
   const manager = data.league.managers.find((m) => m.key === row.key)!
   const nameOf = (key: string) => data.league.managers.find((m) => m.key === key)?.displayName ?? key
 
@@ -211,7 +211,7 @@ export function Managers() {
   // Alphabetical: this page is a directory, and the table is where the order is.
   const rows = [...data.season.rows].sort((a, b) => nameOf(a.key).localeCompare(nameOf(b.key)))
   // Before anyone has played there is no order to report, only an eleven-way tie.
-  const ranked = data.gameweeks.some((gw) => gw.finished)
+  const ranked = data.gameweeks.some((gw) => gw.started)
   const openRow = rows.find((r) => r.key === open) ?? null
 
   const totalBalance = rows.reduce((sum, r) => sum + r.balance, 0)

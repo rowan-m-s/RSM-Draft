@@ -38,6 +38,20 @@ export function isSettled(event, classicDataChecked) {
   return Boolean(event.finished) && Boolean(classicDataChecked)
 }
 
+/**
+ * A manager's running total for a week in play: the scoring XI's points as
+ * they stand. FPL writes the official figure only once the week ends, and
+ * auto-subs are applied then too, so this is exactly what the official app
+ * shows live and is replaced by the official number the moment it exists.
+ */
+export function provisionalScores(record) {
+  const out = {}
+  for (const [key, picks] of Object.entries(record?.squads ?? {})) {
+    out[key] = picks.filter((p) => p.starter).reduce((sum, p) => sum + (record.elementPoints?.[p.element] ?? 0), 0)
+  }
+  return out
+}
+
 export function buildGameweeks({
   events,
   classicDataCheckedById,
@@ -62,7 +76,11 @@ export function buildGameweeks({
 
   return events.map((event) => {
     const dataChecked = isSettled(event, classicDataCheckedById.get(event.id))
-    const scores = scoresByGw[event.id] ?? {}
+    const record = perGw[event.id]
+    // Official totals once the week has finished; until then, the live XI
+    // sums, marked provisional. Before kickoff there is nothing to show.
+    const inPlay = !event.finished && Boolean(record?.started)
+    const scores = event.finished ? (scoresByGw[event.id] ?? {}) : inPlay ? provisionalScores(record) : {}
     const hasScores = Object.keys(scores).length > 0
 
     // No Koch and no money until the week is confirmed. A finished-but-
@@ -77,6 +95,10 @@ export function buildGameweeks({
       tradesUtc: event.trades_time ?? null,
       month: monthOfDeadline(event.deadline_time),
       finished: Boolean(event.finished),
+      /** A match in the week has kicked off. */
+      started: Boolean(event.finished) || inPlay,
+      /** Scores are live XI sums, not FPL's official figure. */
+      scoresProvisional: inPlay && hasScores,
       dataChecked,
       confirmExpectedUtc: lastKickoffByEvent[event.id] ? dayAfter(lastKickoffByEvent[event.id]) : null,
       revealFromUtc: lastKickoffByEvent[event.id] ? revealFrom(lastKickoffByEvent[event.id]) : null,
@@ -229,7 +251,8 @@ export function buildSeason({ gameweeks, months, managerKeys, generatedAt, perGw
   }
 
   const settledGameweeks = gameweeks.filter((gw) => gw.dataChecked)
-  const playedGameweeks = gameweeks.filter((gw) => gw.finished)
+  // Finished weeks and the one in play: the table moves during a match.
+  const playedGameweeks = gameweeks.filter((gw) => gw.finished || gw.scoresProvisional)
   const latestSettledGameweek = settledGameweeks.at(-1)?.id ?? null
 
   // The month people are currently in: the one holding the most recent played
@@ -247,7 +270,8 @@ export function buildSeason({ gameweeks, months, managerKeys, generatedAt, perGw
       key,
       rank: 0,
       total,
-      gw: latestSettledGameweek ? (gameweeks.find((g) => g.id === latestSettledGameweek)?.scores[key] ?? 0) : 0,
+      // The latest week with a score, live or final, so the column moves too.
+      gw: playedGameweeks.at(-1)?.scores[key] ?? 0,
       month: currentMonth ? (months.find((m) => m.id === currentMonth)?.totals[key] ?? 0) : 0,
       kochCount,
       motmCount: wonMonths.length,

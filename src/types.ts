@@ -47,6 +47,10 @@ export interface League {
 
 export interface Gameweek {
   id: number
+  /** A match in the week has kicked off. */
+  started: boolean
+  /** Scores are live XI sums for a week in play, not FPL's official figure. */
+  scoresProvisional: boolean
   /** Raw from FPL, always UTC. */
   deadlineUtc: string
   /** Same instant rendered in Europe/London, for display only. */
