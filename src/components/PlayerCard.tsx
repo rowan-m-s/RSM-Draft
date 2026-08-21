@@ -1,4 +1,4 @@
-import { PlayerPhoto } from './Img'
+import { CardPhoto } from './Img'
 import { PlayerFlag } from './PlayerFlag'
 import type { Availability } from '../lib/availability'
 import type { Position } from '../types'
@@ -69,10 +69,11 @@ export function PlayerCard({ player, line, bench = false, sub = null }: PlayerCa
       ].join(' ')}
     >
       <div className={`player-card-photo relative ${bench ? 'h-[82px]' : 'h-[98px]'}`}>
-        <PlayerPhoto
+        <CardPhoto
           photoCode={player.photoCode}
           name={player.name}
-          size="small"
+          width={bench ? 88 : 104}
+          height={bench ? 82 : 98}
           className="absolute inset-0 h-full w-full object-cover object-top"
         />
         <PlayerFlag player={player} size={14} className="absolute top-0 right-0" />
@@ -98,10 +99,13 @@ export function PlayerCardCompact({ player, line, bench = false, sub = null }: P
       ].join(' ')}
     >
       <div className="player-card-photo relative h-[58px]">
-        <PlayerPhoto
+        {/* Not the 40x40 variant: that is 80px of image for a 66px slot, which
+            is 198px at 3×. The 220 holds; the browser picks it from the set. */}
+        <CardPhoto
           photoCode={player.photoCode}
           name={player.name}
-          size="tiny"
+          width={66}
+          height={58}
           className="absolute inset-0 h-full w-full object-cover object-top"
         />
         <PlayerFlag player={player} size={11} className="absolute top-0 right-0" />

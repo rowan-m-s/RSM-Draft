@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { clubBadge, playerPhoto, playerPhotoSources, setPlayerImageOverrides } from './assets'
+import { clubBadge, playerPhoto, playerPhotoCandidates, playerPhotoSources, setPlayerImageOverrides } from './assets'
 
 /**
  * These pin the resolved pattern rather than testing logic.
@@ -82,5 +82,23 @@ describe('the image resolution chain', () => {
     setPlayerImageOverrides([])
     expect(playerPhotoSources(HAALAND, 'large')[0]).toContain('/500x500/')
     expect(playerPhotoSources(HAALAND, 'large')[1]).toContain('/250x250/')
+  })
+})
+
+describe('responsive card photos', () => {
+  const HAALAND = 223094
+  const PALESTRA = 620109
+  it('offers the 220 and 500 pixel CDN files, and the override alone', () => {
+    setPlayerImageOverrides([])
+    const [current, legacy] = playerPhotoCandidates(HAALAND)
+    expect(current.srcSet).toBe(`${playerPhoto(HAALAND, 'small')} 220w, ${playerPhoto(HAALAND, 'large')} 500w`)
+    expect(legacy.srcSet).toContain('/250x250/p')
+    expect(legacy.srcSet).toContain(' 500w')
+
+    setPlayerImageOverrides([PALESTRA])
+    const [override] = playerPhotoCandidates(PALESTRA)
+    expect(override.src).toContain(`images/players/${PALESTRA}.png`)
+    expect(override.srcSet).toBeUndefined()
+    setPlayerImageOverrides([])
   })
 })

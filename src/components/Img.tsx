@@ -6,6 +6,7 @@ import {
   clubBadge,
   managerIcon2x,
   managerImage,
+  playerPhotoCandidates,
   playerPhotoSources,
 } from '../lib/assets'
 
@@ -13,6 +14,10 @@ interface ImgProps {
   webp?: string
   /** Tried in order. The first that loads wins. */
   sources: string[]
+  /** Optional responsive candidates per source, parallel to `sources`. */
+  srcSets?: (string | undefined)[]
+  /** The rendered CSS width, for the browser to choose from `srcSets`. */
+  sizes?: string
   fallback: string
   alt: string
   className?: string
@@ -30,7 +35,18 @@ interface ImgProps {
  * steps down rather than giving up. Manager images are asserted at build time
  * so they should never fall back, but the cost of the guard is nil.
  */
-export function Img({ webp, sources, fallback, alt, className, width, height, loading = 'lazy' }: ImgProps) {
+export function Img({
+  webp,
+  sources,
+  srcSets,
+  sizes,
+  fallback,
+  alt,
+  className,
+  width,
+  height,
+  loading = 'lazy',
+}: ImgProps) {
   const [index, setIndex] = useState(0)
 
   // A different set of sources is a different image, so start again at the top.
@@ -48,6 +64,8 @@ export function Img({ webp, sources, fallback, alt, className, width, height, lo
       {webp && index === 0 && <source srcSet={webp} type="image/webp" />}
       <img
         src={src}
+        srcSet={srcSets?.[index]}
+        sizes={srcSets?.[index] ? sizes : undefined}
         alt={alt}
         className={className}
         width={width}
@@ -112,6 +130,40 @@ export function PlayerPhoto({
       sources={playerPhotoSources(photoCode, size)}
       fallback={PLAYER_FALLBACK}
       alt={name}
+      className={className}
+    />
+  )
+}
+
+/**
+ * The photo inside a player card. Responsive: the browser is told the CSS
+ * width the card draws it at and picks between the CDN's 220 and 500 pixel
+ * files by device pixel ratio. Explicit width and height so nothing shifts
+ * while it loads.
+ */
+export function CardPhoto({
+  photoCode,
+  name,
+  width,
+  height,
+  className = '',
+}: {
+  photoCode: number
+  name: string
+  width: number
+  height: number
+  className?: string
+}) {
+  const candidates = playerPhotoCandidates(photoCode)
+  return (
+    <Img
+      sources={candidates.map((c) => c.src)}
+      srcSets={candidates.map((c) => c.srcSet)}
+      sizes={`${width}px`}
+      fallback={PLAYER_FALLBACK}
+      alt={name}
+      width={width}
+      height={height}
       className={className}
     />
   )

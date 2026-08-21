@@ -147,6 +147,40 @@ export function playerPhotoSources(photoCode: number, size: PhotoSize = 'small')
   return [...(override ? [override] : []), playerPhoto(photoCode, size), playerPhotoLegacy(photoCode, size)]
 }
 
+/**
+ * A source with the responsive variants the CDN actually has, so a 3× phone
+ * gets the 500px file and a 1× or 2× screen is not made to pay for it.
+ *
+ * The CDN serves each path at twice its name: 110x140 is 220×280 and 500x500
+ * is 500×500. A card drawn 104px wide needs 208px at 2× and 312px at 3×, so
+ * the browser picks 220 for the first and 500 for the second from the widths
+ * declared here. The two are framed a little differently — the 500 is a
+ * square with the figure at about 93% of the width, the 220 fills it — so a
+ * 3× device shows a touch more chest. Accepted: it is consistent on any one
+ * device, and the alternative is 395KB per player for everyone.
+ *
+ * A local override is one file at one size, so it carries no srcset.
+ */
+export interface PhotoSource {
+  src: string
+  srcSet?: string
+}
+
+export function playerPhotoCandidates(photoCode: number): PhotoSource[] {
+  const override = playerImageOverride(photoCode)
+  return [
+    ...(override ? [{ src: override }] : []),
+    {
+      src: playerPhoto(photoCode, 'small'),
+      srcSet: `${playerPhoto(photoCode, 'small')} 220w, ${playerPhoto(photoCode, 'large')} 500w`,
+    },
+    {
+      src: playerPhotoLegacy(photoCode, 'small'),
+      srcSet: `${playerPhotoLegacy(photoCode, 'small')} 220w, ${playerPhotoLegacy(photoCode, 'large')} 500w`,
+    },
+  ]
+}
+
 export const clubBadge = (clubCode: number, size: 20 | 50 | 70 | 100 = 50) => `${PL}/badges/${size}/t${clubCode}.png`
 
 export const PLAYER_FALLBACK = asset('images/player-silhouette.svg')
