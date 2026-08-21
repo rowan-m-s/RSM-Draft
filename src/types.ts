@@ -147,7 +147,11 @@ export interface Leader {
 export interface Season {
   rows: SeasonRow[]
   leader: Leader | null
-  /** For sets with several graphics per manager: set → manager → chosen player code. */
+  /**
+   * For sets with several graphics per manager: set → manager → chosen player
+   * code. `leader` is season-long (League Leader card); `leaderMonth` counts
+   * only the current month (provisional Manager of the Month card).
+   */
   graphics?: Record<string, Record<ManagerKey, number | null>>
   /** Confirmed Koch awards per manager so far, for the provisional card's variant. */
   kochCount?: Record<ManagerKey, number>

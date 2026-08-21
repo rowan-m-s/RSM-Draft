@@ -618,17 +618,24 @@ async function main() {
   }
   const codeByElementId = new Map(elements.map((e) => [e.id, e.code]))
   const confirmedIds = gameweeks.filter((gw) => gw.dataChecked).map((gw) => gw.id)
-  const graphicChoice = {}
-  for (const [set, byManager] of Object.entries(playerGraphics)) {
-    graphicChoice[set] = {}
+  // The month the Home card is on: the latest with any scores. Its choice
+  // counts only that month's confirmed weeks, the same basis as its MVP
+  // line, so the graphic and the line can never disagree.
+  const currentMonthId = [...months].reverse().find((m) => m.gameweekIds.length > 0)?.id ?? null
+  const currentMonthIds = gameweeks
+    .filter((gw) => gw.month === currentMonthId && gw.dataChecked)
+    .map((gw) => gw.id)
+
+  const choose = (set, byManager, gameweekIds, label) => {
+    const out = {}
     for (const key of managerKeys) {
       const candidates = byManager[key] ?? []
       if (candidates.length === 0) {
-        graphicChoice[set][key] = null
+        out[key] = null
         continue
       }
       const pointsByCode = {}
-      for (const [elementId, points] of playerPointsForManager({ gameweekIds: confirmedIds, perGw, managerKey: key })) {
+      for (const [elementId, points] of playerPointsForManager({ gameweekIds, perGw, managerKey: key })) {
         const code = codeByElementId.get(elementId)
         if (code != null) pointsByCode[code] = points
       }
@@ -637,12 +644,21 @@ async function main() {
       )
       const pick = pickGraphic({ candidates, pointsByCode, ownedCodes })
       if (pick) {
-        graphicChoice[set][key] = pick.code
+        out[key] = pick.code
       } else {
-        graphicChoice[set][key] = candidates[0].code
-        log(`  ${set}: ${key} owns none of ${candidates.map((c) => c.name).join(', ')}; showing ${candidates[0].name}.`)
+        out[key] = candidates[0].code
+        log(`  ${label}: ${key} owns none of ${candidates.map((c) => c.name).join(', ')}; showing ${candidates[0].name}.`)
       }
     }
+    return out
+  }
+
+  const graphicChoice = {}
+  for (const [set, byManager] of Object.entries(playerGraphics)) {
+    // Season-long, for the League Leader card.
+    graphicChoice[set] = choose(set, byManager, confirmedIds, set)
+    // This month only, for the provisional Manager of the Month card.
+    graphicChoice[`${set}Month`] = choose(set, byManager, currentMonthIds, `${set} (month)`)
   }
   season.graphics = graphicChoice
   const variants = kochVariants({ gameweeks })

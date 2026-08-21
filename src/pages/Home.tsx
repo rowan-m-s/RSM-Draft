@@ -162,7 +162,7 @@ function MotmCard({
   month: Month
   nameOf: (key: ManagerKey) => string
   confirmedOn: string | null
-  /** The Leader graphic per manager, for the provisional state. */
+  /** The Leader graphic per manager chosen on this month's points, for the provisional state. */
   leaderGraphicFor: (key: ManagerKey) => number | null
 }) {
   const confirmed = month.settled
@@ -405,7 +405,9 @@ export function Home() {
               month={latestMotm}
               nameOf={nameOf}
               confirmedOn={motmConfirmedOn}
-              leaderGraphicFor={(key) => data.season.graphics?.leader?.[key] ?? null}
+              leaderGraphicFor={(key) =>
+                data.season.graphics?.leaderMonth?.[key] ?? data.season.graphics?.leader?.[key] ?? null
+              }
             />
           ) : (
             <AwaitingAward
