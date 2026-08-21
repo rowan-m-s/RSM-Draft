@@ -219,6 +219,25 @@ export interface Team {
   code: number
 }
 
+/** One scoring component of a player's points in one fixture, as Draft explains it. */
+export interface PointsComponent {
+  stat: string
+  name: string
+  value: number
+  points: number
+}
+
+/** Per-fixture points for the owned players in one gameweek: data/points/gw{N}.json. */
+export interface PointsFile {
+  event: number
+  started: boolean
+  finished: boolean
+  dataChecked: boolean
+  /** fixture id → element id → that fixture's contribution. */
+  byFixture: Record<string, Record<string, { total: number; components: PointsComponent[] }>>
+  generatedAt: string
+}
+
 export interface FixturesFile {
   /** event id → team id → fixtures (an array: double gameweeks exist). */
   byEvent: Record<string, Record<string, Fixture[]>>

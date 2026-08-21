@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import {
+  buildFixturePoints,
   buildFixtures,
   buildGameweeks,
   buildMonths,
@@ -588,5 +589,45 @@ describe('buildDraftSquads', () => {
     expect(() => buildDraftSquads({ choices: fourteen, keyByEntryId, positionOf })).toThrow(/rowan: expected 15 distinct draft picks, found 14/)
     const duplicated = choices.map((c) => (c.entry === 101 && c.index === 20 ? { ...c, index: 19 } : c))
     expect(() => buildDraftSquads({ choices: duplicated, keyByEntryId, positionOf })).toThrow(/rushy: .*14 distinct/)
+  })
+})
+
+describe('buildFixturePoints', () => {
+  const mins = (v, p) => ({ name: 'Minutes played', stat: 'minutes', value: v, points: p })
+  const goal = (v, p) => ({ name: 'Goals scored', stat: 'goals_scored', value: v, points: p })
+  const bonus = (v, p) => ({ name: 'Bonus', stat: 'bonus', value: v, points: p })
+
+  it("splits a double gameweek into each fixture's own contribution", () => {
+    const live = {
+      elements: {
+        10: { stats: { total_points: 12 }, explain: [[[mins(90, 2), goal(1, 5)], 101], [[mins(70, 2), goal(0, 0), bonus(3, 3)], 102]] },
+        // Points that the explain attributes 2 + 5 = 7 and 2 + 0 + 3 = 5, and
+        // the stated week total is 7 + 5 + 1: the parts do not add up.
+        11: { stats: { total_points: 13 }, explain: [[[mins(90, 2), goal(1, 5)], 101], [[mins(70, 2), bonus(3, 3)], 102]] },
+      },
+    }
+    const { byFixture, mismatched } = buildFixturePoints({ live })
+    expect(byFixture[101][10]).toEqual({ total: 7, components: [mins(90, 2), goal(1, 5)] })
+    expect(byFixture[102][10].total).toBe(5)
+    expect(byFixture[102][10].components.map((c) => c.stat)).toEqual(['minutes', 'goals_scored', 'bonus'])
+    expect(mismatched).toEqual([{ element: 11, explained: 12, total: 13 }])
+  })
+
+  it('accepts the object form and limits to the elements asked for', () => {
+    const live = {
+      elements: {
+        5: { stats: { total_points: 2 }, explain: [{ fixture: 7, stats: [{ identifier: 'minutes', value: 60, points: 2 }] }] },
+        6: { stats: { total_points: 2 }, explain: [{ fixture: 7, stats: [{ identifier: 'minutes', value: 60, points: 2 }] }] },
+      },
+    }
+    const { byFixture } = buildFixturePoints({ live, elementIds: [5] })
+    expect(Object.keys(byFixture[7])).toEqual(['5'])
+    expect(byFixture[7][5].components[0]).toEqual({ stat: 'minutes', name: 'minutes', value: 60, points: 2 })
+  })
+
+  it('copes with a player who has no explain yet', () => {
+    const { byFixture, mismatched } = buildFixturePoints({ live: { elements: { 9: { stats: { total_points: 0 } } } } })
+    expect(byFixture).toEqual({})
+    expect(mismatched).toEqual([])
   })
 })

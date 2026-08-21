@@ -20,6 +20,7 @@
 import { mkdir, readFile, readdir, rename, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import {
+  buildFixturePoints,
   buildFixtures,
   buildGameweeks,
   buildMonths,
@@ -490,9 +491,24 @@ async function main() {
     }
     if (unavailable) continue
 
-    const live = readLivePoints(await getJson(`${DRAFT_API}/event/${event.id}/live`), event.id)
+    const livePayload = await getJson(`${DRAFT_API}/event/${event.id}/live`)
+    const live = readLivePoints(livePayload, event.id)
     const used = new Set(Object.values(squads).flat().map((pick) => String(pick.element)))
     const elementPoints = Object.fromEntries(Object.entries(live).filter(([id]) => used.has(id)))
+
+    // Per-fixture breakdown for the owned players, from the same Draft
+    // payload, so the parts are scored by Draft's rules and a double
+    // gameweek is split by fixture. A part that does not add up to the
+    // week total is reported: it means the explain is not the shape
+    // expected, and the Fixtures page should not be trusted for that week.
+    const fixturePoints = buildFixturePoints({ live: livePayload, elementIds: [...used] })
+    if (fixturePoints.mismatched.length > 0) {
+      log(
+        `  GW${event.id}: ${fixturePoints.mismatched.length} player(s) whose per-fixture points do not sum to ` +
+          `their total, e.g. element ${fixturePoints.mismatched[0].element} ` +
+          `(${fixturePoints.mismatched[0].explained} explained vs ${fixturePoints.mismatched[0].total}).`
+      )
+    }
 
     // The top-performer maths wants the scoring XI only.
     const scoringXI = Object.fromEntries(
@@ -508,6 +524,7 @@ async function main() {
       squads,
       scoringXI,
       elementPoints,
+      fixturePoints: fixturePoints.byFixture,
     }
     perGw[event.id] = record
     squadFiles.push(record)
@@ -631,6 +648,7 @@ async function main() {
      Eleven managers x fifteen players x thirty-eight weeks in a single file
      would be a needless payload on every visit. */
   await mkdir(SQUAD_DIR, { recursive: true })
+  await mkdir(path.join(DATA_DIR, 'points'), { recursive: true })
   const elementById = new Map(elements.map((e) => [e.id, e]))
   // Every player whose photo appears on a card: current squads and every
   // week's squad file. Measured for framing below.
@@ -673,6 +691,25 @@ async function main() {
       generatedAt,
     }
     results.push(await writeIfChanged(path.join('squads', `gw${record.event}.json`), payload, startedAt))
+
+    // The per-fixture breakdown is its own file, loaded by the Fixtures page
+    // for the week on show, so the squad file stays light.
+    if (record.fixturePoints) {
+      results.push(
+        await writeIfChanged(
+          path.join('points', `gw${record.event}.json`),
+          {
+            event: record.event,
+            started: record.started,
+            finished: record.finished,
+            dataChecked: record.dataChecked,
+            byFixture: record.fixturePoints,
+            generatedAt,
+          },
+          startedAt
+        )
+      )
+    }
   }
 
   /* Photo framing, per player, measured from the photo and cached in the

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { asset } from './assets'
-import type { FixturesFile, SquadFile } from '../types'
+import type { FixturesFile, PointsFile, SquadFile } from '../types'
 
 /**
  * Squad and fixture data, fetched only when the squad page needs it.
@@ -99,4 +99,36 @@ export function useFixtures() {
   }, [])
 
   return { fixtures, loading, error }
+}
+
+/**
+ * The per-fixture points for one gameweek, for the Fixtures page. Null until
+ * the week has a file, which is once its deadline has passed and the live
+ * endpoint has answered; a missing file is the normal state for a future
+ * week, not an error.
+ */
+export function usePoints(gameweek: number) {
+  const [points, setPoints] = useState<PointsFile | null>(null)
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    let cancelled = false
+    setLoading(true)
+    loadJson<PointsFile>(`data/points/gw${gameweek}.json`)
+      .then((data) => {
+        if (cancelled) return
+        setPoints(data)
+        setLoading(false)
+      })
+      .catch(() => {
+        if (cancelled) return
+        setPoints(null)
+        setLoading(false)
+      })
+    return () => {
+      cancelled = true
+    }
+  }, [gameweek])
+
+  return { points, loading }
 }

@@ -631,3 +631,59 @@ export function buildDraftSquads({ choices, keyByEntryId, positionOf }) {
 
   return { squads, formations }
 }
+
+/**
+ * Per-fixture points for the players in play, from the Draft live payload.
+ *
+ * Draft's `explain` is a list of [components, fixtureId] pairs, one per
+ * fixture the player appeared in that week, each component carrying the
+ * stat, its value and the points it earned under Draft's own scoring. That
+ * attribution is what the Fixtures page shows, so it is taken as given
+ * rather than rebuilt from raw stats, and a double gameweek falls out
+ * naturally: each pair is one fixture's contribution. The classic API's
+ * object form ({ fixture, stats }) is accepted too, in case the shape
+ * moves, but the points are always Draft's.
+ *
+ * Returns { byFixture: { fixtureId: { elementId: { total, components } } } }
+ * and a list of elements whose per-fixture parts do not add up to their
+ * week total, which the caller logs: it means the explain is not what was
+ * expected and the breakdown should not be trusted.
+ */
+export function buildFixturePoints({ live, elementIds }) {
+  const byFixture = {}
+  const mismatched = []
+  const wanted = elementIds ? new Set(elementIds.map(String)) : null
+  for (const [id, entry] of Object.entries(live?.elements ?? {})) {
+    if (wanted && !wanted.has(String(id))) continue
+    const explain = entry?.explain
+    if (!Array.isArray(explain)) continue
+    let sum = 0
+    for (const item of explain) {
+      let components
+      let fixtureId
+      if (Array.isArray(item)) {
+        ;[components, fixtureId] = item
+      } else if (item && typeof item === 'object') {
+        components = item.stats
+        fixtureId = item.fixture
+      }
+      if (!Array.isArray(components) || fixtureId == null) continue
+      const parts = components
+        .map((c) => ({
+          stat: String(c.stat ?? c.identifier ?? ''),
+          name: String(c.name ?? c.stat ?? c.identifier ?? ''),
+          value: Number(c.value ?? 0),
+          points: Number(c.points ?? 0),
+        }))
+        .filter((c) => c.stat)
+      const total = parts.reduce((n, c) => n + c.points, 0)
+      sum += total
+      ;(byFixture[fixtureId] ??= {})[id] = { total, components: parts }
+    }
+    const weekTotal = entry?.stats?.total_points ?? entry?.total_points
+    if (typeof weekTotal === 'number' && explain.length > 0 && sum !== weekTotal) {
+      mismatched.push({ element: Number(id), explained: sum, total: weekTotal })
+    }
+  }
+  return { byFixture, mismatched }
+}
