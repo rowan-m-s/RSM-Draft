@@ -75,8 +75,8 @@ function KochCard({
       <div className="flex items-start justify-between gap-3 border-b border-pl-border px-5 py-3">
         <div>
           <p className="eyebrow text-pl-pink">
-            <span className="whitespace-nowrap">Koch of the week</span>
-            {!confirmed && <span className="whitespace-nowrap"> (so far)*</span>}
+            Koch of the week
+            {!confirmed && <span className="block">(so far)*</span>}
           </p>
           <p className="mt-0.5 text-xs text-pl-muted">
             Gameweek {gameweek.id}
@@ -177,8 +177,8 @@ function MotmCard({
       <div className="flex items-start justify-between gap-3 border-b border-pl-border px-5 py-3">
         <div>
           <p className="eyebrow text-pl-green">
-            <span className="whitespace-nowrap">Manager of the month</span>
-            {!confirmed && <span className="whitespace-nowrap"> (so far)*</span>}
+            Manager of the month
+            {!confirmed && <span className="block">(so far)*</span>}
           </p>
           <p className="mt-0.5 text-xs text-pl-muted">
             {month.label}
