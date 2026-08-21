@@ -179,15 +179,15 @@ describe('buildMonths', () => {
     expect(august.topPerformerByManager.rushy).toEqual({ playerName: 'Player 100', points: 15, managerKey: 'rushy' })
   })
 
-  it('ignores unconfirmed gameweeks when picking a top performer', () => {
+  it('counts an unconfirmed week when picking a top performer, so the line moves live', () => {
     const perGw = {
       1: { scoringXI: { rushy: [100] }, elementPoints: { 100: 6 } },
       4: { scoringXI: { rushy: [300] }, elementPoints: { 300: 99 } },
     }
-    // GW4 is played but not confirmed, so its auto-subs are not final.
+    // GW4 is played but not confirmed: it still counts, as the table does.
     const { months } = build({ dataCheckedIds: [1, 2, 3], perGw })
     const september = months.find((m) => m.id === '2026-09')
-    expect(september.topPerformerByManager.rushy).toBeNull()
+    expect(september.topPerformerByManager.rushy).toEqual({ playerName: 'Player 300', points: 99, managerKey: 'rushy' })
   })
 })
 

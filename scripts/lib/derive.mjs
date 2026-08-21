@@ -228,13 +228,15 @@ export function buildMonths({ gameweeks, managerKeys, perGw, elementName }) {
     const pot = confirmed.reduce((sum, gw) => sum + gw.charged, 0)
     const winnerKeys = settled ? monthWinnersOf(totals) : []
 
-    // Top performers use confirmed gameweeks only. Before a week is checked,
-    // auto-subs have not been applied and the scoring XI is not final.
-    const confirmedIds = confirmed.map((gw) => gw.id)
+    // Top performers count every week with scores, the one in play
+    // included, so the MVP line moves with the table. Until a week is
+    // confirmed the scoring XI is the lineup as picked, which is what the
+    // official app scores live too.
+    const playedIds = played.map((gw) => gw.id)
     const topPerformerByManager = {}
     let topPerformer = null
     for (const key of managerKeys) {
-      const best = bestOf(playerPointsForManager({ gameweekIds: confirmedIds, perGw, managerKey: key }), elementName)
+      const best = bestOf(playerPointsForManager({ gameweekIds: playedIds, perGw, managerKey: key }), elementName)
       topPerformerByManager[key] = best ? { ...best, managerKey: key } : null
       if (best && (!topPerformer || best.points > topPerformer.points)) {
         topPerformer = { ...best, managerKey: key }
@@ -259,11 +261,12 @@ export function buildMonths({ gameweeks, managerKeys, perGw, elementName }) {
 
 export function buildSeason({ gameweeks, months, managerKeys, generatedAt, perGw = {}, elementName = String }) {
   // Season-long best player per manager: points counted only for the weeks
-  // they were in that manager's scoring XI, same rule as the monthly figure.
-  const confirmedIds = gameweeks.filter((gw) => gw.dataChecked).map((gw) => gw.id)
+  // they were in that manager's scoring XI, same rule as the monthly figure,
+  // and like it counting the week in play.
+  const scoredIds = gameweeks.filter((gw) => gw.started).map((gw) => gw.id)
   const seasonBest = {}
   for (const key of managerKeys) {
-    const totals = playerPointsForManager({ gameweekIds: confirmedIds, perGw, managerKey: key })
+    const totals = playerPointsForManager({ gameweekIds: scoredIds, perGw, managerKey: key })
     const best = bestOf(totals, elementName)
     seasonBest[key] = best ? { ...best, managerKey: key } : null
   }
