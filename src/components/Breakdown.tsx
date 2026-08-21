@@ -8,9 +8,8 @@ import type { PointsComponent } from '../types'
  * sheet is two lines, not eight of "assists 0". A player with nothing to
  * list did not play.
  *
- * Bonus is provisional until the week is confirmed: the bonus points system
- * settles a few hours after the whistle. Until then a bonus line says so,
- * and if none has been attributed yet a footnote says it is still to come.
+ * Bonus settles a few hours after the whistle. Until the week is confirmed
+ * and none has been attributed yet, a footnote says it is still to come.
  */
 export function Breakdown({
   components,
@@ -27,20 +26,18 @@ export function Breakdown({
     <ul className={`tnum space-y-0.5 text-xs ${className}`}>
       {rows.length === 0 && <li className="text-pl-muted">Did not play</li>}
       {rows.map((c) => {
-        const provisional = c.stat === 'bonus' && !confirmed
         return (
           <li key={c.stat} className="flex items-baseline justify-between gap-4">
             <span className="text-pl-muted">
               {c.name}
               {c.stat !== 'bonus' && c.value !== 0 && <span className="text-pl-muted/70"> · {c.value}</span>}
-              {provisional && <span className="text-pl-text"> · provisional</span>}
             </span>
             <span className="font-semibold text-pl-text">{c.points > 0 ? `+${c.points}` : c.points}</span>
           </li>
         )
       })}
       {!confirmed && !hasBonus && rows.length > 0 && (
-        <li className="pt-0.5 text-[11px] text-pl-muted/80">Bonus still to come, provisional until confirmed</li>
+        <li className="pt-0.5 text-[11px] text-pl-muted/80">Bonus still to come</li>
       )}
     </ul>
   )
