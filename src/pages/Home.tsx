@@ -74,7 +74,9 @@ function KochCard({
     <section className="card overflow-hidden">
       <div className="flex items-start justify-between gap-3 border-b border-pl-border px-5 py-3">
         <div>
-          <p className="eyebrow text-pl-pink">Koch of the week{!confirmed && ' (so far)*'}</p>
+          <p className="eyebrow text-pl-pink">
+            Koch of the week{!confirmed && <span className="whitespace-nowrap"> (so far)*</span>}
+          </p>
           <p className="mt-0.5 text-xs text-pl-muted">
             Gameweek {gameweek.id}
             {tied && ` · ${koches.length}-way tie`}
@@ -114,7 +116,7 @@ function KochCard({
                 </p>
                 <p className="mt-2 text-sm text-pl-muted">
                   <span className="tnum font-semibold text-pl-pink">{gameweek.scores[key]}</span> points ·{' '}
-                  {confirmed ? 'lowest' : 'currently lowest'} in gameweek {gameweek.id}
+                  {confirmed ? 'lowest' : 'currently lowest'} in GW{gameweek.id}
                 </p>
               </div>
             </div>
@@ -173,7 +175,9 @@ function MotmCard({
     <section className="card overflow-hidden">
       <div className="flex items-start justify-between gap-3 border-b border-pl-border px-5 py-3">
         <div>
-          <p className="eyebrow text-pl-green">Manager of the month{!confirmed && ' (so far)*'}</p>
+          <p className="eyebrow text-pl-green">
+            Manager of the month{!confirmed && <span className="whitespace-nowrap"> (so far)*</span>}
+          </p>
           <p className="mt-0.5 text-xs text-pl-muted">
             {month.label}
             {split && (confirmed ? ` · split ${winners.length} ways` : ` · ${winners.length} level`)}
@@ -197,8 +201,10 @@ function MotmCard({
               <p className="display truncate text-2xl leading-[1.2] text-pl-text">{nameOf(key)}</p>
               <Mvp performer={month.topPerformerByManager?.[key] ?? null} />
               <p className="mt-2 text-sm text-pl-muted">
-                <span className="tnum font-semibold text-pl-text">{month.totals[key]}</span> points across{' '}
-                {month.gameweekIds.length} gameweek{month.gameweekIds.length === 1 ? '' : 's'}
+                <span className="tnum font-semibold text-pl-text">{month.totals[key]}</span> points ·{' '}
+                {month.gameweekIds.length === 1
+                  ? `GW${month.gameweekIds[0]}`
+                  : `GW${month.gameweekIds[0]} to GW${month.gameweekIds.at(-1)}`}
               </p>
               {confirmed && (
                 <p className="mt-2">
@@ -213,7 +219,8 @@ function MotmCard({
 
       {month.topPerformer && (
         <p className="border-t border-pl-border bg-pl-surface-2 px-5 py-3 text-sm text-pl-text">
-          Player of the month{!confirmed && ' (so far)'}: <strong className="font-semibold">{month.topPerformer.playerName}</strong> for{' '}
+          Player of the month{!confirmed && ' (so far)'}:{' '}
+          <strong className="font-semibold">{month.topPerformer.playerName}</strong> for{' '}
           {nameOf(month.topPerformer.managerKey)},{' '}
           <span className="tnum font-semibold">{month.topPerformer.points}</span> pts
         </p>
@@ -292,9 +299,7 @@ function LeaderCard({
                 <span className="tnum font-semibold text-pl-text">{leader.total}</span> points
               </p>
               <p className="mt-2 text-sm text-pl-cyan">
-                {joint && leader.sinceByKey[key] !== leader.since
-                  ? `Drew level at GW${leader.sinceByKey[key]}`
-                  : run}
+                {joint && leader.sinceByKey[key] !== leader.since ? `Drew level at GW${leader.sinceByKey[key]}` : run}
               </p>
             </div>
           </div>
@@ -303,15 +308,23 @@ function LeaderCard({
 
       {leader.changed && leader.displaced && (
         <p className="border-t border-pl-border bg-pl-surface-2 px-5 py-3 text-sm text-pl-text">
-          Took over from <strong className="font-semibold">{nameOf(leader.displaced)}</strong> at gameweek{' '}
-          {leader.asOf}.
+          Took over from <strong className="font-semibold">{nameOf(leader.displaced)}</strong> at gameweek {leader.asOf}
+          .
         </p>
       )}
     </section>
   )
 }
 
-function MoneyStrip({ month, prize, nameOf }: { month: Month | null; prize: number; nameOf: (k: ManagerKey) => string }) {
+function MoneyStrip({
+  month,
+  prize,
+  nameOf,
+}: {
+  month: Month | null
+  prize: number
+  nameOf: (k: ManagerKey) => string
+}) {
   const { data } = useData()
   const leader = data.season.rows[0]
   const anyPlayed = data.gameweeks.some((gw) => gw.finished)
@@ -385,8 +398,8 @@ export function Home() {
 
           {provisional?.finished && (
             <p className="rounded-md border border-pl-border bg-pl-surface px-4 py-3 text-sm text-pl-muted">
-              Gameweek {provisional.id} has finished but FPL has not confirmed the final points yet. It shows as
-              things stand and no money is attached until it does.
+              Gameweek {provisional.id} has finished but FPL has not confirmed the final points yet. It shows as things
+              stand and no money is attached until it does.
             </p>
           )}
 
@@ -437,11 +450,7 @@ export function Home() {
           {/* The compact table appears inline on Home for mobile, since the
               sidebar that normally holds it is not there. */}
           <section className="card p-4 lg:hidden">
-            <MiniTable
-              rows={data.season.rows}
-              nameOf={nameOf}
-              ranked={data.gameweeks.some((gw) => gw.finished)}
-            />
+            <MiniTable rows={data.season.rows} nameOf={nameOf} ranked={data.gameweeks.some((gw) => gw.finished)} />
           </section>
 
           <DataFooter />

@@ -1,4 +1,4 @@
-import { useLayoutEffect, useMemo, useRef, useState } from 'react'
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom'
 import { Banner } from '../components/Banner'
 import { Breakdown, pts } from '../components/Breakdown'
@@ -197,7 +197,29 @@ export function Squad() {
     return out
   }
   const toggle = (entry: PitchPlayer) => setOpenKey(open === entry.key ? null : `${gameweek}:${entry.key}`)
-  const breakdownProps = { mode, fixtureFor, breakdownFor, open, toggle, confirmed: squad?.dataChecked ?? false }
+  const close = () => setOpenKey(null)
+
+  /* Anything that is not the panel or a card closes it: a tap on the pitch,
+     the page, or Escape. The cards handle themselves so a tap on another
+     card swaps rather than closing and reopening. */
+  useEffect(() => {
+    if (open === null) return
+    const onPointer = (event: PointerEvent) => {
+      const target = event.target as Element | null
+      if (target?.closest('[data-breakdown]') || target?.closest('[data-card]')) return
+      close()
+    }
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') close()
+    }
+    document.addEventListener('pointerdown', onPointer)
+    document.addEventListener('keydown', onKey)
+    return () => {
+      document.removeEventListener('pointerdown', onPointer)
+      document.removeEventListener('keydown', onKey)
+    }
+  }, [open])
+  const breakdownProps = { mode, fixtureFor, breakdownFor, open, toggle, close, confirmed: squad?.dataChecked ?? false }
 
   const setGameweek = (wanted: number) => {
     // The slider is a range input, so it can land on a week between two
@@ -371,6 +393,7 @@ interface CardProps {
   /** The element whose breakdown is open, if any. */
   open: number | null
   toggle: (entry: PitchPlayer) => void
+  close: () => void
   confirmed: boolean
 }
 
@@ -387,10 +410,12 @@ function RowBreakdown({
   entry,
   parts,
   confirmed,
+  close,
 }: {
   entry: PitchPlayer
   parts: FixtureBreakdown[]
   confirmed: boolean
+  close: () => void
 }) {
   const total = parts.reduce((n, p) => n + p.total, 0)
   const ref = useRef<HTMLDivElement>(null)
@@ -415,16 +440,27 @@ function RowBreakdown({
   return (
     <div
       ref={ref}
+      data-breakdown
+      role="dialog"
+      aria-label={`${entry.player.name}, points breakdown`}
       style={pos ? { left: pos.left, top: pos.top } : { visibility: 'hidden' }}
-      className="absolute z-10 w-[min(18rem,calc(100%-0.5rem))] rounded-md border-2 border-pl-cyan bg-pl-bg px-3 py-2 shadow-xl"
+      className="absolute z-10 max-h-[33vh] w-[min(14rem,calc(100%-0.5rem))] overflow-y-auto rounded-md border-2 border-pl-cyan bg-pl-bg px-2.5 py-1.5 shadow-xl"
     >
-      <p className="flex items-baseline justify-between gap-4 text-sm">
-        <span className="font-semibold text-pl-text">{entry.player.name}</span>
+      <p className="flex items-center gap-2 text-sm">
+        <span className="min-w-0 flex-1 truncate font-semibold text-pl-text">{entry.player.name}</span>
         <span className="tnum font-bold text-pl-text">{pts(total)}</span>
+        <button
+          type="button"
+          onClick={close}
+          aria-label="Close"
+          className="-mr-1 flex h-6 w-6 shrink-0 items-center justify-center rounded text-pl-muted hover:bg-pl-surface-2 hover:text-pl-text"
+        >
+          ✕
+        </button>
       </p>
       {parts.length === 0 && <p className="mt-1 text-xs text-pl-muted">Did not play</p>}
       {parts.map((part) => (
-        <div key={part.fixtureId} className="mt-1.5">
+        <div key={part.fixtureId} className="mt-1">
           {parts.length > 1 && (
             <p className="flex items-baseline justify-between text-[11px] text-pl-muted">
               <span>{part.label ?? 'Fixture'}</span>
@@ -456,7 +492,9 @@ function Pitch({ rows, ...card }: { rows: PitchPlayer[][] } & CardProps) {
                 {row.map((entry) => (
                   <PlayerCardResponsive key={entry.key} entry={entry} {...card} />
                 ))}
-                {opened && parts && <RowBreakdown entry={opened} parts={parts} confirmed={card.confirmed} />}
+                {opened && parts && (
+                  <RowBreakdown entry={opened} parts={parts} confirmed={card.confirmed} close={card.close} />
+                )}
               </div>
             )
           })}
@@ -497,7 +535,7 @@ function Bench({ bench, ...card }: { bench: PitchPlayer[] } & CardProps) {
             <PlayerCardResponsive entry={entry} {...card} bench />
           </div>
         ))}
-        {opened && parts && <RowBreakdown entry={opened} parts={parts} confirmed={card.confirmed} />}
+        {opened && parts && <RowBreakdown entry={opened} parts={parts} confirmed={card.confirmed} close={card.close} />}
       </div>
     </div>
   )

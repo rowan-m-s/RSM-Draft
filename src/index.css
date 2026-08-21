@@ -11,8 +11,8 @@
   font-display: swap;
   src: url('/RSM-Draft/fonts/outfit-latin.woff2') format('woff2');
   unicode-range:
-    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
-    U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC,
+    U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 /* ---------------------------------------------------------------------------
@@ -214,9 +214,8 @@
       /* a soft lift behind the head */
       radial-gradient(ellipse 70% 55% at 50% 38%, var(--lift), transparent 70%),
       /* fine hatching on the banner's chevron slope, faint enough to be texture */
-      repeating-linear-gradient(-84deg, var(--hatch) 0 1px, transparent 1px 5px),
-      /* the light from the top */
-      linear-gradient(to bottom, var(--color-pl-surface-2), var(--color-pl-surface));
+        repeating-linear-gradient(-84deg, var(--hatch) 0 1px, transparent 1px 5px),
+      /* the light from the top */ linear-gradient(to bottom, var(--color-pl-surface-2), var(--color-pl-surface));
   }
 
   /* Flat surface, hairline border, no shadow. */
@@ -329,32 +328,67 @@
     linear-gradient(var(--line), var(--line)),
     linear-gradient(var(--line), var(--line)),
     linear-gradient(var(--line), var(--line)),
-    /* near penalty area and six-yard box */
-    linear-gradient(var(--line), var(--line)),
+    /* near penalty area and six-yard box */ linear-gradient(var(--line), var(--line)),
     linear-gradient(var(--line), var(--line)),
     linear-gradient(var(--line), var(--line)),
     linear-gradient(var(--line), var(--line)),
     linear-gradient(var(--line), var(--line)),
     linear-gradient(var(--line), var(--line)),
     /* centre circle, halfway line, touchlines */
-    radial-gradient(circle at 50% 50%, transparent var(--circle), var(--line) var(--circle) calc(var(--circle) + 2px), transparent calc(var(--circle) + 2px)),
+    radial-gradient(
+        circle at 50% 50%,
+        transparent var(--circle),
+        var(--line) var(--circle) calc(var(--circle) + 2px),
+        transparent calc(var(--circle) + 2px)
+      ),
     linear-gradient(var(--line), var(--line)),
     linear-gradient(var(--line), var(--line)),
     linear-gradient(var(--line), var(--line)),
-    /* lighting */
-    radial-gradient(ellipse 60% 55% at 50% 50%, var(--color-pitch-light), transparent 75%),
+    /* lighting */ radial-gradient(ellipse 60% 55% at 50% 50%, var(--color-pitch-light), transparent 75%),
     /* stripes */
-    repeating-linear-gradient(to right, var(--color-pitch-dark) 0 var(--stripe), transparent var(--stripe) calc(var(--stripe) * 2));
+    repeating-linear-gradient(
+        to right,
+        var(--color-pitch-dark) 0 var(--stripe),
+        transparent var(--stripe) calc(var(--stripe) * 2)
+      );
   background-size:
-    var(--box-w) 2px, 2px var(--box-d), 2px var(--box-d), var(--six-w) 2px, 2px var(--six-d), 2px var(--six-d),
-    var(--box-w) 2px, 2px var(--box-d), 2px var(--box-d), var(--six-w) 2px, 2px var(--six-d), 2px var(--six-d),
-    auto, 100% 2px, 2px 100%, 2px 100%,
-    auto, auto;
+    var(--box-w) 2px,
+    2px var(--box-d),
+    2px var(--box-d),
+    var(--six-w) 2px,
+    2px var(--six-d),
+    2px var(--six-d),
+    var(--box-w) 2px,
+    2px var(--box-d),
+    2px var(--box-d),
+    var(--six-w) 2px,
+    2px var(--six-d),
+    2px var(--six-d),
+    auto,
+    100% 2px,
+    2px 100%,
+    2px 100%,
+    auto,
+    auto;
   background-position:
-    50% var(--box-d), calc(50% - var(--box-w) / 2) 0, calc(50% + var(--box-w) / 2) 0, 50% var(--six-d), calc(50% - var(--six-w) / 2) 0, calc(50% + var(--six-w) / 2) 0,
-    50% calc(100% - var(--box-d)), calc(50% - var(--box-w) / 2) 100%, calc(50% + var(--box-w) / 2) 100%, 50% calc(100% - var(--six-d)), calc(50% - var(--six-w) / 2) 100%, calc(50% + var(--six-w) / 2) 100%,
-    0 0, 0 50%, 12% 0, 88% 0,
-    0 0, 0 0;
+    50% var(--box-d),
+    calc(50% - var(--box-w) / 2) 0,
+    calc(50% + var(--box-w) / 2) 0,
+    50% var(--six-d),
+    calc(50% - var(--six-w) / 2) 0,
+    calc(50% + var(--six-w) / 2) 0,
+    50% calc(100% - var(--box-d)),
+    calc(50% - var(--box-w) / 2) 100%,
+    calc(50% + var(--box-w) / 2) 100%,
+    50% calc(100% - var(--six-d)),
+    calc(50% - var(--six-w) / 2) 100%,
+    calc(50% + var(--six-w) / 2) 100%,
+    0 0,
+    0 50%,
+    12% 0,
+    88% 0,
+    0 0,
+    0 0;
 }
 
 .pitch::before {
@@ -424,7 +458,19 @@
   animation: sting-card 2.3s steps(1, end) forwards;
 }
 .sting-ticker-track {
-  animation: sting-ticker 40s linear 2.4s infinite;
+  /* Enters from the right edge, passing behind the label, then loops. The
+     loop has no fill, so it leaves the entrance alone until it starts. */
+  animation:
+    sting-ticker-in 5s linear 2.4s both,
+    sting-ticker 40s linear 7.4s infinite;
+}
+@keyframes sting-ticker-in {
+  from {
+    transform: translateX(100vw);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 @keyframes sting-panel {
   0% {

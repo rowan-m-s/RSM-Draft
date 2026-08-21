@@ -210,15 +210,18 @@ function Sting({ item, nameOf, onDone }: { item: RevealItem; nameOf: (k: string)
       </div>
 
       {/* 3. The card, cut in once the panel has gone. */}
-      <div className="sting-card absolute inset-0 flex items-center justify-center px-6 pb-24">
-        <div className="flex max-w-3xl flex-col items-center gap-5 sm:flex-row sm:gap-8">
+      {/* Centred in the space between the dismiss button and the ticker,
+          not stacked from the top: on a phone the image, name and score
+          otherwise sit in the upper two thirds with a hole beneath. */}
+      <div className="sting-card absolute inset-x-0 top-14 bottom-12 flex items-center justify-center overflow-y-auto px-6">
+        <div className="flex max-w-3xl flex-col items-center gap-4 sm:flex-row sm:gap-8">
           {item.managerKeys.map((key) => (
             <CardImage
               key={key}
               set={item.setFor(key)}
               managerKey={key}
               alt={`${nameOf(key)}, ${item.label}`}
-              className="aspect-square w-56 shrink-0 sm:w-72"
+              className="aspect-square w-44 shrink-0 sm:w-72"
             />
           ))}
           <div className="text-center sm:text-left">
@@ -235,7 +238,10 @@ function Sting({ item, nameOf, onDone }: { item: RevealItem; nameOf: (k: string)
                 </span>
               </p>
             )}
-            <p className={`display mt-2 text-2xl ${item.moneyTone === 'red' ? 'text-pl-red' : 'text-pl-green'}`}>
+            {/* The consequence, set apart from the score it follows. */}
+            <p
+              className={`display mt-5 border-t border-pl-border pt-4 text-2xl sm:mt-6 ${item.moneyTone === 'red' ? 'text-pl-red' : 'text-pl-green'}`}
+            >
               {item.money}
             </p>
           </div>
