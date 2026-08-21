@@ -15,34 +15,34 @@
       "confirmExpectedUtc": "2026-08-25T19:00:00.000Z",
       "revealFromUtc": "2026-08-25T08:00:00.000Z",
       "scores": {
-        "rushy": 1,
-        "kellett": 4,
-        "wallis": 0,
+        "rushy": 6,
+        "kellett": 9,
+        "wallis": 5,
         "jls": 0,
-        "paddy": 11,
-        "bennett": 1,
+        "paddy": 16,
+        "bennett": 3,
         "wood": 0,
         "rowan": 0,
-        "jason": 16,
+        "jason": 21,
         "dj": 0,
-        "ollie": 5
+        "ollie": 12
       },
       "kochKeys": [],
       "charged": 0,
       "topPerformerByManager": {
         "rushy": {
           "playerName": "Mosquera",
-          "points": 1,
+          "points": 6,
           "managerKey": "rushy"
         },
         "kellett": {
           "playerName": "Calafiori",
-          "points": 4,
+          "points": 9,
           "managerKey": "kellett"
         },
         "wallis": {
-          "playerName": "Lammens",
-          "points": 0,
+          "playerName": "Gabriel",
+          "points": 5,
           "managerKey": "wallis"
         },
         "jls": {
@@ -51,13 +51,13 @@
           "managerKey": "jls"
         },
         "paddy": {
-          "playerName": "Havertz",
-          "points": 7,
+          "playerName": "White",
+          "points": 10,
           "managerKey": "paddy"
         },
         "bennett": {
           "playerName": "Rice",
-          "points": 1,
+          "points": 3,
           "managerKey": "bennett"
         },
         "wood": {
@@ -72,7 +72,7 @@
         },
         "jason": {
           "playerName": "Ødegaard",
-          "points": 9,
+          "points": 11,
           "managerKey": "jason"
         },
         "dj": {
@@ -81,49 +81,49 @@
           "managerKey": "dj"
         },
         "ollie": {
-          "playerName": "Tzolis",
-          "points": 4,
+          "playerName": "Raya",
+          "points": 6,
           "managerKey": "ollie"
         }
       },
       "scapegoatByManager": {
         "rushy": {
           "playerName": "Mosquera",
-          "points": 1,
+          "points": 6,
           "managerKey": "rushy"
         },
         "kellett": {
           "playerName": "Calafiori",
-          "points": 4,
+          "points": 9,
           "managerKey": "kellett"
         },
         "wallis": {
           "playerName": "Gabriel",
-          "points": 0,
+          "points": 5,
           "managerKey": "wallis"
         },
         "jls": null,
         "paddy": {
-          "playerName": "White",
-          "points": 4,
+          "playerName": "Havertz",
+          "points": 6,
           "managerKey": "paddy"
         },
         "bennett": {
           "playerName": "Rice",
-          "points": 1,
+          "points": 3,
           "managerKey": "bennett"
         },
         "wood": null,
         "rowan": null,
         "jason": {
           "playerName": "Saka",
-          "points": 7,
+          "points": 10,
           "managerKey": "jason"
         },
         "dj": null,
         "ollie": {
           "playerName": "Raya",
-          "points": 1,
+          "points": 6,
           "managerKey": "ollie"
         }
       },
@@ -907,5 +907,5 @@
       "kochVariant": {}
     }
   ],
-  "generatedAt": "2026-08-21T20:10:57.636Z"
+  "generatedAt": "2026-08-21T20:20:33.679Z"
 }
