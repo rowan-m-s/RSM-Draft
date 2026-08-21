@@ -123,7 +123,7 @@ export function DeadlineStrip({ gameweeks }: { gameweeks: Gameweek[] }) {
           </div>
           <div className="mt-3 flex items-end justify-between gap-3">
             <p className="text-xs text-pl-muted">{formatLondon(deadline.deadlineUtc)}</p>
-            <DraftLink href="https://draft.premierleague.com/team/my">My Team</DraftLink>
+            <DraftLink href="https://draft.premierleague.com/team/my">Manage My Team</DraftLink>
           </div>
         </div>
       </div>
