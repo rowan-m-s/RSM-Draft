@@ -1,6 +1,7 @@
 import { NavLink, Outlet, ScrollRestoration } from 'react-router-dom'
 import { useDataState } from '../data'
 import { Freshness } from './Freshness'
+import { Reveal } from './Reveal'
 import { ManagerAvatar } from './Img'
 import { LION_ONLY } from '../lib/assets'
 import { rankLabel } from '../lib/season'
@@ -192,6 +193,10 @@ export function Layout() {
       <main className="min-w-0 flex-1 pb-[calc(5rem+env(safe-area-inset-bottom))] lg:pb-0">
         {data ? <Outlet /> : <DataGate state={state} />}
       </main>
+
+      {/* The breaking news sting for a newly confirmed Koch or MOTM. Decides
+          for itself whether there is anything to play. */}
+      {data && <Reveal data={data} />}
 
       {/* Mobile bottom tabs. The mini table is not one of them — it lives
           inline on Home instead. */}
