@@ -537,7 +537,10 @@ async function main() {
       // Every element's week, for the season totals on the Players page.
       elementStats: readElementStats(livePayload),
       deadlineUtc: event.deadline_time,
-      started: Boolean(event.finished) || Object.keys(live).length > 0,
+      // The live endpoint answers with every element at zero from the
+      // deadline, so its presence says nothing. A week has started when one
+      // of its matches has.
+      started: Boolean(event.finished) || allFixtures.some((f) => f.event === event.id && f.started),
       finished: Boolean(event.finished),
       dataChecked: Boolean(dataChecked),
       squads,

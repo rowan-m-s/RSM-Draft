@@ -12,10 +12,7 @@ export interface Dataset {
   generatedAt: string
 }
 
-type State =
-  | { status: 'loading' }
-  | { status: 'ready'; data: Dataset }
-  | { status: 'error'; message: string }
+type State = { status: 'loading' } | { status: 'ready'; data: Dataset } | { status: 'error'; message: string }
 
 interface DataContextValue {
   state: State
@@ -45,7 +42,10 @@ async function loadDataset(cacheBust: number | null): Promise<Dataset> {
   const responses = await Promise.all(
     FILES.map(async (name) => {
       const url = asset(`data/${name}.json${suffix}`)
-      const response = await fetch(url, { cache: cacheBust === null ? 'default' : 'reload' })
+      // Always revalidate: the files carry ETags, so an unchanged one is a
+      // cheap 304, and a changed one is never served stale from the cache
+      // for the ten minutes Pages allows. A manual reload bypasses outright.
+      const response = await fetch(url, { cache: cacheBust === null ? 'no-cache' : 'reload' })
       if (!response.ok) throw new Error(`${name}.json failed with HTTP ${response.status}`)
       return [name, await response.json()] as const
     })
@@ -101,8 +101,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
           if (manual) {
             // Compare what came back with what was showing, and say so. The
             // dataset is small, so a structural comparison is cheap.
-            const changed =
-              previous.status !== 'ready' || JSON.stringify(previous.data) !== JSON.stringify(data)
+            const changed = previous.status !== 'ready' || JSON.stringify(previous.data) !== JSON.stringify(data)
             const ms = Math.round(performance.now() - startedAt)
             console.info(
               `[reload] fetched ${FILES.length} files in ${ms}ms, bypassing the cache: ` +
@@ -136,10 +135,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
   }, [reloadToken])
 
   const reload = useCallback(() => setReloadToken(Date.now()), [])
-  const value = useMemo(
-    () => ({ state, reload, reloading, lastReload }),
-    [state, reload, reloading, lastReload]
-  )
+  const value = useMemo(() => ({ state, reload, reloading, lastReload }), [state, reload, reloading, lastReload])
 
   return <DataContext.Provider value={value}>{children}</DataContext.Provider>
 }

@@ -20,7 +20,8 @@ const cache = new Map<string, unknown>()
 async function loadJson<T>(path: string): Promise<T | null> {
   if (cache.has(path)) return cache.get(path) as T
 
-  const response = await fetch(asset(path))
+  // Revalidated on every page load, as the main dataset is; see data.tsx.
+  const response = await fetch(asset(path), { cache: 'no-cache' })
 
   // A missing file is an expected state, not an error. Two shapes of missing:
   // a real 404 (what GitHub Pages sends), and a single-page-app fallback that
@@ -55,16 +56,15 @@ export function useSquad(gameweek: number | null) {
     Promise.allSettled([
       gameweek === null ? Promise.resolve(null) : loadJson<SquadFile>(`data/squads/gw${gameweek}.json`),
       loadJson<FixturesFile>('data/fixtures.json'),
-    ])
-      .then(([squadResult, fixturesResult]) => {
-        if (cancelled) return
-        setSquad(squadResult.status === 'fulfilled' ? squadResult.value : null)
-        setFixtures(fixturesResult.status === 'fulfilled' ? fixturesResult.value : null)
+    ]).then(([squadResult, fixturesResult]) => {
+      if (cancelled) return
+      setSquad(squadResult.status === 'fulfilled' ? squadResult.value : null)
+      setFixtures(fixturesResult.status === 'fulfilled' ? fixturesResult.value : null)
 
-        const failure = [squadResult, fixturesResult].find((r) => r.status === 'rejected')
-        setError(failure ? String((failure as PromiseRejectedResult).reason) : null)
-        setLoading(false)
-      })
+      const failure = [squadResult, fixturesResult].find((r) => r.status === 'rejected')
+      setError(failure ? String((failure as PromiseRejectedResult).reason) : null)
+      setLoading(false)
+    })
 
     return () => {
       cancelled = true
