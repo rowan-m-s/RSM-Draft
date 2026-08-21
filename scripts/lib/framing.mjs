@@ -1,4 +1,23 @@
-import sharp from 'sharp'
+/**
+ * sharp is loaded on first use rather than at import. The data job must
+ * publish scores even where sharp is missing or fails to install; without it
+ * framing is simply carried over unchanged and the run says so.
+ */
+let sharpModule = null
+async function loadSharp() {
+  if (sharpModule === null) {
+    try {
+      sharpModule = (await import('sharp')).default
+    } catch {
+      sharpModule = false
+    }
+  }
+  return sharpModule || null
+}
+
+export async function framingAvailable() {
+  return (await loadSharp()) !== null
+}
 
 /**
  * Per-player photo framing, measured once and cached by player code.
@@ -30,6 +49,8 @@ const ALPHA_THRESHOLD = 40
 
 /** Measure one photo. Throws if there is nothing opaque in it. */
 export async function measureFraming(buffer) {
+  const sharp = await loadSharp()
+  if (!sharp) throw new Error('sharp is not installed')
   const { data, info } = await sharp(buffer).ensureAlpha().raw().toBuffer({ resolveWithObject: true })
   const { width: W, height: H, channels } = info
   const alpha = (x, y) => data[(y * W + x) * channels + 3]

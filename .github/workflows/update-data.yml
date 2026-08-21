@@ -37,10 +37,16 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
+          cache: npm
 
-      # The fetch script has no dependencies — it uses built-in fetch and
-      # imports the app's TypeScript directly, which Node 24 strips natively.
-      # No install step, so a broken lockfile can never stop the data updating.
+      # The only dependency the fetch needs is sharp, for measuring photo
+      # framing. The install is allowed to fail: the script loads sharp lazily
+      # and carries the framing over unchanged without it, so a broken
+      # lockfile or registry can never stop the scores updating.
+      - name: Install
+        run: npm ci --ignore-scripts=false || echo "Install failed; scores will still update, framing will not."
+        continue-on-error: true
+
       - name: Fetch league data
         run: node scripts/fetch-data.mjs
 

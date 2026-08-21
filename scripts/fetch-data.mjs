@@ -37,7 +37,7 @@ import {
 import { pickGraphic } from './lib/graphics.mjs'
 import { MANAGER_KEYS } from './images.shared.mjs'
 import { findMissingPhotos, formatMissingReport, readOverrides } from './lib/photos.mjs'
-import { updateFraming } from './lib/framing.mjs'
+import { framingAvailable, updateFraming } from './lib/framing.mjs'
 
 /**
  * Must match src/lib/assets.ts. Only used to ask the CDN whether a photo
@@ -825,14 +825,20 @@ async function main() {
   } catch {
     // First run, or the file was removed to force a full re-measure.
   }
-  const { framing, stats } = await updateFraming({
-    codes: [...cardPhotoCodes].filter((code) => !overrides.has(code)),
-    existing: existingFraming,
-    fetchPhoto: fetchPhotoBuffer,
-    log,
-  })
-  log(`  ${stats.unchanged} unchanged, ${stats.measured} measured, ${stats.failed} without a photo or unmeasurable.`)
-  results.push(await writeIfChanged('photo-framing.json', { framing, generatedAt }, startedAt))
+  if (await framingAvailable()) {
+    const { framing, stats } = await updateFraming({
+      codes: [...cardPhotoCodes].filter((code) => !overrides.has(code)),
+      existing: existingFraming,
+      fetchPhoto: fetchPhotoBuffer,
+      log,
+    })
+    log(`  ${stats.unchanged} unchanged, ${stats.measured} measured, ${stats.failed} without a photo or unmeasurable.`)
+    results.push(await writeIfChanged('photo-framing.json', { framing, generatedAt }, startedAt))
+  } else {
+    // Scores must never wait on an image library. The framing stays as
+    // published and the next run with sharp catches up.
+    log('  sharp is not installed, so framing is carried over unchanged. Run npm ci.')
+  }
 
   const written = results.filter((r) => r.written)
   log('')
