@@ -27,6 +27,12 @@ interface DataContextValue {
    */
   reload: () => void
   reloading: boolean
+  /**
+   * What the last manual reload found. A reload that returns identical data
+   * leaves the timestamp alone, which is indistinguishable from a dead
+   * button unless it says so.
+   */
+  lastReload: { outcome: 'updated' | 'unchanged' | 'failed'; at: number } | null
 }
 
 const DataContext = createContext<DataContextValue | null>(null)
@@ -80,18 +86,42 @@ export function DataProvider({ children }: { children: ReactNode }) {
   const [state, setState] = useState<State>({ status: 'loading' })
   const [reloadToken, setReloadToken] = useState<number | null>(null)
   const [reloading, setReloading] = useState(false)
+  const [lastReload, setLastReload] = useState<DataContextValue['lastReload']>(null)
 
   useEffect(() => {
     let cancelled = false
-    if (reloadToken !== null) setReloading(true)
+    const manual = reloadToken !== null
+    if (manual) setReloading(true)
+    const startedAt = performance.now()
 
     loadDataset(reloadToken)
       .then((data) => {
-        if (!cancelled) setState({ status: 'ready', data })
+        if (cancelled) return
+        setState((previous) => {
+          if (manual) {
+            // Compare what came back with what was showing, and say so. The
+            // dataset is small, so a structural comparison is cheap.
+            const changed =
+              previous.status !== 'ready' || JSON.stringify(previous.data) !== JSON.stringify(data)
+            const ms = Math.round(performance.now() - startedAt)
+            console.info(
+              `[reload] fetched ${FILES.length} files in ${ms}ms, bypassing the cache: ` +
+                (changed
+                  ? `data changed (now generated ${data.generatedAt}).`
+                  : `identical to what was showing (generated ${data.generatedAt}); nothing new has been published.`)
+            )
+            setLastReload({ outcome: changed ? 'updated' : 'unchanged', at: Date.now() })
+          }
+          return { status: 'ready', data }
+        })
       })
       .catch((error: unknown) => {
         if (cancelled) return
         const message = error instanceof Error ? error.message : String(error)
+        if (manual) {
+          console.warn(`[reload] failed: ${message}`)
+          setLastReload({ outcome: 'failed', at: Date.now() })
+        }
         // Keep showing the data we already had rather than blanking the page:
         // stale numbers with a visible age beat an empty screen.
         setState((previous) => (previous.status === 'ready' ? previous : { status: 'error', message }))
@@ -106,7 +136,10 @@ export function DataProvider({ children }: { children: ReactNode }) {
   }, [reloadToken])
 
   const reload = useCallback(() => setReloadToken(Date.now()), [])
-  const value = useMemo(() => ({ state, reload, reloading }), [state, reload, reloading])
+  const value = useMemo(
+    () => ({ state, reload, reloading, lastReload }),
+    [state, reload, reloading, lastReload]
+  )
 
   return <DataContext.Provider value={value}>{children}</DataContext.Provider>
 }

@@ -156,11 +156,17 @@ export function Squad() {
           >
             ← Back
           </button>
+          {/* Squad to squad keeps the scroll position: people flick between
+              teams and being sent to the top each time is a nuisance. These
+              pills are the only squad-to-squad route, so the exception lives
+              here. Arriving from anywhere else still opens at the top, and
+              back still restores (Addendum 02 §5). */}
           <div className="flex flex-wrap gap-1.5">
             {data.league.managers.map((m) => (
               <Link
                 key={m.key}
                 to={`/managers/${m.key}/squad?gw=${gameweek}`}
+                preventScrollReset
                 className={[
                   'rounded-full border px-3 py-1.5 text-xs font-semibold transition-colors',
                   m.key === manager.key

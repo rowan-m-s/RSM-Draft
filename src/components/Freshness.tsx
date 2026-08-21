@@ -4,6 +4,34 @@ import { useDataState } from '../data'
 
 const REPO_ACTIONS_URL = 'https://github.com/rowan-m-s/RSM-Draft/actions'
 
+/** Shows the outcome of a manual reload for a few seconds, then lets the age speak again. */
+function useReloadNotice(lastReload: { outcome: string; at: number } | null, holdMs = 3000) {
+  const [visible, setVisible] = useState(false)
+  useEffect(() => {
+    if (!lastReload) return
+    setVisible(true)
+    const id = setTimeout(() => setVisible(false), holdMs)
+    return () => clearTimeout(id)
+  }, [lastReload, holdMs])
+  return visible ? lastReload : null
+}
+
+/** A small turning ring, for the moment the data is being re-read. */
+function Spinner() {
+  return (
+    <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" className="animate-spin">
+      <circle cx="6" cy="6" r="4.5" fill="none" stroke="currentColor" strokeWidth="1.5" strokeOpacity=".3" />
+      <path d="M10.5 6a4.5 4.5 0 0 0-4.5-4.5" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+    </svg>
+  )
+}
+
+const NOTICE: Record<string, string> = {
+  updated: 'Updated just now',
+  unchanged: 'Already up to date',
+  failed: 'Reload failed, showing the last data',
+}
+
 /** Ticks every 30s so "14 minutes ago" ages without a reload. */
 function useAge(generatedAt: string | null) {
   const [now, setNow] = useState(() => new Date())
@@ -22,19 +50,35 @@ function useAge(generatedAt: string | null) {
  * and turns amber past three hours.
  */
 export function Freshness({ compact = false }: { compact?: boolean }) {
-  const { state, reload, reloading } = useDataState()
+  const { state, reload, reloading, lastReload } = useDataState()
   const age = useAge(state.status === 'ready' ? state.data.generatedAt : null)
+  const notice = useReloadNotice(lastReload)
 
   if (!age) return null
 
   const tone = age.stale ? 'font-semibold text-pl-amber' : 'text-pl-muted'
-  const label = reloading ? 'Reloading…' : `Updated ${age.text}`
+  const label = reloading
+    ? 'Reloading…'
+    : notice
+      ? NOTICE[notice.outcome]
+      : `Updated ${age.text}`
+  const labelTone = notice?.outcome === 'failed' ? 'font-semibold text-pl-amber' : notice ? 'text-pl-text' : tone
 
-  if (compact) return <span className={`text-xs ${tone}`}>{label}</span>
+  if (compact) {
+    return (
+      <span className={`inline-flex items-center gap-1.5 text-xs ${labelTone}`} aria-live="polite">
+        {reloading && <Spinner />}
+        {label}
+      </span>
+    )
+  }
 
   return (
     <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
-      <span className={`text-xs ${tone}`}>{label}</span>
+      <span className={`inline-flex items-center gap-1.5 text-xs ${labelTone}`} aria-live="polite">
+        {reloading && <Spinner />}
+        {label}
+      </span>
       <button
         type="button"
         onClick={reload}
@@ -57,15 +101,20 @@ export function Freshness({ compact = false }: { compact?: boolean }) {
  * repo owner can do.
  */
 export function DataFooter() {
-  const { state, reload, reloading } = useDataState()
+  const { state, reload, reloading, lastReload } = useDataState()
   const age = useAge(state.status === 'ready' ? state.data.generatedAt : null)
+  const notice = useReloadNotice(lastReload)
 
   return (
     <section className="card p-5">
       <p className="eyebrow text-pl-muted">Data</p>
-      <p className={`mt-2 text-sm ${age?.stale ? 'font-semibold text-pl-amber' : 'text-pl-text'}`}>
-        {reloading ? 'Reloading…' : `Updated ${age?.text ?? 'never'}`}
-        {age?.stale && '. The update job may have stopped.'}
+      <p
+        className={`mt-2 inline-flex items-center gap-2 text-sm ${age?.stale || notice?.outcome === 'failed' ? 'font-semibold text-pl-amber' : 'text-pl-text'}`}
+        aria-live="polite"
+      >
+        {reloading && <Spinner />}
+        {reloading ? 'Reloading…' : notice ? NOTICE[notice.outcome] : `Updated ${age?.text ?? 'never'}`}
+        {!notice && age?.stale && '. The update job may have stopped.'}
       </p>
       <div className="mt-4 flex flex-wrap items-center gap-3">
         <button

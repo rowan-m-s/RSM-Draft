@@ -71,15 +71,6 @@ function ManagerProfile({ row, onClose }: { row: SeasonRow; onClose: () => void 
         </div>
 
         <div className="space-y-5 p-5">
-          {/* The main action on this screen, so it sits under the stats rather
-              than at the foot of a modal that scrolls a long way. */}
-          <Link
-            to={`/managers/${row.key}/squad`}
-            className="block w-full rounded-md bg-pl-text px-4 py-2.5 text-center text-sm font-semibold text-pl-bg hover:bg-pl-muted sm:inline-block sm:w-auto"
-          >
-            Squad view
-          </Link>
-
           <section>
             <h3 className="eyebrow border-b border-pl-border pb-1.5 text-pl-muted">Balance</h3>
             <div className="mt-3 flex flex-wrap items-baseline gap-x-6 gap-y-2">
@@ -171,8 +162,17 @@ function ManagerProfile({ row, onClose }: { row: SeasonRow; onClose: () => void 
           </section>
 
           <section>
-            <h3 className="eyebrow border-b border-pl-border pb-1.5 text-pl-muted">
-              Current squad {squad.length > 0 && <span className="text-pl-muted">({squad.length})</span>}
+            <h3 className="eyebrow flex items-baseline justify-between gap-3 border-b border-pl-border pb-1.5 text-pl-muted">
+              <span>
+                Current squad {squad.length > 0 && <span className="text-pl-muted">({squad.length})</span>}
+              </span>
+              {/* A second route to the same players, so it stays quiet. */}
+              <Link
+                to={`/managers/${row.key}/squad`}
+                className="rounded px-1.5 py-0.5 text-[11px] font-semibold tracking-wider text-pl-cyan uppercase hover:bg-pl-surface-2"
+              >
+                Squad view →
+              </Link>
             </h3>
             {squad.length === 0 ? (
               <p className="mt-3 text-sm text-pl-muted">No squad yet. It appears once the draft has happened.</p>
