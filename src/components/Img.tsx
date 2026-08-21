@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import type { PhotoSize } from '../lib/assets'
+import { IDENTITY, framingStyle, type Framing } from '../lib/photoFraming'
 import {
   BADGE_FALLBACK,
   PLAYER_FALLBACK,
@@ -149,15 +150,15 @@ export function CardPhoto({
   name,
   width,
   height,
-  scale = 1,
+  framing = IDENTITY,
   className = '',
 }: {
   photoCode: number
   name: string
   width: number
   height: number
-  /** Per-club framing correction; see lib/photoFraming.ts. */
-  scale?: number
+  /** Per-player framing, measured by the pipeline; see lib/photoFraming.ts. */
+  framing?: Framing
   className?: string
 }) {
   const candidates = playerPhotoCandidates(photoCode)
@@ -171,7 +172,7 @@ export function CardPhoto({
       width={width}
       height={height}
       className={className}
-      style={scale !== 1 ? { transform: `scale(${scale})`, transformOrigin: '50% 100%' } : undefined}
+      style={framingStyle(framing)}
     />
   )
 }

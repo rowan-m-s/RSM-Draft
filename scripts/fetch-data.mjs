@@ -32,6 +32,7 @@ import {
 } from './lib/derive.mjs'
 import { MANAGER_KEYS } from './images.shared.mjs'
 import { findMissingPhotos, formatMissingReport, readOverrides } from './lib/photos.mjs'
+import { updateFraming } from './lib/framing.mjs'
 
 /**
  * Must match src/lib/assets.ts. Only used to ask the CDN whether a photo
@@ -43,6 +44,25 @@ const playerPhotoUrl = (code) =>
 /** The last-resort tier, checked so the report can say which players hit it. */
 const legacyPhotoUrl = (code) =>
   `https://resources.premierleague.com/premierleague/photos/players/40x40/p${code}.png`
+
+/** The photo the cards actually draw, current tier then legacy. Null if neither exists. */
+async function fetchPhotoBuffer(code) {
+  const urls = [
+    `https://resources.premierleague.com/premierleague25/photos/players/110x140/${code}.png`,
+    `https://resources.premierleague.com/premierleague/photos/players/110x140/p${code}.png`,
+  ]
+  for (const url of urls) {
+    try {
+      const response = await fetch(url, { headers: { 'User-Agent': USER_AGENT }, signal: AbortSignal.timeout(20_000) })
+      if (!response.ok) continue
+      const buffer = Buffer.from(await response.arrayBuffer())
+      if (buffer.byteLength > 0) return buffer
+    } catch {
+      // Treated as missing; it is retried next run because nothing is stored.
+    }
+  }
+  return null
+}
 
 const LEAGUE_ID = 23939
 const LEAGUE_DISPLAY_NAME = 'FPL Draft 26/27'
@@ -604,6 +624,9 @@ async function main() {
      would be a needless payload on every visit. */
   await mkdir(SQUAD_DIR, { recursive: true })
   const elementById = new Map(elements.map((e) => [e.id, e]))
+  // Every player whose photo appears on a card: current squads and every
+  // week's squad file. Measured for framing below.
+  const cardPhotoCodes = new Set(players.owned.map((p) => p.photoCode))
   for (const record of squadFiles) {
     // Carry the player details the page needs. A player traded away weeks ago
     // will not be in players.json's owned list, so the file has to stand alone.
@@ -613,6 +636,7 @@ async function main() {
       const element = elementById.get(id)
       if (!element) continue
       const team = teams.find((t) => t.id === element.team)
+      cardPhotoCodes.add(element.code)
       playerDetails[id] = {
         name: element.web_name,
         position: ['', 'GKP', 'DEF', 'MID', 'FWD'][element.element_type],
@@ -642,6 +666,27 @@ async function main() {
     }
     results.push(await writeIfChanged(path.join('squads', `gw${record.event}.json`), payload, startedAt))
   }
+
+  /* Photo framing, per player, measured once and cached in the published
+     file itself. Only codes not already present are fetched, so a run with
+     no new players measures nothing. Overrides are cut to the standard
+     composition by hand, so they are not measured and render at 1. */
+  log('\nMeasuring photo framing for new players...')
+  const framingFile = path.join(DATA_DIR, 'photo-framing.json')
+  let existingFraming = {}
+  try {
+    existingFraming = JSON.parse(await readFile(framingFile, 'utf8')).framing ?? {}
+  } catch {
+    // First run, or the file was removed to force a full re-measure.
+  }
+  const { framing, stats } = await updateFraming({
+    codes: [...cardPhotoCodes].filter((code) => !overrides.has(code)),
+    existing: existingFraming,
+    fetchPhoto: (code) => fetchPhotoBuffer(code),
+    log,
+  })
+  log(`  ${stats.cached} cached, ${stats.measured} measured, ${stats.failed} without a photo or unmeasurable.`)
+  results.push(await writeIfChanged('photo-framing.json', { framing, generatedAt }, startedAt))
 
   const written = results.filter((r) => r.written)
   log('')

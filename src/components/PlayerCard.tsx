@@ -1,7 +1,7 @@
 import { CardPhoto } from './Img'
 import { PlayerFlag } from './PlayerFlag'
 import type { Availability } from '../lib/availability'
-import { clubPhotoScale } from '../lib/photoFraming'
+import { photoFraming } from '../lib/photoFraming'
 import type { Position } from '../types'
 
 /**
@@ -31,7 +31,6 @@ export interface CardPlayer extends Availability {
   name: string
   position: Position
   photoCode: number
-  clubCode: number
 }
 
 interface PlayerCardProps {
@@ -70,13 +69,13 @@ export function PlayerCard({ player, line, bench = false, sub = null }: PlayerCa
         bench ? 'w-[88px] opacity-90 saturate-[.85]' : 'w-[104px]',
       ].join(' ')}
     >
-      <div className={`player-card-photo relative ${bench ? 'h-[82px]' : 'h-[98px]'}`}>
+      <div className={`player-card-photo relative overflow-hidden ${bench ? 'h-[82px]' : 'h-[98px]'}`}>
         <CardPhoto
           photoCode={player.photoCode}
           name={player.name}
           width={bench ? 88 : 104}
           height={bench ? 82 : 98}
-          scale={clubPhotoScale(player.clubCode)}
+          framing={photoFraming(player.photoCode)}
           className="absolute inset-0 h-full w-full object-cover object-top"
         />
         <PlayerFlag player={player} size={14} className="absolute top-0 right-0" />
@@ -101,7 +100,7 @@ export function PlayerCardCompact({ player, line, bench = false, sub = null }: P
         bench ? 'w-[66px] opacity-90 saturate-[.85]' : 'w-[66px]',
       ].join(' ')}
     >
-      <div className="player-card-photo relative h-[58px]">
+      <div className="player-card-photo relative h-[58px] overflow-hidden">
         {/* Not the 40x40 variant: that is 80px of image for a 66px slot, which
             is 198px at 3×. The 220 holds; the browser picks it from the set. */}
         <CardPhoto
@@ -109,7 +108,7 @@ export function PlayerCardCompact({ player, line, bench = false, sub = null }: P
           name={player.name}
           width={66}
           height={58}
-          scale={clubPhotoScale(player.clubCode)}
+          framing={photoFraming(player.photoCode)}
           className="absolute inset-0 h-full w-full object-cover object-top"
         />
         <PlayerFlag player={player} size={11} className="absolute top-0 right-0" />

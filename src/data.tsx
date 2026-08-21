@@ -1,6 +1,7 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react'
 import type { Gameweek, League, Month, PlayersFile, Season } from './types'
 import { asset, setPlayerImageOverrides } from './lib/assets'
+import { setPhotoFraming } from './lib/photoFraming'
 
 export interface Dataset {
   league: League
@@ -30,7 +31,7 @@ interface DataContextValue {
 
 const DataContext = createContext<DataContextValue | null>(null)
 
-const FILES = ['league', 'gameweeks', 'months', 'season', 'players'] as const
+const FILES = ['league', 'gameweeks', 'months', 'season', 'players', 'photo-framing'] as const
 
 async function loadDataset(cacheBust: number | null): Promise<Dataset> {
   const suffix = cacheBust === null ? '' : `?t=${cacheBust}`
@@ -50,10 +51,12 @@ async function loadDataset(cacheBust: number | null): Promise<Dataset> {
     months: { months: Month[]; generatedAt: string }
     season: Season
     players: PlayersFile
+    'photo-framing': { framing: Record<string, { scale: number; top: number }>; generatedAt: string }
   }
 
   // Published once with the data rather than probed per image.
   setPlayerImageOverrides(files.league.playerImageOverrides)
+  setPhotoFraming(files['photo-framing'].framing)
 
   return {
     league: files.league,
