@@ -374,33 +374,23 @@ interface CardProps {
   confirmed: boolean
 }
 
-/**
- * The breakdown for the open card in a row, shown as a panel beneath the
- * row rather than a popover: a popover has nowhere to go on a 375px pitch
- * without covering the next row, and the rows are already spaced so the
- * panel reads as belonging to the one above it.
- */
+/** The breakdown for the open card in a row, as a panel over the pitch. */
 function RowBreakdown({
   entry,
   parts,
   confirmed,
-  above = false,
 }: {
   entry: PitchPlayer
   parts: FixtureBreakdown[]
   confirmed: boolean
-  /** Open upwards: the pitch clips at its edge, so the bottom row has no room below. */
-  above?: boolean
 }) {
   const total = parts.reduce((n, p) => n + p.total, 0)
-  // Floats over the next row rather than pushing it down: the pitch keeps
-  // its shape, and closing the panel moves nothing.
+  // Floats at the row's right edge, over the pitch, always in the same
+  // place relative to the row: the pitch keeps its shape, and closing the
+  // panel moves nothing. Styled as a card: the cyan outline and the
+  // aubergine fill the cards use.
   return (
-    <div
-      className={`absolute inset-x-2 z-10 mx-auto w-auto max-w-sm rounded-md border border-pl-border bg-pl-bg/95 px-3 py-2 shadow-xl backdrop-blur-sm ${
-        above ? 'bottom-full mb-2' : 'top-full mt-2'
-      }`}
-    >
+    <div className="absolute top-0 right-0 z-10 w-[min(20rem,calc(100%-1rem))] rounded-md border-2 border-pl-cyan bg-pl-bg px-3 py-2 shadow-xl">
       <p className="flex items-baseline justify-between gap-4 text-sm">
         <span className="font-semibold text-pl-text">{entry.player.name}</span>
         <span className="tnum font-bold text-pl-text">{pts(total)}</span>
@@ -439,9 +429,7 @@ function Pitch({ rows, ...card }: { rows: PitchPlayer[][] } & CardProps) {
                 {row.map((entry) => (
                   <PlayerCardResponsive key={entry.key} entry={entry} {...card} />
                 ))}
-                {opened && parts && (
-                  <RowBreakdown entry={opened} parts={parts} confirmed={card.confirmed} above={i === rows.length - 1} />
-                )}
+                {opened && parts && <RowBreakdown entry={opened} parts={parts} confirmed={card.confirmed} />}
               </div>
             )
           })}

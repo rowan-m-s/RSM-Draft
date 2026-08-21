@@ -642,10 +642,13 @@ async function main() {
   const currentMonthId = [...months].reverse().find((m) => m.gameweekIds.length > 0)?.id ?? null
   const currentMonthIds = gameweeks.filter((gw) => gw.month === currentMonthId && gw.dataChecked).map((gw) => gw.id)
 
-  const choose = (set, byManager, gameweekIds, label) => {
+  const choose = (set, byManager, gameweekIds, label, avoid = {}) => {
     const out = {}
     for (const key of managerKeys) {
-      const candidates = byManager[key] ?? []
+      // A manager on both Home cards at once would show the same picture
+      // twice, so the second choice steers round the first when it can.
+      const all = byManager[key] ?? []
+      const candidates = all.length > 1 ? all.filter((c) => c.code !== avoid[key]) : all
       if (candidates.length === 0) {
         out[key] = null
         continue
@@ -675,8 +678,11 @@ async function main() {
   for (const [set, byManager] of Object.entries(playerGraphics)) {
     // Season-long, for the League Leader card.
     graphicChoice[set] = choose(set, byManager, confirmedIds, set)
-    // This month only, for the provisional Manager of the Month card.
-    graphicChoice[`${set}Month`] = choose(set, byManager, currentMonthIds, `${set} (month)`)
+    // This month only, for the provisional Manager of the Month card. The
+    // league leaders are the managers who can be on both cards, so their
+    // month graphic avoids their season one.
+    const avoid = Object.fromEntries((season.leader?.keys ?? []).map((key) => [key, graphicChoice[set][key]]))
+    graphicChoice[`${set}Month`] = choose(set, byManager, currentMonthIds, `${set} (month)`, avoid)
   }
   season.graphics = graphicChoice
   const variants = kochVariants({ gameweeks })
