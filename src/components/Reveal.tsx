@@ -155,9 +155,10 @@ export function Reveal({ data }: { data: Dataset }) {
 function Sting({ item, nameOf, onDone }: { item: RevealItem; nameOf: (k: string) => string; onDone: () => void }) {
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
   const names = item.managerKeys.map(nameOf).join(' & ')
-  const headline = [`${item.label.split(' · ')[0]}: ${names}, ${item.points} pts`, item.tickerExtra]
-    .filter(Boolean)
-    .join(' · ')
+  const headline = `${item.label.split(' · ')[0]}: ${names}, ${item.points} pts`
+  // The award and its footnote (scapegoat, MVP) are separate items on the
+  // ticker, each with its own slot and a gap between, not one run-on line.
+  const tickerItems = [headline, item.tickerExtra].filter((t): t is string => Boolean(t))
   const tone = item.kind === 'koch' ? 'pink' : 'green'
 
   useEffect(() => {
@@ -233,11 +234,14 @@ function Sting({ item, nameOf, onDone }: { item: RevealItem; nameOf: (k: string)
         <div className="sting-ticker-track flex whitespace-nowrap">
           {[0, 1].map((half) => (
             <span key={half} className="flex shrink-0">
-              {[0, 1, 2, 3, 4, 5].map((i) => (
-                <span key={i} className="px-8 text-sm font-semibold tracking-wide uppercase">
-                  {headline}
-                </span>
-              ))}
+              {[0, 1, 2, 3, 4, 5].flatMap((i) =>
+                tickerItems.map((text, j) => (
+                  <span key={`${i}-${j}`} className="flex items-center gap-10 pl-10">
+                    <span className="text-sm font-semibold tracking-wide uppercase">{text}</span>
+                    <span className="sting-accent-bg h-1.5 w-1.5 shrink-0 rounded-full" aria-hidden="true" />
+                  </span>
+                ))
+              )}
             </span>
           ))}
         </div>
