@@ -7,7 +7,7 @@ import { ManagerAvatar } from '../components/Img'
 import { PlayerCard, PlayerCardCompact } from '../components/PlayerCard'
 import { PageBody } from '../components/Layout'
 import { useData } from '../data'
-import { gameweekPoints, rankLabel } from '../lib/season'
+import { gameweekPoints } from '../lib/season'
 import { usePoints, useSquad } from '../lib/useSquad'
 import type { Fixture, ManagerKey, PointsComponent, Position, SquadPick, SquadPlayer } from '../types'
 
@@ -80,9 +80,9 @@ export function PointsStrip({
     <section
       className={`card mb-3 flex flex-col items-center gap-1.5 px-4 py-3 text-center sm:mb-4 sm:px-5 ${provisional ? 'opacity-90' : ''}`}
     >
-      <div className="flex items-baseline justify-center gap-2.5">
-        <span className={`display tnum text-4xl leading-none sm:text-5xl ${tone}`}>{points.xi}</span>
-        <span className="text-sm text-pl-muted">
+      <span className={`display tnum text-4xl leading-none sm:text-5xl ${tone}`}>{points.xi}</span>
+      <p className="flex items-center justify-center gap-2 text-sm text-pl-muted">
+        <span>
           GW{gameweek} points
           {provisional && <span className="text-pl-text"> · provisional</span>}
         </span>
@@ -91,12 +91,6 @@ export function PointsStrip({
             Koch
           </span>
         )}
-      </div>
-      <p className="tnum text-xs text-pl-muted">
-        <span className="font-semibold text-pl-text">{rankLabel(points.rank)}</span> of {points.of}
-        {provisional && ' so far'}
-        <span className="mx-1.5">·</span>
-        Bench <span className="font-semibold text-pl-text">{points.bench}</span>
       </p>
     </section>
   )
@@ -390,14 +384,23 @@ function RowBreakdown({
   entry,
   parts,
   confirmed,
+  above = false,
 }: {
   entry: PitchPlayer
   parts: FixtureBreakdown[]
   confirmed: boolean
+  /** Open upwards: the pitch clips at its edge, so the bottom row has no room below. */
+  above?: boolean
 }) {
   const total = parts.reduce((n, p) => n + p.total, 0)
+  // Floats over the next row rather than pushing it down: the pitch keeps
+  // its shape, and closing the panel moves nothing.
   return (
-    <div className="mx-auto w-full max-w-sm rounded-md border border-pl-border bg-pl-bg/85 px-3 py-2 backdrop-blur-sm">
+    <div
+      className={`absolute inset-x-2 z-10 mx-auto w-auto max-w-sm rounded-md border border-pl-border bg-pl-bg/95 px-3 py-2 shadow-xl backdrop-blur-sm ${
+        above ? 'bottom-full mb-2' : 'top-full mt-2'
+      }`}
+    >
       <p className="flex items-baseline justify-between gap-4 text-sm">
         <span className="font-semibold text-pl-text">{entry.player.name}</span>
         <span className="tnum font-bold text-pl-text">{pts(total)}</span>
@@ -422,7 +425,7 @@ function Pitch({ rows, ...card }: { rows: PitchPlayer[][] } & CardProps) {
   // Full-bleed on mobile: PageBody's 16px each side would drop the fifth card
   // in a five-across row onto its own line.
   return (
-    <div className="-mx-4 overflow-hidden sm:mx-0 sm:rounded-xl">
+    <div className="-mx-4 sm:mx-0 sm:rounded-xl">
       {/* Rows are spaced by position with more air between the lines than a
           grid would give, so it reads as a formation. Each row centres its
           cards, so a row of two balances against a row of five. */}
@@ -432,13 +435,13 @@ function Pitch({ rows, ...card }: { rows: PitchPlayer[][] } & CardProps) {
             const opened = row.find((entry) => entry.key === card.open)
             const parts = opened ? card.breakdownFor(opened) : null
             return (
-              <div key={i} className="flex flex-col gap-3 px-2">
-                <div className="flex flex-wrap items-start justify-center gap-x-1.5 gap-y-4 sm:gap-x-6">
-                  {row.map((entry) => (
-                    <PlayerCardResponsive key={entry.key} entry={entry} {...card} />
-                  ))}
-                </div>
-                {opened && parts && <RowBreakdown entry={opened} parts={parts} confirmed={card.confirmed} />}
+              <div key={i} className="relative flex flex-wrap items-start justify-center gap-x-1.5 gap-y-4 sm:gap-x-6">
+                {row.map((entry) => (
+                  <PlayerCardResponsive key={entry.key} entry={entry} {...card} />
+                ))}
+                {opened && parts && (
+                  <RowBreakdown entry={opened} parts={parts} confirmed={card.confirmed} above={i === rows.length - 1} />
+                )}
               </div>
             )
           })}
@@ -466,11 +469,11 @@ function Bench({ bench, ...card }: { bench: PitchPlayer[] } & CardProps) {
        with a hairline border, and the cards a size down and a touch quieter
        so the XI reads as primary. Slots are labelled as FPL does: GK, then
        the outfield bench in substitution order. */
-    <div className="-mx-4 mt-4 overflow-hidden border-y border-pl-border bg-pl-surface sm:mx-0 sm:rounded-xl sm:border">
+    <div className="-mx-4 mt-4 border-y border-pl-border bg-pl-surface sm:mx-0 sm:rounded-xl sm:border">
       <p className="border-b border-pl-border px-4 py-2.5 text-[11px] font-semibold tracking-wider text-pl-muted uppercase">
         Bench
       </p>
-      <div className="flex flex-wrap items-start justify-center gap-x-3 gap-y-4 px-2 py-5 sm:gap-x-8">
+      <div className="relative flex flex-wrap items-start justify-center gap-x-3 gap-y-4 px-2 py-5 sm:gap-x-8">
         {bench.map((entry) => (
           <div key={entry.key} className="flex flex-col items-center gap-1.5">
             <span className="text-[10px] font-bold tracking-wider text-pl-muted uppercase">
@@ -479,12 +482,8 @@ function Bench({ bench, ...card }: { bench: PitchPlayer[] } & CardProps) {
             <PlayerCardResponsive entry={entry} {...card} bench />
           </div>
         ))}
+        {opened && parts && <RowBreakdown entry={opened} parts={parts} confirmed={card.confirmed} />}
       </div>
-      {opened && parts && (
-        <div className="px-4 pb-4">
-          <RowBreakdown entry={opened} parts={parts} confirmed={card.confirmed} />
-        </div>
-      )}
     </div>
   )
 }

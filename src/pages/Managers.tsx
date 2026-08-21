@@ -22,16 +22,17 @@ function ManagerProfile({ row, onClose }: { row: SeasonRow; onClose: () => void 
   const manager = data.league.managers.find((m) => m.key === row.key)!
   const nameOf = (key: string) => data.league.managers.find((m) => m.key === key)?.displayName ?? key
 
-  const squad = data.players.owned
-    .filter((p) => p.owner === row.key)
-    .sort((a, b) => b.points - a.points)
+  const squad = data.players.owned.filter((p) => p.owner === row.key).sort((a, b) => b.points - a.points)
 
   const kochWeeks = data.gameweeks.filter((gw) => gw.kochKeys.includes(row.key))
   const motmMonths = data.months.filter((m) => m.winnerKeys.includes(row.key))
   const best = squad[0] ?? null
 
   return (
-    <div className="fixed inset-0 z-30 overflow-y-auto bg-pl-bg/80 p-0 pt-[env(safe-area-inset-top)] sm:p-6" onClick={onClose}>
+    <div
+      className="fixed inset-0 z-30 overflow-y-auto bg-pl-bg/80 p-0 pt-[env(safe-area-inset-top)] sm:p-6"
+      onClick={onClose}
+    >
       <div
         className="mx-auto min-h-dvh max-w-3xl bg-pl-surface sm:min-h-0 sm:rounded-lg"
         onClick={(e) => e.stopPropagation()}
@@ -126,9 +127,7 @@ function ManagerProfile({ row, onClose }: { row: SeasonRow; onClose: () => void 
           )}
 
           <section>
-            <h3 className="eyebrow border-b border-pl-border pb-1.5 text-pl-muted">
-              Koch and MOTM history
-            </h3>
+            <h3 className="eyebrow border-b border-pl-border pb-1.5 text-pl-muted">Koch and MOTM history</h3>
             {kochWeeks.length === 0 && motmMonths.length === 0 ? (
               <p className="mt-3 text-sm text-pl-muted">Nothing yet. Not a bad thing.</p>
             ) : (
@@ -163,9 +162,7 @@ function ManagerProfile({ row, onClose }: { row: SeasonRow; onClose: () => void 
 
           <section>
             <h3 className="eyebrow flex items-baseline justify-between gap-3 border-b border-pl-border pb-1.5 text-pl-muted">
-              <span>
-                Current squad {squad.length > 0 && <span className="text-pl-muted">({squad.length})</span>}
-              </span>
+              <span>Current squad {squad.length > 0 && <span className="text-pl-muted">({squad.length})</span>}</span>
               {/* A second route to the same players, so it stays quiet. */}
               <Link
                 to={`/managers/${row.key}/squad`}
@@ -211,8 +208,8 @@ export function Managers() {
   const nameOf = (key: string) => data.league.managers.find((m) => m.key === key)?.displayName ?? key
   const teamOf = (key: string) => data.league.managers.find((m) => m.key === key)?.teamName ?? ''
 
-  // Sorted worst first — this is the page about who owes what.
-  const rows = [...data.season.rows].sort((a, b) => a.balance - b.balance || b.total - a.total)
+  // Alphabetical: this page is a directory, and the table is where the order is.
+  const rows = [...data.season.rows].sort((a, b) => nameOf(a.key).localeCompare(nameOf(b.key)))
   // Before anyone has played there is no order to report, only an eleven-way tie.
   const ranked = data.gameweeks.some((gw) => gw.finished)
   const openRow = rows.find((r) => r.key === open) ?? null
@@ -236,19 +233,34 @@ export function Managers() {
                 <th scope="col" className="py-3 pl-4 text-[11px] font-semibold tracking-wider text-pl-muted uppercase">
                   Manager
                 </th>
-                <th scope="col" className="hidden w-14 py-3 text-right text-[11px] font-semibold tracking-wider text-pl-muted uppercase sm:table-cell">
+                <th
+                  scope="col"
+                  className="hidden w-14 py-3 text-right text-[11px] font-semibold tracking-wider text-pl-muted uppercase sm:table-cell"
+                >
                   Rank
                 </th>
-                <th scope="col" className="hidden w-16 py-3 text-right text-[11px] font-semibold tracking-wider text-pl-muted uppercase sm:table-cell">
+                <th
+                  scope="col"
+                  className="hidden w-16 py-3 text-right text-[11px] font-semibold tracking-wider text-pl-muted uppercase sm:table-cell"
+                >
                   Points
                 </th>
-                <th scope="col" className="w-14 py-3 text-right text-[11px] font-semibold tracking-wider text-pl-muted uppercase">
+                <th
+                  scope="col"
+                  className="w-14 py-3 text-right text-[11px] font-semibold tracking-wider text-pl-muted uppercase"
+                >
                   Koch
                 </th>
-                <th scope="col" className="w-14 py-3 text-right text-[11px] font-semibold tracking-wider text-pl-muted uppercase">
+                <th
+                  scope="col"
+                  className="w-14 py-3 text-right text-[11px] font-semibold tracking-wider text-pl-muted uppercase"
+                >
                   MOTM
                 </th>
-                <th scope="col" className="w-20 py-3 pr-4 text-right text-[11px] font-semibold tracking-wider text-pl-muted uppercase">
+                <th
+                  scope="col"
+                  className="w-20 py-3 pr-4 text-right text-[11px] font-semibold tracking-wider text-pl-muted uppercase"
+                >
                   Balance
                 </th>
               </tr>
@@ -278,10 +290,10 @@ export function Managers() {
 
         <p className="mt-3 text-xs leading-relaxed text-pl-muted">
           Balance is pots won minus £5 forfeits. The £10 entry fee is not part of it, and the £110 season prize is
-          separate and still pending. Money only moves between managers, so once every gameweek in a month is
-          confirmed the eleven balances cancel out. They stand at{' '}
-          <span className="tnum font-semibold text-pl-text">{signedMoney(totalBalance)}</span> right now, which is
-          the {money(unpaidPot)} still sitting in an unsettled pot.
+          separate and still pending. Money only moves between managers, so once every gameweek in a month is confirmed
+          the eleven balances cancel out. They stand at{' '}
+          <span className="tnum font-semibold text-pl-text">{signedMoney(totalBalance)}</span> right now, which is the{' '}
+          {money(unpaidPot)} still sitting in an unsettled pot.
         </p>
 
         {openRow && <ManagerProfile row={openRow} onClose={() => setOpen(null)} />}
