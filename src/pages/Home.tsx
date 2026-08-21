@@ -100,13 +100,9 @@ function KochCard({
                   {nameOf(key)}
                   {!confirmed && '*'}
                 </p>
-                <p className="mt-1.5 text-sm text-pl-muted">
-                  <span className="display tnum text-2xl text-pl-pink">{gameweek.scores[key]}</span> points ·{' '}
-                  {confirmed ? 'lowest' : 'currently lowest'} in gameweek {gameweek.id}
-                </p>
                 {/* The player who let them down: lowest scorer in the XI who
                     actually played. Someone on zero minutes is not to blame. */}
-                <p className="mt-2 text-sm text-pl-muted">
+                <p className="mt-1.5 text-sm text-pl-muted">
                   Scapegoat ·{' '}
                   {scapegoat ? (
                     <>
@@ -118,6 +114,10 @@ function KochCard({
                   ) : (
                     'nobody has played yet'
                   )}
+                </p>
+                <p className="mt-2 text-sm text-pl-muted">
+                  <span className="tnum font-semibold text-pl-pink">{gameweek.scores[key]}</span> points ·{' '}
+                  {confirmed ? 'lowest' : 'currently lowest'} in gameweek {gameweek.id}
                 </p>
               </div>
             </div>
@@ -186,11 +186,11 @@ function MotmCard({
             />
             <div className="flex min-w-0 flex-1 flex-col justify-center">
               <p className="display truncate text-2xl leading-[1.2] text-pl-text">{nameOf(key)}</p>
-              <p className="mt-1.5 text-sm text-pl-muted">
+              <Mvp performer={month.topPerformerByManager?.[key] ?? null} />
+              <p className="mt-2 text-sm text-pl-muted">
                 <span className="tnum font-semibold text-pl-text">{month.totals[key]}</span> points across{' '}
                 {month.gameweekIds.length} gameweek{month.gameweekIds.length === 1 ? '' : 's'}
               </p>
-              <Mvp performer={month.topPerformerByManager?.[key] ?? null} />
               {confirmed && (
                 <p className="mt-2">
                   <span className="display tnum text-2xl text-pl-green">{money(month.potPerWinner)}</span>{' '}
@@ -223,7 +223,7 @@ function MotmCard({
 function Mvp({ performer }: { performer: { playerName: string; points: number } | null }) {
   if (!performer) return null
   return (
-    <p className="mt-2 text-sm text-pl-muted">
+    <p className="mt-1.5 text-sm text-pl-muted">
       MVP · <span className="font-semibold text-pl-text">{performer.playerName}</span>{' '}
       <span className="tnum">
         ({performer.points} {performer.points === 1 ? 'pt' : 'pts'})
@@ -278,10 +278,10 @@ function LeaderCard({
             />
             <div className="flex min-w-0 flex-1 flex-col justify-center">
               <p className="display truncate text-2xl leading-[1.2] text-pl-text">{nameOf(key)}</p>
-              <p className="mt-1.5 text-sm text-pl-muted">
+              <Mvp performer={mvpFor(key)} />
+              <p className="mt-2 text-sm text-pl-muted">
                 <span className="tnum font-semibold text-pl-text">{leader.total}</span> points
               </p>
-              <Mvp performer={mvpFor(key)} />
               <p className="mt-2 text-sm text-pl-cyan">
                 {joint && leader.sinceByKey[key] !== leader.since
                   ? `Drew level at GW${leader.sinceByKey[key]}`
