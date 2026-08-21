@@ -3,7 +3,8 @@ import { createPortal } from 'react-dom'
 import { availabilityText, flagColour, flagLabel, type Availability } from '../lib/availability'
 
 /**
- * FPL's availability flag: a small triangle in the corner of the card.
+ * FPL's availability flag: a warning roundel in the corner of the card,
+ * yellow for doubtful and red for ruled out.
  *
  * The colour is the glance; the news text is the actual information, so it is
  * one tap away and also carried as the accessible name.
@@ -35,10 +36,7 @@ export function PlayerFlag({
     if (!rect) return
     // Prefer hanging left from the flag, but keep it fully on screen — flags
     // sit at both edges of a table row and of the pitch.
-    const left = Math.min(
-      Math.max(8, rect.right - TOOLTIP_WIDTH),
-      Math.max(8, window.innerWidth - TOOLTIP_WIDTH - 8)
-    )
+    const left = Math.min(Math.max(8, rect.right - TOOLTIP_WIDTH), Math.max(8, window.innerWidth - TOOLTIP_WIDTH - 8))
     setBox({ top: rect.bottom + 6, left })
   }, [])
 
@@ -57,7 +55,8 @@ export function PlayerFlag({
   if (colour === 'none') return null
 
   const label = flagLabel(player.status) ?? 'Unavailable'
-  const fill = colour === 'red' ? 'var(--color-pl-pink)' : 'var(--color-pl-amber)'
+  const fill = colour === 'red' ? 'var(--color-pl-crimson)' : 'var(--color-pl-amber)'
+  const mark = colour === 'red' ? 'var(--color-pl-text)' : 'var(--color-pl-bg)'
 
   return (
     <span className={`inline-flex ${className}`}>
@@ -77,9 +76,11 @@ export function PlayerFlag({
         onBlur={() => setBox(null)}
         className="block leading-none"
       >
-        {/* A right-angled triangle tucked into the corner, as FPL draws it. */}
+        {/* An exclamation roundel, as the official app draws it. */}
         <svg width={size} height={size} viewBox="0 0 16 16" aria-hidden="true" className="block">
-          <path d="M16 0 L16 16 L0 0 Z" fill={fill} />
+          <circle cx="8" cy="8" r="7" fill={fill} />
+          <rect x="7.1" y="3.6" width="1.8" height="5.6" rx="0.9" fill={mark} />
+          <circle cx="8" cy="11.6" r="1.05" fill={mark} />
         </svg>
       </button>
 
@@ -91,7 +92,7 @@ export function PlayerFlag({
             style={{ top: box.top, left: box.left, width: TOOLTIP_WIDTH }}
             className="pointer-events-none fixed z-50 rounded-md border border-pl-border bg-pl-surface-2 px-2.5 py-2 text-left text-xs leading-snug font-normal text-pl-text"
           >
-            <span className={`block font-semibold ${colour === 'red' ? 'text-pl-pink' : 'text-pl-amber'}`}>
+            <span className={`block font-semibold ${colour === 'red' ? 'text-pl-crimson' : 'text-pl-amber'}`}>
               {label}
             </span>
             <span className="mt-0.5 block text-pl-muted">{text}</span>

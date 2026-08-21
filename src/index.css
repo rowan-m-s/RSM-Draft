@@ -46,10 +46,11 @@
 
   --color-pl-cyan: #04f5ff; /* accents, active nav, links, countdown */
   --color-pl-violet: #963cff; /* gradient start, secondary accent */
-  --color-pl-pink: #ff2882; /* Koch of the week, negative balances */
+  --color-pl-pink: #ff2882; /* Koch of the week, negative balances, a player's match in progress */
   --color-pl-green: #00ff87; /* Manager of the month, money won, positive */
   --color-pl-amber: #ffc233; /* doubtful flag, stale data, error copy, the Koch sting */
-  --color-pl-red: #ff3b3b; /* money lost, on the Koch sting only */
+  --color-pl-red: #ff3b3b; /* money lost on the Koch sting; a player ruled out */
+  --color-pl-crimson: #c8102e; /* a player ruled out: the flag and the name band */
 
   /* The pitch is drawn in CSS and is the one surface that is not aubergine.
      Sampled from the reference pitch: the grass averages the base value,

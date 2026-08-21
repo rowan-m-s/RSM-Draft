@@ -8,6 +8,7 @@ import { PlayerCard, PlayerCardCompact } from '../components/PlayerCard'
 import { PageBody } from '../components/Layout'
 import { useData } from '../data'
 import { gameweekPoints } from '../lib/season'
+import { matchState } from '../lib/fixtures'
 import { usePoints, useSquad } from '../lib/useSquad'
 import type { Fixture, ManagerKey, PointsComponent, Position, SquadPick, SquadPlayer } from '../types'
 
@@ -185,6 +186,18 @@ export function Squad() {
     }
     return out
   }
+  /* A player is live while one of their club's matches this week has
+     started and not finished. Read from the match list the fetch publishes,
+     so it clears on the normal cadence once the whistle goes. */
+  const liveTeams = useMemo(() => {
+    const set = new Set<number>()
+    for (const m of fixtures?.matches ?? []) {
+      if (m.event === gameweek && matchState(m) === 'live') (set.add(m.home), set.add(m.away))
+    }
+    return set
+  }, [fixtures, gameweek])
+  const isLive = (entry: PitchPlayer) => mode === 'points' && liveTeams.has(entry.player.teamId)
+
   const toggle = (entry: PitchPlayer) => setOpenKey(open === entry.key ? null : `${gameweek}:${entry.key}`)
   const close = () => setOpenKey(null)
 
@@ -208,7 +221,16 @@ export function Squad() {
       document.removeEventListener('keydown', onKey)
     }
   }, [open])
-  const breakdownProps = { mode, fixtureFor, breakdownFor, open, toggle, close, confirmed: squad?.dataChecked ?? false }
+  const breakdownProps = {
+    mode,
+    fixtureFor,
+    breakdownFor,
+    open,
+    toggle,
+    close,
+    isLive,
+    confirmed: squad?.dataChecked ?? false,
+  }
 
   const setGameweek = (wanted: number) => {
     // The slider is a range input, so it can land on a week between two
@@ -381,6 +403,7 @@ interface CardProps {
   open: number | null
   toggle: (entry: PitchPlayer) => void
   close: () => void
+  isLive: (entry: PitchPlayer) => boolean
   confirmed: boolean
 }
 
@@ -541,17 +564,19 @@ function PlayerCardResponsive({
   fixtureFor,
   open,
   toggle,
+  isLive,
   bench = false,
 }: CardProps & { entry: PitchPlayer; bench?: boolean }) {
   const line = cardLine(entry, mode, fixtureFor(entry))
   const sub = subOf(entry)
+  const live = isLive(entry)
   const cards = (
     <>
       <span className="sm:hidden">
-        <PlayerCardCompact player={entry.player} line={line} sub={sub} bench={bench} />
+        <PlayerCardCompact player={entry.player} line={line} sub={sub} bench={bench} live={live} />
       </span>
       <span className="hidden sm:block">
-        <PlayerCard player={entry.player} line={line} sub={sub} bench={bench} />
+        <PlayerCard player={entry.player} line={line} sub={sub} bench={bench} live={live} />
       </span>
     </>
   )

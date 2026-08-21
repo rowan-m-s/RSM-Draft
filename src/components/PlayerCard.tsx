@@ -1,6 +1,7 @@
 import { CardPhoto } from './Img'
 import { PlayerFlag } from './PlayerFlag'
 import type { Availability } from '../lib/availability'
+import { flagColour } from '../lib/availability'
 import { photoFraming } from '../lib/photoFraming'
 import type { Position } from '../types'
 
@@ -41,6 +42,25 @@ interface PlayerCardProps {
   bench?: boolean
   /** Automatic substitution marker, when the week has one. */
   sub?: 'on' | 'off' | null
+  /** The player's match is in progress: the points band takes the live tint. */
+  live?: boolean
+}
+
+/**
+ * The name band carries the availability, as the official app does: yellow
+ * with dark text for doubtful, red with white text for ruled out. The band
+ * is read at a glance from across the pitch where a corner icon is not.
+ */
+function nameBand(status: string): string {
+  const colour = flagColour(status)
+  if (colour === 'yellow') return 'bg-pl-amber text-pl-bg'
+  if (colour === 'red') return 'bg-pl-crimson text-pl-text'
+  return 'bg-pl-bg text-pl-text'
+}
+
+/** Pink while the match is in progress, as the official app highlights it. */
+function pointsBand(live: boolean): string {
+  return live ? 'bg-pl-pink text-pl-text' : 'bg-pl-surface-2 text-pl-text'
 }
 
 /**
@@ -67,7 +87,7 @@ function SubMarker({ sub }: { sub: 'on' | 'off' }) {
   )
 }
 
-export function PlayerCard({ player, line, bench = false, sub = null }: PlayerCardProps) {
+export function PlayerCard({ player, line, bench = false, sub = null, live = false }: PlayerCardProps) {
   return (
     <div
       className={[
@@ -88,12 +108,12 @@ export function PlayerCard({ player, line, bench = false, sub = null }: PlayerCa
         {sub && <SubMarker sub={sub} />}
       </div>
       <p
-        className="truncate bg-pl-bg px-1.5 text-center text-xs leading-5 font-semibold text-pl-text"
+        className={`truncate px-1.5 text-center text-xs leading-5 font-semibold ${nameBand(player.status)}`}
         title={player.name}
       >
         {player.name}
       </p>
-      <p className="tnum truncate bg-pl-surface-2 px-1.5 text-center text-[11px] leading-5 text-pl-text" title={line}>
+      <p className={`tnum truncate px-1.5 text-center text-[11px] leading-5 ${pointsBand(live)}`} title={line}>
         {line}
       </p>
     </div>
@@ -101,7 +121,7 @@ export function PlayerCard({ player, line, bench = false, sub = null }: PlayerCa
 }
 
 /** The 375px card: photo, surname, one number. */
-export function PlayerCardCompact({ player, line, bench = false, sub = null }: PlayerCardProps) {
+export function PlayerCardCompact({ player, line, bench = false, sub = null, live = false }: PlayerCardProps) {
   return (
     <div
       className={[
@@ -124,12 +144,12 @@ export function PlayerCardCompact({ player, line, bench = false, sub = null }: P
         {sub && <SubMarker sub={sub} />}
       </div>
       <p
-        className="truncate bg-pl-bg px-0.5 text-center text-[10px] leading-4 font-semibold tracking-tight text-pl-text"
+        className={`truncate px-0.5 text-center text-[10px] leading-4 font-semibold tracking-tight ${nameBand(player.status)}`}
         title={player.name}
       >
         {player.name}
       </p>
-      <p className="tnum truncate bg-pl-surface-2 px-1 text-center text-[10px] leading-4 text-pl-text" title={line}>
+      <p className={`tnum truncate px-1 text-center text-[10px] leading-4 ${pointsBand(live)}`} title={line}>
         {line}
       </p>
     </div>
