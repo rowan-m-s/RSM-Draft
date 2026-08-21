@@ -14,12 +14,12 @@
       "chanceOfPlaying": null,
       "news": null,
       "newsAdded": null,
-      "points": 5,
-      "ppg": 5,
+      "points": 8,
+      "ppg": 8,
       "goals": 1,
       "assists": 0,
       "cleanSheets": 0,
-      "bonus": 0,
+      "bonus": 3,
       "positionRank": 1
     },
     {
@@ -36,12 +36,34 @@
       "chanceOfPlaying": null,
       "news": null,
       "newsAdded": null,
-      "points": 4,
-      "ppg": 4,
+      "points": 6,
+      "ppg": 6,
       "goals": 0,
       "assists": 1,
       "cleanSheets": 0,
-      "bonus": 0,
+      "bonus": 2,
+      "positionRank": 1
+    },
+    {
+      "id": 554,
+      "name": "Tzolis",
+      "position": "MID",
+      "club": "Arsenal",
+      "clubShort": "ARS",
+      "clubCode": 3,
+      "teamId": 1,
+      "photoCode": 439509,
+      "owner": "ollie",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 2,
+      "ppg": 2,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 1,
       "positionRank": 1
     },
     {
@@ -64,7 +86,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 2
+      "positionRank": 3
     },
     {
       "id": 11,
@@ -86,7 +108,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 4
+      "positionRank": 5
     },
     {
       "id": 15,
@@ -108,7 +130,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 4
+      "positionRank": 5
     },
     {
       "id": 1,
@@ -152,7 +174,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 3
+      "positionRank": 4
     },
     {
       "id": 110,
@@ -196,29 +218,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 2
-    },
-    {
-      "id": 554,
-      "name": "Tzolis",
-      "position": "MID",
-      "club": "Arsenal",
-      "clubShort": "ARS",
-      "clubCode": 3,
-      "teamId": 1,
-      "photoCode": 439509,
-      "owner": "ollie",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 1,
-      "ppg": 1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 8
+      "positionRank": 3
     },
     {
       "id": 10,
@@ -240,7 +240,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 3
+      "positionRank": 4
     },
     {
       "id": 350,
@@ -3633,6 +3633,28 @@
   ],
   "freeAgents": [
     {
+      "id": 173,
+      "name": "Thomas",
+      "position": "DEF",
+      "club": "Coventry City",
+      "clubShort": "COV",
+      "clubCode": 9,
+      "teamId": 7,
+      "photoCode": 461102,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 2,
+      "ppg": 2,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 1,
+      "positionRank": 2
+    },
+    {
       "id": 182,
       "name": "Amenda",
       "position": "DEF",
@@ -3696,7 +3718,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 6
+      "positionRank": 7
     },
     {
       "id": 7,
@@ -3718,7 +3740,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 1
+      "positionRank": 2
     },
     {
       "id": 104,
@@ -3740,7 +3762,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 5
+      "positionRank": 6
     },
     {
       "id": 195,
@@ -3784,29 +3806,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 7
-    },
-    {
-      "id": 173,
-      "name": "Thomas",
-      "position": "DEF",
-      "club": "Coventry City",
-      "clubShort": "COV",
-      "clubCode": 9,
-      "teamId": 7,
-      "photoCode": 461102,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 1,
-      "ppg": 1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 5
+      "positionRank": 8
     },
     {
       "id": 194,
@@ -13217,13 +13217,13 @@
     "chanceOfPlaying": null,
     "news": null,
     "newsAdded": null,
-    "points": 5,
-    "ppg": 5,
+    "points": 8,
+    "ppg": 8,
     "goals": 1,
     "assists": 0,
     "cleanSheets": 0,
-    "bonus": 0,
+    "bonus": 3,
     "positionRank": 1
   },
-  "generatedAt": "2026-08-21T19:18:19.312Z"
+  "generatedAt": "2026-08-21T19:22:30.710Z"
 }

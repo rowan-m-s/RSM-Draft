@@ -3,6 +3,19 @@
     {
       "key": "paddy",
       "rank": 1,
+      "total": 9,
+      "gw": 9,
+      "month": 9,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": null
+    },
+    {
+      "key": "kellett",
+      "rank": 2,
       "total": 6,
       "gw": 6,
       "month": 6,
@@ -14,11 +27,11 @@
       "topPerformer": null
     },
     {
-      "key": "kellett",
-      "rank": 2,
-      "total": 4,
-      "gw": 4,
-      "month": 4,
+      "key": "ollie",
+      "rank": 3,
+      "total": 3,
+      "gw": 3,
+      "month": 3,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -28,20 +41,7 @@
     },
     {
       "key": "jason",
-      "rank": 3,
-      "total": 2,
-      "gw": 2,
-      "month": 2,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": null
-    },
-    {
-      "key": "ollie",
-      "rank": 3,
+      "rank": 4,
       "total": 2,
       "gw": 2,
       "month": 2,
@@ -148,7 +148,7 @@
   "currentMonth": "2026-08",
   "seasonPrize": 110,
   "leader": null,
-  "generatedAt": "2026-08-21T19:18:19.312Z",
+  "generatedAt": "2026-08-21T19:22:30.710Z",
   "graphics": {
     "leader": {
       "rushy": 243298,
