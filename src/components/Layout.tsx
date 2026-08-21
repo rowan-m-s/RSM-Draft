@@ -1,4 +1,4 @@
-import { NavLink, Outlet, ScrollRestoration } from 'react-router-dom'
+import { Link, NavLink, Outlet, ScrollRestoration } from 'react-router-dom'
 import { useDataState } from '../data'
 import { Freshness } from './Freshness'
 import { Reveal } from './Reveal'
@@ -51,11 +51,17 @@ export function MiniTable({
       <p className="eyebrow border-b border-pl-border pb-2 text-pl-muted">League table</p>
       <ol className="mt-1">
         {rows.map((row) => (
-          <li key={row.key} className="flex items-center gap-2 border-b border-pl-border py-1.5 last:border-0">
-            <span className={`h-5 w-0.5 shrink-0 rounded-full ${rankAccent(row.rank, rows.length, ranked)}`} />
-            <span className="tnum w-5 shrink-0 text-xs text-pl-muted">{rankLabel(row.rank, ranked)}</span>
-            <span className="min-w-0 flex-1 truncate text-sm text-pl-text">{nameOf(row.key)}</span>
-            <span className="tnum text-sm font-bold text-pl-text">{row.total}</span>
+          <li key={row.key} className="border-b border-pl-border last:border-0">
+            {/* Each row opens that manager's squad for the week in play. */}
+            <Link
+              to={`/managers/${row.key}/squad`}
+              className="-mx-1 flex items-center gap-2 rounded px-1 py-1.5 hover:bg-pl-surface-2"
+            >
+              <span className={`h-5 w-0.5 shrink-0 rounded-full ${rankAccent(row.rank, rows.length, ranked)}`} />
+              <span className="tnum w-5 shrink-0 text-xs text-pl-muted">{rankLabel(row.rank, ranked)}</span>
+              <span className="min-w-0 flex-1 truncate text-sm text-pl-text">{nameOf(row.key)}</span>
+              <span className="tnum text-sm font-bold text-pl-text">{row.total}</span>
+            </Link>
           </li>
         ))}
       </ol>
