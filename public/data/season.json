@@ -14,8 +14,21 @@
       "topPerformer": null
     },
     {
-      "key": "kellett",
-      "rank": 2,
+      "key": "jason",
+      "rank": 1,
+      "total": 9,
+      "gw": 9,
+      "month": 9,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": null
+    },
+    {
+      "key": "ollie",
+      "rank": 3,
       "total": 6,
       "gw": 6,
       "month": 6,
@@ -27,24 +40,11 @@
       "topPerformer": null
     },
     {
-      "key": "ollie",
-      "rank": 3,
-      "total": 3,
-      "gw": 3,
-      "month": 3,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": null
-    },
-    {
-      "key": "jason",
+      "key": "kellett",
       "rank": 4,
-      "total": 2,
-      "gw": 2,
-      "month": 2,
+      "total": 4,
+      "gw": 4,
+      "month": 4,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -147,34 +147,49 @@
   "latestSettledGameweek": null,
   "currentMonth": "2026-08",
   "seasonPrize": 110,
-  "leader": null,
-  "generatedAt": "2026-08-21T19:22:30.710Z",
+  "leader": {
+    "keys": [
+      "jason",
+      "paddy"
+    ],
+    "total": 9,
+    "since": null,
+    "sinceByKey": {
+      "jason": null,
+      "paddy": null
+    },
+    "asOf": 1,
+    "weeks": 0,
+    "displaced": null,
+    "changed": false
+  },
+  "generatedAt": "2026-08-21T19:30:15.247Z",
   "graphics": {
     "leader": {
       "rushy": 243298,
       "kellett": 209244,
-      "wallis": 177815,
+      "wallis": 226597,
       "jls": 248875,
-      "paddy": 551466,
-      "bennett": 482973,
+      "paddy": 219847,
+      "bennett": 204480,
       "wood": 212319,
       "rowan": 222531,
-      "jason": 430871,
+      "jason": 223340,
       "dj": 502500,
-      "ollie": 95658
+      "ollie": 154561
     },
     "leaderMonth": {
       "rushy": 243298,
       "kellett": 209244,
-      "wallis": 177815,
+      "wallis": 226597,
       "jls": 248875,
       "paddy": 551466,
-      "bennett": 482973,
+      "bennett": 204480,
       "wood": 212319,
       "rowan": 222531,
       "jason": 430871,
       "dj": 502500,
-      "ollie": 95658
+      "ollie": 154561
     }
   },
   "kochCount": {}
