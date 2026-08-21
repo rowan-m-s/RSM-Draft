@@ -1,5 +1,20 @@
 @import 'tailwindcss';
 
+/* Outfit, self-hosted: the variable font, Latin subset only, one file of
+   32KB covering every weight. Preloaded from index.html. `swap` so text is
+   never invisible while it arrives; the fallback stack is metric-close
+   enough that the reflow is small. */
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/RSM-Draft/fonts/outfit-latin.woff2') format('woff2');
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329,
+    U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 /* ---------------------------------------------------------------------------
    Tokens. Addendum 05 — the dark Premier League theme.
 
@@ -52,11 +67,29 @@
   --chevron-slope: 0.105;
   --chevron-fold: 1.11;
 
+  /* Type. Four roles, one place; the faces behind them are swapped below
+     for the two Outfit trials and this block is what a final choice edits.
+       sans     body, tables, dense text
+       display  the large numerals and page titles (.display)
+       brand    wordmark-adjacent chrome: nav items, banner eyebrow and subtitle
+       mark     the Fantasy Draft lockup */
   --font-sans: 'Archivo', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
   --font-display: 'Archivo Narrow', 'Archivo', ui-sans-serif, system-ui, sans-serif;
-  /* The Fantasy Draft mark only. A round geometric sans, after the Premier
-     League's own Fantasy lockup. */
+  --font-brand: 'Archivo', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
   --font-mark: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Type trials, Addendum 03 follow-up. Selected by ?type= in the URL.
+     display: Outfit on the wordmark, banners, nav and large numerals only.
+     all:     Outfit everywhere, including table rows and dense text. */
+:root[data-type='display'] {
+  --font-display: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+  --font-brand: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+}
+:root[data-type='all'] {
+  --font-sans: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+  --font-brand: 'Outfit', ui-sans-serif, system-ui, sans-serif;
 }
 
 @layer base {

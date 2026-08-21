@@ -33,7 +33,7 @@ export function Banner({
           height={48}
           className="hidden h-12 w-auto shrink-0 object-contain sm:block"
         />
-        <div className="min-w-0 flex-1">
+        <div className="font-brand min-w-0 flex-1">
           <p className="eyebrow text-pl-text/80">{season}</p>
           <h1 className="display mt-1 truncate text-4xl leading-none text-pl-text sm:text-5xl" title={title}>
             {title}

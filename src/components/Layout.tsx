@@ -93,7 +93,7 @@ function NavItems({ onNavigate }: { onNavigate?: () => void }) {
               onClick={onNavigate}
               className={({ isActive }) =>
                 [
-                  'flex items-center border-l-[3px] py-2.5 pl-4 pr-3 text-[15px] transition-colors',
+                  'font-brand flex items-center border-l-[3px] py-2.5 pl-4 pr-3 text-[15px] transition-colors',
                   isActive
                     ? 'border-pl-cyan font-semibold text-pl-text'
                     : 'border-transparent text-pl-muted hover:bg-pl-surface hover:text-pl-text',
@@ -207,7 +207,7 @@ export function Layout() {
                 end={item.end}
                 className={({ isActive }) =>
                   [
-                    'flex h-14 flex-col items-center justify-center gap-1 border-t-2 px-0.5 text-center text-[10px] leading-tight',
+                    'font-brand flex h-14 flex-col items-center justify-center gap-1 border-t-2 px-0.5 text-center text-[10px] leading-tight',
                     isActive ? 'border-pl-cyan font-semibold text-pl-text' : 'border-transparent text-pl-muted',
                   ].join(' ')
                 }

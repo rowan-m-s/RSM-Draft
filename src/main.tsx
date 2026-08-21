@@ -22,6 +22,10 @@ import { Honours } from './pages/Honours'
  * that fires on every render and cannot tell a fresh navigation from a back
  * button, which is the distinction that matters most here.
  */
+// Type trial switch: ?type=display or ?type=all, ahead of the hash.
+const trial = new URLSearchParams(window.location.search).get('type')
+if (trial === 'display' || trial === 'all') document.documentElement.dataset.type = trial
+
 const router = createHashRouter([
   {
     element: <Layout />,
