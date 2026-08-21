@@ -141,3 +141,24 @@ export function classifySourceFile(filename) {
 
   return { status: 'asset', filename, ...parsed }
 }
+
+/**
+ * The fallbacks for a player with no photo and a club with no badge, as the
+ * optimiser writes them to public/images. Drawn in white at the theme's
+ * token alphas, 10% for the ground and 35% for the figure, matching
+ * --color-pl-border and --color-pl-muted, so they sit on any aubergine
+ * surface and on the pitch. An SVG loaded through <img> cannot read CSS
+ * variables, which is why the alphas are written out here; keep them in
+ * step with index.css. images.shared.test.mjs pins both.
+ */
+export const PLAYER_SILHOUETTE_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="No photo" fill="white">
+  <rect width="100" height="100" fill-opacity=".1"/>
+  <circle cx="50" cy="38" r="17" fill-opacity=".35"/>
+  <path d="M16 100c0-19 15-31 34-31s34 12 34 31z" fill-opacity=".35"/>
+</svg>
+`
+
+export const BADGE_PLACEHOLDER_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="No badge">
+  <path d="M50 6 88 20v34c0 22-16 34-38 40C28 88 12 76 12 54V20z" fill="white" fill-opacity=".1" stroke="white" stroke-opacity=".35" stroke-width="4"/>
+</svg>
+`

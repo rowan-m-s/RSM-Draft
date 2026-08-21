@@ -16,10 +16,12 @@ import { mkdir, readdir, stat, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import sharp from 'sharp'
 import {
+  BADGE_PLACEHOLDER_SVG,
   FORMATS,
   MANAGER_KEYS,
   MANAGER_SETS,
   OUT_DIR,
+  PLAYER_SILHOUETTE_SVG,
   SEASON_SETS,
   SOURCE_DIR,
   classifySourceFile,
@@ -347,23 +349,12 @@ async function main() {
     console.warn(`Missing ${logoSource} — the banner lion will not render.`)
   }
 
-  // A neutral silhouette for players whose photo has not landed yet. New
-  // signings routinely have none for weeks, and FPL answers 403 for those, so
-  // every <img> needs somewhere to fall back to.
-  await writeFile(
-    path.join(OUT_DIR, 'player-silhouette.svg'),
-    `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="No photo">
-  <rect width="100" height="100" fill="#E5E5EB"/>
-  <circle cx="50" cy="38" r="17" fill="#B9B9C6"/>
-  <path d="M16 100c0-19 15-31 34-31s34 12 34 31z" fill="#B9B9C6"/>
-</svg>\n`
-  )
-  await writeFile(
-    path.join(OUT_DIR, 'badge-placeholder.svg'),
-    `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="No badge">
-  <path d="M50 6 88 20v34c0 22-16 34-38 40C28 88 12 76 12 54V20z" fill="#E5E5EB" stroke="#B9B9C6" stroke-width="4"/>
-</svg>\n`
-  )
+  // The fallbacks for a player with no photo and a club with no badge. New
+  // signings routinely have no photo for weeks, and FPL answers 403 for
+  // those, so every <img> needs somewhere to fall back to. The drawings live
+  // in images.shared.mjs, in the theme's colours, and are pinned by a test.
+  await writeFile(path.join(OUT_DIR, 'player-silhouette.svg'), PLAYER_SILHOUETTE_SVG)
+  await writeFile(path.join(OUT_DIR, 'badge-placeholder.svg'), BADGE_PLACEHOLDER_SVG)
   console.log('Wrote fallback silhouette and badge placeholder.')
 
   await optimiseOverrides()

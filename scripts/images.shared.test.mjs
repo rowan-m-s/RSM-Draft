@@ -1,5 +1,13 @@
+import { readFileSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
-import { MANAGER_KEYS, MANAGER_SETS, classifySourceFile, parseSourceName } from './images.shared.mjs'
+import {
+  BADGE_PLACEHOLDER_SVG,
+  MANAGER_KEYS,
+  MANAGER_SETS,
+  PLAYER_SILHOUETTE_SVG,
+  classifySourceFile,
+  parseSourceName,
+} from './images.shared.mjs'
 
 describe('parseSourceName', () => {
   it('accepts either extension for the same key and type', () => {
@@ -63,5 +71,21 @@ describe('classifySourceFile', () => {
 
   it('ignores OS clutter without reporting it', () => {
     expect(classifySourceFile('.DS_Store').status).toBe('noise')
+  })
+})
+
+describe('the placeholders the optimiser writes', () => {
+  it('are drawn in white at the token alphas, never in a grey of their own', () => {
+    for (const svg of [PLAYER_SILHOUETTE_SVG, BADGE_PLACEHOLDER_SVG]) {
+      expect(svg).not.toMatch(/#[0-9a-fA-F]{3,6}/)
+      expect(svg).toContain('white')
+      expect(svg).toContain('opacity=".1"')
+      expect(svg).toContain('opacity=".35"')
+    }
+  })
+
+  it('match the files in public/images, so a run of the optimiser cannot revert them', () => {
+    expect(readFileSync('public/images/player-silhouette.svg', 'utf8')).toBe(PLAYER_SILHOUETTE_SVG)
+    expect(readFileSync('public/images/badge-placeholder.svg', 'utf8')).toBe(BADGE_PLACEHOLDER_SVG)
   })
 })
