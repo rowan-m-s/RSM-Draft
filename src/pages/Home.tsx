@@ -66,6 +66,30 @@ function KochCard({
   const confirmed = gameweek.dataChecked
   const koches = confirmed ? gameweek.kochKeys : kochesOf(gameweek.scores)
   const tied = koches.length > 1
+
+  // Nobody is named until every manager has had a match kick off: a tie on
+  // nought between people whose players have not played is not a Koch.
+  if (!confirmed && !gameweek.kochReady) {
+    return (
+      <section className="card overflow-hidden">
+        <div className="flex items-start justify-between gap-3 border-b border-pl-border px-5 py-3">
+          <div>
+            <p className="eyebrow text-pl-pink">
+              <span className="whitespace-nowrap">Koch of the week</span>
+              <span className="block font-normal sm:inline"> (so far)*</span>
+            </p>
+            <p className="mt-0.5 text-xs text-pl-muted">Gameweek {gameweek.id}</p>
+          </div>
+          <Provisional award="KOTW" confirmedOn={gameweek.confirmExpectedUtc} />
+        </div>
+        <div className="flex h-36 items-center justify-center bg-pl-surface px-5 text-center">
+          <p className="text-sm text-pl-muted">
+            Waiting on first fixtures. Nobody is named until every manager has had a player kick off.
+          </p>
+        </div>
+      </section>
+    )
+  }
   // A repeat offender sees the other graphic. Confirmed weeks carry the
   // choice from the pipeline; a provisional one continues the count.
   const setFor = (key: ManagerKey) => gameweek.kochVariant?.[key] ?? kochSetFor(kochCount[key] ?? 0)
@@ -254,18 +278,32 @@ function LeaderCard({
   /** Season MVP per manager, from the table rows. */
   mvpFor: (key: ManagerKey) => { playerName: string; points: number } | null
 }) {
+  const { data } = useData()
   const joint = leader.keys.length > 1
+  // The run is dated from confirmed weeks; a lead taken during a live
+  // gameweek has none yet and says so rather than counting.
   const run =
-    leader.weeks === 1
-      ? `Leading since GW${leader.since}`
-      : `Leading since GW${leader.since} · ${leader.weeks} weeks at the top`
+    leader.since === null
+      ? 'Leading as things stand'
+      : leader.weeks === 1
+        ? `Leading since GW${leader.since}`
+        : `Leading since GW${leader.since} · ${leader.weeks} weeks at the top`
+  const runFor = (key: ManagerKey) => {
+    const own = leader.sinceByKey[key]
+    if (!joint || own === leader.since) return run
+    return own === null ? 'Level as things stand' : `Drew level at GW${own}`
+  }
 
   return (
     <section className="card overflow-hidden">
       <div className="flex items-start justify-between gap-3 border-b border-pl-border px-5 py-3">
         <div>
           <p className="eyebrow text-pl-cyan">{joint ? 'Joint league leaders' : 'League leader'}</p>
-          <p className="mt-0.5 text-xs text-pl-muted">After gameweek {leader.asOf}</p>
+          <p className="mt-0.5 text-xs text-pl-muted">
+            {data.gameweeks.find((gw) => gw.id === leader.asOf)?.finished
+              ? `After gameweek ${leader.asOf}`
+              : `Gameweek ${leader.asOf} in play`}
+          </p>
         </div>
         {leader.changed && (
           <span className="rounded bg-pl-cyan px-1.5 py-0.5 text-[10px] font-bold tracking-wide text-pl-bg uppercase">
@@ -291,9 +329,7 @@ function LeaderCard({
               <p className="mt-2 text-sm text-pl-muted">
                 <span className="tnum font-semibold text-pl-text">{leader.total}</span> points
               </p>
-              <p className="mt-2 text-sm text-pl-cyan">
-                {joint && leader.sinceByKey[key] !== leader.since ? `Drew level at GW${leader.sinceByKey[key]}` : run}
-              </p>
+              <p className="mt-2 text-sm text-pl-cyan">{runFor(key)}</p>
             </div>
           </div>
         ))}
@@ -301,8 +337,8 @@ function LeaderCard({
 
       {leader.changed && leader.displaced && (
         <p className="border-t border-pl-border bg-pl-surface-2 px-5 py-3 text-sm text-pl-text">
-          Took over from <strong className="font-semibold">{nameOf(leader.displaced)}</strong> at gameweek {leader.asOf}
-          .
+          Took over from <strong className="font-semibold">{nameOf(leader.displaced)}</strong> at gameweek{' '}
+          {leader.since}.
         </p>
       )}
     </section>

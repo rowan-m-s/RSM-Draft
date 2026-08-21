@@ -621,6 +621,7 @@ async function main() {
     perGw,
     elementName,
     fixtures: allFixtures,
+    teamOfElement: (id) => elements.find((e) => e.id === Number(id))?.team ?? null,
   })
   const months = buildMonths({ gameweeks, managerKeys, perGw, elementName })
   const season = buildSeason({ gameweeks, months, managerKeys, generatedAt, perGw, elementName })
@@ -638,12 +639,14 @@ async function main() {
     log('No player-graphics manifest; run npm run images. Leader cards will use no graphic.')
   }
   const codeByElementId = new Map(elements.map((e) => [e.id, e.code]))
-  const confirmedIds = gameweeks.filter((gw) => gw.dataChecked).map((gw) => gw.id)
+  // Weeks with points, the one in play included: the picture follows the
+  // live table, as the cards it sits on do.
+  const scoredIds = gameweeks.filter((gw) => gw.started).map((gw) => gw.id)
   // The month the Home card is on: the latest with any scores. Its choice
   // counts only that month's confirmed weeks, the same basis as its MVP
   // line, so the graphic and the line can never disagree.
   const currentMonthId = [...months].reverse().find((m) => m.gameweekIds.length > 0)?.id ?? null
-  const currentMonthIds = gameweeks.filter((gw) => gw.month === currentMonthId && gw.dataChecked).map((gw) => gw.id)
+  const currentMonthIds = gameweeks.filter((gw) => gw.month === currentMonthId && gw.started).map((gw) => gw.id)
 
   const choose = (set, byManager, gameweekIds, label, avoid = {}) => {
     const out = {}
@@ -665,6 +668,13 @@ async function main() {
         [...ownerByElementId.entries()].filter(([, owner]) => owner === key).map(([id]) => codeByElementId.get(id))
       )
       const pick = pickGraphic({ candidates, pointsByCode, ownedCodes })
+      // Every candidate with the points the selector saw, so a wrong
+      // picture can be checked against the rule rather than guessed at.
+      log(
+        `  ${label}: ${key} ${candidates
+          .map((c) => `${c.name} ${pointsByCode[c.code] ?? 0}${ownedCodes.has(c.code) ? '' : ' (not owned)'}`)
+          .join(', ')} -> ${pick ? candidates.find((c) => c.code === pick.code)?.name : 'none owned'}`
+      )
       if (pick) {
         out[key] = pick.code
       } else {
@@ -680,7 +690,7 @@ async function main() {
   const graphicChoice = {}
   for (const [set, byManager] of Object.entries(playerGraphics)) {
     // Season-long, for the League Leader card.
-    graphicChoice[set] = choose(set, byManager, confirmedIds, set)
+    graphicChoice[set] = choose(set, byManager, scoredIds, set)
     // This month only, for the provisional Manager of the Month card. The
     // league leaders are the managers who can be on both cards, so their
     // month graphic avoids their season one.

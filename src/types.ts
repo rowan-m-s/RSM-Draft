@@ -51,6 +51,8 @@ export interface Gameweek {
   started: boolean
   /** Scores are live XI sums for a week in play, not FPL's official figure. */
   scoresProvisional: boolean
+  /** Every manager has had a match kick off, so a provisional Koch means something. */
+  kochReady: boolean
   /** Raw from FPL, always UTC. */
   deadlineUtc: string
   /** Same instant rendered in Europe/London, for display only. */
@@ -138,8 +140,9 @@ export interface Leader {
   keys: ManagerKey[]
   total: number
   /** First gameweek of the longest-standing current leader's unbroken run. */
-  since: number
-  sinceByKey: Record<ManagerKey, number>
+  /** First confirmed week of the run; null for a lead held only as things stand. */
+  since: number | null
+  sinceByKey: Record<ManagerKey, number | null>
   /** The latest confirmed gameweek. */
   asOf: number
   /** Confirmed gameweeks in the run, inclusive. */

@@ -8,6 +8,7 @@ import {
   buildMonths,
   buildPlayers,
   provisionalScores,
+  everyManagerStarted,
   readElementStats,
   buildSeason,
   buildSquad,
@@ -828,9 +829,40 @@ describe('buildFixturePoints', () => {
 describe('buildLeader', () => {
   const gw = (id, dataChecked, scores) => ({ id, dataChecked, scores })
 
-  it('is null until a gameweek is confirmed', () => {
-    expect(buildLeader({ gameweeks: [gw(1, false, { a: 50, b: 40 })] })).toBeNull()
+  it('is null until anyone has scored', () => {
+    expect(buildLeader({ gameweeks: [gw(1, false, {})] })).toBeNull()
     expect(buildLeader({ gameweeks: [gw(1, true, {})] })).toBeNull()
+  })
+
+  it('names the live leader before anything is confirmed, with no run to date', () => {
+    const leader = buildLeader({ gameweeks: [gw(1, false, { a: 50, b: 40 })] })
+    expect(leader).toMatchObject({
+      keys: ['a'],
+      total: 50,
+      since: null,
+      weeks: 0,
+      asOf: 1,
+      changed: false,
+      displaced: null,
+    })
+  })
+
+  it('moves the name live but dates the run from confirmed weeks only', () => {
+    const gameweeks = [
+      gw(1, true, { a: 50, b: 40 }), // a leads, confirmed
+      gw(2, false, { a: 0, b: 20 }), // live: b 60, a 50
+    ]
+    const leader = buildLeader({ gameweeks })
+    expect(leader.keys).toEqual(['b'])
+    expect(leader.total).toBe(60)
+    expect(leader.asOf).toBe(2)
+    // b has not led a confirmed week, so no run, no chip, no displaced line.
+    expect(leader.since).toBeNull()
+    expect(leader.changed).toBe(false)
+    expect(leader.displaced).toBeNull()
+    // The lead swinging back mid-week restores a's confirmed run untouched.
+    const back = buildLeader({ gameweeks: [gameweeks[0], gw(2, false, { a: 30, b: 20 })] })
+    expect(back).toMatchObject({ keys: ['a'], since: 1, weeks: 1, changed: true })
   })
 
   it('walks cumulative totals and dates the run from history, naming who was displaced', () => {
@@ -839,14 +871,14 @@ describe('buildLeader', () => {
       gw(2, true, { a: 10, b: 40, c: 30 }), // b 80, a 60: b takes over
       gw(3, true, { a: 20, b: 20, c: 30 }), // b 100, c 90, a 80
       gw(4, true, { a: 30, b: 30, c: 30 }), // b 130, c 120: b still
-      gw(5, false, { a: 90, b: 0, c: 0 }), // provisional: ignored
+      gw(5, false, { a: 10, b: 0, c: 0 }), // live: counts for the name, not the run
     ]
     expect(buildLeader({ gameweeks })).toEqual({
       keys: ['b'],
       total: 130,
       since: 2,
       sinceByKey: { b: 2 },
-      asOf: 4,
+      asOf: 5,
       weeks: 3,
       displaced: 'a',
       changed: false,
@@ -954,5 +986,38 @@ describe('a gameweek in play', () => {
     const rushy = season.rows.find((r) => r.key === 'rushy')
     expect(rushy.total).toBe(51 + 40 + 45 + 38 + 8)
     expect(rushy.gw).toBe(8)
+  })
+})
+
+describe('everyManagerStarted', () => {
+  const fixtures = [
+    { event: 1, started: true, team_h: 1, team_a: 2 },
+    { event: 1, started: false, team_h: 3, team_a: 4 },
+  ]
+  const teamOfElement = (id) => ({ 10: 1, 11: 3, 12: 4 })[id]
+  it('is false while any manager has only unplayed fixtures in their XI', () => {
+    const record = { squads: { a: [{ element: 10, starter: true }], b: [{ element: 11, starter: true }] } }
+    expect(everyManagerStarted({ record, fixtures, event: 1, teamOfElement })).toBe(false)
+  })
+  it('is true once every manager has had a starter kick off, bench ignored', () => {
+    const record = {
+      squads: {
+        a: [{ element: 10, starter: true }],
+        b: [
+          { element: 10, starter: true },
+          { element: 12, starter: false },
+        ],
+      },
+    }
+    expect(everyManagerStarted({ record, fixtures, event: 1, teamOfElement })).toBe(true)
+    const benchOnly = {
+      squads: {
+        a: [
+          { element: 10, starter: false },
+          { element: 11, starter: true },
+        ],
+      },
+    }
+    expect(everyManagerStarted({ record: benchOnly, fixtures, event: 1, teamOfElement })).toBe(false)
   })
 })

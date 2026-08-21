@@ -52,6 +52,21 @@ export function provisionalScores(record) {
   return out
 }
 
+/**
+ * Whether every manager has had at least one of their XI's matches kick
+ * off. Until then a provisional Koch is meaningless: someone sits on nought
+ * because their players have not played, not because they did badly.
+ */
+export function everyManagerStarted({ record, fixtures, event, teamOfElement }) {
+  const startedTeams = new Set()
+  for (const f of fixtures) {
+    if (f.event === event && f.started) (startedTeams.add(f.team_h), startedTeams.add(f.team_a))
+  }
+  const squads = Object.entries(record?.squads ?? {})
+  if (squads.length === 0) return false
+  return squads.every(([, picks]) => picks.some((p) => p.starter && startedTeams.has(teamOfElement(p.element))))
+}
+
 export function buildGameweeks({
   events,
   classicDataCheckedById,
@@ -59,6 +74,7 @@ export function buildGameweeks({
   perGw = {},
   elementName = String,
   fixtures = [],
+  teamOfElement = () => null,
 }) {
   // When FPL is expected to confirm a week: it marks data checked the day
   // after the last match, once bonus and auto-subs are final. An estimate
@@ -99,6 +115,8 @@ export function buildGameweeks({
       started: Boolean(event.finished) || inPlay,
       /** Scores are live XI sums, not FPL's official figure. */
       scoresProvisional: inPlay && hasScores,
+      /** A provisional Koch can be named: nobody is on nought for want of a kickoff. */
+      kochReady: Boolean(event.finished) || everyManagerStarted({ record, fixtures, event: event.id, teamOfElement }),
       dataChecked,
       confirmExpectedUtc: lastKickoffByEvent[event.id] ? dayAfter(lastKickoffByEvent[event.id]) : null,
       revealFromUtc: lastKickoffByEvent[event.id] ? revealFrom(lastKickoffByEvent[event.id]) : null,
@@ -319,51 +337,70 @@ export function buildSeason({ gameweeks, months, managerKeys, generatedAt, perGw
  * because only they can award the £110.
  */
 export function buildLeader({ gameweeks }) {
-  const confirmed = gameweeks.filter((gw) => gw.dataChecked && Object.keys(gw.scores).length > 0)
-  if (confirmed.length === 0) return null
+  const withScores = (gw) => Object.keys(gw.scores ?? {}).length > 0
+  // Who leads is live: every week with scores, the one in play included.
+  // How long they have led is not: the run is dated from confirmed weeks
+  // only, so the line holds still while the name can move during a match.
+  const scored = gameweeks.filter(withScores)
+  if (scored.length === 0) return null
+  const confirmed = scored.filter((gw) => gw.dataChecked)
 
-  const totals = {}
-  const leadersByWeek = []
-  for (const gw of confirmed) {
-    for (const [key, points] of Object.entries(gw.scores)) totals[key] = (totals[key] ?? 0) + points
+  const sumTo = (weeks) => {
+    const totals = {}
+    for (const gw of weeks)
+      for (const [key, points] of Object.entries(gw.scores)) totals[key] = (totals[key] ?? 0) + points
+    return totals
+  }
+  const leadersOf = (totals) => {
     const top = Math.max(...Object.values(totals))
-    leadersByWeek.push({
-      id: gw.id,
+    return {
       keys: Object.keys(totals)
         .filter((key) => totals[key] === top)
         .sort(),
       total: top,
-    })
+    }
   }
 
-  const latest = leadersByWeek.at(-1)
-  // Each current leader's run: walk back while they are in the leading set.
+  const live = leadersOf(sumTo(scored))
+  const liveAsOf = scored.at(-1).id
+
+  const leadersByWeek = []
+  for (let i = 0; i < confirmed.length; i++)
+    leadersByWeek.push({ id: confirmed[i].id, ...leadersOf(sumTo(confirmed.slice(0, i + 1))) })
+  const latestConfirmed = leadersByWeek.at(-1) ?? null
+
+  // Each current leader's run: walk back through confirmed weeks while they
+  // are in the leading set. A leader only as things stand has no run yet.
   const sinceFor = (key) => {
-    let since = latest.id
+    let since = null
     for (let i = leadersByWeek.length - 1; i >= 0; i--) {
       if (!leadersByWeek[i].keys.includes(key)) break
       since = leadersByWeek[i].id
     }
     return since
   }
-  const runs = latest.keys.map((key) => ({ key, since: sinceFor(key) }))
+  const runs = live.keys.map((key) => ({ key, since: sinceFor(key) }))
+  const dated = runs.filter((r) => r.since !== null)
   // The card's "since" is the longest-standing of the current leaders.
-  const since = Math.min(...runs.map((r) => r.since))
-  const weekBefore = leadersByWeek.find((_, i) => leadersByWeek[i + 1]?.id === since)
+  const since = dated.length > 0 ? Math.min(...dated.map((r) => r.since)) : null
+  const weekBefore = since === null ? null : leadersByWeek.find((_, i) => leadersByWeek[i + 1]?.id === since)
   const displaced =
-    weekBefore && weekBefore.keys.length === 1 && !latest.keys.includes(weekBefore.keys[0]) ? weekBefore.keys[0] : null
+    weekBefore && weekBefore.keys.length === 1 && !live.keys.includes(weekBefore.keys[0]) ? weekBefore.keys[0] : null
 
   return {
-    keys: latest.keys,
-    total: latest.total,
+    keys: live.keys,
+    total: live.total,
+    /** First confirmed week of the run, or null for a lead held only as things stand. */
     since,
     /** The first week of each current leader's own run, for joint leaders. */
     sinceByKey: Object.fromEntries(runs.map((r) => [r.key, r.since])),
-    asOf: latest.id,
-    weeks: confirmed.length - confirmed.findIndex((gw) => gw.id === since),
+    /** The latest week counted, live or confirmed. */
+    asOf: liveAsOf,
+    /** Confirmed weeks at the top; 0 for a lead held only as things stand. */
+    weeks: since === null ? 0 : confirmed.length - confirmed.findIndex((gw) => gw.id === since),
     displaced,
     /** True when the top changed hands at the latest confirmed gameweek. */
-    changed: since === latest.id,
+    changed: latestConfirmed !== null && since === latestConfirmed.id,
   }
 }
 
