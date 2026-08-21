@@ -38,8 +38,13 @@ interface RevealItem {
   /** Which graphic set, per manager. */
   setFor: (key: ManagerKey) => 'koch' | 'koch2' | 'motm'
   label: string
-  /** The unit after the number: pts, or the pot. */
-  detail: string
+  /** The manager's MVP for the period, on the MOTM card and ticker. */
+  mvp?: { playerName: string; points: number } | null
+  /** The money line under the number: "−£5" for a Koch, "£20 won" for a MOTM. */
+  money: string
+  moneyTone: 'red' | 'green'
+  /** Extra for the ticker, e.g. the Koch's scapegoat. */
+  tickerExtra?: string
 }
 
 function readSeen(): Set<string> {
@@ -70,7 +75,13 @@ export function confirmedAwards(data: Dataset): RevealItem[] {
       points: gw.scores[gw.kochKeys[0]] ?? 0,
       setFor: (key) => gw.kochVariant?.[key] ?? kochSetFor((data.season.kochCount?.[key] ?? 1) - 1),
       label: `Koch of the Week · GW${gw.id}`,
-      detail: 'pts',
+      money: `−${money(5)}`,
+      moneyTone: 'red',
+      tickerExtra: gw.kochKeys
+        .map((key) => gw.scapegoatByManager?.[key])
+        .filter((s): s is NonNullable<typeof s> => Boolean(s))
+        .map((s) => `Scapegoat: ${s.playerName}, ${s.points} ${s.points === 1 ? 'pt' : 'pts'}`)
+        .join(' · '),
     })
   }
   for (const month of data.months) {
@@ -82,7 +93,13 @@ export function confirmedAwards(data: Dataset): RevealItem[] {
       points: month.totals[month.winnerKeys[0]] ?? 0,
       setFor: () => 'motm',
       label: `Manager of the Month · ${month.label}`,
-      detail: `pts · ${money(month.potPerWinner)} won`,
+      mvp: month.topPerformerByManager?.[month.winnerKeys[0]] ?? null,
+      money: `${money(month.potPerWinner)} won`,
+      moneyTone: 'green',
+      tickerExtra: (() => {
+        const mvp = month.topPerformerByManager?.[month.winnerKeys[0]]
+        return mvp ? `MVP: ${mvp.playerName}, ${mvp.points} ${mvp.points === 1 ? 'pt' : 'pts'}` : undefined
+      })(),
     })
   }
   return items
@@ -138,7 +155,9 @@ export function Reveal({ data }: { data: Dataset }) {
 function Sting({ item, nameOf, onDone }: { item: RevealItem; nameOf: (k: string) => string; onDone: () => void }) {
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
   const names = item.managerKeys.map(nameOf).join(' & ')
-  const headline = `${item.label.split(' · ')[0]}: ${names}, ${item.points} ${item.detail}`
+  const headline = [`${item.label.split(' · ')[0]}: ${names}, ${item.points} pts`, item.tickerExtra]
+    .filter(Boolean)
+    .join(' · ')
   const tone = item.kind === 'koch' ? 'pink' : 'green'
 
   useEffect(() => {
@@ -166,7 +185,7 @@ function Sting({ item, nameOf, onDone }: { item: RevealItem; nameOf: (k: string)
           2. BREAKING cut in on it, so it leaves with the panel. */}
       <div className="sting-panel absolute inset-0">
         <div className="sting-breaking absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
-          <p className="display text-[18vw] leading-none tracking-tight sm:text-[11rem]">BREAKING</p>
+          <p className="display text-[14vw] leading-none tracking-tight sm:text-[9rem]">BREAKING NEWS</p>
           <p className="sting-sub eyebrow mt-4 text-sm sm:text-base">{item.label.split(' · ')[0]}</p>
         </div>
       </div>
@@ -187,7 +206,18 @@ function Sting({ item, nameOf, onDone }: { item: RevealItem; nameOf: (k: string)
             <p className="eyebrow sting-accent-text">{item.label}</p>
             <p className="display mt-2 text-5xl leading-[1.1] sm:text-6xl">{names}</p>
             <p className="mt-3 text-lg text-pl-muted">
-              <span className="display tnum sting-accent-text text-5xl">{item.points}</span> {item.detail}
+              <span className="display tnum sting-accent-text text-5xl">{item.points}</span> pts
+            </p>
+            {item.mvp && (
+              <p className="mt-2 text-lg text-pl-muted">
+                MVP · <span className="font-semibold text-pl-text">{item.mvp.playerName}</span>{' '}
+                <span className="tnum">
+                  ({item.mvp.points} {item.mvp.points === 1 ? 'pt' : 'pts'})
+                </span>
+              </p>
+            )}
+            <p className={`display mt-2 text-2xl ${item.moneyTone === 'red' ? 'text-pl-red' : 'text-pl-green'}`}>
+              {item.money}
             </p>
           </div>
         </div>
@@ -196,12 +226,18 @@ function Sting({ item, nameOf, onDone }: { item: RevealItem; nameOf: (k: string)
       {/* 4. The ticker. */}
       <div className="sting-ticker absolute inset-x-0 bottom-0 flex h-12 items-center overflow-hidden border-t border-pl-border bg-pl-surface pb-[env(safe-area-inset-bottom)]">
         <span className="display sting-accent-bg z-10 flex h-full shrink-0 items-center px-4 text-sm tracking-wider text-pl-bg uppercase">
-          Breaking
+          Breaking news
         </span>
+        {/* Two identical halves, the track slides one half-width then repeats,
+            so the bar is always full and the loop is seamless. */}
         <div className="sting-ticker-track flex whitespace-nowrap">
-          {[0, 1, 2].map((i) => (
-            <span key={i} className="px-8 text-sm font-semibold tracking-wide uppercase">
-              {headline}
+          {[0, 1].map((half) => (
+            <span key={half} className="flex shrink-0">
+              {[0, 1, 2, 3, 4, 5].map((i) => (
+                <span key={i} className="px-8 text-sm font-semibold tracking-wide uppercase">
+                  {headline}
+                </span>
+              ))}
             </span>
           ))}
         </div>

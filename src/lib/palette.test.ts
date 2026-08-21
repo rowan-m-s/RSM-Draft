@@ -23,6 +23,7 @@ const TOKENS = {
   'pl-pink': '#FF2882',
   'pl-green': '#00FF87',
   'pl-amber': '#FFC233',
+  'pl-red': '#FF3B3B',
 }
 
 const MUTED_ALPHA = 0.65

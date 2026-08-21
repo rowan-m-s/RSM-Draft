@@ -48,7 +48,8 @@
   --color-pl-violet: #963cff; /* gradient start, secondary accent */
   --color-pl-pink: #ff2882; /* Koch of the week, negative balances */
   --color-pl-green: #00ff87; /* Manager of the month, money won, positive */
-  --color-pl-amber: #ffc233; /* doubtful flag, stale data, error copy */
+  --color-pl-amber: #ffc233; /* doubtful flag, stale data, error copy, the Koch sting */
+  --color-pl-red: #ff3b3b; /* money lost, on the Koch sting only */
 
   /* The pitch is drawn in CSS and is the one surface that is not aubergine.
      Sampled from the reference pitch: the grass averages the base value,
@@ -380,16 +381,16 @@
 
 /* The breaking news sting (components/Reveal.tsx). One CSS timeline, every
    layer started together and offset by delay; stepped or linear timing only,
-   because a news sting is cuts and wipes, never eases. Roughly 2.5s:
+   because a news sting is cuts and wipes, never eases. About 3.5s in all:
      0.00  panel wipes in from the left
-     0.25  BREAKING cuts in
+     0.25  BREAKING NEWS cuts in
      0.70  the award line cuts in beneath it
-     1.20  panel wipes out to the right, taking BREAKING with it
-     1.35  the card cuts in
-     1.40  the ticker starts
+     2.20  panel wipes out to the right, taking the text with it
+     2.35  the card cuts in
+     2.40  the ticker starts
    Reduced motion (.sting-still) jumps every layer to its final frame. */
 .sting {
-  --sting-colour: var(--color-pl-pink);
+  --sting-colour: var(--color-pl-amber); /* Koch: yellow, chosen over pink for the sting */
 }
 .sting-green {
   --sting-colour: var(--color-pl-green);
@@ -403,7 +404,7 @@
 .sting-panel {
   background: var(--sting-colour);
   transform: translateX(-100%);
-  animation: sting-panel 1.45s linear forwards;
+  animation: sting-panel 2.45s linear forwards;
 }
 .sting-breaking {
   color: var(--color-pl-bg);
@@ -416,28 +417,28 @@
 }
 .sting-card {
   opacity: 0;
-  animation: sting-card 1.35s steps(1, end) forwards;
+  animation: sting-card 2.35s steps(1, end) forwards;
 }
 .sting-ticker {
   opacity: 0;
-  animation: sting-card 1.3s steps(1, end) forwards;
+  animation: sting-card 2.3s steps(1, end) forwards;
 }
 .sting-ticker-track {
-  animation: sting-ticker 14s linear 1.4s infinite;
+  animation: sting-ticker 40s linear 2.4s infinite;
 }
 @keyframes sting-panel {
   0% {
     transform: translateX(-100%);
   }
-  17.2% {
+  10.2% {
     transform: translateX(0);
   } /* 0.25s: in */
-  82.8% {
+  89.8% {
     transform: translateX(0);
-  } /* 1.20s: hold */
+  } /* 2.20s: hold */
   100% {
     transform: translateX(100%);
-  } /* 1.45s: out */
+  } /* 2.45s: out */
 }
 @keyframes sting-breaking {
   0%,
@@ -471,7 +472,7 @@
     transform: translateX(0);
   }
   to {
-    transform: translateX(-33.333%);
+    transform: translateX(-50%);
   }
 }
 /* Reduced motion: straight to the card, ticker still. */
