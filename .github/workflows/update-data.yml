@@ -27,6 +27,8 @@ concurrency:
 
 permissions:
   contents: write
+  # To dispatch the deploy once data is pushed.
+  actions: write
 
 jobs:
   update:
@@ -62,11 +64,21 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add public/data
-          git commit -m "Update league data [skip ci]"
+          git commit -m "Update league data"
           # A scheduled run can race a push; rebase and retry rather than fail.
           for attempt in 1 2 3; do
-            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push && exit 0
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push && echo "pushed=true" >> "$GITHUB_OUTPUT" && exit 0
             echo "Push attempt $attempt failed, retrying..."
             sleep 5
           done
           exit 1
+        id: commit
+
+      # A push made with the workflow's own token never triggers another
+      # workflow, so the data would sit on main unpublished. Deploy is
+      # dispatched by hand instead, and only when something was pushed.
+      - name: Deploy
+        if: steps.commit.outputs.pushed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref "${GITHUB_REF_NAME}"
