@@ -498,6 +498,12 @@ async function main() {
     const live = readLivePoints(livePayload, event.id)
     const used = new Set(Object.values(squads).flat().map((pick) => String(pick.element)))
     const elementPoints = Object.fromEntries(Object.entries(live).filter(([id]) => used.has(id)))
+    // Minutes, for telling a player who played badly from one who did not play.
+    const elementMinutes = Object.fromEntries(
+      Object.entries(livePayload.elements ?? {})
+        .filter(([id]) => used.has(id))
+        .map(([id, entry]) => [id, Number(entry?.stats?.minutes ?? 0)])
+    )
 
     // Per-fixture breakdown for the owned players, from the same Draft
     // payload, so the parts are scored by Draft's rules and a double
@@ -527,6 +533,7 @@ async function main() {
       squads,
       scoringXI,
       elementPoints,
+      elementMinutes,
       fixturePoints: fixturePoints.byFixture,
     }
     perGw[event.id] = record

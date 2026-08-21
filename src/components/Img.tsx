@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Lightbox } from './Lightbox'
 import type { PhotoSize } from '../lib/assets'
 import { IDENTITY, framingStyle, versionOf, type Framing } from '../lib/photoFraming'
 import {
@@ -204,6 +205,7 @@ export function CardImage({
   playerCode,
   alt,
   className = '',
+  enlargeTitle,
 }: {
   set: 'koch' | 'koch2' | 'motm' | 'leader' | 'winner'
   managerKey: string
@@ -211,7 +213,10 @@ export function CardImage({
   playerCode?: number | null
   alt: string
   className?: string
+  /** When given, tapping the image opens it large under this title. */
+  enlargeTitle?: string
 }) {
+  const [open, setOpen] = useState(false)
   const webp =
     set === 'leader' && playerCode != null
       ? playerGraphic(set, managerKey, playerCode, 'webp')
@@ -224,15 +229,40 @@ export function CardImage({
       : set === 'leader'
         ? null
         : managerImage(set, managerKey, 'jpg')
+  const picture = (
+    <Img
+      webp={webp ?? undefined}
+      sources={jpg ? [jpg] : []}
+      fallback={AVATAR_FALLBACK}
+      alt={alt}
+      className="h-full w-full object-contain"
+    />
+  )
+  if (!enlargeTitle) return <div className={`overflow-hidden rounded-md bg-pl-bg ${className}`}>{picture}</div>
   return (
-    <div className={`overflow-hidden rounded-md bg-pl-bg ${className}`}>
-      <Img
-        webp={webp ?? undefined}
-        sources={jpg ? [jpg] : []}
-        fallback={AVATAR_FALLBACK}
-        alt={alt}
-        className="h-full w-full object-contain"
-      />
-    </div>
+    <>
+      <button
+        type="button"
+        onClick={() => setOpen(true)}
+        aria-label={`Enlarge: ${enlargeTitle}`}
+        className={`block overflow-hidden rounded-md bg-pl-bg text-left transition-opacity hover:opacity-90 ${className}`}
+      >
+        {picture}
+      </button>
+      {open && (
+        <Lightbox title={enlargeTitle} onClose={() => setOpen(false)}>
+          <div className="max-h-[80dvh] overflow-hidden rounded-lg bg-pl-bg">
+            <Img
+              webp={webp ?? undefined}
+              sources={jpg ? [jpg] : []}
+              fallback={AVATAR_FALLBACK}
+              alt={alt}
+              loading="eager"
+              className="mx-auto max-h-[80dvh] w-auto max-w-full object-contain"
+            />
+          </div>
+        </Lightbox>
+      )}
+    </>
   )
 }

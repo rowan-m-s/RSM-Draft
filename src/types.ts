@@ -73,6 +73,8 @@ export interface Gameweek {
   charged: number
   /** Each manager's best player that week. Empty before the week is played. */
   topPerformerByManager: Record<ManagerKey, TopPerformer | null>
+  /** The Koch's scapegoat: lowest scorer in the XI who played. Null if nobody has. */
+  scapegoatByManager?: Record<ManagerKey, TopPerformer | null>
 }
 
 export interface TopPerformer {

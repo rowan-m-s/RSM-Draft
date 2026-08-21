@@ -1,7 +1,7 @@
 import { Banner } from '../components/Banner'
 import { DeadlineStrip } from '../components/Countdown'
 import { DataFooter } from '../components/Freshness'
-import { CardImage, ManagerAvatar } from '../components/Img'
+import { CardImage } from '../components/Img'
 import { MiniTable, PageBody } from '../components/Layout'
 import { useData } from '../data'
 import { kochSetFor } from '../lib/assets'
@@ -83,35 +83,46 @@ function KochCard({
         {!confirmed && <Provisional award="KOTW" confirmedOn={gameweek.confirmExpectedUtc} />}
       </div>
 
-      <div className={`grid gap-px bg-pl-border ${tied ? 'lg:grid-cols-2' : ''}`}>
-        {koches.map((key) => (
-          <div key={key} className="flex flex-col gap-5 bg-pl-surface p-5 sm:flex-row sm:items-center">
-            {/* Square frame. The cards are all square today, but the frame
-                letterboxes anything that isn't rather than cropping a head off. */}
-            <CardImage
-              set={setFor(key)}
-              managerKey={key}
-              alt={`${nameOf(key)}, Koch of the week`}
-              className="aspect-square w-full shrink-0 sm:w-64"
-            />
-            <div className="min-w-0 flex-1">
-              <div className="flex items-center gap-3">
-                <ManagerAvatar managerKey={key} size={48} className="h-12 w-12" />
-                <p className="display min-w-0 truncate text-4xl leading-[1.2] text-pl-text">
+      <div className={`grid gap-px bg-pl-border ${tied ? 'sm:grid-cols-2' : ''}`}>
+        {koches.map((key) => {
+          const scapegoat = gameweek.scapegoatByManager?.[key] ?? null
+          return (
+            <div key={key} className="flex gap-4 bg-pl-surface p-5">
+              <CardImage
+                set={setFor(key)}
+                managerKey={key}
+                alt={`${nameOf(key)}, Koch of the week`}
+                enlargeTitle={`Koch of the week · ${nameOf(key)}`}
+                className="aspect-square w-28 shrink-0 sm:w-36"
+              />
+              <div className="flex min-w-0 flex-1 flex-col justify-center">
+                <p className="display truncate text-2xl leading-[1.2] text-pl-text">
                   {nameOf(key)}
                   {!confirmed && '*'}
                 </p>
+                <p className="mt-1.5 text-sm text-pl-muted">
+                  <span className="display tnum text-2xl text-pl-pink">{gameweek.scores[key]}</span> points ·{' '}
+                  {confirmed ? 'lowest' : 'currently lowest'} in gameweek {gameweek.id}
+                </p>
+                {/* The player who let them down: lowest scorer in the XI who
+                    actually played. Someone on zero minutes is not to blame. */}
+                <p className="mt-2 text-sm text-pl-muted">
+                  Scapegoat ·{' '}
+                  {scapegoat ? (
+                    <>
+                      <span className="font-semibold text-pl-text">{scapegoat.playerName}</span>{' '}
+                      <span className="tnum">
+                        ({scapegoat.points} {scapegoat.points === 1 ? 'pt' : 'pts'})
+                      </span>
+                    </>
+                  ) : (
+                    'nobody has played yet'
+                  )}
+                </p>
               </div>
-              <p className="mt-4 flex items-baseline gap-2">
-                <span className="display tnum text-6xl leading-none text-pl-pink">{gameweek.scores[key]}</span>
-                <span className="text-sm text-pl-muted">points</span>
-              </p>
-              <p className="mt-3 text-sm text-pl-muted">
-                {confirmed ? 'Lowest score' : 'Currently lowest'} in gameweek {gameweek.id}
-              </p>
             </div>
-          </div>
-        ))}
+          )
+        })}
       </div>
 
       {confirmed && (
@@ -154,7 +165,7 @@ function MotmCard({
     <section className="card overflow-hidden">
       <div className="flex items-start justify-between gap-3 border-b border-pl-border px-5 py-3">
         <div>
-          <p className="eyebrow text-pl-green">Manager of the month</p>
+          <p className="eyebrow text-pl-green">Manager of the month{!confirmed && '*'}</p>
           <p className="mt-0.5 text-xs text-pl-muted">
             {month.label}
             {split && (confirmed ? ` · split ${winners.length} ways` : ` · ${winners.length} level`)}
@@ -170,17 +181,16 @@ function MotmCard({
               set="motm"
               managerKey={key}
               alt={`${nameOf(key)}, manager of the month`}
+              enlargeTitle={`Manager of the month · ${nameOf(key)}`}
               className="aspect-square w-28 shrink-0 sm:w-36"
             />
             <div className="flex min-w-0 flex-1 flex-col justify-center">
-              <p className="display truncate text-2xl leading-[1.2] text-pl-text">
-                {nameOf(key)}
-                {!confirmed && '*'}
-              </p>
+              <p className="display truncate text-2xl leading-[1.2] text-pl-text">{nameOf(key)}</p>
               <p className="mt-1.5 text-sm text-pl-muted">
                 <span className="tnum font-semibold text-pl-text">{month.totals[key]}</span> points across{' '}
                 {month.gameweekIds.length} gameweek{month.gameweekIds.length === 1 ? '' : 's'}
               </p>
+              <Mvp performer={month.topPerformerByManager?.[key] ?? null} />
               {confirmed && (
                 <p className="mt-2">
                   <span className="display tnum text-2xl text-pl-green">{money(month.potPerWinner)}</span>{' '}
@@ -209,15 +219,31 @@ function MotmCard({
  * to week is the run: how long they have led, and when the top changes
  * hands, who was displaced. Joint leaders share the card.
  */
+/** "MVP · Haaland (10 pts)": the manager's best player for the period. */
+function Mvp({ performer }: { performer: { playerName: string; points: number } | null }) {
+  if (!performer) return null
+  return (
+    <p className="mt-2 text-sm text-pl-muted">
+      MVP · <span className="font-semibold text-pl-text">{performer.playerName}</span>{' '}
+      <span className="tnum">
+        ({performer.points} {performer.points === 1 ? 'pt' : 'pts'})
+      </span>
+    </p>
+  )
+}
+
 function LeaderCard({
   leader,
   nameOf,
   graphicFor,
+  mvpFor,
 }: {
   leader: Leader
   nameOf: (key: ManagerKey) => string
   /** The chosen leader graphic per manager: their best-scoring pictured player. */
   graphicFor: (key: ManagerKey) => number | null
+  /** Season MVP per manager, from the table rows. */
+  mvpFor: (key: ManagerKey) => { playerName: string; points: number } | null
 }) {
   const joint = leader.keys.length > 1
   const run =
@@ -247,6 +273,7 @@ function LeaderCard({
               managerKey={key}
               playerCode={graphicFor(key)}
               alt={`${nameOf(key)}, league leader`}
+              enlargeTitle={`League leader · ${nameOf(key)}`}
               className="aspect-square w-28 shrink-0 sm:w-36"
             />
             <div className="flex min-w-0 flex-1 flex-col justify-center">
@@ -254,6 +281,7 @@ function LeaderCard({
               <p className="mt-1.5 text-sm text-pl-muted">
                 <span className="tnum font-semibold text-pl-text">{leader.total}</span> points
               </p>
+              <Mvp performer={mvpFor(key)} />
               <p className="mt-2 text-sm text-pl-cyan">
                 {joint && leader.sinceByKey[key] !== leader.since
                   ? `Drew level at GW${leader.sinceByKey[key]}`
@@ -377,6 +405,7 @@ export function Home() {
               leader={data.season.leader}
               nameOf={nameOf}
               graphicFor={(key) => data.season.graphics?.leader?.[key] ?? null}
+              mvpFor={(key) => data.season.rows.find((r) => r.key === key)?.topPerformer ?? null}
             />
           ) : (
             <AwaitingAward

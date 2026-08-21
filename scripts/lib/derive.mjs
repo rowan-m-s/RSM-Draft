@@ -82,6 +82,8 @@ export function buildGameweeks({
       // Each manager's best player that week. Carried here rather than looked
       // up from a squad file, so expanding a league-table row costs no fetch.
       topPerformerByManager: topPerformersForGameweek({ event, perGw, elementName }),
+      // The Koch's scapegoat: lowest scorer who played. Null when nobody has.
+      scapegoatByManager: scapegoatsForGameweek({ event, perGw, elementName }),
     }
   })
 }
@@ -98,6 +100,31 @@ function topPerformersForGameweek({ event, perGw, elementName }) {
       if (!best || points > best.points) best = { playerName: elementName(pick.element), points, managerKey: key }
     }
     out[key] = best
+  }
+  return out
+}
+
+/**
+ * The Koch's scapegoat: the lowest-scoring player in a manager's scoring XI
+ * who actually played. Minutes come from the live payload; a player on zero
+ * minutes did not play and is not blamed. Ties go to the alphabetical name.
+ */
+function scapegoatsForGameweek({ event, perGw, elementName }) {
+  const record = perGw[event.id]
+  if (!record) return {}
+  const out = {}
+  for (const [key, picks] of Object.entries(record.squads ?? {})) {
+    let worst = null
+    for (const pick of picks) {
+      if (!pick.starter) continue
+      if ((record.elementMinutes?.[pick.element] ?? 0) <= 0) continue
+      const points = record.elementPoints?.[pick.element] ?? 0
+      const name = elementName(pick.element)
+      if (!worst || points < worst.points || (points === worst.points && name.localeCompare(worst.playerName) < 0)) {
+        worst = { playerName: name, points, managerKey: key }
+      }
+    }
+    out[key] = worst
   }
   return out
 }
