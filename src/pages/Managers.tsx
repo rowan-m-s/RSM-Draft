@@ -171,7 +171,7 @@ function ManagerProfile({ row, onClose }: { row: SeasonRow; onClose: () => void 
                 to={`/managers/${row.key}/squad`}
                 className="rounded px-1.5 py-0.5 text-[11px] font-semibold tracking-wider text-pl-cyan uppercase hover:bg-pl-surface-2"
               >
-                Squad view →
+                View squad →
               </Link>
             </h3>
             {squad.length === 0 ? (
