@@ -76,7 +76,7 @@ function KochCard({
         <div>
           <p className="eyebrow text-pl-pink">
             <span className="whitespace-nowrap">Koch of the week</span>
-            {!confirmed && <span className="block">(so far)*</span>}
+            {!confirmed && <span className="block font-normal">(so far)*</span>}
           </p>
           <p className="mt-0.5 text-xs text-pl-muted">
             Gameweek {gameweek.id}
@@ -178,7 +178,7 @@ function MotmCard({
         <div>
           <p className="eyebrow text-pl-green">
             <span className="whitespace-nowrap">Manager of the month</span>
-            {!confirmed && <span className="block">(so far)*</span>}
+            {!confirmed && <span className="block font-normal">(so far)*</span>}
           </p>
           <p className="mt-0.5 text-xs text-pl-muted">
             {month.label}
