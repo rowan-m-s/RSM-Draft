@@ -74,7 +74,7 @@ function KochCard({
     <section className="card overflow-hidden">
       <div className="flex items-start justify-between gap-3 border-b border-pl-border px-5 py-3">
         <div>
-          <p className="eyebrow text-pl-pink">Koch of the week{!confirmed && '*'}</p>
+          <p className="eyebrow text-pl-pink">Koch of the week{!confirmed && ' (so far)*'}</p>
           <p className="mt-0.5 text-xs text-pl-muted">
             Gameweek {gameweek.id}
             {tied && ` · ${koches.length}-way tie`}
@@ -173,7 +173,7 @@ function MotmCard({
     <section className="card overflow-hidden">
       <div className="flex items-start justify-between gap-3 border-b border-pl-border px-5 py-3">
         <div>
-          <p className="eyebrow text-pl-green">Manager of the month{!confirmed && '*'}</p>
+          <p className="eyebrow text-pl-green">Manager of the month{!confirmed && ' (so far)*'}</p>
           <p className="mt-0.5 text-xs text-pl-muted">
             {month.label}
             {split && (confirmed ? ` · split ${winners.length} ways` : ` · ${winners.length} level`)}
