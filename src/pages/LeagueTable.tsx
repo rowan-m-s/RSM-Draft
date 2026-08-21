@@ -342,6 +342,8 @@ function MonthTable({ month, nameOf }: { month: Month; nameOf: (k: ManagerKey) =
   const inMonth = data.gameweeks.filter((gw) => gw.month === month.id && gw.finished)
   const confirmed = inMonth.filter((gw) => gw.dataChecked)
   const provisional = inMonth.filter((gw) => !gw.dataChecked)
+  // Everyone level on top leads together, as the settled view does with winners.
+  const leading = ranked.filter((row) => row.points === ranked[0].points).map((row) => row.key)
 
   return (
     <div className="space-y-4">
@@ -368,8 +370,12 @@ function MonthTable({ month, nameOf }: { month: Month; nameOf: (k: ManagerKey) =
             </>
           ) : (
             <>
-              <p className="display mt-1.5 truncate text-2xl leading-[1.2] text-pl-text">{nameOf(ranked[0].key)}</p>
-              <p className="mt-1.5 text-xs text-pl-muted">Still running, not settled yet</p>
+              <p className="display mt-1.5 truncate text-2xl leading-[1.2] text-pl-text">
+                {leading.map(nameOf).join(' & ')}
+              </p>
+              <p className="mt-1.5 text-xs text-pl-muted">
+                {leading.length > 1 ? 'Level, not settled yet' : 'Still running, not settled yet'}
+              </p>
             </>
           )}
         </div>
