@@ -361,7 +361,7 @@ function MonthTable({ month, nameOf }: { month: Month; nameOf: (k: ManagerKey) =
           <p className="eyebrow text-pl-muted">{month.settled ? 'Winner' : 'Leading'}</p>
           {month.settled ? (
             <>
-              <p className="display mt-1.5 truncate text-2xl leading-none text-pl-text">
+              <p className="display mt-1.5 truncate text-2xl leading-[1.2] text-pl-text">
                 {month.winnerKeys.map(nameOf).join(' & ')}
               </p>
               <p className="mt-1.5 text-xs text-pl-muted">
@@ -371,7 +371,7 @@ function MonthTable({ month, nameOf }: { month: Month; nameOf: (k: ManagerKey) =
             </>
           ) : (
             <>
-              <p className="display mt-1.5 truncate text-2xl leading-none text-pl-text">{nameOf(ranked[0].key)}</p>
+              <p className="display mt-1.5 truncate text-2xl leading-[1.2] text-pl-text">{nameOf(ranked[0].key)}</p>
               <p className="mt-1.5 text-xs text-pl-muted">Still running, not settled yet</p>
             </>
           )}
@@ -380,7 +380,7 @@ function MonthTable({ month, nameOf }: { month: Month; nameOf: (k: ManagerKey) =
           <p className="eyebrow text-pl-muted">Top performer</p>
           {month.topPerformer ? (
             <>
-              <p className="display mt-1.5 truncate text-2xl leading-none text-pl-text">
+              <p className="display mt-1.5 truncate text-2xl leading-[1.2] text-pl-text">
                 {month.topPerformer.playerName}
               </p>
               <p className="mt-1.5 text-xs text-pl-muted">

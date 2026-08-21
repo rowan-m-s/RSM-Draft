@@ -189,6 +189,10 @@
     );
   }
 
+  /* Display text is set tight, but never at a line-height of 1 inside a
+     truncating box: `truncate` clips to the line box, and Outfit's g, j, p,
+     q and y reach 0.206em below the baseline, which a 1em box cuts into.
+     Truncating display text uses leading-[1.2], which leaves 0.23em. */
   .display {
     font-family: var(--font-display);
     font-weight: 700;

@@ -96,7 +96,7 @@ export function Honours() {
                         className="aspect-square w-full rounded-none"
                       />
                       <figcaption className="px-4 py-3">
-                        <p className="display truncate text-lg leading-none text-pl-text">{nameOf(key)}</p>
+                        <p className="display truncate text-lg leading-[1.2] text-pl-text">{nameOf(key)}</p>
                         <p className="mt-1 text-xs text-pl-muted">
                           {month.label} · {month.totals[key]} pts ·{' '}
                           <span className="font-semibold text-pl-green">{money(month.potPerWinner)}</span>
@@ -132,7 +132,7 @@ export function Honours() {
                               className="aspect-square w-full rounded-none"
                             />
                             <figcaption className="px-4 py-3">
-                              <p className="display truncate text-lg leading-none text-pl-text">{nameOf(key)}</p>
+                              <p className="display truncate text-lg leading-[1.2] text-pl-text">{nameOf(key)}</p>
                               <p className="mt-1 text-xs text-pl-muted">
                                 GW{gw.id} · {gw.scores[key]} pts ·{' '}
                                 <span className="font-semibold text-pl-pink">−£5</span>

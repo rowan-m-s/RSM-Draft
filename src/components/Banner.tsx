@@ -35,7 +35,7 @@ export function Banner({
         />
         <div className="font-brand min-w-0 flex-1">
           <p className="eyebrow text-pl-text/80">{season}</p>
-          <h1 className="display mt-1 truncate text-4xl leading-none text-pl-text sm:text-5xl" title={title}>
+          <h1 className="display mt-1 truncate text-4xl leading-[1.2] text-pl-text sm:text-5xl" title={title}>
             {title}
           </h1>
           <p className="mt-2 text-sm text-pl-text/80">{subtitle}</p>

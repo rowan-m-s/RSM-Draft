@@ -53,7 +53,7 @@ function KochCard({ gameweek, nameOf }: { gameweek: Gameweek; nameOf: (key: Mana
             <div className="min-w-0 flex-1">
               <div className="flex items-center gap-3">
                 <ManagerAvatar managerKey={key} size={48} className="h-12 w-12" />
-                <p className="display min-w-0 truncate text-4xl leading-none text-pl-text">{nameOf(key)}</p>
+                <p className="display min-w-0 truncate text-4xl leading-[1.2] text-pl-text">{nameOf(key)}</p>
               </div>
               <p className="mt-4 flex items-baseline gap-2">
                 <span className="display tnum text-6xl leading-none text-pl-pink">{gameweek.scores[key]}</span>
@@ -105,7 +105,7 @@ function MotmCard({ month, nameOf }: { month: Month; nameOf: (key: ManagerKey) =
               className="aspect-square w-28 shrink-0 sm:w-36"
             />
             <div className="flex min-w-0 flex-1 flex-col justify-center">
-              <p className="display truncate text-2xl leading-none text-pl-text">{nameOf(key)}</p>
+              <p className="display truncate text-2xl leading-[1.2] text-pl-text">{nameOf(key)}</p>
               <p className="mt-1.5 text-sm text-pl-muted">
                 <span className="tnum font-semibold text-pl-text">{month.totals[key]}</span> points across{' '}
                 {month.gameweekIds.length} gameweeks

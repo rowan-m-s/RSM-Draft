@@ -67,7 +67,7 @@ function LeadingScorer({ player, ownerName }: { player: Player; ownerName: strin
       />
       <div className="min-w-0">
         <p className="eyebrow text-pl-text/80">Leading scorer</p>
-        <p className="display truncate text-2xl leading-none text-pl-text">{player.name}</p>
+        <p className="display truncate text-2xl leading-[1.2] text-pl-text">{player.name}</p>
         <p className="mt-1 truncate text-xs text-pl-text/80">
           {player.position} · {player.clubShort} · {ownerName ?? 'free agent'}
         </p>

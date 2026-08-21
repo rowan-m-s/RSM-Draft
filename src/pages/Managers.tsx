@@ -38,7 +38,7 @@ function ManagerProfile({ row, onClose }: { row: SeasonRow; onClose: () => void 
         <div className="banner-gradient flex items-start gap-4 rounded-t-lg px-5 py-5">
           <ManagerAvatar managerKey={row.key} size={64} className="h-16 w-16" />
           <div className="min-w-0 flex-1">
-            <p className="display truncate text-3xl leading-none text-pl-text">{manager.displayName}</p>
+            <p className="display truncate text-3xl leading-[1.2] text-pl-text">{manager.displayName}</p>
             <p className="mt-1.5 truncate text-base font-semibold text-pl-text" title={manager.teamName}>
               {manager.teamName}
             </p>
