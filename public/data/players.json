@@ -3655,6 +3655,28 @@
       "positionRank": 4
     },
     {
+      "id": 173,
+      "name": "Thomas",
+      "position": "DEF",
+      "club": "Coventry City",
+      "clubShort": "COV",
+      "clubCode": 9,
+      "teamId": 7,
+      "photoCode": 461102,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 3,
+      "ppg": 3,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 5
+    },
+    {
       "id": 184,
       "name": "Grimes",
       "position": "MID",
@@ -3850,7 +3872,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 5
+      "positionRank": 6
     },
     {
       "id": 16,
@@ -3917,28 +3939,6 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 13
-    },
-    {
-      "id": 173,
-      "name": "Thomas",
-      "position": "DEF",
-      "club": "Coventry City",
-      "clubShort": "COV",
-      "clubCode": 9,
-      "teamId": 7,
-      "photoCode": 461102,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 1,
-      "ppg": 1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 6
     },
     {
       "id": 188,
@@ -13225,5 +13225,5 @@
     "bonus": 3,
     "positionRank": 1
   },
-  "generatedAt": "2026-08-21T21:44:59.583Z"
+  "generatedAt": "2026-08-21T23:36:41.120Z"
 }
