@@ -89,28 +89,6 @@
       "positionRank": 1
     },
     {
-      "id": 4,
-      "name": "Gabriel",
-      "position": "DEF",
-      "club": "Arsenal",
-      "clubShort": "ARS",
-      "clubCode": 3,
-      "teamId": 1,
-      "photoCode": 226597,
-      "owner": "wallis",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 1,
-      "ppg": 1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 2
-    },
-    {
       "id": 11,
       "name": "Mosquera",
       "position": "DEF",
@@ -130,7 +108,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 4
+      "positionRank": 3
     },
     {
       "id": 15,
@@ -218,7 +196,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 3
+      "positionRank": 2
     },
     {
       "id": 350,
@@ -1077,6 +1055,28 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 113
+    },
+    {
+      "id": 4,
+      "name": "Gabriel",
+      "position": "DEF",
+      "club": "Arsenal",
+      "clubShort": "ARS",
+      "clubCode": 3,
+      "teamId": 1,
+      "photoCode": 226597,
+      "owner": "wallis",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 0,
+      "ppg": 0,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 4
     },
     {
       "id": 367,
@@ -13225,5 +13225,5 @@
     "bonus": 3,
     "positionRank": 1
   },
-  "generatedAt": "2026-08-21T19:30:15.247Z"
+  "generatedAt": "2026-08-21T19:36:24.821Z"
 }

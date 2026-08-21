@@ -86,23 +86,6 @@
       }
     },
     {
-      "key": "wallis",
-      "rank": 5,
-      "total": 1,
-      "gw": 1,
-      "month": 1,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "Gabriel",
-        "points": 1,
-        "managerKey": "wallis"
-      }
-    },
-    {
       "key": "bennett",
       "rank": 5,
       "total": 1,
@@ -120,8 +103,25 @@
       }
     },
     {
+      "key": "wallis",
+      "rank": 7,
+      "total": 0,
+      "gw": 0,
+      "month": 0,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "Lammens",
+        "points": 0,
+        "managerKey": "wallis"
+      }
+    },
+    {
       "key": "jls",
-      "rank": 8,
+      "rank": 7,
       "total": 0,
       "gw": 0,
       "month": 0,
@@ -138,7 +138,7 @@
     },
     {
       "key": "wood",
-      "rank": 8,
+      "rank": 7,
       "total": 0,
       "gw": 0,
       "month": 0,
@@ -155,7 +155,7 @@
     },
     {
       "key": "rowan",
-      "rank": 8,
+      "rank": 7,
       "total": 0,
       "gw": 0,
       "month": 0,
@@ -172,7 +172,7 @@
     },
     {
       "key": "dj",
-      "rank": 8,
+      "rank": 7,
       "total": 0,
       "gw": 0,
       "month": 0,
@@ -207,12 +207,12 @@
     "displaced": null,
     "changed": false
   },
-  "generatedAt": "2026-08-21T19:34:47.850Z",
+  "generatedAt": "2026-08-21T19:36:24.821Z",
   "graphics": {
     "leader": {
       "rushy": 243298,
       "kellett": 209244,
-      "wallis": 226597,
+      "wallis": 177815,
       "jls": 248875,
       "paddy": 219847,
       "bennett": 204480,
@@ -225,7 +225,7 @@
     "leaderMonth": {
       "rushy": 243298,
       "kellett": 209244,
-      "wallis": 226597,
+      "wallis": 177815,
       "jls": 248875,
       "paddy": 551466,
       "bennett": 204480,
