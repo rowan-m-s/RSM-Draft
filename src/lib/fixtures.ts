@@ -73,7 +73,12 @@ export function groupByDay(matches: Match[]): DayGroup[] {
     const day = londonDay(match.kickoff)
     const last = groups.at(-1)
     if (last && last.day === day) last.matches.push(match)
-    else groups.push({ day, heading: match.kickoff ? dayHeading(match.kickoff) : 'Date to be confirmed', matches: [match] })
+    else
+      groups.push({
+        day,
+        heading: match.kickoff ? dayHeading(match.kickoff) : 'Date to be confirmed',
+        matches: [match],
+      })
   }
   return groups
 }
@@ -90,7 +95,7 @@ export function blankTeams(matches: Match[], teams: Team[], gameweek: number): T
  * Returns match id → { teamId → ordinal } for the teams that double.
  */
 export function doubleMarkers(matches: Match[], gameweek: number): Map<number, Map<number, { n: number; of: number }>> {
-  const inWeek = [...matchesIn(matches, gameweek)].sort((a, b) => (a.kickoff ?? '') < (b.kickoff ?? '') ? -1 : 1)
+  const inWeek = [...matchesIn(matches, gameweek)].sort((a, b) => ((a.kickoff ?? '') < (b.kickoff ?? '') ? -1 : 1))
   const perTeam = new Map<number, Match[]>()
   for (const m of inWeek) {
     for (const team of [m.home, m.away]) (perTeam.get(team) ?? perTeam.set(team, []).get(team)!).push(m)
@@ -125,4 +130,29 @@ export function matchState(match: Match): MatchState {
   if (match.finished || match.finishedProvisional) return 'finished'
   if (match.started) return 'live'
   return 'upcoming'
+}
+
+export type PlayerWeekState = 'blank' | 'upcoming' | 'started' | 'finished'
+
+/**
+ * Where a club is in its gameweek, for deciding what a player's card shows:
+ * the fixture until it kicks off, points from then on. A double gameweek
+ * counts as started once either match has, so points never give way to an
+ * upcoming fixture again. `live` is true only while a match is in progress,
+ * which is what the card's live tint follows.
+ */
+export function playerWeekState(
+  matches: Match[],
+  gameweek: number,
+  teamId: number
+): { state: PlayerWeekState; live: boolean } {
+  const own = matchesIn(matches, gameweek).filter((m) => m.home === teamId || m.away === teamId)
+  if (own.length === 0) return { state: 'blank', live: false }
+  const states = own.map(matchState)
+  const live = states.includes('live')
+  if (live) return { state: 'started', live }
+  if (states.includes('finished')) {
+    return { state: states.every((s) => s === 'finished') ? 'finished' : 'started', live: false }
+  }
+  return { state: 'upcoming', live: false }
 }

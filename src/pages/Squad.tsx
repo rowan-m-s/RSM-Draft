@@ -8,14 +8,14 @@ import { PlayerCard, PlayerCardCompact } from '../components/PlayerCard'
 import { PageBody } from '../components/Layout'
 import { useData } from '../data'
 import { gameweekPoints } from '../lib/season'
-import { matchState } from '../lib/fixtures'
+import { playerWeekState } from '../lib/fixtures'
 import { usePoints, useSquad } from '../lib/useSquad'
 import type { Fixture, ManagerKey, PointsComponent, Position, SquadPick, SquadPlayer } from '../types'
 
 const ROWS: Position[] = ['GKP', 'DEF', 'MID', 'FWD']
 
 /** What the card's bottom line says. Never a user choice; the week decides. */
-type CardMode = 'points' | 'fixture' | 'pick'
+type CardMode = 'points' | 'fixture' | 'pick' | 'blank'
 
 interface PitchPlayer {
   key: number
@@ -37,6 +37,7 @@ function fixtureLabel(fixtures: Fixture[] | undefined, shortNameOf: (id: number)
 function cardLine(entry: PitchPlayer, mode: CardMode, fixtureText: string): string {
   const { pick } = entry
   if (mode === 'points') return String(pick?.points ?? 0)
+  if (mode === 'blank') return 'Blank'
   if (mode === 'pick') return `Pick ${pick?.pick ?? '?'}${pick?.sequence ? ` (${pick.sequence})` : ''}`
   return fixtureText
 }
@@ -143,8 +144,19 @@ export function Squad() {
      squad file — picks exist once a deadline passes, and GW0 is the draft —
      so there is no pre-deadline "current squad" view. Addendum 02 §6. */
   const isDraft = gameweek === 0
-  const started = squad?.started ?? false
-  const mode: CardMode = isDraft ? 'pick' : started ? 'points' : 'fixture'
+  // Whether anyone's match has kicked off: the banner wording, nothing else.
+  const anyStarted = squad?.started ?? false
+
+  /* Decided per player, not per week: a player's card shows their fixture
+     until it kicks off and points from then on, so mid-weekend a squad is a
+     mix, as the official app shows it. No fixture at all is a blank. */
+  const weekStateOf = (entry: PitchPlayer) => playerWeekState(fixtures?.matches ?? [], gameweek, entry.player.teamId)
+  const modeFor = (entry: PitchPlayer): CardMode => {
+    if (isDraft) return 'pick'
+    const { state } = weekStateOf(entry)
+    if (state === 'blank') return 'blank'
+    return state === 'upcoming' ? 'fixture' : 'points'
+  }
 
   const asPitchPlayer = (pick: SquadPick): PitchPlayer | null => {
     const player = squad?.players[String(pick.element)]
@@ -172,7 +184,7 @@ export function Squad() {
      entries, each that match's own contribution. Null until the week has
      started, when cards show fixtures rather than points. */
   const breakdownFor = (entry: PitchPlayer): FixtureBreakdown[] | null => {
-    if (mode !== 'points' || !pointsFile) return null
+    if (modeFor(entry) !== 'points' || !pointsFile) return null
     const out: FixtureBreakdown[] = []
     for (const [fixtureId, byElement] of Object.entries(pointsFile.byFixture)) {
       const part = byElement[String(entry.key)]
@@ -190,14 +202,8 @@ export function Squad() {
   /* A player is live while one of their club's matches this week has
      started and not finished. Read from the match list the fetch publishes,
      so it clears on the normal cadence once the whistle goes. */
-  const liveTeams = useMemo(() => {
-    const set = new Set<number>()
-    for (const m of fixtures?.matches ?? []) {
-      if (m.event === gameweek && matchState(m) === 'live') (set.add(m.home), set.add(m.away))
-    }
-    return set
-  }, [fixtures, gameweek])
-  const isLive = (entry: PitchPlayer) => mode === 'points' && liveTeams.has(entry.player.teamId)
+  // Live only while that player's own match is in progress.
+  const isLive = (entry: PitchPlayer) => !isDraft && weekStateOf(entry).live
 
   const toggle = (entry: PitchPlayer) => setOpenKey(open === entry.key ? null : `${gameweek}:${entry.key}`)
   const close = () => setOpenKey(null)
@@ -223,7 +229,7 @@ export function Squad() {
     }
   }, [open])
   const breakdownProps = {
-    mode,
+    modeFor,
     fixtureFor,
     breakdownFor,
     open,
@@ -260,13 +266,13 @@ export function Squad() {
               className="sm:hidden"
               title={isDraft ? 'XI inferred from draft order, not an official lineup' : undefined}
             >
-              {isDraft ? 'Inferred XI' : started ? 'Points' : 'Fixtures'}
+              {isDraft ? 'Inferred XI' : anyStarted ? 'Points' : 'Fixtures'}
             </span>
             <span className="hidden sm:inline">
               {isDraft
                 ? 'XI inferred from draft order, not an official lineup'
-                : started
-                  ? 'points shown'
+                : anyStarted
+                  ? 'points once a player’s match kicks off'
                   : 'fixtures shown, the week has not kicked off'}
             </span>
           </>
@@ -371,11 +377,10 @@ export function Squad() {
                 </>
               ) : (
                 <>
-                  {started
-                    ? 'Points are shown because the gameweek has started. '
-                    : 'Fixtures are shown because the gameweek has not started. '}
-                  This is the squad as it stood that week. Squads change through waivers and trades.
-                  {started && ' Tap a card for where the points came from.'}
+                  Each card shows the player’s fixture until it kicks off, then their points as they come in. Blank
+                  means no fixture this week. This is the squad as it stood that week. Squads change through waivers and
+                  trades.
+                  {anyStarted && ' Tap a card for where the points came from.'}
                   {picks.some((p) => p.subbedOn) &&
                     ' SUB marks an automatic substitution, as Draft applied it after the final whistle.'}
                 </>
@@ -397,7 +402,7 @@ interface FixtureBreakdown {
 }
 
 interface CardProps {
-  mode: CardMode
+  modeFor: (entry: PitchPlayer) => CardMode
   fixtureFor: (entry: PitchPlayer) => string
   breakdownFor: (entry: PitchPlayer) => FixtureBreakdown[] | null
   /** The element whose breakdown is open, if any. */
@@ -561,13 +566,14 @@ function Bench({ bench, ...card }: { bench: PitchPlayer[] } & CardProps) {
  */
 function PlayerCardResponsive({
   entry,
-  mode,
+  modeFor,
   fixtureFor,
   open,
   toggle,
   isLive,
   bench = false,
 }: CardProps & { entry: PitchPlayer; bench?: boolean }) {
+  const mode = modeFor(entry)
   const line = cardLine(entry, mode, fixtureFor(entry))
   const sub = subOf(entry)
   const live = isLive(entry)

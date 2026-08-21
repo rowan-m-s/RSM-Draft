@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import {
+  playerWeekState,
   blankTeams,
   defaultGameweek,
   doubleMarkers,
@@ -110,5 +111,34 @@ describe('default gameweek', () => {
   it('opens on the first unfinished gameweek, or the last if the season is done', () => {
     expect(defaultGameweek([gw(1, true), gw(2, true), gw(3, false), gw(4, false)])).toBe(3)
     expect(defaultGameweek([gw(37, true), gw(38, true)])).toBe(38)
+  })
+})
+
+describe('playerWeekState', () => {
+  const m = (id: number, home: number, away: number, started: boolean, finished: boolean): Match =>
+    ({
+      id,
+      event: 1,
+      home,
+      away,
+      kickoff: '2026-08-22T14:00:00Z',
+      started,
+      finished,
+      finishedProvisional: false,
+      homeScore: null,
+      awayScore: null,
+    }) as Match
+
+  it('is blank with no fixture, upcoming before kickoff, started while live, finished after', () => {
+    expect(playerWeekState([m(1, 1, 2, false, false)], 1, 9)).toEqual({ state: 'blank', live: false })
+    expect(playerWeekState([m(1, 1, 2, false, false)], 1, 1)).toEqual({ state: 'upcoming', live: false })
+    expect(playerWeekState([m(1, 1, 2, true, false)], 1, 2)).toEqual({ state: 'started', live: true })
+    expect(playerWeekState([m(1, 1, 2, true, true)], 1, 1)).toEqual({ state: 'finished', live: false })
+  })
+
+  it('stays on points through a double gameweek once either match has started', () => {
+    const double = [m(1, 1, 2, true, true), m(2, 3, 1, false, false)]
+    expect(playerWeekState(double, 1, 1)).toEqual({ state: 'started', live: false })
+    expect(playerWeekState(double, 1, 3)).toEqual({ state: 'upcoming', live: false })
   })
 })
