@@ -17,12 +17,17 @@ export function Banner({
 }: {
   season: string
   title: string
-  subtitle: string
+  /** A string, or markup that shortens itself at narrow widths. */
+  subtitle: ReactNode
+  /**
+   * Below `sm` the aside sits top right, level with the eyebrow, so the
+   * banner stays short; from `sm` it takes the right-hand column as before.
+   */
   aside?: ReactNode
 }) {
   return (
     <header>
-      <div className="banner-gradient flex flex-col gap-5 px-4 py-7 sm:flex-row sm:items-center sm:gap-8 sm:px-6 sm:py-9">
+      <div className="banner-gradient relative flex flex-col px-4 py-5 sm:flex-row sm:items-center sm:gap-8 sm:px-6 sm:py-9">
         {/* The supplied artwork is the full lockup — lion plus wordmark, 500×210,
             so about 2.38:1. Height is fixed and width follows; giving it a
             square box squashes it. */}
@@ -33,14 +38,16 @@ export function Banner({
           height={48}
           className="hidden h-12 w-auto shrink-0 object-contain sm:block"
         />
-        <div className="font-brand min-w-0 flex-1">
+        <div className={`font-brand min-w-0 flex-1 ${aside ? 'pr-16 sm:pr-0' : ''}`}>
           <p className="eyebrow text-pl-text/80">{season}</p>
-          <h1 className="display mt-1 truncate text-4xl leading-[1.2] text-pl-text sm:text-5xl" title={title}>
+          <h1 className="display mt-1 truncate text-3xl leading-[1.2] text-pl-text sm:text-5xl" title={title}>
             {title}
           </h1>
-          <p className="mt-2 text-sm text-pl-text/80">{subtitle}</p>
+          <p className="mt-1.5 text-sm text-pl-text/80 sm:mt-2">{subtitle}</p>
         </div>
-        {aside && <div className="shrink-0 sm:border-l sm:border-pl-border sm:pl-8">{aside}</div>}
+        {aside && (
+          <div className="absolute top-5 right-4 shrink-0 sm:static sm:border-l sm:border-pl-border sm:pl-8">{aside}</div>
+        )}
       </div>
       <div className="banner-strip" />
     </header>
