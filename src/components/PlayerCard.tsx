@@ -58,9 +58,9 @@ function nameBand(status: string): string {
   return 'bg-pl-bg text-pl-text'
 }
 
-/** Pink while the match is in progress, as the official app highlights it. */
+/** Lilac while the match is in progress, as the official app highlights it. */
 function pointsBand(live: boolean): string {
-  return live ? 'bg-pl-pink text-pl-text' : 'bg-pl-surface-2 text-pl-text'
+  return live ? 'bg-pl-lilac text-pl-text' : 'bg-pl-surface-2 text-pl-text'
 }
 
 /**

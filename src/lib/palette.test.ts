@@ -25,6 +25,7 @@ const TOKENS = {
   'pl-amber': '#FFC233',
   'pl-red': '#FF3B3B',
   'pl-crimson': '#C8102E',
+  'pl-lilac': '#8B5CF5',
 }
 
 const MUTED_ALPHA = 0.65
@@ -146,7 +147,7 @@ describe('every colour comes from a token', () => {
     expect(offenders, offenders.join('\n')).toEqual([])
   })
 
-  it('reserves pink for Koch, negative balances and live players', () => {
+  it('reserves pink for Koch and negative balances', () => {
     // Every file that mentions pink, so a new one is a prompt to ask why.
     const files = sourceFiles('src')
       .filter((file) => /\bpl-pink\b/.test(readFileSync(file, 'utf8')))
@@ -154,7 +155,6 @@ describe('every colour comes from a token', () => {
       .sort()
     expect(files).toEqual([
       'components/Layout.tsx', // last place accent, banner strip, sidebar mark
-      'components/PlayerCard.tsx', // the points band while the player's match is in progress
       'index.css', // the banner strip
       'pages/Home.tsx', // Koch of the week card
       'pages/Honours.tsx', // Koch cards
