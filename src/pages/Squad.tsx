@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useLayoutEffect, useMemo, useRef, useState } from 'react'
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom'
 import { Banner } from '../components/Banner'
 import { Breakdown, pts } from '../components/Breakdown'
@@ -374,7 +374,15 @@ interface CardProps {
   confirmed: boolean
 }
 
-/** The breakdown for the open card in a row, as a panel over the pitch. */
+/**
+ * The breakdown for the open card, as a panel beside that card.
+ *
+ * Sits tight against the card's right edge, overlapping the neighbours
+ * rather than moving them; the pitch keeps its shape and closing the panel
+ * moves nothing. Where there is not room on the right, the panel slides
+ * left just far enough to stay inside the row, still beside its card.
+ * Styled as a card: the cyan outline and the aubergine fill the cards use.
+ */
 function RowBreakdown({
   entry,
   parts,
@@ -385,12 +393,31 @@ function RowBreakdown({
   confirmed: boolean
 }) {
   const total = parts.reduce((n, p) => n + p.total, 0)
-  // Floats at the row's right edge, over the pitch, always in the same
-  // place relative to the row: the pitch keeps its shape, and closing the
-  // panel moves nothing. Styled as a card: the cyan outline and the
-  // aubergine fill the cards use.
+  const ref = useRef<HTMLDivElement>(null)
+  const [pos, setPos] = useState<{ left: number; top: number } | null>(null)
+
+  useLayoutEffect(() => {
+    const panel = ref.current
+    const row = panel?.parentElement
+    const card = row?.querySelector<HTMLElement>(`[data-card="${entry.key}"]`)
+    if (!panel || !row || !card) return
+    const place = () => {
+      const gap = 6
+      const wanted = card.offsetLeft + card.offsetWidth + gap
+      const max = row.clientWidth - panel.offsetWidth
+      setPos({ left: Math.max(0, Math.min(wanted, max)), top: card.offsetTop })
+    }
+    place()
+    window.addEventListener('resize', place)
+    return () => window.removeEventListener('resize', place)
+  }, [entry.key])
+
   return (
-    <div className="absolute top-0 right-0 z-10 w-[min(20rem,calc(100%-1rem))] rounded-md border-2 border-pl-cyan bg-pl-bg px-3 py-2 shadow-xl">
+    <div
+      ref={ref}
+      style={pos ? { left: pos.left, top: pos.top } : { visibility: 'hidden' }}
+      className="absolute z-10 w-[min(18rem,calc(100%-0.5rem))] rounded-md border-2 border-pl-cyan bg-pl-bg px-3 py-2 shadow-xl"
+    >
       <p className="flex items-baseline justify-between gap-4 text-sm">
         <span className="font-semibold text-pl-text">{entry.player.name}</span>
         <span className="tnum font-bold text-pl-text">{pts(total)}</span>
@@ -508,6 +535,7 @@ function PlayerCardResponsive({
   return (
     <button
       type="button"
+      data-card={entry.key}
       onClick={() => toggle(entry)}
       aria-expanded={isOpen}
       aria-label={`${entry.player.name}, ${line}, ${isOpen ? 'hide' : 'show'} breakdown`}
