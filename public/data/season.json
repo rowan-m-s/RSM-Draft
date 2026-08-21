@@ -11,7 +11,11 @@
       "forfeits": 0,
       "potsWon": 0,
       "balance": 0,
-      "topPerformer": null
+      "topPerformer": {
+        "playerName": "Havertz",
+        "points": 8,
+        "managerKey": "paddy"
+      }
     },
     {
       "key": "jason",
@@ -24,7 +28,11 @@
       "forfeits": 0,
       "potsWon": 0,
       "balance": 0,
-      "topPerformer": null
+      "topPerformer": {
+        "playerName": "Saka",
+        "points": 8,
+        "managerKey": "jason"
+      }
     },
     {
       "key": "ollie",
@@ -37,7 +45,11 @@
       "forfeits": 0,
       "potsWon": 0,
       "balance": 0,
-      "topPerformer": null
+      "topPerformer": {
+        "playerName": "Tzolis",
+        "points": 5,
+        "managerKey": "ollie"
+      }
     },
     {
       "key": "kellett",
@@ -50,7 +62,11 @@
       "forfeits": 0,
       "potsWon": 0,
       "balance": 0,
-      "topPerformer": null
+      "topPerformer": {
+        "playerName": "Calafiori",
+        "points": 4,
+        "managerKey": "kellett"
+      }
     },
     {
       "key": "rushy",
@@ -63,7 +79,11 @@
       "forfeits": 0,
       "potsWon": 0,
       "balance": 0,
-      "topPerformer": null
+      "topPerformer": {
+        "playerName": "Mosquera",
+        "points": 1,
+        "managerKey": "rushy"
+      }
     },
     {
       "key": "wallis",
@@ -76,7 +96,11 @@
       "forfeits": 0,
       "potsWon": 0,
       "balance": 0,
-      "topPerformer": null
+      "topPerformer": {
+        "playerName": "Gabriel",
+        "points": 1,
+        "managerKey": "wallis"
+      }
     },
     {
       "key": "bennett",
@@ -89,7 +113,11 @@
       "forfeits": 0,
       "potsWon": 0,
       "balance": 0,
-      "topPerformer": null
+      "topPerformer": {
+        "playerName": "Rice",
+        "points": 1,
+        "managerKey": "bennett"
+      }
     },
     {
       "key": "jls",
@@ -102,7 +130,11 @@
       "forfeits": 0,
       "potsWon": 0,
       "balance": 0,
-      "topPerformer": null
+      "topPerformer": {
+        "playerName": "A.Becker",
+        "points": 0,
+        "managerKey": "jls"
+      }
     },
     {
       "key": "wood",
@@ -115,7 +147,11 @@
       "forfeits": 0,
       "potsWon": 0,
       "balance": 0,
-      "topPerformer": null
+      "topPerformer": {
+        "playerName": "Donnarumma",
+        "points": 0,
+        "managerKey": "wood"
+      }
     },
     {
       "key": "rowan",
@@ -128,7 +164,11 @@
       "forfeits": 0,
       "potsWon": 0,
       "balance": 0,
-      "topPerformer": null
+      "topPerformer": {
+        "playerName": "Pickford",
+        "points": 0,
+        "managerKey": "rowan"
+      }
     },
     {
       "key": "dj",
@@ -141,7 +181,11 @@
       "forfeits": 0,
       "potsWon": 0,
       "balance": 0,
-      "topPerformer": null
+      "topPerformer": {
+        "playerName": "Sánchez",
+        "points": 0,
+        "managerKey": "dj"
+      }
     }
   ],
   "latestSettledGameweek": null,
@@ -163,7 +207,7 @@
     "displaced": null,
     "changed": false
   },
-  "generatedAt": "2026-08-21T19:30:15.247Z",
+  "generatedAt": "2026-08-21T19:34:47.850Z",
   "graphics": {
     "leader": {
       "rushy": 243298,

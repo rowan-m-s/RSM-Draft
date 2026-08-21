@@ -24,21 +24,69 @@
       "settled": false,
       "winnerKeys": [],
       "potPerWinner": 0,
-      "topPerformer": null,
+      "topPerformer": {
+        "playerName": "Havertz",
+        "points": 8,
+        "managerKey": "paddy"
+      },
       "topPerformerByManager": {
-        "rushy": null,
-        "kellett": null,
-        "wallis": null,
-        "jls": null,
-        "paddy": null,
-        "bennett": null,
-        "wood": null,
-        "rowan": null,
-        "jason": null,
-        "dj": null,
-        "ollie": null
+        "rushy": {
+          "playerName": "Mosquera",
+          "points": 1,
+          "managerKey": "rushy"
+        },
+        "kellett": {
+          "playerName": "Calafiori",
+          "points": 4,
+          "managerKey": "kellett"
+        },
+        "wallis": {
+          "playerName": "Gabriel",
+          "points": 1,
+          "managerKey": "wallis"
+        },
+        "jls": {
+          "playerName": "A.Becker",
+          "points": 0,
+          "managerKey": "jls"
+        },
+        "paddy": {
+          "playerName": "Havertz",
+          "points": 8,
+          "managerKey": "paddy"
+        },
+        "bennett": {
+          "playerName": "Rice",
+          "points": 1,
+          "managerKey": "bennett"
+        },
+        "wood": {
+          "playerName": "Donnarumma",
+          "points": 0,
+          "managerKey": "wood"
+        },
+        "rowan": {
+          "playerName": "Pickford",
+          "points": 0,
+          "managerKey": "rowan"
+        },
+        "jason": {
+          "playerName": "Saka",
+          "points": 8,
+          "managerKey": "jason"
+        },
+        "dj": {
+          "playerName": "Sánchez",
+          "points": 0,
+          "managerKey": "dj"
+        },
+        "ollie": {
+          "playerName": "Tzolis",
+          "points": 5,
+          "managerKey": "ollie"
+        }
       }
     }
   ],
-  "generatedAt": "2026-08-21T19:30:15.247Z"
+  "generatedAt": "2026-08-21T19:34:47.850Z"
 }
