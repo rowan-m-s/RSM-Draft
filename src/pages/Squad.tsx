@@ -105,7 +105,8 @@ export function Squad() {
   // Defaults to the latest week that has a squad: the one in play, or the
   // draft until the first deadline passes.
   const fallback = lastGameweek
-  const requested = Number(params.get('gw'))
+  // Only an explicit ?gw= counts: Number(null) is 0, which is the draft.
+  const requested = params.has('gw') ? Number(params.get('gw')) : NaN
   const gameweek = Number.isFinite(requested) && available.includes(requested) ? requested : fallback
 
   const { squad, fixtures, loading, error } = useSquad(gameweek)
