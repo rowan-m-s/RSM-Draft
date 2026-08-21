@@ -37,7 +37,25 @@ export function isSettled(event, classicDataChecked) {
   return Boolean(event.finished) && Boolean(classicDataChecked)
 }
 
-export function buildGameweeks({ events, classicDataCheckedById, scoresByGw, perGw = {}, elementName = String }) {
+export function buildGameweeks({
+  events,
+  classicDataCheckedById,
+  scoresByGw,
+  perGw = {},
+  elementName = String,
+  fixtures = [],
+}) {
+  // When FPL is expected to confirm a week: it marks data checked the day
+  // after the last match, once bonus and auto-subs are final. An estimate
+  // for the card's "confirmed 26/08" line, never a gate.
+  const lastKickoffByEvent = {}
+  for (const f of fixtures) {
+    if (f.event == null || !f.kickoff_time) continue
+    const current = lastKickoffByEvent[f.event]
+    if (!current || f.kickoff_time > current) lastKickoffByEvent[f.event] = f.kickoff_time
+  }
+  const dayAfter = (iso) => new Date(new Date(iso).getTime() + 24 * 60 * 60 * 1000).toISOString()
+
   return events.map((event) => {
     const dataChecked = isSettled(event, classicDataCheckedById.get(event.id))
     const scores = scoresByGw[event.id] ?? {}
@@ -56,6 +74,7 @@ export function buildGameweeks({ events, classicDataCheckedById, scoresByGw, per
       month: monthOfDeadline(event.deadline_time),
       finished: Boolean(event.finished),
       dataChecked,
+      confirmExpectedUtc: lastKickoffByEvent[event.id] ? dayAfter(lastKickoffByEvent[event.id]) : null,
       scores: hasScores ? scores : {},
       kochKeys,
       charged: chargeFor(kochKeys),
@@ -210,7 +229,84 @@ export function buildSeason({ gameweeks, months, managerKeys, generatedAt, perGw
     row.rank = i > 0 && row.total === rows[i - 1].total ? rows[i - 1].rank : i + 1
   })
 
-  return { rows, latestSettledGameweek, currentMonth, seasonPrize: SEASON_PRIZE, generatedAt }
+  return {
+    rows,
+    latestSettledGameweek,
+    currentMonth,
+    seasonPrize: SEASON_PRIZE,
+    leader: buildLeader({ gameweeks }),
+    generatedAt,
+  }
+}
+
+/**
+ * Who is top of the table, and for how long.
+ *
+ * Walked from gameweek history rather than from when the site first noticed
+ * a change, so it is right retroactively: cumulative totals are rebuilt at
+ * each confirmed gameweek in turn and the set of managers on the highest
+ * total noted. The current leaders are that set at the latest confirmed
+ * week; `since` is the first week of their unbroken run at the top, and
+ * `displaced` is whoever led the week before the run began (null when the
+ * run began at GW1 or the previous top was shared).
+ *
+ * Ties: managers level on points are joint leaders, all named. A run
+ * continues through a tie as long as the manager stays in the leading set,
+ * so a leader who is joined at the top does not lose their "since" week;
+ * the newcomer's run starts at the week they drew level.
+ *
+ * Null until a gameweek has been confirmed: only confirmed weeks count,
+ * because only they can award the £110.
+ */
+export function buildLeader({ gameweeks }) {
+  const confirmed = gameweeks.filter((gw) => gw.dataChecked && Object.keys(gw.scores).length > 0)
+  if (confirmed.length === 0) return null
+
+  const totals = {}
+  const leadersByWeek = []
+  for (const gw of confirmed) {
+    for (const [key, points] of Object.entries(gw.scores)) totals[key] = (totals[key] ?? 0) + points
+    const top = Math.max(...Object.values(totals))
+    leadersByWeek.push({
+      id: gw.id,
+      keys: Object.keys(totals)
+        .filter((key) => totals[key] === top)
+        .sort(),
+      total: top,
+    })
+  }
+
+  const latest = leadersByWeek.at(-1)
+  // Each current leader's run: walk back while they are in the leading set.
+  const sinceFor = (key) => {
+    let since = latest.id
+    for (let i = leadersByWeek.length - 1; i >= 0; i--) {
+      if (!leadersByWeek[i].keys.includes(key)) break
+      since = leadersByWeek[i].id
+    }
+    return since
+  }
+  const runs = latest.keys.map((key) => ({ key, since: sinceFor(key) }))
+  // The card's "since" is the longest-standing of the current leaders.
+  const since = Math.min(...runs.map((r) => r.since))
+  const weekBefore = leadersByWeek.find((_, i) => leadersByWeek[i + 1]?.id === since)
+  const displaced =
+    weekBefore && weekBefore.keys.length === 1 && !latest.keys.includes(weekBefore.keys[0])
+      ? weekBefore.keys[0]
+      : null
+
+  return {
+    keys: latest.keys,
+    total: latest.total,
+    since,
+    /** The first week of each current leader's own run, for joint leaders. */
+    sinceByKey: Object.fromEntries(runs.map((r) => [r.key, r.since])),
+    asOf: latest.id,
+    weeks: confirmed.length - confirmed.findIndex((gw) => gw.id === since),
+    displaced,
+    /** True when the top changed hands at the latest confirmed gameweek. */
+    changed: since === latest.id,
+  }
 }
 
 const POSITIONS = { 1: 'GKP', 2: 'DEF', 3: 'MID', 4: 'FWD' }

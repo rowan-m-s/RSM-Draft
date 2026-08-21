@@ -590,7 +590,7 @@ async function main() {
   const managerKeys = enrichedManagers.map((m) => m.key)
   const elementName = (id) => elements.find((e) => e.id === Number(id))?.web_name ?? `Player ${id}`
 
-  const gameweeks = buildGameweeks({ events, classicDataCheckedById, scoresByGw, perGw, elementName })
+  const gameweeks = buildGameweeks({ events, classicDataCheckedById, scoresByGw, perGw, elementName, fixtures: allFixtures })
   const months = buildMonths({ gameweeks, managerKeys, perGw, elementName })
   const season = buildSeason({ gameweeks, months, managerKeys, generatedAt, perGw, elementName })
   const fixtures = buildFixtures({ fixtures: allFixtures, teams, generatedAt })

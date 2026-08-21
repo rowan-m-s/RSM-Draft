@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import {
   buildFixturePoints,
+  buildLeader,
   buildFixtures,
   buildGameweeks,
   buildMonths,
@@ -629,5 +630,63 @@ describe('buildFixturePoints', () => {
     const { byFixture, mismatched } = buildFixturePoints({ live: { elements: { 9: { stats: { total_points: 0 } } } } })
     expect(byFixture).toEqual({})
     expect(mismatched).toEqual([])
+  })
+})
+
+describe('buildLeader', () => {
+  const gw = (id, dataChecked, scores) => ({ id, dataChecked, scores })
+
+  it('is null until a gameweek is confirmed', () => {
+    expect(buildLeader({ gameweeks: [gw(1, false, { a: 50, b: 40 })] })).toBeNull()
+    expect(buildLeader({ gameweeks: [gw(1, true, {})] })).toBeNull()
+  })
+
+  it('walks cumulative totals and dates the run from history, naming who was displaced', () => {
+    const gameweeks = [
+      gw(1, true, { a: 50, b: 40, c: 30 }), // a leads
+      gw(2, true, { a: 10, b: 40, c: 30 }), // b 80, a 60: b takes over
+      gw(3, true, { a: 20, b: 20, c: 30 }), // b 100, c 90, a 80
+      gw(4, true, { a: 30, b: 30, c: 30 }), // b 130, c 120: b still
+      gw(5, false, { a: 90, b: 0, c: 0 }), // provisional: ignored
+    ]
+    expect(buildLeader({ gameweeks })).toEqual({
+      keys: ['b'],
+      total: 130,
+      since: 2,
+      sinceByKey: { b: 2 },
+      asOf: 4,
+      weeks: 3,
+      displaced: 'a',
+      changed: false,
+    })
+  })
+
+  it('flags a change at the latest confirmed week', () => {
+    const gameweeks = [gw(1, true, { a: 50, b: 40 }), gw(2, true, { a: 0, b: 20 })]
+    const leader = buildLeader({ gameweeks })
+    expect(leader.keys).toEqual(['b'])
+    expect(leader.changed).toBe(true)
+    expect(leader.displaced).toBe('a')
+    expect(leader.weeks).toBe(1)
+  })
+
+  it('names joint leaders and keeps the longer run as since', () => {
+    const gameweeks = [
+      gw(1, true, { a: 50, b: 30 }), // a leads from GW1
+      gw(2, true, { a: 10, b: 30 }), // level at 60
+    ]
+    const leader = buildLeader({ gameweeks })
+    expect(leader.keys).toEqual(['a', 'b'])
+    expect(leader.since).toBe(1)
+    expect(leader.sinceByKey).toEqual({ a: 1, b: 2 })
+    // Nobody was displaced: a is still there.
+    expect(leader.displaced).toBeNull()
+  })
+
+  it('does not name a displaced leader when the previous top was shared', () => {
+    const gameweeks = [gw(1, true, { a: 50, b: 50 }), gw(2, true, { a: 0, b: 0, c: 60 })]
+    const leader = buildLeader({ gameweeks })
+    expect(leader.keys).toEqual(['c'])
+    expect(leader.displaced).toBeNull()
   })
 })

@@ -14,8 +14,21 @@ export const MANAGER_KEYS = [
   'ollie',
 ]
 
-/** The three sets that must be complete: 11 keys × 3 = 33 files. */
-export const MANAGER_SETS = ['icon', 'koch', 'motm']
+/** The sets that must be complete: 11 keys × 4 = 44 files. */
+export const MANAGER_SETS = ['icon', 'koch', 'motm', 'leader']
+
+/**
+ * Source filenames that are a known misspelling of a key. Mapped rather than
+ * rejected, and the optimiser logs every time it applies one, so the
+ * correction is visible rather than silent.
+ */
+export const KEY_ALIASES = new Map([['kellet', 'kellett']])
+
+/**
+ * Source name patterns that are deliberately not processed yet. Each is
+ * reported as skipped with its reason rather than as an unknown file.
+ */
+export const HELD_SETS = new Map([['koch2', 'a second Koch set, awaiting a decision on whether it replaces or alternates']])
 
 /**
  * `winner` is deliberately not in that list. It holds one image per past
@@ -62,7 +75,9 @@ export function parseSourceName(filename) {
     new RegExp(`^(.+?)\\.(${ALL_SETS.join('|')})\\.(${IMAGE_EXTENSIONS.join('|')})$`, 'i')
   )
   if (!match) return null
-  return { key: match[1].toLowerCase(), set: match[2].toLowerCase(), ext: match[3].toLowerCase() }
+  const raw = match[1].toLowerCase()
+  const key = KEY_ALIASES.get(raw) ?? raw
+  return { key, set: match[2].toLowerCase(), ext: match[3].toLowerCase(), ...(key !== raw ? { aliasOf: raw } : {}) }
 }
 
 /** Levenshtein, capped — only used to suggest a correction on a typo. */
@@ -116,6 +131,11 @@ export function classifySourceFile(filename) {
 
   if (KNOWN_OTHER_FILES.has(lower)) {
     return { status: 'known-other', filename, reason: KNOWN_OTHER_FILES.get(lower) }
+  }
+
+  const held = filename.match(new RegExp(`^(.+?)\\.(${[...HELD_SETS.keys()].join('|')})\\.(${IMAGE_EXTENSIONS.join('|')})$`, 'i'))
+  if (held) {
+    return { status: 'held', filename, set: held[2].toLowerCase(), reason: HELD_SETS.get(held[2].toLowerCase()) }
   }
 
   const parsed = parseSourceName(filename)

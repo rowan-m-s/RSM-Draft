@@ -4,8 +4,8 @@ import { DataFooter } from '../components/Freshness'
 import { CardImage, ManagerAvatar } from '../components/Img'
 import { MiniTable, PageBody } from '../components/Layout'
 import { useData } from '../data'
-import { money } from '../lib/season'
-import type { Gameweek, ManagerKey, Month } from '../types'
+import { kochesOf, money, monthWinnersOf } from '../lib/season'
+import type { Gameweek, Leader, ManagerKey, Month } from '../types'
 
 /**
  * The empty state that greets everyone for the first four or five weeks.
@@ -25,18 +25,49 @@ function AwaitingAward({ title, eyebrow, when }: { title: string; eyebrow: strin
   )
 }
 
+/** dd/MM in London, for the "confirmed 26/08" line. */
+function shortDate(iso: string | null): string {
+  if (!iso) return 'soon'
+  return new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/London', day: '2-digit', month: '2-digit' }).format(
+    new Date(iso)
+  )
+}
+
+/**
+ * The caveat on a live award. Small, muted, top right: the graphic is still
+ * the point. Disappears the moment the week or month is confirmed.
+ */
+function Provisional({ award, confirmedOn }: { award: 'KOTW' | 'MOTM'; confirmedOn: string | null }) {
+  return (
+    <p className="text-right text-[11px] leading-tight text-pl-muted">
+      *As things stand.
+      <br className="sm:hidden" /> {award} confirmed {shortDate(confirmedOn)}
+    </p>
+  )
+}
+
+/**
+ * Koch of the week. Live from the moment a week has scores, marked as things
+ * stand; final once FPL confirms the week. Nothing about money appears until
+ * then: confirmation is what attaches the £5, and a provisional Koch is just
+ * who is bottom right now.
+ */
 function KochCard({ gameweek, nameOf }: { gameweek: Gameweek; nameOf: (key: ManagerKey) => string }) {
-  const koches = gameweek.kochKeys
+  const confirmed = gameweek.dataChecked
+  const koches = confirmed ? gameweek.kochKeys : kochesOf(gameweek.scores)
   const tied = koches.length > 1
 
   return (
     <section className="card overflow-hidden">
-      <div className="flex items-baseline justify-between gap-3 border-b border-pl-border px-5 py-3">
-        <p className="eyebrow text-pl-pink">Koch of the week</p>
-        <p className="text-xs text-pl-muted">
-          Gameweek {gameweek.id}
-          {tied && ` · ${koches.length}-way tie`}
-        </p>
+      <div className="flex items-start justify-between gap-3 border-b border-pl-border px-5 py-3">
+        <div>
+          <p className="eyebrow text-pl-pink">Koch of the week</p>
+          <p className="mt-0.5 text-xs text-pl-muted">
+            Gameweek {gameweek.id}
+            {tied && ` · ${koches.length}-way tie`}
+          </p>
+        </div>
+        {!confirmed && <Provisional award="KOTW" confirmedOn={gameweek.confirmExpectedUtc} />}
       </div>
 
       <div className={`grid gap-px bg-pl-border ${tied ? 'lg:grid-cols-2' : ''}`}>
@@ -53,46 +84,70 @@ function KochCard({ gameweek, nameOf }: { gameweek: Gameweek; nameOf: (key: Mana
             <div className="min-w-0 flex-1">
               <div className="flex items-center gap-3">
                 <ManagerAvatar managerKey={key} size={48} className="h-12 w-12" />
-                <p className="display min-w-0 truncate text-4xl leading-[1.2] text-pl-text">{nameOf(key)}</p>
+                <p className="display min-w-0 truncate text-4xl leading-[1.2] text-pl-text">
+                  {nameOf(key)}
+                  {!confirmed && '*'}
+                </p>
               </div>
               <p className="mt-4 flex items-baseline gap-2">
                 <span className="display tnum text-6xl leading-none text-pl-pink">{gameweek.scores[key]}</span>
                 <span className="text-sm text-pl-muted">points</span>
               </p>
-              <p className="mt-3 text-sm text-pl-muted">Lowest score in gameweek {gameweek.id}</p>
+              <p className="mt-3 text-sm text-pl-muted">
+                {confirmed ? 'Lowest score' : 'Currently lowest'} in gameweek {gameweek.id}
+              </p>
             </div>
           </div>
         ))}
       </div>
 
-      <p className="border-t border-pl-border bg-pl-surface-2 px-5 py-3 text-sm text-pl-text">
-        {tied ? (
-          <>
-            All {koches.length} tied on {gameweek.scores[koches[0]]}, so all {koches.length} pay.{' '}
-            <strong className="font-semibold text-pl-pink">{money(gameweek.charged)}</strong> into the month's pot.
-          </>
-        ) : (
-          <>
-            <strong className="font-semibold text-pl-pink">{money(gameweek.charged)}</strong> into the month's pot.
-          </>
-        )}
-      </p>
+      {confirmed && (
+        <p className="border-t border-pl-border bg-pl-surface-2 px-5 py-3 text-sm text-pl-text">
+          {tied ? (
+            <>
+              All {koches.length} tied on {gameweek.scores[koches[0]]}, so all {koches.length} pay.{' '}
+              <strong className="font-semibold text-pl-pink">{money(gameweek.charged)}</strong> into the month's pot.
+            </>
+          ) : (
+            <>
+              <strong className="font-semibold text-pl-pink">{money(gameweek.charged)}</strong> into the month's pot.
+            </>
+          )}
+        </p>
+      )}
     </section>
   )
 }
 
-function MotmCard({ month, nameOf }: { month: Month; nameOf: (key: ManagerKey) => string }) {
-  const winners = month.winnerKeys
+/**
+ * Manager of the month. Live from the month's first scores, marked as things
+ * stand and with no pot attached; final once the month's last gameweek is
+ * confirmed. The expected confirmation is that last gameweek's.
+ */
+function MotmCard({
+  month,
+  nameOf,
+  confirmedOn,
+}: {
+  month: Month
+  nameOf: (key: ManagerKey) => string
+  confirmedOn: string | null
+}) {
+  const confirmed = month.settled
+  const winners = confirmed ? month.winnerKeys : monthWinnersOf(month.totals)
   const split = winners.length > 1
 
   return (
     <section className="card overflow-hidden">
-      <div className="flex items-baseline justify-between gap-3 border-b border-pl-border px-5 py-3">
-        <p className="eyebrow text-pl-green">Manager of the month</p>
-        <p className="text-xs text-pl-muted">
-          {month.label}
-          {split && ` · split ${winners.length} ways`}
-        </p>
+      <div className="flex items-start justify-between gap-3 border-b border-pl-border px-5 py-3">
+        <div>
+          <p className="eyebrow text-pl-green">Manager of the month</p>
+          <p className="mt-0.5 text-xs text-pl-muted">
+            {month.label}
+            {split && (confirmed ? ` · split ${winners.length} ways` : ` · ${winners.length} level`)}
+          </p>
+        </div>
+        {!confirmed && <Provisional award="MOTM" confirmedOn={confirmedOn} />}
       </div>
 
       <div className={`grid gap-px bg-pl-border ${split ? 'sm:grid-cols-2' : ''}`}>
@@ -105,15 +160,20 @@ function MotmCard({ month, nameOf }: { month: Month; nameOf: (key: ManagerKey) =
               className="aspect-square w-28 shrink-0 sm:w-36"
             />
             <div className="flex min-w-0 flex-1 flex-col justify-center">
-              <p className="display truncate text-2xl leading-[1.2] text-pl-text">{nameOf(key)}</p>
+              <p className="display truncate text-2xl leading-[1.2] text-pl-text">
+                {nameOf(key)}
+                {!confirmed && '*'}
+              </p>
               <p className="mt-1.5 text-sm text-pl-muted">
                 <span className="tnum font-semibold text-pl-text">{month.totals[key]}</span> points across{' '}
-                {month.gameweekIds.length} gameweeks
+                {month.gameweekIds.length} gameweek{month.gameweekIds.length === 1 ? '' : 's'}
               </p>
-              <p className="mt-2">
-                <span className="display tnum text-2xl text-pl-green">{money(month.potPerWinner)}</span>{' '}
-                <span className="text-sm text-pl-muted">won</span>
-              </p>
+              {confirmed && (
+                <p className="mt-2">
+                  <span className="display tnum text-2xl text-pl-green">{money(month.potPerWinner)}</span>{' '}
+                  <span className="text-sm text-pl-muted">won</span>
+                </p>
+              )}
             </div>
           </div>
         ))}
@@ -124,6 +184,67 @@ function MotmCard({ month, nameOf }: { month: Month; nameOf: (key: ManagerKey) =
           Top performer: <strong className="font-semibold">{month.topPerformer.playerName}</strong> for{' '}
           {nameOf(month.topPerformer.managerKey)},{' '}
           <span className="tnum font-semibold">{month.topPerformer.points}</span> pts
+        </p>
+      )}
+    </section>
+  )
+}
+
+/**
+ * League Leader: whoever is top of the season table, derived from confirmed
+ * gameweeks. Never provisional, since a table is a table. What changes week
+ * to week is the run: how long they have led, and when the top changes
+ * hands, who was displaced. Joint leaders share the card.
+ */
+function LeaderCard({ leader, nameOf }: { leader: Leader; nameOf: (key: ManagerKey) => string }) {
+  const joint = leader.keys.length > 1
+  const run =
+    leader.weeks === 1
+      ? `Leading since GW${leader.since}`
+      : `Leading since GW${leader.since} · ${leader.weeks} weeks at the top`
+
+  return (
+    <section className="card overflow-hidden">
+      <div className="flex items-start justify-between gap-3 border-b border-pl-border px-5 py-3">
+        <div>
+          <p className="eyebrow text-pl-cyan">{joint ? 'Joint league leaders' : 'League leader'}</p>
+          <p className="mt-0.5 text-xs text-pl-muted">After gameweek {leader.asOf}</p>
+        </div>
+        {leader.changed && (
+          <span className="rounded bg-pl-cyan px-1.5 py-0.5 text-[10px] font-bold tracking-wide text-pl-bg uppercase">
+            New leader
+          </span>
+        )}
+      </div>
+
+      <div className={`grid gap-px bg-pl-border ${joint ? 'sm:grid-cols-2' : ''}`}>
+        {leader.keys.map((key) => (
+          <div key={key} className="flex gap-4 bg-pl-surface p-5">
+            <CardImage
+              set="leader"
+              managerKey={key}
+              alt={`${nameOf(key)}, league leader`}
+              className="aspect-square w-28 shrink-0 sm:w-36"
+            />
+            <div className="flex min-w-0 flex-1 flex-col justify-center">
+              <p className="display truncate text-2xl leading-[1.2] text-pl-text">{nameOf(key)}</p>
+              <p className="mt-1.5 text-sm text-pl-muted">
+                <span className="tnum font-semibold text-pl-text">{leader.total}</span> points
+              </p>
+              <p className="mt-2 text-sm text-pl-cyan">
+                {joint && leader.sinceByKey[key] !== leader.since
+                  ? `Drew level at GW${leader.sinceByKey[key]}`
+                  : run}
+              </p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {leader.changed && leader.displaced && (
+        <p className="border-t border-pl-border bg-pl-surface-2 px-5 py-3 text-sm text-pl-text">
+          Took over from <strong className="font-semibold">{nameOf(leader.displaced)}</strong> at gameweek{' '}
+          {leader.asOf}.
         </p>
       )}
     </section>
@@ -171,15 +292,21 @@ export function Home() {
   const { data } = useData()
   const nameOf = (key: string) => data.league.managers.find((m) => m.key === key)?.displayName ?? key
 
-  // The latest week with money attached to it. A finished-but-unchecked week
-  // has no Koch yet, so it deliberately does not appear here.
-  const settled = data.gameweeks.filter((gw) => gw.dataChecked)
-  const latestKoch = settled.at(-1) ?? null
+  // The Koch card shows the latest week that has any scores: live and marked
+  // as things stand while unconfirmed, final once FPL confirms it.
+  const latestKoch = [...data.gameweeks].reverse().find((gw) => Object.keys(gw.scores).length > 0) ?? null
+  const provisional = latestKoch && !latestKoch.dataChecked ? latestKoch : null
 
-  const provisional = data.gameweeks.find((gw) => gw.finished && !gw.dataChecked) ?? null
-
-  const settledMonths = data.months.filter((m) => m.settled)
-  const latestMotm = settledMonths.at(-1) ?? null
+  // Likewise the month: the latest with any gameweeks played.
+  const latestMotm = [...data.months].reverse().find((m) => m.gameweekIds.length > 0) ?? null
+  const motmConfirmedOn = latestMotm
+    ? (data.gameweeks
+        .filter((gw) => gw.month === latestMotm.id)
+        .map((gw) => gw.confirmExpectedUtc)
+        .filter((x): x is string => Boolean(x))
+        .sort()
+        .at(-1) ?? null)
+    : null
 
   const currentMonth = data.months.find((m) => m.id === data.season.currentMonth) ?? null
 
@@ -195,10 +322,10 @@ export function Home() {
         <div className="space-y-6">
           <DeadlineStrip gameweeks={data.gameweeks} />
 
-          {provisional && (
+          {provisional?.finished && (
             <p className="rounded-md border border-pl-border bg-pl-surface px-4 py-3 text-sm text-pl-muted">
               Gameweek {provisional.id} has finished but FPL has not confirmed the final points yet. It shows as
-              provisional and no money is attached until it does.
+              things stand and no money is attached until it does.
             </p>
           )}
 
@@ -213,12 +340,22 @@ export function Home() {
           )}
 
           {latestMotm ? (
-            <MotmCard month={latestMotm} nameOf={nameOf} />
+            <MotmCard month={latestMotm} nameOf={nameOf} confirmedOn={motmConfirmedOn} />
           ) : (
             <AwaitingAward
               eyebrow="Manager of the month"
               title="No manager of the month yet"
               when="First award: end of August."
+            />
+          )}
+
+          {data.season.leader ? (
+            <LeaderCard leader={data.season.leader} nameOf={nameOf} />
+          ) : (
+            <AwaitingAward
+              eyebrow="League leader"
+              title="No leader yet"
+              when="Top of the table once gameweek 1 is confirmed, Saturday 22 August."
             />
           )}
 

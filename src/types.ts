@@ -59,6 +59,8 @@ export interface Gameweek {
   finished: boolean
   /** From the classic FPL API — Draft has no such field. Money gate. */
   dataChecked: boolean
+  /** When FPL is expected to confirm the week: the day after its last kickoff. An estimate for copy, never a gate. */
+  confirmExpectedUtc: string | null
   scores: Record<ManagerKey, number>
   /**
    * Everyone tied on the lowest score. Empty while the week is provisional.
@@ -120,8 +122,27 @@ export interface SeasonRow {
   topPerformer: TopPerformer | null
 }
 
+/** Top of the table, derived from confirmed gameweek history. Null before GW1 confirms. */
+export interface Leader {
+  /** Everyone on the top total; more than one means joint leaders. */
+  keys: ManagerKey[]
+  total: number
+  /** First gameweek of the longest-standing current leader's unbroken run. */
+  since: number
+  sinceByKey: Record<ManagerKey, number>
+  /** The latest confirmed gameweek. */
+  asOf: number
+  /** Confirmed gameweeks in the run, inclusive. */
+  weeks: number
+  /** Who led before the run began, when that was one manager no longer at the top. */
+  displaced: ManagerKey | null
+  /** The top changed hands at the latest confirmed gameweek. */
+  changed: boolean
+}
+
 export interface Season {
   rows: SeasonRow[]
+  leader: Leader | null
   /** The gameweek `gw` refers to, or null before any week settles. */
   latestSettledGameweek: number | null
   /** The month `month` refers to. */

@@ -6,7 +6,7 @@
  * notices until it is that person's week. So the build fails instead.
  *
  * Two different rules, deliberately:
- *   icon / koch / motm — must hold exactly the eleven manager keys. 33 files.
+ *   icon / koch / motm / leader — must hold exactly the eleven manager keys. 44 files.
  *   winner            — one image per PAST SEASON, not per manager. Validated
  *                       the other way round: every entry in honours.json must
  *                       have a file. Nine managers having none is expected.

@@ -42,6 +42,7 @@ const RECIPES = {
   icon: { fit: 'cover', sizes: [64, 128], faceCrop: true },
   koch: { fit: 'inside', sizes: [900] },
   motm: { fit: 'inside', sizes: [900] },
+  leader: { fit: 'inside', sizes: [900] },
   winner: { fit: 'inside', sizes: [900] },
 }
 
@@ -204,13 +205,27 @@ async function main() {
 
   const ignored = classified.filter((entry) => entry.status === 'ignored')
   const knownOther = classified.filter((entry) => entry.status === 'known-other')
+  const held = classified.filter((entry) => entry.status === 'held')
   const badKeys = classified.filter((entry) => entry.status === 'unknown-key')
+  const aliased = jobs.filter((job) => job.aliasOf)
 
   console.log(`Scanned ${SOURCE_DIR}/ — ${classified.length} files.\n`)
 
   if (knownOther.length > 0) {
     console.log(`Not manager images, expected (${knownOther.length}):`)
     for (const entry of knownOther) console.log(`  · ${entry.filename.padEnd(24)} ${entry.reason}`)
+    console.log()
+  }
+
+  if (held.length > 0) {
+    console.log(`Held back (${held.length}):`)
+    for (const entry of held) console.log(`  · ${entry.filename.padEnd(24)} ${entry.reason}`)
+    console.log()
+  }
+
+  if (aliased.length > 0) {
+    console.log(`Key corrected (${aliased.length}):`)
+    for (const job of aliased) console.log(`  · ${job.filename.padEnd(24)} "${job.aliasOf}" read as "${job.key}"`)
     console.log()
   }
 
@@ -230,7 +245,7 @@ async function main() {
   }
 
   if (jobs.length === 0) {
-    console.error(`No manager images in ${SOURCE_DIR}/. Expected {key}.{icon|koch|motm|winner}.{png|jpg}`)
+    console.error(`No manager images in ${SOURCE_DIR}/. Expected {key}.{icon|koch|motm|leader|winner}.{png|jpg}`)
     process.exit(1)
   }
 
@@ -250,7 +265,7 @@ async function main() {
   }
 
   // Report the manager set's completeness here, at import, rather than leaving
-  // it to the build. 11 keys × 3 sets = 33.
+  // it to the build. 11 keys × 4 sets = 44.
   const missing = []
   for (const set of MANAGER_SETS) {
     for (const key of MANAGER_KEYS) {

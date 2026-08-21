@@ -203,7 +203,7 @@ export function CardImage({
   alt,
   className = '',
 }: {
-  set: 'koch' | 'motm' | 'winner'
+  set: 'koch' | 'motm' | 'leader' | 'winner'
   managerKey: string
   alt: string
   className?: string

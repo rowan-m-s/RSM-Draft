@@ -78,7 +78,7 @@ const PL = `${RESOURCES}/premierleague`
 /** Prefixes with Vite's base so assets resolve under the Pages subpath. */
 export const asset = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`
 
-export const managerImage = (set: 'icon' | 'koch' | 'motm' | 'winner', key: string, format: 'webp' | 'jpg') =>
+export const managerImage = (set: 'icon' | 'koch' | 'motm' | 'leader' | 'winner', key: string, format: 'webp' | 'jpg') =>
   asset(`images/${set}/${key}.${format}`)
 
 /** The icon set also has an @2x, for anything rendered above 64px. */
