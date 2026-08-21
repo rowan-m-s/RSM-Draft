@@ -1,6 +1,7 @@
 import { CardPhoto } from './Img'
 import { PlayerFlag } from './PlayerFlag'
 import type { Availability } from '../lib/availability'
+import { clubPhotoScale } from '../lib/photoFraming'
 import type { Position } from '../types'
 
 /**
@@ -30,6 +31,7 @@ export interface CardPlayer extends Availability {
   name: string
   position: Position
   photoCode: number
+  clubCode: number
 }
 
 interface PlayerCardProps {
@@ -74,6 +76,7 @@ export function PlayerCard({ player, line, bench = false, sub = null }: PlayerCa
           name={player.name}
           width={bench ? 88 : 104}
           height={bench ? 82 : 98}
+          scale={clubPhotoScale(player.clubCode)}
           className="absolute inset-0 h-full w-full object-cover object-top"
         />
         <PlayerFlag player={player} size={14} className="absolute top-0 right-0" />
@@ -106,6 +109,7 @@ export function PlayerCardCompact({ player, line, bench = false, sub = null }: P
           name={player.name}
           width={66}
           height={58}
+          scale={clubPhotoScale(player.clubCode)}
           className="absolute inset-0 h-full w-full object-cover object-top"
         />
         <PlayerFlag player={player} size={11} className="absolute top-0 right-0" />

@@ -67,29 +67,20 @@
   --chevron-slope: 0.105;
   --chevron-fold: 1.11;
 
-  /* Type. Four roles, one place; the faces behind them are swapped below
-     for the two Outfit trials and this block is what a final choice edits.
+  /* Type. Outfit throughout, chosen over a display-only trial on 2026-08-21:
+     at 12px it measured 1.2% narrower than Archivo across the team names, so
+     it costs no columns, and its tabular figures hold the score columns
+     (tables and .tnum force tabular-nums; Outfit's default figures are
+     strongly proportional, so never show a number outside one of those).
+     Four roles so a future change can be partial:
        sans     body, tables, dense text
        display  the large numerals and page titles (.display)
        brand    wordmark-adjacent chrome: nav items, banner eyebrow and subtitle
        mark     the Fantasy Draft lockup */
-  --font-sans: 'Archivo', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --font-display: 'Archivo Narrow', 'Archivo', ui-sans-serif, system-ui, sans-serif;
-  --font-brand: 'Archivo', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-sans: 'Outfit', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+  --font-brand: 'Outfit', ui-sans-serif, system-ui, sans-serif;
   --font-mark: 'Outfit', ui-sans-serif, system-ui, sans-serif;
-}
-
-/* Type trials, Addendum 03 follow-up. Selected by ?type= in the URL.
-     display: Outfit on the wordmark, banners, nav and large numerals only.
-     all:     Outfit everywhere, including table rows and dense text. */
-:root[data-type='display'] {
-  --font-display: 'Outfit', ui-sans-serif, system-ui, sans-serif;
-  --font-brand: 'Outfit', ui-sans-serif, system-ui, sans-serif;
-}
-:root[data-type='all'] {
-  --font-sans: 'Outfit', ui-sans-serif, system-ui, sans-serif;
-  --font-display: 'Outfit', ui-sans-serif, system-ui, sans-serif;
-  --font-brand: 'Outfit', ui-sans-serif, system-ui, sans-serif;
 }
 
 @layer base {

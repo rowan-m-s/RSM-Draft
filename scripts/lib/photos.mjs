@@ -100,11 +100,22 @@ export async function findMissingPhotos({
     resolves(legacyPhotoUrl(player.photoCode), userAgent)
   )
 
+  // The other direction: an override takes precedence in the browser, so a
+  // stopgap photo would shadow the real one forever once FPL publishes it.
+  // Probe every overridden player against the current CDN and say which
+  // files can go.
+  const overridden = owned.filter((player) => overrides.has(player.photoCode))
+  const overrideOnCurrent = await mapWithLimit(overridden, concurrency, (player) =>
+    resolves(photoUrl(player.photoCode), userAgent)
+  )
+
   return {
     /** Nothing anywhere. Silhouette until an override is supplied. */
     noImage: withoutCurrent.filter((_, i) => !onLegacy[i]),
     /** Showing last season's photo. Self-heals; no action needed. */
     legacyOnly: withoutCurrent.filter((_, i) => onLegacy[i]),
+    /** Has an override, but the CDN now has a current photo. Delete the file. */
+    redundantOverrides: overridden.filter((_, i) => overrideOnCurrent[i]),
   }
 }
 
@@ -123,12 +134,22 @@ function table(players, nameOf, withFilename) {
     })
 }
 
-export function formatMissingReport({ noImage, legacyOnly }, nameOf) {
-  if (noImage.length === 0 && legacyOnly.length === 0) {
+export function formatMissingReport({ noImage, legacyOnly, redundantOverrides = [] }, nameOf) {
+  if (noImage.length === 0 && legacyOnly.length === 0 && redundantOverrides.length === 0) {
     return 'Every owned player has a current photo.'
   }
 
   const lines = []
+
+  if (redundantOverrides.length > 0) {
+    lines.push(
+      `${redundantOverrides.length} override(s) are no longer needed: the CDN now has a current photo`,
+      'for these players, but the local file still wins. Delete each file listed:',
+      '',
+      ...table(redundantOverrides, nameOf, true),
+      ''
+    )
+  }
 
   if (noImage.length > 0) {
     lines.push(

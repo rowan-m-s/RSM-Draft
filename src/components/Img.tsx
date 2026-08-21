@@ -24,6 +24,7 @@ interface ImgProps {
   width?: number
   height?: number
   loading?: 'lazy' | 'eager'
+  style?: React.CSSProperties
 }
 
 /**
@@ -46,6 +47,7 @@ export function Img({
   width,
   height,
   loading = 'lazy',
+  style,
 }: ImgProps) {
   const [index, setIndex] = useState(0)
 
@@ -55,7 +57,7 @@ export function Img({
 
   const src = sources[index]
   if (!src) {
-    return <img src={fallback} alt={alt} className={className} width={width} height={height} />
+    return <img src={fallback} alt={alt} className={className} width={width} height={height} style={style} />
   }
 
   return (
@@ -71,6 +73,7 @@ export function Img({
         width={width}
         height={height}
         loading={loading}
+        style={style}
         onError={() => setIndex((current) => current + 1)}
       />
     </picture>
@@ -146,12 +149,15 @@ export function CardPhoto({
   name,
   width,
   height,
+  scale = 1,
   className = '',
 }: {
   photoCode: number
   name: string
   width: number
   height: number
+  /** Per-club framing correction; see lib/photoFraming.ts. */
+  scale?: number
   className?: string
 }) {
   const candidates = playerPhotoCandidates(photoCode)
@@ -165,6 +171,7 @@ export function CardPhoto({
       width={width}
       height={height}
       className={className}
+      style={scale !== 1 ? { transform: `scale(${scale})`, transformOrigin: '50% 100%' } : undefined}
     />
   )
 }
