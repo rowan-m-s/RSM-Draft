@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { Banner } from '../components/Banner'
 import { CardImage, ManagerAvatar, PlayerPhoto } from '../components/Img'
 import { ManagerCell, PageBody } from '../components/Layout'
@@ -70,6 +71,15 @@ function ManagerProfile({ row, onClose }: { row: SeasonRow; onClose: () => void 
         </div>
 
         <div className="space-y-5 p-5">
+          {/* The main action on this screen, so it sits under the stats rather
+              than at the foot of a modal that scrolls a long way. */}
+          <Link
+            to={`/managers/${row.key}/squad`}
+            className="block w-full rounded-md bg-pl-text px-4 py-2.5 text-center text-sm font-semibold text-pl-bg hover:bg-pl-muted sm:inline-block sm:w-auto"
+          >
+            Squad view
+          </Link>
+
           <section>
             <h3 className="eyebrow border-b border-pl-border pb-1.5 text-pl-muted">Balance</h3>
             <div className="mt-3 flex flex-wrap items-baseline gap-x-6 gap-y-2">
@@ -106,7 +116,7 @@ function ManagerProfile({ row, onClose }: { row: SeasonRow; onClose: () => void 
 
           {best && (
             <section>
-              <h3 className="eyebrow border-b border-pl-border pb-1.5 text-pl-muted">Best performer</h3>
+              <h3 className="eyebrow border-b border-pl-border pb-1.5 text-pl-muted">MVP</h3>
               <div className="mt-3 flex items-center gap-3">
                 <PlayerPhoto
                   photoCode={best.photoCode}
