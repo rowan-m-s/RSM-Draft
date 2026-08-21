@@ -279,12 +279,9 @@ function GameweekTable({ gameweek, nameOf }: { gameweek: Gameweek; nameOf: (k: M
   )
 }
 
-function MonthView() {
+function MonthView({ selected, setSelected }: { selected: string | undefined; setSelected: (id: string) => void }) {
   const { data } = useData()
   const nameOf = (key: string) => data.league.managers.find((m) => m.key === key)?.displayName ?? key
-
-  const withGameweeks = data.months.filter((m) => m.gameweekIds.length > 0)
-  const [selected, setSelected] = useState(withGameweeks.at(-1)?.id ?? data.months[0]?.id)
   const month = data.months.find((m) => m.id === selected) ?? data.months[0]
 
   if (!month) {
@@ -444,9 +441,41 @@ function MonthTable({ month, nameOf }: { month: Month; nameOf: (k: ManagerKey) =
   )
 }
 
+/**
+ * The small money figure at the right of the view switch. Month: that
+ * month's pot, £5 per Koch charge across its confirmed weeks (a tied week
+ * charges everyone tied), "so far" until every week in the month has
+ * confirmed, and £0 before any month exists so it does not pop in later.
+ * Overall: the season prize, fixed, and named differently so it reads as a
+ * different thing. Gameweek: nothing, because a single week has a £5
+ * charge, not a prize.
+ */
+function Pot({ label, amount, qualifier }: { label: string; amount: number; qualifier?: string }) {
+  return (
+    <p className="text-right text-[11px] leading-tight text-pl-muted sm:text-xs">
+      <span className="block sm:inline">{label} </span>
+      <span className="tnum text-sm font-semibold text-pl-text">{money(amount)}</span>
+      {qualifier && <span> {qualifier}</span>}
+    </p>
+  )
+}
+
 export function LeagueTable() {
   const { data } = useData()
   const [view, setView] = useState<View>('overall')
+
+  const withGameweeks = data.months.filter((m) => m.gameweekIds.length > 0)
+  const [selectedMonth, setSelectedMonth] = useState<string | undefined>(
+    withGameweeks.at(-1)?.id ?? data.months[0]?.id
+  )
+  const month = data.months.find((m) => m.id === selectedMonth) ?? data.months[0] ?? null
+
+  const pot =
+    view === 'month' ? (
+      <Pot label="Prize pot" amount={month?.pot ?? 0} qualifier={month?.settled ? undefined : 'so far'} />
+    ) : view === 'overall' ? (
+      <Pot label="Season prize" amount={data.season.seasonPrize} />
+    ) : null
 
   return (
     <>
@@ -458,12 +487,12 @@ export function LeagueTable() {
 
       {/* The view switch sits directly under the banner, where the reference
           puts its tab strip, and above the table. */}
-      <Segmented label="Showing" value={view} options={VIEWS} onChange={setView} />
+      <Segmented label="Showing" value={view} options={VIEWS} onChange={setView} aside={pot} />
 
       <PageBody>
         {view === 'overall' && <Overall />}
         {view === 'gameweek' && <GameweekView />}
-        {view === 'month' && <MonthView />}
+        {view === 'month' && <MonthView selected={selectedMonth} setSelected={setSelectedMonth} />}
       </PageBody>
     </>
   )
