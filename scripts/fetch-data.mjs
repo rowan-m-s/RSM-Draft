@@ -25,6 +25,7 @@ import {
   buildGameweeks,
   buildMonths,
   buildPlayers,
+  readElementStats,
   buildSeason,
   buildSquad,
   buildDraftSquads,
@@ -42,12 +43,10 @@ import { updateFraming } from './lib/framing.mjs'
  * Must match src/lib/assets.ts. Only used to ask the CDN whether a photo
  * exists, so the smallest size is enough.
  */
-const playerPhotoUrl = (code) =>
-  `https://resources.premierleague.com/premierleague25/photos/players/40x40/${code}.png`
+const playerPhotoUrl = (code) => `https://resources.premierleague.com/premierleague25/photos/players/40x40/${code}.png`
 
 /** The last-resort tier, checked so the report can say which players hit it. */
-const legacyPhotoUrl = (code) =>
-  `https://resources.premierleague.com/premierleague/photos/players/40x40/p${code}.png`
+const legacyPhotoUrl = (code) => `https://resources.premierleague.com/premierleague/photos/players/40x40/p${code}.png`
 
 /**
  * The photo the cards actually draw, current tier then legacy. With an ETag
@@ -83,7 +82,8 @@ const SEASON = '2026/27'
 const DRAFT_API = 'https://draft.premierleague.com/api'
 const CLASSIC_API = 'https://fantasy.premierleague.com/api'
 
-const DATA_DIR = 'public/data'
+// Overridable so a run can be checked without touching the published data.
+const DATA_DIR = process.env.DATA_DIR ?? 'public/data'
 const CACHE_DIR = path.join(DATA_DIR, 'cache')
 const SQUAD_DIR = path.join(DATA_DIR, 'squads')
 const MANAGERS_CONFIG = 'src/config/managers.json'
@@ -262,8 +262,7 @@ async function writeIfChanged(file, payload, now) {
     /* first run */
   }
 
-  const unchanged =
-    existing && JSON.stringify(withoutTimestamp(existing)) === JSON.stringify(withoutTimestamp(payload))
+  const unchanged = existing && JSON.stringify(withoutTimestamp(existing)) === JSON.stringify(withoutTimestamp(payload))
   const age = existing?.generatedAt ? now - new Date(existing.generatedAt).getTime() : Infinity
 
   if (unchanged && age < HEARTBEAT_MS) {
@@ -396,10 +395,15 @@ async function main() {
     throw new FetchError(
       `Manager mapping does not match the league:\n` +
         unmapped
-          .map((e) => `  league entry ${e.entry_id} (${e.entry_name}, ${e.player_first_name} ${e.player_last_name}) has no mapping`)
+          .map(
+            (e) =>
+              `  league entry ${e.entry_id} (${e.entry_name}, ${e.player_first_name} ${e.player_last_name}) has no mapping`
+          )
           .join('\n') +
         (unmapped.length && dangling.length ? '\n' : '') +
-        dangling.map((m) => `  mapping "${m.key}" points at entryId ${m.entryId}, which is not in the league`).join('\n')
+        dangling
+          .map((m) => `  mapping "${m.key}" points at entryId ${m.entryId}, which is not in the league`)
+          .join('\n')
     )
   }
 
@@ -496,7 +500,11 @@ async function main() {
 
     const livePayload = await getJson(`${DRAFT_API}/event/${event.id}/live`)
     const live = readLivePoints(livePayload, event.id)
-    const used = new Set(Object.values(squads).flat().map((pick) => String(pick.element)))
+    const used = new Set(
+      Object.values(squads)
+        .flat()
+        .map((pick) => String(pick.element))
+    )
     const elementPoints = Object.fromEntries(Object.entries(live).filter(([id]) => used.has(id)))
     // Minutes, for telling a player who played badly from one who did not play.
     const elementMinutes = Object.fromEntries(
@@ -526,6 +534,8 @@ async function main() {
 
     const record = {
       event: event.id,
+      // Every element's week, for the season totals on the Players page.
+      elementStats: readElementStats(livePayload),
       deadlineUtc: event.deadline_time,
       started: Boolean(event.finished) || Object.keys(live).length > 0,
       finished: Boolean(event.finished),
@@ -545,9 +555,7 @@ async function main() {
      is until the first deadline passes. */
   const choices = draftChoices?.choices ?? []
   if (choices.length > 0) {
-    const positionById = new Map(
-      elements.map((e) => [e.id, ['', 'GKP', 'DEF', 'MID', 'FWD'][e.element_type]])
-    )
+    const positionById = new Map(elements.map((e) => [e.id, ['', 'GKP', 'DEF', 'MID', 'FWD'][e.element_type]]))
     const keyByEntryId = new Map(managers.map((m) => [m.entryId, m.key]))
     const { squads, formations } = buildDraftSquads({
       choices,
@@ -559,7 +567,10 @@ async function main() {
     if (covered.length !== managers.length) {
       throw new FetchError(
         `Draft covers ${covered.length}/${managers.length} managers. ` +
-          `Missing: ${managers.filter((m) => !covered.includes(m.key)).map((m) => m.key).join(', ')}.`
+          `Missing: ${managers
+            .filter((m) => !covered.includes(m.key))
+            .map((m) => m.key)
+            .join(', ')}.`
       )
     }
     log(`GW0 draft: ${choices.length} picks, inferred XIs ${Object.values(formations).join(' ')}`)
@@ -600,7 +611,14 @@ async function main() {
   const managerKeys = enrichedManagers.map((m) => m.key)
   const elementName = (id) => elements.find((e) => e.id === Number(id))?.web_name ?? `Player ${id}`
 
-  const gameweeks = buildGameweeks({ events, classicDataCheckedById, scoresByGw, perGw, elementName, fixtures: allFixtures })
+  const gameweeks = buildGameweeks({
+    events,
+    classicDataCheckedById,
+    scoresByGw,
+    perGw,
+    elementName,
+    fixtures: allFixtures,
+  })
   const months = buildMonths({ gameweeks, managerKeys, perGw, elementName })
   const season = buildSeason({ gameweeks, months, managerKeys, generatedAt, perGw, elementName })
 
@@ -622,9 +640,7 @@ async function main() {
   // counts only that month's confirmed weeks, the same basis as its MVP
   // line, so the graphic and the line can never disagree.
   const currentMonthId = [...months].reverse().find((m) => m.gameweekIds.length > 0)?.id ?? null
-  const currentMonthIds = gameweeks
-    .filter((gw) => gw.month === currentMonthId && gw.dataChecked)
-    .map((gw) => gw.id)
+  const currentMonthIds = gameweeks.filter((gw) => gw.month === currentMonthId && gw.dataChecked).map((gw) => gw.id)
 
   const choose = (set, byManager, gameweekIds, label) => {
     const out = {}
@@ -647,7 +663,9 @@ async function main() {
         out[key] = pick.code
       } else {
         out[key] = candidates[0].code
-        log(`  ${label}: ${key} owns none of ${candidates.map((c) => c.name).join(', ')}; showing ${candidates[0].name}.`)
+        log(
+          `  ${label}: ${key} owns none of ${candidates.map((c) => c.name).join(', ')}; showing ${candidates[0].name}.`
+        )
       }
     }
     return out
@@ -670,7 +688,7 @@ async function main() {
     teams,
     ownerByElementId,
     generatedAt,
-    gameweeksPlayed: finished.length,
+    statsByGameweek: Object.values(perGw).map((record) => record.elementStats ?? {}),
   })
 
   const invariant = checkBalanceInvariant({ season, months })
@@ -727,7 +745,11 @@ async function main() {
   for (const record of squadFiles) {
     // Carry the player details the page needs. A player traded away weeks ago
     // will not be in players.json's owned list, so the file has to stand alone.
-    const referenced = new Set(Object.values(record.squads).flat().map((pick) => pick.element))
+    const referenced = new Set(
+      Object.values(record.squads)
+        .flat()
+        .map((pick) => pick.element)
+    )
     const playerDetails = {}
     for (const id of referenced) {
       const element = elementById.get(id)

@@ -7,6 +7,7 @@ import {
   buildGameweeks,
   buildMonths,
   buildPlayers,
+  readElementStats,
   buildSeason,
   buildSquad,
   buildDraftSquads,
@@ -272,67 +273,86 @@ describe('buildPlayers', () => {
     { id: 1, code: 3, name: 'Arsenal', short_name: 'ARS' },
     { id: 2, code: 43, name: 'Man City', short_name: 'MCI' },
   ]
+  // What the bootstrap serves: identity, plus last season's totals, which
+  // must be ignored whatever they say.
   const elements = [
-    { id: 1, code: 154561, web_name: 'Raya', element_type: 1, team: 1, total_points: 162, points_per_game: '4.4', goals_scored: 0, assists: 0, clean_sheets: 19, bonus: 11, minutes: 3330 },
-    { id: 2, code: 223094, web_name: 'Haaland', element_type: 4, team: 2, total_points: 239, points_per_game: '6.8', goals_scored: 27, assists: 8, clean_sheets: 13, bonus: 43, minutes: 2953 },
-    { id: 3, code: 209289, web_name: 'Rice', element_type: 3, team: 1, total_points: 184, points_per_game: '5.1', goals_scored: 4, assists: 9, clean_sheets: 18, bonus: 23, minutes: 3100 },
+    { id: 1, code: 154561, web_name: 'Raya', element_type: 1, team: 1, total_points: 162, minutes: 3330 },
+    { id: 2, code: 223094, web_name: 'Haaland', element_type: 4, team: 2, total_points: 239, minutes: 2953 },
+    { id: 3, code: 209289, web_name: 'Rice', element_type: 3, team: 1, total_points: 184, minutes: 3100 },
   ]
-  // A season in progress, so the real figures are published rather than zeroed.
-  const midSeason = { teams, ownerByElementId: new Map(), generatedAt: 'x', gameweeksPlayed: 38 }
+  const week = (rows) =>
+    Object.fromEntries(
+      Object.entries(rows).map(([id, [points, minutes, goals = 0, assists = 0, cleanSheets = 0, bonus = 0]]) => [
+        id,
+        { points, minutes, goals, assists, cleanSheets, bonus },
+      ])
+    )
+  // Two live weeks. Haaland 13 + 2, Rice 6 + 8, Raya 1 + did not play.
+  const statsByGameweek = [
+    week({ 1: [1, 45], 2: [13, 90, 2, 0, 0, 3], 3: [6, 90, 0, 0, 1, 0] }),
+    week({ 1: [0, 0], 2: [2, 90], 3: [8, 90, 0, 1, 1, 0] }),
+  ]
+  const base = { elements, teams, ownerByElementId: new Map(), generatedAt: 'x', statsByGameweek }
 
-  it('splits owned from free agents and finds the leading scorer', () => {
-    const result = buildPlayers({ ...midSeason, elements, ownerByElementId: new Map([[2, 'rushy']]) })
+  it('sums the live weeks rather than reading the bootstrap total', () => {
+    const result = buildPlayers({ ...base, ownerByElementId: new Map([[2, 'rushy']]) })
     expect(result.owned.map((p) => p.name)).toEqual(['Haaland'])
+    expect(result.owned[0]).toMatchObject({ points: 15, goals: 2, bonus: 3 })
     expect(result.freeAgents.map((p) => p.name)).toEqual(['Rice', 'Raya'])
+    expect(result.freeAgents[0]).toMatchObject({ points: 14, assists: 1, cleanSheets: 2 })
     // The banner shows the best in the league whether owned or not.
     expect(result.leadingScorer.name).toBe('Haaland')
   })
 
+  it('takes points per game over games actually played', () => {
+    const result = buildPlayers(base)
+    // Raya played one of the two weeks, so his 1 point is 1.0 a game, not 0.5.
+    expect(result.freeAgents.find((p) => p.name === 'Raya').ppg).toBe(1)
+    expect(result.freeAgents.find((p) => p.name === 'Haaland').ppg).toBe(7.5)
+  })
+
   it('builds the photo reference from `code`, which Draft uses instead of `photo`', () => {
-    const result = buildPlayers({ ...midSeason, elements })
+    const result = buildPlayers(base)
     expect(result.freeAgents.find((p) => p.name === 'Raya').photoCode).toBe(154561)
     expect(result.freeAgents.find((p) => p.name === 'Raya').clubCode).toBe(3)
   })
 
   it('ranks within position', () => {
-    const result = buildPlayers({ ...midSeason, elements })
+    const result = buildPlayers(base)
     expect(result.freeAgents.find((p) => p.name === 'Haaland').positionRank).toBe(1)
     expect(result.freeAgents.find((p) => p.name === 'Raya').positionRank).toBe(1)
   })
-})
 
-describe('pre-season statistics', () => {
-  const teams = [{ id: 1, code: 43, name: 'Man City', short_name: 'MCI' }]
-  // What FPL actually serves before GW1: last season's totals.
-  const elements = [
-    { id: 1, code: 223094, web_name: 'Haaland', element_type: 4, team: 1, total_points: 239, points_per_game: '6.8', goals_scored: 27, assists: 8, clean_sheets: 13, bonus: 43, minutes: 2953 },
-  ]
-
-  it('zeroes last season’s figures before a gameweek is played', () => {
-    const result = buildPlayers({ elements, teams, ownerByElementId: new Map([[1, 'kellett']]), generatedAt: 'x', gameweeksPlayed: 0 })
+  it('zeroes everything before a gameweek is played, whatever the bootstrap says', () => {
+    // Before GW1 the bootstrap carries last season's 239 for Haaland.
+    const result = buildPlayers({ ...base, ownerByElementId: new Map([[2, 'kellett']]), statsByGameweek: [] })
     // Ownership is real and must survive; the statistics are not this season's.
     expect(result.owned[0].owner).toBe('kellett')
-    expect(result.owned[0]).toMatchObject({ points: 0, goals: 0, assists: 0, bonus: 0, ppg: 0 })
+    expect(result.owned[0]).toMatchObject({ points: 0, goals: 0, assists: 0, bonus: 0, ppg: 0, positionRank: 0 })
     // No leading scorer exists before anyone has scored.
     expect(result.leadingScorer).toBeNull()
   })
 
-  it('passes the real figures through once the season is under way', () => {
-    const played = [{ ...elements[0], total_points: 13, goals_scored: 2, assists: 0, bonus: 3, minutes: 90 }]
-    const result = buildPlayers({ elements: played, teams, ownerByElementId: new Map(), generatedAt: 'x', gameweeksPlayed: 1 })
-    expect(result.freeAgents[0].points).toBe(13)
-    expect(result.leadingScorer.name).toBe('Haaland')
-  })
-
-  it('refuses to publish if FPL ever serves carryover after kick-off', () => {
-    // Nobody can play 2953 minutes in one gameweek. If this ever passes
-    // silently, every points figure on the site is last season's.
-    expect(() =>
-      buildPlayers({ elements, teams, ownerByElementId: new Map(), generatedAt: 'x', gameweeksPlayed: 1 })
-    ).toThrow(/impossible/)
+  it('moves during a live gameweek, since the live week is one of the inputs', () => {
+    const result = buildPlayers({ ...base, statsByGameweek: [statsByGameweek[0]] })
+    expect(result.freeAgents.find((p) => p.name === 'Haaland').points).toBe(13)
   })
 })
 
+describe('readElementStats', () => {
+  it('reads the six statistics from a live payload, for every element', () => {
+    const live = {
+      elements: {
+        7: { stats: { total_points: 9, minutes: 90, goals_scored: 1, assists: 0, clean_sheets: 1, bonus: 1 } },
+        8: { stats: { total_points: 0, minutes: 0 } },
+      },
+    }
+    expect(readElementStats(live)).toEqual({
+      7: { points: 9, minutes: 90, goals: 1, assists: 0, cleanSheets: 1, bonus: 1 },
+      8: { points: 0, minutes: 0, goals: 0, assists: 0, cleanSheets: 0, bonus: 0 },
+    })
+  })
+})
 describe('buildSquad', () => {
   // 1–11 start, 12–15 are the bench in order.
   const picks = Array.from({ length: 15 }, (_, i) => ({ element: 100 + i, position: i + 1 }))
@@ -611,7 +631,8 @@ describe('buildFixturePoints', () => {
     const { byFixture, mismatched } = buildFixturePoints({ live })
     expect(byFixture[101][10]).toEqual({ total: 7, components: [mins(90, 2), goal(1, 5)] })
     expect(byFixture[102][10].total).toBe(5)
-    expect(byFixture[102][10].components.map((c) => c.stat)).toEqual(['minutes', 'goals_scored', 'bonus'])
+    // The scoreless goal line is dropped: only what scored is listed.
+    expect(byFixture[102][10].components.map((c) => c.stat)).toEqual(['minutes', 'bonus'])
     expect(mismatched).toEqual([{ element: 11, explained: 12, total: 13 }])
   })
 

@@ -1,5 +1,6 @@
 import { Fragment, useState } from 'react'
 import { Banner } from '../components/Banner'
+import { Breakdown, pts } from '../components/Breakdown'
 import { GameweekSlider } from '../components/GameweekSlider'
 import { ClubBadge, ManagerAvatar } from '../components/Img'
 import { PageBody } from '../components/Layout'
@@ -31,7 +32,9 @@ const LAST = 38
 function OwnedChip({ players }: { players: Player[] }) {
   if (players.length === 0) return <span className="text-xs text-pl-muted">0</span>
   return (
-    <span className="rounded-full bg-pl-surface-2 px-2 py-0.5 text-xs font-semibold text-pl-text">{players.length}</span>
+    <span className="rounded-full bg-pl-surface-2 px-2 py-0.5 text-xs font-semibold text-pl-text">
+      {players.length}
+    </span>
   )
 }
 
@@ -53,15 +56,7 @@ function Middle({ match }: { match: Match }) {
   )
 }
 
-function Side({
-  team,
-  align,
-  double,
-}: {
-  team: Team
-  align: 'left' | 'right'
-  double?: { n: number; of: number }
-}) {
+function Side({ team, align, double }: { team: Team; align: 'left' | 'right'; double?: { n: number; of: number } }) {
   const badge = <ClubBadge clubCode={team.code} club={team.name} size={22} />
   const name = (
     <span className="min-w-0">
@@ -69,7 +64,11 @@ function Side({
         <span className="sm:hidden">{team.shortName}</span>
         <span className="hidden sm:inline">{team.name}</span>
       </span>
-      {double && <span className="block text-[10px] text-pl-muted">{double.n === 1 ? '1st' : '2nd'} of {double.of} this week</span>}
+      {double && (
+        <span className="block text-[10px] text-pl-muted">
+          {double.n === 1 ? '1st' : '2nd'} of {double.of} this week
+        </span>
+      )}
     </span>
   )
   return align === 'left' ? (
@@ -89,46 +88,18 @@ function Side({
 type FixturePoints = { total: number; components: PointsComponent[] }
 
 /**
- * One line per component. Bonus is provisional until the week is confirmed:
- * the bonus points system settles a few hours after the whistle, so until
- * then the line says so, and if no bonus has been attributed yet the line
- * still appears to say it is pending.
+ * The owned players on one side of a match. Both sides read left to right
+ * in the same order, points first: "15pts  Eze  [face] Rushy". Tapping a
+ * row expands the breakdown beneath it.
  */
-function Breakdown({ points, confirmed }: { points: FixturePoints; confirmed: boolean }) {
-  const rows = [...points.components]
-  const hasBonus = rows.some((c) => c.stat === 'bonus')
-  if (!hasBonus && !confirmed) rows.push({ stat: 'bonus', name: 'Bonus', value: 0, points: 0 })
-  return (
-    <ul className="tnum mt-1.5 mb-1 space-y-0.5 rounded-md bg-pl-bg/50 px-3 py-2 text-xs">
-      {rows.map((c) => {
-        const provisional = c.stat === 'bonus' && !confirmed
-        return (
-          <li key={c.stat} className="flex items-baseline justify-between gap-4">
-            <span className="text-pl-muted">
-              {c.name}
-              {c.stat !== 'bonus' && c.value !== 0 && <span className="text-pl-muted/70"> · {c.value}</span>}
-              {provisional && <span className="text-pl-text"> · provisional</span>}
-            </span>
-            <span className="font-semibold text-pl-text">
-              {c.points > 0 ? `+${c.points}` : c.points}
-            </span>
-          </li>
-        )
-      })}
-    </ul>
-  )
-}
-
 function OwnedList({
   players,
   nameOf,
-  align,
   pointsFor,
   confirmed,
 }: {
   players: Player[]
   nameOf: (k: string) => string
-  align: 'left' | 'right'
   /** This fixture's points for a player, once the match has started. */
   pointsFor: (playerId: number) => FixturePoints | null
   confirmed: boolean
@@ -136,32 +107,44 @@ function OwnedList({
   const [open, setOpen] = useState<number | null>(null)
   if (players.length === 0) return <p className="text-xs text-pl-muted">None owned</p>
   return (
-    <ul className={`space-y-1.5 ${align === 'right' ? 'sm:text-right' : ''}`}>
+    <ul className="space-y-1">
       {players.map((p) => {
-        const pts = pointsFor(p.id)
+        const points = pointsFor(p.id)
         const isOpen = open === p.id
+        const row = (
+          <>
+            {points && (
+              <span className="tnum w-12 shrink-0 text-left text-sm font-bold text-pl-text">{pts(points.total)}</span>
+            )}
+            <span className="min-w-0 flex-1 truncate text-sm text-pl-text">{p.name}</span>
+            <ManagerAvatar managerKey={p.owner!} size={20} />
+            <span className="w-14 shrink-0 truncate text-xs text-pl-muted sm:w-16">{nameOf(p.owner!)}</span>
+          </>
+        )
         return (
           <li key={p.id}>
-            <div className={`flex items-center gap-2 ${align === 'right' ? 'sm:flex-row-reverse' : ''}`}>
-              <ManagerAvatar managerKey={p.owner!} size={20} />
-              <span className="min-w-0 flex-1 truncate text-sm text-pl-text">
-                {p.name} <span className="text-pl-muted">· {nameOf(p.owner!)}</span>
-              </span>
-              {pts && (
-                <button
-                  type="button"
-                  onClick={() => setOpen(isOpen ? null : p.id)}
-                  aria-expanded={isOpen}
-                  aria-label={`${p.name}, ${pts.total} points, ${isOpen ? 'hide' : 'show'} breakdown`}
-                  className={`tnum shrink-0 rounded px-2 py-0.5 text-sm font-bold transition-colors ${
-                    isOpen ? 'bg-pl-surface-2 text-pl-text' : 'text-pl-text hover:bg-pl-surface-2'
-                  }`}
-                >
-                  {pts.total}
-                </button>
-              )}
-            </div>
-            {pts && isOpen && <Breakdown points={pts} confirmed={confirmed} />}
+            {points ? (
+              <button
+                type="button"
+                onClick={() => setOpen(isOpen ? null : p.id)}
+                aria-expanded={isOpen}
+                aria-label={`${p.name}, ${points.total} points, ${isOpen ? 'hide' : 'show'} breakdown`}
+                className={`-mx-2 flex w-[calc(100%+1rem)] items-center gap-2 rounded px-2 py-0.5 text-left transition-colors ${
+                  isOpen ? 'bg-pl-surface-2' : 'hover:bg-pl-surface-2'
+                }`}
+              >
+                {row}
+              </button>
+            ) : (
+              <div className="flex items-center gap-2 py-0.5">{row}</div>
+            )}
+            {points && isOpen && (
+              <Breakdown
+                components={points.components}
+                confirmed={confirmed}
+                className="mt-1 mb-1.5 rounded-md bg-pl-bg/50 px-3 py-2"
+              />
+            )}
           </li>
         )
       })}
@@ -225,8 +208,8 @@ function MatchRow({
       </button>
       {open && (
         <div className="grid gap-4 border-t border-pl-border bg-pl-bg/40 px-4 py-3 sm:grid-cols-2">
-          <OwnedList players={who.home} nameOf={nameOf} align="left" pointsFor={pointsFor} confirmed={confirmed} />
-          <OwnedList players={who.away} nameOf={nameOf} align="right" pointsFor={pointsFor} confirmed={confirmed} />
+          <OwnedList players={who.home} nameOf={nameOf} pointsFor={pointsFor} confirmed={confirmed} />
+          <OwnedList players={who.away} nameOf={nameOf} pointsFor={pointsFor} confirmed={confirmed} />
         </div>
       )}
     </li>
@@ -258,8 +241,7 @@ export function Fixtures() {
 
   const matches = fixtures?.matches ?? []
   const teams = fixtures?.teams ?? []
-  const teamOf = (id: number) =>
-    teams.find((t) => t.id === id) ?? { id, name: `Team ${id}`, shortName: '???', code: 0 }
+  const teamOf = (id: number) => teams.find((t) => t.id === id) ?? { id, name: `Team ${id}`, shortName: '???', code: 0 }
 
   const inWeek = matchesIn(matches, gameweek)
   const days = groupByDay(inWeek)
@@ -301,8 +283,8 @@ export function Fixtures() {
                   ))}
                 </p>
                 <p className="mt-1.5 text-xs text-pl-muted">
-                  {blanks.length === 1 ? 'This club has' : 'These clubs have'} no fixture in gameweek {gameweek}.
-                  Their players score nothing this week.
+                  {blanks.length === 1 ? 'This club has' : 'These clubs have'} no fixture in gameweek {gameweek}. Their
+                  players score nothing this week.
                 </p>
               </div>
             )}
@@ -360,8 +342,8 @@ export function Fixtures() {
             )}
 
             <p className="text-xs leading-relaxed text-pl-muted">
-              Kickoff times are UK time. Owned counts are against current squads, so a past week shows who owns
-              those players now, not who owned them then.
+              Kickoff times are UK time. Owned counts are against current squads, so a past week shows who owns those
+              players now, not who owned them then.
             </p>
           </div>
         )}

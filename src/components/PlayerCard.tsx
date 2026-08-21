@@ -43,13 +43,19 @@ interface PlayerCardProps {
   sub?: 'on' | 'off' | null
 }
 
+/**
+ * The automatic substitution, as Draft applied it after the final whistle.
+ * Read from the API's `subs`, never computed here: the official app decides
+ * who scored, and this only reports it. The player who came on is marked
+ * SUB in the bench-to-pitch green; the one who made way gets a quiet arrow.
+ */
 function SubMarker({ sub }: { sub: 'on' | 'off' }) {
   return sub === 'on' ? (
     <span
       title="Came on as an automatic substitute"
-      className="absolute bottom-1 left-1 rounded-sm bg-pl-green px-1 text-[9px] leading-4 font-bold text-pl-bg"
+      className="absolute bottom-1 left-1 rounded-sm bg-pl-green px-1 text-[9px] leading-4 font-bold tracking-wide text-pl-bg"
     >
-      ▲
+      ▲ SUB
     </span>
   ) : (
     <span
@@ -81,7 +87,10 @@ export function PlayerCard({ player, line, bench = false, sub = null }: PlayerCa
         <PlayerFlag player={player} size={14} className="absolute top-0 right-0" />
         {sub && <SubMarker sub={sub} />}
       </div>
-      <p className="truncate bg-pl-bg px-1.5 text-center text-xs leading-5 font-semibold text-pl-text" title={player.name}>
+      <p
+        className="truncate bg-pl-bg px-1.5 text-center text-xs leading-5 font-semibold text-pl-text"
+        title={player.name}
+      >
         {player.name}
       </p>
       <p className="tnum truncate bg-pl-surface-2 px-1.5 text-center text-[11px] leading-5 text-pl-text" title={line}>

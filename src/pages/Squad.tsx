@@ -1,14 +1,15 @@
-import { useMemo } from 'react'
+import { useMemo, useState } from 'react'
 import { Link, useNavigate, useParams, useSearchParams } from 'react-router-dom'
 import { Banner } from '../components/Banner'
+import { Breakdown, pts } from '../components/Breakdown'
 import { GameweekSlider } from '../components/GameweekSlider'
 import { ManagerAvatar } from '../components/Img'
 import { PlayerCard, PlayerCardCompact } from '../components/PlayerCard'
 import { PageBody } from '../components/Layout'
 import { useData } from '../data'
 import { gameweekPoints, rankLabel } from '../lib/season'
-import { useSquad } from '../lib/useSquad'
-import type { Fixture, ManagerKey, Position, SquadPick, SquadPlayer } from '../types'
+import { usePoints, useSquad } from '../lib/useSquad'
+import type { Fixture, ManagerKey, PointsComponent, Position, SquadPick, SquadPlayer } from '../types'
 
 const ROWS: Position[] = ['GKP', 'DEF', 'MID', 'FWD']
 
@@ -34,7 +35,7 @@ function fixtureLabel(fixtures: Fixture[] | undefined, shortNameOf: (id: number)
  */
 function cardLine(entry: PitchPlayer, mode: CardMode, fixtureText: string): string {
   const { pick } = entry
-  if (mode === 'points') return String(pick?.points ?? 0)
+  if (mode === 'points') return pts(pick?.points ?? 0)
   if (mode === 'pick') return `Pick ${pick?.pick ?? '?'}${pick?.sequence ? ` (${pick.sequence})` : ''}`
   return fixtureText
 }
@@ -77,9 +78,9 @@ export function PointsStrip({
 
   return (
     <section
-      className={`card mb-3 flex items-center justify-between gap-4 px-4 py-3 sm:mb-4 sm:px-5 ${provisional ? 'opacity-90' : ''}`}
+      className={`card mb-3 flex flex-col items-center gap-1.5 px-4 py-3 text-center sm:mb-4 sm:px-5 ${provisional ? 'opacity-90' : ''}`}
     >
-      <div className="flex items-baseline gap-2.5">
+      <div className="flex items-baseline justify-center gap-2.5">
         <span className={`display tnum text-4xl leading-none sm:text-5xl ${tone}`}>{points.xi}</span>
         <span className="text-sm text-pl-muted">
           GW{gameweek} points
@@ -91,15 +92,12 @@ export function PointsStrip({
           </span>
         )}
       </div>
-      <div className="tnum text-right text-xs text-pl-muted">
-        <p>
-          <span className="font-semibold text-pl-text">{rankLabel(points.rank)}</span> of {points.of}
-          {provisional && ' so far'}
-        </p>
-        <p className="mt-0.5">
-          Bench <span className="font-semibold text-pl-text">{points.bench}</span>
-        </p>
-      </div>
+      <p className="tnum text-xs text-pl-muted">
+        <span className="font-semibold text-pl-text">{rankLabel(points.rank)}</span> of {points.of}
+        {provisional && ' so far'}
+        <span className="mx-1.5">·</span>
+        Bench <span className="font-semibold text-pl-text">{points.bench}</span>
+      </p>
     </section>
   )
 }
@@ -128,6 +126,10 @@ export function Squad() {
 
   const { squad, fixtures, loading, error } = useSquad(gameweek)
   const gameweekMeta = data.gameweeks.find((gw) => gw.id === gameweek)
+  const { points: pointsFile } = usePoints(gameweek)
+  // One card open at a time; a new week closes it.
+  const [openKey, setOpenKey] = useState<string | null>(null)
+  const open = openKey?.startsWith(`${gameweek}:`) ? Number(openKey.slice(openKey.indexOf(':') + 1)) : null
 
   /** teamId → short name, for rendering an opponent. */
   const shortNameOf = useMemo(() => {
@@ -180,6 +182,28 @@ export function Squad() {
 
   const fixtureFor = (entry: PitchPlayer) =>
     fixtureLabel(fixtures?.byEvent?.[String(gameweek)]?.[String(entry.player.teamId)], shortNameOf)
+
+  /* Where a player's points came from, per fixture: a double gameweek is two
+     entries, each that match's own contribution. Null until the week has
+     started, when cards show fixtures rather than points. */
+  const breakdownFor = (entry: PitchPlayer): FixtureBreakdown[] | null => {
+    if (mode !== 'points' || !pointsFile) return null
+    const out: FixtureBreakdown[] = []
+    for (const [fixtureId, byElement] of Object.entries(pointsFile.byFixture)) {
+      const part = byElement[String(entry.key)]
+      if (!part) continue
+      const match = fixtures?.matches.find((m) => m.id === Number(fixtureId))
+      const opponent = match ? (match.home === entry.player.teamId ? match.away : match.home) : null
+      const label =
+        match && opponent !== null
+          ? `${shortNameOf(opponent)} (${match.home === entry.player.teamId ? 'H' : 'A'})`
+          : null
+      out.push({ fixtureId, label, total: part.total, components: part.components })
+    }
+    return out
+  }
+  const toggle = (entry: PitchPlayer) => setOpenKey(open === entry.key ? null : `${gameweek}:${entry.key}`)
+  const breakdownProps = { mode, fixtureFor, breakdownFor, open, toggle, confirmed: squad?.dataChecked ?? false }
 
   const setGameweek = (wanted: number) => {
     // The slider is a range input, so it can land on a week between two
@@ -306,9 +330,9 @@ export function Squad() {
               top. Nothing was scrolling; the page was simply getting shorter.
             */}
             <div className={loading ? 'opacity-60 transition-opacity' : 'transition-opacity'}>
-              <Pitch rows={ROWS.map((row) => byRow(row))} mode={mode} fixtureFor={fixtureFor} />
+              <Pitch rows={ROWS.map((row) => byRow(row))} {...breakdownProps} />
 
-              {bench.length > 0 && <Bench bench={bench} mode={mode} fixtureFor={fixtureFor} />}
+              {bench.length > 0 && <Bench bench={bench} {...breakdownProps} />}
             </div>
 
             <p className="mt-3 text-xs leading-relaxed text-pl-muted">
@@ -325,7 +349,9 @@ export function Squad() {
                     ? 'Points are shown because the gameweek has started. '
                     : 'Fixtures are shown because the gameweek has not started. '}
                   This is the squad as it stood that week. Squads change through waivers and trades.
-                  {bench.some((b) => b.pick?.subbedOn) && ' The green arrow marks an automatic substitute.'}
+                  {started && ' Tap a card for where the points came from.'}
+                  {picks.some((p) => p.subbedOn) &&
+                    ' SUB marks an automatic substitution, as Draft applied it after the final whistle.'}
                 </>
               )}
             </p>
@@ -336,15 +362,63 @@ export function Squad() {
   )
 }
 
-function Pitch({
-  rows,
-  mode,
-  fixtureFor,
-}: {
-  rows: PitchPlayer[][]
+interface FixtureBreakdown {
+  fixtureId: string
+  /** "ARS (H)", or null if the match is not known. */
+  label: string | null
+  total: number
+  components: PointsComponent[]
+}
+
+interface CardProps {
   mode: CardMode
   fixtureFor: (entry: PitchPlayer) => string
+  breakdownFor: (entry: PitchPlayer) => FixtureBreakdown[] | null
+  /** The element whose breakdown is open, if any. */
+  open: number | null
+  toggle: (entry: PitchPlayer) => void
+  confirmed: boolean
+}
+
+/**
+ * The breakdown for the open card in a row, shown as a panel beneath the
+ * row rather than a popover: a popover has nowhere to go on a 375px pitch
+ * without covering the next row, and the rows are already spaced so the
+ * panel reads as belonging to the one above it.
+ */
+function RowBreakdown({
+  entry,
+  parts,
+  confirmed,
+}: {
+  entry: PitchPlayer
+  parts: FixtureBreakdown[]
+  confirmed: boolean
 }) {
+  const total = parts.reduce((n, p) => n + p.total, 0)
+  return (
+    <div className="mx-auto w-full max-w-sm rounded-md border border-pl-border bg-pl-bg/85 px-3 py-2 backdrop-blur-sm">
+      <p className="flex items-baseline justify-between gap-4 text-sm">
+        <span className="font-semibold text-pl-text">{entry.player.name}</span>
+        <span className="tnum font-bold text-pl-text">{pts(total)}</span>
+      </p>
+      {parts.length === 0 && <p className="mt-1 text-xs text-pl-muted">Did not play</p>}
+      {parts.map((part) => (
+        <div key={part.fixtureId} className="mt-1.5">
+          {parts.length > 1 && (
+            <p className="flex items-baseline justify-between text-[11px] text-pl-muted">
+              <span>{part.label ?? 'Fixture'}</span>
+              <span className="tnum">{pts(part.total)}</span>
+            </p>
+          )}
+          <Breakdown components={part.components} confirmed={confirmed} />
+        </div>
+      ))}
+    </div>
+  )
+}
+
+function Pitch({ rows, ...card }: { rows: PitchPlayer[][] } & CardProps) {
   // Full-bleed on mobile: PageBody's 16px each side would drop the fifth card
   // in a five-across row onto its own line.
   return (
@@ -354,13 +428,20 @@ function Pitch({
           cards, so a row of two balances against a row of five. */}
       <div className="pitch px-1 pt-6 pb-8 sm:px-6 sm:pt-10 sm:pb-12">
         <div className="flex flex-col gap-7 sm:gap-10">
-          {rows.map((row, i) => (
-            <div key={i} className="flex flex-wrap items-start justify-center gap-x-1.5 gap-y-4 sm:gap-x-6">
-              {row.map((entry) => (
-                <PlayerCardResponsive key={entry.key} entry={entry} mode={mode} fixtureFor={fixtureFor} />
-              ))}
-            </div>
-          ))}
+          {rows.map((row, i) => {
+            const opened = row.find((entry) => entry.key === card.open)
+            const parts = opened ? card.breakdownFor(opened) : null
+            return (
+              <div key={i} className="flex flex-col gap-3 px-2">
+                <div className="flex flex-wrap items-start justify-center gap-x-1.5 gap-y-4 sm:gap-x-6">
+                  {row.map((entry) => (
+                    <PlayerCardResponsive key={entry.key} entry={entry} {...card} />
+                  ))}
+                </div>
+                {opened && parts && <RowBreakdown entry={opened} parts={parts} confirmed={card.confirmed} />}
+              </div>
+            )
+          })}
         </div>
       </div>
     </div>
@@ -377,15 +458,9 @@ function benchLabel(entry: PitchPlayer, bench: PitchPlayer[]): string {
   return String(outfield.indexOf(entry) + 1)
 }
 
-function Bench({
-  bench,
-  mode,
-  fixtureFor,
-}: {
-  bench: PitchPlayer[]
-  mode: CardMode
-  fixtureFor: (entry: PitchPlayer) => string
-}) {
+function Bench({ bench, ...card }: { bench: PitchPlayer[] } & CardProps) {
+  const opened = bench.find((entry) => entry.key === card.open)
+  const parts = opened ? card.breakdownFor(opened) : null
   return (
     /* A shelf, clearly not part of the playing surface: the card surface tone
        with a hairline border, and the cards a size down and a touch quieter
@@ -401,10 +476,15 @@ function Bench({
             <span className="text-[10px] font-bold tracking-wider text-pl-muted uppercase">
               {benchLabel(entry, bench)}
             </span>
-            <PlayerCardResponsive entry={entry} mode={mode} fixtureFor={fixtureFor} bench />
+            <PlayerCardResponsive entry={entry} {...card} bench />
           </div>
         ))}
       </div>
+      {opened && parts && (
+        <div className="px-4 pb-4">
+          <RowBreakdown entry={opened} parts={parts} confirmed={card.confirmed} />
+        </div>
+      )}
     </div>
   )
 }
@@ -413,21 +493,20 @@ function Bench({
  * Five cards across a pitch row at 375px is about 70px each, which only works
  * if the card drops to photo, surname and one number. Rather than shrinking the
  * desktop card until it breaks, both are rendered and CSS picks one.
+ *
+ * Once the week has started the card is a button that opens its breakdown.
  */
 function PlayerCardResponsive({
   entry,
   mode,
   fixtureFor,
+  open,
+  toggle,
   bench = false,
-}: {
-  entry: PitchPlayer
-  mode: CardMode
-  fixtureFor: (entry: PitchPlayer) => string
-  bench?: boolean
-}) {
+}: CardProps & { entry: PitchPlayer; bench?: boolean }) {
   const line = cardLine(entry, mode, fixtureFor(entry))
   const sub = subOf(entry)
-  return (
+  const cards = (
     <>
       <span className="sm:hidden">
         <PlayerCardCompact player={entry.player} line={line} sub={sub} bench={bench} />
@@ -436,5 +515,20 @@ function PlayerCardResponsive({
         <PlayerCard player={entry.player} line={line} sub={sub} bench={bench} />
       </span>
     </>
+  )
+  if (mode !== 'points') return cards
+  const isOpen = open === entry.key
+  return (
+    <button
+      type="button"
+      onClick={() => toggle(entry)}
+      aria-expanded={isOpen}
+      aria-label={`${entry.player.name}, ${line}, ${isOpen ? 'hide' : 'show'} breakdown`}
+      className={`rounded-md text-left transition-[outline,transform] focus-visible:outline-2 focus-visible:outline-pl-cyan ${
+        isOpen ? 'outline-2 outline-pl-cyan' : ''
+      }`}
+    >
+      {cards}
+    </button>
   )
 }

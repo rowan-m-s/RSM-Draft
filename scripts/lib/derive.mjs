@@ -143,7 +143,8 @@ export function playerPointsForManager({ gameweekIds, perGw, managerKey }) {
   for (const gwId of gameweekIds) {
     const gw = perGw[gwId]
     if (!gw) continue
-    const xi = gw.scoringXI?.[managerKey] ?? (gw.squads?.[managerKey] ?? []).filter((p) => p.starter).map((p) => p.element)
+    const xi =
+      gw.scoringXI?.[managerKey] ?? (gw.squads?.[managerKey] ?? []).filter((p) => p.starter).map((p) => p.element)
     for (const elementId of xi) {
       const points = gw.elementPoints?.[elementId] ?? 0
       totals.set(elementId, (totals.get(elementId) ?? 0) + points)
@@ -233,8 +234,7 @@ export function buildSeason({ gameweeks, months, managerKeys, generatedAt, perGw
 
   // The month people are currently in: the one holding the most recent played
   // gameweek, or failing that the one the next deadline falls in.
-  const currentMonth =
-    playedGameweeks.at(-1)?.month ?? gameweeks.find((gw) => !gw.finished)?.month ?? null
+  const currentMonth = playedGameweeks.at(-1)?.month ?? gameweeks.find((gw) => !gw.finished)?.month ?? null
 
   const rows = managerKeys.map((key) => {
     const total = playedGameweeks.reduce((sum, gw) => sum + (gw.scores[key] ?? 0), 0)
@@ -327,9 +327,7 @@ export function buildLeader({ gameweeks }) {
   const since = Math.min(...runs.map((r) => r.since))
   const weekBefore = leadersByWeek.find((_, i) => leadersByWeek[i + 1]?.id === since)
   const displaced =
-    weekBefore && weekBefore.keys.length === 1 && !latest.keys.includes(weekBefore.keys[0])
-      ? weekBefore.keys[0]
-      : null
+    weekBefore && weekBefore.keys.length === 1 && !latest.keys.includes(weekBefore.keys[0]) ? weekBefore.keys[0] : null
 
   return {
     keys: latest.keys,
@@ -389,49 +387,71 @@ export function availabilityOf(element) {
  * is no leading scorer to name. Once GW1 lands FPL resets the counters and the
  * real figures flow through.
  */
-export function buildPlayers({ elements, teams, ownerByElementId, generatedAt, gameweeksPlayed = 0 }) {
-  const teamById = new Map(teams.map((t) => [t.id, t]))
-  const seasonStarted = gameweeksPlayed > 0
-
-  // If FPL ever stops resetting at the rollover, last season's totals would
-  // silently inflate this season's table. Nobody can play more minutes than
-  // there have been minutes to play — allowing for double gameweeks and a
-  // generous margin. Tripping this means the reset assumption has broken.
-  if (seasonStarted) {
-    const ceiling = 90 * 2 * gameweeksPlayed + 90
-    const worst = elements.reduce((max, e) => (e.minutes > max.minutes ? e : max), elements[0])
-    if (worst.minutes > ceiling) {
-      throw new Error(
-        `${worst.web_name} has ${worst.minutes} minutes after ${gameweeksPlayed} gameweek(s), which is ` +
-          `impossible (ceiling ${ceiling}). FPL looks to be serving last season's statistics, so every ` +
-          `points figure would be wrong. Refusing to publish.`
-      )
+/**
+ * The season's live statistics per element, read from one gameweek's Draft
+ * live payload. Every element, not only the owned ones: the Players page
+ * lists free agents too.
+ */
+export function readElementStats(livePayload) {
+  const out = {}
+  for (const [id, entry] of Object.entries(livePayload?.elements ?? {})) {
+    const st = entry?.stats ?? entry ?? {}
+    out[id] = {
+      points: Number(st.total_points ?? 0),
+      minutes: Number(st.minutes ?? 0),
+      goals: Number(st.goals_scored ?? 0),
+      assists: Number(st.assists ?? 0),
+      cleanSheets: Number(st.clean_sheets ?? 0),
+      bonus: Number(st.bonus ?? 0),
     }
   }
+  return out
+}
 
-  const all = elements.map((element) => {
-    const team = teamById.get(element.team)
-    if (!seasonStarted) {
-      return {
-        id: element.id,
-        name: element.web_name,
-        position: POSITIONS[element.element_type],
-        club: team?.name ?? 'Unknown',
-        clubShort: team?.short_name ?? '???',
-        clubCode: team?.code ?? 0,
-        teamId: element.team,
-        photoCode: element.code,
-        owner: ownerByElementId.get(element.id) ?? null,
-        ...availabilityOf(element),
+/**
+ * Season totals per element, summed from the per-gameweek live statistics.
+ *
+ * Not the bootstrap's `total_points`: before a ball is kicked that carries
+ * last season's figures (Haaland on 239 before GW1), and it is a different
+ * source from the one the squads and fixtures are scored from, so the pages
+ * could disagree. Summing the live weeks means a player's season total is
+ * exactly the sum of what the Fixtures page shows for them, it moves during
+ * a live gameweek, and it is zero until someone has actually played.
+ */
+export function sumElementStats(statsByGameweek) {
+  const totals = {}
+  for (const week of statsByGameweek) {
+    for (const [id, st] of Object.entries(week ?? {})) {
+      const t = (totals[id] ??= {
         points: 0,
-        ppg: 0,
+        minutes: 0,
         goals: 0,
         assists: 0,
         cleanSheets: 0,
         bonus: 0,
-        positionRank: 0,
-      }
+        appearances: 0,
+      })
+      t.points += st.points
+      t.minutes += st.minutes
+      t.goals += st.goals
+      t.assists += st.assists
+      t.cleanSheets += st.cleanSheets
+      t.bonus += st.bonus
+      if (st.minutes > 0) t.appearances += 1
     }
+  }
+  return totals
+}
+
+export function buildPlayers({ elements, teams, ownerByElementId, generatedAt, statsByGameweek = [] }) {
+  const teamById = new Map(teams.map((t) => [t.id, t]))
+  const totals = sumElementStats(statsByGameweek)
+  const seasonStarted = Object.values(totals).some((t) => t.minutes > 0 || t.points !== 0)
+  const zero = { points: 0, minutes: 0, goals: 0, assists: 0, cleanSheets: 0, bonus: 0, appearances: 0 }
+
+  const all = elements.map((element) => {
+    const team = teamById.get(element.team)
+    const t = totals[String(element.id)] ?? zero
     return {
       id: element.id,
       name: element.web_name,
@@ -447,12 +467,13 @@ export function buildPlayers({ elements, teams, ownerByElementId, generatedAt, g
       photoCode: element.code,
       owner: ownerByElementId.get(element.id) ?? null,
       ...availabilityOf(element),
-      points: element.total_points,
-      ppg: Number(element.points_per_game) || 0,
-      goals: element.goals_scored,
-      assists: element.assists,
-      cleanSheets: element.clean_sheets,
-      bonus: element.bonus,
+      points: t.points,
+      // Per game played, as FPL defines it, to one decimal.
+      ppg: t.appearances > 0 ? Math.round((t.points / t.appearances) * 10) / 10 : 0,
+      goals: t.goals,
+      assists: t.assists,
+      cleanSheets: t.cleanSheets,
+      bonus: t.bonus,
       positionRank: 0,
     }
   })
@@ -641,9 +662,7 @@ export function inferDraftXI({ picks, positionOf }) {
   for (const [position, minimum] of Object.entries(SQUAD_RULES.min)) {
     const available = byDraftOrder.filter((p) => !taken.has(p.element) && positionOf(p.element) === position)
     if (available.length < minimum) {
-      throw new Error(
-        `Cannot build a legal XI: needs ${minimum} ${position} but the squad has ${available.length}.`
-      )
+      throw new Error(`Cannot build a legal XI: needs ${minimum} ${position} but the squad has ${available.length}.`)
     }
     for (const pick of available.slice(0, minimum)) take(pick)
   }
@@ -807,7 +826,9 @@ export function buildFixturePoints({ live, elementIds }) {
           value: Number(c.value ?? 0),
           points: Number(c.points ?? 0),
         }))
-        .filter((c) => c.stat)
+        // Only what scored. A defender with ninety minutes and a clean sheet
+        // is two lines, not eight of "assists 0".
+        .filter((c) => c.stat && c.points !== 0)
       const total = parts.reduce((n, c) => n + c.points, 0)
       sum += total
       ;(byFixture[fixtureId] ??= {})[id] = { total, components: parts }
@@ -847,7 +868,12 @@ export function kochVariants({ gameweeks }) {
  */
 export function londonNextDayAt(iso, hour) {
   const fmt = (d) =>
-    new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/London', year: 'numeric', month: '2-digit', day: '2-digit' }).format(d)
+    new Intl.DateTimeFormat('en-CA', {
+      timeZone: 'Europe/London',
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+    }).format(d)
   const [y, m, d] = fmt(new Date(iso)).split('-').map(Number)
   const nextDate = new Date(Date.UTC(y, m - 1, d + 1)) // the next London calendar date, as a UTC date
   const wanted = nextDate.toISOString().slice(0, 10)
