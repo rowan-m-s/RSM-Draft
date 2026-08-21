@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import {
   chargeFor,
+  gameweekPoints,
   kochesOf,
   londonIso,
   monthOfDeadline,
@@ -220,5 +221,26 @@ describe('relativeAge', () => {
 
   it('falls back to days for a long-dead job', () => {
     expect(relativeAge('2026-08-18T10:00:00Z', new Date('2026-08-20T10:00:00Z')).text).toBe('2 days ago')
+  })
+})
+
+describe('gameweekPoints', () => {
+  const pick = (starter: boolean, points: number) => ({ starter, points })
+  const squads = {
+    a: [pick(true, 10), pick(true, 8), pick(false, 6)],
+    b: [pick(true, 30), pick(false, 0)],
+    c: [pick(true, 18), pick(false, 1)],
+    d: [pick(true, 2), pick(false, 9)],
+  }
+
+  it('splits XI and bench and ranks the XI among the file, sharing ties', () => {
+    expect(gameweekPoints(squads, 'a')).toEqual({ xi: 18, bench: 6, rank: 2, of: 4 })
+    expect(gameweekPoints(squads, 'c')).toEqual({ xi: 18, bench: 1, rank: 2, of: 4 })
+    expect(gameweekPoints(squads, 'b')).toEqual({ xi: 30, bench: 0, rank: 1, of: 4 })
+    expect(gameweekPoints(squads, 'd')).toEqual({ xi: 2, bench: 9, rank: 4, of: 4 })
+  })
+
+  it('is null for a manager not in the file', () => {
+    expect(gameweekPoints(squads, 'zz')).toBeNull()
   })
 })

@@ -234,3 +234,24 @@ export function formatLondon(iso: string, opts: Intl.DateTimeFormatOptions = {})
     ...opts,
   }).format(new Date(iso))
 }
+
+/**
+ * A manager's points for one gameweek as the squad file records them: the
+ * scoring XI, the bench they left behind, and where the XI total ranks among
+ * every manager in the same file. Ties share a rank, as the league table
+ * does. Returns null for the draft, where no points exist.
+ */
+export function gameweekPoints(
+  squads: Record<string, { starter: boolean; points: number }[]>,
+  managerKey: string
+): { xi: number; bench: number; rank: number; of: number } | null {
+  const picks = squads[managerKey]
+  if (!picks) return null
+  const total = (list: { starter: boolean; points: number }[], starter: boolean) =>
+    list.filter((p) => p.starter === starter).reduce((sum, p) => sum + p.points, 0)
+  const xi = total(picks, true)
+  const bench = total(picks, false)
+  const others = Object.values(squads).map((list) => total(list, true))
+  const rank = 1 + others.filter((score) => score > xi).length
+  return { xi, bench, rank, of: others.length }
+}

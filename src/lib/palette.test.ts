@@ -158,6 +158,7 @@ describe('every colour comes from a token', () => {
       'pages/Honours.tsx', // Koch cards
       'pages/LeagueTable.tsx', // Koch row and the £5 charged
       'pages/Managers.tsx', // negative balances
+      'pages/Squad.tsx', // the points strip when this manager was Koch
     ])
   })
 })
