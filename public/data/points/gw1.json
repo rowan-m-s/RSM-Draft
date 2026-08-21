@@ -1,17 +1,31 @@
 {
   "event": 1,
-  "started": false,
+  "started": true,
   "finished": false,
   "dataChecked": false,
   "byFixture": {
     "1": {
       "1": {
-        "total": 0,
-        "components": []
+        "total": 1,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 11,
+            "points": 1
+          }
+        ]
       },
       "4": {
-        "total": 0,
-        "components": []
+        "total": 1,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 11,
+            "points": 1
+          }
+        ]
       },
       "5": {
         "total": 0,
@@ -22,48 +36,104 @@
         "components": []
       },
       "8": {
-        "total": 0,
-        "components": []
+        "total": 1,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 11,
+            "points": 1
+          }
+        ]
       },
       "10": {
-        "total": 0,
-        "components": []
+        "total": 1,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 11,
+            "points": 1
+          }
+        ]
       },
       "11": {
-        "total": 0,
-        "components": []
+        "total": 1,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 11,
+            "points": 1
+          }
+        ]
       },
       "12": {
-        "total": 0,
-        "components": []
+        "total": 1,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 11,
+            "points": 1
+          }
+        ]
       },
       "13": {
-        "total": 0,
-        "components": []
+        "total": 1,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 11,
+            "points": 1
+          }
+        ]
       },
       "14": {
         "total": 0,
         "components": []
       },
       "15": {
-        "total": 0,
-        "components": []
+        "total": 1,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 11,
+            "points": 1
+          }
+        ]
       },
       "25": {
         "total": 0,
         "components": []
       },
       "26": {
-        "total": 0,
-        "components": []
+        "total": 1,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 11,
+            "points": 1
+          }
+        ]
       },
       "31": {
         "total": 0,
         "components": []
       },
       "110": {
-        "total": 0,
-        "components": []
+        "total": 1,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 11,
+            "points": 1
+          }
+        ]
       },
       "452": {
         "total": 0,
@@ -74,8 +144,15 @@
         "components": []
       },
       "554": {
-        "total": 0,
-        "components": []
+        "total": 1,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 11,
+            "points": 1
+          }
+        ]
       }
     },
     "2": {
@@ -685,5 +762,5 @@
       }
     }
   },
-  "generatedAt": "2026-08-21T18:25:44.589Z"
+  "generatedAt": "2026-08-21T19:13:05.018Z"
 }

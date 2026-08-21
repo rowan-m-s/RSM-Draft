@@ -16,18 +16,18 @@
       "charged": 0,
       "topPerformerByManager": {
         "rushy": {
-          "playerName": "Sels",
-          "points": 0,
+          "playerName": "Mosquera",
+          "points": 1,
           "managerKey": "rushy"
         },
         "kellett": {
-          "playerName": "Kelleher",
-          "points": 0,
+          "playerName": "Calafiori",
+          "points": 1,
           "managerKey": "kellett"
         },
         "wallis": {
-          "playerName": "Lammens",
-          "points": 0,
+          "playerName": "Gabriel",
+          "points": 1,
           "managerKey": "wallis"
         },
         "jls": {
@@ -36,13 +36,13 @@
           "managerKey": "jls"
         },
         "paddy": {
-          "playerName": "Roefs",
-          "points": 0,
+          "playerName": "White",
+          "points": 1,
           "managerKey": "paddy"
         },
         "bennett": {
-          "playerName": "Kinsky",
-          "points": 0,
+          "playerName": "Rice",
+          "points": 1,
           "managerKey": "bennett"
         },
         "wood": {
@@ -56,8 +56,8 @@
           "managerKey": "rowan"
         },
         "jason": {
-          "playerName": "Trafford",
-          "points": 0,
+          "playerName": "Saka",
+          "points": 1,
           "managerKey": "jason"
         },
         "dj": {
@@ -67,22 +67,50 @@
         },
         "ollie": {
           "playerName": "Raya",
-          "points": 0,
+          "points": 1,
           "managerKey": "ollie"
         }
       },
       "scapegoatByManager": {
-        "rushy": null,
-        "kellett": null,
-        "wallis": null,
+        "rushy": {
+          "playerName": "Mosquera",
+          "points": 1,
+          "managerKey": "rushy"
+        },
+        "kellett": {
+          "playerName": "Calafiori",
+          "points": 1,
+          "managerKey": "kellett"
+        },
+        "wallis": {
+          "playerName": "Gabriel",
+          "points": 1,
+          "managerKey": "wallis"
+        },
         "jls": null,
-        "paddy": null,
-        "bennett": null,
+        "paddy": {
+          "playerName": "Havertz",
+          "points": 1,
+          "managerKey": "paddy"
+        },
+        "bennett": {
+          "playerName": "Rice",
+          "points": 1,
+          "managerKey": "bennett"
+        },
         "wood": null,
         "rowan": null,
-        "jason": null,
+        "jason": {
+          "playerName": "Ødegaard",
+          "points": 1,
+          "managerKey": "jason"
+        },
         "dj": null,
-        "ollie": null
+        "ollie": {
+          "playerName": "Raya",
+          "points": 1,
+          "managerKey": "ollie"
+        }
       },
       "kochVariant": {}
     },
@@ -753,5 +781,5 @@
       "kochVariant": {}
     }
   ],
-  "generatedAt": "2026-08-21T17:32:30.792Z"
+  "generatedAt": "2026-08-21T19:13:05.018Z"
 }
