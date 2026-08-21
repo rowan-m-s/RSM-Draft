@@ -11,7 +11,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 45,
+            "value": 52,
             "points": 1
           }
         ]
@@ -22,7 +22,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 45,
+            "value": 52,
             "points": 1
           },
           {
@@ -47,7 +47,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 45,
+            "value": 52,
             "points": 1
           },
           {
@@ -59,13 +59,19 @@
         ]
       },
       "10": {
-        "total": 1,
+        "total": 4,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 45,
+            "value": 52,
             "points": 1
+          },
+          {
+            "stat": "assists",
+            "name": "Assists",
+            "value": 1,
+            "points": 3
           }
         ]
       },
@@ -75,18 +81,18 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 45,
+            "value": 52,
             "points": 1
           }
         ]
       },
       "12": {
-        "total": 8,
+        "total": 7,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 45,
+            "value": 52,
             "points": 1
           },
           {
@@ -98,8 +104,8 @@
           {
             "stat": "bonus",
             "name": "Bonus",
-            "value": 2,
-            "points": 2
+            "value": 1,
+            "points": 1
           }
         ]
       },
@@ -109,7 +115,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 45,
+            "value": 52,
             "points": 1
           }
         ]
@@ -119,13 +125,25 @@
         "components": []
       },
       "15": {
-        "total": 1,
+        "total": 9,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 45,
+            "value": 52,
             "points": 1
+          },
+          {
+            "stat": "goals_scored",
+            "name": "Goals scored",
+            "value": 1,
+            "points": 5
+          },
+          {
+            "stat": "bonus",
+            "name": "Bonus",
+            "value": 3,
+            "points": 3
           }
         ]
       },
@@ -134,12 +152,12 @@
         "components": []
       },
       "26": {
-        "total": 8,
+        "total": 7,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 45,
+            "value": 52,
             "points": 1
           },
           {
@@ -151,8 +169,8 @@
           {
             "stat": "bonus",
             "name": "Bonus",
-            "value": 3,
-            "points": 3
+            "value": 2,
+            "points": 2
           }
         ]
       },
@@ -166,13 +184,13 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 45,
+            "value": 52,
             "points": 1
           },
           {
             "stat": "goals_conceded",
             "name": "Goals conceded",
-            "value": 2,
+            "value": 3,
             "points": -1
           }
         ]
@@ -186,12 +204,12 @@
         "components": []
       },
       "554": {
-        "total": 5,
+        "total": 4,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 45,
+            "value": 52,
             "points": 1
           },
           {
@@ -199,12 +217,6 @@
             "name": "Assists",
             "value": 1,
             "points": 3
-          },
-          {
-            "stat": "bonus",
-            "name": "Bonus",
-            "value": 1,
-            "points": 1
           }
         ]
       }
@@ -816,5 +828,5 @@
       }
     }
   },
-  "generatedAt": "2026-08-21T19:46:56.381Z"
+  "generatedAt": "2026-08-21T20:10:57.636Z"
 }

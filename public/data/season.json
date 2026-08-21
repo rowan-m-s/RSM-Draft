@@ -1,11 +1,28 @@
 {
   "rows": [
     {
-      "key": "paddy",
+      "key": "jason",
       "rank": 1,
-      "total": 9,
-      "gw": 9,
-      "month": 9,
+      "total": 16,
+      "gw": 16,
+      "month": 16,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "Ødegaard",
+        "points": 9,
+        "managerKey": "jason"
+      }
+    },
+    {
+      "key": "paddy",
+      "rank": 2,
+      "total": 11,
+      "gw": 11,
+      "month": 11,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -13,33 +30,16 @@
       "balance": 0,
       "topPerformer": {
         "playerName": "Havertz",
-        "points": 8,
+        "points": 7,
         "managerKey": "paddy"
-      }
-    },
-    {
-      "key": "jason",
-      "rank": 1,
-      "total": 9,
-      "gw": 9,
-      "month": 9,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "Saka",
-        "points": 8,
-        "managerKey": "jason"
       }
     },
     {
       "key": "ollie",
       "rank": 3,
-      "total": 6,
-      "gw": 6,
-      "month": 6,
+      "total": 5,
+      "gw": 5,
+      "month": 5,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -47,7 +47,7 @@
       "balance": 0,
       "topPerformer": {
         "playerName": "Tzolis",
-        "points": 5,
+        "points": 4,
         "managerKey": "ollie"
       }
     },
@@ -193,21 +193,19 @@
   "seasonPrize": 110,
   "leader": {
     "keys": [
-      "jason",
-      "paddy"
+      "jason"
     ],
-    "total": 9,
+    "total": 16,
     "since": null,
     "sinceByKey": {
-      "jason": null,
-      "paddy": null
+      "jason": null
     },
     "asOf": 1,
     "weeks": 0,
     "displaced": null,
     "changed": false
   },
-  "generatedAt": "2026-08-21T19:36:24.821Z",
+  "generatedAt": "2026-08-21T20:10:57.636Z",
   "graphics": {
     "leader": {
       "rushy": 243298,
@@ -227,7 +225,7 @@
       "kellett": 209244,
       "wallis": 177815,
       "jls": 248875,
-      "paddy": 551466,
+      "paddy": 219847,
       "bennett": 204480,
       "wood": 212319,
       "rowan": 222531,
