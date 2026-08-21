@@ -9,11 +9,11 @@ import type { Position } from '../types'
  *
  * A portrait card rather than a circle: the photos are head-and-shoulders
  * cut outs, and a circular mask crops the shoulders and leaves a head
- * floating. Here the cut out fills the photo area's width from the top, so
- * the head keeps its clearance and the figure runs into the name band at the
- * chest, where the Premier League's own photos are cropped. The photos are
- * all 220×280, so this also sizes every player alike; what remains is how
- * tightly each club's photographer framed them, which is in the source.
+ * floating. Here the cut out sits at its natural 11:14 aspect, filling the
+ * photo area's width from the top; the area is shorter than the image and
+ * clips it, so the figure runs into the name band at the chest, where the
+ * Premier League's own photos are cropped. Per-player framing (see
+ * lib/photoFraming.ts) then enlarges the wide shots to a common head size.
  *
  * Anatomy, top to bottom: photo area on a vertical surface gradient, lighter
  * at the top; a solid aubergine name band; a lifted info band carrying the
@@ -74,9 +74,9 @@ export function PlayerCard({ player, line, bench = false, sub = null }: PlayerCa
           photoCode={player.photoCode}
           name={player.name}
           width={bench ? 88 : 104}
-          height={bench ? 82 : 98}
+          height={bench ? 112 : 132}
           framing={photoFraming(player.photoCode)}
-          className="absolute inset-0 h-full w-full object-cover object-top"
+          className="absolute inset-x-0 top-0 h-auto w-full"
         />
         <PlayerFlag player={player} size={14} className="absolute top-0 right-0" />
         {sub && <SubMarker sub={sub} />}
@@ -107,9 +107,9 @@ export function PlayerCardCompact({ player, line, bench = false, sub = null }: P
           photoCode={player.photoCode}
           name={player.name}
           width={66}
-          height={58}
+          height={84}
           framing={photoFraming(player.photoCode)}
-          className="absolute inset-0 h-full w-full object-cover object-top"
+          className="absolute inset-x-0 top-0 h-auto w-full"
         />
         <PlayerFlag player={player} size={11} className="absolute top-0 right-0" />
         {sub && <SubMarker sub={sub} />}

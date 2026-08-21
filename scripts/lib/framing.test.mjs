@@ -33,9 +33,10 @@ describe('measureFraming', () => {
     expect(scale).toBeCloseTo(TARGET_HEAD_WIDTH / 0.27, 1)
   })
 
-  it('scales a tight photo down, within the clamp', async () => {
+  it('never shrinks a tight or big-haired photo, and caps the enlargement', async () => {
     const { scale } = await measureFraming(await cutout({ headWidth: 0.5, headroom: 0 }))
     expect(scale).toBe(SCALE_MIN)
+    expect(SCALE_MIN).toBe(1)
     const wide = await measureFraming(await cutout({ headWidth: 0.2, headroom: 0 }))
     expect(wide.scale).toBe(SCALE_MAX)
   })

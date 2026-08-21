@@ -11,16 +11,20 @@ import sharp from 'sharp'
  * card, plus the headroom above the hair so the head can be anchored to the
  * top.
  *
- * `scale` is clamped: a photo that would need more than 1.3× is probably
- * mis-detected (a ball, a raised arm), and below 0.85 the shoulders would
- * lift off the name band. Anything the measurement cannot handle is simply
- * not recorded, and the card falls back to a scale of 1, so a bad photo
- * renders slightly off rather than invisibly.
+ * The correction only ever enlarges. Head width is measured across the
+ * hair, so a player with a lot of it reads as a big head and would be shrunk
+ * for no reason (Calvert-Lewin, Doku, O'Reilly); a genuinely tight photo is
+ * within a few percent of the norm anyway. Wide photos, where the head
+ * really is small, are brought in. The scale is capped at 1.3: more than
+ * that is probably a mis-detection (a ball, a raised arm). Anything the
+ * measurement cannot handle is simply not recorded, and the card falls
+ * back to a scale of 1, so a bad photo renders slightly off rather than
+ * invisibly.
  */
 
 /** Head width as a fraction of frame width that the cards are normalised to. */
 export const TARGET_HEAD_WIDTH = 0.33
-export const SCALE_MIN = 0.85
+export const SCALE_MIN = 1
 export const SCALE_MAX = 1.3
 const ALPHA_THRESHOLD = 40
 

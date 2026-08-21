@@ -142,8 +142,8 @@ export function PlayerPhoto({
 /**
  * The photo inside a player card. Responsive: the browser is told the CSS
  * width the card draws it at and picks between the CDN's 220 and 500 pixel
- * files by device pixel ratio. Explicit width and height so nothing shifts
- * while it loads.
+ * files by device pixel ratio. Explicit width and height (the photo's own
+ * 11:14) so nothing shifts while it loads; the photo area clips the bottom.
  */
 export function CardPhoto({
   photoCode,

@@ -47,18 +47,18 @@ export function versionOf(etag: string | null): string | null {
 }
 
 /**
- * The CSS that applies a framing to a photo filling its card from the top.
+ * The CSS that applies a framing to a photo sitting at its natural aspect
+ * at the top of the photo area, taller than the area, which clips it.
  *
- * Enlarging anchors at the top and first lifts the photo by its headroom,
- * so the hair lands at the top edge and the figure grows down into the
- * card (the card clips it). Shrinking anchors at the bottom so the
- * shoulders stay on the name band and the head drops a little instead.
+ * The photo is scaled about its top centre and lifted by its headroom, so
+ * the hair lands at the top edge and the figure grows down into the area.
+ * Because the image really extends below the area (it is not cropped by
+ * object-fit), a lift pulls real pixels up and leaves no gap above the
+ * name band. Scales below 1 are never published, and are ignored here.
  */
 export function framingStyle({ scale, top }: Framing): React.CSSProperties | undefined {
-  if (scale === 1 && top === 0) return undefined
-  if (scale >= 1) {
-    const lift = top * scale * 100
-    return { transform: `translateY(-${lift.toFixed(2)}%) scale(${scale})`, transformOrigin: '50% 0%' }
-  }
-  return { transform: `scale(${scale})`, transformOrigin: '50% 100%' }
+  const s = Math.max(1, scale)
+  if (s === 1 && top === 0) return undefined
+  const lift = top * s * 100
+  return { transform: `translateY(-${lift.toFixed(2)}%) scale(${s})`, transformOrigin: '50% 0%' }
 }

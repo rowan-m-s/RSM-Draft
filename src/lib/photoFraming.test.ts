@@ -20,12 +20,16 @@ describe('photoFraming', () => {
     expect(versionOf('""')).toBeNull()
   })
 
-  it('writes no style for the identity, lifts by the headroom when enlarging, anchors low when shrinking', () => {
+  it('writes no style for the identity, lifts by the headroom when enlarging, never shrinks', () => {
     expect(framingStyle({ scale: 1, top: 0, etag: null })).toBeUndefined()
     expect(framingStyle({ scale: 1.2, top: 0.1, etag: null })).toEqual({
       transform: 'translateY(-12.00%) scale(1.2)',
       transformOrigin: '50% 0%',
     })
-    expect(framingStyle({ scale: 0.9, top: 0, etag: null })).toEqual({ transform: 'scale(0.9)', transformOrigin: '50% 100%' })
+    expect(framingStyle({ scale: 0.9, top: 0, etag: null })).toBeUndefined()
+    expect(framingStyle({ scale: 0.9, top: 0.1, etag: null })).toEqual({
+      transform: 'translateY(-10.00%) scale(1)',
+      transformOrigin: '50% 0%',
+    })
   })
 })
