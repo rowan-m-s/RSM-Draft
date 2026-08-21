@@ -374,7 +374,7 @@ function MonthTable({ month, nameOf }: { month: Month; nameOf: (k: ManagerKey) =
           )}
         </div>
         <div className="bg-pl-surface p-4">
-          <p className="eyebrow text-pl-muted">Player of the month</p>
+          <p className="eyebrow text-pl-muted">Player of the month{!month.settled && ' (so far)'}</p>
           {month.topPerformer ? (
             <>
               <p className="display mt-1.5 truncate text-2xl leading-[1.2] text-pl-text">

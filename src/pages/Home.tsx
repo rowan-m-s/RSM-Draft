@@ -213,7 +213,7 @@ function MotmCard({
 
       {month.topPerformer && (
         <p className="border-t border-pl-border bg-pl-surface-2 px-5 py-3 text-sm text-pl-text">
-          Player of the month: <strong className="font-semibold">{month.topPerformer.playerName}</strong> for{' '}
+          Player of the month{!confirmed && ' (so far)'}: <strong className="font-semibold">{month.topPerformer.playerName}</strong> for{' '}
           {nameOf(month.topPerformer.managerKey)},{' '}
           <span className="tnum font-semibold">{month.topPerformer.points}</span> pts
         </p>
