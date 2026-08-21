@@ -144,18 +144,29 @@ function KochCard({
 }
 
 /**
- * Manager of the month. Live from the month's first scores, marked as things
- * stand and with no pot attached; final once the month's last gameweek is
- * confirmed. The expected confirmation is that last gameweek's.
+ * Manager of the month, under one rule: the card shows the latest month
+ * that has any scores. If that month is settled, it is the winner on their
+ * MOTM graphic, final, and it stays that way until the next month's first
+ * gameweek has data. If it is not settled, it is the month's current leader
+ * as things stand, on their Leader graphic, chosen by the same rule as the
+ * League Leader card, with the provisional marker and no pot.
+ *
+ * One rule rather than two so the boundary cannot flicker: a confirmed
+ * August holds through a blank week before September and until someone
+ * actually scores in September, and the first month of the season simply
+ * has no settled predecessor to hold.
  */
 function MotmCard({
   month,
   nameOf,
   confirmedOn,
+  leaderGraphicFor,
 }: {
   month: Month
   nameOf: (key: ManagerKey) => string
   confirmedOn: string | null
+  /** The Leader graphic per manager, for the provisional state. */
+  leaderGraphicFor: (key: ManagerKey) => number | null
 }) {
   const confirmed = month.settled
   const winners = confirmed ? month.winnerKeys : monthWinnersOf(month.totals)
@@ -178,9 +189,10 @@ function MotmCard({
         {winners.map((key) => (
           <div key={key} className="flex gap-4 bg-pl-surface p-5">
             <CardImage
-              set="motm"
+              set={confirmed ? 'motm' : 'leader'}
               managerKey={key}
-              alt={`${nameOf(key)}, manager of the month`}
+              playerCode={confirmed ? undefined : leaderGraphicFor(key)}
+              alt={`${nameOf(key)}, ${confirmed ? 'manager of the month' : 'leading the month'}`}
               enlargeTitle={`Manager of the month · ${nameOf(key)}`}
               className="aspect-square w-28 shrink-0 sm:w-36"
             />
@@ -348,7 +360,8 @@ export function Home() {
   const latestKoch = [...data.gameweeks].reverse().find((gw) => Object.keys(gw.scores).length > 0) ?? null
   const provisional = latestKoch && !latestKoch.dataChecked ? latestKoch : null
 
-  // Likewise the month: the latest with any gameweeks played.
+  // The month card's one rule: the latest month with any scores. Settled
+  // means the winner on the MOTM graphic; otherwise the provisional leader.
   const latestMotm = [...data.months].reverse().find((m) => m.gameweekIds.length > 0) ?? null
   const motmConfirmedOn = latestMotm
     ? (data.gameweeks
@@ -391,7 +404,12 @@ export function Home() {
           )}
 
           {latestMotm ? (
-            <MotmCard month={latestMotm} nameOf={nameOf} confirmedOn={motmConfirmedOn} />
+            <MotmCard
+              month={latestMotm}
+              nameOf={nameOf}
+              confirmedOn={motmConfirmedOn}
+              leaderGraphicFor={(key) => data.season.graphics?.leader?.[key] ?? null}
+            />
           ) : (
             <AwaitingAward
               eyebrow="Manager of the month"

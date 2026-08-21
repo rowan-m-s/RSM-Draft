@@ -162,10 +162,14 @@ function bestOf(totals, elementName) {
 }
 
 export function buildMonths({ gameweeks, managerKeys, perGw, elementName }) {
-  const monthIds = [...new Set(gameweeks.filter((gw) => gw.finished).map((gw) => gw.month))].sort()
+  // A month exists from the moment one of its gameweeks has scores, so the
+  // Home card can show its provisional leader as things stand; a week in
+  // play counts towards the running totals just as it does for the Koch.
+  const hasScores = (gw) => Object.keys(gw.scores ?? {}).length > 0
+  const monthIds = [...new Set(gameweeks.filter(hasScores).map((gw) => gw.month))].sort()
 
   return monthIds.map((id) => {
-    const played = gameweeks.filter((gw) => gw.month === id && gw.finished)
+    const played = gameweeks.filter((gw) => gw.month === id && hasScores(gw))
     const allInMonth = gameweeks.filter((gw) => gw.month === id)
     const confirmed = played.filter((gw) => gw.dataChecked)
 
