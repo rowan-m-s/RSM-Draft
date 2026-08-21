@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest'
 import {
   buildFixturePoints,
   buildLeader,
+  londonNextDayAt,
   buildFixtures,
   buildGameweeks,
   buildMonths,
@@ -688,5 +689,20 @@ describe('buildLeader', () => {
     const leader = buildLeader({ gameweeks })
     expect(leader.keys).toEqual(['c'])
     expect(leader.displaced).toBeNull()
+  })
+})
+
+describe('londonNextDayAt', () => {
+  it('gives 09:00 London on the day after the last match, in BST and GMT', () => {
+    expect(londonNextDayAt('2026-08-24T19:00:00Z', 9)).toBe('2026-08-25T08:00:00.000Z') // BST
+    expect(londonNextDayAt('2026-12-21T20:00:00Z', 9)).toBe('2026-12-22T09:00:00.000Z') // GMT
+  })
+  it('uses the London date, so a match ending after midnight UK time counts as the next day', () => {
+    // 23:30Z on 24 Aug is 00:30 BST on 25 Aug: the day after is the 26th.
+    expect(londonNextDayAt('2026-08-24T23:30:00Z', 9)).toBe('2026-08-26T08:00:00.000Z')
+  })
+  it('rolls over month ends', () => {
+    expect(londonNextDayAt('2026-08-31T19:00:00Z', 9)).toBe('2026-09-01T08:00:00.000Z')
+    expect(londonNextDayAt('2026-10-24T16:00:00Z', 9)).toBe('2026-10-25T09:00:00.000Z') // clocks go back 25 Oct
   })
 })

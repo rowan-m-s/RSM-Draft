@@ -61,6 +61,8 @@ export interface Gameweek {
   dataChecked: boolean
   /** When FPL is expected to confirm the week: the day after its last kickoff. An estimate for copy, never a gate. */
   confirmExpectedUtc: string | null
+  /** The breaking news sting may play from here: 09:00 London on the day after the week's last match. */
+  revealFromUtc?: string | null
   /** Which Koch graphic each confirmed Koch sees this week: koch or koch2, alternating per manager. */
   kochVariant?: Record<ManagerKey, 'koch' | 'koch2'>
   scores: Record<ManagerKey, number>

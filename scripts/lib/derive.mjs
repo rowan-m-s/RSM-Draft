@@ -56,6 +56,9 @@ export function buildGameweeks({
     if (!current || f.kickoff_time > current) lastKickoffByEvent[f.event] = f.kickoff_time
   }
   const dayAfter = (iso) => new Date(new Date(iso).getTime() + 24 * 60 * 60 * 1000).toISOString()
+  // The breaking news sting is allowed from 09:00 London on the day after
+  // the week's last match, and not before, however early FPL confirms.
+  const revealFrom = (iso) => londonNextDayAt(iso, 9)
 
   return events.map((event) => {
     const dataChecked = isSettled(event, classicDataCheckedById.get(event.id))
@@ -76,6 +79,7 @@ export function buildGameweeks({
       finished: Boolean(event.finished),
       dataChecked,
       confirmExpectedUtc: lastKickoffByEvent[event.id] ? dayAfter(lastKickoffByEvent[event.id]) : null,
+      revealFromUtc: lastKickoffByEvent[event.id] ? revealFrom(lastKickoffByEvent[event.id]) : null,
       scores: hasScores ? scores : {},
       kochKeys,
       charged: chargeFor(kochKeys),
@@ -833,4 +837,29 @@ export function kochVariants({ gameweeks }) {
     }
   }
   return { byGameweek, counts }
+}
+
+/**
+ * The UTC instant of a given London wall-clock hour on the calendar day
+ * after `iso`, in London. Found by taking the London date of `iso`, adding a
+ * day, and asking Intl what UTC instant shows that hour in London, allowing
+ * for BST or GMT on that day.
+ */
+export function londonNextDayAt(iso, hour) {
+  const fmt = (d) =>
+    new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/London', year: 'numeric', month: '2-digit', day: '2-digit' }).format(d)
+  const [y, m, d] = fmt(new Date(iso)).split('-').map(Number)
+  const nextDate = new Date(Date.UTC(y, m - 1, d + 1)) // the next London calendar date, as a UTC date
+  const wanted = nextDate.toISOString().slice(0, 10)
+  const base = Date.UTC(nextDate.getUTCFullYear(), nextDate.getUTCMonth(), nextDate.getUTCDate(), hour)
+  // London is UTC+0 or UTC+1; whichever candidate Intl shows at the wanted
+  // hour on the wanted London date is the one.
+  for (const offsetHours of [1, 0]) {
+    const candidate = new Date(base - offsetHours * 3600 * 1000)
+    const h = Number(
+      new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/London', hour: '2-digit', hour12: false }).format(candidate)
+    )
+    if (h % 24 === hour && fmt(candidate) === wanted) return candidate.toISOString()
+  }
+  return new Date(base).toISOString()
 }

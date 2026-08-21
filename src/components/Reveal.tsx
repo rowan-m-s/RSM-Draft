@@ -15,7 +15,11 @@ import type { ManagerKey } from '../types'
  * Rules, all kept here:
  *  - fires on confirmation only: a Koch needs the week's dataChecked, a MOTM
  *    needs the month settled. Provisional cards never reach this component.
- *  - plays once per person: seen ids are kept in localStorage.
+ *  - and not before 09:00 London on the day after the week's last match
+ *    (for a MOTM, the month's last week), however early FPL confirms. So it
+ *    plays the first time someone opens the site after that.
+ *  - plays once per person: seen ids are kept in localStorage, so once it
+ *    has shown on a device it never shows there again.
  *  - dismissable at any point, by tap, the button or Escape.
  *  - reduced motion skips straight to the card, ticker static.
  *  - Koch queues before MOTM when both land together.
@@ -33,6 +37,8 @@ const STALE_DAYS = 10
 interface RevealItem {
   id: string
   kind: 'koch' | 'motm'
+  /** Not before this instant, whatever the data says. */
+  revealFromUtc: string | null
   managerKeys: ManagerKey[]
   points: number
   /** Which graphic set, per manager. */
@@ -71,6 +77,7 @@ export function confirmedAwards(data: Dataset): RevealItem[] {
     items.push({
       id: `koch-gw${gw.id}`,
       kind: 'koch',
+      revealFromUtc: gw.revealFromUtc ?? null,
       managerKeys: gw.kochKeys,
       points: gw.scores[gw.kochKeys[0]] ?? 0,
       setFor: (key) => gw.kochVariant?.[key] ?? kochSetFor((data.season.kochCount?.[key] ?? 1) - 1),
@@ -86,9 +93,11 @@ export function confirmedAwards(data: Dataset): RevealItem[] {
   }
   for (const month of data.months) {
     if (!month.settled || month.winnerKeys.length === 0) continue
+    const lastWeek = data.gameweeks.filter((g) => g.month === month.id).at(-1)
     items.push({
       id: `motm-${month.id}`,
       kind: 'motm',
+      revealFromUtc: lastWeek?.revealFromUtc ?? null,
       managerKeys: month.winnerKeys,
       points: month.totals[month.winnerKeys[0]] ?? 0,
       setFor: () => 'motm',
@@ -128,12 +137,21 @@ function queueFor(data: Dataset, seen: Set<string>, preview: boolean): RevealIte
     const expected = gw?.confirmExpectedUtc ? new Date(gw.confirmExpectedUtc).getTime() : generated
     return generated - expected < STALE_DAYS * 24 * 60 * 60 * 1000
   }
-  return latest.filter((i) => !seen.has(i.id) && fresh(i))
+  // And never before its reveal time: the morning after the last match.
+  const now = Date.now()
+  const due = (item: RevealItem) => !item.revealFromUtc || new Date(item.revealFromUtc).getTime() <= now
+  return latest.filter((i) => !seen.has(i.id) && due(i) && fresh(i))
 }
 
 export function Reveal({ data }: { data: Dataset }) {
   const preview = useMemo(() => new URLSearchParams(window.location.search).get('reveal') === 'preview', [])
+  // Re-evaluated whenever the data changes (a reload, or the scheduled
+  // refresh landing), so a confirmation that arrives while the tab is open
+  // still plays at the right moment.
   const [queue, setQueue] = useState<RevealItem[]>(() => queueFor(data, readSeen(), preview))
+  useEffect(() => {
+    setQueue((current) => (current.length > 0 ? current : queueFor(data, readSeen(), preview)))
+  }, [data, preview])
   const current = queue[0] ?? null
 
   const dismiss = useCallback(() => {
