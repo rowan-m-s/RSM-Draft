@@ -74,7 +74,7 @@ function KochCard({
     <section className="card overflow-hidden">
       <div className="flex items-start justify-between gap-3 border-b border-pl-border px-5 py-3">
         <div>
-          <p className="eyebrow text-pl-pink">Koch of the week</p>
+          <p className="eyebrow text-pl-pink">Koch of the week{!confirmed && '*'}</p>
           <p className="mt-0.5 text-xs text-pl-muted">
             Gameweek {gameweek.id}
             {tied && ` · ${koches.length}-way tie`}
@@ -96,10 +96,7 @@ function KochCard({
                 className="aspect-square w-28 shrink-0 sm:w-36"
               />
               <div className="flex min-w-0 flex-1 flex-col justify-center">
-                <p className="display truncate text-2xl leading-[1.2] text-pl-text">
-                  {nameOf(key)}
-                  {!confirmed && '*'}
-                </p>
+                <p className="display truncate text-2xl leading-[1.2] text-pl-text">{nameOf(key)}</p>
                 {/* The player who let them down: lowest scorer in the XI who
                     actually played. Someone on zero minutes is not to blame. */}
                 <p className="mt-1.5 text-sm text-pl-muted">
