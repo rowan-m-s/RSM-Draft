@@ -45,18 +45,26 @@ const playerPhotoUrl = (code) =>
 const legacyPhotoUrl = (code) =>
   `https://resources.premierleague.com/premierleague/photos/players/40x40/p${code}.png`
 
-/** The photo the cards actually draw, current tier then legacy. Null if neither exists. */
-async function fetchPhotoBuffer(code) {
+/**
+ * The photo the cards actually draw, current tier then legacy. With an ETag
+ * from a previous measurement the request is conditional, and a 304 comes
+ * back as { unchanged: true } without downloading anything. Null if neither
+ * tier has a photo.
+ */
+async function fetchPhotoBuffer(code, etag) {
   const urls = [
     `https://resources.premierleague.com/premierleague25/photos/players/110x140/${code}.png`,
     `https://resources.premierleague.com/premierleague/photos/players/110x140/p${code}.png`,
   ]
   for (const url of urls) {
     try {
-      const response = await fetch(url, { headers: { 'User-Agent': USER_AGENT }, signal: AbortSignal.timeout(20_000) })
+      const headers = { 'User-Agent': USER_AGENT }
+      if (etag) headers['If-None-Match'] = etag
+      const response = await fetch(url, { headers, signal: AbortSignal.timeout(20_000) })
+      if (response.status === 304) return { unchanged: true }
       if (!response.ok) continue
       const buffer = Buffer.from(await response.arrayBuffer())
-      if (buffer.byteLength > 0) return buffer
+      if (buffer.byteLength > 0) return { buffer, etag: response.headers.get('etag') }
     } catch {
       // Treated as missing; it is retried next run because nothing is stored.
     }
@@ -667,11 +675,13 @@ async function main() {
     results.push(await writeIfChanged(path.join('squads', `gw${record.event}.json`), payload, startedAt))
   }
 
-  /* Photo framing, per player, measured once and cached in the published
-     file itself. Only codes not already present are fetched, so a run with
-     no new players measures nothing. Overrides are cut to the standard
-     composition by hand, so they are not measured and render at 1. */
-  log('\nMeasuring photo framing for new players...')
+  /* Photo framing, per player, measured from the photo and cached in the
+     published file itself against the CDN's ETag. Known codes are
+     revalidated with a conditional request and only re-measured if the CDN
+     has replaced the photo; new codes are measured. Overrides are cut to
+     the standard composition by hand, so they are not measured and render
+     at 1. */
+  log('\nChecking photo framing...')
   const framingFile = path.join(DATA_DIR, 'photo-framing.json')
   let existingFraming = {}
   try {
@@ -682,10 +692,10 @@ async function main() {
   const { framing, stats } = await updateFraming({
     codes: [...cardPhotoCodes].filter((code) => !overrides.has(code)),
     existing: existingFraming,
-    fetchPhoto: (code) => fetchPhotoBuffer(code),
+    fetchPhoto: fetchPhotoBuffer,
     log,
   })
-  log(`  ${stats.cached} cached, ${stats.measured} measured, ${stats.failed} without a photo or unmeasurable.`)
+  log(`  ${stats.unchanged} unchanged, ${stats.measured} measured, ${stats.failed} without a photo or unmeasurable.`)
   results.push(await writeIfChanged('photo-framing.json', { framing, generatedAt }, startedAt))
 
   const written = results.filter((r) => r.written)

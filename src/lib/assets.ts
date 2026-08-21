@@ -166,17 +166,21 @@ export interface PhotoSource {
   srcSet?: string
 }
 
-export function playerPhotoCandidates(photoCode: number): PhotoSource[] {
+export function playerPhotoCandidates(photoCode: number, version: string | null = null): PhotoSource[] {
   const override = playerImageOverride(photoCode)
+  // The CDN replaces photos under the same URL. A version from the framing
+  // measurement pins the browser to the bytes that were measured, past any
+  // older copy in its cache. The CDN ignores the query string.
+  const v = (url: string) => (version ? `${url}?v=${version}` : url)
   return [
     ...(override ? [{ src: override }] : []),
     {
-      src: playerPhoto(photoCode, 'small'),
-      srcSet: `${playerPhoto(photoCode, 'small')} 220w, ${playerPhoto(photoCode, 'large')} 500w`,
+      src: v(playerPhoto(photoCode, 'small')),
+      srcSet: `${v(playerPhoto(photoCode, 'small'))} 220w, ${v(playerPhoto(photoCode, 'large'))} 500w`,
     },
     {
-      src: playerPhotoLegacy(photoCode, 'small'),
-      srcSet: `${playerPhotoLegacy(photoCode, 'small')} 220w, ${playerPhotoLegacy(photoCode, 'large')} 500w`,
+      src: v(playerPhotoLegacy(photoCode, 'small')),
+      srcSet: `${v(playerPhotoLegacy(photoCode, 'small'))} 220w, ${v(playerPhotoLegacy(photoCode, 'large'))} 500w`,
     },
   ]
 }

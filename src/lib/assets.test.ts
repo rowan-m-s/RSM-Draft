@@ -95,6 +95,10 @@ describe('responsive card photos', () => {
     expect(legacy.srcSet).toContain('/250x250/p')
     expect(legacy.srcSet).toContain(' 500w')
 
+    const [pinned] = playerPhotoCandidates(HAALAND, 'abc123')
+    expect(pinned.src).toContain('.png?v=abc123')
+    expect(pinned.srcSet).toContain('/500x500/223094.png?v=abc123 500w')
+
     setPlayerImageOverrides([PALESTRA])
     const [override] = playerPhotoCandidates(PALESTRA)
     expect(override.src).toContain(`images/players/${PALESTRA}.png`)

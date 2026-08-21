@@ -75,27 +75,42 @@ const round3 = (n) => Math.round(n * 1000) / 1000
 /**
  * Bring the framing map up to date for a set of player codes.
  *
- * Only codes not already in `existing` are fetched and measured, so a run
- * with no new players costs nothing. `fetchPhoto(code)` returns a PNG buffer
- * or null. A failed fetch or measurement is logged and left out, to be
- * retried next run; the browser treats a missing entry as scale 1.
+ * The CDN replaces photos under the same URL (a reshoot, a new kit), so a
+ * measurement is only valid for the bytes it was taken from. Each entry
+ * carries the CDN's ETag: a code already in `existing` is revalidated with
+ * a conditional request, which answers 304 and costs nothing when the photo
+ * is unchanged, and is re-measured only when it has. New codes are fetched
+ * and measured. The ETag is also published so the browser can pin the same
+ * version of the file.
+ *
+ * `fetchPhoto(code, etag)` returns { unchanged: true }, { buffer, etag }, or
+ * null when there is no photo. A failed fetch or measurement is logged and
+ * the code left out (or its stale entry dropped), to be retried next run;
+ * the browser treats a missing entry as scale 1.
  */
 export async function updateFraming({ codes, existing = {}, fetchPhoto, log = () => {}, concurrency = 8 }) {
-  const framing = { ...existing }
-  const pending = [...new Set(codes)].filter((code) => !(code in framing))
-  const stats = { cached: Object.keys(existing).length, measured: 0, failed: 0 }
+  const framing = {}
+  const wanted = [...new Set(codes)]
+  const stats = { unchanged: 0, measured: 0, failed: 0 }
 
   let index = 0
   async function worker() {
-    while (index < pending.length) {
-      const code = pending[index++]
+    while (index < wanted.length) {
+      const code = wanted[index++]
+      const previous = existing[code]
       try {
-        const buffer = await fetchPhoto(code)
-        if (!buffer) {
+        const result = await fetchPhoto(code, previous?.etag)
+        if (!result) {
           stats.failed += 1
           continue
         }
-        framing[code] = await measureFraming(buffer)
+        if (result.unchanged && previous) {
+          framing[code] = previous
+          stats.unchanged += 1
+          continue
+        }
+        const measured = await measureFraming(result.buffer)
+        framing[code] = { ...measured, etag: result.etag ?? null }
         stats.measured += 1
       } catch (error) {
         stats.failed += 1
@@ -103,6 +118,6 @@ export async function updateFraming({ codes, existing = {}, fetchPhoto, log = ()
       }
     }
   }
-  await Promise.all(Array.from({ length: Math.min(concurrency, pending.length) }, worker))
+  await Promise.all(Array.from({ length: Math.min(concurrency, wanted.length) }, worker))
   return { framing, stats }
 }

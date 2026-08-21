@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import type { PhotoSize } from '../lib/assets'
-import { IDENTITY, framingStyle, type Framing } from '../lib/photoFraming'
+import { IDENTITY, framingStyle, versionOf, type Framing } from '../lib/photoFraming'
 import {
   BADGE_FALLBACK,
   PLAYER_FALLBACK,
@@ -161,7 +161,7 @@ export function CardPhoto({
   framing?: Framing
   className?: string
 }) {
-  const candidates = playerPhotoCandidates(photoCode)
+  const candidates = playerPhotoCandidates(photoCode, versionOf(framing.etag))
   return (
     <Img
       sources={candidates.map((c) => c.src)}

@@ -49,22 +49,40 @@ describe('measureFraming', () => {
 })
 
 describe('updateFraming', () => {
-  it('measures only codes it has not seen, and leaves failures out', async () => {
+  it('revalidates cached codes, re-measures changed photos, and leaves failures out', async () => {
     const normal = await cutout({ headWidth: TARGET_HEAD_WIDTH, headroom: 0 })
-    const fetched = []
-    const fetchPhoto = async (code) => {
-      fetched.push(code)
+    const wide = await cutout({ headWidth: 0.27, headroom: 0.12 })
+    const calls = []
+    const fetchPhoto = async (code, etag) => {
+      calls.push([code, etag])
+      if (code === 1) return { unchanged: true } // 304: the cached entry stands
+      if (code === 2) return { buffer: wide, etag: '"new"' } // the CDN replaced the photo
       if (code === 3) return null // 403 from the CDN
-      if (code === 4) return Buffer.from('not a png')
-      return normal
+      if (code === 4) return { buffer: Buffer.from('not a png'), etag: '"x"' }
+      return { buffer: normal, etag: '"n"' }
     }
-    const existing = { 1: { scale: 1.1, top: 0.05 } }
-    const { framing, stats } = await updateFraming({ codes: [1, 2, 3, 4, 2], existing, fetchPhoto })
-    expect(fetched.sort()).toEqual([2, 3, 4]) // 1 was cached, 2 once despite the duplicate
-    expect(framing[1]).toEqual({ scale: 1.1, top: 0.05 })
-    expect(framing[2].scale).toBeCloseTo(1, 1)
+    const existing = {
+      1: { scale: 1.1, top: 0.05, etag: '"a"' },
+      2: { scale: 1, top: 0, etag: '"old"' },
+    }
+    const { framing, stats } = await updateFraming({ codes: [1, 2, 3, 4, 5, 5], existing, fetchPhoto })
+    // Cached codes are asked about conditionally, with their ETag; each code once.
+    expect(calls.sort()).toEqual([[1, '"a"'], [2, '"old"'], [3, undefined], [4, undefined], [5, undefined]])
+    expect(framing[1]).toEqual({ scale: 1.1, top: 0.05, etag: '"a"' })
+    expect(framing[2].top).toBeCloseTo(0.12, 2)
+    expect(framing[2].etag).toBe('"new"')
     expect(framing[3]).toBeUndefined()
     expect(framing[4]).toBeUndefined()
-    expect(stats).toEqual({ cached: 1, measured: 1, failed: 2 })
+    expect(framing[5].scale).toBeCloseTo(1, 1)
+    expect(stats).toEqual({ unchanged: 1, measured: 2, failed: 2 })
+  })
+
+  it('drops a stale entry whose photo has gone rather than keeping a lift for a picture that is not there', async () => {
+    const { framing } = await updateFraming({
+      codes: [9],
+      existing: { 9: { scale: 1.2, top: 0.1, etag: '"gone"' } },
+      fetchPhoto: async () => null,
+    })
+    expect(framing[9]).toBeUndefined()
   })
 })

@@ -11,9 +11,16 @@ export interface Framing {
   scale: number
   /** Empty frame above the hair, as a fraction of the photo's height. */
   top: number
+  /**
+   * The CDN's ETag for the photo the measurement was taken from. The CDN
+   * replaces photos under the same URL, so the card appends this to the URL:
+   * the browser then fetches the measured version rather than an older one
+   * it has cached, and the lift can never be applied to the wrong picture.
+   */
+  etag: string | null
 }
 
-export const IDENTITY: Framing = { scale: 1, top: 0 }
+export const IDENTITY: Framing = { scale: 1, top: 0, etag: null }
 
 let framing: Readonly<Record<string, Partial<Framing>>> = {}
 
@@ -29,7 +36,14 @@ export function photoFraming(photoCode: number): Framing {
   if (!entry) return IDENTITY
   const scale = sane(entry.scale, 0.5, 2) ? entry.scale! : 1
   const top = sane(entry.top, 0, 0.5) ? entry.top! : 0
-  return { scale, top }
+  const etag = typeof entry.etag === 'string' && entry.etag.length > 0 ? entry.etag : null
+  return { scale, top, etag }
+}
+
+/** A short cache key from an ETag, safe in a query string. */
+export function versionOf(etag: string | null): string | null {
+  if (!etag) return null
+  return etag.replace(/[^A-Za-z0-9]/g, '').slice(0, 12) || null
 }
 
 /**
