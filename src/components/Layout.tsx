@@ -154,7 +154,7 @@ export function Layout() {
       <ScrollRestoration />
       {/* Desktop sidebar. Fixed, on the page colour, table pinned at the
           bottom on a raised surface. */}
-      <aside className="hidden w-[260px] shrink-0 border-r border-pl-border bg-pl-bg lg:sticky lg:top-0 lg:flex lg:h-dvh lg:flex-col">
+      <aside className="hidden w-[260px] shrink-0 border-r border-pl-border bg-pl-bg pt-[env(safe-area-inset-top)] lg:sticky lg:top-0 lg:flex lg:h-dvh lg:flex-col">
         <div className="px-4 pt-5 pb-4">
           <Mark />
           <p className="mt-1.5 pl-10 text-xs text-pl-muted">RSM · 26/27</p>
@@ -181,13 +181,15 @@ export function Layout() {
         </div>
       </aside>
 
-      {/* Mobile top bar. */}
-      <div className="flex items-center justify-between border-b border-pl-border bg-pl-bg px-4 py-3 lg:hidden">
+      {/* Mobile top bar. With viewport-fit=cover the page runs up under the
+          status bar, so the bar takes the top inset as extra padding and the
+          wordmark starts below the clock and battery. */}
+      <div className="flex items-center justify-between border-b border-pl-border bg-pl-bg px-4 pt-[calc(0.75rem+env(safe-area-inset-top))] pb-3 lg:hidden">
         <Mark compact />
         <Freshness compact />
       </div>
 
-      <main className="min-w-0 flex-1 pb-20 lg:pb-0">
+      <main className="min-w-0 flex-1 pb-[calc(5rem+env(safe-area-inset-bottom))] lg:pb-0">
         {data ? <Outlet /> : <DataGate state={state} />}
       </main>
 

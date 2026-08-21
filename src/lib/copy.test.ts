@@ -24,6 +24,21 @@ describe('user-facing copy', () => {
   })
 })
 
+describe('placeholders', () => {
+  it('never uses a lone dash as an empty value', () => {
+    // A cell that has nothing to say is left blank. A '–' or '—' on its own
+    // in every row reads as a stray character rather than an empty state,
+    // and the punctuation rules above do not catch it because it is not
+    // surrounded by text.
+    const hits = [
+      ...(findInCopy('src', "'–'") as { file: string; line: number; text: string }[]),
+      ...(findInCopy('src', "'—'") as { file: string; line: number; text: string }[]),
+    ]
+    const report = hits.map((hit) => `\n  ${hit.file}:${hit.line}  ${hit.text}`).join('')
+    expect(hits, `Leave the cell empty instead.${report}`).toEqual([])
+  })
+})
+
 describe('the scanner itself', () => {
   it('ignores line comments', () => {
     expect(stripComments('const a = 1 // an em dash — here\n')).not.toContain('—')

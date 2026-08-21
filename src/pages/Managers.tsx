@@ -30,7 +30,7 @@ function ManagerProfile({ row, onClose }: { row: SeasonRow; onClose: () => void 
   const best = squad[0] ?? null
 
   return (
-    <div className="fixed inset-0 z-30 overflow-y-auto bg-pl-bg/80 p-0 sm:p-6" onClick={onClose}>
+    <div className="fixed inset-0 z-30 overflow-y-auto bg-pl-bg/80 p-0 pt-[env(safe-area-inset-top)] sm:p-6" onClick={onClose}>
       <div
         className="mx-auto min-h-dvh max-w-3xl bg-pl-surface sm:min-h-0 sm:rounded-lg"
         onClick={(e) => e.stopPropagation()}
