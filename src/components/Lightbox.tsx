@@ -27,13 +27,13 @@ export function Lightbox({ title, onClose, children }: { title: string; onClose:
       onClick={onClose}
       className="fixed inset-0 z-40 flex flex-col items-center justify-center gap-3 bg-pl-bg/90 p-4 pt-[calc(1rem+env(safe-area-inset-top))]"
     >
-      <div className="flex w-full max-w-3xl items-center justify-between gap-3">
-        <p className="display min-w-0 truncate text-xl text-pl-text sm:text-2xl">{title}</p>
+      <div className="relative w-full max-w-3xl">
+        <p className="display px-10 text-center text-lg tracking-wide text-pl-text uppercase sm:text-2xl">{title}</p>
         <button
           type="button"
           onClick={onClose}
           aria-label="Close"
-          className="shrink-0 rounded px-2 py-1 text-pl-muted hover:bg-pl-surface-2 hover:text-pl-text"
+          className="absolute top-1/2 right-0 -translate-y-1/2 rounded px-2 py-1 text-pl-muted hover:bg-pl-surface-2 hover:text-pl-text"
         >
           ✕
         </button>

@@ -92,7 +92,7 @@ function KochCard({
                 set={setFor(key)}
                 managerKey={key}
                 alt={`${nameOf(key)}, Koch of the week`}
-                enlargeTitle={`Koch of the week · ${nameOf(key)}`}
+                enlargeTitle={`Koch of the week${confirmed ? '' : ' (so far)'} - ${nameOf(key)} - ${gameweek.scores[key]} pts`}
                 className="aspect-square w-28 shrink-0 sm:w-36"
               />
               <div className="flex min-w-0 flex-1 flex-col justify-center">
@@ -190,7 +190,7 @@ function MotmCard({
               managerKey={key}
               playerCode={confirmed ? undefined : leaderGraphicFor(key)}
               alt={`${nameOf(key)}, ${confirmed ? 'manager of the month' : 'leading the month'}`}
-              enlargeTitle={`Manager of the month · ${nameOf(key)}`}
+              enlargeTitle={`Manager of the month${confirmed ? '' : ' (so far)'} - ${nameOf(key)} - ${month.totals[key]} pts`}
               className="aspect-square w-28 shrink-0 sm:w-36"
             />
             <div className="flex min-w-0 flex-1 flex-col justify-center">
@@ -282,7 +282,7 @@ function LeaderCard({
               managerKey={key}
               playerCode={graphicFor(key)}
               alt={`${nameOf(key)}, league leader`}
-              enlargeTitle={`League leader · ${nameOf(key)}`}
+              enlargeTitle={`League leader - ${nameOf(key)} - ${leader.total} pts`}
               className="aspect-square w-28 shrink-0 sm:w-36"
             />
             <div className="flex min-w-0 flex-1 flex-col justify-center">
