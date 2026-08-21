@@ -35,7 +35,7 @@ function fixtureLabel(fixtures: Fixture[] | undefined, shortNameOf: (id: number)
  */
 function cardLine(entry: PitchPlayer, mode: CardMode, fixtureText: string): string {
   const { pick } = entry
-  if (mode === 'points') return pts(pick?.points ?? 0)
+  if (mode === 'points') return String(pick?.points ?? 0)
   if (mode === 'pick') return `Pick ${pick?.pick ?? '?'}${pick?.sequence ? ` (${pick.sequence})` : ''}`
   return fixtureText
 }
@@ -52,8 +52,7 @@ function subOf(entry: PitchPlayer): 'on' | 'off' | null {
  * among the eleven, which is what decides the £5.
  *
  * Hidden for the draft, where no points exist: a zero there would read as
- * a real score. A week in play is marked provisional, as the league table
- * marks it. A confirmed week in which this manager was Koch takes the
+ * a real score. A confirmed week in which this manager was Koch takes the
  * Koch colour, as the league table does.
  */
 export function PointsStrip({
@@ -61,31 +60,23 @@ export function PointsStrip({
   managerKey,
   gameweek,
   started,
-  confirmed,
   koch,
 }: {
   squads: Record<string, { starter: boolean; points: number }[]>
   managerKey: string
   gameweek: number
   started: boolean
-  confirmed: boolean
   koch: boolean
 }) {
   const points = gameweekPoints(squads, managerKey)
   if (!points || !started) return null
-  const provisional = !confirmed
   const tone = koch ? 'text-pl-pink' : 'text-pl-text'
 
   return (
-    <section
-      className={`card mb-3 flex flex-col items-center gap-1.5 px-4 py-3 text-center sm:mb-4 sm:px-5 ${provisional ? 'opacity-90' : ''}`}
-    >
+    <section className="card mb-3 flex flex-col items-center gap-1.5 px-4 py-3 text-center sm:mb-4 sm:px-5">
       <span className={`display tnum text-4xl leading-none sm:text-5xl ${tone}`}>{points.xi}</span>
       <p className="flex items-center justify-center gap-2 text-sm text-pl-muted">
-        <span>
-          GW{gameweek} points
-          {provisional && <span className="text-pl-text"> · provisional</span>}
-        </span>
+        <span>GW{gameweek} points</span>
         {koch && (
           <span className="rounded bg-pl-pink px-1.5 py-0.5 text-[10px] font-bold tracking-wide text-pl-bg uppercase">
             Koch
@@ -112,9 +103,9 @@ export function Squad() {
   const firstGameweek = available[0]
   const lastGameweek = available[available.length - 1]
 
-  // Defaults to the latest week with points, which until GW1 completes is GW0.
-  const withPoints = data.gameweeks.filter((gw) => gw.finished).map((gw) => gw.id)
-  const fallback = available.filter((gw) => withPoints.includes(gw)).at(-1) ?? lastGameweek
+  // Defaults to the latest week that has a squad: the one in play, or the
+  // draft until the first deadline passes.
+  const fallback = lastGameweek
   const requested = Number(params.get('gw'))
   const gameweek = Number.isFinite(requested) && available.includes(requested) ? requested : fallback
 
@@ -314,7 +305,6 @@ export function Squad() {
             managerKey={manager.key}
             gameweek={gameweek}
             started={started}
-            confirmed={squad.dataChecked}
             koch={Boolean(squad.dataChecked && gameweekMeta?.kochKeys.includes(manager.key))}
           />
         )}
