@@ -242,6 +242,8 @@ export interface SquadPick {
   pick?: number
   /** GW0 only: draft round. */
   round?: number
+  /** GW0 only: the manager's own ordinal, 1 to 15, by overall pick order. */
+  sequence?: number
 }
 
 /** Enough detail to render a player without consulting players.json — a

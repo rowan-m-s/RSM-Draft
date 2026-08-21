@@ -557,4 +557,36 @@ describe('buildDraftSquads', () => {
     const { squads } = buildDraftSquads({ choices: withStranger, keyByEntryId, positionOf })
     expect(Object.keys(squads).sort()).toEqual(['rowan', 'rushy'])
   })
+
+  it("numbers each manager's own picks 1 to 15 by overall order, snake or not", () => {
+    // A two-manager snake: rowan picks 1, 4, 5, 8, 9 …; rushy 2, 3, 6, 7 ….
+    // Delivered out of order to prove the ordinal comes from sorting.
+    const snake = []
+    const overall = { rowan: [], rushy: [] }
+    for (let n = 1; n <= 30; n++) {
+      const pair = Math.ceil(n / 2)
+      const rowanFirst = pair % 2 === 1
+      const key = (n % 2 === 1) === rowanFirst ? 'rowan' : 'rushy'
+      overall[key].push(n)
+    }
+    for (const [key, nums] of Object.entries(overall)) {
+      nums.forEach((n, i) => snake.push({ entry: key === 'rowan' ? 100 : 101, element: (key === 'rowan' ? 0 : 15) + i + 1, index: n, round: Math.ceil(n / 2) }))
+    }
+    snake.reverse()
+    const { squads } = buildDraftSquads({ choices: snake, keyByEntryId, positionOf })
+    for (const key of ['rowan', 'rushy']) {
+      const byOverall = [...squads[key]].sort((a, b) => a.pick - b.pick)
+      expect(byOverall.map((p) => p.sequence)).toEqual(Array.from({ length: 15 }, (_, i) => i + 1))
+    }
+    // rowan's first pick went 1st overall; rushy's first went 2nd, their second 3rd.
+    expect(squads.rushy.find((p) => p.pick === 3).sequence).toBe(2)
+    expect(squads.rushy.find((p) => p.pick === 6).sequence).toBe(3)
+  })
+
+  it('fails loudly if a manager does not have fifteen distinct picks', () => {
+    const fourteen = choices.filter((c) => !(c.entry === 100 && c.index === 7))
+    expect(() => buildDraftSquads({ choices: fourteen, keyByEntryId, positionOf })).toThrow(/rowan: expected 15 distinct draft picks, found 14/)
+    const duplicated = choices.map((c) => (c.entry === 101 && c.index === 20 ? { ...c, index: 19 } : c))
+    expect(() => buildDraftSquads({ choices: duplicated, keyByEntryId, positionOf })).toThrow(/rushy: .*14 distinct/)
+  })
 })

@@ -450,15 +450,15 @@ export function LeagueTable() {
 
   return (
     <>
-      {/* The toggle sits above the banner, where the reference puts its league
-          switcher. */}
-      <Segmented label="Showing" value={view} options={VIEWS} onChange={setView} />
-
       <Banner
         season={`Season ${data.league.season.replace('20', '').replace('/20', '/')}`}
         title="League Table"
         subtitle={SUBTITLES[view]}
       />
+
+      {/* The view switch sits directly under the banner, where the reference
+          puts its tab strip, and above the table. */}
+      <Segmented label="Showing" value={view} options={VIEWS} onChange={setView} />
 
       <PageBody>
         {view === 'overall' && <Overall />}

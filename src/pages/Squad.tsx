@@ -25,11 +25,16 @@ function fixtureLabel(fixtures: Fixture[] | undefined, shortNameOf: (id: number)
   return fixtures.map((f) => `${shortNameOf(f.opponent)} (${f.home ? 'H' : 'A'})`).join(' · ')
 }
 
-/** What the card's info band says for this player in this view. */
+/**
+ * What the card's info band says for this player in this view.
+ *
+ * On the draft, "Pick 3 (1)": where the player went in the room, then in
+ * brackets how highly this manager rated them, their first to fifteenth.
+ */
 function cardLine(entry: PitchPlayer, mode: CardMode, fixtureText: string): string {
   const { pick } = entry
   if (mode === 'points') return String(pick?.points ?? 0)
-  if (mode === 'pick') return `Pick ${pick?.pick ?? '?'}`
+  if (mode === 'pick') return `Pick ${pick?.pick ?? '?'}${pick?.sequence ? ` (${pick.sequence})` : ''}`
   return fixtureText
 }
 
@@ -218,7 +223,7 @@ export function Squad() {
             <p className="mt-3 text-xs leading-relaxed text-pl-muted">
               {isDraft ? (
                 <>
-                  These are the fifteen as drafted, with the overall pick number on each card. A drafted squad
+                  These are the fifteen as drafted. Each card shows where the player went overall, then in brackets which of this manager's fifteen picks they were. A drafted squad
                   has no eleven, so this one is inferred: the highest drafted legal team, one keeper, at least
                   three defenders, two midfielders and a forward. It is not an official lineup.
                 </>

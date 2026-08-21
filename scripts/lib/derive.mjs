@@ -563,6 +563,12 @@ export function inferDraftXI({ picks, positionOf }) {
  * `index` from the choices payload is the overall pick number, 1 to 165, which
  * is what the cards show. `round` and `pick` are the round and the pick within
  * it, kept because they are the natural way to talk about a draft.
+ *
+ * `sequence` is the manager's own ordinal, 1 to 15: their first pick, their
+ * second, and so on. It is derived by sorting each manager's picks by overall
+ * number rather than from the round, because in a snake draft the ordinal
+ * is not a function of the overall number. Every manager must end up with
+ * exactly 1 to 15, and the build fails if not.
  */
 export function buildDraftSquads({ choices, keyByEntryId, positionOf }) {
   const byManager = {}
@@ -570,6 +576,20 @@ export function buildDraftSquads({ choices, keyByEntryId, positionOf }) {
     const key = keyByEntryId.get(choice.entry)
     if (!key) continue
     ;(byManager[key] ??= []).push({ element: choice.element, pick: choice.index, round: choice.round })
+  }
+
+  for (const [key, picks] of Object.entries(byManager)) {
+    picks.sort((a, b) => a.pick - b.pick)
+    picks.forEach((p, i) => {
+      p.sequence = i + 1
+    })
+    const overall = picks.map((p) => p.pick)
+    if (picks.length !== 15 || new Set(overall).size !== 15) {
+      throw new Error(
+        `${key}: expected 15 distinct draft picks, found ${picks.length} (${new Set(overall).size} distinct). ` +
+          `The draft sequence cannot be numbered.`
+      )
+    }
   }
 
   const squads = {}
@@ -593,6 +613,7 @@ export function buildDraftSquads({ choices, keyByEntryId, positionOf }) {
         points: 0,
         pick: p.pick,
         round: p.round,
+        sequence: p.sequence,
       })),
       ...inferred.bench.map((p, i) => ({
         element: p.element,
@@ -603,6 +624,7 @@ export function buildDraftSquads({ choices, keyByEntryId, positionOf }) {
         points: 0,
         pick: p.pick,
         round: p.round,
+        sequence: p.sequence,
       })),
     ]
   }
