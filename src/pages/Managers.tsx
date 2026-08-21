@@ -147,7 +147,7 @@ function ManagerProfile({ row, onClose }: { row: SeasonRow; onClose: () => void 
                 {kochWeeks.map((gw) => (
                   <figure key={`koch-${gw.id}`} className="w-32">
                     <CardImage
-                      set="koch"
+                      set={gw.kochVariant?.[row.key] ?? 'koch'}
                       managerKey={row.key}
                       alt={`${nameOf(row.key)}, Koch of the week`}
                       className="aspect-square w-32"

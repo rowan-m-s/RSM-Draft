@@ -12,7 +12,7 @@
  * Skips anything already newer than its source unless --force is passed.
  */
 
-import { mkdir, readdir, stat, writeFile } from 'node:fs/promises'
+import { mkdir, readdir, readFile, rm, stat, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import sharp from 'sharp'
 import {
@@ -21,11 +21,13 @@ import {
   MANAGER_KEYS,
   MANAGER_SETS,
   OUT_DIR,
+  PLAYER_SETS,
   PLAYER_SILHOUETTE_SVG,
   SEASON_SETS,
   SOURCE_DIR,
   classifySourceFile,
 } from './images.shared.mjs'
+import { resolvePlayerName } from './lib/graphics.mjs'
 
 const force = process.argv.includes('--force')
 
@@ -42,6 +44,7 @@ const RECIPES = {
   icon: { fit: 'cover', sizes: [64, 128], faceCrop: true },
   koch: { fit: 'inside', sizes: [900] },
   motm: { fit: 'inside', sizes: [900] },
+  koch2: { fit: 'inside', sizes: [900] },
   leader: { fit: 'inside', sizes: [900] },
   winner: { fit: 'inside', sizes: [900] },
 }
@@ -178,6 +181,64 @@ function outPath(set, key, size, sizes, format) {
   return path.join(OUT_DIR, set, `${key}${suffix}.${format}`)
 }
 
+/**
+ * Resolve every player-set job to an FPL player and build the manifest that
+ * the fetch job and the build check read: set → manager → [{ code, name,
+ * surname, source }]. Ownership comes from the published players.json and
+ * names from the Draft bootstrap, so this needs the network once per run.
+ */
+async function resolvePlayerSets(jobs) {
+  const manifest = {}
+  if (jobs.length === 0) return manifest
+
+  const owned = JSON.parse(await readFile('public/data/players.json', 'utf8')).owned
+  const response = await fetch('https://draft.premierleague.com/api/bootstrap-static', {
+    headers: { 'User-Agent': 'Mozilla/5.0 (RSM Draft image import)' },
+  })
+  if (!response.ok) {
+    console.error(`Cannot resolve player names: bootstrap-static answered HTTP ${response.status}.`)
+    process.exit(1)
+  }
+  const elements = new Map((await response.json()).elements.map((e) => [e.id, e]))
+
+  const problems = []
+  for (const job of jobs) {
+    const squad = owned
+      .filter((p) => p.owner === job.key)
+      .map((p) => {
+        const e = elements.get(p.id) ?? {}
+        return { id: p.id, code: p.photoCode, webName: p.name, firstName: e.first_name, secondName: e.second_name, club: p.clubShort }
+      })
+    const result = resolvePlayerName({ name: job.player, candidates: squad })
+    if (result.status !== 'resolved') {
+      problems.push(
+        `  ✗ ${job.filename}: "${job.player}" ` +
+          (result.status === 'ambiguous'
+            ? `matches ${result.players.map((p) => p.webName).join(' and ')} in ${job.key}'s squad`
+            : `matches nobody in ${job.key}'s squad`)
+      )
+      continue
+    }
+    job.code = result.player.code
+    const surname = (result.player.secondName ?? result.player.webName).trim().split(/\s+/).at(-1)
+    ;((manifest[job.set] ??= {})[job.key] ??= []).push({
+      code: result.player.code,
+      name: result.player.webName,
+      surname,
+      source: job.filename,
+    })
+  }
+  if (problems.length > 0) {
+    console.error(`\nCould not resolve ${problems.length} player graphic(s):\n${problems.join('\n')}\n`)
+    console.error('Rename the file to the player\'s surname, web name or first name as FPL has it, then rerun.\n')
+    process.exit(1)
+  }
+  for (const set of Object.values(manifest)) {
+    for (const list of Object.values(set)) list.sort((a, b) => a.surname.localeCompare(b.surname))
+  }
+  return manifest
+}
+
 async function main() {
   let sources
   try {
@@ -253,7 +314,7 @@ async function main() {
   // order, which is nobody's intention.
   const bySlot = new Map()
   for (const job of jobs) {
-    const slot = `${job.set}/${job.key}`
+    const slot = job.player ? `${job.set}/${job.key}/${job.player.toLowerCase()}` : `${job.set}/${job.key}`
     if (bySlot.has(slot)) {
       console.error(
         `Two sources for ${slot}: ${bySlot.get(slot)} and ${job.filename}. ` +
@@ -281,9 +342,25 @@ async function main() {
     process.exit(1)
   }
   const winners = jobs.filter((job) => job.set === 'winner')
-  console.log(`Winner cards:    ${winners.length} (${winners.map((w) => w.key).join(', ') || 'none'}) — validated against honours.json, not the eleven keys.\n`)
+  console.log(`Winner cards:    ${winners.length} (${winners.map((w) => w.key).join(', ') || 'none'}) — validated against honours.json, not the eleven keys.`)
 
-  for (const set of [...MANAGER_SETS, ...SEASON_SETS]) {
+  /* Player sets: several graphics per manager, one per player, written by
+     the player's FPL code so a rename or a duplicate surname later cannot
+     break the lookup. Names are resolved against the manager's current
+     squad; anything unresolved or ambiguous stops the run and is listed. */
+  const manifest = await resolvePlayerSets(jobs.filter((job) => job.player))
+  for (const set of PLAYER_SETS) {
+    const perManager = MANAGER_KEYS.map((key) => `${key} ${(manifest[set]?.[key] ?? []).length}`)
+    console.log(`${set[0].toUpperCase() + set.slice(1)} graphics:  ${perManager.join(', ')}`)
+    const none = MANAGER_KEYS.filter((key) => !(manifest[set]?.[key] ?? []).length)
+    if (none.length > 0) {
+      console.error(`\nNo ${set} graphic for: ${none.join(', ')}. Every manager needs at least one.\n`)
+      process.exit(1)
+    }
+  }
+  console.log()
+
+  for (const set of [...MANAGER_SETS, ...SEASON_SETS, ...PLAYER_SETS]) {
     await mkdir(path.join(OUT_DIR, set), { recursive: true })
   }
 
@@ -299,9 +376,10 @@ async function main() {
     const head = recipe.faceCrop ? await measureHead(job.source) : null
     const crop = recipe.faceCrop ? faceRegion(meta, head) : null
 
+    const stem = job.player ? `${job.key}.${job.code}` : job.key
     for (const size of recipe.sizes) {
       for (const format of FORMATS) {
-        const target = outPath(job.set, job.key, size, recipe.sizes, format)
+        const target = outPath(job.set, stem, size, recipe.sizes, format)
         if (!force && (await mtime(target)) > sourceTime) {
           skipped++
           continue
@@ -326,10 +404,10 @@ async function main() {
       }
     }
 
-    const outSize = await stat(outPath(job.set, job.key, recipe.sizes[0], recipe.sizes, 'webp'))
+    const outSize = await stat(outPath(job.set, stem, recipe.sizes[0], recipe.sizes, 'webp'))
     const sourceSize = (await stat(job.source)).size
     report.push({
-      file: `${job.set}/${job.key}`,
+      file: `${job.set}/${stem}`,
       orientation,
       source: `${(sourceSize / 1024 / 1024).toFixed(1)} MB`,
       out: `${(outSize.size / 1024).toFixed(0)} KB`,
@@ -371,6 +449,28 @@ async function main() {
   await writeFile(path.join(OUT_DIR, 'player-silhouette.svg'), PLAYER_SILHOUETTE_SVG)
   await writeFile(path.join(OUT_DIR, 'badge-placeholder.svg'), BADGE_PLACEHOLDER_SVG)
   console.log('Wrote fallback silhouette and badge placeholder.')
+
+  /* The manifest of player graphics, committed beside the images. The fetch
+     job reads it to choose which graphic each manager shows; the build check
+     reads it to confirm every code has a file. Files in a player-set folder
+     that the manifest no longer names are removed, so a renamed or deleted
+     source cannot leave an orphan behind. */
+  await mkdir('src/config', { recursive: true })
+  await writeFile('src/config/player-graphics.json', JSON.stringify(manifest, null, 2) + '\n')
+  for (const set of PLAYER_SETS) {
+    const keep = new Set()
+    for (const [key, list] of Object.entries(manifest[set] ?? {})) {
+      for (const entry of list) for (const format of FORMATS) keep.add(`${key}.${entry.code}.${format}`)
+    }
+    const dir = path.join(OUT_DIR, set)
+    for (const file of await readdir(dir)) {
+      if (!keep.has(file)) {
+        await rm(path.join(dir, file))
+        console.log(`Removed ${set}/${file}: no longer in the source set.`)
+      }
+    }
+  }
+  console.log(`Wrote src/config/player-graphics.json.`)
 
   await optimiseOverrides()
 

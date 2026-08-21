@@ -7,6 +7,7 @@ import {
   clubBadge,
   managerIcon2x,
   managerImage,
+  playerGraphic,
   playerPhotoCandidates,
   playerPhotoSources,
 } from '../lib/assets'
@@ -200,19 +201,34 @@ export function ClubBadge({ clubCode, club, size = 20 }: { clubCode: number; clu
 export function CardImage({
   set,
   managerKey,
+  playerCode,
   alt,
   className = '',
 }: {
-  set: 'koch' | 'motm' | 'leader' | 'winner'
+  set: 'koch' | 'koch2' | 'motm' | 'leader' | 'winner'
   managerKey: string
+  /** For player-keyed sets (leader): which of the manager's graphics. */
+  playerCode?: number | null
   alt: string
   className?: string
 }) {
+  const webp =
+    set === 'leader' && playerCode != null
+      ? playerGraphic(set, managerKey, playerCode, 'webp')
+      : set === 'leader'
+        ? null
+        : managerImage(set, managerKey, 'webp')
+  const jpg =
+    set === 'leader' && playerCode != null
+      ? playerGraphic(set, managerKey, playerCode, 'jpg')
+      : set === 'leader'
+        ? null
+        : managerImage(set, managerKey, 'jpg')
   return (
     <div className={`overflow-hidden rounded-md bg-pl-bg ${className}`}>
       <Img
-        webp={managerImage(set, managerKey, 'webp')}
-        sources={[managerImage(set, managerKey, 'jpg')]}
+        webp={webp ?? undefined}
+        sources={jpg ? [jpg] : []}
         fallback={AVATAR_FALLBACK}
         alt={alt}
         className="h-full w-full object-contain"

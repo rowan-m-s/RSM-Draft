@@ -61,6 +61,8 @@ export interface Gameweek {
   dataChecked: boolean
   /** When FPL is expected to confirm the week: the day after its last kickoff. An estimate for copy, never a gate. */
   confirmExpectedUtc: string | null
+  /** Which Koch graphic each confirmed Koch sees this week: koch or koch2, alternating per manager. */
+  kochVariant?: Record<ManagerKey, 'koch' | 'koch2'>
   scores: Record<ManagerKey, number>
   /**
    * Everyone tied on the lowest score. Empty while the week is provisional.
@@ -143,6 +145,10 @@ export interface Leader {
 export interface Season {
   rows: SeasonRow[]
   leader: Leader | null
+  /** For sets with several graphics per manager: set → manager → chosen player code. */
+  graphics?: Record<string, Record<ManagerKey, number | null>>
+  /** Confirmed Koch awards per manager so far, for the provisional card's variant. */
+  kochCount?: Record<ManagerKey, number>
   /** The gameweek `gw` refers to, or null before any week settles. */
   latestSettledGameweek: number | null
   /** The month `month` refers to. */

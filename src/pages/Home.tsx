@@ -4,6 +4,7 @@ import { DataFooter } from '../components/Freshness'
 import { CardImage, ManagerAvatar } from '../components/Img'
 import { MiniTable, PageBody } from '../components/Layout'
 import { useData } from '../data'
+import { kochSetFor } from '../lib/assets'
 import { kochesOf, money, monthWinnersOf } from '../lib/season'
 import type { Gameweek, Leader, ManagerKey, Month } from '../types'
 
@@ -52,10 +53,22 @@ function Provisional({ award, confirmedOn }: { award: 'KOTW' | 'MOTM'; confirmed
  * then: confirmation is what attaches the £5, and a provisional Koch is just
  * who is bottom right now.
  */
-function KochCard({ gameweek, nameOf }: { gameweek: Gameweek; nameOf: (key: ManagerKey) => string }) {
+function KochCard({
+  gameweek,
+  nameOf,
+  kochCount,
+}: {
+  gameweek: Gameweek
+  nameOf: (key: ManagerKey) => string
+  /** Confirmed Koch awards per manager so far, for a provisional card's graphic. */
+  kochCount: Record<string, number>
+}) {
   const confirmed = gameweek.dataChecked
   const koches = confirmed ? gameweek.kochKeys : kochesOf(gameweek.scores)
   const tied = koches.length > 1
+  // A repeat offender sees the other graphic. Confirmed weeks carry the
+  // choice from the pipeline; a provisional one continues the count.
+  const setFor = (key: ManagerKey) => gameweek.kochVariant?.[key] ?? kochSetFor(kochCount[key] ?? 0)
 
   return (
     <section className="card overflow-hidden">
@@ -76,7 +89,7 @@ function KochCard({ gameweek, nameOf }: { gameweek: Gameweek; nameOf: (key: Mana
             {/* Square frame. The cards are all square today, but the frame
                 letterboxes anything that isn't rather than cropping a head off. */}
             <CardImage
-              set="koch"
+              set={setFor(key)}
               managerKey={key}
               alt={`${nameOf(key)}, Koch of the week`}
               className="aspect-square w-full shrink-0 sm:w-64"
@@ -196,7 +209,16 @@ function MotmCard({
  * to week is the run: how long they have led, and when the top changes
  * hands, who was displaced. Joint leaders share the card.
  */
-function LeaderCard({ leader, nameOf }: { leader: Leader; nameOf: (key: ManagerKey) => string }) {
+function LeaderCard({
+  leader,
+  nameOf,
+  graphicFor,
+}: {
+  leader: Leader
+  nameOf: (key: ManagerKey) => string
+  /** The chosen leader graphic per manager: their best-scoring pictured player. */
+  graphicFor: (key: ManagerKey) => number | null
+}) {
   const joint = leader.keys.length > 1
   const run =
     leader.weeks === 1
@@ -223,6 +245,7 @@ function LeaderCard({ leader, nameOf }: { leader: Leader; nameOf: (key: ManagerK
             <CardImage
               set="leader"
               managerKey={key}
+              playerCode={graphicFor(key)}
               alt={`${nameOf(key)}, league leader`}
               className="aspect-square w-28 shrink-0 sm:w-36"
             />
@@ -330,7 +353,7 @@ export function Home() {
           )}
 
           {latestKoch ? (
-            <KochCard gameweek={latestKoch} nameOf={nameOf} />
+            <KochCard gameweek={latestKoch} nameOf={nameOf} kochCount={data.season.kochCount ?? {}} />
           ) : (
             <AwaitingAward
               eyebrow="Koch of the week"
@@ -350,7 +373,11 @@ export function Home() {
           )}
 
           {data.season.leader ? (
-            <LeaderCard leader={data.season.leader} nameOf={nameOf} />
+            <LeaderCard
+              leader={data.season.leader}
+              nameOf={nameOf}
+              graphicFor={(key) => data.season.graphics?.leader?.[key] ?? null}
+            />
           ) : (
             <AwaitingAward
               eyebrow="League leader"

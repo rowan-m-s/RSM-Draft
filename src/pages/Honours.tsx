@@ -126,7 +126,7 @@ export function Honours() {
                         gw.kochKeys.map((key) => (
                           <figure key={`${gw.id}-${key}`} className="card overflow-hidden">
                             <CardImage
-                              set="koch"
+                              set={gw.kochVariant?.[key] ?? 'koch'}
                               managerKey={key}
                               alt={`${nameOf(key)}, Koch of the week for gameweek ${gw.id}`}
                               className="aspect-square w-full rounded-none"

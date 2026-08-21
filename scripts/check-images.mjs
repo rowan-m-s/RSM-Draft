@@ -6,7 +6,10 @@
  * notices until it is that person's week. So the build fails instead.
  *
  * Two different rules, deliberately:
- *   icon / koch / motm / leader — must hold exactly the eleven manager keys. 44 files.
+ *   icon / koch / koch2 / motm — must hold exactly the eleven manager keys. 44 files.
+ *   leader            — several per manager, one per player, named by player
+ *                       code. Validated by rule: every manager has at least one,
+ *                       and every code in the manifest has its files.
  *   winner            — one image per PAST SEASON, not per manager. Validated
  *                       the other way round: every entry in honours.json must
  *                       have a file. Nine managers having none is expected.
@@ -15,7 +18,7 @@
 import { access } from 'node:fs/promises'
 import { readFileSync } from 'node:fs'
 import path from 'node:path'
-import { FORMATS, MANAGER_KEYS, MANAGER_SETS, OUT_DIR } from './images.shared.mjs'
+import { FORMATS, MANAGER_KEYS, MANAGER_SETS, OUT_DIR, PLAYER_SETS } from './images.shared.mjs'
 
 const exists = (file) =>
   access(file).then(
@@ -33,6 +36,28 @@ async function main() {
         const file = path.join(OUT_DIR, set, `${key}.${format}`)
         checked++
         if (!(await exists(file))) problems.push(`missing ${file}`)
+      }
+    }
+  }
+
+  let manifest
+  try {
+    manifest = JSON.parse(readFileSync('src/config/player-graphics.json', 'utf8'))
+  } catch (err) {
+    console.error(`Cannot read src/config/player-graphics.json: ${err.message}. Run npm run images.`)
+    process.exit(1)
+  }
+  for (const set of PLAYER_SETS) {
+    for (const key of MANAGER_KEYS) {
+      const list = manifest[set]?.[key] ?? []
+      if (list.length === 0) problems.push(`${set}: no graphic for ${key}`)
+      for (const entry of list) {
+        if (!Number.isInteger(entry.code)) problems.push(`${set}: ${key} entry "${entry.name}" has no player code`)
+        for (const format of FORMATS) {
+          const file = path.join(OUT_DIR, set, `${key}.${entry.code}.${format}`)
+          checked++
+          if (!(await exists(file))) problems.push(`missing ${file} — named by the ${set} manifest`)
+        }
       }
     }
   }
@@ -75,7 +100,9 @@ async function main() {
 
   console.log(
     `Image check passed: ${checked} files present ` +
-      `(${MANAGER_KEYS.length}×${MANAGER_SETS.length} manager images, ${honours.length} winner card(s)).`
+      `(${MANAGER_KEYS.length}×${MANAGER_SETS.length} manager images, ` +
+      `${PLAYER_SETS.map((set) => `${Object.values(manifest[set] ?? {}).flat().length} ${set}`).join(', ')} graphics, ` +
+      `${honours.length} winner card(s)).`
   )
 }
 

@@ -1,3 +1,4 @@
+import { kochVariant } from './graphics.mjs'
 /**
  * Every derived value in the site, computed here.
  *
@@ -106,7 +107,7 @@ function topPerformersForGameweek({ event, perGw, elementName }) {
  * they were in that manager's scoring XI. A striker benched for three weeks
  * does not get credit for those weeks.
  */
-function playerPointsForManager({ gameweekIds, perGw, managerKey }) {
+export function playerPointsForManager({ gameweekIds, perGw, managerKey }) {
   const totals = new Map()
   for (const gwId of gameweekIds) {
     const gw = perGw[gwId]
@@ -782,4 +783,23 @@ export function buildFixturePoints({ live, elementIds }) {
     }
   }
   return { byFixture, mismatched }
+}
+
+/**
+ * Which Koch graphic each confirmed Koch sees, walking the season in order:
+ * a manager's first award shows `koch`, the second `koch2`, alternating.
+ * Returns gameweek id → { managerKey: set }, plus the running count per
+ * manager for the provisional card to continue from.
+ */
+export function kochVariants({ gameweeks }) {
+  const counts = {}
+  const byGameweek = {}
+  for (const gw of gameweeks) {
+    if (!gw.dataChecked) continue
+    for (const key of gw.kochKeys) {
+      ;(byGameweek[gw.id] ??= {})[key] = kochVariant(counts[key] ?? 0)
+      counts[key] = (counts[key] ?? 0) + 1
+    }
+  }
+  return { byGameweek, counts }
 }

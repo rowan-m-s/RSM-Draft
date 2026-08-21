@@ -3040,9 +3040,9 @@
       "clubShort": "MCI",
       "clubCode": 43,
       "photoCode": 465351,
-      "status": "d",
-      "chanceOfPlaying": 75,
-      "news": "Knock - 75% chance of playing",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
       "newsAdded": "2026-08-16T18:30:07.457097Z"
     },
     "390": {
@@ -3124,9 +3124,9 @@
       "clubShort": "MCI",
       "clubCode": 43,
       "photoCode": 248875,
-      "status": "d",
-      "chanceOfPlaying": 75,
-      "news": "Calf injury - 75% chance of playing",
+      "status": "i",
+      "chanceOfPlaying": 0,
+      "news": "Calf injury - Expected back 5 Sep",
       "newsAdded": "2026-08-18T17:00:08.385597Z"
     },
     "401": {
@@ -3502,7 +3502,7 @@
       "newsAdded": null
     },
     "488": {
-      "name": "Sangaré",
+      "name": "I.Sangaré",
       "position": "MID",
       "teamId": 18,
       "clubShort": "NFO",
@@ -3742,7 +3742,7 @@
       "newsAdded": null
     },
     "556": {
-      "name": "Sangaré",
+      "name": "M.Sangaré",
       "position": "MID",
       "teamId": 4,
       "clubShort": "BRE",
@@ -3826,5 +3826,5 @@
       "newsAdded": "2026-08-15T16:00:07.974271Z"
     }
   },
-  "generatedAt": "2026-08-21T11:56:55.896Z"
+  "generatedAt": "2026-08-21T13:20:20.835Z"
 }

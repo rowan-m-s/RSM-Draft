@@ -14,8 +14,22 @@ export const MANAGER_KEYS = [
   'ollie',
 ]
 
-/** The sets that must be complete: 11 keys × 4 = 44 files. */
-export const MANAGER_SETS = ['icon', 'koch', 'motm', 'leader']
+/**
+ * The sets that must hold exactly one image per manager: 11 keys × 4 = 44
+ * files. `koch2` is a second Koch graphic, shown on a manager's second
+ * Koch of the season and every other one after that, so a repeat offender
+ * does not see the same card twice running.
+ */
+export const MANAGER_SETS = ['icon', 'koch', 'koch2', 'motm']
+
+/**
+ * Sets with several images per manager, one per player, named
+ * `{manager}.{set}.{player}.png` and written keyed by the player's FPL code.
+ * Validated by rule rather than by count: every manager has at least one,
+ * every name resolves to exactly one owned player, every resolved code has
+ * a file. Only `leader` today; koch and motm could move to this later.
+ */
+export const PLAYER_SETS = ['leader']
 
 /**
  * Source filenames that are a known misspelling of a key. Mapped rather than
@@ -28,7 +42,7 @@ export const KEY_ALIASES = new Map([['kellet', 'kellett']])
  * Source name patterns that are deliberately not processed yet. Each is
  * reported as skipped with its reason rather than as an unknown file.
  */
-export const HELD_SETS = new Map([['koch2', 'a second Koch set, awaiting a decision on whether it replaces or alternates']])
+export const HELD_SETS = new Map()
 
 /**
  * `winner` is deliberately not in that list. It holds one image per past
@@ -37,7 +51,21 @@ export const HELD_SETS = new Map([['koch2', 'a second Koch set, awaiting a decis
  */
 export const SEASON_SETS = ['winner']
 
-export const ALL_SETS = [...MANAGER_SETS, ...SEASON_SETS]
+export const ALL_SETS = [...MANAGER_SETS, ...SEASON_SETS, ...PLAYER_SETS]
+
+/**
+ * Normalise a name for matching: strip diacritics, drop apostrophes,
+ * underscores, hyphens, dots and spaces, lowercase. Both the filename and the
+ * FPL names go through this, so `O_Reilly`, `Gyokeres` and `JoãoPedro` meet
+ * their players.
+ */
+export function normaliseName(value) {
+  return String(value)
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[\s'’_\-.]/g, '')
+    .toLowerCase()
+}
 
 export const SOURCE_DIR = 'assets-src'
 export const OUT_DIR = 'public/images'
@@ -71,13 +99,30 @@ const IMAGE_EXTENSIONS = ['png', 'jpg', 'jpeg', 'webp']
  * the source format matters only for finding the file.
  */
 export function parseSourceName(filename) {
+  const player = filename.match(
+    new RegExp(`^(.+?)\\.(${PLAYER_SETS.join('|')})\\.(.+?)\\.(${IMAGE_EXTENSIONS.join('|')})$`, 'i')
+  )
+  if (player) {
+    const raw = player[1].toLowerCase()
+    const key = KEY_ALIASES.get(raw) ?? raw
+    return {
+      key,
+      set: player[2].toLowerCase(),
+      player: player[3],
+      ext: player[4].toLowerCase(),
+      ...(key !== raw ? { aliasOf: raw } : {}),
+    }
+  }
   const match = filename.match(
     new RegExp(`^(.+?)\\.(${ALL_SETS.join('|')})\\.(${IMAGE_EXTENSIONS.join('|')})$`, 'i')
   )
   if (!match) return null
   const raw = match[1].toLowerCase()
   const key = KEY_ALIASES.get(raw) ?? raw
-  return { key, set: match[2].toLowerCase(), ext: match[3].toLowerCase(), ...(key !== raw ? { aliasOf: raw } : {}) }
+  const set = match[2].toLowerCase()
+  // A player set needs its third part; a two-part name is a mistake, not a default.
+  if (PLAYER_SETS.includes(set)) return null
+  return { key, set, ext: match[3].toLowerCase(), ...(key !== raw ? { aliasOf: raw } : {}) }
 }
 
 /** Levenshtein, capped — only used to suggest a correction on a typo. */

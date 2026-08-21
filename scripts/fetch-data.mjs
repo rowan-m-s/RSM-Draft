@@ -30,7 +30,10 @@ import {
   buildDraftSquads,
   availabilityOf,
   checkBalanceInvariant,
+  kochVariants,
+  playerPointsForManager,
 } from './lib/derive.mjs'
+import { pickGraphic } from './lib/graphics.mjs'
 import { MANAGER_KEYS } from './images.shared.mjs'
 import { findMissingPhotos, formatMissingReport, readOverrides } from './lib/photos.mjs'
 import { updateFraming } from './lib/framing.mjs'
@@ -593,6 +596,51 @@ async function main() {
   const gameweeks = buildGameweeks({ events, classicDataCheckedById, scoresByGw, perGw, elementName, fixtures: allFixtures })
   const months = buildMonths({ gameweeks, managerKeys, perGw, elementName })
   const season = buildSeason({ gameweeks, months, managerKeys, generatedAt, perGw, elementName })
+
+  /* Which graphic each manager shows where there are several to choose
+     from: the player who has scored most for that manager this season,
+     among those they still own, ties to the alphabetical surname. Falls
+     back to the manager's first graphic, and says so, when none of the
+     pictured players is still in the squad. The manifest is written by the
+     image import. */
+  let playerGraphics = {}
+  try {
+    playerGraphics = JSON.parse(await readFile('src/config/player-graphics.json', 'utf8'))
+  } catch {
+    log('No player-graphics manifest; run npm run images. Leader cards will use no graphic.')
+  }
+  const codeByElementId = new Map(elements.map((e) => [e.id, e.code]))
+  const confirmedIds = gameweeks.filter((gw) => gw.dataChecked).map((gw) => gw.id)
+  const graphicChoice = {}
+  for (const [set, byManager] of Object.entries(playerGraphics)) {
+    graphicChoice[set] = {}
+    for (const key of managerKeys) {
+      const candidates = byManager[key] ?? []
+      if (candidates.length === 0) {
+        graphicChoice[set][key] = null
+        continue
+      }
+      const pointsByCode = {}
+      for (const [elementId, points] of playerPointsForManager({ gameweekIds: confirmedIds, perGw, managerKey: key })) {
+        const code = codeByElementId.get(elementId)
+        if (code != null) pointsByCode[code] = points
+      }
+      const ownedCodes = new Set(
+        [...ownerByElementId.entries()].filter(([, owner]) => owner === key).map(([id]) => codeByElementId.get(id))
+      )
+      const pick = pickGraphic({ candidates, pointsByCode, ownedCodes })
+      if (pick) {
+        graphicChoice[set][key] = pick.code
+      } else {
+        graphicChoice[set][key] = candidates[0].code
+        log(`  ${set}: ${key} owns none of ${candidates.map((c) => c.name).join(', ')}; showing ${candidates[0].name}.`)
+      }
+    }
+  }
+  season.graphics = graphicChoice
+  const variants = kochVariants({ gameweeks })
+  for (const gw of gameweeks) gw.kochVariant = variants.byGameweek[gw.id] ?? {}
+  season.kochCount = variants.counts
   const fixtures = buildFixtures({ fixtures: allFixtures, teams, generatedAt })
   const players = buildPlayers({
     elements,
