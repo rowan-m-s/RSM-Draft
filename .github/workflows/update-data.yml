@@ -9,8 +9,10 @@ on:
   schedule:
     # Every 15 minutes, Sat–Sun 10:00–23:00 UTC — match days.
     - cron: '*/15 10-23 * * 6,0'
-    # Every 30 minutes, Mon–Fri 16:00–23:00 UTC — evening kick-offs.
-    - cron: '*/30 16-23 * * 1-5'
+    # Every 15 minutes, Mon–Fri 16:00–23:00 UTC — evening kick-offs. A
+    # Friday-night or midweek match is watched as closely as a Saturday one;
+    # thirty minutes meant a game could be half an hour old before it showed.
+    - cron: '*/15 16-23 * * 1-5'
     # Every 30 minutes, Thu–Fri 08:00–20:00 UTC — press-conference days.
     # Injury news breaks at Thursday and Friday pressers, and a flag sitting
     # three hours stale is worst exactly when people are checking it before a
