@@ -59,17 +59,15 @@ export function PointsStrip({
   squads,
   managerKey,
   gameweek,
-  started,
   koch,
 }: {
   squads: Record<string, { starter: boolean; points: number }[]>
   managerKey: string
   gameweek: number
-  started: boolean
   koch: boolean
 }) {
   const points = gameweekPoints(squads, managerKey)
-  if (!points || !started) return null
+  if (!points) return null
   const tone = koch ? 'text-pl-pink' : 'text-pl-text'
 
   return (
@@ -304,7 +302,6 @@ export function Squad() {
             squads={squad.squads}
             managerKey={manager.key}
             gameweek={gameweek}
-            started={started}
             koch={Boolean(squad.dataChecked && gameweekMeta?.kochKeys.includes(manager.key))}
           />
         )}
