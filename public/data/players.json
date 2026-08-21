@@ -1,6 +1,28 @@
 {
   "owned": [
     {
+      "id": 26,
+      "name": "Havertz",
+      "position": "FWD",
+      "club": "Arsenal",
+      "clubShort": "ARS",
+      "clubCode": 3,
+      "teamId": 1,
+      "photoCode": 219847,
+      "owner": "paddy",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 5,
+      "ppg": 5,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 1
+    },
+    {
       "id": 8,
       "name": "Calafiori",
       "position": "DEF",
@@ -14,13 +36,13 @@
       "chanceOfPlaying": null,
       "news": null,
       "newsAdded": null,
-      "points": 1,
-      "ppg": 1,
+      "points": 4,
+      "ppg": 4,
       "goals": 0,
-      "assists": 0,
+      "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 2
+      "positionRank": 1
     },
     {
       "id": 4,
@@ -42,29 +64,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 1
-    },
-    {
-      "id": 26,
-      "name": "Havertz",
-      "position": "FWD",
-      "club": "Arsenal",
-      "clubShort": "ARS",
-      "clubCode": 3,
-      "teamId": 1,
-      "photoCode": 219847,
-      "owner": "paddy",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 1,
-      "ppg": 1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 1
+      "positionRank": 2
     },
     {
       "id": 11,
@@ -13204,26 +13204,26 @@
     }
   ],
   "leadingScorer": {
-    "id": 182,
-    "name": "Amenda",
-    "position": "DEF",
-    "club": "Coventry City",
-    "clubShort": "COV",
-    "clubCode": 9,
-    "teamId": 7,
-    "photoCode": 539142,
-    "owner": null,
+    "id": 26,
+    "name": "Havertz",
+    "position": "FWD",
+    "club": "Arsenal",
+    "clubShort": "ARS",
+    "clubCode": 3,
+    "teamId": 1,
+    "photoCode": 219847,
+    "owner": "paddy",
     "status": "a",
     "chanceOfPlaying": null,
     "news": null,
     "newsAdded": null,
-    "points": 1,
-    "ppg": 1,
-    "goals": 0,
+    "points": 5,
+    "ppg": 5,
+    "goals": 1,
     "assists": 0,
     "cleanSheets": 0,
     "bonus": 0,
-    "positionRank": 8
+    "positionRank": 1
   },
-  "generatedAt": "2026-08-21T19:13:05.018Z"
+  "generatedAt": "2026-08-21T19:18:19.312Z"
 }

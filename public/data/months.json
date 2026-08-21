@@ -1,4 +1,44 @@
 {
-  "months": [],
-  "generatedAt": "2026-08-21T17:24:15.008Z"
+  "months": [
+    {
+      "id": "2026-08",
+      "label": "August 2026",
+      "shortLabel": "August",
+      "gameweekIds": [
+        1
+      ],
+      "totals": {
+        "rushy": 1,
+        "kellett": 4,
+        "wallis": 1,
+        "jls": 0,
+        "paddy": 6,
+        "bennett": 1,
+        "wood": 0,
+        "rowan": 0,
+        "jason": 2,
+        "dj": 0,
+        "ollie": 2
+      },
+      "pot": 0,
+      "settled": false,
+      "winnerKeys": [],
+      "potPerWinner": 0,
+      "topPerformer": null,
+      "topPerformerByManager": {
+        "rushy": null,
+        "kellett": null,
+        "wallis": null,
+        "jls": null,
+        "paddy": null,
+        "bennett": null,
+        "wood": null,
+        "rowan": null,
+        "jason": null,
+        "dj": null,
+        "ollie": null
+      }
+    }
+  ],
+  "generatedAt": "2026-08-21T19:18:19.312Z"
 }
