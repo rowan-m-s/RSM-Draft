@@ -172,14 +172,26 @@
     );
   }
 
-  /* The cyan/green/pink strip that sits under every banner. */
+  /* The cyan/green/pink strip that sits under every banner: one gradient,
+     not three blocks. Cyan to green blends freely. Green to pink cannot:
+     they are near complements, so any straight mix between them passes
+     through grey, and a wide crossfade shows it as a band of sludge. The
+     stops hold each colour and give that crossing only a short run, in
+     oklab so what little mix there is stays bright. The first declaration
+     is the fallback for browsers without gradient colour spaces. */
   .banner-strip {
     height: 5px;
     background-image: linear-gradient(
       to right,
-      var(--color-pl-cyan) 0 38%,
-      var(--color-pl-green) 38% 62%,
-      var(--color-pl-pink) 62% 100%
+      var(--color-pl-cyan) 0 24%,
+      var(--color-pl-green) 46% 55%,
+      var(--color-pl-pink) 61% 100%
+    );
+    background-image: linear-gradient(
+      in oklab to right,
+      var(--color-pl-cyan) 0 24%,
+      var(--color-pl-green) 46% 55%,
+      var(--color-pl-pink) 61% 100%
     );
   }
 
