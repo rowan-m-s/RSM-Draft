@@ -2016,9 +2016,9 @@
     "31": {
       "name": "Konsa",
       "position": "DEF",
-      "teamId": 2,
-      "clubShort": "AVL",
-      "clubCode": 7,
+      "teamId": 1,
+      "clubShort": "ARS",
+      "clubCode": 3,
       "photoCode": 199798,
       "status": "a",
       "chanceOfPlaying": null,
@@ -3580,10 +3580,10 @@
       "clubShort": "TOT",
       "clubCode": 6,
       "photoCode": 441164,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
+      "status": "i",
+      "chanceOfPlaying": 0,
+      "news": "Lack of match fitness - Expected back 29 Aug",
+      "newsAdded": "2026-08-21T15:22:48.149081Z"
     },
     "503": {
       "name": "Van de Ven",
@@ -3592,10 +3592,10 @@
       "clubShort": "TOT",
       "clubCode": 6,
       "photoCode": 491279,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
+      "status": "i",
+      "chanceOfPlaying": 0,
+      "news": "Unspecified injury - Expected back 29 Aug",
+      "newsAdded": "2026-08-21T15:00:07.610517Z"
     },
     "504": {
       "name": "Vuskovic",
@@ -3826,5 +3826,5 @@
       "newsAdded": "2026-08-15T16:00:07.974271Z"
     }
   },
-  "generatedAt": "2026-08-21T13:20:20.835Z"
+  "generatedAt": "2026-08-21T16:36:20.366Z"
 }
