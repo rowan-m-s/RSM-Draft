@@ -963,7 +963,7 @@
         "starter": false,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 12
+        "points": 14
       },
       {
         "element": 149,
@@ -1061,7 +1061,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 125,
@@ -2065,10 +2065,10 @@
       "clubShort": "CRY",
       "clubCode": 31,
       "photoCode": 232185,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
+      "status": "d",
+      "chanceOfPlaying": 75,
+      "news": "Groin injury - 75% chance of playing",
+      "newsAdded": "2026-08-22T18:00:07.363165Z"
     },
     "222": {
       "name": "Strand Larsen",
@@ -3331,5 +3331,5 @@
       "newsAdded": "2026-08-15T16:00:07.974271Z"
     }
   },
-  "generatedAt": "2026-08-22T17:59:07.936Z"
+  "generatedAt": "2026-08-22T18:19:57.239Z"
 }

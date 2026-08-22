@@ -19,10 +19,10 @@
     },
     {
       "key": "jason",
-      "rank": 2,
-      "total": 31,
-      "gw": 31,
-      "month": 31,
+      "rank": 1,
+      "total": 32,
+      "gw": 32,
+      "month": 32,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -193,11 +193,13 @@
   "seasonPrize": 110,
   "leader": {
     "keys": [
+      "jason",
       "paddy"
     ],
     "total": 32,
     "since": null,
     "sinceByKey": {
+      "jason": null,
       "paddy": null
     },
     "asOf": 1,
@@ -205,7 +207,7 @@
     "displaced": null,
     "changed": false
   },
-  "generatedAt": "2026-08-22T17:59:07.936Z",
+  "generatedAt": "2026-08-22T18:19:57.239Z",
   "graphics": {
     "leader": {
       "rushy": 243298,
@@ -229,7 +231,7 @@
       "bennett": 204480,
       "wood": 212319,
       "rowan": 466525,
-      "jason": 184029,
+      "jason": 223340,
       "dj": 586309,
       "ollie": 154561
     }
