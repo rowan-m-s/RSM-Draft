@@ -296,7 +296,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 20,
+            "value": 44,
             "points": 1
           }
         ]
@@ -307,7 +307,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 20,
+            "value": 44,
             "points": 1
           }
         ]
@@ -318,7 +318,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 20,
+            "value": 44,
             "points": 1
           }
         ]
@@ -329,7 +329,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 20,
+            "value": 44,
             "points": 1
           }
         ]
@@ -344,19 +344,25 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 20,
+            "value": 44,
             "points": 1
           }
         ]
       },
       "112": {
-        "total": 1,
+        "total": 0,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 20,
+            "value": 44,
             "points": 1
+          },
+          {
+            "stat": "goals_conceded",
+            "name": "Goals conceded",
+            "value": 2,
+            "points": -1
           }
         ]
       },
@@ -366,30 +372,42 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 20,
+            "value": 44,
             "points": 1
           }
         ]
       },
       "496": {
-        "total": 1,
+        "total": 0,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 20,
+            "value": 44,
             "points": 1
+          },
+          {
+            "stat": "goals_conceded",
+            "name": "Goals conceded",
+            "value": 2,
+            "points": -1
           }
         ]
       },
       "498": {
-        "total": 1,
+        "total": 0,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 20,
+            "value": 44,
             "points": 1
+          },
+          {
+            "stat": "goals_conceded",
+            "name": "Goals conceded",
+            "value": 2,
+            "points": -1
           }
         ]
       },
@@ -407,7 +425,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 20,
+            "value": 44,
             "points": 1
           }
         ]
@@ -430,7 +448,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 20,
+            "value": 44,
             "points": 1
           }
         ]
@@ -441,7 +459,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 20,
+            "value": 44,
             "points": 1
           },
           {
@@ -1623,5 +1641,5 @@
       }
     }
   },
-  "generatedAt": "2026-08-22T16:51:39.507Z"
+  "generatedAt": "2026-08-22T17:15:22.221Z"
 }
