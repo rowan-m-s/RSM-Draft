@@ -69,6 +69,23 @@
       }
     },
     {
+      "key": "wallis",
+      "rank": 5,
+      "total": 26,
+      "gw": 26,
+      "month": 26,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "Ndiaye",
+        "points": 9,
+        "managerKey": "wallis"
+      }
+    },
+    {
       "key": "ollie",
       "rank": 5,
       "total": 26,
@@ -86,25 +103,8 @@
       }
     },
     {
-      "key": "wallis",
-      "rank": 6,
-      "total": 24,
-      "gw": 24,
-      "month": 24,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "Ndiaye",
-        "points": 9,
-        "managerKey": "wallis"
-      }
-    },
-    {
       "key": "rowan",
-      "rank": 6,
+      "rank": 7,
       "total": 24,
       "gw": 24,
       "month": 24,
@@ -207,7 +207,7 @@
     "displaced": null,
     "changed": false
   },
-  "generatedAt": "2026-08-22T18:19:57.239Z",
+  "generatedAt": "2026-08-22T19:33:38.270Z",
   "graphics": {
     "leader": {
       "rushy": 243298,

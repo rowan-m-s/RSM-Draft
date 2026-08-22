@@ -1211,7 +1211,7 @@
           {
             "stat": "defensive_contribution",
             "name": "Defensive Contribution",
-            "value": 11,
+            "value": 12,
             "points": 2
           }
         ]
@@ -1280,7 +1280,7 @@
         ]
       },
       "338": {
-        "total": 3,
+        "total": 5,
         "components": [
           {
             "stat": "minutes",
@@ -1293,6 +1293,12 @@
             "name": "Clean sheets",
             "value": 1,
             "points": 1
+          },
+          {
+            "stat": "defensive_contribution",
+            "name": "Defensive Contribution",
+            "value": 13,
+            "points": 2
           }
         ]
       },
@@ -1387,7 +1393,7 @@
           {
             "stat": "defensive_contribution",
             "name": "Defensive Contribution",
-            "value": 13,
+            "value": 14,
             "points": 2
           }
         ]
@@ -1735,5 +1741,5 @@
       }
     }
   },
-  "generatedAt": "2026-08-22T18:36:47.924Z"
+  "generatedAt": "2026-08-22T19:33:38.270Z"
 }
