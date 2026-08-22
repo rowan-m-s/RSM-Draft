@@ -3,9 +3,9 @@
     {
       "key": "jason",
       "rank": 1,
-      "total": 20,
-      "gw": 20,
-      "month": 20,
+      "total": 21,
+      "gw": 21,
+      "month": 21,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -37,9 +37,9 @@
     {
       "key": "ollie",
       "rank": 3,
-      "total": 12,
-      "gw": 12,
-      "month": 12,
+      "total": 15,
+      "gw": 15,
+      "month": 15,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -88,9 +88,9 @@
     {
       "key": "wallis",
       "rank": 6,
-      "total": 5,
-      "gw": 5,
-      "month": 5,
+      "total": 6,
+      "gw": 6,
+      "month": 6,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -120,8 +120,25 @@
       }
     },
     {
-      "key": "jls",
+      "key": "wood",
       "rank": 8,
+      "total": 2,
+      "gw": 2,
+      "month": 2,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "Shaw",
+        "points": 1,
+        "managerKey": "wood"
+      }
+    },
+    {
+      "key": "jls",
+      "rank": 9,
       "total": 0,
       "gw": 0,
       "month": 0,
@@ -137,25 +154,8 @@
       }
     },
     {
-      "key": "wood",
-      "rank": 8,
-      "total": 0,
-      "gw": 0,
-      "month": 0,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "Donnarumma",
-        "points": 0,
-        "managerKey": "wood"
-      }
-    },
-    {
       "key": "rowan",
-      "rank": 8,
+      "rank": 9,
       "total": 0,
       "gw": 0,
       "month": 0,
@@ -172,7 +172,7 @@
     },
     {
       "key": "dj",
-      "rank": 8,
+      "rank": 9,
       "total": 0,
       "gw": 0,
       "month": 0,
@@ -195,7 +195,7 @@
     "keys": [
       "jason"
     ],
-    "total": 20,
+    "total": 21,
     "since": null,
     "sinceByKey": {
       "jason": null
@@ -205,7 +205,7 @@
     "displaced": null,
     "changed": false
   },
-  "generatedAt": "2026-08-22T09:20:19.436Z",
+  "generatedAt": "2026-08-22T11:43:32.321Z",
   "graphics": {
     "leader": {
       "rushy": 243298,
@@ -214,7 +214,7 @@
       "jls": 248875,
       "paddy": 219847,
       "bennett": 204480,
-      "wood": 212319,
+      "wood": 141746,
       "rowan": 222531,
       "jason": 223340,
       "dj": 502500,
@@ -227,7 +227,7 @@
       "jls": 248875,
       "paddy": 219847,
       "bennett": 204480,
-      "wood": 212319,
+      "wood": 141746,
       "rowan": 222531,
       "jason": 430871,
       "dj": 502500,

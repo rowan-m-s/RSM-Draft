@@ -10,22 +10,22 @@
       "finished": false,
       "started": true,
       "scoresProvisional": true,
-      "kochReady": false,
+      "kochReady": true,
       "dataChecked": false,
       "confirmExpectedUtc": "2026-08-25T19:00:00.000Z",
       "revealFromUtc": "2026-08-25T08:00:00.000Z",
       "scores": {
         "rushy": 7,
         "kellett": 9,
-        "wallis": 5,
+        "wallis": 6,
         "jls": 0,
         "paddy": 17,
         "bennett": 3,
-        "wood": 0,
+        "wood": 2,
         "rowan": 0,
-        "jason": 20,
+        "jason": 21,
         "dj": 0,
-        "ollie": 12
+        "ollie": 15
       },
       "kochKeys": [],
       "charged": 0,
@@ -61,8 +61,8 @@
           "managerKey": "bennett"
         },
         "wood": {
-          "playerName": "Donnarumma",
-          "points": 0,
+          "playerName": "Shaw",
+          "points": 1,
           "managerKey": "wood"
         },
         "rowan": {
@@ -98,8 +98,8 @@
           "managerKey": "kellett"
         },
         "wallis": {
-          "playerName": "Gabriel",
-          "points": 5,
+          "playerName": "Lammens",
+          "points": 1,
           "managerKey": "wallis"
         },
         "jls": null,
@@ -113,17 +113,21 @@
           "points": 3,
           "managerKey": "bennett"
         },
-        "wood": null,
+        "wood": {
+          "playerName": "B.Fernandes",
+          "points": 1,
+          "managerKey": "wood"
+        },
         "rowan": null,
         "jason": {
-          "playerName": "Saka",
-          "points": 9,
+          "playerName": "Cunha",
+          "points": 1,
           "managerKey": "jason"
         },
         "dj": null,
         "ollie": {
-          "playerName": "Raya",
-          "points": 6,
+          "playerName": "Maguire",
+          "points": 1,
           "managerKey": "ollie"
         }
       },
@@ -907,5 +911,5 @@
       "kochVariant": {}
     }
   ],
-  "generatedAt": "2026-08-22T09:20:19.436Z"
+  "generatedAt": "2026-08-22T11:43:32.321Z"
 }
