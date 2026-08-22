@@ -17,15 +17,15 @@
       "scores": {
         "rushy": 7,
         "kellett": 9,
-        "wallis": 5,
+        "wallis": 6,
         "jls": 0,
         "paddy": 17,
         "bennett": 3,
-        "wood": 1,
-        "rowan": 0,
-        "jason": 21,
-        "dj": 0,
-        "ollie": 14
+        "wood": 3,
+        "rowan": 1,
+        "jason": 22,
+        "dj": 1,
+        "ollie": 17
       },
       "kochKeys": [],
       "charged": 0,
@@ -62,12 +62,12 @@
         },
         "wood": {
           "playerName": "B.Fernandes",
-          "points": 1,
+          "points": 2,
           "managerKey": "wood"
         },
         "rowan": {
-          "playerName": "Pickford",
-          "points": 0,
+          "playerName": "Šeško",
+          "points": 1,
           "managerKey": "rowan"
         },
         "jason": {
@@ -76,8 +76,8 @@
           "managerKey": "jason"
         },
         "dj": {
-          "playerName": "Sánchez",
-          "points": 0,
+          "playerName": "Dalot",
+          "points": 1,
           "managerKey": "dj"
         },
         "ollie": {
@@ -99,7 +99,7 @@
         },
         "wallis": {
           "playerName": "Lammens",
-          "points": 0,
+          "points": 1,
           "managerKey": "wallis"
         },
         "jls": null,
@@ -115,19 +115,27 @@
         },
         "wood": {
           "playerName": "Shaw",
-          "points": 0,
+          "points": 1,
           "managerKey": "wood"
         },
-        "rowan": null,
+        "rowan": {
+          "playerName": "Šeško",
+          "points": 1,
+          "managerKey": "rowan"
+        },
         "jason": {
           "playerName": "Cunha",
-          "points": 1,
+          "points": 2,
           "managerKey": "jason"
         },
-        "dj": null,
+        "dj": {
+          "playerName": "Dalot",
+          "points": 1,
+          "managerKey": "dj"
+        },
         "ollie": {
           "playerName": "Maguire",
-          "points": 0,
+          "points": 1,
           "managerKey": "ollie"
         }
       },
@@ -911,5 +919,5 @@
       "kochVariant": {}
     }
   ],
-  "generatedAt": "2026-08-22T12:25:00.134Z"
+  "generatedAt": "2026-08-22T13:19:37.180Z"
 }
