@@ -18,7 +18,7 @@ function useNow(intervalMs = 1000) {
 function Unit({ value, label }: { value: number; label: string }) {
   return (
     <div className="flex flex-col items-center">
-      <span className="display tnum text-2xl leading-none text-pl-cyan sm:text-3xl">
+      <span className="display tnum text-2xl leading-none text-pl-text sm:text-3xl">
         {String(value).padStart(2, '0')}
       </span>
       <span className="mt-1 text-[10px] font-semibold tracking-wider text-pl-muted uppercase">{label}</span>
