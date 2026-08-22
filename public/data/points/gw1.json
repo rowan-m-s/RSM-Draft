@@ -296,7 +296,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 44,
+            "value": 55,
             "points": 1
           }
         ]
@@ -307,7 +307,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 44,
+            "value": 55,
             "points": 1
           }
         ]
@@ -318,7 +318,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 44,
+            "value": 55,
             "points": 1
           }
         ]
@@ -329,7 +329,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 44,
+            "value": 55,
             "points": 1
           }
         ]
@@ -339,13 +339,19 @@
         "components": []
       },
       "106": {
-        "total": 1,
+        "total": -1,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 44,
+            "value": 55,
             "points": 1
+          },
+          {
+            "stat": "penalties_missed",
+            "name": "Penalties missed",
+            "value": 1,
+            "points": -2
           }
         ]
       },
@@ -355,13 +361,13 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 44,
+            "value": 55,
             "points": 1
           },
           {
             "stat": "goals_conceded",
             "name": "Goals conceded",
-            "value": 2,
+            "value": 3,
             "points": -1
           }
         ]
@@ -372,7 +378,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 44,
+            "value": 55,
             "points": 1
           }
         ]
@@ -383,13 +389,13 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 44,
+            "value": 55,
             "points": 1
           },
           {
             "stat": "goals_conceded",
             "name": "Goals conceded",
-            "value": 2,
+            "value": 3,
             "points": -1
           }
         ]
@@ -400,13 +406,13 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 44,
+            "value": 55,
             "points": 1
           },
           {
             "stat": "goals_conceded",
             "name": "Goals conceded",
-            "value": 2,
+            "value": 3,
             "points": -1
           }
         ]
@@ -425,7 +431,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 44,
+            "value": 55,
             "points": 1
           }
         ]
@@ -435,8 +441,15 @@
         "components": []
       },
       "525": {
-        "total": 0,
-        "components": []
+        "total": 1,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 10,
+            "points": 1
+          }
+        ]
       },
       "526": {
         "total": 0,
@@ -448,25 +461,31 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 44,
+            "value": 55,
             "points": 1
           }
         ]
       },
       "556": {
-        "total": 4,
+        "total": 9,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 44,
+            "value": 55,
             "points": 1
           },
           {
             "stat": "assists",
             "name": "Assists",
-            "value": 1,
-            "points": 3
+            "value": 2,
+            "points": 6
+          },
+          {
+            "stat": "bonus",
+            "name": "Bonus",
+            "value": 2,
+            "points": 2
           }
         ]
       }
@@ -1641,5 +1660,5 @@
       }
     }
   },
-  "generatedAt": "2026-08-22T17:15:22.221Z"
+  "generatedAt": "2026-08-22T17:44:13.328Z"
 }
