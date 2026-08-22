@@ -15,15 +15,15 @@
       "confirmExpectedUtc": "2026-08-25T19:00:00.000Z",
       "revealFromUtc": "2026-08-25T08:00:00.000Z",
       "scores": {
-        "rushy": 12,
+        "rushy": 11,
         "kellett": 11,
-        "wallis": 12,
+        "wallis": 13,
         "jls": 1,
         "paddy": 21,
         "bennett": 8,
-        "wood": 6,
-        "rowan": 10,
-        "jason": 25,
+        "wood": 5,
+        "rowan": 5,
+        "jason": 24,
         "dj": 2,
         "ollie": 18
       },
@@ -67,7 +67,7 @@
         },
         "rowan": {
           "playerName": "Pickford",
-          "points": 4,
+          "points": 2,
           "managerKey": "rowan"
         },
         "jason": {
@@ -99,7 +99,7 @@
         },
         "wallis": {
           "playerName": "Calvert-Lewin",
-          "points": 1,
+          "points": 0,
           "managerKey": "wallis"
         },
         "jls": {
@@ -124,7 +124,7 @@
         },
         "rowan": {
           "playerName": "Ballard",
-          "points": 1,
+          "points": 0,
           "managerKey": "rowan"
         },
         "jason": {
@@ -923,5 +923,5 @@
       "kochVariant": {}
     }
   ],
-  "generatedAt": "2026-08-22T14:32:32.405Z"
+  "generatedAt": "2026-08-22T14:41:24.704Z"
 }
