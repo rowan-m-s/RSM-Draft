@@ -372,7 +372,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 10
+      "positionRank": 11
     },
     {
       "id": 26,
@@ -416,7 +416,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 9
+      "positionRank": 10
     },
     {
       "id": 334,
@@ -3644,7 +3644,7 @@
       "owner": null,
       "status": "d",
       "chanceOfPlaying": 75,
-      "news": "Unspecified injury - 75% chance of playing",
+      "news": "Thigh injury - 75% chance of playing",
       "newsAdded": "2026-08-22T17:30:08.045208Z",
       "points": 15,
       "ppg": 15,
@@ -3666,7 +3666,7 @@
       "owner": null,
       "status": "d",
       "chanceOfPlaying": 75,
-      "news": "Unspecified injury - 75% chance of playing",
+      "news": "Hamstring injury - 75% chance of playing",
       "newsAdded": "2026-08-22T17:30:07.668197Z",
       "points": 14,
       "ppg": 14,
@@ -3787,6 +3787,28 @@
       "positionRank": 9
     },
     {
+      "id": 87,
+      "name": "Ajer",
+      "position": "DEF",
+      "club": "Brentford",
+      "clubShort": "BRE",
+      "clubCode": 94,
+      "teamId": 4,
+      "photoCode": 191866,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 8,
+      "ppg": 8,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 8
+    },
+    {
       "id": 244,
       "name": "Armstrong",
       "position": "MID",
@@ -3828,7 +3850,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 8
+      "positionRank": 9
     },
     {
       "id": 313,
@@ -3850,28 +3872,6 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 11
-    },
-    {
-      "id": 87,
-      "name": "Ajer",
-      "position": "DEF",
-      "club": "Brentford",
-      "clubShort": "BRE",
-      "clubCode": 94,
-      "teamId": 4,
-      "photoCode": 191866,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 6,
-      "ppg": 6,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
       "positionRank": 11
     },
     {
@@ -13215,7 +13215,7 @@
     "owner": null,
     "status": "d",
     "chanceOfPlaying": 75,
-    "news": "Unspecified injury - 75% chance of playing",
+    "news": "Thigh injury - 75% chance of playing",
     "newsAdded": "2026-08-22T17:30:08.045208Z",
     "points": 15,
     "ppg": 15,
@@ -13225,5 +13225,5 @@
     "bonus": 1,
     "positionRank": 1
   },
-  "generatedAt": "2026-08-22T18:19:57.239Z"
+  "generatedAt": "2026-08-22T18:36:47.924Z"
 }
