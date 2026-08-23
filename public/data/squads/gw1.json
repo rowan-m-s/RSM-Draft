@@ -77,7 +77,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 9
+        "points": 10
       },
       {
         "element": 490,
@@ -223,7 +223,7 @@
         "starter": false,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 2
+        "points": 3
       },
       {
         "element": 157,
@@ -1093,7 +1093,7 @@
         "starter": false,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 2
+        "points": 4
       },
       {
         "element": 582,
@@ -3013,10 +3013,10 @@
       "clubShort": "MCI",
       "clubCode": 43,
       "photoCode": 215379,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
+      "status": "d",
+      "chanceOfPlaying": 75,
+      "news": "Knock - 75% chance of playing",
+      "newsAdded": "2026-08-23T17:00:07.952697Z"
     },
     "490": {
       "name": "Wood",
@@ -3331,5 +3331,5 @@
       "newsAdded": "2026-08-15T16:00:07.974271Z"
     }
   },
-  "generatedAt": "2026-08-23T16:49:41.914Z"
+  "generatedAt": "2026-08-23T17:15:18.698Z"
 }
