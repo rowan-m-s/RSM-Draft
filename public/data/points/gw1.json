@@ -1447,7 +1447,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 21,
+            "value": 26,
             "points": 1
           }
         ]
@@ -1466,7 +1466,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 21,
+            "value": 26,
             "points": 1
           }
         ]
@@ -1481,7 +1481,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 21,
+            "value": 26,
             "points": 1
           },
           {
@@ -1510,7 +1510,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 21,
+            "value": 26,
             "points": 1
           }
         ]
@@ -1521,7 +1521,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 21,
+            "value": 26,
             "points": 1
           },
           {
@@ -1533,12 +1533,12 @@
         ]
       },
       "125": {
-        "total": 6,
+        "total": 7,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 21,
+            "value": 26,
             "points": 1
           },
           {
@@ -1550,8 +1550,8 @@
           {
             "stat": "bonus",
             "name": "Bonus",
-            "value": 2,
-            "points": 2
+            "value": 3,
+            "points": 3
           }
         ]
       },
@@ -1561,7 +1561,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 21,
+            "value": 26,
             "points": 1
           }
         ]
@@ -1573,12 +1573,18 @@
     },
     "8": {
       "57": {
-        "total": 1,
+        "total": 2,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 18,
+            "value": 23,
+            "points": 1
+          },
+          {
+            "stat": "bonus",
+            "name": "Bonus",
+            "value": 1,
             "points": 1
           }
         ]
@@ -1589,7 +1595,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 18,
+            "value": 23,
             "points": 1
           }
         ]
@@ -1600,7 +1606,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 18,
+            "value": 23,
             "points": 1
           }
         ]
@@ -1611,7 +1617,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 18,
+            "value": 23,
             "points": 1
           }
         ]
@@ -1622,7 +1628,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 18,
+            "value": 23,
             "points": 1
           }
         ]
@@ -1633,7 +1639,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 18,
+            "value": 23,
             "points": 1
           }
         ]
@@ -1648,7 +1654,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 18,
+            "value": 23,
             "points": 1
           }
         ]
@@ -1659,7 +1665,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 18,
+            "value": 23,
             "points": 1
           }
         ]
@@ -1670,7 +1676,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 18,
+            "value": 23,
             "points": 1
           }
         ]
@@ -1681,7 +1687,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 18,
+            "value": 23,
             "points": 1
           }
         ]
@@ -1691,13 +1697,19 @@
         "components": []
       },
       "390": {
-        "total": 1,
+        "total": 3,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 18,
+            "value": 23,
             "points": 1
+          },
+          {
+            "stat": "bonus",
+            "name": "Bonus",
+            "value": 2,
+            "points": 2
           }
         ]
       },
@@ -1707,7 +1719,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 18,
+            "value": 23,
             "points": 1
           }
         ]
@@ -1718,7 +1730,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 18,
+            "value": 23,
             "points": 1
           }
         ]
@@ -1729,19 +1741,25 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 18,
+            "value": 23,
             "points": 1
           }
         ]
       },
       "398": {
-        "total": 1,
+        "total": 4,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 18,
+            "value": 23,
             "points": 1
+          },
+          {
+            "stat": "bonus",
+            "name": "Bonus",
+            "value": 3,
+            "points": 3
           }
         ]
       },
@@ -1767,7 +1785,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 18,
+            "value": 23,
             "points": 1
           }
         ]
@@ -1778,7 +1796,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 18,
+            "value": 23,
             "points": 1
           }
         ]
@@ -1945,5 +1963,5 @@
       }
     }
   },
-  "generatedAt": "2026-08-23T13:22:43.446Z"
+  "generatedAt": "2026-08-23T13:27:09.264Z"
 }
