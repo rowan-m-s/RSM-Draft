@@ -167,7 +167,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 208,
@@ -183,7 +183,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 514,
@@ -207,7 +207,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 223,
@@ -273,7 +273,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 504,
@@ -281,7 +281,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 203,
@@ -313,7 +313,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 338,
@@ -361,7 +361,7 @@
         "starter": false,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 224,
@@ -387,7 +387,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 388,
@@ -395,7 +395,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 581,
@@ -427,7 +427,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 336,
@@ -467,7 +467,7 @@
         "starter": false,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 400,
@@ -509,7 +509,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 10,
@@ -687,7 +687,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 379,
@@ -735,7 +735,7 @@
         "starter": false,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       }
     ],
     "wood": [
@@ -745,7 +745,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 391,
@@ -753,7 +753,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 420,
@@ -777,7 +777,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 13
       },
       {
         "element": 426,
@@ -817,7 +817,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 552,
@@ -1053,7 +1053,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 96,
@@ -1069,7 +1069,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 6
       },
       {
         "element": 57,
@@ -1077,7 +1077,7 @@
         "starter": false,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 463,
@@ -1151,7 +1151,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 368,
@@ -1167,7 +1167,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 94,
@@ -1801,10 +1801,10 @@
       "clubShort": "BHA",
       "clubCode": 36,
       "photoCode": 231416,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
+      "status": "d",
+      "chanceOfPlaying": 75,
+      "news": "Unspecified injury - 75% chance of playing",
+      "newsAdded": "2026-08-23T13:00:07.595211Z"
     },
     "115": {
       "name": "De Cuyper",
@@ -3331,5 +3331,5 @@
       "newsAdded": "2026-08-15T16:00:07.974271Z"
     }
   },
-  "generatedAt": "2026-08-23T11:59:22.130Z"
+  "generatedAt": "2026-08-23T13:22:43.446Z"
 }

@@ -1,28 +1,11 @@
 {
   "rows": [
     {
-      "key": "paddy",
-      "rank": 1,
-      "total": 32,
-      "gw": 32,
-      "month": 32,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "White",
-        "points": 11,
-        "managerKey": "paddy"
-      }
-    },
-    {
       "key": "jason",
       "rank": 1,
-      "total": 32,
-      "gw": 32,
-      "month": 32,
+      "total": 39,
+      "gw": 39,
+      "month": 39,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -35,28 +18,28 @@
       }
     },
     {
-      "key": "bennett",
-      "rank": 3,
-      "total": 28,
-      "gw": 28,
-      "month": 28,
+      "key": "paddy",
+      "rank": 2,
+      "total": 33,
+      "gw": 33,
+      "month": 33,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
       "potsWon": 0,
       "balance": 0,
       "topPerformer": {
-        "playerName": "Dewsbury-Hall",
+        "playerName": "White",
         "points": 11,
-        "managerKey": "bennett"
+        "managerKey": "paddy"
       }
     },
     {
       "key": "kellett",
-      "rank": 4,
-      "total": 27,
-      "gw": 27,
-      "month": 27,
+      "rank": 3,
+      "total": 30,
+      "gw": 30,
+      "month": 30,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -70,10 +53,10 @@
     },
     {
       "key": "wallis",
-      "rank": 5,
-      "total": 26,
-      "gw": 26,
-      "month": 26,
+      "rank": 4,
+      "total": 29,
+      "gw": 29,
+      "month": 29,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -86,8 +69,25 @@
       }
     },
     {
+      "key": "bennett",
+      "rank": 4,
+      "total": 29,
+      "gw": 29,
+      "month": 29,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "Dewsbury-Hall",
+        "points": 11,
+        "managerKey": "bennett"
+      }
+    },
+    {
       "key": "ollie",
-      "rank": 5,
+      "rank": 6,
       "total": 26,
       "gw": 26,
       "month": 26,
@@ -103,8 +103,25 @@
       }
     },
     {
-      "key": "rowan",
+      "key": "wood",
       "rank": 7,
+      "total": 25,
+      "gw": 25,
+      "month": 25,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "De Cuyper",
+        "points": 13,
+        "managerKey": "wood"
+      }
+    },
+    {
+      "key": "rowan",
+      "rank": 8,
       "total": 24,
       "gw": 24,
       "month": 24,
@@ -121,7 +138,7 @@
     },
     {
       "key": "rushy",
-      "rank": 8,
+      "rank": 9,
       "total": 15,
       "gw": 15,
       "month": 15,
@@ -139,9 +156,9 @@
     {
       "key": "jls",
       "rank": 9,
-      "total": 12,
-      "gw": 12,
-      "month": 12,
+      "total": 15,
+      "gw": 15,
+      "month": 15,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -154,28 +171,11 @@
       }
     },
     {
-      "key": "wood",
-      "rank": 10,
-      "total": 9,
-      "gw": 9,
-      "month": 9,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "B.Fernandes",
-        "points": 2,
-        "managerKey": "wood"
-      }
-    },
-    {
       "key": "dj",
       "rank": 11,
-      "total": 5,
-      "gw": 5,
-      "month": 5,
+      "total": 7,
+      "gw": 7,
+      "month": 7,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -193,46 +193,44 @@
   "seasonPrize": 110,
   "leader": {
     "keys": [
-      "jason",
-      "paddy"
+      "jason"
     ],
-    "total": 32,
+    "total": 39,
     "since": null,
     "sinceByKey": {
-      "jason": null,
-      "paddy": null
+      "jason": null
     },
     "asOf": 1,
     "weeks": 0,
     "displaced": null,
     "changed": false
   },
-  "generatedAt": "2026-08-23T11:59:22.130Z",
+  "generatedAt": "2026-08-23T13:22:43.446Z",
   "graphics": {
     "leader": {
       "rushy": 243298,
       "kellett": 231747,
       "wallis": 226597,
-      "jls": 248875,
+      "jls": 499604,
       "paddy": 219847,
       "bennett": 204480,
       "wood": 212319,
       "rowan": 466525,
       "jason": 184029,
-      "dj": 586309,
+      "dj": 437730,
       "ollie": 154561
     },
     "leaderMonth": {
       "rushy": 243298,
       "kellett": 231747,
       "wallis": 226597,
-      "jls": 248875,
-      "paddy": 551466,
+      "jls": 499604,
+      "paddy": 219847,
       "bennett": 204480,
       "wood": 212319,
       "rowan": 466525,
       "jason": 223340,
-      "dj": 586309,
+      "dj": 437730,
       "ollie": 154561
     }
   },
