@@ -103,6 +103,23 @@
       }
     },
     {
+      "key": "rushy",
+      "rank": 7,
+      "total": 32,
+      "gw": 32,
+      "month": 32,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "Gakpo",
+        "points": 12,
+        "managerKey": "rushy"
+      }
+    },
+    {
       "key": "rowan",
       "rank": 7,
       "total": 32,
@@ -117,23 +134,6 @@
         "playerName": "Stach",
         "points": 13,
         "managerKey": "rowan"
-      }
-    },
-    {
-      "key": "rushy",
-      "rank": 8,
-      "total": 30,
-      "gw": 30,
-      "month": 30,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "Gakpo",
-        "points": 10,
-        "managerKey": "rushy"
       }
     },
     {
@@ -205,7 +205,7 @@
     "displaced": null,
     "changed": false
   },
-  "generatedAt": "2026-08-23T17:43:17.143Z",
+  "generatedAt": "2026-08-23T19:58:26.254Z",
   "graphics": {
     "leader": {
       "rushy": 243298,

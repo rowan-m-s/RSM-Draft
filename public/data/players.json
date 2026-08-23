@@ -89,6 +89,28 @@
       "positionRank": 3
     },
     {
+      "id": 367,
+      "name": "Gakpo",
+      "position": "MID",
+      "club": "Liverpool",
+      "clubShort": "LIV",
+      "clubCode": 14,
+      "teamId": 14,
+      "photoCode": 243298,
+      "owner": "rushy",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 12,
+      "ppg": 12,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 3,
+      "positionRank": 4
+    },
+    {
       "id": 236,
       "name": "Dewsbury-Hall",
       "position": "MID",
@@ -108,7 +130,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 5
+      "positionRank": 6
     },
     {
       "id": 15,
@@ -130,7 +152,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 4
+      "positionRank": 5
     },
     {
       "id": 10,
@@ -177,28 +199,6 @@
       "positionRank": 6
     },
     {
-      "id": 367,
-      "name": "Gakpo",
-      "position": "MID",
-      "club": "Liverpool",
-      "clubShort": "LIV",
-      "clubCode": 14,
-      "teamId": 14,
-      "photoCode": 243298,
-      "owner": "rushy",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 10,
-      "ppg": 10,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 3,
-      "positionRank": 8
-    },
-    {
       "id": 388,
       "name": "Guéhi",
       "position": "DEF",
@@ -240,7 +240,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 3,
-      "positionRank": 6
+      "positionRank": 7
     },
     {
       "id": 571,
@@ -350,7 +350,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 12
+      "positionRank": 11
     },
     {
       "id": 12,
@@ -372,7 +372,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 10
+      "positionRank": 9
     },
     {
       "id": 385,
@@ -3699,28 +3699,6 @@
       "positionRank": 4
     },
     {
-      "id": 454,
-      "name": "Elanga",
-      "position": "MID",
-      "club": "Newcastle",
-      "clubShort": "NEW",
-      "clubCode": 4,
-      "teamId": 17,
-      "photoCode": 449434,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 10,
-      "ppg": 10,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 3,
-      "positionRank": 9
-    },
-    {
       "id": 332,
       "name": "Justin",
       "position": "DEF",
@@ -3762,7 +3740,29 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 7
+      "positionRank": 8
+    },
+    {
+      "id": 454,
+      "name": "Elanga",
+      "position": "MID",
+      "club": "Newcastle",
+      "clubShort": "NEW",
+      "clubCode": 4,
+      "teamId": 17,
+      "photoCode": 449434,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 9,
+      "ppg": 9,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 2,
+      "positionRank": 12
     },
     {
       "id": 98,
@@ -3784,7 +3784,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 11
+      "positionRank": 10
     },
     {
       "id": 544,
@@ -13423,5 +13423,5 @@
     "bonus": 2,
     "positionRank": 1
   },
-  "generatedAt": "2026-08-23T19:24:09.227Z"
+  "generatedAt": "2026-08-23T19:58:26.254Z"
 }
