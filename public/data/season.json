@@ -18,8 +18,42 @@
       }
     },
     {
-      "key": "jason",
+      "key": "wood",
       "rank": 2,
+      "total": 44,
+      "gw": 44,
+      "month": 44,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "De Cuyper",
+        "points": 17,
+        "managerKey": "wood"
+      }
+    },
+    {
+      "key": "paddy",
+      "rank": 3,
+      "total": 42,
+      "gw": 42,
+      "month": 42,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "White",
+        "points": 11,
+        "managerKey": "paddy"
+      }
+    },
+    {
+      "key": "jason",
+      "rank": 4,
       "total": 40,
       "gw": 40,
       "month": 40,
@@ -36,7 +70,7 @@
     },
     {
       "key": "bennett",
-      "rank": 3,
+      "rank": 5,
       "total": 38,
       "gw": 38,
       "month": 38,
@@ -52,45 +86,11 @@
       }
     },
     {
-      "key": "wood",
-      "rank": 4,
-      "total": 37,
-      "gw": 37,
-      "month": 37,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "De Cuyper",
-        "points": 17,
-        "managerKey": "wood"
-      }
-    },
-    {
-      "key": "paddy",
-      "rank": 5,
-      "total": 35,
-      "gw": 35,
-      "month": 35,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "White",
-        "points": 11,
-        "managerKey": "paddy"
-      }
-    },
-    {
       "key": "kellett",
       "rank": 6,
-      "total": 33,
-      "gw": 33,
-      "month": 33,
+      "total": 32,
+      "gw": 32,
+      "month": 32,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -205,11 +205,11 @@
     "displaced": null,
     "changed": false
   },
-  "generatedAt": "2026-08-23T14:47:14.921Z",
+  "generatedAt": "2026-08-23T15:16:08.785Z",
   "graphics": {
     "leader": {
       "rushy": 243298,
-      "kellett": 209244,
+      "kellett": 223094,
       "wallis": 226597,
       "jls": 499604,
       "paddy": 219847,
@@ -222,7 +222,7 @@
     },
     "leaderMonth": {
       "rushy": 243298,
-      "kellett": 209244,
+      "kellett": 223094,
       "wallis": 472769,
       "jls": 499604,
       "paddy": 219847,
