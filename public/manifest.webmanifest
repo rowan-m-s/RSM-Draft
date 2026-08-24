@@ -1,0 +1,14 @@
+{
+  "name": "RSM Draft",
+  "short_name": "RSM Draft",
+  "description": "RSM Draft 26/27 — league table, Koch of the Week, Manager of the Month and who owns who.",
+  "start_url": "/RSM-Draft/",
+  "scope": "/RSM-Draft/",
+  "display": "standalone",
+  "theme_color": "#1E0021",
+  "background_color": "#1E0021",
+  "icons": [
+    { "src": "/RSM-Draft/icons-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/RSM-Draft/icons-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
