@@ -1,8 +1,25 @@
 {
   "rows": [
     {
-      "key": "wallis",
+      "key": "paddy",
       "rank": 1,
+      "total": 56,
+      "gw": 56,
+      "month": 56,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "Palmer",
+        "points": 12,
+        "managerKey": "paddy"
+      }
+    },
+    {
+      "key": "wallis",
+      "rank": 2,
       "total": 50,
       "gw": 50,
       "month": 50,
@@ -18,28 +35,11 @@
       }
     },
     {
-      "key": "paddy",
-      "rank": 2,
-      "total": 48,
-      "gw": 48,
-      "month": 48,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "White",
-        "points": 11,
-        "managerKey": "paddy"
-      }
-    },
-    {
       "key": "jason",
       "rank": 3,
-      "total": 46,
-      "gw": 46,
-      "month": 46,
+      "total": 45,
+      "gw": 45,
+      "month": 45,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -69,25 +69,8 @@
       }
     },
     {
-      "key": "rushy",
-      "rank": 5,
-      "total": 41,
-      "gw": 41,
-      "month": 41,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "Gakpo",
-        "points": 12,
-        "managerKey": "rushy"
-      }
-    },
-    {
       "key": "bennett",
-      "rank": 6,
+      "rank": 5,
       "total": 40,
       "gw": 40,
       "month": 40,
@@ -103,8 +86,42 @@
       }
     },
     {
+      "key": "rushy",
+      "rank": 6,
+      "total": 38,
+      "gw": 38,
+      "month": 38,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "Gakpo",
+        "points": 12,
+        "managerKey": "rushy"
+      }
+    },
+    {
+      "key": "jls",
+      "rank": 6,
+      "total": 38,
+      "gw": 38,
+      "month": 38,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "Guéhi",
+        "points": 10,
+        "managerKey": "jls"
+      }
+    },
+    {
       "key": "kellett",
-      "rank": 7,
+      "rank": 8,
       "total": 36,
       "gw": 36,
       "month": 36,
@@ -117,23 +134,6 @@
         "playerName": "Calafiori",
         "points": 9,
         "managerKey": "kellett"
-      }
-    },
-    {
-      "key": "jls",
-      "rank": 8,
-      "total": 35,
-      "gw": 35,
-      "month": 35,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "Guéhi",
-        "points": 10,
-        "managerKey": "jls"
       }
     },
     {
@@ -173,9 +173,9 @@
     {
       "key": "dj",
       "rank": 11,
-      "total": 20,
-      "gw": 20,
-      "month": 20,
+      "total": 18,
+      "gw": 18,
+      "month": 18,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -193,19 +193,19 @@
   "seasonPrize": 110,
   "leader": {
     "keys": [
-      "wallis"
+      "paddy"
     ],
-    "total": 50,
+    "total": 56,
     "since": null,
     "sinceByKey": {
-      "wallis": null
+      "paddy": null
     },
     "asOf": 1,
     "weeks": 0,
     "displaced": null,
     "changed": false
   },
-  "generatedAt": "2026-08-24T19:50:46.118Z",
+  "generatedAt": "2026-08-24T20:16:40.885Z",
   "graphics": {
     "koch": {
       "rushy": 244850,
@@ -238,7 +238,7 @@
       "kellett": 223094,
       "wallis": 532529,
       "jls": 475168,
-      "paddy": 219847,
+      "paddy": 244851,
       "bennett": 204480,
       "wood": 444102,
       "rowan": 466525,
@@ -249,7 +249,7 @@
     "leaderMonth": {
       "rushy": 243298,
       "kellett": 223094,
-      "wallis": 440993,
+      "wallis": 532529,
       "jls": 475168,
       "paddy": 219847,
       "bennett": 204480,
