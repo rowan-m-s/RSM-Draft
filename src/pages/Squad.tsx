@@ -536,12 +536,10 @@ function Bench({ bench, ...card }: { bench: PitchPlayer[] } & CardProps) {
   return (
     /* A shelf, clearly not part of the playing surface: the card surface tone
        with a hairline border, and the cards a size down and a touch quieter
-       so the XI reads as primary. Slots are labelled as FPL does: GK, then
-       the outfield bench in substitution order. */
+       so the XI reads as primary — no heading needed, the shelf says it.
+       Slots are labelled as FPL does: GK, then the outfield bench in
+       substitution order. */
     <div className="-mx-4 mt-4 border-y border-pl-border bg-pl-surface sm:mx-0 sm:rounded-xl sm:border">
-      <p className="border-b border-pl-border px-4 py-1.5 text-[11px] font-semibold tracking-wider text-pl-muted uppercase sm:py-2.5">
-        Bench
-      </p>
       <div className="relative flex flex-wrap items-start justify-center gap-x-2 gap-y-3 px-2 py-2.5 pb-3 sm:gap-x-8 sm:py-5">
         {bench.map((entry) => (
           <div key={entry.key} className="flex flex-col items-center gap-1">
