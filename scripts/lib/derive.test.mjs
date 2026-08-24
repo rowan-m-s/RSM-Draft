@@ -10,6 +10,7 @@ import {
   provisionalScores,
   everyManagerStarted,
   yetToPlay,
+  buildPreviewSquads,
   readElementStats,
   buildSeason,
   buildSquad,
@@ -1048,5 +1049,24 @@ describe('yetToPlay', () => {
     const double = [...fixtures, { event: 1, started: false, finished: false, team_h: 1, team_a: 6 }]
     const record = { squads: { a: [{ element: 10, starter: true }] } }
     expect(yetToPlay({ record, fixtures: double, event: 1, teamOfElement })).toEqual({ a: 1 })
+  })
+})
+
+describe('buildPreviewSquads', () => {
+  it('gives each manager their current fifteen, keeper first, with no XI invented', () => {
+    const ownerByElementId = new Map([
+      [10, 'a'], // FWD
+      [11, 'a'], // GKP
+      [12, 'a'], // DEF
+      [13, 'b'],
+      [99, 'ghost'], // an owner who is not a manager is ignored
+    ])
+    const positionOf = (id) => ({ 10: 'FWD', 11: 'GKP', 12: 'DEF', 13: 'MID' })[id]
+    const squads = buildPreviewSquads({ managerKeys: ['a', 'b'], ownerByElementId, positionOf })
+    expect(squads.a.map((p) => p.element)).toEqual([11, 12, 10])
+    expect(squads.a.map((p) => p.position)).toEqual([1, 2, 3])
+    // Everyone is "starter": the whole fifteen is the squad, no bench exists.
+    expect(squads.a.every((p) => p.starter && !p.subbedOn && !p.subbedOff)).toBe(true)
+    expect(squads.b.map((p) => p.element)).toEqual([13])
   })
 })

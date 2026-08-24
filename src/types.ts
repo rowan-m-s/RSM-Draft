@@ -330,6 +330,8 @@ export interface SquadFile {
   event: number
   /** GW0: the initial draft, with an XI inferred from pick order. */
   isDraft?: boolean
+  /** The next gameweek before its deadline: fifteen a side, no XI yet. */
+  isPreview?: boolean
   deadlineUtc: string
   started: boolean
   finished: boolean

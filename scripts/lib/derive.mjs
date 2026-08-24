@@ -85,6 +85,36 @@ export function yetToPlay({ record, fixtures, event, teamOfElement }) {
   return out
 }
 
+/**
+ * The next gameweek's squads before its deadline: each manager's current
+ * fifteen, ordered keeper first, with no XI. Draft has no locked lineup
+ * until the deadline, so nothing is inferred — Addendum 02 §6 amended: the
+ * week is browsable for its fixtures, clearly labelled provisional.
+ */
+export function buildPreviewSquads({ managerKeys, ownerByElementId, positionOf }) {
+  const ORDER = { GKP: 0, DEF: 1, MID: 2, FWD: 3 }
+  const squads = {}
+  for (const key of managerKeys) squads[key] = []
+  for (const [elementId, owner] of ownerByElementId) {
+    if (squads[owner]) squads[owner].push(elementId)
+  }
+  return Object.fromEntries(
+    Object.entries(squads).map(([key, ids]) => [
+      key,
+      ids
+        .sort((a, b) => (ORDER[positionOf(a)] ?? 9) - (ORDER[positionOf(b)] ?? 9) || a - b)
+        .map((element, i) => ({
+          element,
+          position: i + 1,
+          // All fifteen are the squad; no XI exists yet and none is invented.
+          starter: true,
+          subbedOn: false,
+          subbedOff: false,
+        })),
+    ])
+  )
+}
+
 export function buildGameweeks({
   events,
   classicDataCheckedById,

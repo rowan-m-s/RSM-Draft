@@ -25,6 +25,7 @@ import {
   buildGameweeks,
   buildMonths,
   buildPlayers,
+  buildPreviewSquads,
   readElementStats,
   buildSeason,
   buildSquad,
@@ -609,6 +610,28 @@ async function main() {
     if (key) ownerByElementId.set(row.element, key)
   }
 
+  /* The next gameweek, before its deadline: browsable for its fixtures.
+     Fifteen per manager from current ownership, no XI, flagged preview.
+     The moment its deadline passes, the picks loop above takes over. */
+  const nextEvent = events.find((e) => !e.finished && new Date(e.deadline_time).getTime() > Date.now())
+  if (nextEvent && !perGw[nextEvent.id]) {
+    const positionById = new Map(elements.map((e) => [e.id, ['', 'GKP', 'DEF', 'MID', 'FWD'][e.element_type]]))
+    squadFiles.push({
+      event: nextEvent.id,
+      isPreview: true,
+      deadlineUtc: nextEvent.deadline_time,
+      started: false,
+      finished: false,
+      dataChecked: false,
+      squads: buildPreviewSquads({
+        managerKeys: managers.map((m) => m.key),
+        ownerByElementId,
+        positionOf: (id) => positionById.get(id),
+      }),
+      elementPoints: {},
+    })
+  }
+
   /* ---- derive ---- */
 
   const managerKeys = enrichedManagers.map((m) => m.key)
@@ -789,6 +812,7 @@ async function main() {
     const payload = {
       event: record.event,
       isDraft: Boolean(record.isDraft),
+      isPreview: Boolean(record.isPreview),
       deadlineUtc: record.deadlineUtc,
       started: record.started,
       finished: record.finished,

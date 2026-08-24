@@ -104,9 +104,12 @@ export function Squad() {
   const firstGameweek = available[0]
   const lastGameweek = available[available.length - 1]
 
-  // Defaults to the latest week that has a squad: the one in play, or the
-  // draft until the first deadline passes.
-  const fallback = lastGameweek
+  // Defaults to the latest week whose deadline has passed — the one in
+  // play — never the next week's preview, which is there to browse.
+  const deadlinePassed = new Set(
+    data.gameweeks.filter((gw) => new Date(gw.deadlineUtc).getTime() <= Date.now()).map((gw) => gw.id)
+  )
+  const fallback = available.filter((id) => id === 0 || deadlinePassed.has(id)).at(-1) ?? lastGameweek
   // Only an explicit ?gw= counts: Number(null) is 0, which is the draft.
   const requested = params.has('gw') ? Number(params.get('gw')) : NaN
   const gameweek = Number.isFinite(requested) && available.includes(requested) ? requested : fallback
@@ -145,6 +148,8 @@ export function Squad() {
      squad file — picks exist once a deadline passes, and GW0 is the draft —
      so there is no pre-deadline "current squad" view. Addendum 02 §6. */
   const isDraft = gameweek === 0
+  // The next week before its deadline: fifteen a side, fixtures, no XI.
+  const isPreview = squad?.isPreview ?? false
   // Whether anyone's match has kicked off: the banner wording, nothing else.
   const anyStarted = squad?.started ?? false
 
@@ -262,19 +267,21 @@ export function Squad() {
         title={manager.teamName}
         subtitle={
           <>
-            {manager.displayName} · {formation} ·{' '}
+            {manager.displayName} · {isPreview ? 'All 15' : formation} ·{' '}
             <span
               className="sm:hidden"
               title={isDraft ? 'XI inferred from draft order, not an official lineup' : undefined}
             >
-              {isDraft ? 'Inferred XI' : anyStarted ? 'Points' : 'Fixtures'}
+              {isDraft ? 'Inferred XI' : isPreview ? 'Provisional' : anyStarted ? 'Points' : 'Fixtures'}
             </span>
             <span className="hidden sm:inline">
               {isDraft
                 ? 'XI inferred from draft order, not an official lineup'
-                : anyStarted
-                  ? 'points once a player’s match kicks off'
-                  : 'fixtures shown, the week has not kicked off'}
+                : isPreview
+                  ? 'squad as it stands, XI locks at the deadline'
+                  : anyStarted
+                    ? 'points once a player’s match kicks off'
+                    : 'fixtures shown, the week has not kicked off'}
             </span>
           </>
         }
@@ -327,7 +334,7 @@ export function Squad() {
           labelFor={(gw) => (gw === 0 ? '1st Draft' : `GW${gw}`)}
         />
 
-        {squad && !isDraft && (
+        {squad && !isDraft && !isPreview && (
           <PointsStrip
             squads={squad.squads}
             managerKey={manager.key}
