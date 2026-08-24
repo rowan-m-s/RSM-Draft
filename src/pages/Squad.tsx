@@ -267,7 +267,7 @@ export function Squad() {
         title={manager.teamName}
         subtitle={
           <>
-            {manager.displayName} · {isPreview ? 'All 15' : formation} ·{' '}
+            {manager.displayName} · {isPreview && bench.length === 0 ? 'All 15' : formation} ·{' '}
             <span
               className="sm:hidden"
               title={isDraft ? 'XI inferred from draft order, not an official lineup' : undefined}

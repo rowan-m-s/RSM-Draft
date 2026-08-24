@@ -627,6 +627,8 @@ async function main() {
         managerKeys: managers.map((m) => m.key),
         ownerByElementId,
         positionOf: (id) => positionById.get(id),
+        // The same XI and bench split as the most recent week with picks.
+        lastSquads: Object.values(perGw).sort((a, b) => b.event - a.event)[0]?.squads ?? {},
       }),
       elementPoints: {},
     })

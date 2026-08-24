@@ -1053,20 +1053,30 @@ describe('yetToPlay', () => {
 })
 
 describe('buildPreviewSquads', () => {
-  it('gives each manager their current fifteen, keeper first, with no XI invented', () => {
+  const positionOf = (id) => ({ 10: 'FWD', 11: 'GKP', 12: 'DEF', 13: 'MID', 14: 'MID' })[id]
+
+  it('keeps the most recent gameweek’s XI and bench split, new signings on the bench', () => {
     const ownerByElementId = new Map([
-      [10, 'a'], // FWD
-      [11, 'a'], // GKP
-      [12, 'a'], // DEF
+      [11, 'a'],
+      [12, 'a'],
+      [14, 'a'], // picked up since last week
       [13, 'b'],
-      [99, 'ghost'], // an owner who is not a manager is ignored
     ])
-    const positionOf = (id) => ({ 10: 'FWD', 11: 'GKP', 12: 'DEF', 13: 'MID' })[id]
-    const squads = buildPreviewSquads({ managerKeys: ['a', 'b'], ownerByElementId, positionOf })
-    expect(squads.a.map((p) => p.element)).toEqual([11, 12, 10])
+    const lastSquads = {
+      a: [
+        { element: 11, position: 1, starter: true },
+        { element: 10, position: 2, starter: true }, // sold since: drops out
+        { element: 12, position: 12, starter: false },
+      ],
+    }
+    const squads = buildPreviewSquads({ managerKeys: ['a', 'b'], ownerByElementId, positionOf, lastSquads })
+    expect(squads.a.map((p) => [p.element, p.starter])).toEqual([
+      [11, true],
+      [12, false],
+      [14, false],
+    ])
     expect(squads.a.map((p) => p.position)).toEqual([1, 2, 3])
-    // Everyone is "starter": the whole fifteen is the squad, no bench exists.
-    expect(squads.a.every((p) => p.starter && !p.subbedOn && !p.subbedOff)).toBe(true)
-    expect(squads.b.map((p) => p.element)).toEqual([13])
+    // No played week to copy for b: the whole squad shows, keeper first.
+    expect(squads.b.map((p) => [p.element, p.starter])).toEqual([[13, true]])
   })
 })

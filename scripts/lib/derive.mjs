@@ -87,31 +87,32 @@ export function yetToPlay({ record, fixtures, event, teamOfElement }) {
 
 /**
  * The next gameweek's squads before its deadline: each manager's current
- * fifteen, ordered keeper first, with no XI. Draft has no locked lineup
- * until the deadline, so nothing is inferred — Addendum 02 §6 amended: the
- * week is browsable for its fixtures, clearly labelled provisional.
+ * fifteen, assuming the same XI and bench split as the most recent
+ * gameweek's picks. Players picked up since then go on the bench; players
+ * who left simply drop out, and no replacement XI is invented. With no
+ * played week to copy, all fifteen show as the squad. Addendum 02 §6
+ * amended: the week is browsable for its fixtures, clearly provisional.
  */
-export function buildPreviewSquads({ managerKeys, ownerByElementId, positionOf }) {
+export function buildPreviewSquads({ managerKeys, ownerByElementId, positionOf, lastSquads = {} }) {
   const ORDER = { GKP: 0, DEF: 1, MID: 2, FWD: 3 }
-  const squads = {}
-  for (const key of managerKeys) squads[key] = []
-  for (const [elementId, owner] of ownerByElementId) {
-    if (squads[owner]) squads[owner].push(elementId)
-  }
+  const byPosition = (a, b) => (ORDER[positionOf(a)] ?? 9) - (ORDER[positionOf(b)] ?? 9) || a - b
+  const owned = {}
+  for (const key of managerKeys) owned[key] = new Set()
+  for (const [elementId, owner] of ownerByElementId) owned[owner]?.add(elementId)
+
   return Object.fromEntries(
-    Object.entries(squads).map(([key, ids]) => [
-      key,
-      ids
-        .sort((a, b) => (ORDER[positionOf(a)] ?? 9) - (ORDER[positionOf(b)] ?? 9) || a - b)
-        .map((element, i) => ({
-          element,
-          position: i + 1,
-          // All fifteen are the squad; no XI exists yet and none is invented.
-          starter: true,
-          subbedOn: false,
-          subbedOff: false,
-        })),
-    ])
+    managerKeys.map((key) => {
+      const previous = (lastSquads[key] ?? []).filter((p) => owned[key].has(p.element))
+      const carried = new Set(previous.map((p) => p.element))
+      const additions = [...owned[key]].filter((id) => !carried.has(id)).sort(byPosition)
+      const picks = [
+        // Last week's picks, in their order, keeping who started and who sat.
+        ...previous.map((p) => ({ element: p.element, starter: Boolean(p.starter) })),
+        // Newly acquired players join the bench until their manager says otherwise.
+        ...additions.map((element) => ({ element, starter: previous.length === 0 })),
+      ]
+      return [key, picks.map((p, i) => ({ ...p, position: i + 1, subbedOn: false, subbedOff: false }))]
+    })
   )
 }
 
