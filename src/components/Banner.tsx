@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react'
-import { LION, LION_ONLY } from '../lib/assets'
+import { LION } from '../lib/assets'
 
 /**
  * Every page's header. The violet-to-cyan gradient with the chevron device
@@ -14,7 +14,6 @@ export function Banner({
   title,
   subtitle,
   aside,
-  lion = false,
 }: {
   season: string
   title: string
@@ -25,8 +24,6 @@ export function Banner({
    * banner stays short; from `sm` it takes the right-hand column as before.
    */
   aside?: ReactNode
-  /** Show the lion alone top left below `sm`, where the full lockup is hidden. */
-  lion?: boolean
 }) {
   return (
     <header>
@@ -42,12 +39,7 @@ export function Banner({
           className="hidden h-12 w-auto shrink-0 object-contain sm:block"
         />
         <div className={`font-brand min-w-0 flex-1 ${aside ? 'pr-16 sm:pr-0' : ''}`}>
-          {/* The lion shares the eyebrow's line, so the title keeps its full
-              width and long team names do not truncate for it. */}
-          <p className="eyebrow flex items-center gap-2 text-pl-text/80">
-            {lion && <img src={LION_ONLY} alt="" width={155} height={210} className="h-5 w-auto sm:hidden" />}
-            {season}
-          </p>
+          <p className="eyebrow text-pl-text/80">{season}</p>
           <h1 className="display mt-1 truncate text-3xl leading-[1.2] text-pl-text sm:text-5xl" title={title}>
             {title}
           </h1>
