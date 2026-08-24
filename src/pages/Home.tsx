@@ -142,10 +142,10 @@ function KochCard({
                 <p className="mt-2 text-sm text-pl-muted">
                   <span className="tnum font-semibold text-pl-pink">{gameweek.scores[key]}</span> points ·{' '}
                   {confirmed ? 'lowest' : 'currently lowest'} in GW{gameweek.id}
-                  {!confirmed && gameweek.fixturesRemaining && (
-                    <span className="tnum block">{gameweek.yetByManager?.[key] ?? 0} still to play</span>
-                  )}
                 </p>
+                {!confirmed && gameweek.fixturesRemaining && (
+                  <p className="tnum mt-2 text-sm text-pl-muted">{gameweek.yetByManager?.[key] ?? 0} still to play</p>
+                )}
               </div>
             </div>
           )
