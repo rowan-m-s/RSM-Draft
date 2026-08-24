@@ -104,60 +104,83 @@
         "rushy": {
           "playerName": "Eze",
           "points": 1,
-          "managerKey": "rushy"
+          "managerKey": "rushy",
+          "element": 14
         },
         "kellett": {
           "playerName": "Foden",
           "points": 1,
-          "managerKey": "kellett"
+          "managerKey": "kellett",
+          "element": 398
         },
         "wallis": {
           "playerName": "Calvert-Lewin",
           "points": 1,
-          "managerKey": "wallis"
+          "managerKey": "wallis",
+          "element": 346
         },
         "jls": {
           "playerName": "Beto",
           "points": 1,
-          "managerKey": "jls"
+          "managerKey": "jls",
+          "element": 248
         },
         "paddy": {
           "playerName": "Roefs",
           "points": 1,
-          "managerKey": "paddy"
+          "managerKey": "paddy",
+          "element": 529
         },
         "bennett": {
           "playerName": "Frimpong",
           "points": 0,
-          "managerKey": "bennett"
+          "managerKey": "bennett",
+          "element": 357
         },
         "wood": {
           "playerName": "Shaw",
           "points": 1,
-          "managerKey": "wood"
+          "managerKey": "wood",
+          "element": 423
         },
         "rowan": {
           "playerName": "Ballard",
           "points": 0,
-          "managerKey": "rowan"
+          "managerKey": "rowan",
+          "element": 532
         },
         "jason": {
           "playerName": "Kerkez",
           "points": 0,
-          "managerKey": "jason"
+          "managerKey": "jason",
+          "element": 358
         },
         "dj": {
           "playerName": "Thiago",
           "points": 0,
-          "managerKey": "dj"
+          "managerKey": "dj",
+          "element": 106
         },
         "ollie": {
           "playerName": "Jacquet",
           "points": 1,
-          "managerKey": "ollie"
+          "managerKey": "ollie",
+          "element": 362
         }
       },
-      "kochVariant": {}
+      "kochGraphicByManager": {
+        "rushy": null,
+        "kellett": null,
+        "wallis": null,
+        "jls": null,
+        "paddy": null,
+        "bennett": null,
+        "wood": null,
+        "rowan": null,
+        "jason": null,
+        "dj": 502500,
+        "ollie": null
+      }
     },
     {
       "id": 2,
@@ -180,7 +203,7 @@
       "charged": 0,
       "topPerformerByManager": {},
       "scapegoatByManager": {},
-      "kochVariant": {}
+      "kochGraphicByManager": {}
     },
     {
       "id": 3,
@@ -203,7 +226,7 @@
       "charged": 0,
       "topPerformerByManager": {},
       "scapegoatByManager": {},
-      "kochVariant": {}
+      "kochGraphicByManager": {}
     },
     {
       "id": 4,
@@ -226,7 +249,7 @@
       "charged": 0,
       "topPerformerByManager": {},
       "scapegoatByManager": {},
-      "kochVariant": {}
+      "kochGraphicByManager": {}
     },
     {
       "id": 5,
@@ -249,7 +272,7 @@
       "charged": 0,
       "topPerformerByManager": {},
       "scapegoatByManager": {},
-      "kochVariant": {}
+      "kochGraphicByManager": {}
     },
     {
       "id": 6,
@@ -272,7 +295,7 @@
       "charged": 0,
       "topPerformerByManager": {},
       "scapegoatByManager": {},
-      "kochVariant": {}
+      "kochGraphicByManager": {}
     },
     {
       "id": 7,
@@ -295,7 +318,7 @@
       "charged": 0,
       "topPerformerByManager": {},
       "scapegoatByManager": {},
-      "kochVariant": {}
+      "kochGraphicByManager": {}
     },
     {
       "id": 8,
@@ -318,7 +341,7 @@
       "charged": 0,
       "topPerformerByManager": {},
       "scapegoatByManager": {},
-      "kochVariant": {}
+      "kochGraphicByManager": {}
     },
     {
       "id": 9,
@@ -341,7 +364,7 @@
       "charged": 0,
       "topPerformerByManager": {},
       "scapegoatByManager": {},
-      "kochVariant": {}
+      "kochGraphicByManager": {}
     },
     {
       "id": 10,
@@ -364,7 +387,7 @@
       "charged": 0,
       "topPerformerByManager": {},
       "scapegoatByManager": {},
-      "kochVariant": {}
+      "kochGraphicByManager": {}
     },
     {
       "id": 11,
@@ -387,7 +410,7 @@
       "charged": 0,
       "topPerformerByManager": {},
       "scapegoatByManager": {},
-      "kochVariant": {}
+      "kochGraphicByManager": {}
     },
     {
       "id": 12,
@@ -410,7 +433,7 @@
       "charged": 0,
       "topPerformerByManager": {},
       "scapegoatByManager": {},
-      "kochVariant": {}
+      "kochGraphicByManager": {}
     },
     {
       "id": 13,
@@ -433,7 +456,7 @@
       "charged": 0,
       "topPerformerByManager": {},
       "scapegoatByManager": {},
-      "kochVariant": {}
+      "kochGraphicByManager": {}
     },
     {
       "id": 14,
@@ -456,7 +479,7 @@
       "charged": 0,
       "topPerformerByManager": {},
       "scapegoatByManager": {},
-      "kochVariant": {}
+      "kochGraphicByManager": {}
     },
     {
       "id": 15,
@@ -479,7 +502,7 @@
       "charged": 0,
       "topPerformerByManager": {},
       "scapegoatByManager": {},
-      "kochVariant": {}
+      "kochGraphicByManager": {}
     },
     {
       "id": 16,
@@ -502,7 +525,7 @@
       "charged": 0,
       "topPerformerByManager": {},
       "scapegoatByManager": {},
-      "kochVariant": {}
+      "kochGraphicByManager": {}
     },
     {
       "id": 17,
@@ -525,7 +548,7 @@
       "charged": 0,
       "topPerformerByManager": {},
       "scapegoatByManager": {},
-      "kochVariant": {}
+      "kochGraphicByManager": {}
     },
     {
       "id": 18,
@@ -548,7 +571,7 @@
       "charged": 0,
       "topPerformerByManager": {},
       "scapegoatByManager": {},
-      "kochVariant": {}
+      "kochGraphicByManager": {}
     },
     {
       "id": 19,
@@ -571,7 +594,7 @@
       "charged": 0,
       "topPerformerByManager": {},
       "scapegoatByManager": {},
-      "kochVariant": {}
+      "kochGraphicByManager": {}
     },
     {
       "id": 20,
@@ -594,7 +617,7 @@
       "charged": 0,
       "topPerformerByManager": {},
       "scapegoatByManager": {},
-      "kochVariant": {}
+      "kochGraphicByManager": {}
     },
     {
       "id": 21,
@@ -617,7 +640,7 @@
       "charged": 0,
       "topPerformerByManager": {},
       "scapegoatByManager": {},
-      "kochVariant": {}
+      "kochGraphicByManager": {}
     },
     {
       "id": 22,
@@ -640,7 +663,7 @@
       "charged": 0,
       "topPerformerByManager": {},
       "scapegoatByManager": {},
-      "kochVariant": {}
+      "kochGraphicByManager": {}
     },
     {
       "id": 23,
@@ -663,7 +686,7 @@
       "charged": 0,
       "topPerformerByManager": {},
       "scapegoatByManager": {},
-      "kochVariant": {}
+      "kochGraphicByManager": {}
     },
     {
       "id": 24,
@@ -686,7 +709,7 @@
       "charged": 0,
       "topPerformerByManager": {},
       "scapegoatByManager": {},
-      "kochVariant": {}
+      "kochGraphicByManager": {}
     },
     {
       "id": 25,
@@ -709,7 +732,7 @@
       "charged": 0,
       "topPerformerByManager": {},
       "scapegoatByManager": {},
-      "kochVariant": {}
+      "kochGraphicByManager": {}
     },
     {
       "id": 26,
@@ -732,7 +755,7 @@
       "charged": 0,
       "topPerformerByManager": {},
       "scapegoatByManager": {},
-      "kochVariant": {}
+      "kochGraphicByManager": {}
     },
     {
       "id": 27,
@@ -755,7 +778,7 @@
       "charged": 0,
       "topPerformerByManager": {},
       "scapegoatByManager": {},
-      "kochVariant": {}
+      "kochGraphicByManager": {}
     },
     {
       "id": 28,
@@ -778,7 +801,7 @@
       "charged": 0,
       "topPerformerByManager": {},
       "scapegoatByManager": {},
-      "kochVariant": {}
+      "kochGraphicByManager": {}
     },
     {
       "id": 29,
@@ -801,7 +824,7 @@
       "charged": 0,
       "topPerformerByManager": {},
       "scapegoatByManager": {},
-      "kochVariant": {}
+      "kochGraphicByManager": {}
     },
     {
       "id": 30,
@@ -824,7 +847,7 @@
       "charged": 0,
       "topPerformerByManager": {},
       "scapegoatByManager": {},
-      "kochVariant": {}
+      "kochGraphicByManager": {}
     },
     {
       "id": 31,
@@ -847,7 +870,7 @@
       "charged": 0,
       "topPerformerByManager": {},
       "scapegoatByManager": {},
-      "kochVariant": {}
+      "kochGraphicByManager": {}
     },
     {
       "id": 32,
@@ -870,7 +893,7 @@
       "charged": 0,
       "topPerformerByManager": {},
       "scapegoatByManager": {},
-      "kochVariant": {}
+      "kochGraphicByManager": {}
     },
     {
       "id": 33,
@@ -893,7 +916,7 @@
       "charged": 0,
       "topPerformerByManager": {},
       "scapegoatByManager": {},
-      "kochVariant": {}
+      "kochGraphicByManager": {}
     },
     {
       "id": 34,
@@ -916,7 +939,7 @@
       "charged": 0,
       "topPerformerByManager": {},
       "scapegoatByManager": {},
-      "kochVariant": {}
+      "kochGraphicByManager": {}
     },
     {
       "id": 35,
@@ -939,7 +962,7 @@
       "charged": 0,
       "topPerformerByManager": {},
       "scapegoatByManager": {},
-      "kochVariant": {}
+      "kochGraphicByManager": {}
     },
     {
       "id": 36,
@@ -962,7 +985,7 @@
       "charged": 0,
       "topPerformerByManager": {},
       "scapegoatByManager": {},
-      "kochVariant": {}
+      "kochGraphicByManager": {}
     },
     {
       "id": 37,
@@ -985,7 +1008,7 @@
       "charged": 0,
       "topPerformerByManager": {},
       "scapegoatByManager": {},
-      "kochVariant": {}
+      "kochGraphicByManager": {}
     },
     {
       "id": 38,
@@ -1008,8 +1031,8 @@
       "charged": 0,
       "topPerformerByManager": {},
       "scapegoatByManager": {},
-      "kochVariant": {}
+      "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-08-24T09:00:47.232Z"
+  "generatedAt": "2026-08-24T09:13:14.875Z"
 }
