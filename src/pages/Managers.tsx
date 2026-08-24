@@ -222,7 +222,7 @@ export function Managers() {
       <Banner
         season={`Season ${data.league.season.replace('20', '').replace('/20', '/')}`}
         title="Managers"
-        subtitle="Koch counts, months won, and what everyone is owed. Worst balance first."
+        subtitle="Koch counts, months won, and what everyone is owed."
       />
 
       <PageBody>
