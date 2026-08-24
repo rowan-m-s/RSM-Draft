@@ -118,58 +118,14 @@
      the reference the run is a plain sRGB blend of the two end tokens, so no
      intermediate stop is needed.
 
-     Over it, the chevron device from the brand asset: ribbons in the page
-     colour that fold back on themselves once, the fold tips making the sharp
-     points. Two enter from the right — one high, one low — so the title on
-     the left sits on clean gradient. Both share one geometry: long edges at
-     --chevron-slope (tan 6°, measured from the asset) and the fold at
-     --chevron-fold (tan 48°). Lengths are in container-width units, so the
-     angles are true in pixels and every page reads as the same device. */
+     The chevron device that used to cut across it is gone: the text has
+     the whole surface. */
   .banner-gradient {
     position: relative;
     isolation: isolate;
     overflow: hidden;
     container-type: inline-size;
     background-image: linear-gradient(90deg, var(--color-pl-violet), var(--color-pl-cyan));
-  }
-
-  .banner-gradient::before,
-  .banner-gradient::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    pointer-events: none;
-    background-color: var(--color-pl-bg);
-  }
-
-  /* Upper ribbon: its top edge falls from the right to a tip at mid-banner,
-     folds back down-right, and the lower edge rises away to the right. */
-  .banner-gradient::before {
-    --tip-x: 50cqw;
-    --tip-y: calc(10px + 50cqw * var(--chevron-slope));
-    --fold-x: calc(var(--tip-x) + 30px);
-    --fold-y: calc(var(--tip-y) + 30px * var(--chevron-fold));
-    clip-path: polygon(
-      100% 10px,
-      var(--tip-x) var(--tip-y),
-      var(--fold-x) var(--fold-y),
-      100% calc(var(--fold-y) - (100cqw - var(--fold-x)) * var(--chevron-slope))
-    );
-  }
-
-  /* Lower ribbon, the same shape turned over and set further right. */
-  .banner-gradient::after {
-    --tip-x: 62cqw;
-    --tip-y: calc(100% - 10px - 38cqw * var(--chevron-slope));
-    --fold-x: calc(var(--tip-x) + 22px);
-    --fold-y: calc(var(--tip-y) - 22px * var(--chevron-fold));
-    clip-path: polygon(
-      100% calc(100% - 10px),
-      var(--tip-x) var(--tip-y),
-      var(--fold-x) var(--fold-y),
-      100% calc(var(--fold-y) + (100cqw - var(--fold-x)) * var(--chevron-slope))
-    );
   }
 
   /* The cyan/green/pink strip that sits under every banner: one gradient,

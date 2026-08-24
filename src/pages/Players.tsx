@@ -50,24 +50,22 @@ function Pill({ active, onClick, children }: { active: boolean; onClick: () => v
 
 function LeadingScorer({ player, ownerName }: { player: Player; ownerName: string | null }) {
   return (
-    /* At 375px the photo goes and everything drops a size, or the block
-       fights the title for the same air and the points clip at the edge. */
-    <div className="flex items-center gap-3 sm:gap-4">
+    <div className="flex items-center gap-4">
       <PlayerPhoto
         photoCode={player.photoCode}
         name={player.name}
         size="large"
-        className="hidden h-16 w-16 shrink-0 rounded-full bg-pl-bg/40 object-cover object-top sm:block"
+        className="h-16 w-16 shrink-0 rounded-full bg-pl-bg/40 object-cover object-top"
       />
       <div className="min-w-0">
         <p className="eyebrow text-pl-text/80">Leading scorer</p>
-        <p className="display truncate text-lg leading-[1.2] text-pl-text sm:text-2xl">{player.name}</p>
+        <p className="display truncate text-2xl leading-[1.2] text-pl-text">{player.name}</p>
         <p className="mt-1 truncate text-xs text-pl-text/80">
           {player.position} · {player.clubShort} · {ownerName ?? 'free agent'}
         </p>
       </div>
       <div className="shrink-0 text-right">
-        <p className="display tnum text-2xl leading-none text-pl-text sm:text-4xl">{player.points}</p>
+        <p className="display tnum text-4xl leading-none text-pl-text">{player.points}</p>
         <p className="text-[10px] font-semibold tracking-wider text-pl-text/80 uppercase">points</p>
       </div>
     </div>
@@ -140,7 +138,14 @@ export function Players() {
         season={`Season ${data.league.season.replace('20', '').replace('/20', '/')}`}
         title="Players"
         subtitle="Who owns who, and what they're worth in points."
-        aside={leading ? <LeadingScorer player={leading} ownerName={nameOf(leading.owner)} /> : undefined}
+        aside={
+          // Desktop only: at a phone width it fights the title for the air.
+          leading ? (
+            <span className="hidden sm:block">
+              <LeadingScorer player={leading} ownerName={nameOf(leading.owner)} />
+            </span>
+          ) : undefined
+        }
       />
 
       <PageBody>
