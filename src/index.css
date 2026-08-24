@@ -124,18 +124,15 @@
     position: relative;
     isolation: isolate;
     overflow: hidden;
-    /* The FPL site's own banner, measured from the live page: one straight
-       run, cyan into violet, which our tokens match to within a point. A
-       quiet scrim on the left keeps white text readable on the cyan end. */
-    background-image:
-      linear-gradient(90deg, color-mix(in srgb, var(--color-pl-bg) 26%, transparent), transparent 46%),
-      linear-gradient(90deg, var(--color-pl-cyan) 0%, var(--color-pl-violet) 100%);
+    /* The Draft site's own banner, measured from the live page: one
+       straight run, violet into cyan, which our tokens match to within a
+       point. White text sits on the violet end and needs no scrim. */
+    background-image: linear-gradient(to right, var(--color-pl-violet), var(--color-pl-cyan));
   }
 
-  /* The moiré sweep: the site's own pattern asset (transparent PNG, served
-     here as a 2x webp), placed as the site places it — anchored to the
-     right edge, riding high so the luminous green band crosses the top
-     corner. Transparent art on the matching gradient needs no mask. */
+  /* The moiré sweep: the site's own pattern asset at its full resolution
+     (lossless webp of the original, so the fine ridges survive), placed
+     exactly as the site places it. */
   .banner-gradient::before {
     content: '';
     position: absolute;
@@ -145,7 +142,7 @@
     background-image: url('/RSM-Draft/images/banner-sweep.webp');
     background-repeat: no-repeat;
     background-size: 356px 441px;
-    background-position: right -269px;
+    background-position: 100% -269px;
   }
 
   /* At a phone width it tucks into the corner, clear of the subtitle. */
