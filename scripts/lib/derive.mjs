@@ -209,6 +209,19 @@ function topPerformersForGameweek({ event, perGw, elementName }) {
 function scapegoatsForGameweek({ event, perGw, elementName }) {
   const record = perGw[event.id]
   if (!record) return {}
+
+  // Everything a player was docked, from the per-fixture breakdown: a missed
+  // penalty at -2 outranks a yellow at -1 when both ended on the same total.
+  const negativesOf = (element) => {
+    let sum = 0
+    for (const byElement of Object.values(record.fixturePoints ?? {})) {
+      for (const part of byElement[element]?.components ?? []) {
+        if (part.points < 0) sum += part.points
+      }
+    }
+    return sum
+  }
+
   const out = {}
   for (const [key, picks] of Object.entries(record.squads ?? {})) {
     let worst = null
@@ -216,12 +229,20 @@ function scapegoatsForGameweek({ event, perGw, elementName }) {
       if (!pick.starter) continue
       if ((record.elementMinutes?.[pick.element] ?? 0) <= 0) continue
       const points = record.elementPoints?.[pick.element] ?? 0
+      const negatives = negativesOf(pick.element)
       const name = elementName(pick.element)
-      if (!worst || points < worst.points || (points === worst.points && name.localeCompare(worst.playerName) < 0)) {
-        worst = { playerName: name, points, managerKey: key }
+      // Lowest total; ties go to whoever was docked most, then alphabetical.
+      if (
+        !worst ||
+        points < worst.points ||
+        (points === worst.points &&
+          (negatives < worst.negatives || (negatives === worst.negatives && name.localeCompare(worst.playerName) < 0)))
+      ) {
+        worst = { playerName: name, points, negatives, managerKey: key }
       }
     }
-    out[key] = worst
+    // The docked sum is a tiebreak, not part of the published shape.
+    out[key] = worst ? { playerName: worst.playerName, points: worst.points, managerKey: worst.managerKey } : null
   }
   return out
 }

@@ -1080,3 +1080,47 @@ describe('buildPreviewSquads', () => {
     expect(squads.b.map((p) => [p.element, p.starter])).toEqual([[13, true]])
   })
 })
+
+describe('scapegoat tiebreak', () => {
+  it('on level points, blames whoever was docked most in the breakdown', () => {
+    const perGw = {
+      1: {
+        squads: {
+          dj: [
+            { element: 1, starter: true }, // Thiago: 0 pts, missed pen -2
+            { element: 2, starter: true }, // Munoz: 0 pts, yellow -1
+            { element: 3, starter: true },
+          ],
+        },
+        elementMinutes: { 1: 90, 2: 90, 3: 90 },
+        elementPoints: { 1: 0, 2: 0, 3: 5 },
+        fixturePoints: {
+          101: {
+            1: {
+              total: 0,
+              components: [
+                { stat: 'minutes', name: 'Minutes played', value: 90, points: 2 },
+                { stat: 'penalties_missed', name: 'Penalties missed', value: 1, points: -2 },
+              ],
+            },
+            2: {
+              total: 0,
+              components: [
+                { stat: 'minutes', name: 'Minutes played', value: 90, points: 2 },
+                { stat: 'yellow_cards', name: 'Yellow cards', value: 1, points: -1 },
+              ],
+            },
+          },
+        },
+      },
+    }
+    const gameweeks = buildGameweeks({
+      events: [EVENTS[0]],
+      classicDataCheckedById: checked(),
+      scoresByGw: {},
+      perGw,
+      elementName: (id) => ({ 1: 'Thiago', 2: 'Munoz', 3: 'Semenyo' })[id],
+    })
+    expect(gameweeks[0].scapegoatByManager.dj).toEqual({ playerName: 'Thiago', points: 0, managerKey: 'dj' })
+  })
+})
