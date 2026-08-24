@@ -210,6 +210,9 @@ function GameweekTable({ gameweek, nameOf }: { gameweek: Gameweek; nameOf: (k: M
     .sort((a, b) => b.points - a.points)
 
   const lowest = Math.min(...ranked.map((r) => r.points))
+  // Still-to-play only earns its place while the week is live: once every
+  // fixture has finished it would sit there as a column of zeroes.
+  const showYet = gameweek.fixturesRemaining
 
   return (
     <div className={`card overflow-hidden ${provisional ? 'opacity-90' : ''}`}>
@@ -255,6 +258,14 @@ function GameweekTable({ gameweek, nameOf }: { gameweek: Gameweek; nameOf: (k: M
                       )}
                     </span>
                   </td>
+                  {showYet && (
+                    <td className="w-12 py-3 pr-1 text-right">
+                      <span className="tnum text-sm text-pl-muted">
+                        <span className="mr-1 text-[9px] font-semibold tracking-wider uppercase">Yet</span>
+                        {gameweek.yetByManager?.[row.key] ?? 0}
+                      </span>
+                    </td>
+                  )}
                   <td className="w-20 py-3 pr-4 text-right">
                     <span
                       className={`display tnum text-xl ${
@@ -267,7 +278,7 @@ function GameweekTable({ gameweek, nameOf }: { gameweek: Gameweek; nameOf: (k: M
                 </tr>
                 {expanded && (
                   <tr>
-                    <td colSpan={3} className="p-0">
+                    <td colSpan={showYet ? 4 : 3} className="p-0">
                       <RowDetail managerKey={row.key} mvp={mvpOf(row.key)} gameweek={gameweek.id} />
                     </td>
                   </tr>

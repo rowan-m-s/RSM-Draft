@@ -53,6 +53,10 @@ export interface Gameweek {
   scoresProvisional: boolean
   /** Every manager has had a match kick off, so a provisional Koch means something. */
   kochReady: boolean
+  /** Each manager's starters whose fixture has not kicked off. */
+  yetByManager: Record<ManagerKey, number>
+  /** A fixture in the week has not finished. */
+  fixturesRemaining: boolean
   /** Raw from FPL, always UTC. */
   deadlineUtc: string
   /** Same instant rendered in Europe/London, for display only. */

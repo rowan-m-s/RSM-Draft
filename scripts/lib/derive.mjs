@@ -67,6 +67,24 @@ export function everyManagerStarted({ record, fixtures, event, teamOfElement }) 
   return squads.every(([, picks]) => picks.some((p) => p.starter && startedTeams.has(teamOfElement(p.element))))
 }
 
+/**
+ * How many of each manager's XI are still to play: starters with a fixture
+ * this gameweek that has not kicked off. In progress counts as started, a
+ * blank is not a fixture. What makes a live table readable: a low score
+ * with eight to come is not a bad week.
+ */
+export function yetToPlay({ record, fixtures, event, teamOfElement }) {
+  const notStarted = new Set()
+  for (const f of fixtures) {
+    if (f.event === event && !f.started) (notStarted.add(f.team_h), notStarted.add(f.team_a))
+  }
+  const out = {}
+  for (const [key, picks] of Object.entries(record?.squads ?? {})) {
+    out[key] = picks.filter((p) => p.starter && notStarted.has(teamOfElement(p.element))).length
+  }
+  return out
+}
+
 export function buildGameweeks({
   events,
   classicDataCheckedById,
@@ -117,6 +135,10 @@ export function buildGameweeks({
       scoresProvisional: inPlay && hasScores,
       /** A provisional Koch can be named: nobody is on nought for want of a kickoff. */
       kochReady: Boolean(event.finished) || everyManagerStarted({ record, fixtures, event: event.id, teamOfElement }),
+      /** Each manager's starters whose fixture has not kicked off. */
+      yetByManager: yetToPlay({ record, fixtures, event: event.id, teamOfElement }),
+      /** A fixture in the week has not finished; the Yet column earns its place. */
+      fixturesRemaining: fixtures.some((f) => f.event === event.id && !f.finished),
       dataChecked,
       confirmExpectedUtc: lastKickoffByEvent[event.id] ? dayAfter(lastKickoffByEvent[event.id]) : null,
       revealFromUtc: lastKickoffByEvent[event.id] ? revealFrom(lastKickoffByEvent[event.id]) : null,

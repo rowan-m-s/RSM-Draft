@@ -9,6 +9,7 @@ import {
   buildPlayers,
   provisionalScores,
   everyManagerStarted,
+  yetToPlay,
   readElementStats,
   buildSeason,
   buildSquad,
@@ -1019,5 +1020,33 @@ describe('everyManagerStarted', () => {
       },
     }
     expect(everyManagerStarted({ record: benchOnly, fixtures, event: 1, teamOfElement })).toBe(false)
+  })
+})
+
+describe('yetToPlay', () => {
+  const fixtures = [
+    { event: 1, started: true, finished: true, team_h: 1, team_a: 2 },
+    { event: 1, started: false, finished: false, team_h: 3, team_a: 4 },
+  ]
+  const teamOfElement = (id) => ({ 10: 1, 11: 3, 12: 4, 13: 5 })[id]
+  it('counts starters with an unkicked-off fixture; in progress, blanks and bench do not count', () => {
+    const record = {
+      squads: {
+        a: [
+          { element: 10, starter: true }, // played
+          { element: 11, starter: true }, // yet
+          { element: 12, starter: false }, // bench: never counts
+          { element: 13, starter: true }, // blank: no fixture
+        ],
+        b: [{ element: 10, starter: true }],
+      },
+    }
+    expect(yetToPlay({ record, fixtures, event: 1, teamOfElement })).toEqual({ a: 1, b: 0 })
+  })
+
+  it('counts a double-gameweek player with one match played and one to come', () => {
+    const double = [...fixtures, { event: 1, started: false, finished: false, team_h: 1, team_a: 6 }]
+    const record = { squads: { a: [{ element: 10, starter: true }] } }
+    expect(yetToPlay({ record, fixtures: double, event: 1, teamOfElement })).toEqual({ a: 1 })
   })
 })
