@@ -229,7 +229,10 @@ export function CardImage({
       sources={jpg ? [jpg] : []}
       fallback={AVATAR_FALLBACK}
       alt={alt}
-      className="h-full w-full object-contain"
+      // Cover, not contain: a non-square graphic fills the card's box with a
+      // slight centre crop rather than letterboxing smaller than the rest.
+      // The lightbox below still shows the whole image.
+      className="h-full w-full object-cover"
     />
   )
   if (!enlargeTitle) return <div className={`overflow-hidden rounded-md bg-pl-bg ${className}`}>{picture}</div>
