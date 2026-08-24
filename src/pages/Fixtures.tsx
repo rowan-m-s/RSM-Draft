@@ -1,4 +1,4 @@
-import { Fragment, useState } from 'react'
+import { Fragment, useMemo, useState } from 'react'
 import { Banner } from '../components/Banner'
 import { Breakdown, pts } from '../components/Breakdown'
 import { GameweekSlider } from '../components/GameweekSlider'
@@ -17,7 +17,7 @@ import {
   unscheduled,
 } from '../lib/fixtures'
 import { formatLondon } from '../lib/season'
-import { useFixtures, usePoints } from '../lib/useSquad'
+import { useFixtures, usePoints, useSquad } from '../lib/useSquad'
 import type { Match, Player, PointsComponent, Team } from '../types'
 
 /**
@@ -248,7 +248,24 @@ export function Fixtures() {
   const blanks = blankTeams(matches, teams, gameweek)
   const doubles = doubleMarkers(matches, gameweek)
   const postponed = unscheduled(matches)
-  const owned = data.players.owned
+  /* Ownership as it stood that week, from the week's own squad file:
+     squads change through waivers and trades, so a past week names who
+     owned those players then. Falls back to current squads for a week
+     with no file (and while the file loads). */
+  const { squad } = useSquad(data.league.availableSquads?.includes(gameweek) ? gameweek : null)
+  const owned = useMemo<Player[]>(() => {
+    if (!squad || squad.event !== gameweek) return data.players.owned
+    const out: Player[] = []
+    for (const [key, picks] of Object.entries(squad.squads)) {
+      for (const pick of picks) {
+        const player = squad.players[String(pick.element)]
+        if (player) {
+          out.push({ ...player, id: pick.element, owner: key, points: pick.points ?? 0 } as Player)
+        }
+      }
+    }
+    return out
+  }, [squad, gameweek, data.players.owned])
 
   const meta = data.gameweeks.find((gw) => gw.id === gameweek)
 
@@ -342,8 +359,8 @@ export function Fixtures() {
             )}
 
             <p className="text-xs leading-relaxed text-pl-muted">
-              Kickoff times are UK time. Owned counts are against current squads, so a past week shows who owns those
-              players now, not who owned them then.
+              Kickoff times are UK time. Owned counts follow that week's squads, so a past week names who owned the
+              players then, not who owns them now.
             </p>
           </div>
         )}
