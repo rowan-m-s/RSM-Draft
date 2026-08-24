@@ -260,8 +260,8 @@ function GameweekTable({ gameweek, nameOf }: { gameweek: Gameweek; nameOf: (k: M
                   </td>
                   {showYet && (
                     <td className="w-12 py-3 pr-1 text-right">
-                      <span className="tnum text-sm text-pl-muted">
-                        <span className="mr-1 text-[9px] font-semibold tracking-wider uppercase">Yet</span>
+                      <span className="tnum text-xs text-pl-muted">
+                        <span className="mr-1 font-semibold tracking-wider uppercase">Yet</span>
                         {gameweek.yetByManager?.[row.key] ?? 0}
                       </span>
                     </td>
