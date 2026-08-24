@@ -30,15 +30,7 @@ function PositionBadge({ position }: { position: Position }) {
   )
 }
 
-function Pill({
-  active,
-  onClick,
-  children,
-}: {
-  active: boolean
-  onClick: () => void
-  children: React.ReactNode
-}) {
+function Pill({ active, onClick, children }: { active: boolean; onClick: () => void; children: React.ReactNode }) {
   /* Transparent with a light border; selected gets a solid fill. */
   return (
     <button
@@ -58,22 +50,24 @@ function Pill({
 
 function LeadingScorer({ player, ownerName }: { player: Player; ownerName: string | null }) {
   return (
-    <div className="flex items-center gap-4">
+    /* At 375px the photo goes and everything drops a size, or the block
+       fights the title for the same air and the points clip at the edge. */
+    <div className="flex items-center gap-3 sm:gap-4">
       <PlayerPhoto
         photoCode={player.photoCode}
         name={player.name}
         size="large"
-        className="h-16 w-16 shrink-0 rounded-full bg-pl-bg/40 object-cover object-top"
+        className="hidden h-16 w-16 shrink-0 rounded-full bg-pl-bg/40 object-cover object-top sm:block"
       />
       <div className="min-w-0">
         <p className="eyebrow text-pl-text/80">Leading scorer</p>
-        <p className="display truncate text-2xl leading-[1.2] text-pl-text">{player.name}</p>
+        <p className="display truncate text-lg leading-[1.2] text-pl-text sm:text-2xl">{player.name}</p>
         <p className="mt-1 truncate text-xs text-pl-text/80">
           {player.position} · {player.clubShort} · {ownerName ?? 'free agent'}
         </p>
       </div>
       <div className="shrink-0 text-right">
-        <p className="display tnum text-4xl leading-none text-pl-text">{player.points}</p>
+        <p className="display tnum text-2xl leading-none text-pl-text sm:text-4xl">{player.points}</p>
         <p className="text-[10px] font-semibold tracking-wider text-pl-text/80 uppercase">points</p>
       </div>
     </div>

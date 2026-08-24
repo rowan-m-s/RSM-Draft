@@ -27,7 +27,13 @@ export function Banner({
 }) {
   return (
     <header>
-      <div className="banner-gradient relative flex flex-col px-4 py-5 sm:flex-row sm:items-center sm:gap-8 sm:px-6 sm:py-9">
+      {/* One height on every page below `sm`, sized for a two-line subtitle:
+          content sits inside it rather than defining it, so Fixtures and
+          Home stop being different heights. 148px holds the longest
+          subtitle (Honours) at the constrained width. The text keeps to the left 60%
+          and sits high, clear of the chevron bands on the right; the
+          chevrons themselves do not move. From `sm` up nothing changes. */}
+      <div className="banner-gradient relative flex h-[148px] flex-col justify-start px-4 pt-4 sm:h-auto sm:flex-row sm:items-center sm:gap-8 sm:px-6 sm:py-9">
         {/* The supplied artwork is the full lockup — lion plus wordmark, 500×210,
             so about 2.38:1. Height is fixed and width follows; giving it a
             square box squashes it. */}
@@ -38,7 +44,7 @@ export function Banner({
           height={48}
           className="hidden h-12 w-auto shrink-0 object-contain sm:block"
         />
-        <div className={`font-brand min-w-0 flex-1 ${aside ? 'pr-16 sm:pr-0' : ''}`}>
+        <div className={`font-brand min-w-0 max-w-[60%] flex-1 sm:max-w-none ${aside ? 'pr-0 sm:pr-0' : ''}`}>
           <p className="eyebrow text-pl-text/80">{season}</p>
           <h1 className="display mt-1 truncate text-3xl leading-[1.2] text-pl-text sm:text-5xl" title={title}>
             {title}
