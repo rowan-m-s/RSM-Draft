@@ -257,6 +257,7 @@ export function Squad() {
           full length on a phone: the short form carries the long one as a
           tooltip, and the long form shows from sm up. */}
       <Banner
+        lion
         season={isDraft ? '1st Draft' : `Gameweek ${gameweek}`}
         title={manager.teamName}
         subtitle={
