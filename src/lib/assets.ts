@@ -78,17 +78,16 @@ const PL = `${RESOURCES}/premierleague`
 /** Prefixes with Vite's base so assets resolve under the Pages subpath. */
 export const asset = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`
 
-export type ManagerImageSet = 'icon' | 'koch' | 'koch2' | 'motm' | 'winner'
+export type ManagerImageSet = 'icon' | 'koch' | 'motm' | 'winner'
 
 export const managerImage = (set: ManagerImageSet, key: string, format: 'webp' | 'jpg') =>
   asset(`images/${set}/${key}.${format}`)
 
 /** A player-keyed graphic: one of several per manager, chosen by the fetch job. */
-export const playerGraphic = (set: 'leader', key: string, code: number, format: 'webp' | 'jpg') =>
+export const playerGraphic = (set: 'leader' | 'koch', key: string, code: number, format: 'webp' | 'jpg') =>
   asset(`images/${set}/${key}.${code}.${format}`)
 
 /** Which Koch graphic a manager's nth award shows (0-based): they alternate. */
-export const kochSetFor = (previousAwards: number): 'koch' | 'koch2' => (previousAwards % 2 === 0 ? 'koch' : 'koch2')
 
 /** The icon set also has an @2x, for anything rendered above 64px. */
 export const managerIcon2x = (key: string, format: 'webp' | 'jpg') => asset(`images/icon/${key}@2x.${format}`)

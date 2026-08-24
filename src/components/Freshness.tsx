@@ -21,7 +21,13 @@ function Spinner() {
   return (
     <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" className="animate-spin">
       <circle cx="6" cy="6" r="4.5" fill="none" stroke="currentColor" strokeWidth="1.5" strokeOpacity=".3" />
-      <path d="M10.5 6a4.5 4.5 0 0 0-4.5-4.5" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+      <path
+        d="M10.5 6a4.5 4.5 0 0 0-4.5-4.5"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+      />
     </svg>
   )
 }
@@ -57,11 +63,7 @@ export function Freshness({ compact = false }: { compact?: boolean }) {
   if (!age) return null
 
   const tone = age.stale ? 'font-semibold text-pl-amber' : 'text-pl-muted'
-  const label = reloading
-    ? 'Reloading…'
-    : notice
-      ? NOTICE[notice.outcome]
-      : `Updated ${age.text}`
+  const label = reloading ? 'Reloading…' : notice ? NOTICE[notice.outcome] : `Updated ${age.text}`
   const labelTone = notice?.outcome === 'failed' ? 'font-semibold text-pl-amber' : notice ? 'text-pl-text' : tone
 
   if (compact) {
@@ -135,9 +137,9 @@ export function DataFooter() {
         </a>
       </div>
       <p className="mt-3 text-xs leading-relaxed text-pl-muted">
-        Reload re-reads the stored data so you are not looking at a stale copy held by your browser. It does not
-        pull new scores from FPL. That happens on a schedule, every 15 minutes on match days. Force update runs
-        the job by hand and needs repo access; it takes a couple of minutes, then reload.
+        Reload re-reads the stored data so you are not looking at a stale copy held by your browser. It does not pull
+        new scores from FPL. That happens on a schedule, every 15 minutes on match days. Force update runs the job by
+        hand and needs repo access; it takes a couple of minutes, then reload.
       </p>
     </section>
   )

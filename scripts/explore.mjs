@@ -110,7 +110,9 @@ async function main() {
     line()
     line('--- EVENT fields (question 4: is there a waiver/trade deadline?) ---')
     line(`event keys: ${keys(events[0]).join(', ')}`)
-    const deadlineish = keys(events[0]).filter((k) => /deadline|waiver|trade|transaction|time|checked|finished/i.test(k))
+    const deadlineish = keys(events[0]).filter((k) =>
+      /deadline|waiver|trade|transaction|time|checked|finished/i.test(k)
+    )
     line(`deadline-ish keys: ${deadlineish.join(', ')}`)
     line()
     line('first 6 events, deadline-ish values:')
@@ -278,7 +280,14 @@ async function main() {
       return d && d.deadline_time !== c.deadline_time
     })
     line(`deadline_time mismatches between draft and classic: ${mismatch.length}`)
-    line(`classic data_checked events: ${ce.filter((e) => e.data_checked).map((e) => e.id).join(', ') || 'none'}`)
+    line(
+      `classic data_checked events: ${
+        ce
+          .filter((e) => e.data_checked)
+          .map((e) => e.id)
+          .join(', ') || 'none'
+      }`
+    )
   }
 
   head('11. deadlines by Europe/London month (drives the money calendar)')
@@ -311,12 +320,30 @@ async function main() {
     const code = player.code
     line('--- player photo candidates ---')
     await probeImages([
-      { label: 'pl/40x40 p{code}.png', url: `https://resources.premierleague.com/premierleague/photos/players/40x40/p${code}.png` },
-      { label: 'pl/110x140 p{code}.png', url: `https://resources.premierleague.com/premierleague/photos/players/110x140/p${code}.png` },
-      { label: 'pl/250x250 p{code}.png', url: `https://resources.premierleague.com/premierleague/photos/players/250x250/p${code}.png` },
-      { label: 'pl25/250x250 p{code}.png', url: `https://resources.premierleague.com/premierleague25/photos/players/250x250/p${code}.png` },
-      { label: 'pl26/250x250 p{code}.png', url: `https://resources.premierleague.com/premierleague26/photos/players/250x250/p${code}.png` },
-      { label: 'missing code (fallback test)', url: `https://resources.premierleague.com/premierleague/photos/players/250x250/p999999.png` },
+      {
+        label: 'pl/40x40 p{code}.png',
+        url: `https://resources.premierleague.com/premierleague/photos/players/40x40/p${code}.png`,
+      },
+      {
+        label: 'pl/110x140 p{code}.png',
+        url: `https://resources.premierleague.com/premierleague/photos/players/110x140/p${code}.png`,
+      },
+      {
+        label: 'pl/250x250 p{code}.png',
+        url: `https://resources.premierleague.com/premierleague/photos/players/250x250/p${code}.png`,
+      },
+      {
+        label: 'pl25/250x250 p{code}.png',
+        url: `https://resources.premierleague.com/premierleague25/photos/players/250x250/p${code}.png`,
+      },
+      {
+        label: 'pl26/250x250 p{code}.png',
+        url: `https://resources.premierleague.com/premierleague26/photos/players/250x250/p${code}.png`,
+      },
+      {
+        label: 'missing code (fallback test)',
+        url: `https://resources.premierleague.com/premierleague/photos/players/250x250/p999999.png`,
+      },
     ])
   }
 
@@ -325,13 +352,31 @@ async function main() {
     line()
     line('--- club badge candidates ---')
     await probeImages([
-      { label: 'pl/badges/20 t{code}.png', url: `https://resources.premierleague.com/premierleague/badges/20/t${code}.png` },
-      { label: 'pl/badges/50 t{code}.png', url: `https://resources.premierleague.com/premierleague/badges/50/t${code}.png` },
-      { label: 'pl/badges/50 t{code}@x2.png', url: `https://resources.premierleague.com/premierleague/badges/50/t${code}@x2.png` },
-      { label: 'pl/badges/70 t{code}.png', url: `https://resources.premierleague.com/premierleague/badges/70/t${code}.png` },
-      { label: 'pl/badges/100 t{code}.png', url: `https://resources.premierleague.com/premierleague/badges/100/t${code}.png` },
+      {
+        label: 'pl/badges/20 t{code}.png',
+        url: `https://resources.premierleague.com/premierleague/badges/20/t${code}.png`,
+      },
+      {
+        label: 'pl/badges/50 t{code}.png',
+        url: `https://resources.premierleague.com/premierleague/badges/50/t${code}.png`,
+      },
+      {
+        label: 'pl/badges/50 t{code}@x2.png',
+        url: `https://resources.premierleague.com/premierleague/badges/50/t${code}@x2.png`,
+      },
+      {
+        label: 'pl/badges/70 t{code}.png',
+        url: `https://resources.premierleague.com/premierleague/badges/70/t${code}.png`,
+      },
+      {
+        label: 'pl/badges/100 t{code}.png',
+        url: `https://resources.premierleague.com/premierleague/badges/100/t${code}.png`,
+      },
       { label: 'pl/badges t{code}.svg', url: `https://resources.premierleague.com/premierleague/badges/t${code}.svg` },
-      { label: 'pl25/badges/50 t{code}.png', url: `https://resources.premierleague.com/premierleague25/badges/50/t${code}.png` },
+      {
+        label: 'pl25/badges/50 t{code}.png',
+        url: `https://resources.premierleague.com/premierleague25/badges/50/t${code}.png`,
+      },
     ])
   }
 

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { kochVariant, pickGraphic, resolvePlayerName } from './graphics.mjs'
+import { pickGraphic, resolvePlayerName } from './graphics.mjs'
 
 const squad = [
   { code: 1, webName: "O'Reilly", firstName: 'Nico', secondName: "O'Reilly" },
@@ -53,11 +53,5 @@ describe('pickGraphic', () => {
   it('excludes players the manager no longer owns, and is null if none are left', () => {
     expect(pickGraphic({ candidates, pointsByCode: { 11: 99 }, ownedCodes: new Set([10]) })).toEqual({ code: 10, points: 0 })
     expect(pickGraphic({ candidates, pointsByCode: { 11: 99 }, ownedCodes: new Set() })).toBeNull()
-  })
-})
-
-describe('kochVariant', () => {
-  it('alternates from the first award', () => {
-    expect([0, 1, 2, 3].map(kochVariant)).toEqual(['koch', 'koch2', 'koch', 'koch2'])
   })
 })

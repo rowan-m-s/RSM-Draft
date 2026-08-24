@@ -55,12 +55,3 @@ export function pickGraphic({ candidates, pointsByCode = {}, ownedCodes }) {
   })
   return { code: sorted[0].code, points: pointsByCode[sorted[0].code] ?? 0 }
 }
-
-/**
- * Which Koch graphic a manager sees: their first Koch of the season shows
- * `koch`, their second `koch2`, and they alternate from there. Counted from
- * confirmed awards before this one, so the sequence is stable retroactively.
- */
-export function kochVariant(previousKochCount) {
-  return previousKochCount % 2 === 0 ? 'koch' : 'koch2'
-}

@@ -73,8 +73,8 @@ export interface Gameweek {
   confirmExpectedUtc: string | null
   /** The breaking news sting may play from here: 09:00 London on the day after the week's last match. */
   revealFromUtc?: string | null
-  /** Which Koch graphic each confirmed Koch sees this week: koch or koch2, alternating per manager. */
-  kochVariant?: Record<ManagerKey, 'koch' | 'koch2'>
+  /** The Koch card's picture per manager: the scapegoat's own graphic when one exists, else null for the base. */
+  kochGraphicByManager?: Record<ManagerKey, number | null>
   scores: Record<ManagerKey, number>
   /**
    * Everyone tied on the lowest score. Empty while the week is provisional.
@@ -93,6 +93,8 @@ export interface TopPerformer {
   playerName: string
   managerKey: ManagerKey
   points: number
+  /** The player's element id, where the producer knows it. */
+  element?: number
 }
 
 export interface Month {

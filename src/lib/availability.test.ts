@@ -34,8 +34,13 @@ describe('flagLabel', () => {
 })
 
 describe('availabilityText', () => {
-  const player = (over: Partial<Parameters<typeof availabilityText>[0]>) =>
-    ({ status: 'a', chanceOfPlaying: null, news: null, newsAdded: null, ...over })
+  const player = (over: Partial<Parameters<typeof availabilityText>[0]>) => ({
+    status: 'a',
+    chanceOfPlaying: null,
+    news: null,
+    newsAdded: null,
+    ...over,
+  })
 
   it('says nothing for an available player', () => {
     expect(availabilityText(player({ status: 'a' }))).toBeNull()

@@ -42,7 +42,9 @@ describe('measureFraming', () => {
   })
 
   it('refuses an empty image rather than inventing a value', async () => {
-    const empty = await sharp({ create: { width: 10, height: 10, channels: 4, background: { r: 0, g: 0, b: 0, alpha: 0 } } })
+    const empty = await sharp({
+      create: { width: 10, height: 10, channels: 4, background: { r: 0, g: 0, b: 0, alpha: 0 } },
+    })
       .png()
       .toBuffer()
     await expect(measureFraming(empty)).rejects.toThrow('no opaque pixels')
@@ -68,7 +70,13 @@ describe('updateFraming', () => {
     }
     const { framing, stats } = await updateFraming({ codes: [1, 2, 3, 4, 5, 5], existing, fetchPhoto })
     // Cached codes are asked about conditionally, with their ETag; each code once.
-    expect(calls.sort()).toEqual([[1, '"a"'], [2, '"old"'], [3, undefined], [4, undefined], [5, undefined]])
+    expect(calls.sort()).toEqual([
+      [1, '"a"'],
+      [2, '"old"'],
+      [3, undefined],
+      [4, undefined],
+      [5, undefined],
+    ])
     expect(framing[1]).toEqual({ scale: 1.1, top: 0.05, etag: '"a"' })
     expect(framing[2].top).toBeCloseTo(0.12, 2)
     expect(framing[2].etag).toBe('"new"')

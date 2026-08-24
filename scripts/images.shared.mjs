@@ -16,11 +16,10 @@ export const MANAGER_KEYS = [
 
 /**
  * The sets that must hold exactly one image per manager: 11 keys × 4 = 44
- * files. `koch2` is a second Koch graphic, shown on a manager's second
- * Koch of the season and every other one after that, so a repeat offender
+ * files.
  * does not see the same card twice running.
  */
-export const MANAGER_SETS = ['icon', 'koch', 'koch2', 'motm']
+export const MANAGER_SETS = ['icon', 'koch', 'motm']
 
 /**
  * Sets with several images per manager, one per player, named
@@ -29,7 +28,7 @@ export const MANAGER_SETS = ['icon', 'koch', 'koch2', 'motm']
  * every name resolves to exactly one owned player, every resolved code has
  * a file. Only `leader` today; koch and motm could move to this later.
  */
-export const PLAYER_SETS = ['leader']
+export const PLAYER_SETS = ['leader', 'koch']
 
 /**
  * Source filenames that are a known misspelling of a key. Mapped rather than
@@ -113,15 +112,15 @@ export function parseSourceName(filename) {
       ...(key !== raw ? { aliasOf: raw } : {}),
     }
   }
-  const match = filename.match(
-    new RegExp(`^(.+?)\\.(${ALL_SETS.join('|')})\\.(${IMAGE_EXTENSIONS.join('|')})$`, 'i')
-  )
+  const match = filename.match(new RegExp(`^(.+?)\\.(${ALL_SETS.join('|')})\\.(${IMAGE_EXTENSIONS.join('|')})$`, 'i'))
   if (!match) return null
   const raw = match[1].toLowerCase()
   const key = KEY_ALIASES.get(raw) ?? raw
   const set = match[2].toLowerCase()
-  // A player set needs its third part; a two-part name is a mistake, not a default.
-  if (PLAYER_SETS.includes(set)) return null
+  // A set that is only player-keyed needs its third part; a two-part name
+  // is a mistake there. `koch` lives in both worlds: two parts is the base
+  // manager graphic, three parts a player-specific one.
+  if (PLAYER_SETS.includes(set) && !MANAGER_SETS.includes(set)) return null
   return { key, set, ext: match[3].toLowerCase(), ...(key !== raw ? { aliasOf: raw } : {}) }
 }
 
@@ -178,7 +177,9 @@ export function classifySourceFile(filename) {
     return { status: 'known-other', filename, reason: KNOWN_OTHER_FILES.get(lower) }
   }
 
-  const held = filename.match(new RegExp(`^(.+?)\\.(${[...HELD_SETS.keys()].join('|')})\\.(${IMAGE_EXTENSIONS.join('|')})$`, 'i'))
+  const held = filename.match(
+    new RegExp(`^(.+?)\\.(${[...HELD_SETS.keys()].join('|')})\\.(${IMAGE_EXTENSIONS.join('|')})$`, 'i')
+  )
   if (held) {
     return { status: 'held', filename, set: held[2].toLowerCase(), reason: HELD_SETS.get(held[2].toLowerCase()) }
   }

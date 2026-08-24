@@ -4,7 +4,6 @@ import { DataFooter } from '../components/Freshness'
 import { CardImage } from '../components/Img'
 import { MiniTable, PageBody } from '../components/Layout'
 import { useData } from '../data'
-import { kochSetFor } from '../lib/assets'
 import { kochesOf, money, monthWinnersOf } from '../lib/season'
 import type { Gameweek, Leader, ManagerKey, Month } from '../types'
 
@@ -56,12 +55,10 @@ function Provisional({ award, confirmedOn }: { award: 'KOTW' | 'MOTM'; confirmed
 function KochCard({
   gameweek,
   nameOf,
-  kochCount,
 }: {
   gameweek: Gameweek
   nameOf: (key: ManagerKey) => string
   /** Confirmed Koch awards per manager so far, for a provisional card's graphic. */
-  kochCount: Record<string, number>
 }) {
   const confirmed = gameweek.dataChecked
   const koches = confirmed ? gameweek.kochKeys : kochesOf(gameweek.scores)
@@ -90,9 +87,8 @@ function KochCard({
       </section>
     )
   }
-  // A repeat offender sees the other graphic. Confirmed weeks carry the
-  // choice from the pipeline; a provisional one continues the count.
-  const setFor = (key: ManagerKey) => gameweek.kochVariant?.[key] ?? kochSetFor(kochCount[key] ?? 0)
+  // The scapegoat's own graphic when the manager has one, else the base.
+  const kochCodeFor = (key: ManagerKey) => gameweek.kochGraphicByManager?.[key] ?? null
 
   return (
     <section className="card overflow-hidden">
@@ -116,7 +112,8 @@ function KochCard({
           return (
             <div key={key} className="flex gap-4 bg-pl-surface p-5">
               <CardImage
-                set={setFor(key)}
+                set="koch"
+                playerCode={kochCodeFor(key)}
                 managerKey={key}
                 alt={`${nameOf(key)}, Koch of the week`}
                 enlargeTitle={`Koch of the week${confirmed ? '' : ' (so far)'} - ${nameOf(key)} - ${gameweek.scores[key]} pts`}
@@ -436,7 +433,7 @@ export function Home() {
           )}
 
           {latestKoch ? (
-            <KochCard gameweek={latestKoch} nameOf={nameOf} kochCount={data.season.kochCount ?? {}} />
+            <KochCard gameweek={latestKoch} nameOf={nameOf} />
           ) : (
             <AwaitingAward
               eyebrow="Koch of the week"

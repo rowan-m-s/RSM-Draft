@@ -43,7 +43,14 @@ function DraftLink({ href, children }: { href: string; children: React.ReactNode
     >
       {children}
       <svg width="11" height="11" viewBox="0 0 12 12" aria-hidden="true" className="opacity-70">
-        <path d="M4.5 1.5h6v6M10.5 1.5 5 7M8.5 7.5v3h-7v-7h3" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+        <path
+          d="M4.5 1.5h6v6M10.5 1.5 5 7M8.5 7.5v3h-7v-7h3"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
       </svg>
       <span className="sr-only">, opens FPL Draft in a new tab</span>
     </a>
@@ -91,10 +98,7 @@ export function DeadlineStrip({ gameweeks }: { gameweeks: Gameweek[] }) {
   const urgent = remainingUntil(deadline.deadlineUtc, now).urgent
 
   return (
-    <section
-      className={`card overflow-hidden ${urgent ? 'ring-1 ring-pl-cyan' : ''}`}
-      aria-label="Upcoming deadlines"
-    >
+    <section className={`card overflow-hidden ${urgent ? 'ring-1 ring-pl-cyan' : ''}`} aria-label="Upcoming deadlines">
       <div className="grid gap-px bg-pl-border sm:grid-cols-2">
         {waiver && (
           <div className="bg-pl-surface p-5">

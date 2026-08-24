@@ -84,9 +84,10 @@ describe('kochesOf and the all-pay tie', () => {
 
   it('charges everyone when all eleven tie', () => {
     const all = Object.fromEntries(
-      ['rushy', 'kellett', 'wallis', 'jls', 'paddy', 'bennett', 'wood', 'rowan', 'jason', 'dj', 'ollie'].map(
-        (k) => [k, 42]
-      )
+      ['rushy', 'kellett', 'wallis', 'jls', 'paddy', 'bennett', 'wood', 'rowan', 'jason', 'dj', 'ollie'].map((k) => [
+        k,
+        42,
+      ])
     ) as Record<ManagerKey, number>
     expect(kochesOf(all)).toHaveLength(11)
     expect(chargeFor(kochesOf(all))).toBe(55)
@@ -103,10 +104,7 @@ describe('monthWinnersOf', () => {
   })
 
   it('returns every manager tied on top, for an even split', () => {
-    expect(monthWinnersOf(scores({ rushy: 101, kellett: 101, wallis: 92 })).sort()).toEqual([
-      'kellett',
-      'rushy',
-    ])
+    expect(monthWinnersOf(scores({ rushy: 101, kellett: 101, wallis: 92 })).sort()).toEqual(['kellett', 'rushy'])
   })
 
   it('lets a Koch win the month', () => {
@@ -154,10 +152,7 @@ describe('balances sum to zero', () => {
 
   it('sums to the negative of the unpaid pot mid-month', () => {
     // August settled (£15 in, £15 out). September has £10 charged, unpaid.
-    const sum = balances(
-      { ollie: 5, kellett: 5, paddy: 10, jls: 5 },
-      { kellett: 15 }
-    ).reduce((a, b) => a + b, 0)
+    const sum = balances({ ollie: 5, kellett: 5, paddy: 10, jls: 5 }, { kellett: 15 }).reduce((a, b) => a + b, 0)
     expect(sum).toBe(-10)
   })
 })

@@ -1,4 +1,3 @@
-import { kochVariant } from './graphics.mjs'
 /**
  * Every derived value in the site, computed here.
  *
@@ -238,11 +237,13 @@ function scapegoatsForGameweek({ event, perGw, elementName }) {
         (points === worst.points &&
           (negatives < worst.negatives || (negatives === worst.negatives && name.localeCompare(worst.playerName) < 0)))
       ) {
-        worst = { playerName: name, points, negatives, managerKey: key }
+        worst = { playerName: name, points, negatives, managerKey: key, element: pick.element }
       }
     }
     // The docked sum is a tiebreak, not part of the published shape.
-    out[key] = worst ? { playerName: worst.playerName, points: worst.points, managerKey: worst.managerKey } : null
+    out[key] = worst
+      ? { playerName: worst.playerName, points: worst.points, managerKey: worst.managerKey, element: worst.element }
+      : null
   }
   return out
 }
@@ -977,25 +978,6 @@ export function buildFixturePoints({ live, elementIds }) {
     }
   }
   return { byFixture, mismatched }
-}
-
-/**
- * Which Koch graphic each confirmed Koch sees, walking the season in order:
- * a manager's first award shows `koch`, the second `koch2`, alternating.
- * Returns gameweek id → { managerKey: set }, plus the running count per
- * manager for the provisional card to continue from.
- */
-export function kochVariants({ gameweeks }) {
-  const counts = {}
-  const byGameweek = {}
-  for (const gw of gameweeks) {
-    if (!gw.dataChecked) continue
-    for (const key of gw.kochKeys) {
-      ;(byGameweek[gw.id] ??= {})[key] = kochVariant(counts[key] ?? 0)
-      counts[key] = (counts[key] ?? 0) + 1
-    }
-  }
-  return { byGameweek, counts }
 }
 
 /**

@@ -132,12 +132,7 @@ export function PlayerPhoto({
   className?: string
 }) {
   return (
-    <Img
-      sources={playerPhotoSources(photoCode, size)}
-      fallback={PLAYER_FALLBACK}
-      alt={name}
-      className={className}
-    />
+    <Img sources={playerPhotoSources(photoCode, size)} fallback={PLAYER_FALLBACK} alt={name} className={className} />
   )
 }
 
@@ -207,9 +202,9 @@ export function CardImage({
   className = '',
   enlargeTitle,
 }: {
-  set: 'koch' | 'koch2' | 'motm' | 'leader' | 'winner'
+  set: 'koch' | 'motm' | 'leader' | 'winner'
   managerKey: string
-  /** For player-keyed sets (leader): which of the manager's graphics. */
+  /** For player-keyed sets (leader, koch): which of the manager's graphics. */
   playerCode?: number | null
   alt: string
   className?: string
@@ -217,18 +212,17 @@ export function CardImage({
   enlargeTitle?: string
 }) {
   const [open, setOpen] = useState(false)
-  const webp =
-    set === 'leader' && playerCode != null
-      ? playerGraphic(set, managerKey, playerCode, 'webp')
-      : set === 'leader'
-        ? null
-        : managerImage(set, managerKey, 'webp')
-  const jpg =
-    set === 'leader' && playerCode != null
-      ? playerGraphic(set, managerKey, playerCode, 'jpg')
-      : set === 'leader'
-        ? null
-        : managerImage(set, managerKey, 'jpg')
+  const keyed = (set === 'leader' || set === 'koch') && playerCode != null
+  const webp = keyed
+    ? playerGraphic(set as 'leader' | 'koch', managerKey, playerCode!, 'webp')
+    : set === 'leader'
+      ? null
+      : managerImage(set, managerKey, 'webp')
+  const jpg = keyed
+    ? playerGraphic(set as 'leader' | 'koch', managerKey, playerCode!, 'jpg')
+    : set === 'leader'
+      ? null
+      : managerImage(set, managerKey, 'jpg')
   const picture = (
     <Img
       webp={webp ?? undefined}

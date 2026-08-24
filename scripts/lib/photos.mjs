@@ -82,14 +82,7 @@ async function mapWithLimit(items, limit, worker) {
  * Scoped to owned players deliberately: several hundred unowned players also
  * lack photos and nobody is going to go looking for those.
  */
-export async function findMissingPhotos({
-  owned,
-  overrides,
-  userAgent,
-  photoUrl,
-  legacyPhotoUrl,
-  concurrency = 8,
-}) {
+export async function findMissingPhotos({ owned, overrides, userAgent, photoUrl, legacyPhotoUrl, concurrency = 8 }) {
   const candidates = owned.filter((player) => !overrides.has(player.photoCode))
   const onCurrent = await mapWithLimit(candidates, concurrency, (player) =>
     resolves(photoUrl(player.photoCode), userAgent)
@@ -121,9 +114,7 @@ export async function findMissingPhotos({
 
 function table(players, nameOf, withFilename) {
   const nameWidth = Math.max(...players.map((p) => p.name.length))
-  const pathWidth = withFilename
-    ? Math.max(...players.map((p) => `${OVERRIDE_DIR}/${p.photoCode}.png`.length))
-    : 0
+  const pathWidth = withFilename ? Math.max(...players.map((p) => `${OVERRIDE_DIR}/${p.photoCode}.png`.length)) : 0
   return players
     .sort((a, b) => a.name.localeCompare(b.name))
     .map((player) => {
@@ -164,7 +155,7 @@ export function formatMissingReport({ noImage, legacyOnly, redundantOverrides = 
   if (legacyOnly.length > 0) {
     lines.push(
       `${legacyOnly.length} owned player(s) are falling back to last season's photo,`,
-      'so they appear in their previous club\'s shirt. Ignore these: FPL publishes a',
+      "so they appear in their previous club's shirt. Ignore these: FPL publishes a",
       'current photo within a few weeks of a transfer and they correct themselves.',
       '',
       ...table(legacyOnly, nameOf, false),

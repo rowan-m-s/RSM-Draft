@@ -1121,6 +1121,6 @@ describe('scapegoat tiebreak', () => {
       perGw,
       elementName: (id) => ({ 1: 'Thiago', 2: 'Munoz', 3: 'Semenyo' })[id],
     })
-    expect(gameweeks[0].scapegoatByManager.dj).toEqual({ playerName: 'Thiago', points: 0, managerKey: 'dj' })
+    expect(gameweeks[0].scapegoatByManager.dj).toEqual({ playerName: 'Thiago', points: 0, managerKey: 'dj', element: 1 })
   })
 })

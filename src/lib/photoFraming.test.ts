@@ -3,7 +3,12 @@ import { framingStyle, photoFraming, setPhotoFraming, versionOf } from './photoF
 
 describe('photoFraming', () => {
   it('returns the identity for unknown players and for nonsense values', () => {
-    setPhotoFraming({ 7: { scale: 1.2, top: 0.1, etag: '"abc"' }, 8: { scale: 0, top: 0.1 }, 9: { scale: NaN }, 10: { top: 2 } })
+    setPhotoFraming({
+      7: { scale: 1.2, top: 0.1, etag: '"abc"' },
+      8: { scale: 0, top: 0.1 },
+      9: { scale: NaN },
+      10: { top: 2 },
+    })
     expect(photoFraming(1)).toEqual({ scale: 1, top: 0, etag: null })
     expect(photoFraming(7)).toEqual({ scale: 1.2, top: 0.1, etag: '"abc"' })
     // A zero or NaN scale would make the photo vanish: fall back to 1.

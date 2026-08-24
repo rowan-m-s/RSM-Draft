@@ -76,9 +76,7 @@ export function GameweekSlider({
         aria-label="Gameweek"
         className="gw-slider flex-1"
       />
-      <span className="display tnum shrink-0 text-right text-xl whitespace-nowrap text-pl-text">
-        {labelFor(value)}
-      </span>
+      <span className="display tnum shrink-0 text-right text-xl whitespace-nowrap text-pl-text">{labelFor(value)}</span>
     </div>
   )
 }

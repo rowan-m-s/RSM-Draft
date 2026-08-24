@@ -88,7 +88,9 @@ async function main() {
     const url = `${HOST}/${combo.season}/photos/players/${combo.size}/${combo.naming.build(PLAYERS[0].code)}`
     const result = await probe(url)
     const label = `${combo.season}/${combo.size}/${combo.naming.label}`
-    console.log(`${isImage(result) ? '✓' : '✗'} [${String(result.status).padEnd(3)}] ${label.padEnd(44)} ${result.bytes} bytes`)
+    console.log(
+      `${isImage(result) ? '✓' : '✗'} [${String(result.status).padEnd(3)}] ${label.padEnd(44)} ${result.bytes} bytes`
+    )
     if (isImage(result)) live.push(combo)
   }
 
@@ -133,7 +135,9 @@ async function main() {
     const url = `${HOST}/${combo.season}/badges/${combo.size}/t${CLUBS[0].code}.png`
     const result = await probe(url)
     const label = `${combo.season}/badges/${combo.size}`
-    console.log(`${isImage(result) ? '✓' : '✗'} [${String(result.status).padEnd(3)}] ${label.padEnd(44)} ${result.bytes} bytes`)
+    console.log(
+      `${isImage(result) ? '✓' : '✗'} [${String(result.status).padEnd(3)}] ${label.padEnd(44)} ${result.bytes} bytes`
+    )
   }
   console.log()
   for (const club of CLUBS) {

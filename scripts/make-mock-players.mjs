@@ -68,7 +68,10 @@ for (const position of Object.values(POSITIONS)) {
 
 const strip = ({ draftRank, ...rest }) => rest
 const byPoints = (a, b) => b.points - a.points
-const owned = all.filter((p) => p.owner).map(strip).sort(byPoints)
+const owned = all
+  .filter((p) => p.owner)
+  .map(strip)
+  .sort(byPoints)
 // Keep the mock free-agent pool to a realistic-looking slice rather than all
 // 430 — the file is committed and nobody needs 430 rows to judge a layout.
 const freeAgents = all

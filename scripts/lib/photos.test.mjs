@@ -57,10 +57,7 @@ describe('findMissingPhotos', () => {
 describe('formatMissingReport', () => {
   const nameOf = (k) => k.toUpperCase()
   it('leads with the overrides to delete, naming the file', () => {
-    const text = formatMissingReport(
-      { noImage: [], legacyOnly: [], redundantOverrides: [owned[0]] },
-      nameOf
-    )
+    const text = formatMissingReport({ noImage: [], legacyOnly: [], redundantOverrides: [owned[0]] }, nameOf)
     expect(text).toContain('1 override(s) are no longer needed')
     expect(text).toContain('public/images/players/614071.png')
     expect(text).toContain('RUSHY')

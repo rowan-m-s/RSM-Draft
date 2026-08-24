@@ -32,7 +32,6 @@ import {
   buildDraftSquads,
   availabilityOf,
   checkBalanceInvariant,
-  kochVariants,
   playerPointsForManager,
 } from './lib/derive.mjs'
 import { pickGraphic } from './lib/graphics.mjs'
@@ -723,9 +722,20 @@ async function main() {
     graphicChoice[`${set}Month`] = choose(set, byManager, currentMonthIds, `${set} (month)`, avoid)
   }
   season.graphics = graphicChoice
-  const variants = kochVariants({ gameweeks })
-  for (const gw of gameweeks) gw.kochVariant = variants.byGameweek[gw.id] ?? {}
-  season.kochCount = variants.counts
+  /* The Koch card's picture follows the scapegoat: a manager with a
+     graphic of the player who let them down sees that one, else the base. */
+  for (const gw of gameweeks) {
+    gw.kochGraphicByManager = Object.fromEntries(
+      Object.entries(gw.scapegoatByManager ?? {}).map(([key, scapegoat]) => {
+        const code = scapegoat?.element != null ? codeByElementId.get(scapegoat.element) : null
+        const match = (playerGraphics.koch?.[key] ?? []).some((c) => c.code === code)
+        return [key, match ? code : null]
+      })
+    )
+  }
+  season.kochCount = Object.fromEntries(
+    managerKeys.map((key) => [key, gameweeks.filter((gw) => gw.kochKeys.includes(key)).length])
+  )
   const fixtures = buildFixtures({ fixtures: allFixtures, teams, generatedAt })
   const players = buildPlayers({
     elements,

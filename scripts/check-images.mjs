@@ -6,7 +6,7 @@
  * notices until it is that person's week. So the build fails instead.
  *
  * Two different rules, deliberately:
- *   icon / koch / koch2 / motm — must hold exactly the eleven manager keys. 44 files.
+ *   icon / koch / motm — must hold exactly the eleven manager keys.
  *   leader            — several per manager, one per player, named by player
  *                       code. Validated by rule: every manager has at least one,
  *                       and every code in the manifest has its files.

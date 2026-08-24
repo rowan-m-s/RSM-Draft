@@ -113,9 +113,7 @@ export function Honours() {
           <section>
             <SectionHeading title="Koch of the week" count={kochWeeks.reduce((n, gw) => n + gw.kochKeys.length, 0)} />
             {kochWeeks.length === 0 ? (
-              <EmptySection>
-                Nothing yet. The first Koch is awarded once gameweek 1 is confirmed.
-              </EmptySection>
+              <EmptySection>Nothing yet. The first Koch is awarded once gameweek 1 is confirmed.</EmptySection>
             ) : (
               <div className="mt-3 space-y-6">
                 {Object.entries(kochByMonth).map(([monthId, weeks]) => (
@@ -126,7 +124,8 @@ export function Honours() {
                         gw.kochKeys.map((key) => (
                           <figure key={`${gw.id}-${key}`} className="card overflow-hidden">
                             <CardImage
-                              set={gw.kochVariant?.[key] ?? 'koch'}
+                              set="koch"
+                              playerCode={gw.kochGraphicByManager?.[key] ?? null}
                               managerKey={key}
                               alt={`${nameOf(key)}, Koch of the week for gameweek ${gw.id}`}
                               className="aspect-square w-full rounded-none"

@@ -1,6 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { createPortal } from 'react-dom'
-import { kochSetFor } from '../lib/assets'
 import { CardImage } from './Img'
 import { money } from '../lib/season'
 import type { Dataset } from '../data'
@@ -42,7 +41,8 @@ interface RevealItem {
   managerKeys: ManagerKey[]
   points: number
   /** Which graphic set, per manager. */
-  setFor: (key: ManagerKey) => 'koch' | 'koch2' | 'motm'
+  setFor: (key: ManagerKey) => 'koch' | 'motm'
+  playerCodeFor?: (key: ManagerKey) => number | null
   label: string
   /** The manager's MVP for the period, on the MOTM card and ticker. */
   mvp?: { playerName: string; points: number } | null
@@ -80,7 +80,8 @@ export function confirmedAwards(data: Dataset): RevealItem[] {
       revealFromUtc: gw.revealFromUtc ?? null,
       managerKeys: gw.kochKeys,
       points: gw.scores[gw.kochKeys[0]] ?? 0,
-      setFor: (key) => gw.kochVariant?.[key] ?? kochSetFor((data.season.kochCount?.[key] ?? 1) - 1),
+      setFor: () => 'koch' as const,
+      playerCodeFor: (key) => gw.kochGraphicByManager?.[key] ?? null,
       label: `Koch of the Week · GW${gw.id}`,
       money: `−${money(5)}`,
       moneyTone: 'red',
@@ -219,6 +220,7 @@ function Sting({ item, nameOf, onDone }: { item: RevealItem; nameOf: (k: string)
             <CardImage
               key={key}
               set={item.setFor(key)}
+              playerCode={item.playerCodeFor?.(key) ?? null}
               managerKey={key}
               alt={`${nameOf(key)}, ${item.label}`}
               className="aspect-square w-44 shrink-0 sm:w-72"

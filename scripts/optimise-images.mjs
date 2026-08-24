@@ -44,7 +44,6 @@ const RECIPES = {
   icon: { fit: 'cover', sizes: [64, 128], faceCrop: true },
   koch: { fit: 'inside', sizes: [900] },
   motm: { fit: 'inside', sizes: [900] },
-  koch2: { fit: 'inside', sizes: [900] },
   leader: { fit: 'inside', sizes: [900] },
   winner: { fit: 'inside', sizes: [900] },
 }
@@ -207,7 +206,14 @@ async function resolvePlayerSets(jobs) {
       .filter((p) => p.owner === job.key)
       .map((p) => {
         const e = elements.get(p.id) ?? {}
-        return { id: p.id, code: p.photoCode, webName: p.name, firstName: e.first_name, secondName: e.second_name, club: p.clubShort }
+        return {
+          id: p.id,
+          code: p.photoCode,
+          webName: p.name,
+          firstName: e.first_name,
+          secondName: e.second_name,
+          club: p.clubShort,
+        }
       })
     const result = resolvePlayerName({ name: job.player, candidates: squad })
     if (result.status !== 'resolved') {
@@ -230,7 +236,7 @@ async function resolvePlayerSets(jobs) {
   }
   if (problems.length > 0) {
     console.error(`\nCould not resolve ${problems.length} player graphic(s):\n${problems.join('\n')}\n`)
-    console.error('Rename the file to the player\'s surname, web name or first name as FPL has it, then rerun.\n')
+    console.error("Rename the file to the player's surname, web name or first name as FPL has it, then rerun.\n")
     process.exit(1)
   }
   for (const set of Object.values(manifest)) {
@@ -342,7 +348,9 @@ async function main() {
     process.exit(1)
   }
   const winners = jobs.filter((job) => job.set === 'winner')
-  console.log(`Winner cards:    ${winners.length} (${winners.map((w) => w.key).join(', ') || 'none'}) — validated against honours.json, not the eleven keys.`)
+  console.log(
+    `Winner cards:    ${winners.length} (${winners.map((w) => w.key).join(', ') || 'none'}) — validated against honours.json, not the eleven keys.`
+  )
 
   /* Player sets: several graphics per manager, one per player, written by
      the player's FPL code so a rename or a duplicate surname later cannot
@@ -462,6 +470,10 @@ async function main() {
     for (const [key, list] of Object.entries(manifest[set] ?? {})) {
       for (const entry of list) for (const format of FORMATS) keep.add(`${key}.${entry.code}.${format}`)
     }
+    // `koch` is also a manager set: the eleven base graphics share the folder.
+    if (MANAGER_SETS.includes(set)) {
+      for (const key of MANAGER_KEYS) for (const format of FORMATS) keep.add(`${key}.${format}`)
+    }
     const dir = path.join(OUT_DIR, set)
     for (const file of await readdir(dir)) {
       if (!keep.has(file)) {
@@ -526,7 +538,7 @@ async function optimiseOverrides() {
     }
 
     await writeFile(file, optimised)
-    const after = (await sharp(optimised).metadata())
+    const after = await sharp(optimised).metadata()
     report.push({
       file: name,
       size: `${(before / 1024).toFixed(0)} KB -> ${(optimised.length / 1024).toFixed(0)} KB`,
@@ -562,7 +574,12 @@ async function writeIconContactSheet() {
         `<circle cx="${size / 2}" cy="${size / 2}" r="${inner / 2}" fill="#fff" stroke="#e5e5eb"/>` +
         `<text x="${size / 2}" y="${size + 14}" font-family="monospace" font-size="13" text-anchor="middle" fill="#1b1b3a">${key}</text></svg>`
     )
-    tiles.push(await sharp(frame).composite([{ input: circle, left: 5, top: 5 }]).png().toBuffer())
+    tiles.push(
+      await sharp(frame)
+        .composite([{ input: circle, left: 5, top: 5 }])
+        .png()
+        .toBuffer()
+    )
   }
 
   const columns = 6
