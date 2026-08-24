@@ -412,6 +412,9 @@
   z-index: -1;
   pointer-events: none;
   background-image:
+    /* Beyond the far goal line the tilted plane is so foreshortened its
+       stripes smear into a blurry band; flat grass covers it. */
+    linear-gradient(to bottom, var(--color-pitch) 0 30px, transparent 46px),
     radial-gradient(ellipse 85% 80% at 50% 55%, transparent 45%, var(--color-pitch-edge) 100%),
     linear-gradient(to right, var(--color-pl-bg), transparent 8%, transparent 92%, var(--color-pl-bg)),
     linear-gradient(to bottom, var(--color-pl-bg), transparent 9%, transparent 94%, var(--color-pl-bg));
