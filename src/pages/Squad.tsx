@@ -36,7 +36,7 @@ function fixtureLabel(fixtures: Fixture[] | undefined, shortNameOf: (id: number)
  */
 function cardLine(entry: PitchPlayer, mode: CardMode, fixtureText: string): string {
   const { pick } = entry
-  if (mode === 'points') return String(pick?.points ?? 0)
+  if (mode === 'points') return pts(pick?.points ?? 0)
   if (mode === 'blank') return 'Blank'
   if (mode === 'pick') return `Pick ${pick?.pick ?? '?'}${pick?.sequence ? ` (${pick.sequence})` : ''}`
   return fixtureText
@@ -73,9 +73,9 @@ export function PointsStrip({
   const tone = koch ? 'text-pl-pink' : 'text-pl-text'
 
   return (
-    <section className="card mb-3 flex flex-col items-center gap-1.5 px-4 py-3 text-center sm:mb-4 sm:px-5">
-      <span className={`display tnum text-4xl leading-none sm:text-5xl ${tone}`}>{points.xi}</span>
-      <p className="flex items-center justify-center gap-2 text-sm text-pl-muted">
+    <section className="card mb-2 flex flex-col items-center gap-0.5 px-4 py-1.5 text-center sm:mb-4 sm:gap-1.5 sm:px-5 sm:py-3">
+      <span className={`display tnum text-3xl leading-none sm:text-5xl ${tone}`}>{points.xi}</span>
+      <p className="flex items-center justify-center gap-2 text-xs text-pl-muted sm:text-sm">
         <span>GW{gameweek} points</span>
         {koch && (
           <span className="rounded bg-pl-pink px-1.5 py-0.5 text-[10px] font-bold tracking-wide text-pl-bg uppercase">
@@ -498,13 +498,13 @@ function Pitch({ rows, ...card }: { rows: PitchPlayer[][] } & CardProps) {
       {/* Rows are spaced by position with more air between the lines than a
           grid would give, so it reads as a formation. Each row centres its
           cards, so a row of two balances against a row of five. */}
-      <div className="pitch px-1 pt-6 pb-8 sm:px-6 sm:pt-10 sm:pb-12">
-        <div className="flex flex-col gap-7 sm:gap-10">
+      <div className="pitch px-1 pt-3 pb-4 sm:px-6 sm:pt-10 sm:pb-12">
+        <div className="flex flex-col gap-3.5 sm:gap-10">
           {rows.map((row, i) => {
             const opened = row.find((entry) => entry.key === card.open)
             const parts = opened ? card.breakdownFor(opened) : null
             return (
-              <div key={i} className="relative flex flex-wrap items-start justify-center gap-x-1.5 gap-y-4 sm:gap-x-6">
+              <div key={i} className="relative flex flex-wrap items-start justify-center gap-x-1.5 gap-y-3 sm:gap-x-6">
                 {row.map((entry) => (
                   <PlayerCardResponsive key={entry.key} entry={entry} {...card} />
                 ))}
@@ -539,13 +539,13 @@ function Bench({ bench, ...card }: { bench: PitchPlayer[] } & CardProps) {
        so the XI reads as primary. Slots are labelled as FPL does: GK, then
        the outfield bench in substitution order. */
     <div className="-mx-4 mt-4 border-y border-pl-border bg-pl-surface sm:mx-0 sm:rounded-xl sm:border">
-      <p className="border-b border-pl-border px-4 py-2.5 text-[11px] font-semibold tracking-wider text-pl-muted uppercase">
+      <p className="border-b border-pl-border px-4 py-1.5 text-[11px] font-semibold tracking-wider text-pl-muted uppercase sm:py-2.5">
         Bench
       </p>
-      <div className="relative flex flex-wrap items-start justify-center gap-x-3 gap-y-4 px-2 py-5 sm:gap-x-8">
+      <div className="relative flex flex-wrap items-start justify-center gap-x-2 gap-y-3 px-2 py-2.5 pb-3 sm:gap-x-8 sm:py-5">
         {bench.map((entry) => (
-          <div key={entry.key} className="flex flex-col items-center gap-1.5">
-            <span className="text-[10px] font-bold tracking-wider text-pl-muted uppercase">
+          <div key={entry.key} className="flex flex-col items-center gap-1">
+            <span className="text-[9px] leading-3 font-bold tracking-wider text-pl-muted uppercase sm:text-[10px] sm:leading-4">
               {benchLabel(entry, bench)}
             </span>
             <PlayerCardResponsive entry={entry} {...card} bench />

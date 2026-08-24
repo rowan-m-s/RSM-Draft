@@ -32,6 +32,7 @@ export interface CardPlayer extends Availability {
   name: string
   position: Position
   photoCode: number
+  clubCode: number
 }
 
 interface PlayerCardProps {
@@ -126,17 +127,17 @@ export function PlayerCardCompact({ player, line, bench = false, sub = null, liv
     <div
       className={[
         'player-card relative flex flex-col overflow-hidden rounded',
-        bench ? 'w-[66px] opacity-90 saturate-[.85]' : 'w-[66px]',
+        bench ? 'w-[64px] opacity-90 saturate-[.85]' : 'w-[64px]',
       ].join(' ')}
     >
-      <div className="player-card-photo relative h-[58px] overflow-hidden">
+      <div className="player-card-photo relative h-[50px] overflow-hidden">
         {/* Not the 40x40 variant: that is 80px of image for a 66px slot, which
             is 198px at 3×. The 220 holds; the browser picks it from the set. */}
         <CardPhoto
           photoCode={player.photoCode}
           name={player.name}
-          width={66}
-          height={84}
+          width={64}
+          height={81}
           framing={photoFraming(player.photoCode)}
           className="absolute inset-x-0 top-0 h-auto w-full"
         />
