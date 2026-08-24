@@ -23,11 +23,7 @@ export function Banner({
 }) {
   return (
     <header>
-      {/* One height on every page below `sm`, sized for the longest
-          subtitle: content sits inside it rather than defining it, so
-          Fixtures and Home stop being different heights. From `sm` up
-          nothing changes. */}
-      <div className="banner-gradient relative flex h-[148px] flex-col justify-center px-4 sm:h-auto sm:flex-row sm:items-center sm:gap-8 sm:px-6 sm:py-9">
+      <div className="banner-gradient relative flex flex-col px-4 py-5 sm:flex-row sm:items-center sm:gap-8 sm:px-6 sm:py-9">
         {/* The supplied artwork is the full lockup — lion plus wordmark, 500×210,
             so about 2.38:1. Height is fixed and width follows; giving it a
             square box squashes it. */}
