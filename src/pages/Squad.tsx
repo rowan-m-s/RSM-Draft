@@ -6,7 +6,7 @@ import { GameweekSlider } from '../components/GameweekSlider'
 import { ManagerAvatar } from '../components/Img'
 import { PlayerCard, PlayerCardCompact } from '../components/PlayerCard'
 import { PageBody } from '../components/Layout'
-import { LION } from '../lib/assets'
+import { LION_ONLY } from '../lib/assets'
 import { useData } from '../data'
 import { gameweekPoints } from '../lib/season'
 import { playerWeekState } from '../lib/fixtures'
@@ -507,15 +507,15 @@ function Pitch({ rows, ...card }: { rows: PitchPlayer[][] } & CardProps) {
           grid would give, so it reads as a formation. Each row centres its
           cards, so a row of two balances against a row of five. */}
       <div className="pitch px-1 pt-3 pb-4 sm:px-6 sm:pt-10 sm:pb-12">
-        {/* The Premier League lockup, a quiet watermark in the bottom
-            corner: small and translucent so the pitch stays the picture. */}
-        <img
-          src={LION}
-          alt="Premier League"
-          width={500}
-          height={210}
-          className="absolute right-2 bottom-2 h-5 w-auto opacity-40 sm:right-3 sm:bottom-3 sm:h-7"
-        />
+        {/* The Fantasy Draft mark, as the sidebar draws it, watermarked
+            small and translucent in the bottom corner. */}
+        <span className="absolute top-2 right-2 flex items-center gap-1.5 opacity-40 sm:top-3 sm:right-3">
+          <img src={LION_ONLY} alt="" width={155} height={210} className="h-4 w-auto sm:h-5" />
+          <span className="font-mark flex gap-[0.22em] text-[11px] leading-none tracking-tight text-pl-text sm:text-[13px]">
+            <span className="font-bold">Fantasy</span>
+            <span className="font-light">Draft</span>
+          </span>
+        </span>
         <div className="flex flex-col gap-3.5 sm:gap-10">
           {rows.map((row, i) => {
             const opened = row.find((entry) => entry.key === card.open)
