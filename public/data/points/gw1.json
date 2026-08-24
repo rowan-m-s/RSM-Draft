@@ -2299,32 +2299,91 @@
     },
     "10": {
       "40": {
-        "total": 0,
-        "components": []
+        "total": 2,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 21,
+            "points": 1
+          },
+          {
+            "stat": "bonus",
+            "name": "Bonus",
+            "value": 1,
+            "points": 1
+          }
+        ]
       },
       "136": {
         "total": 0,
         "components": []
       },
       "140": {
-        "total": 0,
-        "components": []
+        "total": 1,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 21,
+            "points": 1
+          }
+        ]
       },
       "142": {
-        "total": 0,
-        "components": []
+        "total": 1,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 21,
+            "points": 1
+          }
+        ]
       },
       "149": {
         "total": 0,
-        "components": []
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 21,
+            "points": 1
+          },
+          {
+            "stat": "yellow_cards",
+            "name": "Yellow cards",
+            "value": 1,
+            "points": -1
+          }
+        ]
       },
       "152": {
         "total": 0,
         "components": []
       },
       "154": {
-        "total": 0,
-        "components": []
+        "total": 6,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 21,
+            "points": 1
+          },
+          {
+            "stat": "assists",
+            "name": "Assists",
+            "value": 1,
+            "points": 3
+          },
+          {
+            "stat": "bonus",
+            "name": "Bonus",
+            "value": 2,
+            "points": 2
+          }
+        ]
       },
       "155": {
         "total": 0,
@@ -2339,24 +2398,64 @@
         "components": []
       },
       "165": {
-        "total": 0,
-        "components": []
+        "total": 8,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 21,
+            "points": 1
+          },
+          {
+            "stat": "goals_scored",
+            "name": "Goals scored",
+            "value": 1,
+            "points": 4
+          },
+          {
+            "stat": "bonus",
+            "name": "Bonus",
+            "value": 3,
+            "points": 3
+          }
+        ]
       },
       "166": {
         "total": 0,
         "components": []
       },
       "200": {
-        "total": 0,
-        "components": []
+        "total": 1,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 21,
+            "points": 1
+          }
+        ]
       },
       "250": {
-        "total": 0,
-        "components": []
+        "total": 1,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 21,
+            "points": 1
+          }
+        ]
       },
       "261": {
-        "total": 0,
-        "components": []
+        "total": 1,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 21,
+            "points": 1
+          }
+        ]
       },
       "271": {
         "total": 0,
@@ -2367,10 +2466,17 @@
         "components": []
       },
       "569": {
-        "total": 0,
-        "components": []
+        "total": 1,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 21,
+            "points": 1
+          }
+        ]
       }
     }
   },
-  "generatedAt": "2026-08-24T18:04:19.783Z"
+  "generatedAt": "2026-08-24T19:22:52.987Z"
 }

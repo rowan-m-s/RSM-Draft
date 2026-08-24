@@ -19,10 +19,10 @@
     },
     {
       "key": "paddy",
-      "rank": 2,
-      "total": 44,
-      "gw": 44,
-      "month": 44,
+      "rank": 1,
+      "total": 50,
+      "gw": 50,
+      "month": 50,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -36,7 +36,7 @@
     },
     {
       "key": "wood",
-      "rank": 2,
+      "rank": 3,
       "total": 44,
       "gw": 44,
       "month": 44,
@@ -54,9 +54,9 @@
     {
       "key": "jason",
       "rank": 4,
-      "total": 42,
-      "gw": 42,
-      "month": 42,
+      "total": 43,
+      "gw": 43,
+      "month": 43,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -103,11 +103,28 @@
       }
     },
     {
+      "key": "jls",
+      "rank": 6,
+      "total": 36,
+      "gw": 36,
+      "month": 36,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "Guéhi",
+        "points": 10,
+        "managerKey": "jls"
+      }
+    },
+    {
       "key": "rushy",
-      "rank": 7,
-      "total": 32,
-      "gw": 32,
-      "month": 32,
+      "rank": 8,
+      "total": 34,
+      "gw": 34,
+      "month": 34,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -121,7 +138,7 @@
     },
     {
       "key": "rowan",
-      "rank": 7,
+      "rank": 9,
       "total": 32,
       "gw": 32,
       "month": 32,
@@ -134,23 +151,6 @@
         "playerName": "Stach",
         "points": 13,
         "managerKey": "rowan"
-      }
-    },
-    {
-      "key": "jls",
-      "rank": 9,
-      "total": 28,
-      "gw": 28,
-      "month": 28,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "Guéhi",
-        "points": 10,
-        "managerKey": "jls"
       }
     },
     {
@@ -173,9 +173,9 @@
     {
       "key": "dj",
       "rank": 11,
-      "total": 18,
-      "gw": 18,
-      "month": 18,
+      "total": 20,
+      "gw": 20,
+      "month": 20,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -193,11 +193,13 @@
   "seasonPrize": 110,
   "leader": {
     "keys": [
+      "paddy",
       "wallis"
     ],
     "total": 50,
     "since": null,
     "sinceByKey": {
+      "paddy": null,
       "wallis": null
     },
     "asOf": 1,
@@ -205,7 +207,7 @@
     "displaced": null,
     "changed": false
   },
-  "generatedAt": "2026-08-24T18:04:19.783Z",
+  "generatedAt": "2026-08-24T19:22:52.987Z",
   "graphics": {
     "koch": {
       "rushy": 244850,
@@ -237,7 +239,7 @@
       "rushy": 243298,
       "kellett": 223094,
       "wallis": 532529,
-      "jls": 499604,
+      "jls": 475168,
       "paddy": 219847,
       "bennett": 204480,
       "wood": 444102,
@@ -250,8 +252,8 @@
       "rushy": 243298,
       "kellett": 223094,
       "wallis": 440993,
-      "jls": 499604,
-      "paddy": 219847,
+      "jls": 475168,
+      "paddy": 244851,
       "bennett": 204480,
       "wood": 444102,
       "rowan": 466525,
