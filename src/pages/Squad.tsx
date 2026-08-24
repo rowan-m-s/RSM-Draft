@@ -6,7 +6,7 @@ import { GameweekSlider } from '../components/GameweekSlider'
 import { ManagerAvatar } from '../components/Img'
 import { PlayerCard, PlayerCardCompact } from '../components/PlayerCard'
 import { PageBody } from '../components/Layout'
-import { LION_ONLY } from '../lib/assets'
+import { LION } from '../lib/assets'
 import { useData } from '../data'
 import { gameweekPoints } from '../lib/season'
 import { playerWeekState } from '../lib/fixtures'
@@ -507,13 +507,14 @@ function Pitch({ rows, ...card }: { rows: PitchPlayer[][] } & CardProps) {
           grid would give, so it reads as a formation. Each row centres its
           cards, so a row of two balances against a row of five. */}
       <div className="pitch px-1 pt-3 pb-4 sm:px-6 sm:pt-10 sm:pb-12">
-        {/* The Premier League lion, watermarked into the pitch's top corner. */}
+        {/* The Premier League lockup, a quiet watermark in the bottom
+            corner: small and translucent so the pitch stays the picture. */}
         <img
-          src={LION_ONLY}
+          src={LION}
           alt="Premier League"
-          width={155}
+          width={500}
           height={210}
-          className="absolute top-2 left-2 h-9 w-auto opacity-80 sm:top-3 sm:left-3 sm:h-12"
+          className="absolute right-2 bottom-2 h-5 w-auto opacity-40 sm:right-3 sm:bottom-3 sm:h-7"
         />
         <div className="flex flex-col gap-3.5 sm:gap-10">
           {rows.map((row, i) => {
