@@ -7,9 +7,9 @@
       "waiversUtc": "2026-08-20T17:30:00Z",
       "tradesUtc": "2026-08-19T17:30:00Z",
       "month": "2026-08",
-      "finished": false,
+      "finished": true,
       "started": true,
-      "scoresProvisional": true,
+      "scoresProvisional": false,
       "kochReady": true,
       "yetByManager": {
         "rushy": 0,
@@ -1034,5 +1034,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-08-25T08:21:52.930Z"
+  "generatedAt": "2026-08-25T08:25:03.015Z"
 }
