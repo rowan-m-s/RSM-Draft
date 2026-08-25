@@ -216,11 +216,15 @@ function Sting({ item, nameOf, onDone }: { item: RevealItem; nameOf: (k: string)
       <div className="sting-panel absolute inset-0">
         <div className="sting-breaking absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
           <p className="sting-pulse display text-[14vw] leading-none tracking-tight sm:text-[9rem]">BREAKING NEWS</p>
-          <p className="sting-sub eyebrow mt-4 text-sm sm:text-base">{item.label.split(' · ')[0]}</p>
         </div>
-        <div className="sting-breaking2 absolute inset-0 flex items-center justify-center px-6 text-center">
-          <p className="sting-pulse display text-[11vw] leading-none tracking-tight sm:text-[7rem]">
-            {item.kind === 'koch' ? 'NEW KOCH ANNOUNCED' : 'NEW MOTM ANNOUNCED'}
+        {/* The announcement lands a word at a time, one per line. */}
+        <div className="sting-breaking2 absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
+          <p className="sting-word sting-w1 display text-[13vw] leading-[1.05] tracking-tight sm:text-[6.5rem]">NEW</p>
+          <p className="sting-word sting-w2 display text-[13vw] leading-[1.05] tracking-tight sm:text-[6.5rem]">
+            {item.kind === 'koch' ? 'KOCH' : 'MOTM'}
+          </p>
+          <p className="sting-word sting-w3 display text-[13vw] leading-[1.05] tracking-tight sm:text-[6.5rem]">
+            ANNOUNCED
           </p>
         </div>
       </div>

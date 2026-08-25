@@ -447,7 +447,57 @@
 .sting-breaking2 {
   color: var(--color-pl-bg);
   opacity: 0;
-  animation: sting-phase2 5s steps(1, end) forwards;
+  animation: sting-phase2 5s linear forwards;
+}
+/* NEW.. KOCH.. ANNOUNCED: each word eases in on its own beat of the same
+   5s clock — 2.7s, 3.3s and 3.9s. */
+.sting-word {
+  opacity: 0;
+}
+.sting-w1 {
+  animation: sting-word1 5s ease-out forwards;
+}
+.sting-w2 {
+  animation: sting-word2 5s ease-out forwards;
+}
+.sting-w3 {
+  animation: sting-word3 5s ease-out forwards;
+}
+@keyframes sting-word1 {
+  0%,
+  54% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  60%,
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes sting-word2 {
+  0%,
+  66% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  72%,
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes sting-word3 {
+  0%,
+  78% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  84%,
+  100% {
+    opacity: 1;
+    transform: none;
+  }
 }
 .sting-pulse {
   animation: sting-pulse 0.75s ease-in-out infinite;
@@ -484,7 +534,8 @@
     transform: translateX(100%);
   } /* 5s: out */
 }
-/* BREAKING NEWS holds 0.25s to 2.6s, then the announcement to the wipe. */
+/* BREAKING NEWS holds 0.25s to 2.3s and fades by 2.65s; the announcement
+   then lands a word at a time. */
 @keyframes sting-phase1 {
   0%,
   4.9% {
@@ -493,20 +544,20 @@
   5% {
     opacity: 1;
   }
-  51.9% {
+  46% {
     opacity: 1;
   }
-  52%,
+  53%,
   100% {
     opacity: 0;
   }
 }
 @keyframes sting-phase2 {
   0%,
-  51.9% {
+  53% {
     opacity: 0;
   }
-  52%,
+  54%,
   100% {
     opacity: 1;
   }
@@ -563,6 +614,7 @@
   animation: none;
 }
 .sting-still .sting-breaking2,
-.sting-still .sting-pulse {
+.sting-still .sting-pulse,
+.sting-still .sting-word {
   animation: none;
 }
