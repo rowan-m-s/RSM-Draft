@@ -412,7 +412,7 @@
 
 /* The breaking news sting (components/Reveal.tsx). One CSS timeline, every
    layer started together and offset by delay; stepped or linear timing only,
-   because a news sting is cuts and wipes, never eases. About 3.5s in all:
+   because a news sting is cuts and wipes, never eases. About 6s in all:
      0.00  panel wipes in from the left
      0.25  BREAKING NEWS cuts in
      0.70  the award line cuts in beneath it
@@ -435,12 +435,22 @@
 .sting-panel {
   background: var(--sting-colour);
   transform: translateX(-100%);
-  animation: sting-panel 2.45s linear forwards;
+  animation: sting-panel 5s linear forwards;
 }
+/* Two headlines share the panel: BREAKING NEWS pulses first, then a hard
+   cut to the announcement, which pulses in its turn before the wipe. */
 .sting-breaking {
   color: var(--color-pl-bg);
   opacity: 0;
-  animation: sting-breaking 0.25s steps(1, end) forwards;
+  animation: sting-phase1 5s steps(1, end) forwards;
+}
+.sting-breaking2 {
+  color: var(--color-pl-bg);
+  opacity: 0;
+  animation: sting-phase2 5s steps(1, end) forwards;
+}
+.sting-pulse {
+  animation: sting-pulse 0.75s ease-in-out infinite;
 }
 .sting-sub {
   opacity: 0;
@@ -448,49 +458,67 @@
 }
 .sting-card {
   opacity: 0;
-  animation: sting-card 2.35s steps(1, end) forwards;
+  animation: sting-card 4.9s steps(1, end) forwards;
 }
 .sting-ticker {
   opacity: 0;
-  animation: sting-card 2.3s steps(1, end) forwards;
+  animation: sting-card 4.85s steps(1, end) forwards;
 }
 .sting-ticker-track {
-  /* Enters from the right edge, passing behind the label, then loops. The
-     loop has no fill, so it leaves the entrance alone until it starts. */
-  animation:
-    sting-ticker-in 5s linear 2.4s both,
-    sting-ticker 55s linear 7.4s infinite;
-}
-@keyframes sting-ticker-in {
-  from {
-    transform: translateX(100vw);
-  }
-  to {
-    transform: translateX(0);
-  }
+  /* No entrance: the first headline starts beside the label, already
+     readable, and the loop runs at one constant speed from there. The
+     duration is set per device by Reveal from the track's real width. */
+  animation: sting-ticker var(--ticker-loop, 55s) linear 4.95s infinite;
 }
 @keyframes sting-panel {
   0% {
     transform: translateX(-100%);
   }
-  10.2% {
+  5% {
     transform: translateX(0);
   } /* 0.25s: in */
-  89.8% {
+  95% {
     transform: translateX(0);
-  } /* 2.20s: hold */
+  } /* 4.75s: hold through both headlines */
   100% {
     transform: translateX(100%);
-  } /* 2.45s: out */
+  } /* 5s: out */
 }
-@keyframes sting-breaking {
+/* BREAKING NEWS holds 0.25s to 2.6s, then the announcement to the wipe. */
+@keyframes sting-phase1 {
   0%,
-  99.9% {
+  4.9% {
     opacity: 0;
   }
+  5% {
+    opacity: 1;
+  }
+  51.9% {
+    opacity: 1;
+  }
+  52%,
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sting-phase2 {
+  0%,
+  51.9% {
+    opacity: 0;
+  }
+  52%,
   100% {
     opacity: 1;
-  } /* cut in at 0.25s; it rides out on the panel */
+  }
+}
+@keyframes sting-pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
 }
 @keyframes sting-sub {
   0%,
@@ -532,5 +560,9 @@
   opacity: 1;
 }
 .sting-still .sting-ticker-track {
+  animation: none;
+}
+.sting-still .sting-breaking2,
+.sting-still .sting-pulse {
   animation: none;
 }

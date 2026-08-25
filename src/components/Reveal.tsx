@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
 import { CardImage } from './Img'
 import { money } from '../lib/season'
@@ -172,6 +172,16 @@ export function Reveal({ data }: { data: Dataset }) {
  * component only knows how to end.
  */
 function Sting({ item, nameOf, onDone }: { item: RevealItem; nameOf: (k: string) => string; onDone: () => void }) {
+  /* One speed for the ticker, entrance and loop alike: the CSS cannot know
+     the track's width, so it is measured here and the two durations are set
+     from it. 85px a second, television pace. */
+  const trackRef = useRef<HTMLDivElement>(null)
+  useLayoutEffect(() => {
+    const track = trackRef.current
+    if (!track) return
+    const SPEED = 85
+    track.style.setProperty('--ticker-loop', `${(track.scrollWidth / 2 / SPEED).toFixed(2)}s`)
+  }, [])
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
   const names = item.managerKeys.map(nameOf).join(' & ')
   const headline = `${item.label.split(' · ')[0]}: ${names}, ${item.points} pts`
@@ -205,8 +215,13 @@ function Sting({ item, nameOf, onDone }: { item: RevealItem; nameOf: (k: string)
           2. BREAKING cut in on it, so it leaves with the panel. */}
       <div className="sting-panel absolute inset-0">
         <div className="sting-breaking absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
-          <p className="display text-[14vw] leading-none tracking-tight sm:text-[9rem]">BREAKING NEWS</p>
+          <p className="sting-pulse display text-[14vw] leading-none tracking-tight sm:text-[9rem]">BREAKING NEWS</p>
           <p className="sting-sub eyebrow mt-4 text-sm sm:text-base">{item.label.split(' · ')[0]}</p>
+        </div>
+        <div className="sting-breaking2 absolute inset-0 flex items-center justify-center px-6 text-center">
+          <p className="sting-pulse display text-[11vw] leading-none tracking-tight sm:text-[7rem]">
+            {item.kind === 'koch' ? 'NEW KOCH ANNOUNCED' : 'NEW MOTM ANNOUNCED'}
+          </p>
         </div>
       </div>
 
@@ -257,7 +272,7 @@ function Sting({ item, nameOf, onDone }: { item: RevealItem; nameOf: (k: string)
         </span>
         {/* Two identical halves, the track slides one half-width then repeats,
             so the bar is always full and the loop is seamless. */}
-        <div className="sting-ticker-track flex whitespace-nowrap">
+        <div ref={trackRef} className="sting-ticker-track flex whitespace-nowrap">
           {[0, 1].map((half) => (
             <span key={half} className="flex shrink-0">
               {[0, 1, 2, 3, 4, 5].flatMap((i) =>
