@@ -370,7 +370,16 @@ async function main() {
         `They can no longer be cross-referenced for data_checked.`
     )
   }
-  const classicDataCheckedById = new Map(classicEvents.map((e) => [e.id, Boolean(e.data_checked)]))
+  /* When is a Draft gameweek confirmed? Draft flips `finished` at the
+     09:00 lockdown the morning after the last match — with auto-subs
+     applied and the official totals written — and that is the game the
+     money is on. The classic game's `data_checked` seal is kept as a
+     second route in, but on 25 Aug 2026 it lagged the Draft site by hours
+     while every status there read confirmed, so it no longer gates alone. */
+  const draftFinishedById = new Map(events.map((e) => [e.id, Boolean(e.finished)]))
+  const classicDataCheckedById = new Map(
+    classicEvents.map((e) => [e.id, Boolean(e.data_checked) || Boolean(draftFinishedById.get(e.id))])
+  )
 
   // The fixtures come from the classic game but are rendered against Draft's
   // teams, so the id spaces have to line up.
