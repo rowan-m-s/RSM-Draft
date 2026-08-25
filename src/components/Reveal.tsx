@@ -182,6 +182,7 @@ function Sting({ item, nameOf, onDone }: { item: RevealItem; nameOf: (k: string)
     const SPEED = 85
     track.style.setProperty('--ticker-loop', `${(track.scrollWidth / 2 / SPEED).toFixed(2)}s`)
   }, [])
+
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
   const names = item.managerKeys.map(nameOf).join(' & ')
   const headline = `${item.label.split(' · ')[0]}: ${names}, ${item.points} pts`
@@ -214,8 +215,13 @@ function Sting({ item, nameOf, onDone }: { item: RevealItem; nameOf: (k: string)
       {/* 1. The panel, wiping in from the left then out to the right, with
           2. BREAKING cut in on it, so it leaves with the panel. */}
       <div className="sting-panel absolute inset-0">
+        {/* BREAKING NEWS cuts in hard, then drifts forward slowly while a
+            bar wipes across beneath it — motion without any flashing. */}
         <div className="sting-breaking absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
-          <p className="sting-pulse display text-[14vw] leading-none tracking-tight sm:text-[9rem]">BREAKING NEWS</p>
+          <div className="sting-drift">
+            <p className="display text-[14vw] leading-none tracking-tight sm:text-[9rem]">BREAKING NEWS</p>
+            <span className="sting-underline mx-auto mt-5 block h-1.5 w-3/5 bg-pl-bg sm:h-2" aria-hidden="true" />
+          </div>
         </div>
         {/* The announcement lands a word at a time, one per line. */}
         <div className="sting-breaking2 absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
@@ -233,26 +239,27 @@ function Sting({ item, nameOf, onDone }: { item: RevealItem; nameOf: (k: string)
       {/* Centred in the space between the dismiss button and the ticker,
           not stacked from the top: on a phone the image, name and score
           otherwise sit in the upper two thirds with a hole beneath. */}
-      <div className="sting-card absolute inset-x-0 top-14 bottom-12 flex items-center justify-center overflow-y-auto px-6">
-        <div className="flex max-w-3xl flex-col items-center gap-4 sm:flex-row sm:gap-8">
+      <div className="sting-card absolute inset-x-0 top-12 bottom-12 flex items-center justify-center px-6">
+        <div className="flex max-w-3xl flex-col items-center gap-3 sm:flex-row sm:gap-8">
           {item.managerKeys.map((key) => (
-            <CardImage
-              key={key}
-              set={item.setFor(key)}
-              playerCode={item.playerCodeFor?.(key) ?? null}
-              managerKey={key}
-              alt={`${nameOf(key)}, ${item.label}`}
-              className="aspect-square w-44 shrink-0 sm:w-96"
-            />
+            <span key={key} className="sting-el sting-el-1 contents">
+              <CardImage
+                set={item.setFor(key)}
+                playerCode={item.playerCodeFor?.(key) ?? null}
+                managerKey={key}
+                alt={`${nameOf(key)}, ${item.label}`}
+                className="sting-el sting-el-1 aspect-square w-[74vw] max-w-[350px] shrink-0 sm:w-96 sm:max-w-none"
+              />
+            </span>
           ))}
           <div className="text-center sm:text-left">
-            <p className="eyebrow sting-accent-text">{item.label}</p>
-            <p className="display mt-2 text-5xl leading-[1.1] sm:text-6xl">{names}</p>
-            <p className="mt-3 text-lg text-pl-muted">
-              <span className="display tnum sting-accent-text text-5xl">{item.points}</span> pts
+            <p className="sting-el sting-el-2 eyebrow sting-accent-text">{item.label}</p>
+            <p className="sting-el sting-el-3 display mt-1.5 text-3xl leading-[1.1] sm:mt-2 sm:text-6xl">{names}</p>
+            <p className="sting-el sting-el-4 mt-2 text-base text-pl-muted sm:mt-3 sm:text-lg">
+              <span className="display tnum sting-accent-text text-4xl sm:text-5xl">{item.points}</span> pts
             </p>
             {item.mvp && (
-              <p className="mt-2 text-lg text-pl-muted">
+              <p className="sting-el sting-el-4 mt-2 text-lg text-pl-muted">
                 MVP · <span className="font-semibold text-pl-text">{item.mvp.playerName}</span>{' '}
                 <span className="tnum">
                   ({item.mvp.points} {item.mvp.points === 1 ? 'pt' : 'pts'})
@@ -261,7 +268,7 @@ function Sting({ item, nameOf, onDone }: { item: RevealItem; nameOf: (k: string)
             )}
             {/* The consequence, set apart from the score it follows. */}
             <p
-              className={`display mt-5 border-t border-pl-border pt-4 text-2xl sm:mt-6 ${item.moneyTone === 'red' ? 'text-pl-red' : 'text-pl-green'}`}
+              className={`sting-el sting-el-5 display mt-3 border-t border-pl-border pt-3 text-xl sm:mt-6 sm:pt-4 sm:text-2xl ${item.moneyTone === 'red' ? 'text-pl-red' : 'text-pl-green'}`}
             >
               {item.money}
             </p>

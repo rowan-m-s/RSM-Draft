@@ -412,7 +412,7 @@
 
 /* The breaking news sting (components/Reveal.tsx). One CSS timeline, every
    layer started together and offset by delay; stepped or linear timing only,
-   because a news sting is cuts and wipes, never eases. About 6s in all:
+   because a news sting is cuts and wipes, never eases. About 8.5s in all:
      0.00  panel wipes in from the left
      0.25  BREAKING NEWS cuts in
      0.70  the award line cuts in beneath it
@@ -437,20 +437,24 @@
   transform: translateX(-100%);
   animation: sting-panel 5s linear forwards;
 }
-/* Two headlines share the panel: BREAKING NEWS pulses first, then a hard
-   cut to the announcement, which pulses in its turn before the wipe. */
 .sting-breaking {
   color: var(--color-pl-bg);
+}
+/* Cut in at 0.3s, drift forward through the hold, fade by 2.65s. */
+.sting-drift {
   opacity: 0;
-  animation: sting-phase1 5s steps(1, end) forwards;
+  animation: sting-drift 5s linear forwards;
+}
+.sting-underline {
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: sting-underline 5s linear forwards;
 }
 .sting-breaking2 {
   color: var(--color-pl-bg);
   opacity: 0;
   animation: sting-phase2 5s linear forwards;
 }
-/* NEW.. KOCH.. ANNOUNCED: each word eases in on its own beat of the same
-   5s clock — 2.7s, 3.3s and 3.9s. */
 .sting-word {
   opacity: 0;
 }
@@ -462,6 +466,112 @@
 }
 .sting-w3 {
   animation: sting-word3 5s ease-out forwards;
+}
+.sting-pulse {
+  animation: sting-pulse 0.75s ease-in-out infinite;
+}
+.sting-sub {
+  opacity: 0;
+  animation: sting-sub 0.7s steps(1, end) forwards;
+}
+.sting-card {
+  opacity: 0;
+  animation: sting-card 9s steps(1, end) forwards;
+}
+/* The card assembles once the panel has gone, suspense first: the award
+   line, the points, the money — then, on a held beat, the name, and the
+   picture wipes on last as the payoff. */
+.sting-el {
+  opacity: 0;
+}
+.sting-el-1 {
+  animation: sting-el-1 9s linear forwards;
+}
+.sting-el-2 {
+  animation: sting-el-2 9s linear forwards;
+}
+.sting-el-3 {
+  animation: sting-el-3 9s linear forwards;
+}
+.sting-el-4 {
+  animation: sting-el-4 9s linear forwards;
+}
+.sting-el-5 {
+  animation: sting-el-5 9s linear forwards;
+}
+/* The ticker slides up from the bottom edge — a wipe, not a fade. */
+.sting-ticker {
+  transform: translateY(100%);
+  animation: sting-ticker-slide 0.2s linear 8.5s both;
+}
+.sting-ticker-track {
+  /* The first headline starts beside the label, already readable, and the
+     loop runs at one constant speed from there. The duration is set per
+     device by Reveal from the track's real width. */
+  animation: sting-ticker var(--ticker-loop, 55s) linear 8.7s infinite;
+}
+@keyframes sting-ticker-slide {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes sting-panel {
+  0% {
+    transform: translateX(-100%);
+  }
+  5% {
+    transform: translateX(0);
+  } /* 0.25s: hard wipe in */
+  95% {
+    transform: translateX(0);
+  } /* 4.75s: hold through both headlines */
+  100% {
+    transform: translateX(100%);
+  } /* 5s: hard wipe out */
+}
+@keyframes sting-drift {
+  0%,
+  5.9% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  6% {
+    opacity: 1;
+  } /* 0.3s: hard cut in */
+  46% {
+    opacity: 1;
+    transform: scale(1.05);
+  } /* slow push through the hold */
+  53%,
+  100% {
+    opacity: 0;
+    transform: scale(1.05);
+  } /* gone by 2.65s */
+}
+@keyframes sting-underline {
+  0%,
+  7% {
+    transform: scaleX(0);
+  }
+  15% {
+    transform: scaleX(1);
+  } /* wipes across under the headline */
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes sting-phase2 {
+  0%,
+  53% {
+    opacity: 0;
+  }
+  54%,
+  100% {
+    opacity: 1;
+  }
 }
 @keyframes sting-word1 {
   0%,
@@ -499,69 +609,6 @@
     transform: none;
   }
 }
-.sting-pulse {
-  animation: sting-pulse 0.75s ease-in-out infinite;
-}
-.sting-sub {
-  opacity: 0;
-  animation: sting-sub 0.7s steps(1, end) forwards;
-}
-.sting-card {
-  opacity: 0;
-  animation: sting-card 4.9s steps(1, end) forwards;
-}
-.sting-ticker {
-  opacity: 0;
-  animation: sting-card 4.85s steps(1, end) forwards;
-}
-.sting-ticker-track {
-  /* No entrance: the first headline starts beside the label, already
-     readable, and the loop runs at one constant speed from there. The
-     duration is set per device by Reveal from the track's real width. */
-  animation: sting-ticker var(--ticker-loop, 55s) linear 4.95s infinite;
-}
-@keyframes sting-panel {
-  0% {
-    transform: translateX(-100%);
-  }
-  5% {
-    transform: translateX(0);
-  } /* 0.25s: in */
-  95% {
-    transform: translateX(0);
-  } /* 4.75s: hold through both headlines */
-  100% {
-    transform: translateX(100%);
-  } /* 5s: out */
-}
-/* BREAKING NEWS holds 0.25s to 2.3s and fades by 2.65s; the announcement
-   then lands a word at a time. */
-@keyframes sting-phase1 {
-  0%,
-  4.9% {
-    opacity: 0;
-  }
-  5% {
-    opacity: 1;
-  }
-  46% {
-    opacity: 1;
-  }
-  53%,
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes sting-phase2 {
-  0%,
-  53% {
-    opacity: 0;
-  }
-  54%,
-  100% {
-    opacity: 1;
-  }
-}
 @keyframes sting-pulse {
   0%,
   100% {
@@ -582,12 +629,72 @@
 }
 @keyframes sting-card {
   0%,
-  99.9% {
+  55.5% {
     opacity: 0;
   }
+  55.6%,
   100% {
     opacity: 1;
+  } /* 5s: the shell, as the wipe leaves */
+}
+@keyframes sting-el-1 {
+  0%,
+  88.8% {
+    opacity: 0;
+    clip-path: inset(0 100% 0 0);
   }
+  88.9% {
+    opacity: 1;
+    clip-path: inset(0 100% 0 0);
+  }
+  94.4% {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  } /* 8.0-8.5s: the picture wipes on last */
+  100% {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+@keyframes sting-el-2 {
+  0%,
+  57.8% {
+    opacity: 0;
+  }
+  61.1%,
+  100% {
+    opacity: 1;
+  } /* 5.2-5.5s: the award line */
+}
+@keyframes sting-el-3 {
+  0%,
+  84.4% {
+    opacity: 0;
+  }
+  87.8%,
+  100% {
+    opacity: 1;
+  } /* 7.6-7.9s: the name, after a held beat */
+}
+@keyframes sting-el-4 {
+  0%,
+  65.6% {
+    opacity: 0;
+  }
+  68.9%,
+  100% {
+    opacity: 1;
+  } /* 5.9-6.2s: the points */
+}
+@keyframes sting-el-5 {
+  0%,
+  73.3% {
+    opacity: 0;
+  }
+  76.7%,
+  100% {
+    opacity: 1;
+  } /* 6.6-6.9s: the money */
 }
 @keyframes sting-ticker {
   from {
@@ -600,21 +707,26 @@
 /* Reduced motion: straight to the card, ticker still. */
 .sting-still .sting-panel,
 .sting-still .sting-breaking,
+.sting-still .sting-breaking2,
 .sting-still .sting-sub {
   animation: none;
   opacity: 0;
   transform: translateX(100%);
 }
-.sting-still .sting-card,
 .sting-still .sting-ticker {
+  animation: none;
+  transform: none;
+}
+.sting-still .sting-card,
+.sting-still .sting-el {
   animation: none;
   opacity: 1;
 }
 .sting-still .sting-ticker-track {
   animation: none;
 }
-.sting-still .sting-breaking2,
-.sting-still .sting-pulse,
+.sting-still .sting-drift,
+.sting-still .sting-underline,
 .sting-still .sting-word {
   animation: none;
 }
