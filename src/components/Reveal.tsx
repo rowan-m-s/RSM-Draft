@@ -223,7 +223,7 @@ function Sting({ item, nameOf, onDone }: { item: RevealItem; nameOf: (k: string)
               playerCode={item.playerCodeFor?.(key) ?? null}
               managerKey={key}
               alt={`${nameOf(key)}, ${item.label}`}
-              className="aspect-square w-44 shrink-0 sm:w-72"
+              className="aspect-square w-44 shrink-0 sm:w-96"
             />
           ))}
           <div className="text-center sm:text-left">

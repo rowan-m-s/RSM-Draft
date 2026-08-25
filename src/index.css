@@ -459,7 +459,7 @@
      loop has no fill, so it leaves the entrance alone until it starts. */
   animation:
     sting-ticker-in 5s linear 2.4s both,
-    sting-ticker 40s linear 7.4s infinite;
+    sting-ticker 55s linear 7.4s infinite;
 }
 @keyframes sting-ticker-in {
   from {
