@@ -176,11 +176,11 @@
       "total": 20,
       "gw": 20,
       "month": 20,
-      "kochCount": 0,
+      "kochCount": 1,
       "motmCount": 0,
-      "forfeits": 0,
+      "forfeits": 5,
       "potsWon": 0,
-      "balance": 0,
+      "balance": -5,
       "topPerformer": {
         "playerName": "Szoboszlai",
         "points": 8,
@@ -188,7 +188,7 @@
       }
     }
   ],
-  "latestSettledGameweek": null,
+  "latestSettledGameweek": 1,
   "currentMonth": "2026-08",
   "seasonPrize": 110,
   "leader": {
@@ -196,16 +196,16 @@
       "paddy"
     ],
     "total": 58,
-    "since": null,
+    "since": 1,
     "sinceByKey": {
-      "paddy": null
+      "paddy": 1
     },
     "asOf": 1,
-    "weeks": 0,
+    "weeks": 1,
     "displaced": null,
-    "changed": false
+    "changed": true
   },
-  "generatedAt": "2026-08-25T08:21:52.930Z",
+  "generatedAt": "2026-08-25T08:29:40.235Z",
   "graphics": {
     "koch": {
       "rushy": 244850,
@@ -270,7 +270,7 @@
     "wood": 0,
     "rowan": 0,
     "jason": 0,
-    "dj": 0,
+    "dj": 1,
     "ollie": 0
   }
 }

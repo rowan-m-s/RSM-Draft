@@ -25,7 +25,7 @@
         "ollie": 0
       },
       "fixturesRemaining": false,
-      "dataChecked": false,
+      "dataChecked": true,
       "confirmExpectedUtc": "2026-08-25T19:00:00.000Z",
       "revealFromUtc": "2026-08-25T08:05:00.000Z",
       "scores": {
@@ -41,8 +41,10 @@
         "dj": 20,
         "ollie": 37
       },
-      "kochKeys": [],
-      "charged": 0,
+      "kochKeys": [
+        "dj"
+      ],
+      "charged": 5,
       "topPerformerByManager": {
         "rushy": {
           "playerName": "Gakpo",
@@ -1034,5 +1036,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-08-25T08:25:03.015Z"
+  "generatedAt": "2026-08-25T08:29:40.235Z"
 }
