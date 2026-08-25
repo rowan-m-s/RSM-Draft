@@ -136,7 +136,11 @@ export function buildGameweeks({
   const dayAfter = (iso) => new Date(new Date(iso).getTime() + 24 * 60 * 60 * 1000).toISOString()
   // The breaking news sting is allowed from 09:00 London on the day after
   // the week's last match, and not before, however early FPL confirms.
-  const revealFrom = (iso) => londonNextDayAt(iso, 9)
+  // 09:05, not 09:00: FPL locks scores and applies auto-subs at nine on
+  // the morning after the last match, and firing on the hour races that
+  // flip. Five minutes of headroom; the reveal still also waits for
+  // confirmation, whichever is later.
+  const revealFrom = (iso) => londonNextDayAt(iso, 9, 5)
 
   return events.map((event) => {
     const dataChecked = isSettled(event, classicDataCheckedById.get(event.id))
@@ -986,7 +990,7 @@ export function buildFixturePoints({ live, elementIds }) {
  * day, and asking Intl what UTC instant shows that hour in London, allowing
  * for BST or GMT on that day.
  */
-export function londonNextDayAt(iso, hour) {
+export function londonNextDayAt(iso, hour, minute = 0) {
   const fmt = (d) =>
     new Intl.DateTimeFormat('en-CA', {
       timeZone: 'Europe/London',
@@ -997,7 +1001,7 @@ export function londonNextDayAt(iso, hour) {
   const [y, m, d] = fmt(new Date(iso)).split('-').map(Number)
   const nextDate = new Date(Date.UTC(y, m - 1, d + 1)) // the next London calendar date, as a UTC date
   const wanted = nextDate.toISOString().slice(0, 10)
-  const base = Date.UTC(nextDate.getUTCFullYear(), nextDate.getUTCMonth(), nextDate.getUTCDate(), hour)
+  const base = Date.UTC(nextDate.getUTCFullYear(), nextDate.getUTCMonth(), nextDate.getUTCDate(), hour, minute)
   // London is UTC+0 or UTC+1; whichever candidate Intl shows at the wanted
   // hour on the wanted London date is the one.
   for (const offsetHours of [1, 0]) {

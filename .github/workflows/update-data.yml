@@ -18,6 +18,14 @@ on:
     # three hours stale is worst exactly when people are checking it before a
     # deadline. Actions minutes are unlimited on a public repo, so this is free.
     - cron: '*/30 8-20 * * 4,5'
+    # Every 15 minutes through the morning-after window, 08:45-10:30 UK on
+    # both sides of the clock change: FPL locks scores and applies auto-subs
+    # at 09:00 the day after a gameweek's last match, and the reveal fires
+    # at 09:05. Which mornings matter cannot be read from cron, so these
+    # runs fire daily and a gate below skips them unless the fixture data
+    # says a gameweek confirms today.
+    - cron: '45 7 * * *'
+    - cron: '*/15 8-10 * * *'
     # Every 3 hours otherwise, so a quiet day still proves the job is alive.
     - cron: '0 */3 * * *'
   workflow_dispatch:
@@ -43,21 +51,34 @@ jobs:
           node-version: '24'
           cache: npm
 
+      # The tight morning window runs every day; the fixture data says which
+      # mornings matter. Anything else (a push, another cron) always runs.
+      - name: Is this a morning worth polling?
+        id: gate
+        run: |
+          if [ "${{ github.event.schedule }}" = "45 7 * * *" ] || [ "${{ github.event.schedule }}" = "*/15 8-10 * * *" ]; then
+            node scripts/is-reveal-morning.mjs || { echo "run=false" >> "$GITHUB_OUTPUT"; exit 0; }
+          fi
+          echo "run=true" >> "$GITHUB_OUTPUT"
+
       # The only dependency the fetch needs is sharp, for measuring photo
       # framing. The install is allowed to fail: the script loads sharp lazily
       # and carries the framing over unchanged without it, so a broken
       # lockfile or registry can never stop the scores updating.
       - name: Install
+        if: steps.gate.outputs.run == 'true'
         run: npm ci --ignore-scripts=false || echo "Install failed; scores will still update, framing will not."
         continue-on-error: true
 
       - name: Fetch league data
+        if: steps.gate.outputs.run == 'true'
         run: node scripts/fetch-data.mjs
 
       # The script rewrites a file only when its content changed, or every two
       # and a half hours as a heartbeat, so this is usually a no-op. Without
       # that, a 15-minute cron would produce hundreds of empty commits a week.
       - name: Commit if anything changed
+        if: steps.gate.outputs.run == 'true'
         run: |
           if [ -z "$(git status --porcelain public/data)" ]; then
             echo "No change."

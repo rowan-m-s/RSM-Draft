@@ -920,6 +920,9 @@ describe('buildLeader', () => {
 describe('londonNextDayAt', () => {
   it('gives 09:00 London on the day after the last match, in BST and GMT', () => {
     expect(londonNextDayAt('2026-08-24T19:00:00Z', 9)).toBe('2026-08-25T08:00:00.000Z') // BST
+    // The reveal's own setting: five past nine, clear of FPL's 09:00 flip.
+    expect(londonNextDayAt('2026-08-24T19:00:00Z', 9, 5)).toBe('2026-08-25T08:05:00.000Z')
+    expect(londonNextDayAt('2026-12-21T20:00:00Z', 9, 5)).toBe('2026-12-22T09:05:00.000Z')
     expect(londonNextDayAt('2026-12-21T20:00:00Z', 9)).toBe('2026-12-22T09:00:00.000Z') // GMT
   })
   it('uses the London date, so a match ending after midnight UK time counts as the next day', () => {
