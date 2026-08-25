@@ -3145,9 +3145,9 @@
     "403": {
       "name": "Savinho",
       "position": "MID",
-      "teamId": 15,
-      "clubShort": "MCI",
-      "clubCode": 43,
+      "teamId": 19,
+      "clubShort": "TOT",
+      "clubCode": 6,
       "photoCode": 510281,
       "status": "a",
       "chanceOfPlaying": null,
@@ -3581,9 +3581,9 @@
       "clubShort": "TOT",
       "clubCode": 6,
       "photoCode": 441164,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 0,
-      "news": "Lack of match fitness - 75% chance of playing",
+      "news": null,
       "newsAdded": "2026-08-21T15:22:48.149081Z"
     },
     "503": {
@@ -3593,9 +3593,9 @@
       "clubShort": "TOT",
       "clubCode": 6,
       "photoCode": 491279,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 0,
-      "news": "Unspecified injury - 50% chance of playing",
+      "news": null,
       "newsAdded": "2026-08-21T15:00:07.610517Z"
     },
     "504": {
@@ -3629,10 +3629,10 @@
       "clubShort": "TOT",
       "clubCode": 6,
       "photoCode": 172780,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
+      "status": "d",
+      "chanceOfPlaying": 75,
+      "news": "Shoulder injury - 75% chance of playing",
+      "newsAdded": "2026-08-25T14:30:07.623508Z"
     },
     "525": {
       "name": "Fernandes",
@@ -3827,5 +3827,5 @@
       "newsAdded": "2026-08-15T16:00:07.974271Z"
     }
   },
-  "generatedAt": "2026-08-25T11:21:22.814Z"
+  "generatedAt": "2026-08-25T14:38:07.105Z"
 }
