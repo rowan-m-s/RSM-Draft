@@ -24,6 +24,10 @@ on:
     # at 09:05. Which mornings matter cannot be read from cron, so these
     # runs fire daily and a gate below skips them unless the fixture data
     # says a gameweek confirms today.
+    # A punctual strike just after the 09:00 flip and the 09:05 reveal gate
+    # (both UK offsets), then the window for the mornings GitHub runs late.
+    - cron: '2 8 * * *'
+    - cron: '2 9 * * *'
     - cron: '45 7 * * *'
     - cron: '*/15 8-10 * * *'
     # Every 3 hours otherwise, so a quiet day still proves the job is alive.
@@ -56,7 +60,11 @@ jobs:
       - name: Is this a morning worth polling?
         id: gate
         run: |
-          if [ "${{ github.event.schedule }}" = "45 7 * * *" ] || [ "${{ github.event.schedule }}" = "*/15 8-10 * * *" ]; then
+          case "${{ github.event.schedule }}" in
+            "2 8 * * *"|"2 9 * * *"|"45 7 * * *"|"*/15 8-10 * * *") MORNING=1 ;;
+            *) MORNING=0 ;;
+          esac
+          if [ "$MORNING" = "1" ]; then
             node scripts/is-reveal-morning.mjs || { echo "run=false" >> "$GITHUB_OUTPUT"; exit 0; }
           fi
           echo "run=true" >> "$GITHUB_OUTPUT"
