@@ -30,6 +30,8 @@ on:
     - cron: '2 9 * * *'
     - cron: '45 7 * * *'
     - cron: '*/15 8-10 * * *'
+    # A slower tail into the afternoon for the mornings FPL seals late.
+    - cron: '*/30 11-14 * * *'
     # Every 3 hours otherwise, so a quiet day still proves the job is alive.
     - cron: '0 */3 * * *'
   workflow_dispatch:
@@ -61,7 +63,7 @@ jobs:
         id: gate
         run: |
           case "${{ github.event.schedule }}" in
-            "2 8 * * *"|"2 9 * * *"|"45 7 * * *"|"*/15 8-10 * * *") MORNING=1 ;;
+            "2 8 * * *"|"2 9 * * *"|"45 7 * * *"|"*/15 8-10 * * *"|"*/30 11-14 * * *") MORNING=1 ;;
             *) MORNING=0 ;;
           esac
           if [ "$MORNING" = "1" ]; then
