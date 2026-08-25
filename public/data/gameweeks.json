@@ -24,22 +24,22 @@
         "dj": 0,
         "ollie": 0
       },
-      "fixturesRemaining": true,
+      "fixturesRemaining": false,
       "dataChecked": false,
       "confirmExpectedUtc": "2026-08-25T19:00:00.000Z",
       "revealFromUtc": "2026-08-25T08:05:00.000Z",
       "scores": {
-        "rushy": 40,
-        "kellett": 36,
+        "rushy": 46,
+        "kellett": 37,
         "wallis": 50,
         "jls": 39,
         "paddy": 58,
-        "bennett": 40,
-        "wood": 44,
-        "rowan": 32,
-        "jason": 48,
+        "bennett": 41,
+        "wood": 47,
+        "rowan": 46,
+        "jason": 51,
         "dj": 20,
-        "ollie": 27
+        "ollie": 37
       },
       "kochKeys": [],
       "charged": 0,
@@ -80,8 +80,8 @@
           "managerKey": "wood"
         },
         "rowan": {
-          "playerName": "Stach",
-          "points": 13,
+          "playerName": "M.Sangaré",
+          "points": 14,
           "managerKey": "rowan"
         },
         "jason": {
@@ -95,8 +95,8 @@
           "managerKey": "dj"
         },
         "ollie": {
-          "playerName": "Raya",
-          "points": 6,
+          "playerName": "Emersonn",
+          "points": 9,
           "managerKey": "ollie"
         }
       },
@@ -1034,5 +1034,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-08-25T07:30:15.519Z"
+  "generatedAt": "2026-08-25T08:21:52.930Z"
 }
