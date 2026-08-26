@@ -3456,7 +3456,7 @@
     },
     {
       "id": 403,
-      "name": "Savinho",
+      "name": "Sávio",
       "position": "MID",
       "club": "Spurs",
       "clubShort": "TOT",
@@ -7395,6 +7395,28 @@
       "positionRank": 155
     },
     {
+      "id": 614,
+      "name": "Ahoka",
+      "position": "MID",
+      "club": "Sunderland",
+      "clubShort": "SUN",
+      "clubCode": 56,
+      "teamId": 20,
+      "photoCode": 696104,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 0,
+      "ppg": 0,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 268
+    },
+    {
       "id": 392,
       "name": "Aït-Nouri",
       "position": "DEF",
@@ -7750,10 +7772,10 @@
       "id": 131,
       "name": "Baleba",
       "position": "MID",
-      "club": "Brighton",
-      "clubShort": "BHA",
-      "clubCode": 36,
-      "teamId": 5,
+      "club": "Man Utd",
+      "clubShort": "MUN",
+      "clubCode": 1,
+      "teamId": 16,
       "photoCode": 535301,
       "owner": null,
       "status": "i",
@@ -9769,6 +9791,28 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 199
+    },
+    {
+      "id": 613,
+      "name": "Hadjam",
+      "position": "DEF",
+      "club": "Brighton",
+      "clubShort": "BHA",
+      "clubCode": 36,
+      "teamId": 5,
+      "photoCode": 512123,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 0,
+      "ppg": 0,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 203
     },
     {
       "id": 342,
@@ -12244,10 +12288,10 @@
       "teamId": 14,
       "photoCode": 489580,
       "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
+      "status": "u",
+      "chanceOfPlaying": 0,
+      "news": "Has joined St Mirren on loan for the rest of the season",
+      "newsAdded": "2026-08-26T14:05:26.748768Z",
       "points": 0,
       "ppg": 0,
       "goals": 0,
@@ -13420,7 +13464,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 203
+      "positionRank": 204
     },
     {
       "id": 54,
@@ -13442,7 +13486,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 268
+      "positionRank": 269
     },
     {
       "id": 37,
@@ -13464,7 +13508,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 204
+      "positionRank": 205
     }
   ],
   "leadingScorer": {
@@ -13489,5 +13533,5 @@
     "bonus": 2,
     "positionRank": 1
   },
-  "generatedAt": "2026-08-26T12:38:20.284Z"
+  "generatedAt": "2026-08-26T16:13:05.663Z"
 }
