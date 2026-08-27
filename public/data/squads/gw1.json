@@ -1850,10 +1850,10 @@
       "clubShort": "BHA",
       "clubCode": 36,
       "photoCode": 463067,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
+      "status": "d",
+      "chanceOfPlaying": 75,
+      "news": "Unspecified injury - 75% chance of playing",
+      "newsAdded": "2026-08-26T16:00:07.608056Z"
     },
     "136": {
       "name": "Welbeck",
@@ -2066,9 +2066,9 @@
       "clubShort": "CRY",
       "clubCode": 31,
       "photoCode": 232185,
-      "status": "d",
-      "chanceOfPlaying": 75,
-      "news": "Groin injury - 75% chance of playing",
+      "status": "i",
+      "chanceOfPlaying": 0,
+      "news": "Groin injury - Unknown return date",
       "newsAdded": "2026-08-22T18:00:07.363165Z"
     },
     "222": {
@@ -2558,10 +2558,10 @@
       "clubShort": "MCI",
       "clubCode": 43,
       "photoCode": 465351,
-      "status": "a",
+      "status": "d",
       "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-16T18:30:07.457097Z"
+      "news": "Unspecified injury - 50% chance of playing",
+      "newsAdded": "2026-08-27T11:30:08.171622Z"
     },
     "390": {
       "name": "Rúben",
@@ -2943,8 +2943,8 @@
       "clubCode": 4,
       "photoCode": 538207,
       "status": "d",
-      "chanceOfPlaying": 50,
-      "news": "Knock - 50% chance of playing",
+      "chanceOfPlaying": 25,
+      "news": "Foot injury - 25% chance of playing",
       "newsAdded": "2026-08-25T19:00:08.004915Z"
     },
     "467": {
@@ -3014,9 +3014,9 @@
       "clubShort": "MCI",
       "clubCode": 43,
       "photoCode": 215379,
-      "status": "d",
-      "chanceOfPlaying": 75,
-      "news": "Knock - 75% chance of playing",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
       "newsAdded": "2026-08-23T17:00:07.952697Z"
     },
     "490": {
@@ -3332,5 +3332,5 @@
       "newsAdded": "2026-08-15T16:00:07.974271Z"
     }
   },
-  "generatedAt": "2026-08-27T13:28:43.177Z"
+  "generatedAt": "2026-08-27T18:46:25.406Z"
 }
