@@ -214,15 +214,15 @@
       "revealFromUtc": "2026-09-01T08:05:00.000Z",
       "scores": {
         "rushy": 0,
-        "kellett": 9,
+        "kellett": 22,
         "wallis": 2,
-        "jls": 2,
-        "paddy": 1,
+        "jls": 4,
+        "paddy": 16,
         "bennett": 0,
-        "wood": 2,
+        "wood": 5,
         "rowan": 0,
         "jason": 0,
-        "dj": 6,
+        "dj": 5,
         "ollie": 0
       },
       "kochKeys": [],
@@ -235,22 +235,22 @@
         },
         "kellett": {
           "playerName": "Haaland",
-          "points": 8,
+          "points": 13,
           "managerKey": "kellett"
         },
         "wallis": {
           "playerName": "O'Reilly",
-          "points": 1,
+          "points": 2,
           "managerKey": "wallis"
         },
         "jls": {
           "playerName": "Khusanov",
-          "points": 1,
+          "points": 2,
           "managerKey": "jls"
         },
         "paddy": {
-          "playerName": "Rúben",
-          "points": 1,
+          "playerName": "Cherki",
+          "points": 14,
           "managerKey": "paddy"
         },
         "bennett": {
@@ -259,8 +259,8 @@
           "managerKey": "bennett"
         },
         "wood": {
-          "playerName": "Donnarumma",
-          "points": 1,
+          "playerName": "Gvardiol",
+          "points": 5,
           "managerKey": "wood"
         },
         "rowan": {
@@ -275,7 +275,7 @@
         },
         "dj": {
           "playerName": "Semenyo",
-          "points": 6,
+          "points": 5,
           "managerKey": "dj"
         },
         "ollie": {
@@ -288,32 +288,32 @@
         "rushy": null,
         "kellett": {
           "playerName": "Foden",
-          "points": 1,
+          "points": 9,
           "managerKey": "kellett",
           "element": 398
         },
         "wallis": {
           "playerName": "Canvot",
-          "points": 1,
+          "points": 0,
           "managerKey": "wallis",
           "element": 203
         },
         "jls": {
           "playerName": "Guéhi",
-          "points": 1,
+          "points": 2,
           "managerKey": "jls",
           "element": 388
         },
         "paddy": {
-          "playerName": "Cherki",
-          "points": 0,
+          "playerName": "Rúben",
+          "points": 2,
           "managerKey": "paddy",
-          "element": 399
+          "element": 390
         },
         "bennett": null,
         "wood": {
           "playerName": "Donnarumma",
-          "points": 1,
+          "points": 0,
           "managerKey": "wood",
           "element": 384
         },
@@ -321,7 +321,7 @@
         "jason": null,
         "dj": {
           "playerName": "Semenyo",
-          "points": 6,
+          "points": 5,
           "managerKey": "dj",
           "element": 397
         },
@@ -1170,5 +1170,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-08-28T19:51:05.872Z"
+  "generatedAt": "2026-08-28T23:48:13.419Z"
 }

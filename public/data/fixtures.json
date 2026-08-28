@@ -671,7 +671,7 @@
         {
           "opponent": 20,
           "home": true,
-          "kickoff": "2026-09-19T14:00:00Z"
+          "kickoff": "2026-09-20T13:00:00Z"
         }
       ],
       "16": [
@@ -706,7 +706,7 @@
         {
           "opponent": 15,
           "home": false,
-          "kickoff": "2026-09-19T14:00:00Z"
+          "kickoff": "2026-09-20T13:00:00Z"
         }
       ]
     },
@@ -5544,11 +5544,11 @@
       "kickoff": "2026-08-28T19:00:00Z",
       "home": 8,
       "away": 15,
-      "homeScore": 0,
-      "awayScore": 1,
+      "homeScore": 1,
+      "awayScore": 4,
       "started": true,
       "finished": false,
-      "finishedProvisional": false,
+      "finishedProvisional": true,
       "homeDifficulty": 4,
       "awayDifficulty": 3
     },
@@ -6029,20 +6029,6 @@
       "awayDifficulty": 3
     },
     {
-      "id": 45,
-      "event": 5,
-      "kickoff": "2026-09-19T14:00:00Z",
-      "home": 15,
-      "away": 20,
-      "homeScore": null,
-      "awayScore": null,
-      "started": false,
-      "finished": false,
-      "finishedProvisional": false,
-      "homeDifficulty": 2,
-      "awayDifficulty": 5
-    },
-    {
       "id": 46,
       "event": 5,
       "kickoff": "2026-09-19T14:00:00Z",
@@ -6069,6 +6055,20 @@
       "finishedProvisional": false,
       "homeDifficulty": 2,
       "awayDifficulty": 3
+    },
+    {
+      "id": 45,
+      "event": 5,
+      "kickoff": "2026-09-20T13:00:00Z",
+      "home": 15,
+      "away": 20,
+      "homeScore": null,
+      "awayScore": null,
+      "started": false,
+      "finished": false,
+      "finishedProvisional": false,
+      "homeDifficulty": 2,
+      "awayDifficulty": 5
     },
     {
       "id": 49,
@@ -10841,5 +10841,5 @@
       "code": 56
     }
   ],
-  "generatedAt": "2026-08-28T19:51:05.872Z"
+  "generatedAt": "2026-08-28T23:48:13.419Z"
 }
