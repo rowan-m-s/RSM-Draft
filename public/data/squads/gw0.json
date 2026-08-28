@@ -2297,9 +2297,9 @@
       "clubShort": "BHA",
       "clubCode": 36,
       "photoCode": 231416,
-      "status": "d",
-      "chanceOfPlaying": 75,
-      "news": "Unspecified injury - 75% chance of playing",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
       "newsAdded": "2026-08-23T13:00:07.595211Z"
     },
     "115": {
@@ -2321,10 +2321,10 @@
       "clubShort": "BHA",
       "clubCode": 36,
       "photoCode": 532529,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
+      "status": "d",
+      "chanceOfPlaying": 25,
+      "news": "Unspecified injury - 25% chance of playing",
+      "newsAdded": "2026-08-27T19:30:07.780933Z"
     },
     "124": {
       "name": "Groß",
@@ -3043,7 +3043,7 @@
       "photoCode": 465351,
       "status": "d",
       "chanceOfPlaying": 100,
-      "news": "Unspecified injury - 50% chance of playing",
+      "news": "Unspecified injury - 75% chance of playing",
       "newsAdded": "2026-08-27T11:30:08.171622Z"
     },
     "390": {
@@ -3133,9 +3133,9 @@
     "401": {
       "name": "Marmoush",
       "position": "FWD",
-      "teamId": 15,
-      "clubShort": "MCI",
-      "clubCode": 43,
+      "teamId": 19,
+      "clubShort": "TOT",
+      "clubCode": 6,
       "photoCode": 438234,
       "status": "a",
       "chanceOfPlaying": null,
@@ -3425,9 +3425,9 @@
       "clubShort": "NEW",
       "clubCode": 4,
       "photoCode": 538207,
-      "status": "d",
-      "chanceOfPlaying": 25,
-      "news": "Foot injury - 25% chance of playing",
+      "status": "i",
+      "chanceOfPlaying": 0,
+      "news": "Foot injury - Unknown return date",
       "newsAdded": "2026-08-25T19:00:08.004915Z"
     },
     "467": {
@@ -3485,9 +3485,9 @@
       "clubShort": "NFO",
       "clubCode": 17,
       "photoCode": 222531,
-      "status": "d",
-      "chanceOfPlaying": 75,
-      "news": "Knee injury - 75% chance of playing",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
       "newsAdded": "2026-08-24T15:30:08.350159Z"
     },
     "481": {
@@ -3509,10 +3509,10 @@
       "clubShort": "NFO",
       "clubCode": 17,
       "photoCode": 210462,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
+      "status": "i",
+      "chanceOfPlaying": 0,
+      "news": "Calf injury - Unknown return date",
+      "newsAdded": "2026-08-28T09:30:07.471668Z"
     },
     "490": {
       "name": "Wood",
@@ -3827,5 +3827,5 @@
       "newsAdded": "2026-08-15T16:00:07.974271Z"
     }
   },
-  "generatedAt": "2026-08-28T00:11:22.186Z"
+  "generatedAt": "2026-08-28T14:47:13.991Z"
 }

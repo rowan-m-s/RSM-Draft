@@ -837,7 +837,7 @@
         "points": 0
       },
       {
-        "element": 420,
+        "element": 261,
         "starter": false,
         "position": 13,
         "subbedOn": false,
@@ -845,7 +845,7 @@
         "points": 0
       },
       {
-        "element": 261,
+        "element": 31,
         "starter": false,
         "position": 14,
         "subbedOn": false,
@@ -853,7 +853,7 @@
         "points": 0
       },
       {
-        "element": 31,
+        "element": 586,
         "starter": false,
         "position": 15,
         "subbedOn": false,
@@ -1826,10 +1826,10 @@
       "clubShort": "BHA",
       "clubCode": 36,
       "photoCode": 532529,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
+      "status": "d",
+      "chanceOfPlaying": 25,
+      "news": "Unspecified injury - 25% chance of playing",
+      "newsAdded": "2026-08-27T19:30:07.780933Z"
     },
     "124": {
       "name": "Groß",
@@ -2002,9 +2002,9 @@
     "167": {
       "name": "Delap",
       "position": "FWD",
-      "teamId": 6,
-      "clubShort": "CHE",
-      "clubCode": 8,
+      "teamId": 18,
+      "clubShort": "NFO",
+      "clubCode": 17,
       "photoCode": 463034,
       "status": "a",
       "chanceOfPlaying": null,
@@ -2572,7 +2572,7 @@
       "photoCode": 465351,
       "status": "d",
       "chanceOfPlaying": 100,
-      "news": "Unspecified injury - 50% chance of playing",
+      "news": "Unspecified injury - 75% chance of playing",
       "newsAdded": "2026-08-27T11:30:08.171622Z"
     },
     "390": {
@@ -2662,9 +2662,9 @@
     "401": {
       "name": "Marmoush",
       "position": "FWD",
-      "teamId": 15,
-      "clubShort": "MCI",
-      "clubCode": 43,
+      "teamId": 19,
+      "clubShort": "TOT",
+      "clubCode": 6,
       "photoCode": 438234,
       "status": "a",
       "chanceOfPlaying": null,
@@ -2742,18 +2742,6 @@
       "chanceOfPlaying": 100,
       "news": null,
       "newsAdded": "2026-07-24T20:00:10.337107Z"
-    },
-    "420": {
-      "name": "Yoro",
-      "position": "DEF",
-      "teamId": 16,
-      "clubShort": "MUN",
-      "clubCode": 1,
-      "photoCode": 550864,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
     },
     "423": {
       "name": "Shaw",
@@ -2942,9 +2930,9 @@
       "clubShort": "NEW",
       "clubCode": 4,
       "photoCode": 538207,
-      "status": "d",
-      "chanceOfPlaying": 25,
-      "news": "Foot injury - 25% chance of playing",
+      "status": "i",
+      "chanceOfPlaying": 0,
+      "news": "Foot injury - Unknown return date",
       "newsAdded": "2026-08-25T19:00:08.004915Z"
     },
     "467": {
@@ -3014,9 +3002,9 @@
       "clubShort": "NFO",
       "clubCode": 17,
       "photoCode": 222531,
-      "status": "d",
-      "chanceOfPlaying": 75,
-      "news": "Knee injury - 75% chance of playing",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
       "newsAdded": "2026-08-24T15:30:08.350159Z"
     },
     "481": {
@@ -3307,6 +3295,18 @@
       "news": null,
       "newsAdded": null
     },
+    "586": {
+      "name": "Mendy",
+      "position": "DEF",
+      "teamId": 11,
+      "clubShort": "HUL",
+      "clubCode": 88,
+      "photoCode": 606930,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-22T17:30:08.045208Z"
+    },
     "593": {
       "name": "David",
       "position": "FWD",
@@ -3332,5 +3332,5 @@
       "newsAdded": null
     }
   },
-  "generatedAt": "2026-08-28T00:11:22.186Z"
+  "generatedAt": "2026-08-28T14:47:13.991Z"
 }
