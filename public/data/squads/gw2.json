@@ -1089,7 +1089,7 @@
         "points": 0
       },
       {
-        "element": 582,
+        "element": 86,
         "starter": false,
         "position": 14,
         "subbedOn": false,
@@ -1097,7 +1097,7 @@
         "points": 0
       },
       {
-        "element": 86,
+        "element": 138,
         "starter": false,
         "position": 15,
         "subbedOn": false,
@@ -1878,6 +1878,18 @@
       "chanceOfPlaying": 75,
       "news": null,
       "newsAdded": "2026-08-20T14:00:07.949090Z"
+    },
+    "138": {
+      "name": "Kostoulas",
+      "position": "FWD",
+      "teamId": 5,
+      "clubShort": "BHA",
+      "clubCode": 36,
+      "photoCode": 647850,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null
     },
     "140": {
       "name": "Sánchez",
@@ -3295,18 +3307,6 @@
       "news": null,
       "newsAdded": null
     },
-    "582": {
-      "name": "Madjo",
-      "position": "FWD",
-      "teamId": 2,
-      "clubShort": "AVL",
-      "clubCode": 7,
-      "photoCode": 690838,
-      "status": "i",
-      "chanceOfPlaying": 0,
-      "news": "Unspecified injury - Unknown return date",
-      "newsAdded": "2026-08-15T16:00:07.974271Z"
-    },
     "593": {
       "name": "David",
       "position": "FWD",
@@ -3332,5 +3332,5 @@
       "newsAdded": null
     }
   },
-  "generatedAt": "2026-08-27T18:46:25.406Z"
+  "generatedAt": "2026-08-28T00:11:22.186Z"
 }

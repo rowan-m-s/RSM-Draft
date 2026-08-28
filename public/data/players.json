@@ -2509,6 +2509,28 @@
       "positionRank": 73
     },
     {
+      "id": 138,
+      "name": "Kostoulas",
+      "position": "FWD",
+      "club": "Brighton",
+      "clubShort": "BHA",
+      "clubCode": 36,
+      "teamId": 5,
+      "photoCode": 647850,
+      "owner": "jason",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 1,
+      "ppg": 1,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 20
+    },
+    {
       "id": 412,
       "name": "Lammens",
       "position": "GKP",
@@ -3211,28 +3233,6 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 171
-    },
-    {
-      "id": 582,
-      "name": "Madjo",
-      "position": "FWD",
-      "club": "Aston Villa",
-      "clubShort": "AVL",
-      "clubCode": 7,
-      "teamId": 2,
-      "photoCode": 690838,
-      "owner": "jason",
-      "status": "i",
-      "chanceOfPlaying": 0,
-      "news": "Unspecified injury - Unknown return date",
-      "newsAdded": "2026-08-15T16:00:07.974271Z",
-      "points": 0,
-      "ppg": 0,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 71
     },
     {
       "id": 53,
@@ -6073,28 +6073,6 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 94
-    },
-    {
-      "id": 138,
-      "name": "Kostoulas",
-      "position": "FWD",
-      "club": "Brighton",
-      "clubShort": "BHA",
-      "clubCode": 36,
-      "teamId": 5,
-      "photoCode": 647850,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 1,
-      "ppg": 1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 20
     },
     {
       "id": 381,
@@ -10915,6 +10893,28 @@
       "positionRank": 103
     },
     {
+      "id": 582,
+      "name": "Madjo",
+      "position": "FWD",
+      "club": "Aston Villa",
+      "clubShort": "AVL",
+      "clubCode": 7,
+      "teamId": 2,
+      "photoCode": 690838,
+      "owner": null,
+      "status": "i",
+      "chanceOfPlaying": 0,
+      "news": "Unspecified injury - Unknown return date",
+      "newsAdded": "2026-08-15T16:00:07.974271Z",
+      "points": 0,
+      "ppg": 0,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 71
+    },
+    {
       "id": 351,
       "name": "Mamardashvili",
       "position": "GKP",
@@ -13577,5 +13577,5 @@
     "bonus": 2,
     "positionRank": 1
   },
-  "generatedAt": "2026-08-27T18:46:25.406Z"
+  "generatedAt": "2026-08-28T00:11:22.186Z"
 }
