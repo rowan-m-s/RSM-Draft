@@ -5,19 +5,20 @@
       "label": "August 2026",
       "shortLabel": "August",
       "gameweekIds": [
-        1
+        1,
+        2
       ],
       "totals": {
         "rushy": 46,
-        "kellett": 37,
-        "wallis": 50,
-        "jls": 39,
-        "paddy": 58,
+        "kellett": 46,
+        "wallis": 52,
+        "jls": 41,
+        "paddy": 59,
         "bennett": 41,
-        "wood": 47,
+        "wood": 49,
         "rowan": 46,
         "jason": 51,
-        "dj": 20,
+        "dj": 26,
         "ollie": 37
       },
       "pot": 5,
@@ -36,8 +37,8 @@
           "managerKey": "rushy"
         },
         "kellett": {
-          "playerName": "Calafiori",
-          "points": 9,
+          "playerName": "Haaland",
+          "points": 10,
           "managerKey": "kellett"
         },
         "wallis": {
@@ -46,7 +47,7 @@
           "managerKey": "wallis"
         },
         "jls": {
-          "playerName": "João Pedro",
+          "playerName": "Guéhi",
           "points": 11,
           "managerKey": "jls"
         },
@@ -76,7 +77,7 @@
           "managerKey": "jason"
         },
         "dj": {
-          "playerName": "Szoboszlai",
+          "playerName": "Semenyo",
           "points": 8,
           "managerKey": "dj"
         },
@@ -88,5 +89,5 @@
       }
     }
   ],
-  "generatedAt": "2026-08-28T14:47:13.991Z"
+  "generatedAt": "2026-08-28T19:51:05.872Z"
 }

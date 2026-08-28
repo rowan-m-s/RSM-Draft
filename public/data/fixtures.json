@@ -5544,9 +5544,9 @@
       "kickoff": "2026-08-28T19:00:00Z",
       "home": 8,
       "away": 15,
-      "homeScore": null,
-      "awayScore": null,
-      "started": false,
+      "homeScore": 0,
+      "awayScore": 1,
+      "started": true,
       "finished": false,
       "finishedProvisional": false,
       "homeDifficulty": 4,
@@ -10841,5 +10841,5 @@
       "code": 56
     }
   ],
-  "generatedAt": "2026-08-28T14:47:13.991Z"
+  "generatedAt": "2026-08-28T19:51:05.872Z"
 }

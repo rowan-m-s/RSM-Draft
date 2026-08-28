@@ -192,20 +192,154 @@
       "tradesUtc": "2026-08-26T17:30:00Z",
       "month": "2026-08",
       "finished": false,
-      "started": false,
-      "scoresProvisional": false,
+      "started": true,
+      "scoresProvisional": true,
       "kochReady": false,
-      "yetByManager": {},
+      "yetByManager": {
+        "rushy": 11,
+        "kellett": 8,
+        "wallis": 9,
+        "jls": 9,
+        "paddy": 9,
+        "bennett": 11,
+        "wood": 9,
+        "rowan": 11,
+        "jason": 11,
+        "dj": 9,
+        "ollie": 11
+      },
       "fixturesRemaining": true,
       "dataChecked": false,
       "confirmExpectedUtc": "2026-09-01T19:00:00.000Z",
       "revealFromUtc": "2026-09-01T08:05:00.000Z",
-      "scores": {},
+      "scores": {
+        "rushy": 0,
+        "kellett": 9,
+        "wallis": 2,
+        "jls": 2,
+        "paddy": 1,
+        "bennett": 0,
+        "wood": 2,
+        "rowan": 0,
+        "jason": 0,
+        "dj": 6,
+        "ollie": 0
+      },
       "kochKeys": [],
       "charged": 0,
-      "topPerformerByManager": {},
-      "scapegoatByManager": {},
-      "kochGraphicByManager": {}
+      "topPerformerByManager": {
+        "rushy": {
+          "playerName": "Sels",
+          "points": 0,
+          "managerKey": "rushy"
+        },
+        "kellett": {
+          "playerName": "Haaland",
+          "points": 8,
+          "managerKey": "kellett"
+        },
+        "wallis": {
+          "playerName": "O'Reilly",
+          "points": 1,
+          "managerKey": "wallis"
+        },
+        "jls": {
+          "playerName": "Khusanov",
+          "points": 1,
+          "managerKey": "jls"
+        },
+        "paddy": {
+          "playerName": "Rúben",
+          "points": 1,
+          "managerKey": "paddy"
+        },
+        "bennett": {
+          "playerName": "Kinsky",
+          "points": 0,
+          "managerKey": "bennett"
+        },
+        "wood": {
+          "playerName": "Donnarumma",
+          "points": 1,
+          "managerKey": "wood"
+        },
+        "rowan": {
+          "playerName": "Pickford",
+          "points": 0,
+          "managerKey": "rowan"
+        },
+        "jason": {
+          "playerName": "Trafford",
+          "points": 0,
+          "managerKey": "jason"
+        },
+        "dj": {
+          "playerName": "Semenyo",
+          "points": 6,
+          "managerKey": "dj"
+        },
+        "ollie": {
+          "playerName": "Raya",
+          "points": 0,
+          "managerKey": "ollie"
+        }
+      },
+      "scapegoatByManager": {
+        "rushy": null,
+        "kellett": {
+          "playerName": "Foden",
+          "points": 1,
+          "managerKey": "kellett",
+          "element": 398
+        },
+        "wallis": {
+          "playerName": "Canvot",
+          "points": 1,
+          "managerKey": "wallis",
+          "element": 203
+        },
+        "jls": {
+          "playerName": "Guéhi",
+          "points": 1,
+          "managerKey": "jls",
+          "element": 388
+        },
+        "paddy": {
+          "playerName": "Cherki",
+          "points": 0,
+          "managerKey": "paddy",
+          "element": 399
+        },
+        "bennett": null,
+        "wood": {
+          "playerName": "Donnarumma",
+          "points": 1,
+          "managerKey": "wood",
+          "element": 384
+        },
+        "rowan": null,
+        "jason": null,
+        "dj": {
+          "playerName": "Semenyo",
+          "points": 6,
+          "managerKey": "dj",
+          "element": 397
+        },
+        "ollie": null
+      },
+      "kochGraphicByManager": {
+        "rushy": null,
+        "kellett": null,
+        "wallis": null,
+        "jls": null,
+        "paddy": null,
+        "bennett": null,
+        "wood": null,
+        "rowan": null,
+        "jason": null,
+        "dj": 437730,
+        "ollie": null
+      }
     },
     {
       "id": 3,
@@ -1036,5 +1170,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-08-28T14:47:13.991Z"
+  "generatedAt": "2026-08-28T19:51:05.872Z"
 }
