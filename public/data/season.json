@@ -3,9 +3,9 @@
     {
       "key": "paddy",
       "rank": 1,
-      "total": 74,
-      "gw": 16,
-      "month": 74,
+      "total": 77,
+      "gw": 19,
+      "month": 77,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -18,8 +18,25 @@
       }
     },
     {
-      "key": "kellett",
+      "key": "rowan",
       "rank": 2,
+      "total": 65,
+      "gw": 19,
+      "month": 65,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "Gibbs-White",
+        "points": 15,
+        "managerKey": "rowan"
+      }
+    },
+    {
+      "key": "kellett",
+      "rank": 3,
       "total": 60,
       "gw": 23,
       "month": 60,
@@ -35,28 +52,62 @@
       }
     },
     {
-      "key": "rowan",
-      "rank": 2,
-      "total": 60,
-      "gw": 14,
-      "month": 60,
+      "key": "rushy",
+      "rank": 4,
+      "total": 59,
+      "gw": 13,
+      "month": 59,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
       "potsWon": 0,
       "balance": 0,
       "topPerformer": {
-        "playerName": "M.Sangaré",
+        "playerName": "Gakpo",
+        "points": 17,
+        "managerKey": "rushy"
+      }
+    },
+    {
+      "key": "wood",
+      "rank": 4,
+      "total": 59,
+      "gw": 12,
+      "month": 59,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "De Cuyper",
+        "points": 17,
+        "managerKey": "wood"
+      }
+    },
+    {
+      "key": "bennett",
+      "rank": 6,
+      "total": 57,
+      "gw": 16,
+      "month": 57,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "Dewsbury-Hall",
         "points": 14,
-        "managerKey": "rowan"
+        "managerKey": "bennett"
       }
     },
     {
       "key": "jason",
-      "rank": 4,
-      "total": 53,
-      "gw": 2,
-      "month": 53,
+      "rank": 7,
+      "total": 54,
+      "gw": 3,
+      "month": 54,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -70,10 +121,10 @@
     },
     {
       "key": "wallis",
-      "rank": 5,
-      "total": 52,
-      "gw": 2,
-      "month": 52,
+      "rank": 8,
+      "total": 53,
+      "gw": 3,
+      "month": 53,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -86,62 +137,11 @@
       }
     },
     {
-      "key": "wood",
-      "rank": 5,
-      "total": 52,
-      "gw": 5,
-      "month": 52,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "De Cuyper",
-        "points": 17,
-        "managerKey": "wood"
-      }
-    },
-    {
-      "key": "rushy",
-      "rank": 7,
-      "total": 49,
-      "gw": 3,
-      "month": 49,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "Gakpo",
-        "points": 13,
-        "managerKey": "rushy"
-      }
-    },
-    {
-      "key": "bennett",
-      "rank": 8,
-      "total": 47,
-      "gw": 6,
-      "month": 47,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "Dewsbury-Hall",
-        "points": 11,
-        "managerKey": "bennett"
-      }
-    },
-    {
       "key": "jls",
       "rank": 9,
-      "total": 45,
-      "gw": 6,
-      "month": 45,
+      "total": 44,
+      "gw": 5,
+      "month": 44,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -156,9 +156,9 @@
     {
       "key": "ollie",
       "rank": 10,
-      "total": 38,
-      "gw": 1,
-      "month": 38,
+      "total": 42,
+      "gw": 5,
+      "month": 42,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -173,9 +173,9 @@
     {
       "key": "dj",
       "rank": 11,
-      "total": 26,
-      "gw": 6,
-      "month": 26,
+      "total": 30,
+      "gw": 10,
+      "month": 30,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -183,7 +183,7 @@
       "balance": -5,
       "topPerformer": {
         "playerName": "Szoboszlai",
-        "points": 9,
+        "points": 12,
         "managerKey": "dj"
       }
     }
@@ -195,7 +195,7 @@
     "keys": [
       "paddy"
     ],
-    "total": 74,
+    "total": 77,
     "since": 1,
     "sinceByKey": {
       "paddy": 1
@@ -205,7 +205,7 @@
     "displaced": null,
     "changed": true
   },
-  "generatedAt": "2026-08-29T12:05:59.134Z",
+  "generatedAt": "2026-08-29T14:53:18.945Z",
   "graphics": {
     "koch": {
       "rushy": 244850,
@@ -239,9 +239,9 @@
       "wallis": 532529,
       "jls": 475168,
       "paddy": 244851,
-      "bennett": 482973,
+      "bennett": 219168,
       "wood": 444102,
-      "rowan": 466525,
+      "rowan": 222531,
       "jason": 184029,
       "dj": 424876,
       "ollie": 154561
@@ -252,9 +252,9 @@
       "wallis": 532529,
       "jls": 475168,
       "paddy": 219847,
-      "bennett": 482973,
+      "bennett": 219168,
       "wood": 444102,
-      "rowan": 466525,
+      "rowan": 222531,
       "jason": 184029,
       "dj": 424876,
       "ollie": 154561

@@ -198,39 +198,39 @@
       "yetByManager": {
         "rushy": 7,
         "kellett": 7,
-        "wallis": 9,
-        "jls": 7,
-        "paddy": 9,
-        "bennett": 8,
-        "wood": 9,
-        "rowan": 9,
-        "jason": 9,
-        "dj": 8,
-        "ollie": 9
+        "wallis": 8,
+        "jls": 6,
+        "paddy": 6,
+        "bennett": 4,
+        "wood": 6,
+        "rowan": 7,
+        "jason": 8,
+        "dj": 6,
+        "ollie": 8
       },
       "fixturesRemaining": true,
       "dataChecked": false,
       "confirmExpectedUtc": "2026-09-01T19:00:00.000Z",
       "revealFromUtc": "2026-09-01T08:05:00.000Z",
       "scores": {
-        "rushy": 3,
+        "rushy": 13,
         "kellett": 23,
-        "wallis": 2,
-        "jls": 6,
-        "paddy": 16,
-        "bennett": 6,
-        "wood": 5,
-        "rowan": 14,
-        "jason": 2,
-        "dj": 6,
-        "ollie": 1
+        "wallis": 3,
+        "jls": 5,
+        "paddy": 19,
+        "bennett": 16,
+        "wood": 12,
+        "rowan": 19,
+        "jason": 3,
+        "dj": 10,
+        "ollie": 5
       },
       "kochKeys": [],
       "charged": 0,
       "topPerformerByManager": {
         "rushy": {
-          "playerName": "Sels",
-          "points": 1,
+          "playerName": "N.Williams",
+          "points": 6,
           "managerKey": "rushy"
         },
         "kellett": {
@@ -254,8 +254,8 @@
           "managerKey": "paddy"
         },
         "bennett": {
-          "playerName": "Frimpong",
-          "points": 4,
+          "playerName": "Isak",
+          "points": 8,
           "managerKey": "bennett"
         },
         "wood": {
@@ -264,8 +264,8 @@
           "managerKey": "wood"
         },
         "rowan": {
-          "playerName": "Wirtz",
-          "points": 9,
+          "playerName": "Gibbs-White",
+          "points": 13,
           "managerKey": "rowan"
         },
         "jason": {
@@ -280,16 +280,16 @@
         },
         "ollie": {
           "playerName": "Jacquet",
-          "points": 1,
+          "points": 3,
           "managerKey": "ollie"
         }
       },
       "scapegoatByManager": {
         "rushy": {
-          "playerName": "Gakpo",
+          "playerName": "Sels",
           "points": 1,
           "managerKey": "rushy",
-          "element": 367
+          "element": 467
         },
         "kellett": {
           "playerName": "Murillo",
@@ -305,21 +305,21 @@
         },
         "jls": {
           "playerName": "A.Becker",
-          "points": 1,
+          "points": 0,
           "managerKey": "jls",
           "element": 350
         },
         "paddy": {
-          "playerName": "Rúben",
-          "points": 2,
+          "playerName": "Awoniyi",
+          "points": 1,
           "managerKey": "paddy",
-          "element": 390
+          "element": 492
         },
         "bennett": {
-          "playerName": "Igor Jesus",
+          "playerName": "Frimpong",
           "points": 1,
           "managerKey": "bennett",
-          "element": 491
+          "element": 357
         },
         "wood": {
           "playerName": "Donnarumma",
@@ -328,10 +328,10 @@
           "element": 384
         },
         "rowan": {
-          "playerName": "Gibbs-White",
-          "points": 5,
+          "playerName": "McBurnie",
+          "points": 1,
           "managerKey": "rowan",
-          "element": 480
+          "element": 295
         },
         "jason": {
           "playerName": "Kerkez",
@@ -340,16 +340,16 @@
           "element": 358
         },
         "dj": {
-          "playerName": "Szoboszlai",
+          "playerName": "Barry",
           "points": 1,
           "managerKey": "dj",
-          "element": 368
+          "element": 249
         },
         "ollie": {
-          "playerName": "Jacquet",
+          "playerName": "Delap",
           "points": 1,
           "managerKey": "ollie",
-          "element": 362
+          "element": 167
         }
       },
       "kochGraphicByManager": {
@@ -1195,5 +1195,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-08-29T12:05:59.134Z"
+  "generatedAt": "2026-08-29T14:53:18.945Z"
 }
