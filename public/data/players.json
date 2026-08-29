@@ -900,7 +900,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 21
+      "positionRank": 20
     },
     {
       "id": 566,
@@ -3853,28 +3853,6 @@
       "positionRank": 22
     },
     {
-      "id": 447,
-      "name": "Botman",
-      "position": "DEF",
-      "club": "Newcastle",
-      "clubShort": "NEW",
-      "clubCode": 4,
-      "teamId": 17,
-      "photoCode": 220237,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 9,
-      "ppg": 4.5,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 20
-    },
-    {
       "id": 98,
       "name": "Janelt",
       "position": "MID",
@@ -3939,6 +3917,28 @@
       "cleanSheets": 0,
       "bonus": 2,
       "positionRank": 24
+    },
+    {
+      "id": 447,
+      "name": "Botman",
+      "position": "DEF",
+      "club": "Newcastle",
+      "clubShort": "NEW",
+      "clubCode": 4,
+      "teamId": 17,
+      "photoCode": 220237,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 8,
+      "ppg": 4,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 21
     },
     {
       "id": 290,
@@ -13709,5 +13709,5 @@
     "bonus": 4,
     "positionRank": 1
   },
-  "generatedAt": "2026-08-29T18:06:38.624Z"
+  "generatedAt": "2026-08-29T18:07:44.739Z"
 }
