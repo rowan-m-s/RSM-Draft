@@ -5573,10 +5573,10 @@
       "home": 3,
       "away": 9,
       "homeScore": 1,
-      "awayScore": 0,
+      "awayScore": 1,
       "started": true,
       "finished": false,
-      "finishedProvisional": false,
+      "finishedProvisional": true,
       "homeDifficulty": 3,
       "awayDifficulty": 3
     },
@@ -5587,10 +5587,10 @@
       "home": 7,
       "away": 11,
       "homeScore": 0,
-      "awayScore": 0,
+      "awayScore": 1,
       "started": true,
       "finished": false,
-      "finishedProvisional": false,
+      "finishedProvisional": true,
       "homeDifficulty": 2,
       "awayDifficulty": 2
     },
@@ -5600,9 +5600,9 @@
       "kickoff": "2026-08-29T16:30:00Z",
       "home": 19,
       "away": 17,
-      "homeScore": null,
-      "awayScore": null,
-      "started": false,
+      "homeScore": 0,
+      "awayScore": 2,
+      "started": true,
       "finished": false,
       "finishedProvisional": false,
       "homeDifficulty": 2,
@@ -10841,5 +10841,5 @@
       "code": 56
     }
   ],
-  "generatedAt": "2026-08-29T14:53:18.945Z"
+  "generatedAt": "2026-08-29T18:06:38.624Z"
 }

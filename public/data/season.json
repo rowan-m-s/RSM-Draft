@@ -3,9 +3,9 @@
     {
       "key": "paddy",
       "rank": 1,
-      "total": 77,
-      "gw": 19,
-      "month": 77,
+      "total": 85,
+      "gw": 27,
+      "month": 85,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -20,9 +20,9 @@
     {
       "key": "rowan",
       "rank": 2,
-      "total": 65,
-      "gw": 19,
-      "month": 65,
+      "total": 75,
+      "gw": 29,
+      "month": 75,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -35,11 +35,28 @@
       }
     },
     {
-      "key": "kellett",
+      "key": "bennett",
       "rank": 3,
-      "total": 60,
-      "gw": 23,
-      "month": 60,
+      "total": 73,
+      "gw": 32,
+      "month": 73,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "Tarkowski",
+        "points": 18,
+        "managerKey": "bennett"
+      }
+    },
+    {
+      "key": "kellett",
+      "rank": 4,
+      "total": 70,
+      "gw": 33,
+      "month": 70,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -53,10 +70,10 @@
     },
     {
       "key": "rushy",
-      "rank": 4,
-      "total": 59,
-      "gw": 13,
-      "month": 59,
+      "rank": 5,
+      "total": 60,
+      "gw": 14,
+      "month": 60,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -70,10 +87,10 @@
     },
     {
       "key": "wood",
-      "rank": 4,
-      "total": 59,
-      "gw": 12,
-      "month": 59,
+      "rank": 5,
+      "total": 60,
+      "gw": 13,
+      "month": 60,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -86,45 +103,11 @@
       }
     },
     {
-      "key": "bennett",
-      "rank": 6,
-      "total": 57,
-      "gw": 16,
-      "month": 57,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "Dewsbury-Hall",
-        "points": 14,
-        "managerKey": "bennett"
-      }
-    },
-    {
-      "key": "jason",
-      "rank": 7,
-      "total": 54,
-      "gw": 3,
-      "month": 54,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "Ødegaard",
-        "points": 11,
-        "managerKey": "jason"
-      }
-    },
-    {
       "key": "wallis",
-      "rank": 8,
-      "total": 53,
-      "gw": 3,
-      "month": 53,
+      "rank": 7,
+      "total": 56,
+      "gw": 6,
+      "month": 56,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -137,11 +120,45 @@
       }
     },
     {
-      "key": "jls",
-      "rank": 9,
-      "total": 44,
+      "key": "jason",
+      "rank": 7,
+      "total": 56,
       "gw": 5,
-      "month": 44,
+      "month": 56,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "Ødegaard",
+        "points": 11,
+        "managerKey": "jason"
+      }
+    },
+    {
+      "key": "ollie",
+      "rank": 9,
+      "total": 53,
+      "gw": 16,
+      "month": 53,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "Mykolenko",
+        "points": 10,
+        "managerKey": "ollie"
+      }
+    },
+    {
+      "key": "jls",
+      "rank": 10,
+      "total": 47,
+      "gw": 8,
+      "month": 47,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -154,28 +171,11 @@
       }
     },
     {
-      "key": "ollie",
-      "rank": 10,
-      "total": 42,
-      "gw": 5,
-      "month": 42,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "Emersonn",
-        "points": 9,
-        "managerKey": "ollie"
-      }
-    },
-    {
       "key": "dj",
       "rank": 11,
-      "total": 30,
-      "gw": 10,
-      "month": 30,
+      "total": 31,
+      "gw": 11,
+      "month": 31,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -195,7 +195,7 @@
     "keys": [
       "paddy"
     ],
-    "total": 77,
+    "total": 85,
     "since": 1,
     "sinceByKey": {
       "paddy": 1
@@ -205,7 +205,7 @@
     "displaced": null,
     "changed": true
   },
-  "generatedAt": "2026-08-29T14:53:18.945Z",
+  "generatedAt": "2026-08-29T18:06:38.624Z",
   "graphics": {
     "koch": {
       "rushy": 244850,
