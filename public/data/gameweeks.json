@@ -196,34 +196,34 @@
       "scoresProvisional": true,
       "kochReady": true,
       "yetByManager": {
-        "rushy": 6,
-        "kellett": 3,
-        "wallis": 8,
-        "jls": 4,
-        "paddy": 5,
-        "bennett": 3,
-        "wood": 6,
-        "rowan": 6,
-        "jason": 8,
-        "dj": 6,
-        "ollie": 6
+        "rushy": 3,
+        "kellett": 2,
+        "wallis": 2,
+        "jls": 0,
+        "paddy": 2,
+        "bennett": 1,
+        "wood": 3,
+        "rowan": 1,
+        "jason": 4,
+        "dj": 1,
+        "ollie": 5
       },
       "fixturesRemaining": true,
       "dataChecked": false,
       "confirmExpectedUtc": "2026-09-01T19:00:00.000Z",
       "revealFromUtc": "2026-09-01T08:05:00.000Z",
       "scores": {
-        "rushy": 14,
-        "kellett": 33,
-        "wallis": 6,
-        "jls": 8,
-        "paddy": 27,
-        "bennett": 30,
-        "wood": 13,
-        "rowan": 29,
-        "jason": 5,
-        "dj": 11,
-        "ollie": 16
+        "rushy": 17,
+        "kellett": 34,
+        "wallis": 10,
+        "jls": 11,
+        "paddy": 30,
+        "bennett": 31,
+        "wood": 16,
+        "rowan": 33,
+        "jason": 8,
+        "dj": 14,
+        "ollie": 17
       },
       "kochKeys": [],
       "charged": 0,
@@ -310,10 +310,10 @@
           "element": 350
         },
         "paddy": {
-          "playerName": "Awoniyi",
-          "points": 2,
+          "playerName": "Gonzalo",
+          "points": 1,
           "managerKey": "paddy",
-          "element": 492
+          "element": 569
         },
         "bennett": {
           "playerName": "Frimpong",
@@ -328,10 +328,10 @@
           "element": 384
         },
         "rowan": {
-          "playerName": "McBurnie",
+          "playerName": "Ajer",
           "points": 1,
           "managerKey": "rowan",
-          "element": 295
+          "element": 87
         },
         "jason": {
           "playerName": "Kerkez",
@@ -340,10 +340,10 @@
           "element": 358
         },
         "dj": {
-          "playerName": "Barry",
-          "points": 2,
+          "playerName": "Aaronson",
+          "points": 1,
           "managerKey": "dj",
-          "element": 249
+          "element": 337
         },
         "ollie": {
           "playerName": "Delap",
@@ -1195,5 +1195,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-08-30T09:02:22.492Z"
+  "generatedAt": "2026-08-30T14:37:57.633Z"
 }
