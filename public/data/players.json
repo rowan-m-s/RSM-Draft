@@ -460,7 +460,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 15
+      "positionRank": 16
     },
     {
       "id": 427,
@@ -482,7 +482,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 17
+      "positionRank": 18
     },
     {
       "id": 237,
@@ -504,7 +504,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 16
+      "positionRank": 17
     },
     {
       "id": 40,
@@ -526,7 +526,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 13
+      "positionRank": 14
     },
     {
       "id": 94,
@@ -548,7 +548,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 14
+      "positionRank": 15
     },
     {
       "id": 388,
@@ -614,7 +614,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 18
+      "positionRank": 19
     },
     {
       "id": 385,
@@ -856,7 +856,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 19
+      "positionRank": 18
     },
     {
       "id": 316,
@@ -944,7 +944,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 21
+      "positionRank": 20
     },
     {
       "id": 233,
@@ -966,7 +966,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 20
+      "positionRank": 19
     },
     {
       "id": 226,
@@ -1010,7 +1010,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 22
+      "positionRank": 21
     },
     {
       "id": 346,
@@ -1054,7 +1054,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 23
+      "positionRank": 22
     },
     {
       "id": 79,
@@ -1164,7 +1164,29 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 24
+      "positionRank": 23
+    },
+    {
+      "id": 532,
+      "name": "Ballard",
+      "position": "DEF",
+      "club": "Sunderland",
+      "clubShort": "SUN",
+      "clubCode": 56,
+      "teamId": 20,
+      "photoCode": 223827,
+      "owner": "rowan",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 8,
+      "ppg": 4,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 29
     },
     {
       "id": 569,
@@ -1209,28 +1231,6 @@
       "cleanSheets": 1,
       "bonus": 0,
       "positionRank": 5
-    },
-    {
-      "id": 541,
-      "name": "Meunier",
-      "position": "DEF",
-      "club": "Sunderland",
-      "clubShort": "SUN",
-      "clubCode": 56,
-      "teamId": 20,
-      "photoCode": 93605,
-      "owner": "rushy",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-16T08:30:07.830062Z",
-      "points": 8,
-      "ppg": 4,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 1,
-      "positionRank": 30
     },
     {
       "id": 469,
@@ -1299,6 +1299,28 @@
       "positionRank": 32
     },
     {
+      "id": 541,
+      "name": "Meunier",
+      "position": "DEF",
+      "club": "Sunderland",
+      "clubShort": "SUN",
+      "clubCode": 56,
+      "teamId": 20,
+      "photoCode": 93605,
+      "owner": "rushy",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-16T08:30:07.830062Z",
+      "points": 7,
+      "ppg": 3.5,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 35
+    },
+    {
       "id": 529,
       "name": "Roefs",
       "position": "GKP",
@@ -1341,28 +1363,6 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 41
-    },
-    {
-      "id": 532,
-      "name": "Ballard",
-      "position": "DEF",
-      "club": "Sunderland",
-      "clubShort": "SUN",
-      "clubCode": 56,
-      "teamId": 20,
-      "photoCode": 223827,
-      "owner": "rowan",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 6,
-      "ppg": 3,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 38
     },
     {
       "id": 371,
@@ -1494,7 +1494,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 35
+      "positionRank": 36
     },
     {
       "id": 1,
@@ -1582,7 +1582,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 37
+      "positionRank": 38
     },
     {
       "id": 366,
@@ -3677,6 +3677,28 @@
       "positionRank": 4
     },
     {
+      "id": 544,
+      "name": "Xhaka",
+      "position": "MID",
+      "club": "Sunderland",
+      "clubShort": "SUN",
+      "clubCode": 56,
+      "teamId": 20,
+      "photoCode": 84450,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 15,
+      "ppg": 7.5,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 5,
+      "positionRank": 12
+    },
+    {
       "id": 69,
       "name": "Scott",
       "position": "MID",
@@ -3696,7 +3718,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 12
+      "positionRank": 13
     },
     {
       "id": 258,
@@ -3784,51 +3806,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 19
-    },
-    {
-      "id": 544,
-      "name": "Xhaka",
-      "position": "MID",
-      "club": "Sunderland",
-      "clubShort": "SUN",
-      "clubCode": 56,
-      "teamId": 20,
-      "photoCode": 84450,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 12,
-      "ppg": 6,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 2,
       "positionRank": 20
-    },
-    {
-      "id": 533,
-      "name": "Mukiele",
-      "position": "DEF",
-      "club": "Sunderland",
-      "clubShort": "SUN",
-      "clubCode": 56,
-      "teamId": 20,
-      "photoCode": 200834,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-09T08:30:05.954750Z",
-      "points": 11,
-      "ppg": 11,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 3,
-      "positionRank": 18
     },
     {
       "id": 173,
@@ -3985,6 +3963,28 @@
       "positionRank": 9
     },
     {
+      "id": 533,
+      "name": "Mukiele",
+      "position": "DEF",
+      "club": "Sunderland",
+      "clubShort": "SUN",
+      "clubCode": 56,
+      "teamId": 20,
+      "photoCode": 200834,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-09T08:30:05.954750Z",
+      "points": 9,
+      "ppg": 9,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 1,
+      "positionRank": 24
+    },
+    {
       "id": 460,
       "name": "Willock",
       "position": "MID",
@@ -4136,7 +4136,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 29
+      "positionRank": 30
     },
     {
       "id": 161,
@@ -4356,7 +4356,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 36
+      "positionRank": 37
     },
     {
       "id": 315,
@@ -9067,6 +9067,28 @@
       "positionRank": 211
     },
     {
+      "id": 626,
+      "name": "Cairns",
+      "position": "GKP",
+      "club": "Leeds",
+      "clubShort": "LEE",
+      "clubCode": 2,
+      "teamId": 13,
+      "photoCode": 97846,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 0,
+      "ppg": 0,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 70
+    },
+    {
       "id": 220,
       "name": "Cardines",
       "position": "DEF",
@@ -9241,6 +9263,28 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 134
+    },
+    {
+      "id": 624,
+      "name": "Cozier-Duberry",
+      "position": "MID",
+      "club": "Brighton",
+      "clubShort": "BHA",
+      "clubCode": 36,
+      "teamId": 5,
+      "photoCode": 519324,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 0,
+      "ppg": 0,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 274
     },
     {
       "id": 603,
@@ -13621,6 +13665,28 @@
       "positionRank": 217
     },
     {
+      "id": 625,
+      "name": "Zepa",
+      "position": "MID",
+      "club": "Fulham",
+      "clubShort": "FUL",
+      "clubCode": 54,
+      "teamId": 10,
+      "photoCode": 616069,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 0,
+      "ppg": 0,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 275
+    },
+    {
       "id": 440,
       "name": "Zirkzee",
       "position": "FWD",
@@ -13684,7 +13750,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 274
+      "positionRank": 276
     },
     {
       "id": 37,
@@ -13731,5 +13797,5 @@
     "bonus": 3,
     "positionRank": 1
   },
-  "generatedAt": "2026-08-30T18:11:21.455Z"
+  "generatedAt": "2026-08-30T20:22:44.883Z"
 }

@@ -2171,6 +2171,29 @@
         ]
       },
       "532": {
+        "total": 8,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 90,
+            "points": 2
+          },
+          {
+            "stat": "clean_sheets",
+            "name": "Clean sheets",
+            "value": 1,
+            "points": 4
+          },
+          {
+            "stat": "defensive_contribution",
+            "name": "Defensive Contribution",
+            "value": 10,
+            "points": 2
+          }
+        ]
+      },
+      "541": {
         "total": 6,
         "components": [
           {
@@ -2184,29 +2207,6 @@
             "name": "Clean sheets",
             "value": 1,
             "points": 4
-          }
-        ]
-      },
-      "541": {
-        "total": 7,
-        "components": [
-          {
-            "stat": "minutes",
-            "name": "Minutes played",
-            "value": 90,
-            "points": 2
-          },
-          {
-            "stat": "clean_sheets",
-            "name": "Clean sheets",
-            "value": 1,
-            "points": 4
-          },
-          {
-            "stat": "bonus",
-            "name": "Bonus",
-            "value": 1,
-            "points": 1
           }
         ]
       },
@@ -2333,5 +2333,5 @@
       }
     }
   },
-  "generatedAt": "2026-08-30T18:11:21.455Z"
+  "generatedAt": "2026-08-30T20:22:44.883Z"
 }
