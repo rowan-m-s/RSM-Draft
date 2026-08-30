@@ -144,7 +144,7 @@
       "owner": "wallis",
       "status": "d",
       "chanceOfPlaying": 25,
-      "news": "Unspecified injury - 25% chance of playing",
+      "news": "Unspecified injury - 50% chance of playing",
       "newsAdded": "2026-08-27T19:30:07.780933Z",
       "points": 16,
       "ppg": 16,
@@ -441,6 +441,28 @@
       "positionRank": 12
     },
     {
+      "id": 464,
+      "name": "Wissa",
+      "position": "FWD",
+      "club": "Newcastle",
+      "clubShort": "NEW",
+      "clubCode": 4,
+      "teamId": 17,
+      "photoCode": 216646,
+      "owner": "rowan",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 12,
+      "ppg": 6,
+      "goals": 1,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 2,
+      "positionRank": 2
+    },
+    {
       "id": 165,
       "name": "João Pedro",
       "position": "FWD",
@@ -460,7 +482,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 2
+      "positionRank": 3
     },
     {
       "id": 15,
@@ -527,28 +549,6 @@
       "cleanSheets": 1,
       "bonus": 2,
       "positionRank": 12
-    },
-    {
-      "id": 464,
-      "name": "Wissa",
-      "position": "FWD",
-      "club": "Newcastle",
-      "clubShort": "NEW",
-      "clubCode": 4,
-      "teamId": 17,
-      "photoCode": 216646,
-      "owner": "rowan",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 11,
-      "ppg": 5.5,
-      "goals": 1,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 1,
-      "positionRank": 3
     },
     {
       "id": 249,
@@ -10176,9 +10176,9 @@
       "teamId": 13,
       "photoCode": 486520,
       "owner": null,
-      "status": "i",
+      "status": "d",
       "chanceOfPlaying": 0,
-      "news": "Knee injury - Unknown return date",
+      "news": "Knee injury - 25% chance of playing",
       "newsAdded": "2026-08-14T23:00:06.272027Z",
       "points": 0,
       "ppg": 0,
@@ -11982,7 +11982,7 @@
       "owner": null,
       "status": "i",
       "chanceOfPlaying": 0,
-      "news": "Unspecified injury - Unknown return date",
+      "news": "Groin injury - Unknown return date",
       "newsAdded": "2026-08-15T20:00:06.779594Z",
       "points": 0,
       "ppg": 0,
@@ -13731,5 +13731,5 @@
     "bonus": 4,
     "positionRank": 1
   },
-  "generatedAt": "2026-08-29T20:54:10.658Z"
+  "generatedAt": "2026-08-30T01:06:05.965Z"
 }
