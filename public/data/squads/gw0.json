@@ -2777,10 +2777,10 @@
       "clubShort": "IPS",
       "clubCode": 40,
       "photoCode": 543968,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
+      "status": "d",
+      "chanceOfPlaying": 75,
+      "news": "Knee injury - 75% chance of playing",
+      "newsAdded": "2026-08-31T09:30:08.306145Z"
     },
     "327": {
       "name": "Bijol",
@@ -3365,9 +3365,9 @@
       "clubShort": "ARS",
       "clubCode": 3,
       "photoCode": 208706,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 75,
-      "news": "Thigh injury - 75% chance of playing",
+      "news": null,
       "newsAdded": "2026-08-20T17:00:08.846118Z"
     },
     "453": {
@@ -3827,5 +3827,5 @@
       "newsAdded": "2026-08-15T16:00:07.974271Z"
     }
   },
-  "generatedAt": "2026-08-31T09:11:52.286Z"
+  "generatedAt": "2026-08-31T18:35:24.292Z"
 }
