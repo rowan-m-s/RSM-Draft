@@ -196,40 +196,40 @@
       "scoresProvisional": true,
       "kochReady": true,
       "yetByManager": {
-        "rushy": 3,
-        "kellett": 2,
-        "wallis": 1,
+        "rushy": 0,
+        "kellett": 0,
+        "wallis": 0,
         "jls": 0,
-        "paddy": 2,
-        "bennett": 1,
-        "wood": 1,
+        "paddy": 0,
+        "bennett": 0,
+        "wood": 0,
         "rowan": 0,
-        "jason": 2,
+        "jason": 0,
         "dj": 0,
-        "ollie": 2
+        "ollie": 0
       },
       "fixturesRemaining": true,
       "dataChecked": false,
       "confirmExpectedUtc": "2026-09-01T19:00:00.000Z",
       "revealFromUtc": "2026-09-01T08:05:00.000Z",
       "scores": {
-        "rushy": 28,
-        "kellett": 35,
-        "wallis": 24,
+        "rushy": 35,
+        "kellett": 48,
+        "wallis": 32,
         "jls": 21,
-        "paddy": 40,
-        "bennett": 33,
-        "wood": 43,
+        "paddy": 49,
+        "bennett": 36,
+        "wood": 44,
         "rowan": 49,
-        "jason": 25,
+        "jason": 39,
         "dj": 27,
-        "ollie": 34
+        "ollie": 40
       },
       "kochKeys": [],
       "charged": 0,
       "topPerformerByManager": {
         "rushy": {
-          "playerName": "N.Williams",
+          "playerName": "Mosquera",
           "points": 6,
           "managerKey": "rushy"
         },
@@ -239,7 +239,7 @@
           "managerKey": "kellett"
         },
         "wallis": {
-          "playerName": "Calvert-Lewin",
+          "playerName": "Gabriel",
           "points": 8,
           "managerKey": "wallis"
         },
@@ -269,8 +269,8 @@
           "managerKey": "rowan"
         },
         "jason": {
-          "playerName": "Cunha",
-          "points": 9,
+          "playerName": "Saka",
+          "points": 11,
           "managerKey": "jason"
         },
         "dj": {
@@ -346,10 +346,10 @@
           "element": 337
         },
         "ollie": {
-          "playerName": "Delap",
-          "points": 1,
+          "playerName": "Tzolis",
+          "points": 0,
           "managerKey": "ollie",
-          "element": 167
+          "element": 554
         }
       },
       "kochGraphicByManager": {
@@ -1195,5 +1195,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-08-31T18:35:24.292Z"
+  "generatedAt": "2026-08-31T21:09:37.313Z"
 }

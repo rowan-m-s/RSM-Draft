@@ -5670,11 +5670,11 @@
       "kickoff": "2026-08-31T19:00:00Z",
       "home": 2,
       "away": 1,
-      "homeScore": null,
-      "awayScore": null,
-      "started": false,
+      "homeScore": 0,
+      "awayScore": 1,
+      "started": true,
       "finished": false,
-      "finishedProvisional": false,
+      "finishedProvisional": true,
       "homeDifficulty": 4,
       "awayDifficulty": 4
     },
@@ -10841,5 +10841,5 @@
       "code": 56
     }
   ],
-  "generatedAt": "2026-08-31T18:35:24.292Z"
+  "generatedAt": "2026-08-31T21:09:37.313Z"
 }
