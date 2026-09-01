@@ -9,22 +9,24 @@
         2
       ],
       "totals": {
-        "rushy": 81,
-        "kellett": 85,
-        "wallis": 82,
-        "jls": 60,
+        "rushy": 82,
+        "kellett": 87,
+        "wallis": 86,
+        "jls": 61,
         "paddy": 107,
         "bennett": 79,
         "wood": 91,
-        "rowan": 95,
-        "jason": 90,
-        "dj": 47,
+        "rowan": 96,
+        "jason": 94,
+        "dj": 52,
         "ollie": 77
       },
-      "pot": 5,
-      "settled": false,
-      "winnerKeys": [],
-      "potPerWinner": 0,
+      "pot": 10,
+      "settled": true,
+      "winnerKeys": [
+        "paddy"
+      ],
+      "potPerWinner": 10,
       "topPerformer": {
         "playerName": "B.Fernandes",
         "points": 25,
@@ -89,5 +91,5 @@
       }
     }
   ],
-  "generatedAt": "2026-09-01T08:11:38.891Z"
+  "generatedAt": "2026-09-01T12:44:22.691Z"
 }
