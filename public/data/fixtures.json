@@ -622,7 +622,7 @@
         {
           "opponent": 13,
           "home": false,
-          "kickoff": "2026-09-19T14:00:00Z"
+          "kickoff": "2026-09-20T13:00:00Z"
         }
       ],
       "9": [
@@ -657,7 +657,7 @@
         {
           "opponent": 8,
           "home": true,
-          "kickoff": "2026-09-19T14:00:00Z"
+          "kickoff": "2026-09-20T13:00:00Z"
         }
       ],
       "14": [
@@ -1027,7 +1027,7 @@
         {
           "opponent": 14,
           "home": false,
-          "kickoff": "2026-10-24T14:00:00Z"
+          "kickoff": "2026-10-25T14:00:00Z"
         }
       ],
       "6": [
@@ -1090,7 +1090,7 @@
         {
           "opponent": 5,
           "home": true,
-          "kickoff": "2026-10-24T14:00:00Z"
+          "kickoff": "2026-10-25T14:00:00Z"
         }
       ],
       "15": [
@@ -1148,7 +1148,7 @@
         {
           "opponent": 10,
           "home": true,
-          "kickoff": "2026-11-01T14:00:00Z"
+          "kickoff": "2026-10-31T20:00:00Z"
         }
       ],
       "3": [
@@ -1204,7 +1204,7 @@
         {
           "opponent": 2,
           "home": false,
-          "kickoff": "2026-11-01T14:00:00Z"
+          "kickoff": "2026-10-31T20:00:00Z"
         }
       ],
       "11": [
@@ -6015,20 +6015,6 @@
       "awayDifficulty": 3
     },
     {
-      "id": 44,
-      "event": 5,
-      "kickoff": "2026-09-19T14:00:00Z",
-      "home": 13,
-      "away": 8,
-      "homeScore": null,
-      "awayScore": null,
-      "started": false,
-      "finished": false,
-      "finishedProvisional": false,
-      "homeDifficulty": 3,
-      "awayDifficulty": 3
-    },
-    {
       "id": 46,
       "event": 5,
       "kickoff": "2026-09-19T14:00:00Z",
@@ -6054,6 +6040,20 @@
       "finished": false,
       "finishedProvisional": false,
       "homeDifficulty": 2,
+      "awayDifficulty": 3
+    },
+    {
+      "id": 44,
+      "event": 5,
+      "kickoff": "2026-09-20T13:00:00Z",
+      "home": 13,
+      "away": 8,
+      "homeScore": null,
+      "awayScore": null,
+      "started": false,
+      "finished": false,
+      "finishedProvisional": false,
+      "homeDifficulty": 3,
       "awayDifficulty": 3
     },
     {
@@ -6435,20 +6435,6 @@
       "awayDifficulty": 2
     },
     {
-      "id": 78,
-      "event": 8,
-      "kickoff": "2026-10-24T14:00:00Z",
-      "home": 14,
-      "away": 5,
-      "homeScore": null,
-      "awayScore": null,
-      "started": false,
-      "finished": false,
-      "finishedProvisional": false,
-      "homeDifficulty": 2,
-      "awayDifficulty": 4
-    },
-    {
       "id": 73,
       "event": 8,
       "kickoff": "2026-10-24T16:30:00Z",
@@ -6489,6 +6475,20 @@
       "finishedProvisional": false,
       "homeDifficulty": 3,
       "awayDifficulty": 2
+    },
+    {
+      "id": 78,
+      "event": 8,
+      "kickoff": "2026-10-25T14:00:00Z",
+      "home": 14,
+      "away": 5,
+      "homeScore": null,
+      "awayScore": null,
+      "started": false,
+      "finished": false,
+      "finishedProvisional": false,
+      "homeDifficulty": 2,
+      "awayDifficulty": 4
     },
     {
       "id": 79,
@@ -6619,7 +6619,7 @@
     {
       "id": 81,
       "event": 9,
-      "kickoff": "2026-11-01T14:00:00Z",
+      "kickoff": "2026-10-31T20:00:00Z",
       "home": 2,
       "away": 10,
       "homeScore": null,
@@ -10841,5 +10841,5 @@
       "code": 56
     }
   ],
-  "generatedAt": "2026-09-01T15:21:15.579Z"
+  "generatedAt": "2026-09-01T18:05:33.793Z"
 }
