@@ -2394,7 +2394,7 @@
         ]
       },
       "13": {
-        "total": 3,
+        "total": 5,
         "components": [
           {
             "stat": "minutes",
@@ -2407,6 +2407,12 @@
             "name": "Clean sheets",
             "value": 1,
             "points": 1
+          },
+          {
+            "stat": "defensive_contribution",
+            "name": "Defensive Contribution",
+            "value": 12,
+            "points": 2
           }
         ]
       },
@@ -2542,5 +2548,5 @@
       }
     }
   },
-  "generatedAt": "2026-08-31T21:09:37.313Z"
+  "generatedAt": "2026-09-01T00:17:54.847Z"
 }
