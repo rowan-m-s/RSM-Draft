@@ -2081,10 +2081,10 @@
       "clubShort": "AVL",
       "clubCode": 7,
       "photoCode": 178301,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
+      "status": "u",
+      "chanceOfPlaying": 0,
+      "news": "Has joined Al Hilal permanently",
+      "newsAdded": "2026-09-01T13:15:16.698799Z"
     },
     "57": {
       "name": "Petrović",
@@ -2509,9 +2509,9 @@
     "201": {
       "name": "Muñoz",
       "position": "DEF",
-      "teamId": 8,
-      "clubShort": "CRY",
-      "clubCode": 31,
+      "teamId": 18,
+      "clubShort": "NFO",
+      "clubCode": 17,
       "photoCode": 247348,
       "status": "a",
       "chanceOfPlaying": null,
@@ -3827,5 +3827,5 @@
       "newsAdded": "2026-08-15T16:00:07.974271Z"
     }
   },
-  "generatedAt": "2026-09-01T12:44:22.691Z"
+  "generatedAt": "2026-09-01T13:25:17.939Z"
 }
