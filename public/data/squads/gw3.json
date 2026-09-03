@@ -243,7 +243,7 @@
         "points": 0
       },
       {
-        "element": 450,
+        "element": 32,
         "starter": false,
         "position": 15,
         "subbedOn": false,
@@ -1017,7 +1017,7 @@
         "points": 0
       },
       {
-        "element": 419,
+        "element": 12,
         "starter": true,
         "position": 5,
         "subbedOn": false,
@@ -1025,7 +1025,7 @@
         "points": 0
       },
       {
-        "element": 12,
+        "element": 428,
         "starter": true,
         "position": 6,
         "subbedOn": false,
@@ -1033,7 +1033,7 @@
         "points": 0
       },
       {
-        "element": 428,
+        "element": 15,
         "starter": true,
         "position": 7,
         "subbedOn": false,
@@ -1041,7 +1041,7 @@
         "points": 0
       },
       {
-        "element": 15,
+        "element": 86,
         "starter": true,
         "position": 8,
         "subbedOn": false,
@@ -1049,25 +1049,9 @@
         "points": 0
       },
       {
-        "element": 86,
-        "starter": true,
-        "position": 9,
-        "subbedOn": false,
-        "subbedOff": false,
-        "points": 0
-      },
-      {
-        "element": 463,
-        "starter": true,
-        "position": 10,
-        "subbedOn": false,
-        "subbedOff": false,
-        "points": 0
-      },
-      {
         "element": 57,
         "starter": false,
-        "position": 11,
+        "position": 9,
         "subbedOn": false,
         "subbedOff": false,
         "points": 0
@@ -1075,7 +1059,7 @@
       {
         "element": 125,
         "starter": false,
-        "position": 12,
+        "position": 10,
         "subbedOn": false,
         "subbedOff": false,
         "points": 0
@@ -1083,7 +1067,7 @@
       {
         "element": 449,
         "starter": false,
-        "position": 13,
+        "position": 11,
         "subbedOn": false,
         "subbedOff": false,
         "points": 0
@@ -1091,13 +1075,29 @@
       {
         "element": 138,
         "starter": false,
-        "position": 14,
+        "position": 12,
+        "subbedOn": false,
+        "subbedOff": false,
+        "points": 0
+      },
+      {
+        "element": 630,
+        "starter": false,
+        "position": 13,
         "subbedOn": false,
         "subbedOff": false,
         "points": 0
       },
       {
         "element": 616,
+        "starter": false,
+        "position": 14,
+        "subbedOn": false,
+        "subbedOff": false,
+        "points": 0
+      },
+      {
+        "element": 553,
         "starter": false,
         "position": 15,
         "subbedOn": false,
@@ -1538,6 +1538,18 @@
       "clubShort": "ARS",
       "clubCode": 3,
       "photoCode": 199798,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null
+    },
+    "32": {
+      "name": "Cash",
+      "position": "DEF",
+      "teamId": 2,
+      "clubShort": "AVL",
+      "clubCode": 7,
+      "photoCode": 199796,
       "status": "a",
       "chanceOfPlaying": null,
       "news": null,
@@ -2695,18 +2707,6 @@
       "news": null,
       "newsAdded": null
     },
-    "419": {
-      "name": "Martinez",
-      "position": "DEF",
-      "teamId": 16,
-      "clubShort": "MUN",
-      "clubCode": 1,
-      "photoCode": 221820,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-07-24T20:00:10.337107Z"
-    },
     "423": {
       "name": "Shaw",
       "position": "DEF",
@@ -2803,18 +2803,6 @@
       "news": null,
       "newsAdded": null
     },
-    "450": {
-      "name": "Livramento",
-      "position": "DEF",
-      "teamId": 17,
-      "clubShort": "NEW",
-      "clubCode": 4,
-      "photoCode": 441191,
-      "status": "i",
-      "chanceOfPlaying": 0,
-      "news": "Calf injury - Unknown return date",
-      "newsAdded": "2026-07-23T12:01:23.753221Z"
-    },
     "452": {
       "name": "Bruno G.",
       "position": "MID",
@@ -2862,18 +2850,6 @@
       "chanceOfPlaying": null,
       "news": null,
       "newsAdded": null
-    },
-    "463": {
-      "name": "Woltemade",
-      "position": "FWD",
-      "teamId": 17,
-      "clubShort": "NEW",
-      "clubCode": 4,
-      "photoCode": 470313,
-      "status": "u",
-      "chanceOfPlaying": 0,
-      "news": "Has joined Juventus on loan for the rest of the season",
-      "newsAdded": "2026-09-02T16:07:16.549304Z"
     },
     "464": {
       "name": "Wissa",
@@ -3175,6 +3151,18 @@
       "news": null,
       "newsAdded": null
     },
+    "553": {
+      "name": "Isidor",
+      "position": "FWD",
+      "teamId": 20,
+      "clubShort": "SUN",
+      "clubCode": 56,
+      "photoCode": 437505,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null
+    },
     "554": {
       "name": "Tzolis",
       "position": "MID",
@@ -3319,6 +3307,18 @@
       "news": null,
       "newsAdded": null
     },
+    "630": {
+      "name": "Harwood-Bellis",
+      "position": "DEF",
+      "teamId": 2,
+      "clubShort": "AVL",
+      "clubCode": 7,
+      "photoCode": 245719,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null
+    },
     "631": {
       "name": "Mbaye",
       "position": "MID",
@@ -3332,5 +3332,5 @@
       "newsAdded": null
     }
   },
-  "generatedAt": "2026-09-03T18:16:40.291Z"
+  "generatedAt": "2026-09-03T21:32:01.306Z"
 }
