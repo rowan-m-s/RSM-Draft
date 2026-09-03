@@ -978,9 +978,9 @@
       "teamId": 12,
       "photoCode": 543968,
       "owner": "ollie",
-      "status": "d",
-      "chanceOfPlaying": 75,
-      "news": "Knee injury - 75% chance of playing",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
       "newsAdded": "2026-08-31T09:30:08.306145Z",
       "points": 10,
       "ppg": 5,
@@ -4654,9 +4654,9 @@
       "teamId": 20,
       "photoCode": 547027,
       "owner": null,
-      "status": "d",
-      "chanceOfPlaying": 75,
-      "news": "Unspecified injury - 75% chance of playing",
+      "status": "i",
+      "chanceOfPlaying": 0,
+      "news": "Hamstring injury - Unknown return date",
       "newsAdded": "2026-08-30T16:30:08.428960Z",
       "points": 5,
       "ppg": 2.5,
@@ -8649,6 +8649,28 @@
       "positionRank": 59
     },
     {
+      "id": 652,
+      "name": "Azeez",
+      "position": "MID",
+      "club": "Brighton",
+      "clubShort": "BHA",
+      "clubCode": 36,
+      "teamId": 5,
+      "photoCode": 471551,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 0,
+      "ppg": 0,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 288
+    },
+    {
       "id": 235,
       "name": "Aznou",
       "position": "DEF",
@@ -10176,10 +10198,10 @@
       "teamId": 15,
       "photoCode": 575204,
       "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
+      "status": "u",
+      "chanceOfPlaying": 0,
+      "news": "Has joined Benfica on loan for the rest of the season",
+      "newsAdded": "2026-09-03T15:41:24.710479Z",
       "points": 0,
       "ppg": 0,
       "goals": 0,
@@ -10660,9 +10682,9 @@
       "teamId": 11,
       "photoCode": 462635,
       "owner": null,
-      "status": "i",
+      "status": "a",
       "chanceOfPlaying": 0,
-      "news": "Ankle injury - Expected back 5 Sep",
+      "news": null,
       "newsAdded": "2026-08-17T21:30:07.799839Z",
       "points": 0,
       "ppg": 0,
@@ -14322,7 +14344,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 288
+      "positionRank": 289
     }
   ],
   "leadingScorer": {
@@ -14347,5 +14369,5 @@
     "bonus": 3,
     "positionRank": 1
   },
-  "generatedAt": "2026-09-03T13:10:28.300Z"
+  "generatedAt": "2026-09-03T16:53:02.814Z"
 }
