@@ -9648,9 +9648,9 @@
       "teamId": 14,
       "photoCode": 500058,
       "owner": null,
-      "status": "i",
+      "status": "a",
       "chanceOfPlaying": 0,
-      "news": "Unspecified injury - Unknown return date",
+      "news": null,
       "newsAdded": "2026-07-23T12:01:23.659279Z",
       "points": 0,
       "ppg": 0,
@@ -12530,10 +12530,10 @@
       "teamId": 15,
       "photoCode": 590039,
       "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
+      "status": "u",
+      "chanceOfPlaying": 0,
+      "news": "has joined West Ham on loan for the rest of the seaon.",
+      "newsAdded": "2026-09-03T10:34:10.733520Z",
       "points": 0,
       "ppg": 0,
       "goals": 0,
@@ -14347,5 +14347,5 @@
     "bonus": 3,
     "positionRank": 1
   },
-  "generatedAt": "2026-09-03T07:36:54.502Z"
+  "generatedAt": "2026-09-03T12:31:52.900Z"
 }
