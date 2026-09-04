@@ -89,7 +89,94 @@
           "managerKey": "ollie"
         }
       }
+    },
+    {
+      "id": "2026-09",
+      "label": "September 2026",
+      "shortLabel": "September",
+      "gameweekIds": [
+        3
+      ],
+      "totals": {
+        "rushy": 7,
+        "kellett": 0,
+        "wallis": 0,
+        "jls": 1,
+        "paddy": 0,
+        "bennett": 9,
+        "wood": 0,
+        "rowan": 1,
+        "jason": 3,
+        "dj": 1,
+        "ollie": 1
+      },
+      "pot": 0,
+      "settled": false,
+      "winnerKeys": [],
+      "potPerWinner": 0,
+      "topPerformer": {
+        "playerName": "Isak",
+        "points": 9,
+        "managerKey": "bennett"
+      },
+      "topPerformerByManager": {
+        "rushy": {
+          "playerName": "Gakpo",
+          "points": 7,
+          "managerKey": "rushy"
+        },
+        "kellett": {
+          "playerName": "Horníček",
+          "points": 0,
+          "managerKey": "kellett"
+        },
+        "wallis": {
+          "playerName": "Lammens",
+          "points": 0,
+          "managerKey": "wallis"
+        },
+        "jls": {
+          "playerName": "A.Becker",
+          "points": 1,
+          "managerKey": "jls"
+        },
+        "paddy": {
+          "playerName": "Roefs",
+          "points": 0,
+          "managerKey": "paddy"
+        },
+        "bennett": {
+          "playerName": "Isak",
+          "points": 9,
+          "managerKey": "bennett"
+        },
+        "wood": {
+          "playerName": "Donnarumma",
+          "points": 0,
+          "managerKey": "wood"
+        },
+        "rowan": {
+          "playerName": "Wirtz",
+          "points": 1,
+          "managerKey": "rowan"
+        },
+        "jason": {
+          "playerName": "Virgil",
+          "points": 1,
+          "managerKey": "jason"
+        },
+        "dj": {
+          "playerName": "Szoboszlai",
+          "points": 1,
+          "managerKey": "dj"
+        },
+        "ollie": {
+          "playerName": "Jacquet",
+          "points": 1,
+          "managerKey": "ollie"
+        }
+      }
     }
   ],
-  "generatedAt": "2026-09-04T16:32:19.164Z"
+  "generatedAt": "2026-09-04T19:15:55.866Z"
 }

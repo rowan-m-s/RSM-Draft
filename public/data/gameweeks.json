@@ -376,33 +376,45 @@
       "tradesUtc": "2026-09-02T17:30:00Z",
       "month": "2026-09",
       "finished": false,
-      "started": false,
-      "scoresProvisional": false,
+      "started": true,
+      "scoresProvisional": true,
       "kochReady": false,
       "yetByManager": {
-        "rushy": 11,
+        "rushy": 9,
         "kellett": 11,
         "wallis": 11,
-        "jls": 11,
+        "jls": 10,
         "paddy": 11,
-        "bennett": 11,
+        "bennett": 10,
         "wood": 11,
-        "rowan": 11,
-        "jason": 11,
-        "dj": 11,
-        "ollie": 11
+        "rowan": 10,
+        "jason": 8,
+        "dj": 9,
+        "ollie": 10
       },
       "fixturesRemaining": true,
       "dataChecked": false,
       "confirmExpectedUtc": "2026-09-07T15:30:00.000Z",
       "revealFromUtc": "2026-09-07T08:05:00.000Z",
-      "scores": {},
+      "scores": {
+        "rushy": 7,
+        "kellett": 0,
+        "wallis": 0,
+        "jls": 1,
+        "paddy": 0,
+        "bennett": 9,
+        "wood": 0,
+        "rowan": 1,
+        "jason": 3,
+        "dj": 1,
+        "ollie": 1
+      },
       "kochKeys": [],
       "charged": 0,
       "topPerformerByManager": {
         "rushy": {
-          "playerName": "Sels",
-          "points": 0,
+          "playerName": "Gakpo",
+          "points": 7,
           "managerKey": "rushy"
         },
         "kellett": {
@@ -417,7 +429,7 @@
         },
         "jls": {
           "playerName": "A.Becker",
-          "points": 0,
+          "points": 1,
           "managerKey": "jls"
         },
         "paddy": {
@@ -426,8 +438,8 @@
           "managerKey": "paddy"
         },
         "bennett": {
-          "playerName": "Henderson",
-          "points": 0,
+          "playerName": "Isak",
+          "points": 9,
           "managerKey": "bennett"
         },
         "wood": {
@@ -436,38 +448,73 @@
           "managerKey": "wood"
         },
         "rowan": {
-          "playerName": "Pickford",
-          "points": 0,
+          "playerName": "Wirtz",
+          "points": 1,
           "managerKey": "rowan"
         },
         "jason": {
-          "playerName": "Trafford",
-          "points": 0,
+          "playerName": "Virgil",
+          "points": 1,
           "managerKey": "jason"
         },
         "dj": {
-          "playerName": "Suzuki",
-          "points": 0,
+          "playerName": "Szoboszlai",
+          "points": 1,
           "managerKey": "dj"
         },
         "ollie": {
-          "playerName": "Raya",
-          "points": 0,
+          "playerName": "Jacquet",
+          "points": 1,
           "managerKey": "ollie"
         }
       },
       "scapegoatByManager": {
-        "rushy": null,
+        "rushy": {
+          "playerName": "Gakpo",
+          "points": 7,
+          "managerKey": "rushy",
+          "element": 367
+        },
         "kellett": null,
         "wallis": null,
-        "jls": null,
+        "jls": {
+          "playerName": "A.Becker",
+          "points": 1,
+          "managerKey": "jls",
+          "element": 350
+        },
         "paddy": null,
-        "bennett": null,
+        "bennett": {
+          "playerName": "Isak",
+          "points": 9,
+          "managerKey": "bennett",
+          "element": 379
+        },
         "wood": null,
-        "rowan": null,
-        "jason": null,
-        "dj": null,
-        "ollie": null
+        "rowan": {
+          "playerName": "Wirtz",
+          "points": 1,
+          "managerKey": "rowan",
+          "element": 366
+        },
+        "jason": {
+          "playerName": "Kerkez",
+          "points": 1,
+          "managerKey": "jason",
+          "element": 358
+        },
+        "dj": {
+          "playerName": "Szoboszlai",
+          "points": 1,
+          "managerKey": "dj",
+          "element": 368
+        },
+        "ollie": {
+          "playerName": "Jacquet",
+          "points": 1,
+          "managerKey": "ollie",
+          "element": 362
+        }
       },
       "kochGraphicByManager": {
         "rushy": null,
@@ -475,9 +522,9 @@
         "wallis": null,
         "jls": null,
         "paddy": null,
-        "bennett": null,
+        "bennett": 219168,
         "wood": null,
-        "rowan": null,
+        "rowan": 494595,
         "jason": null,
         "dj": null,
         "ollie": null
@@ -1289,5 +1336,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-09-04T17:58:12.635Z"
+  "generatedAt": "2026-09-04T19:15:55.866Z"
 }
