@@ -397,24 +397,24 @@
       "confirmExpectedUtc": "2026-09-07T15:30:00.000Z",
       "revealFromUtc": "2026-09-07T08:05:00.000Z",
       "scores": {
-        "rushy": 7,
+        "rushy": 12,
         "kellett": 0,
         "wallis": 0,
-        "jls": 1,
+        "jls": 8,
         "paddy": 0,
-        "bennett": 9,
+        "bennett": 13,
         "wood": 0,
-        "rowan": 1,
-        "jason": 3,
-        "dj": 1,
-        "ollie": 1
+        "rowan": 3,
+        "jason": 15,
+        "dj": 4,
+        "ollie": 5
       },
       "kochKeys": [],
       "charged": 0,
       "topPerformerByManager": {
         "rushy": {
           "playerName": "Gakpo",
-          "points": 7,
+          "points": 11,
           "managerKey": "rushy"
         },
         "kellett": {
@@ -429,7 +429,7 @@
         },
         "jls": {
           "playerName": "A.Becker",
-          "points": 1,
+          "points": 8,
           "managerKey": "jls"
         },
         "paddy": {
@@ -439,7 +439,7 @@
         },
         "bennett": {
           "playerName": "Isak",
-          "points": 9,
+          "points": 13,
           "managerKey": "bennett"
         },
         "wood": {
@@ -449,69 +449,69 @@
         },
         "rowan": {
           "playerName": "Wirtz",
-          "points": 1,
+          "points": 3,
           "managerKey": "rowan"
         },
         "jason": {
           "playerName": "Virgil",
-          "points": 1,
+          "points": 7,
           "managerKey": "jason"
         },
         "dj": {
           "playerName": "Szoboszlai",
-          "points": 1,
+          "points": 3,
           "managerKey": "dj"
         },
         "ollie": {
           "playerName": "Jacquet",
-          "points": 1,
+          "points": 5,
           "managerKey": "ollie"
         }
       },
       "scapegoatByManager": {
         "rushy": {
-          "playerName": "Gakpo",
-          "points": 7,
+          "playerName": "Gravenberch",
+          "points": 1,
           "managerKey": "rushy",
-          "element": 367
+          "element": 371
         },
         "kellett": null,
         "wallis": null,
         "jls": {
           "playerName": "A.Becker",
-          "points": 1,
+          "points": 8,
           "managerKey": "jls",
           "element": 350
         },
         "paddy": null,
         "bennett": {
           "playerName": "Isak",
-          "points": 9,
+          "points": 13,
           "managerKey": "bennett",
           "element": 379
         },
         "wood": null,
         "rowan": {
           "playerName": "Wirtz",
-          "points": 1,
+          "points": 3,
           "managerKey": "rowan",
           "element": 366
         },
         "jason": {
-          "playerName": "Kerkez",
-          "points": 1,
+          "playerName": "Munoz",
+          "points": 3,
           "managerKey": "jason",
-          "element": 358
+          "element": 377
         },
         "dj": {
-          "playerName": "Szoboszlai",
+          "playerName": "Barcola",
           "points": 1,
           "managerKey": "dj",
-          "element": 368
+          "element": 628
         },
         "ollie": {
           "playerName": "Jacquet",
-          "points": 1,
+          "points": 5,
           "managerKey": "ollie",
           "element": 362
         }
@@ -1336,5 +1336,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-09-04T19:15:55.866Z"
+  "generatedAt": "2026-09-04T20:26:04.150Z"
 }

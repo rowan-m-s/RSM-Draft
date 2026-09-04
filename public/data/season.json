@@ -1,8 +1,25 @@
 {
   "rows": [
     {
-      "key": "paddy",
+      "key": "jason",
       "rank": 1,
+      "total": 109,
+      "gw": 15,
+      "month": 15,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "Saka",
+        "points": 20,
+        "managerKey": "jason"
+      }
+    },
+    {
+      "key": "paddy",
+      "rank": 2,
       "total": 107,
       "gw": 0,
       "month": 0,
@@ -19,10 +36,10 @@
     },
     {
       "key": "rowan",
-      "rank": 2,
-      "total": 97,
-      "gw": 1,
-      "month": 1,
+      "rank": 3,
+      "total": 99,
+      "gw": 3,
+      "month": 3,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -35,25 +52,42 @@
       }
     },
     {
-      "key": "jason",
-      "rank": 2,
-      "total": 97,
-      "gw": 3,
-      "month": 3,
+      "key": "rushy",
+      "rank": 4,
+      "total": 94,
+      "gw": 12,
+      "month": 12,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
       "potsWon": 0,
       "balance": 0,
       "topPerformer": {
-        "playerName": "Saka",
-        "points": 20,
-        "managerKey": "jason"
+        "playerName": "Gakpo",
+        "points": 28,
+        "managerKey": "rushy"
+      }
+    },
+    {
+      "key": "bennett",
+      "rank": 5,
+      "total": 92,
+      "gw": 13,
+      "month": 13,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "Isak",
+        "points": 23,
+        "managerKey": "bennett"
       }
     },
     {
       "key": "wood",
-      "rank": 4,
+      "rank": 6,
       "total": 91,
       "gw": 0,
       "month": 0,
@@ -66,40 +100,6 @@
         "playerName": "B.Fernandes",
         "points": 25,
         "managerKey": "wood"
-      }
-    },
-    {
-      "key": "rushy",
-      "rank": 5,
-      "total": 89,
-      "gw": 7,
-      "month": 7,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "Gakpo",
-        "points": 24,
-        "managerKey": "rushy"
-      }
-    },
-    {
-      "key": "bennett",
-      "rank": 6,
-      "total": 88,
-      "gw": 9,
-      "month": 9,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "Isak",
-        "points": 19,
-        "managerKey": "bennett"
       }
     },
     {
@@ -139,9 +139,9 @@
     {
       "key": "ollie",
       "rank": 9,
-      "total": 78,
-      "gw": 1,
-      "month": 1,
+      "total": 82,
+      "gw": 5,
+      "month": 5,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -156,9 +156,9 @@
     {
       "key": "jls",
       "rank": 10,
-      "total": 62,
-      "gw": 1,
-      "month": 1,
+      "total": 69,
+      "gw": 8,
+      "month": 8,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -173,9 +173,9 @@
     {
       "key": "dj",
       "rank": 11,
-      "total": 53,
-      "gw": 1,
-      "month": 1,
+      "total": 56,
+      "gw": 4,
+      "month": 4,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -183,7 +183,7 @@
       "balance": -5,
       "topPerformer": {
         "playerName": "Szoboszlai",
-        "points": 13,
+        "points": 15,
         "managerKey": "dj"
       }
     }
@@ -193,19 +193,19 @@
   "seasonPrize": 110,
   "leader": {
     "keys": [
-      "paddy"
+      "jason"
     ],
-    "total": 107,
-    "since": 1,
+    "total": 109,
+    "since": null,
     "sinceByKey": {
-      "paddy": 1
+      "jason": null
     },
     "asOf": 3,
-    "weeks": 2,
+    "weeks": 0,
     "displaced": null,
     "changed": false
   },
-  "generatedAt": "2026-09-04T19:15:55.866Z",
+  "generatedAt": "2026-09-04T20:26:04.150Z",
   "graphics": {
     "koch": {
       "rushy": 244850,
