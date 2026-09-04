@@ -1528,10 +1528,10 @@
       "teamId": 5,
       "photoCode": 467779,
       "owner": "wood",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
+      "status": "i",
+      "chanceOfPlaying": 0,
+      "news": "Knee injury - Unknown return date",
+      "newsAdded": "2026-09-04T09:30:08.612904Z",
       "points": 7,
       "ppg": 3.5,
       "goals": 0,
@@ -8680,10 +8680,10 @@
       "teamId": 5,
       "photoCode": 471551,
       "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
+      "status": "i",
+      "chanceOfPlaying": 0,
+      "news": "Unspecified injury - Expected back 13 Sep",
+      "newsAdded": "2026-09-04T11:30:08.661589Z",
       "points": 0,
       "ppg": 0,
       "goals": 0,
@@ -14369,5 +14369,5 @@
     "bonus": 3,
     "positionRank": 1
   },
-  "generatedAt": "2026-09-04T07:38:41.509Z"
+  "generatedAt": "2026-09-04T12:27:29.047Z"
 }
