@@ -1089,7 +1089,7 @@
         "points": 0
       },
       {
-        "element": 616,
+        "element": 377,
         "starter": false,
         "position": 14,
         "subbedOn": false,
@@ -2491,6 +2491,18 @@
       "news": null,
       "newsAdded": null
     },
+    "377": {
+      "name": "Munoz",
+      "position": "MID",
+      "teamId": 14,
+      "clubShort": "LIV",
+      "clubCode": 14,
+      "photoCode": 551499,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null
+    },
     "379": {
       "name": "Isak",
       "position": "FWD",
@@ -3283,18 +3295,6 @@
       "news": null,
       "newsAdded": null
     },
-    "616": {
-      "name": "Bouaddi",
-      "position": "MID",
-      "teamId": 15,
-      "clubShort": "MCI",
-      "clubCode": 43,
-      "photoCode": 637238,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
-    },
     "628": {
       "name": "Barcola",
       "position": "MID",
@@ -3332,5 +3332,5 @@
       "newsAdded": null
     }
   },
-  "generatedAt": "2026-09-04T01:22:48.098Z"
+  "generatedAt": "2026-09-04T07:38:41.509Z"
 }

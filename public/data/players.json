@@ -1057,6 +1057,28 @@
       "positionRank": 23
     },
     {
+      "id": 377,
+      "name": "Munoz",
+      "position": "MID",
+      "club": "Liverpool",
+      "clubShort": "LIV",
+      "clubCode": 14,
+      "teamId": 14,
+      "photoCode": 551499,
+      "owner": "jason",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 10,
+      "ppg": 5,
+      "goals": 1,
+      "assists": 1,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 28
+    },
+    {
       "id": 233,
       "name": "Mykolenko",
       "position": "DEF",
@@ -2905,28 +2927,6 @@
       "positionRank": 71
     },
     {
-      "id": 616,
-      "name": "Bouaddi",
-      "position": "MID",
-      "club": "Man City",
-      "clubShort": "MCI",
-      "clubCode": 43,
-      "teamId": 15,
-      "photoCode": 637238,
-      "owner": "jason",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 1,
-      "ppg": 1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 167
-    },
-    {
       "id": 452,
       "name": "Bruno G.",
       "position": "MID",
@@ -3895,28 +3895,6 @@
       "cleanSheets": 1,
       "bonus": 0,
       "positionRank": 26
-    },
-    {
-      "id": 377,
-      "name": "Munoz",
-      "position": "MID",
-      "club": "Liverpool",
-      "clubShort": "LIV",
-      "clubCode": 14,
-      "teamId": 14,
-      "photoCode": 551499,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 10,
-      "ppg": 5,
-      "goals": 1,
-      "assists": 1,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 28
     },
     {
       "id": 286,
@@ -6755,6 +6733,28 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 127
+    },
+    {
+      "id": 616,
+      "name": "Bouaddi",
+      "position": "MID",
+      "club": "Man City",
+      "clubShort": "MCI",
+      "clubCode": 43,
+      "teamId": 15,
+      "photoCode": 637238,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 1,
+      "ppg": 1,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 167
     },
     {
       "id": 622,
@@ -14369,5 +14369,5 @@
     "bonus": 3,
     "positionRank": 1
   },
-  "generatedAt": "2026-09-04T01:22:48.098Z"
+  "generatedAt": "2026-09-04T07:38:41.509Z"
 }
