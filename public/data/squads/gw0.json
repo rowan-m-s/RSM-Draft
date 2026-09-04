@@ -1877,9 +1877,9 @@
       "clubShort": "ARS",
       "clubCode": 3,
       "photoCode": 445122,
-      "status": "i",
+      "status": "d",
       "chanceOfPlaying": 0,
-      "news": "Groin injury - Unknown return date",
+      "news": "Groin injury - 25% chance of playing",
       "newsAdded": "2026-07-23T12:01:23.272929Z"
     },
     "6": {
@@ -1925,10 +1925,10 @@
       "clubShort": "ARS",
       "clubCode": 3,
       "photoCode": 500040,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
+      "status": "d",
+      "chanceOfPlaying": 75,
+      "news": "Unspecified injury - 75% chance of playing",
+      "newsAdded": "2026-09-04T14:00:08.080310Z"
     },
     "12": {
       "name": "Saka",
@@ -2071,7 +2071,7 @@
       "photoCode": 614071,
       "status": "i",
       "chanceOfPlaying": 0,
-      "news": "Knee injury - Unknown return date",
+      "news": "Knee injury - Expected back 12 Sep",
       "newsAdded": "2026-08-15T15:30:06.388335Z"
     },
     "55": {
@@ -3041,9 +3041,9 @@
       "clubShort": "MCI",
       "clubCode": 43,
       "photoCode": 465351,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 75,
-      "news": "Unspecified injury - 75% chance of playing",
+      "news": null,
       "newsAdded": "2026-08-27T11:30:08.171622Z"
     },
     "390": {
@@ -3149,9 +3149,9 @@
       "clubShort": "TOT",
       "clubCode": 6,
       "photoCode": 510281,
-      "status": "d",
-      "chanceOfPlaying": 75,
-      "news": "Muscular injury - 75% chance of playing",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
       "newsAdded": "2026-08-29T16:30:08.380416Z"
     },
     "411": {
@@ -3365,10 +3365,10 @@
       "clubShort": "ARS",
       "clubCode": 3,
       "photoCode": 208706,
-      "status": "a",
+      "status": "d",
       "chanceOfPlaying": 75,
-      "news": null,
-      "newsAdded": "2026-08-20T17:00:08.846118Z"
+      "news": "Knock - 75% chance of playing",
+      "newsAdded": "2026-09-04T14:00:08.328779Z"
     },
     "453": {
       "name": "Barnes",
@@ -3827,5 +3827,5 @@
       "newsAdded": "2026-08-15T16:00:07.974271Z"
     }
   },
-  "generatedAt": "2026-09-04T13:04:07.494Z"
+  "generatedAt": "2026-09-04T16:32:19.164Z"
 }
