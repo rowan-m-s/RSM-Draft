@@ -398,16 +398,16 @@
       "revealFromUtc": "2026-09-07T08:05:00.000Z",
       "scores": {
         "rushy": 12,
-        "kellett": 1,
+        "kellett": 3,
         "wallis": 0,
-        "jls": 9,
-        "paddy": 7,
-        "bennett": 23,
-        "wood": 1,
+        "jls": 11,
+        "paddy": 8,
+        "bennett": 25,
+        "wood": 2,
         "rowan": 4,
-        "jason": 17,
+        "jason": 18,
         "dj": 4,
-        "ollie": 3
+        "ollie": 4
       },
       "kochKeys": [],
       "charged": 0,
@@ -419,7 +419,7 @@
         },
         "kellett": {
           "playerName": "Horníček",
-          "points": 1,
+          "points": 2,
           "managerKey": "kellett"
         },
         "wallis": {
@@ -434,7 +434,7 @@
         },
         "paddy": {
           "playerName": "Barnes",
-          "points": 7,
+          "points": 8,
           "managerKey": "paddy"
         },
         "bennett": {
@@ -444,7 +444,7 @@
         },
         "wood": {
           "playerName": "Evanilson",
-          "points": 1,
+          "points": 2,
           "managerKey": "wood"
         },
         "rowan": {
@@ -477,32 +477,32 @@
         },
         "kellett": {
           "playerName": "Elanga",
-          "points": 0,
+          "points": 1,
           "managerKey": "kellett",
           "element": 454
         },
         "wallis": null,
         "jls": {
           "playerName": "Dedić",
-          "points": 0,
+          "points": 1,
           "managerKey": "jls",
           "element": 595
         },
         "paddy": {
           "playerName": "Barnes",
-          "points": 7,
+          "points": 8,
           "managerKey": "paddy",
           "element": 453
         },
         "bennett": {
           "playerName": "Truffert",
-          "points": 1,
+          "points": 2,
           "managerKey": "bennett",
           "element": 61
         },
         "wood": {
           "playerName": "Evanilson",
-          "points": 1,
+          "points": 2,
           "managerKey": "wood",
           "element": 79
         },
@@ -513,10 +513,10 @@
           "element": 464
         },
         "jason": {
-          "playerName": "Hall",
+          "playerName": "Munoz",
           "points": 3,
           "managerKey": "jason",
-          "element": 449
+          "element": 377
         },
         "dj": {
           "playerName": "Barcola",
@@ -526,7 +526,7 @@
         },
         "ollie": {
           "playerName": "Thiaw",
-          "points": -2,
+          "points": -1,
           "managerKey": "ollie",
           "element": 445
         }
@@ -1351,5 +1351,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-09-05T12:16:02.280Z"
+  "generatedAt": "2026-09-05T13:11:43.978Z"
 }
