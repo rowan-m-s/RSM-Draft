@@ -384,7 +384,7 @@
           {
             "stat": "defensive_contribution",
             "name": "Defensive Contribution",
-            "value": 13,
+            "value": 14,
             "points": 2
           }
         ]
@@ -947,32 +947,80 @@
         "components": []
       },
       "32": {
-        "total": 0,
-        "components": []
+        "total": 1,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 32,
+            "points": 1
+          }
+        ]
       },
       "41": {
-        "total": 0,
-        "components": []
+        "total": 1,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 32,
+            "points": 1
+          }
+        ]
       },
       "53": {
         "total": 0,
         "components": []
       },
       "166": {
-        "total": 0,
-        "components": []
+        "total": 1,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 32,
+            "points": 1
+          }
+        ]
       },
       "295": {
-        "total": 0,
-        "components": []
+        "total": 1,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 32,
+            "points": 1
+          }
+        ]
       },
       "571": {
-        "total": 0,
-        "components": []
+        "total": 3,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 32,
+            "points": 1
+          },
+          {
+            "stat": "bonus",
+            "name": "Bonus",
+            "value": 2,
+            "points": 2
+          }
+        ]
       },
       "597": {
-        "total": 0,
-        "components": []
+        "total": 1,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 32,
+            "points": 1
+          }
+        ]
       },
       "630": {
         "total": 0,
@@ -2016,5 +2064,5 @@
       }
     }
   },
-  "generatedAt": "2026-09-05T16:04:05.901Z"
+  "generatedAt": "2026-09-05T17:03:36.434Z"
 }

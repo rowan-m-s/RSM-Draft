@@ -69,8 +69,25 @@
       }
     },
     {
-      "key": "wallis",
+      "key": "kellett",
       "rank": 5,
+      "total": 115,
+      "gw": 28,
+      "month": 28,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "Haaland",
+        "points": 24,
+        "managerKey": "kellett"
+      }
+    },
+    {
+      "key": "wallis",
+      "rank": 6,
       "total": 114,
       "gw": 28,
       "month": 28,
@@ -86,28 +103,11 @@
       }
     },
     {
-      "key": "kellett",
-      "rank": 6,
-      "total": 113,
-      "gw": 26,
-      "month": 26,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "Haaland",
-        "points": 24,
-        "managerKey": "kellett"
-      }
-    },
-    {
       "key": "rowan",
       "rank": 7,
-      "total": 111,
-      "gw": 15,
-      "month": 15,
+      "total": 112,
+      "gw": 16,
+      "month": 16,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -122,9 +122,9 @@
     {
       "key": "bennett",
       "rank": 8,
-      "total": 105,
-      "gw": 26,
-      "month": 26,
+      "total": 106,
+      "gw": 27,
+      "month": 27,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -173,9 +173,9 @@
     {
       "key": "dj",
       "rank": 11,
-      "total": 75,
-      "gw": 23,
-      "month": 23,
+      "total": 76,
+      "gw": 24,
+      "month": 24,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -205,7 +205,7 @@
     "displaced": null,
     "changed": false
   },
-  "generatedAt": "2026-09-05T16:04:05.901Z",
+  "generatedAt": "2026-09-05T17:03:36.434Z",
   "graphics": {
     "koch": {
       "rushy": 244850,
