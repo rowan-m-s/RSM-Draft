@@ -102,7 +102,7 @@
         "starter": false,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 3
+        "points": 6
       },
       {
         "element": 490,
@@ -176,7 +176,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 1
+        "points": 6
       },
       {
         "element": 398,
@@ -200,7 +200,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 1
+        "points": 3
       },
       {
         "element": 514,
@@ -704,7 +704,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 1
+        "points": 2
       },
       {
         "element": 496,
@@ -932,7 +932,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 1
+        "points": 2
       },
       {
         "element": 439,
@@ -1112,7 +1112,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 1
+        "points": 10
       },
       {
         "element": 389,
@@ -1682,10 +1682,10 @@
       "clubShort": "BRE",
       "clubCode": 94,
       "photoCode": 432830,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
+      "status": "d",
+      "chanceOfPlaying": 75,
+      "news": "Calf injury - 75% chance of playing",
+      "newsAdded": "2026-09-05T18:00:06.182495Z"
     },
     "86": {
       "name": "Lewis-Potter",
@@ -2546,10 +2546,10 @@
       "clubShort": "MCI",
       "clubCode": 43,
       "photoCode": 472769,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
+      "status": "d",
+      "chanceOfPlaying": 75,
+      "news": "Back injury - 75% chance of playing",
+      "newsAdded": "2026-09-05T18:00:06.379802Z"
     },
     "388": {
       "name": "Guéhi",
@@ -3332,5 +3332,5 @@
       "newsAdded": null
     }
   },
-  "generatedAt": "2026-09-05T17:03:36.434Z"
+  "generatedAt": "2026-09-05T18:16:02.968Z"
 }

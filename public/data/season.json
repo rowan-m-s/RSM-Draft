@@ -35,8 +35,25 @@
       }
     },
     {
-      "key": "jason",
+      "key": "kellett",
       "rank": 3,
+      "total": 122,
+      "gw": 35,
+      "month": 35,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "Haaland",
+        "points": 24,
+        "managerKey": "kellett"
+      }
+    },
+    {
+      "key": "jason",
+      "rank": 4,
       "total": 119,
       "gw": 25,
       "month": 25,
@@ -53,7 +70,7 @@
     },
     {
       "key": "rushy",
-      "rank": 4,
+      "rank": 5,
       "total": 117,
       "gw": 35,
       "month": 35,
@@ -66,23 +83,6 @@
         "playerName": "Gakpo",
         "points": 28,
         "managerKey": "rushy"
-      }
-    },
-    {
-      "key": "kellett",
-      "rank": 5,
-      "total": 115,
-      "gw": 28,
-      "month": 28,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "Haaland",
-        "points": 24,
-        "managerKey": "kellett"
       }
     },
     {
@@ -105,9 +105,9 @@
     {
       "key": "rowan",
       "rank": 7,
-      "total": 112,
-      "gw": 16,
-      "month": 16,
+      "total": 113,
+      "gw": 17,
+      "month": 17,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -122,9 +122,9 @@
     {
       "key": "bennett",
       "rank": 8,
-      "total": 106,
-      "gw": 27,
-      "month": 27,
+      "total": 107,
+      "gw": 28,
+      "month": 28,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -173,9 +173,9 @@
     {
       "key": "dj",
       "rank": 11,
-      "total": 76,
-      "gw": 24,
-      "month": 24,
+      "total": 85,
+      "gw": 33,
+      "month": 33,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -205,7 +205,7 @@
     "displaced": null,
     "changed": false
   },
-  "generatedAt": "2026-09-05T17:03:36.434Z",
+  "generatedAt": "2026-09-05T18:16:02.968Z",
   "graphics": {
     "koch": {
       "rushy": 244850,
