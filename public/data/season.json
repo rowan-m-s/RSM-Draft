@@ -18,8 +18,25 @@
       }
     },
     {
-      "key": "wood",
+      "key": "kellett",
       "rank": 2,
+      "total": 124,
+      "gw": 37,
+      "month": 37,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "Haaland",
+        "points": 24,
+        "managerKey": "kellett"
+      }
+    },
+    {
+      "key": "wood",
+      "rank": 3,
       "total": 123,
       "gw": 32,
       "month": 32,
@@ -32,23 +49,6 @@
         "playerName": "B.Fernandes",
         "points": 25,
         "managerKey": "wood"
-      }
-    },
-    {
-      "key": "kellett",
-      "rank": 3,
-      "total": 122,
-      "gw": 35,
-      "month": 35,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "Haaland",
-        "points": 24,
-        "managerKey": "kellett"
       }
     },
     {
@@ -71,9 +71,9 @@
     {
       "key": "rushy",
       "rank": 5,
-      "total": 117,
-      "gw": 35,
-      "month": 35,
+      "total": 116,
+      "gw": 34,
+      "month": 34,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -86,25 +86,8 @@
       }
     },
     {
-      "key": "wallis",
-      "rank": 6,
-      "total": 114,
-      "gw": 28,
-      "month": 28,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "Vuskovic",
-        "points": 18,
-        "managerKey": "wallis"
-      }
-    },
-    {
       "key": "rowan",
-      "rank": 7,
+      "rank": 6,
       "total": 113,
       "gw": 17,
       "month": 17,
@@ -117,6 +100,23 @@
         "playerName": "Stach",
         "points": 19,
         "managerKey": "rowan"
+      }
+    },
+    {
+      "key": "wallis",
+      "rank": 7,
+      "total": 112,
+      "gw": 26,
+      "month": 26,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "Vuskovic",
+        "points": 18,
+        "managerKey": "wallis"
       }
     },
     {
@@ -205,7 +205,7 @@
     "displaced": null,
     "changed": false
   },
-  "generatedAt": "2026-09-05T19:47:46.739Z",
+  "generatedAt": "2026-09-05T20:32:53.204Z",
   "graphics": {
     "koch": {
       "rushy": 244850,

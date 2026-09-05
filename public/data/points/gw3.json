@@ -791,7 +791,7 @@
         ]
       },
       "203": {
-        "total": 3,
+        "total": 1,
         "components": [
           {
             "stat": "minutes",
@@ -804,12 +804,6 @@
             "name": "Goals conceded",
             "value": 2,
             "points": -1
-          },
-          {
-            "stat": "defensive_contribution",
-            "name": "Defensive Contribution",
-            "value": 10,
-            "points": 2
           }
         ]
       },
@@ -1703,7 +1697,7 @@
         ]
       },
       "469": {
-        "total": 6,
+        "total": 7,
         "components": [
           {
             "stat": "minutes",
@@ -1716,6 +1710,12 @@
             "name": "Clean sheets",
             "value": 1,
             "points": 4
+          },
+          {
+            "stat": "bonus",
+            "name": "Bonus",
+            "value": 1,
+            "points": 1
           }
         ]
       },
@@ -1749,7 +1749,7 @@
         ]
       },
       "472": {
-        "total": 6,
+        "total": 8,
         "components": [
           {
             "stat": "minutes",
@@ -1762,6 +1762,12 @@
             "name": "Clean sheets",
             "value": 1,
             "points": 4
+          },
+          {
+            "stat": "defensive_contribution",
+            "name": "Defensive Contribution",
+            "value": 10,
+            "points": 2
           }
         ]
       },
@@ -1826,29 +1832,6 @@
         "components": []
       },
       "499": {
-        "total": 9,
-        "components": [
-          {
-            "stat": "minutes",
-            "name": "Minutes played",
-            "value": 90,
-            "points": 2
-          },
-          {
-            "stat": "clean_sheets",
-            "name": "Clean sheets",
-            "value": 1,
-            "points": 4
-          },
-          {
-            "stat": "bonus",
-            "name": "Bonus",
-            "value": 3,
-            "points": 3
-          }
-        ]
-      },
-      "503": {
         "total": 7,
         "components": [
           {
@@ -1868,6 +1851,29 @@
             "name": "Bonus",
             "value": 1,
             "points": 1
+          }
+        ]
+      },
+      "503": {
+        "total": 9,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 90,
+            "points": 2
+          },
+          {
+            "stat": "clean_sheets",
+            "name": "Clean sheets",
+            "value": 1,
+            "points": 4
+          },
+          {
+            "stat": "bonus",
+            "name": "Bonus",
+            "value": 3,
+            "points": 3
           }
         ]
       },
@@ -2094,5 +2100,5 @@
       }
     }
   },
-  "generatedAt": "2026-09-05T19:47:46.739Z"
+  "generatedAt": "2026-09-05T20:32:53.204Z"
 }
