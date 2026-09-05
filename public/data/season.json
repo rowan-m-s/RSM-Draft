@@ -3,9 +3,9 @@
     {
       "key": "paddy",
       "rank": 1,
-      "total": 115,
-      "gw": 8,
-      "month": 8,
+      "total": 143,
+      "gw": 36,
+      "month": 36,
       "kochCount": 0,
       "motmCount": 1,
       "forfeits": 0,
@@ -13,84 +13,16 @@
       "balance": 10,
       "topPerformer": {
         "playerName": "Cherki",
-        "points": 22,
+        "points": 25,
         "managerKey": "paddy"
       }
     },
     {
-      "key": "jason",
-      "rank": 2,
-      "total": 112,
-      "gw": 18,
-      "month": 18,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "Saka",
-        "points": 20,
-        "managerKey": "jason"
-      }
-    },
-    {
-      "key": "bennett",
-      "rank": 3,
-      "total": 104,
-      "gw": 25,
-      "month": 25,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "Isak",
-        "points": 23,
-        "managerKey": "bennett"
-      }
-    },
-    {
-      "key": "rowan",
-      "rank": 4,
-      "total": 100,
-      "gw": 4,
-      "month": 4,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "M.Sangaré",
-        "points": 18,
-        "managerKey": "rowan"
-      }
-    },
-    {
-      "key": "rushy",
-      "rank": 5,
-      "total": 94,
-      "gw": 12,
-      "month": 12,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "Gakpo",
-        "points": 28,
-        "managerKey": "rushy"
-      }
-    },
-    {
       "key": "wood",
-      "rank": 6,
-      "total": 93,
-      "gw": 2,
-      "month": 2,
+      "rank": 2,
+      "total": 123,
+      "gw": 32,
+      "month": 32,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -103,45 +35,113 @@
       }
     },
     {
-      "key": "kellett",
-      "rank": 7,
-      "total": 90,
-      "gw": 3,
-      "month": 3,
+      "key": "jason",
+      "rank": 3,
+      "total": 119,
+      "gw": 25,
+      "month": 25,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
       "potsWon": 0,
       "balance": 0,
       "topPerformer": {
-        "playerName": "Calafiori",
+        "playerName": "Saka",
         "points": 20,
-        "managerKey": "kellett"
+        "managerKey": "jason"
+      }
+    },
+    {
+      "key": "rushy",
+      "rank": 4,
+      "total": 117,
+      "gw": 35,
+      "month": 35,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "Gakpo",
+        "points": 28,
+        "managerKey": "rushy"
       }
     },
     {
       "key": "wallis",
-      "rank": 8,
-      "total": 86,
-      "gw": 0,
-      "month": 0,
+      "rank": 5,
+      "total": 114,
+      "gw": 28,
+      "month": 28,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
       "potsWon": 0,
       "balance": 0,
       "topPerformer": {
-        "playerName": "Hinshelwood",
-        "points": 16,
+        "playerName": "Vuskovic",
+        "points": 18,
         "managerKey": "wallis"
+      }
+    },
+    {
+      "key": "kellett",
+      "rank": 6,
+      "total": 113,
+      "gw": 26,
+      "month": 26,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "Haaland",
+        "points": 24,
+        "managerKey": "kellett"
+      }
+    },
+    {
+      "key": "rowan",
+      "rank": 7,
+      "total": 111,
+      "gw": 15,
+      "month": 15,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "Stach",
+        "points": 19,
+        "managerKey": "rowan"
+      }
+    },
+    {
+      "key": "bennett",
+      "rank": 8,
+      "total": 105,
+      "gw": 26,
+      "month": 26,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "Isak",
+        "points": 23,
+        "managerKey": "bennett"
       }
     },
     {
       "key": "ollie",
       "rank": 9,
-      "total": 81,
-      "gw": 4,
-      "month": 4,
+      "total": 99,
+      "gw": 22,
+      "month": 22,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -156,9 +156,9 @@
     {
       "key": "jls",
       "rank": 10,
-      "total": 72,
-      "gw": 11,
-      "month": 11,
+      "total": 90,
+      "gw": 29,
+      "month": 29,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -173,9 +173,9 @@
     {
       "key": "dj",
       "rank": 11,
-      "total": 56,
-      "gw": 4,
-      "month": 4,
+      "total": 75,
+      "gw": 23,
+      "month": 23,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -195,7 +195,7 @@
     "keys": [
       "paddy"
     ],
-    "total": 115,
+    "total": 143,
     "since": 1,
     "sinceByKey": {
       "paddy": 1
@@ -205,7 +205,7 @@
     "displaced": null,
     "changed": false
   },
-  "generatedAt": "2026-09-05T13:11:43.978Z",
+  "generatedAt": "2026-09-05T16:04:05.901Z",
   "graphics": {
     "koch": {
       "rushy": 244850,
@@ -230,7 +230,7 @@
       "wood": 141746,
       "rowan": 494595,
       "jason": 223340,
-      "dj": 502500,
+      "dj": 437730,
       "ollie": 446008
     },
     "leader": {
@@ -248,15 +248,15 @@
     },
     "leaderMonth": {
       "rushy": 243298,
-      "kellett": 209244,
-      "wallis": 177815,
+      "kellett": 223094,
+      "wallis": 440993,
       "jls": 499604,
       "paddy": 551466,
       "bennett": 219168,
       "wood": 444102,
-      "rowan": 494595,
+      "rowan": 222531,
       "jason": 97032,
-      "dj": 424876,
+      "dj": 437730,
       "ollie": 95658
     }
   },

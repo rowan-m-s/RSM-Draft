@@ -378,36 +378,36 @@
       "finished": false,
       "started": true,
       "scoresProvisional": true,
-      "kochReady": false,
+      "kochReady": true,
       "yetByManager": {
-        "rushy": 9,
-        "kellett": 9,
-        "wallis": 11,
-        "jls": 8,
-        "paddy": 10,
-        "bennett": 8,
-        "wood": 10,
-        "rowan": 9,
-        "jason": 7,
-        "dj": 9,
-        "ollie": 9
+        "rushy": 4,
+        "kellett": 3,
+        "wallis": 2,
+        "jls": 2,
+        "paddy": 4,
+        "bennett": 5,
+        "wood": 3,
+        "rowan": 4,
+        "jason": 4,
+        "dj": 2,
+        "ollie": 5
       },
       "fixturesRemaining": true,
       "dataChecked": false,
       "confirmExpectedUtc": "2026-09-07T15:30:00.000Z",
       "revealFromUtc": "2026-09-07T08:05:00.000Z",
       "scores": {
-        "rushy": 12,
-        "kellett": 3,
-        "wallis": 0,
-        "jls": 11,
-        "paddy": 8,
-        "bennett": 25,
-        "wood": 2,
-        "rowan": 4,
-        "jason": 18,
-        "dj": 4,
-        "ollie": 4
+        "rushy": 35,
+        "kellett": 26,
+        "wallis": 28,
+        "jls": 29,
+        "paddy": 36,
+        "bennett": 26,
+        "wood": 32,
+        "rowan": 15,
+        "jason": 25,
+        "dj": 23,
+        "ollie": 22
       },
       "kochKeys": [],
       "charged": 0,
@@ -418,13 +418,13 @@
           "managerKey": "rushy"
         },
         "kellett": {
-          "playerName": "Horníček",
-          "points": 2,
+          "playerName": "Haaland",
+          "points": 9,
           "managerKey": "kellett"
         },
         "wallis": {
-          "playerName": "Lammens",
-          "points": 0,
+          "playerName": "Vuskovic",
+          "points": 12,
           "managerKey": "wallis"
         },
         "jls": {
@@ -434,7 +434,7 @@
         },
         "paddy": {
           "playerName": "Barnes",
-          "points": 8,
+          "points": 12,
           "managerKey": "paddy"
         },
         "bennett": {
@@ -443,13 +443,13 @@
           "managerKey": "bennett"
         },
         "wood": {
-          "playerName": "Evanilson",
-          "points": 2,
+          "playerName": "Gvardiol",
+          "points": 8,
           "managerKey": "wood"
         },
         "rowan": {
-          "playerName": "Wirtz",
-          "points": 3,
+          "playerName": "Mukiele",
+          "points": 4,
           "managerKey": "rowan"
         },
         "jason": {
@@ -458,22 +458,22 @@
           "managerKey": "jason"
         },
         "dj": {
-          "playerName": "Szoboszlai",
-          "points": 3,
+          "playerName": "Semenyo",
+          "points": 6,
           "managerKey": "dj"
         },
         "ollie": {
-          "playerName": "Jacquet",
-          "points": 5,
+          "playerName": "King",
+          "points": 10,
           "managerKey": "ollie"
         }
       },
       "scapegoatByManager": {
         "rushy": {
-          "playerName": "Gravenberch",
+          "playerName": "Collins",
           "points": 1,
           "managerKey": "rushy",
-          "element": 371
+          "element": 84
         },
         "kellett": {
           "playerName": "Elanga",
@@ -481,42 +481,47 @@
           "managerKey": "kellett",
           "element": 454
         },
-        "wallis": null,
-        "jls": {
-          "playerName": "Dedić",
+        "wallis": {
+          "playerName": "Calvert-Lewin",
           "points": 1,
+          "managerKey": "wallis",
+          "element": 346
+        },
+        "jls": {
+          "playerName": "David",
+          "points": 0,
           "managerKey": "jls",
-          "element": 595
+          "element": 593
         },
         "paddy": {
-          "playerName": "Barnes",
-          "points": 8,
+          "playerName": "Gonzalo",
+          "points": 2,
           "managerKey": "paddy",
-          "element": 453
+          "element": 569
         },
         "bennett": {
           "playerName": "Truffert",
-          "points": 2,
+          "points": 0,
           "managerKey": "bennett",
           "element": 61
         },
         "wood": {
-          "playerName": "Evanilson",
-          "points": 2,
+          "playerName": "Groß",
+          "points": 1,
           "managerKey": "wood",
-          "element": 79
+          "element": 124
         },
         "rowan": {
-          "playerName": "Wissa",
-          "points": 1,
+          "playerName": "M.Sangaré",
+          "points": 0,
           "managerKey": "rowan",
-          "element": 464
+          "element": 556
         },
         "jason": {
-          "playerName": "Munoz",
-          "points": 3,
+          "playerName": "Kostoulas",
+          "points": 2,
           "managerKey": "jason",
-          "element": 377
+          "element": 138
         },
         "dj": {
           "playerName": "Barcola",
@@ -1351,5 +1356,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-09-05T13:11:43.978Z"
+  "generatedAt": "2026-09-05T16:04:05.901Z"
 }
