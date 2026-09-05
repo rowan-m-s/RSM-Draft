@@ -381,16 +381,16 @@
       "kochReady": false,
       "yetByManager": {
         "rushy": 9,
-        "kellett": 11,
+        "kellett": 9,
         "wallis": 11,
-        "jls": 10,
-        "paddy": 11,
-        "bennett": 10,
-        "wood": 11,
-        "rowan": 10,
-        "jason": 8,
+        "jls": 8,
+        "paddy": 10,
+        "bennett": 8,
+        "wood": 10,
+        "rowan": 9,
+        "jason": 7,
         "dj": 9,
-        "ollie": 10
+        "ollie": 9
       },
       "fixturesRemaining": true,
       "dataChecked": false,
@@ -398,16 +398,16 @@
       "revealFromUtc": "2026-09-07T08:05:00.000Z",
       "scores": {
         "rushy": 12,
-        "kellett": 0,
+        "kellett": 1,
         "wallis": 0,
-        "jls": 8,
-        "paddy": 0,
-        "bennett": 13,
-        "wood": 0,
-        "rowan": 3,
-        "jason": 14,
+        "jls": 9,
+        "paddy": 7,
+        "bennett": 23,
+        "wood": 1,
+        "rowan": 4,
+        "jason": 17,
         "dj": 4,
-        "ollie": 5
+        "ollie": 3
       },
       "kochKeys": [],
       "charged": 0,
@@ -419,7 +419,7 @@
         },
         "kellett": {
           "playerName": "Horníček",
-          "points": 0,
+          "points": 1,
           "managerKey": "kellett"
         },
         "wallis": {
@@ -433,8 +433,8 @@
           "managerKey": "jls"
         },
         "paddy": {
-          "playerName": "Roefs",
-          "points": 0,
+          "playerName": "Barnes",
+          "points": 7,
           "managerKey": "paddy"
         },
         "bennett": {
@@ -443,8 +443,8 @@
           "managerKey": "bennett"
         },
         "wood": {
-          "playerName": "Donnarumma",
-          "points": 0,
+          "playerName": "Evanilson",
+          "points": 1,
           "managerKey": "wood"
         },
         "rowan": {
@@ -475,33 +475,48 @@
           "managerKey": "rushy",
           "element": 371
         },
-        "kellett": null,
+        "kellett": {
+          "playerName": "Elanga",
+          "points": 0,
+          "managerKey": "kellett",
+          "element": 454
+        },
         "wallis": null,
         "jls": {
-          "playerName": "A.Becker",
-          "points": 8,
+          "playerName": "Dedić",
+          "points": 0,
           "managerKey": "jls",
-          "element": 350
+          "element": 595
         },
-        "paddy": null,
+        "paddy": {
+          "playerName": "Barnes",
+          "points": 7,
+          "managerKey": "paddy",
+          "element": 453
+        },
         "bennett": {
-          "playerName": "Isak",
-          "points": 13,
+          "playerName": "Truffert",
+          "points": 1,
           "managerKey": "bennett",
-          "element": 379
+          "element": 61
         },
-        "wood": null,
+        "wood": {
+          "playerName": "Evanilson",
+          "points": 1,
+          "managerKey": "wood",
+          "element": 79
+        },
         "rowan": {
-          "playerName": "Wirtz",
-          "points": 3,
+          "playerName": "Wissa",
+          "points": 1,
           "managerKey": "rowan",
-          "element": 366
+          "element": 464
         },
         "jason": {
-          "playerName": "Munoz",
+          "playerName": "Hall",
           "points": 3,
           "managerKey": "jason",
-          "element": 377
+          "element": 449
         },
         "dj": {
           "playerName": "Barcola",
@@ -510,10 +525,10 @@
           "element": 628
         },
         "ollie": {
-          "playerName": "Jacquet",
-          "points": 5,
+          "playerName": "Thiaw",
+          "points": -2,
           "managerKey": "ollie",
-          "element": 362
+          "element": 445
         }
       },
       "kochGraphicByManager": {
@@ -522,9 +537,9 @@
         "wallis": null,
         "jls": null,
         "paddy": null,
-        "bennett": 219168,
+        "bennett": null,
         "wood": null,
-        "rowan": 494595,
+        "rowan": null,
         "jason": null,
         "dj": null,
         "ollie": null
@@ -1336,5 +1351,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-09-05T07:17:11.732Z"
+  "generatedAt": "2026-09-05T12:16:02.280Z"
 }
