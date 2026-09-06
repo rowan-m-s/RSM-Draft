@@ -2968,7 +2968,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 121
+      "positionRank": 120
     },
     {
       "id": 403,
@@ -2990,7 +2990,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 117
+      "positionRank": 116
     },
     {
       "id": 498,
@@ -3100,7 +3100,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 124
+      "positionRank": 123
     },
     {
       "id": 238,
@@ -5776,10 +5776,10 @@
       "teamId": 9,
       "photoCode": 232928,
       "owner": null,
-      "status": "a",
+      "status": "d",
       "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-07-25T14:30:10.455878Z",
+      "news": "Unspecified injury - 75% chance of playing",
+      "newsAdded": "2026-09-06T18:00:08.301702Z",
       "points": 4,
       "ppg": 1.3,
       "goals": 0,
@@ -6116,7 +6116,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 119
+      "positionRank": 118
     },
     {
       "id": 160,
@@ -6138,7 +6138,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 111
+      "positionRank": 110
     },
     {
       "id": 589,
@@ -6160,7 +6160,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 123
+      "positionRank": 122
     },
     {
       "id": 144,
@@ -6204,7 +6204,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 122
+      "positionRank": 121
     },
     {
       "id": 585,
@@ -6292,7 +6292,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 113
+      "positionRank": 112
     },
     {
       "id": 186,
@@ -6314,7 +6314,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 112
+      "positionRank": 111
     },
     {
       "id": 422,
@@ -6358,7 +6358,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 115
+      "positionRank": 114
     },
     {
       "id": 241,
@@ -6380,29 +6380,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 114
-    },
-    {
-      "id": 17,
-      "name": "Merino",
-      "position": "MID",
-      "club": "Arsenal",
-      "clubShort": "ARS",
-      "clubCode": 3,
-      "teamId": 1,
-      "photoCode": 195384,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 3,
-      "ppg": 1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 109
+      "positionRank": 113
     },
     {
       "id": 523,
@@ -6424,7 +6402,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 120
+      "positionRank": 119
     },
     {
       "id": 369,
@@ -6446,7 +6424,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 116
+      "positionRank": 115
     },
     {
       "id": 592,
@@ -6534,7 +6512,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 118
+      "positionRank": 117
     },
     {
       "id": 19,
@@ -6556,7 +6534,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 110
+      "positionRank": 109
     },
     {
       "id": 56,
@@ -7172,7 +7150,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 125
+      "positionRank": 124
     },
     {
       "id": 621,
@@ -7195,6 +7173,28 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 149
+    },
+    {
+      "id": 17,
+      "name": "Merino",
+      "position": "MID",
+      "club": "Arsenal",
+      "clubShort": "ARS",
+      "clubCode": 3,
+      "teamId": 1,
+      "photoCode": 195384,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 2,
+      "ppg": 0.7,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 125
     },
     {
       "id": 207,
@@ -14391,5 +14391,5 @@
     "bonus": 5,
     "positionRank": 1
   },
-  "generatedAt": "2026-09-06T17:26:48.068Z"
+  "generatedAt": "2026-09-06T18:29:23.468Z"
 }
