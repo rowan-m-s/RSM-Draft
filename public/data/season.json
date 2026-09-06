@@ -3,9 +3,9 @@
     {
       "key": "paddy",
       "rank": 1,
-      "total": 155,
-      "gw": 48,
-      "month": 48,
+      "total": 157,
+      "gw": 50,
+      "month": 50,
       "kochCount": 0,
       "motmCount": 1,
       "forfeits": 0,
@@ -18,11 +18,28 @@
       }
     },
     {
-      "key": "wood",
+      "key": "jason",
       "rank": 2,
-      "total": 130,
-      "gw": 39,
-      "month": 39,
+      "total": 134,
+      "gw": 40,
+      "month": 40,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "Ødegaard",
+        "points": 24,
+        "managerKey": "jason"
+      }
+    },
+    {
+      "key": "wood",
+      "rank": 3,
+      "total": 133,
+      "gw": 42,
+      "month": 42,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -36,10 +53,10 @@
     },
     {
       "key": "kellett",
-      "rank": 3,
-      "total": 125,
-      "gw": 38,
-      "month": 38,
+      "rank": 4,
+      "total": 126,
+      "gw": 39,
+      "month": 39,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -53,10 +70,10 @@
     },
     {
       "key": "rushy",
-      "rank": 4,
-      "total": 124,
-      "gw": 42,
-      "month": 42,
+      "rank": 5,
+      "total": 123,
+      "gw": 41,
+      "month": 41,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -66,23 +83,6 @@
         "playerName": "Gakpo",
         "points": 28,
         "managerKey": "rushy"
-      }
-    },
-    {
-      "key": "jason",
-      "rank": 4,
-      "total": 124,
-      "gw": 30,
-      "month": 30,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "Saka",
-        "points": 21,
-        "managerKey": "jason"
       }
     },
     {
@@ -120,28 +120,11 @@
       }
     },
     {
-      "key": "wallis",
-      "rank": 8,
-      "total": 115,
-      "gw": 29,
-      "month": 29,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "Vuskovic",
-        "points": 18,
-        "managerKey": "wallis"
-      }
-    },
-    {
       "key": "ollie",
-      "rank": 9,
-      "total": 112,
-      "gw": 35,
-      "month": 35,
+      "rank": 8,
+      "total": 118,
+      "gw": 41,
+      "month": 41,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -154,19 +137,36 @@
       }
     },
     {
-      "key": "jls",
-      "rank": 10,
-      "total": 91,
+      "key": "wallis",
+      "rank": 9,
+      "total": 116,
       "gw": 30,
       "month": 30,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "Vuskovic",
+        "points": 18,
+        "managerKey": "wallis"
+      }
+    },
+    {
+      "key": "jls",
+      "rank": 10,
+      "total": 92,
+      "gw": 31,
+      "month": 31,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
       "potsWon": 0,
       "balance": -5,
       "topPerformer": {
-        "playerName": "Guéhi",
-        "points": 20,
+        "playerName": "João Pedro",
+        "points": 21,
         "managerKey": "jls"
       }
     },
@@ -195,7 +195,7 @@
     "keys": [
       "paddy"
     ],
-    "total": 155,
+    "total": 157,
     "since": 1,
     "sinceByKey": {
       "paddy": 1
@@ -205,7 +205,7 @@
     "displaced": null,
     "changed": false
   },
-  "generatedAt": "2026-09-06T16:22:21.047Z",
+  "generatedAt": "2026-09-06T17:26:48.068Z",
   "graphics": {
     "koch": {
       "rushy": 244850,
@@ -242,7 +242,7 @@
       "bennett": 219168,
       "wood": 141746,
       "rowan": 466525,
-      "jason": 223340,
+      "jason": 184029,
       "dj": 424876,
       "ollie": 446008
     },
@@ -255,7 +255,7 @@
       "bennett": 219168,
       "wood": 444102,
       "rowan": 222531,
-      "jason": 97032,
+      "jason": 184029,
       "dj": 437730,
       "ollie": 446008
     }
