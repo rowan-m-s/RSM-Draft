@@ -380,34 +380,34 @@
       "scoresProvisional": true,
       "kochReady": true,
       "yetByManager": {
-        "rushy": 4,
-        "kellett": 1,
-        "wallis": 1,
-        "jls": 2,
-        "paddy": 3,
-        "bennett": 1,
-        "wood": 1,
-        "rowan": 1,
-        "jason": 2,
+        "rushy": 0,
+        "kellett": 0,
+        "wallis": 0,
+        "jls": 0,
+        "paddy": 0,
+        "bennett": 0,
+        "wood": 0,
+        "rowan": 0,
+        "jason": 0,
         "dj": 0,
-        "ollie": 2
+        "ollie": 0
       },
       "fixturesRemaining": true,
       "dataChecked": false,
       "confirmExpectedUtc": "2026-09-07T15:30:00.000Z",
       "revealFromUtc": "2026-09-07T08:05:00.000Z",
       "scores": {
-        "rushy": 34,
-        "kellett": 37,
-        "wallis": 27,
+        "rushy": 42,
+        "kellett": 38,
+        "wallis": 29,
         "jls": 30,
-        "paddy": 37,
-        "bennett": 31,
-        "wood": 34,
-        "rowan": 18,
-        "jason": 26,
-        "dj": 34,
-        "ollie": 25
+        "paddy": 48,
+        "bennett": 41,
+        "wood": 39,
+        "rowan": 23,
+        "jason": 30,
+        "dj": 35,
+        "ollie": 35
       },
       "kochKeys": [],
       "charged": 0,
@@ -448,8 +448,8 @@
           "managerKey": "wood"
         },
         "rowan": {
-          "playerName": "Mukiele",
-          "points": 4,
+          "playerName": "Šeško",
+          "points": 5,
           "managerKey": "rowan"
         },
         "jason": {
@@ -494,10 +494,10 @@
           "element": 593
         },
         "paddy": {
-          "playerName": "Branthwaite",
-          "points": 1,
+          "playerName": "Palmer",
+          "points": 0,
           "managerKey": "paddy",
-          "element": 230
+          "element": 154
         },
         "bennett": {
           "playerName": "Truffert",
@@ -518,10 +518,10 @@
           "element": 556
         },
         "jason": {
-          "playerName": "Cunha",
+          "playerName": "Ødegaard",
           "points": 1,
           "managerKey": "jason",
-          "element": 428
+          "element": 15
         },
         "dj": {
           "playerName": "Barcola",
@@ -541,7 +541,7 @@
         "kellett": null,
         "wallis": null,
         "jls": null,
-        "paddy": null,
+        "paddy": 244851,
         "bennett": null,
         "wood": null,
         "rowan": null,
@@ -1356,5 +1356,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-09-06T13:20:26.999Z"
+  "generatedAt": "2026-09-06T16:22:21.047Z"
 }
