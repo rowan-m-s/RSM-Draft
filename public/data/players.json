@@ -2000,7 +2000,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 51
+      "positionRank": 50
     },
     {
       "id": 13,
@@ -2044,7 +2044,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 50
+      "positionRank": 49
     },
     {
       "id": 41,
@@ -2088,7 +2088,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 52
+      "positionRank": 51
     },
     {
       "id": 371,
@@ -4444,28 +4444,6 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 49
-    },
-    {
-      "id": 33,
-      "name": "Mings",
-      "position": "DEF",
-      "club": "Aston Villa",
-      "clubShort": "AVL",
-      "clubCode": 7,
-      "teamId": 2,
-      "photoCode": 149484,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 8,
-      "ppg": 4,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 1,
       "positionRank": 48
     },
     {
@@ -4775,6 +4753,28 @@
       "cleanSheets": 2,
       "bonus": 0,
       "positionRank": 67
+    },
+    {
+      "id": 33,
+      "name": "Mings",
+      "position": "DEF",
+      "club": "Aston Villa",
+      "clubShort": "AVL",
+      "clubCode": 7,
+      "teamId": 2,
+      "photoCode": 149484,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 7,
+      "ppg": 3.5,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 52
     },
     {
       "id": 304,
@@ -14391,5 +14391,5 @@
     "bonus": 5,
     "positionRank": 1
   },
-  "generatedAt": "2026-09-05T22:18:05.991Z"
+  "generatedAt": "2026-09-06T00:05:14.716Z"
 }
