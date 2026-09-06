@@ -1441,8 +1441,8 @@
       "photoCode": 432830,
       "owner": "rushy",
       "status": "d",
-      "chanceOfPlaying": 75,
-      "news": "Calf injury - 75% chance of playing",
+      "chanceOfPlaying": 25,
+      "news": "Calf injury - 25% chance of playing",
       "newsAdded": "2026-09-05T18:00:06.182495Z",
       "points": 10,
       "ppg": 3.3,
@@ -3400,7 +3400,7 @@
       "owner": "jls",
       "status": "i",
       "chanceOfPlaying": 0,
-      "news": "Calf injury - Expected back 5 Sep",
+      "news": "Calf injury - Expected back 13 Sep",
       "newsAdded": "2026-08-18T17:00:08.385597Z",
       "points": 0,
       "ppg": 0,
@@ -3928,9 +3928,9 @@
       "teamId": 11,
       "photoCode": 193278,
       "owner": null,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 75,
-      "news": "Unspecified injury - 75% chance of playing",
+      "news": null,
       "newsAdded": "2026-08-29T16:30:08.151841Z",
       "points": 12,
       "ppg": 4,
@@ -14391,5 +14391,5 @@
     "bonus": 5,
     "positionRank": 1
   },
-  "generatedAt": "2026-09-06T07:29:41.958Z"
+  "generatedAt": "2026-09-06T12:31:30.501Z"
 }
