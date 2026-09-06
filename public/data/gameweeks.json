@@ -382,15 +382,15 @@
       "yetByManager": {
         "rushy": 4,
         "kellett": 1,
-        "wallis": 2,
+        "wallis": 1,
         "jls": 2,
-        "paddy": 4,
-        "bennett": 4,
-        "wood": 3,
-        "rowan": 3,
-        "jason": 3,
-        "dj": 1,
-        "ollie": 5
+        "paddy": 3,
+        "bennett": 1,
+        "wood": 1,
+        "rowan": 1,
+        "jason": 2,
+        "dj": 0,
+        "ollie": 2
       },
       "fixturesRemaining": true,
       "dataChecked": false,
@@ -399,15 +399,15 @@
       "scores": {
         "rushy": 34,
         "kellett": 37,
-        "wallis": 26,
+        "wallis": 27,
         "jls": 30,
-        "paddy": 36,
-        "bennett": 28,
-        "wood": 32,
-        "rowan": 17,
-        "jason": 25,
-        "dj": 33,
-        "ollie": 22
+        "paddy": 37,
+        "bennett": 31,
+        "wood": 34,
+        "rowan": 18,
+        "jason": 26,
+        "dj": 34,
+        "ollie": 25
       },
       "kochKeys": [],
       "charged": 0,
@@ -494,10 +494,10 @@
           "element": 593
         },
         "paddy": {
-          "playerName": "Gonzalo",
-          "points": 2,
+          "playerName": "Branthwaite",
+          "points": 1,
           "managerKey": "paddy",
-          "element": 569
+          "element": 230
         },
         "bennett": {
           "playerName": "Truffert",
@@ -518,10 +518,10 @@
           "element": 556
         },
         "jason": {
-          "playerName": "Kostoulas",
-          "points": 2,
+          "playerName": "Cunha",
+          "points": 1,
           "managerKey": "jason",
-          "element": 138
+          "element": 428
         },
         "dj": {
           "playerName": "Barcola",
@@ -1356,5 +1356,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-09-06T12:31:30.501Z"
+  "generatedAt": "2026-09-06T13:20:26.999Z"
 }
