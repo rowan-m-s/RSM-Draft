@@ -4,8 +4,8 @@
   "isPreview": false,
   "deadlineUtc": "2026-09-04T17:30:00Z",
   "started": true,
-  "finished": false,
-  "dataChecked": false,
+  "finished": true,
+  "dataChecked": true,
   "squads": {
     "rushy": [
       {
@@ -25,16 +25,8 @@
         "points": 7
       },
       {
-        "element": 11,
-        "position": 3,
-        "starter": true,
-        "subbedOn": false,
-        "subbedOff": false,
-        "points": 0
-      },
-      {
         "element": 469,
-        "position": 4,
+        "position": 3,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
@@ -42,11 +34,19 @@
       },
       {
         "element": 84,
-        "position": 5,
+        "position": 4,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
         "points": 1
+      },
+      {
+        "element": 541,
+        "position": 5,
+        "starter": true,
+        "subbedOn": true,
+        "subbedOff": false,
+        "points": 2
       },
       {
         "element": 40,
@@ -57,12 +57,12 @@
         "points": 6
       },
       {
-        "element": 14,
+        "element": 367,
         "position": 7,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 11
       },
       {
         "element": 371,
@@ -73,15 +73,15 @@
         "points": 1
       },
       {
-        "element": 367,
+        "element": 490,
         "position": 9,
         "starter": true,
-        "subbedOn": false,
+        "subbedOn": true,
         "subbedOff": false,
-        "points": 11
+        "points": 1
       },
       {
-        "element": 222,
+        "element": 25,
         "position": 10,
         "starter": true,
         "subbedOn": false,
@@ -89,7 +89,7 @@
         "points": 1
       },
       {
-        "element": 25,
+        "element": 222,
         "position": 11,
         "starter": true,
         "subbedOn": false,
@@ -105,20 +105,20 @@
         "points": 6
       },
       {
-        "element": 490,
+        "element": 11,
         "position": 13,
         "starter": false,
         "subbedOn": false,
-        "subbedOff": false,
-        "points": 1
+        "subbedOff": true,
+        "points": 0
       },
       {
-        "element": 541,
+        "element": 14,
         "position": 14,
         "starter": false,
         "subbedOn": false,
-        "subbedOff": false,
-        "points": 2
+        "subbedOff": true,
+        "points": 0
       },
       {
         "element": 53,
@@ -269,16 +269,8 @@
         "points": 2
       },
       {
-        "element": 387,
-        "position": 3,
-        "starter": true,
-        "subbedOn": false,
-        "subbedOff": false,
-        "points": 0
-      },
-      {
         "element": 504,
-        "position": 4,
+        "position": 3,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
@@ -286,7 +278,7 @@
       },
       {
         "element": 203,
-        "position": 5,
+        "position": 4,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
@@ -294,7 +286,7 @@
       },
       {
         "element": 237,
-        "position": 6,
+        "position": 5,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
@@ -302,7 +294,7 @@
       },
       {
         "element": 95,
-        "position": 7,
+        "position": 6,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
@@ -310,7 +302,7 @@
       },
       {
         "element": 338,
-        "position": 8,
+        "position": 7,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
@@ -318,27 +310,35 @@
       },
       {
         "element": 127,
-        "position": 9,
+        "position": 8,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
         "points": 2
       },
       {
-        "element": 224,
+        "element": 136,
+        "position": 9,
+        "starter": true,
+        "subbedOn": true,
+        "subbedOff": false,
+        "points": 1
+      },
+      {
+        "element": 346,
         "position": 10,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 4
+        "points": 1
       },
       {
-        "element": 346,
+        "element": 224,
         "position": 11,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 1
+        "points": 4
       },
       {
         "element": 28,
@@ -349,12 +349,12 @@
         "points": 3
       },
       {
-        "element": 136,
+        "element": 387,
         "position": 13,
         "starter": false,
         "subbedOn": false,
-        "subbedOff": false,
-        "points": 1
+        "subbedOff": true,
+        "points": 0
       },
       {
         "element": 60,
@@ -399,7 +399,7 @@
         "points": 8
       },
       {
-        "element": 327,
+        "element": 595,
         "position": 4,
         "starter": true,
         "subbedOn": false,
@@ -407,7 +407,7 @@
         "points": 1
       },
       {
-        "element": 595,
+        "element": 327,
         "position": 5,
         "starter": true,
         "subbedOn": false,
@@ -415,12 +415,12 @@
         "points": 1
       },
       {
-        "element": 452,
+        "element": 403,
         "position": 6,
         "starter": true,
-        "subbedOn": false,
+        "subbedOn": true,
         "subbedOff": false,
-        "points": 0
+        "points": 3
       },
       {
         "element": 67,
@@ -439,16 +439,8 @@
         "points": 3
       },
       {
-        "element": 593,
-        "position": 9,
-        "starter": true,
-        "subbedOn": false,
-        "subbedOff": false,
-        "points": 0
-      },
-      {
         "element": 165,
-        "position": 10,
+        "position": 9,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
@@ -456,11 +448,19 @@
       },
       {
         "element": 401,
-        "position": 11,
+        "position": 10,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
         "points": 2
+      },
+      {
+        "element": 593,
+        "position": 11,
+        "starter": true,
+        "subbedOn": false,
+        "subbedOff": false,
+        "points": 0
       },
       {
         "element": 109,
@@ -471,12 +471,12 @@
         "points": 3
       },
       {
-        "element": 403,
+        "element": 452,
         "position": 13,
         "starter": false,
         "subbedOn": false,
-        "subbedOff": false,
-        "points": 3
+        "subbedOff": true,
+        "points": 0
       },
       {
         "element": 400,
@@ -781,12 +781,12 @@
         "points": 4
       },
       {
-        "element": 130,
+        "element": 261,
         "position": 6,
         "starter": true,
-        "subbedOn": false,
+        "subbedOn": true,
         "subbedOff": false,
-        "points": 0
+        "points": 2
       },
       {
         "element": 426,
@@ -837,12 +837,12 @@
         "points": 0
       },
       {
-        "element": 261,
+        "element": 130,
         "position": 13,
         "starter": false,
         "subbedOn": false,
-        "subbedOff": false,
-        "points": 2
+        "subbedOff": true,
+        "points": 0
       },
       {
         "element": 242,
@@ -871,12 +871,12 @@
         "points": 1
       },
       {
-        "element": 152,
+        "element": 112,
         "position": 2,
         "starter": true,
-        "subbedOn": false,
+        "subbedOn": true,
         "subbedOff": false,
-        "points": 0
+        "points": 8
       },
       {
         "element": 87,
@@ -903,12 +903,12 @@
         "points": 3
       },
       {
-        "element": 556,
+        "element": 480,
         "position": 6,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 3
       },
       {
         "element": 335,
@@ -919,24 +919,16 @@
         "points": 2
       },
       {
-        "element": 480,
+        "element": 556,
         "position": 8,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 3
-      },
-      {
-        "element": 295,
-        "position": 9,
-        "starter": true,
-        "subbedOn": false,
-        "subbedOff": false,
-        "points": 2
+        "points": 0
       },
       {
         "element": 439,
-        "position": 10,
+        "position": 9,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
@@ -944,11 +936,19 @@
       },
       {
         "element": 464,
-        "position": 11,
+        "position": 10,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
         "points": 1
+      },
+      {
+        "element": 295,
+        "position": 11,
+        "starter": true,
+        "subbedOn": false,
+        "subbedOff": false,
+        "points": 2
       },
       {
         "element": 564,
@@ -967,12 +967,12 @@
         "points": 0
       },
       {
-        "element": 112,
+        "element": 152,
         "position": 14,
         "starter": false,
         "subbedOn": false,
-        "subbedOff": false,
-        "points": 8
+        "subbedOff": true,
+        "points": 0
       },
       {
         "element": 149,
@@ -1001,32 +1001,24 @@
         "points": 6
       },
       {
-        "element": 449,
-        "position": 3,
-        "starter": true,
-        "subbedOn": false,
-        "subbedOff": false,
-        "points": 4
-      },
-      {
         "element": 358,
-        "position": 4,
+        "position": 3,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
         "points": 5
       },
       {
-        "element": 630,
-        "position": 5,
+        "element": 449,
+        "position": 4,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 4
       },
       {
         "element": 12,
-        "position": 6,
+        "position": 5,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
@@ -1034,7 +1026,7 @@
       },
       {
         "element": 428,
-        "position": 7,
+        "position": 6,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
@@ -1042,7 +1034,7 @@
       },
       {
         "element": 15,
-        "position": 8,
+        "position": 7,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
@@ -1050,7 +1042,7 @@
       },
       {
         "element": 377,
-        "position": 9,
+        "position": 8,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
@@ -1058,11 +1050,19 @@
       },
       {
         "element": 86,
-        "position": 10,
+        "position": 9,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
         "points": 2
+      },
+      {
+        "element": 553,
+        "position": 10,
+        "starter": true,
+        "subbedOn": true,
+        "subbedOff": false,
+        "points": 4
       },
       {
         "element": 138,
@@ -1089,12 +1089,12 @@
         "points": 0
       },
       {
-        "element": 553,
+        "element": 630,
         "position": 14,
         "starter": false,
         "subbedOn": false,
-        "subbedOff": false,
-        "points": 4
+        "subbedOff": true,
+        "points": 0
       },
       {
         "element": 200,
@@ -1115,12 +1115,12 @@
         "points": 10
       },
       {
-        "element": 389,
+        "element": 142,
         "position": 2,
         "starter": true,
-        "subbedOn": false,
+        "subbedOn": true,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 201,
@@ -1155,12 +1155,12 @@
         "points": 3
       },
       {
-        "element": 628,
+        "element": 481,
         "position": 7,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 1
+        "points": 3
       },
       {
         "element": 94,
@@ -1171,12 +1171,12 @@
         "points": 2
       },
       {
-        "element": 481,
+        "element": 628,
         "position": 9,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 3
+        "points": 1
       },
       {
         "element": 106,
@@ -1211,12 +1211,12 @@
         "points": 1
       },
       {
-        "element": 142,
+        "element": 389,
         "position": 14,
         "starter": false,
         "subbedOn": false,
-        "subbedOff": false,
-        "points": 1
+        "subbedOff": true,
+        "points": 0
       },
       {
         "element": 5,
@@ -3332,5 +3332,5 @@
       "newsAdded": null
     }
   },
-  "generatedAt": "2026-09-07T07:46:28.723Z"
+  "generatedAt": "2026-09-07T13:40:32.785Z"
 }

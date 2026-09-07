@@ -375,9 +375,9 @@
       "waiversUtc": "2026-09-03T17:30:00Z",
       "tradesUtc": "2026-09-02T17:30:00Z",
       "month": "2026-09",
-      "finished": false,
+      "finished": true,
       "started": true,
-      "scoresProvisional": true,
+      "scoresProvisional": false,
       "kochReady": true,
       "yetByManager": {
         "rushy": 0,
@@ -392,25 +392,28 @@
         "dj": 0,
         "ollie": 0
       },
-      "fixturesRemaining": true,
-      "dataChecked": false,
+      "fixturesRemaining": false,
+      "dataChecked": true,
       "confirmExpectedUtc": "2026-09-07T15:30:00.000Z",
       "revealFromUtc": "2026-09-07T08:05:00.000Z",
       "scores": {
-        "rushy": 41,
+        "rushy": 44,
         "kellett": 39,
-        "wallis": 30,
-        "jls": 31,
+        "wallis": 31,
+        "jls": 34,
         "paddy": 50,
         "bennett": 41,
-        "wood": 42,
-        "rowan": 23,
-        "jason": 40,
-        "dj": 35,
+        "wood": 44,
+        "rowan": 31,
+        "jason": 44,
+        "dj": 36,
         "ollie": 41
       },
-      "kochKeys": [],
-      "charged": 0,
+      "kochKeys": [
+        "wallis",
+        "rowan"
+      ],
+      "charged": 10,
       "topPerformerByManager": {
         "rushy": {
           "playerName": "Gakpo",
@@ -448,8 +451,8 @@
           "managerKey": "wood"
         },
         "rowan": {
-          "playerName": "Šeško",
-          "points": 5,
+          "playerName": "Van Hecke",
+          "points": 8,
           "managerKey": "rowan"
         },
         "jason": {
@@ -524,10 +527,10 @@
           "element": 138
         },
         "dj": {
-          "playerName": "Barcola",
+          "playerName": "James",
           "points": 1,
           "managerKey": "dj",
-          "element": 628
+          "element": 142
         },
         "ollie": {
           "playerName": "Thiaw",
@@ -1356,5 +1359,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-09-07T07:46:28.723Z"
+  "generatedAt": "2026-09-07T13:40:32.785Z"
 }
