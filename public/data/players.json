@@ -10981,6 +10981,28 @@
       "positionRank": 48
     },
     {
+      "id": 655,
+      "name": "Gboho",
+      "position": "MID",
+      "club": "Coventry City",
+      "clubShort": "COV",
+      "clubCode": 9,
+      "teamId": 7,
+      "photoCode": 242893,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 0,
+      "ppg": 0,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 291
+    },
+    {
       "id": 340,
       "name": "Gelhardt",
       "position": "MID",
@@ -11562,10 +11584,10 @@
       "teamId": 17,
       "photoCode": 554578,
       "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
+      "status": "d",
+      "chanceOfPlaying": 50,
+      "news": "Ankle injury - 50% chance of playing",
+      "newsAdded": "2026-09-10T16:00:09.127466Z",
       "points": 0,
       "ppg": 0,
       "goals": 0,
@@ -11872,7 +11894,7 @@
       "owner": null,
       "status": "i",
       "chanceOfPlaying": 0,
-      "news": "Foot injury - Unknown return date",
+      "news": "Foot injury - Expected back 7 Nov",
       "newsAdded": "2026-07-29T17:30:09.796802Z",
       "points": 0,
       "ppg": 0,
@@ -14388,7 +14410,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 291
+      "positionRank": 292
     }
   ],
   "leadingScorer": {
@@ -14413,5 +14435,5 @@
     "bonus": 5,
     "positionRank": 1
   },
-  "generatedAt": "2026-09-10T13:16:07.649Z"
+  "generatedAt": "2026-09-10T16:52:07.898Z"
 }
