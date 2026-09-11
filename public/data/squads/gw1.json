@@ -1574,9 +1574,9 @@
       "clubShort": "AVL",
       "clubCode": 7,
       "photoCode": 614071,
-      "status": "i",
+      "status": "d",
       "chanceOfPlaying": 0,
-      "news": "Knee injury - Expected back 12 Sep",
+      "news": "Knee injury - 50% chance of playing",
       "newsAdded": "2026-08-15T15:30:06.388335Z"
     },
     "55": {
@@ -1706,9 +1706,9 @@
       "clubShort": "BRE",
       "clubCode": 94,
       "photoCode": 432830,
-      "status": "d",
-      "chanceOfPlaying": 25,
-      "news": "Calf injury - 25% chance of playing",
+      "status": "i",
+      "chanceOfPlaying": 0,
+      "news": "Calf injury - Unknown return date",
       "newsAdded": "2026-09-05T18:00:06.182495Z"
     },
     "94": {
@@ -1958,9 +1958,9 @@
       "clubShort": "CHE",
       "clubCode": 8,
       "photoCode": 486672,
-      "status": "d",
+      "status": "i",
       "chanceOfPlaying": 75,
-      "news": "Calf injury - 75% chance of playing",
+      "news": "Calf injury - Expected back 18 Sep",
       "newsAdded": "2026-08-30T16:00:08.393562Z"
     },
     "165": {
@@ -3134,9 +3134,9 @@
       "clubShort": "TOT",
       "clubCode": 6,
       "photoCode": 172780,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 75,
-      "news": "Shoulder injury - 75% chance of playing",
+      "news": null,
       "newsAdded": "2026-08-25T14:30:07.623508Z"
     },
     "525": {
@@ -3332,5 +3332,5 @@
       "newsAdded": "2026-08-15T16:00:07.974271Z"
     }
   },
-  "generatedAt": "2026-09-11T13:09:35.650Z"
+  "generatedAt": "2026-09-11T16:51:42.078Z"
 }
