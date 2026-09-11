@@ -1354,7 +1354,7 @@
       "owner": "rushy",
       "status": "d",
       "chanceOfPlaying": 75,
-      "news": "Muscular injury - 75% chance of playing",
+      "news": "Muscular injury - 50% chance of playing",
       "newsAdded": "2026-09-04T14:00:08.080310Z",
       "points": 12,
       "ppg": 6,
@@ -2826,9 +2826,9 @@
       "teamId": 15,
       "photoCode": 472769,
       "owner": "wallis",
-      "status": "d",
-      "chanceOfPlaying": 75,
-      "news": "Back injury - 75% chance of playing",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
       "newsAdded": "2026-09-05T18:00:06.379802Z",
       "points": 4,
       "ppg": 2,
@@ -3444,7 +3444,7 @@
       "owner": "jls",
       "status": "i",
       "chanceOfPlaying": 0,
-      "news": "Calf injury - Expected back 13 Sep",
+      "news": "Calf injury - Expected back 20 Sep",
       "newsAdded": "2026-08-18T17:00:08.385597Z",
       "points": 0,
       "ppg": 0,
@@ -14435,5 +14435,5 @@
     "bonus": 5,
     "positionRank": 1
   },
-  "generatedAt": "2026-09-11T07:39:50.655Z"
+  "generatedAt": "2026-09-11T12:32:09.726Z"
 }
