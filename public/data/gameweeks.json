@@ -565,17 +565,17 @@
       "scoresProvisional": true,
       "kochReady": true,
       "yetByManager": {
-        "rushy": 3,
-        "kellett": 7,
+        "rushy": 2,
+        "kellett": 6,
         "wallis": 6,
-        "jls": 8,
-        "paddy": 9,
-        "bennett": 3,
-        "wood": 10,
-        "rowan": 7,
+        "jls": 6,
+        "paddy": 8,
+        "bennett": 2,
+        "wood": 9,
+        "rowan": 4,
         "jason": 6,
         "dj": 3,
-        "ollie": 8
+        "ollie": 4
       },
       "fixturesRemaining": true,
       "dataChecked": false,
@@ -585,14 +585,14 @@
         "rushy": 27,
         "kellett": 11,
         "wallis": 8,
-        "jls": 23,
-        "paddy": 5,
-        "bennett": 21,
-        "wood": 5,
-        "rowan": 15,
+        "jls": 26,
+        "paddy": 6,
+        "bennett": 22,
+        "wood": 6,
+        "rowan": 17,
         "jason": 12,
         "dj": 29,
-        "ollie": 17
+        "ollie": 22
       },
       "kochKeys": [],
       "charged": 0,
@@ -673,16 +673,16 @@
           "element": 60
         },
         "jls": {
-          "playerName": "Rayan",
-          "points": 2,
+          "playerName": "Marmoush",
+          "points": 1,
           "managerKey": "jls",
-          "element": 67
+          "element": 401
         },
         "paddy": {
-          "playerName": "Palmer",
-          "points": 5,
+          "playerName": "Branthwaite",
+          "points": 1,
           "managerKey": "paddy",
-          "element": 154
+          "element": 230
         },
         "bennett": {
           "playerName": "N.Jackson",
@@ -691,10 +691,10 @@
           "element": 166
         },
         "wood": {
-          "playerName": "Evanilson",
-          "points": 5,
+          "playerName": "George",
+          "points": 1,
           "managerKey": "wood",
-          "element": 79
+          "element": 242
         },
         "rowan": {
           "playerName": "Hato",
@@ -715,10 +715,10 @@
           "element": 142
         },
         "ollie": {
-          "playerName": "King",
-          "points": 3,
+          "playerName": "Tonali",
+          "points": 1,
           "managerKey": "ollie",
-          "element": 268
+          "element": 455
         }
       },
       "kochGraphicByManager": {
@@ -726,7 +726,7 @@
         "kellett": null,
         "wallis": null,
         "jls": null,
-        "paddy": 244851,
+        "paddy": null,
         "bennett": null,
         "wood": null,
         "rowan": null,
@@ -1518,5 +1518,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-09-12T16:24:12.574Z"
+  "generatedAt": "2026-09-12T17:36:54.748Z"
 }
