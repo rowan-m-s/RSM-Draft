@@ -95,39 +95,40 @@
       "label": "September 2026",
       "shortLabel": "September",
       "gameweekIds": [
-        3
+        3,
+        4
       ],
       "totals": {
-        "rushy": 44,
-        "kellett": 39,
-        "wallis": 31,
-        "jls": 34,
-        "paddy": 50,
-        "bennett": 41,
-        "wood": 44,
-        "rowan": 31,
-        "jason": 44,
-        "dj": 36,
-        "ollie": 41
+        "rushy": 71,
+        "kellett": 50,
+        "wallis": 39,
+        "jls": 57,
+        "paddy": 55,
+        "bennett": 62,
+        "wood": 49,
+        "rowan": 46,
+        "jason": 56,
+        "dj": 65,
+        "ollie": 58
       },
       "pot": 10,
       "settled": false,
       "winnerKeys": [],
       "potPerWinner": 0,
       "topPerformer": {
-        "playerName": "Isak",
-        "points": 13,
+        "playerName": "Tavernier",
+        "points": 18,
         "managerKey": "bennett"
       },
       "topPerformerByManager": {
         "rushy": {
-          "playerName": "Gakpo",
-          "points": 11,
+          "playerName": "Rogers",
+          "points": 14,
           "managerKey": "rushy"
         },
         "kellett": {
-          "playerName": "Haaland",
-          "points": 9,
+          "playerName": "Murillo",
+          "points": 14,
           "managerKey": "kellett"
         },
         "wallis": {
@@ -137,7 +138,7 @@
         },
         "jls": {
           "playerName": "A.Becker",
-          "points": 8,
+          "points": 17,
           "managerKey": "jls"
         },
         "paddy": {
@@ -146,8 +147,8 @@
           "managerKey": "paddy"
         },
         "bennett": {
-          "playerName": "Isak",
-          "points": 13,
+          "playerName": "Tavernier",
+          "points": 18,
           "managerKey": "bennett"
         },
         "wood": {
@@ -156,27 +157,27 @@
           "managerKey": "wood"
         },
         "rowan": {
-          "playerName": "Van Hecke",
-          "points": 8,
+          "playerName": "Gibbs-White",
+          "points": 11,
           "managerKey": "rowan"
         },
         "jason": {
-          "playerName": "Ødegaard",
-          "points": 10,
+          "playerName": "Virgil",
+          "points": 14,
           "managerKey": "jason"
         },
         "dj": {
-          "playerName": "Suzuki",
-          "points": 10,
+          "playerName": "Schade",
+          "points": 17,
           "managerKey": "dj"
         },
         "ollie": {
-          "playerName": "King",
-          "points": 10,
+          "playerName": "Jacquet",
+          "points": 14,
           "managerKey": "ollie"
         }
       }
     }
   ],
-  "generatedAt": "2026-09-12T12:33:37.457Z"
+  "generatedAt": "2026-09-12T16:24:12.574Z"
 }

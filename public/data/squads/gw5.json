@@ -1586,9 +1586,9 @@
       "clubShort": "AVL",
       "clubCode": 7,
       "photoCode": 614071,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 50,
-      "news": "Knee injury - 50% chance of playing",
+      "news": null,
       "newsAdded": "2026-08-15T15:30:06.388335Z"
     },
     "57": {
@@ -2006,10 +2006,10 @@
       "clubShort": "CRY",
       "clubCode": 31,
       "photoCode": 172649,
-      "status": "a",
+      "status": "i",
       "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-20T14:00:08.018379Z"
+      "news": "Foot injury - Expected back 11 Oct",
+      "newsAdded": "2026-09-12T14:00:09.378740Z"
     },
     "200": {
       "name": "Lacroix",
@@ -2102,10 +2102,10 @@
       "clubShort": "CRY",
       "clubCode": 31,
       "photoCode": 205533,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
+      "status": "d",
+      "chanceOfPlaying": 75,
+      "news": "Unspecified injury - 75% chance of playing",
+      "newsAdded": "2026-09-12T14:00:09.427136Z"
     },
     "226": {
       "name": "Pickford",
@@ -2426,9 +2426,9 @@
       "clubShort": "LIV",
       "clubCode": 14,
       "photoCode": 243298,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 75,
-      "news": "Thigh injury - 75% chance of playing",
+      "news": null,
       "newsAdded": "2026-09-09T18:30:08.772955Z"
     },
     "368": {
@@ -2906,10 +2906,10 @@
       "clubShort": "NFO",
       "clubCode": 17,
       "photoCode": 227444,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
+      "status": "d",
+      "chanceOfPlaying": 75,
+      "news": "Hamstring injury - 75% chance of playing",
+      "newsAdded": "2026-09-12T14:00:09.705107Z"
     },
     "472": {
       "name": "Murillo",
@@ -3332,5 +3332,5 @@
       "newsAdded": null
     }
   },
-  "generatedAt": "2026-09-12T13:18:09.562Z"
+  "generatedAt": "2026-09-12T16:24:12.574Z"
 }
