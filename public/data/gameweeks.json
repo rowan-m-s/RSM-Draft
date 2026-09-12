@@ -582,17 +582,17 @@
       "confirmExpectedUtc": "2026-09-15T19:00:00.000Z",
       "revealFromUtc": "2026-09-15T08:05:00.000Z",
       "scores": {
-        "rushy": 27,
-        "kellett": 13,
-        "wallis": 9,
-        "jls": 28,
+        "rushy": 28,
+        "kellett": 18,
+        "wallis": 17,
+        "jls": 35,
         "paddy": 15,
-        "bennett": 26,
-        "wood": 10,
+        "bennett": 29,
+        "wood": 15,
         "rowan": 30,
-        "jason": 17,
+        "jason": 23,
         "dj": 29,
-        "ollie": 40
+        "ollie": 55
       },
       "kochKeys": [],
       "charged": 0,
@@ -603,13 +603,13 @@
           "managerKey": "rushy"
         },
         "kellett": {
-          "playerName": "Murillo",
+          "playerName": "Calafiori",
           "points": 6,
           "managerKey": "kellett"
         },
         "wallis": {
-          "playerName": "Scott",
-          "points": 4,
+          "playerName": "Gabriel",
+          "points": 9,
           "managerKey": "wallis"
         },
         "jls": {
@@ -628,8 +628,8 @@
           "managerKey": "bennett"
         },
         "wood": {
-          "playerName": "Evanilson",
-          "points": 5,
+          "playerName": "Konsa",
+          "points": 6,
           "managerKey": "wood"
         },
         "rowan": {
@@ -648,29 +648,29 @@
           "managerKey": "dj"
         },
         "ollie": {
-          "playerName": "Mykolenko",
-          "points": 11,
+          "playerName": "Raya",
+          "points": 14,
           "managerKey": "ollie"
         }
       },
       "scapegoatByManager": {
         "rushy": {
-          "playerName": "Gakpo",
+          "playerName": "Eze",
           "points": 1,
           "managerKey": "rushy",
-          "element": 367
+          "element": 14
         },
         "kellett": {
-          "playerName": "Calafiori",
+          "playerName": "Tel",
           "points": 1,
           "managerKey": "kellett",
-          "element": 8
+          "element": 514
         },
         "wallis": {
-          "playerName": "Gabriel",
-          "points": 1,
+          "playerName": "Hill",
+          "points": 2,
           "managerKey": "wallis",
-          "element": 4
+          "element": 60
         },
         "jls": {
           "playerName": "Marmoush",
@@ -724,7 +724,7 @@
       "kochGraphicByManager": {
         "rushy": null,
         "kellett": null,
-        "wallis": 226597,
+        "wallis": null,
         "jls": null,
         "paddy": null,
         "bennett": null,
@@ -1518,5 +1518,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-09-12T19:59:56.195Z"
+  "generatedAt": "2026-09-12T20:57:02.306Z"
 }
