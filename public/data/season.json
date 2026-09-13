@@ -1,28 +1,28 @@
 {
   "rows": [
     {
-      "key": "ollie",
+      "key": "wood",
       "rank": 1,
-      "total": 173,
-      "gw": 55,
-      "month": 96,
+      "total": 193,
+      "gw": 58,
+      "month": 102,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
       "potsWon": 0,
       "balance": 0,
       "topPerformer": {
-        "playerName": "Raya",
-        "points": 29,
-        "managerKey": "ollie"
+        "playerName": "De Cuyper",
+        "points": 32,
+        "managerKey": "wood"
       }
     },
     {
       "key": "paddy",
       "rank": 2,
-      "total": 172,
-      "gw": 15,
-      "month": 65,
+      "total": 175,
+      "gw": 18,
+      "month": 68,
       "kochCount": 0,
       "motmCount": 1,
       "forfeits": 0,
@@ -35,11 +35,28 @@
       }
     },
     {
-      "key": "jason",
+      "key": "ollie",
       "rank": 3,
-      "total": 169,
-      "gw": 31,
-      "month": 75,
+      "total": 174,
+      "gw": 56,
+      "month": 97,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "Raya",
+        "points": 29,
+        "managerKey": "ollie"
+      }
+    },
+    {
+      "key": "jason",
+      "rank": 4,
+      "total": 172,
+      "gw": 34,
+      "month": 78,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -49,23 +66,6 @@
         "playerName": "Saka",
         "points": 30,
         "managerKey": "jason"
-      }
-    },
-    {
-      "key": "wood",
-      "rank": 4,
-      "total": 158,
-      "gw": 23,
-      "month": 67,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "B.Fernandes",
-        "points": 27,
-        "managerKey": "wood"
       }
     },
     {
@@ -105,9 +105,9 @@
     {
       "key": "bennett",
       "rank": 7,
-      "total": 149,
-      "gw": 29,
-      "month": 70,
+      "total": 150,
+      "gw": 30,
+      "month": 71,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -122,9 +122,9 @@
     {
       "key": "kellett",
       "rank": 8,
-      "total": 145,
-      "gw": 19,
-      "month": 58,
+      "total": 149,
+      "gw": 23,
+      "month": 62,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -139,9 +139,9 @@
     {
       "key": "wallis",
       "rank": 9,
-      "total": 136,
-      "gw": 19,
-      "month": 50,
+      "total": 143,
+      "gw": 26,
+      "month": 57,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -156,9 +156,9 @@
     {
       "key": "jls",
       "rank": 10,
-      "total": 130,
-      "gw": 35,
-      "month": 69,
+      "total": 131,
+      "gw": 36,
+      "month": 70,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -173,9 +173,9 @@
     {
       "key": "dj",
       "rank": 11,
-      "total": 118,
-      "gw": 30,
-      "month": 66,
+      "total": 130,
+      "gw": 42,
+      "month": 78,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -193,19 +193,19 @@
   "seasonPrize": 110,
   "leader": {
     "keys": [
-      "ollie"
+      "wood"
     ],
-    "total": 173,
+    "total": 193,
     "since": null,
     "sinceByKey": {
-      "ollie": null
+      "wood": null
     },
     "asOf": 4,
     "weeks": 0,
     "displaced": null,
     "changed": false
   },
-  "generatedAt": "2026-09-13T14:01:11.828Z",
+  "generatedAt": "2026-09-13T16:05:02.342Z",
   "graphics": {
     "koch": {
       "rushy": 244850,
@@ -257,7 +257,7 @@
       "rowan": 222531,
       "jason": 97032,
       "dj": 437730,
-      "ollie": 446008
+      "ollie": 154561
     }
   },
   "kochCount": {

@@ -566,16 +566,16 @@
       "kochReady": true,
       "yetByManager": {
         "rushy": 0,
-        "kellett": 4,
-        "wallis": 3,
-        "jls": 4,
-        "paddy": 5,
-        "bennett": 1,
-        "wood": 4,
-        "rowan": 4,
-        "jason": 3,
-        "dj": 2,
-        "ollie": 2
+        "kellett": 2,
+        "wallis": 2,
+        "jls": 2,
+        "paddy": 2,
+        "bennett": 0,
+        "wood": 1,
+        "rowan": 3,
+        "jason": 2,
+        "dj": 1,
+        "ollie": 1
       },
       "fixturesRemaining": true,
       "dataChecked": false,
@@ -583,16 +583,16 @@
       "revealFromUtc": "2026-09-15T08:05:00.000Z",
       "scores": {
         "rushy": 28,
-        "kellett": 19,
-        "wallis": 19,
-        "jls": 35,
-        "paddy": 15,
-        "bennett": 29,
-        "wood": 23,
+        "kellett": 23,
+        "wallis": 26,
+        "jls": 36,
+        "paddy": 18,
+        "bennett": 30,
+        "wood": 58,
         "rowan": 30,
-        "jason": 31,
-        "dj": 30,
-        "ollie": 55
+        "jason": 34,
+        "dj": 42,
+        "ollie": 56
       },
       "kochKeys": [],
       "charged": 0,
@@ -628,8 +628,8 @@
           "managerKey": "bennett"
         },
         "wood": {
-          "playerName": "Konsa",
-          "points": 6,
+          "playerName": "Groß",
+          "points": 17,
           "managerKey": "wood"
         },
         "rowan": {
@@ -638,8 +638,8 @@
           "managerKey": "rowan"
         },
         "jason": {
-          "playerName": "Virgil",
-          "points": 8,
+          "playerName": "Kostoulas",
+          "points": 10,
           "managerKey": "jason"
         },
         "dj": {
@@ -661,22 +661,22 @@
           "element": 14
         },
         "kellett": {
-          "playerName": "Boscagli",
-          "points": 1,
+          "playerName": "Foden",
+          "points": -2,
           "managerKey": "kellett",
-          "element": 114
+          "element": 398
         },
         "wallis": {
-          "playerName": "Gomez",
-          "points": 1,
+          "playerName": "Hill",
+          "points": 2,
           "managerKey": "wallis",
-          "element": 127
+          "element": 60
         },
         "jls": {
-          "playerName": "Marmoush",
-          "points": 2,
+          "playerName": "Guéhi",
+          "points": 1,
           "managerKey": "jls",
-          "element": 401
+          "element": 388
         },
         "paddy": {
           "playerName": "Havertz",
@@ -703,10 +703,10 @@
           "element": 148
         },
         "jason": {
-          "playerName": "Kerkez",
+          "playerName": "Cunha",
           "points": 1,
           "managerKey": "jason",
-          "element": 358
+          "element": 428
         },
         "dj": {
           "playerName": "James",
@@ -1518,5 +1518,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-09-13T14:01:11.828Z"
+  "generatedAt": "2026-09-13T16:05:02.342Z"
 }
