@@ -566,15 +566,15 @@
       "kochReady": true,
       "yetByManager": {
         "rushy": 0,
-        "kellett": 5,
-        "wallis": 5,
-        "jls": 5,
+        "kellett": 4,
+        "wallis": 3,
+        "jls": 4,
         "paddy": 5,
         "bennett": 1,
-        "wood": 7,
+        "wood": 4,
         "rowan": 4,
-        "jason": 4,
-        "dj": 3,
+        "jason": 3,
+        "dj": 2,
         "ollie": 2
       },
       "fixturesRemaining": true,
@@ -583,15 +583,15 @@
       "revealFromUtc": "2026-09-15T08:05:00.000Z",
       "scores": {
         "rushy": 28,
-        "kellett": 18,
-        "wallis": 17,
+        "kellett": 19,
+        "wallis": 19,
         "jls": 35,
         "paddy": 15,
         "bennett": 29,
-        "wood": 15,
+        "wood": 18,
         "rowan": 30,
-        "jason": 23,
-        "dj": 29,
+        "jason": 24,
+        "dj": 32,
         "ollie": 55
       },
       "kochKeys": [],
@@ -661,16 +661,16 @@
           "element": 14
         },
         "kellett": {
-          "playerName": "Tel",
+          "playerName": "Boscagli",
           "points": 1,
           "managerKey": "kellett",
-          "element": 514
+          "element": 114
         },
         "wallis": {
-          "playerName": "Hill",
-          "points": 2,
+          "playerName": "Gomez",
+          "points": 1,
           "managerKey": "wallis",
-          "element": 60
+          "element": 127
         },
         "jls": {
           "playerName": "Marmoush",
@@ -1518,5 +1518,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-09-13T07:53:34.429Z"
+  "generatedAt": "2026-09-13T13:34:55.329Z"
 }
