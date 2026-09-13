@@ -1057,6 +1057,28 @@
       "positionRank": 28
     },
     {
+      "id": 384,
+      "name": "Donnarumma",
+      "position": "GKP",
+      "club": "Man City",
+      "clubShort": "MCI",
+      "clubCode": 43,
+      "teamId": 15,
+      "photoCode": 204936,
+      "owner": "wood",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 17,
+      "ppg": 4.3,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 0,
+      "positionRank": 6
+    },
+    {
       "id": 26,
       "name": "Havertz",
       "position": "FWD",
@@ -1253,28 +1275,6 @@
       "cleanSheets": 1,
       "bonus": 1,
       "positionRank": 34
-    },
-    {
-      "id": 384,
-      "name": "Donnarumma",
-      "position": "GKP",
-      "club": "Man City",
-      "clubShort": "MCI",
-      "clubCode": 43,
-      "teamId": 15,
-      "photoCode": 204936,
-      "owner": "wood",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 16,
-      "ppg": 4,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 0,
-      "positionRank": 6
     },
     {
       "id": 79,
@@ -11575,6 +11575,28 @@
       "positionRank": 266
     },
     {
+      "id": 658,
+      "name": "Ibrahim",
+      "position": "MID",
+      "club": "Brighton",
+      "clubShort": "BHA",
+      "clubCode": 36,
+      "teamId": 5,
+      "photoCode": 661016,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 0,
+      "ppg": 0,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 293
+    },
+    {
       "id": 118,
       "name": "Igor",
       "position": "DEF",
@@ -14454,7 +14476,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 293
+      "positionRank": 294
     }
   ],
   "leadingScorer": {
@@ -14479,5 +14501,5 @@
     "bonus": 6,
     "positionRank": 1
   },
-  "generatedAt": "2026-09-13T17:24:04.285Z"
+  "generatedAt": "2026-09-13T17:49:48.161Z"
 }
