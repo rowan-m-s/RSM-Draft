@@ -160,7 +160,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 4
+        "points": 2
       },
       {
         "element": 472,
@@ -314,7 +314,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 1
+        "points": 7
       },
       {
         "element": 127,
@@ -338,7 +338,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 11
+        "points": 10
       },
       {
         "element": 412,
@@ -436,7 +436,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 1
+        "points": 9
       },
       {
         "element": 593,
@@ -476,7 +476,7 @@
         "starter": false,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 1
+        "points": 15
       },
       {
         "element": 400,
@@ -526,7 +526,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 6
+        "points": 7
       },
       {
         "element": 230,
@@ -566,7 +566,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 1
+        "points": 2
       },
       {
         "element": 155,
@@ -736,7 +736,7 @@
         "starter": false,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       }
     ],
     "wood": [
@@ -884,7 +884,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 3
       },
       {
         "element": 148,
@@ -916,7 +916,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 1
+        "points": 3
       },
       {
         "element": 480,
@@ -948,7 +948,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 1
+        "points": 2
       },
       {
         "element": 564,
@@ -990,7 +990,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 1
+        "points": 3
       },
       {
         "element": 356,
@@ -1266,7 +1266,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 2
       },
       {
         "element": 427,
@@ -2834,10 +2834,10 @@
       "clubShort": "NEW",
       "clubCode": 4,
       "photoCode": 449434,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
+      "status": "i",
+      "chanceOfPlaying": 0,
+      "news": "Unspecified injury - Unknown return date",
+      "newsAdded": "2026-09-14T20:00:09.505598Z"
     },
     "455": {
       "name": "Tonali",
@@ -2906,9 +2906,9 @@
       "clubShort": "NFO",
       "clubCode": 17,
       "photoCode": 227444,
-      "status": "d",
-      "chanceOfPlaying": 75,
-      "news": "Hamstring injury - 75% chance of playing",
+      "status": "i",
+      "chanceOfPlaying": 0,
+      "news": "Hamstring injury - Expected back 11 Oct",
       "newsAdded": "2026-09-12T14:00:09.705107Z"
     },
     "472": {
@@ -3332,5 +3332,5 @@
       "newsAdded": null
     }
   },
-  "generatedAt": "2026-09-14T19:58:53.546Z"
+  "generatedAt": "2026-09-14T21:17:03.927Z"
 }
