@@ -6106,10 +6106,10 @@
       "teamId": 17,
       "photoCode": 465694,
       "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
+      "status": "d",
+      "chanceOfPlaying": 50,
+      "news": "Concussion - 50% chance of playing",
+      "newsAdded": "2026-09-14T21:30:07.343728Z",
       "points": 5,
       "ppg": 1.7,
       "goals": 0,
@@ -12741,6 +12741,28 @@
       "positionRank": 201
     },
     {
+      "id": 659,
+      "name": "Miley",
+      "position": "MID",
+      "club": "Newcastle",
+      "clubShort": "NEW",
+      "clubCode": 4,
+      "teamId": 17,
+      "photoCode": 665243,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 0,
+      "ppg": 0,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 294
+    },
+    {
       "id": 63,
       "name": "Milosavljević",
       "position": "DEF",
@@ -14476,7 +14498,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 294
+      "positionRank": 295
     }
   ],
   "leadingScorer": {
@@ -14501,5 +14523,5 @@
     "bonus": 6,
     "positionRank": 1
   },
-  "generatedAt": "2026-09-14T21:17:03.927Z"
+  "generatedAt": "2026-09-14T22:56:33.942Z"
 }
