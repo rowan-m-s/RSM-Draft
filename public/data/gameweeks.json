@@ -566,16 +566,16 @@
       "kochReady": true,
       "yetByManager": {
         "rushy": 0,
-        "kellett": 2,
-        "wallis": 2,
-        "jls": 2,
-        "paddy": 2,
+        "kellett": 0,
+        "wallis": 0,
+        "jls": 0,
+        "paddy": 0,
         "bennett": 0,
-        "wood": 1,
-        "rowan": 3,
-        "jason": 2,
-        "dj": 1,
-        "ollie": 1
+        "wood": 0,
+        "rowan": 0,
+        "jason": 0,
+        "dj": 0,
+        "ollie": 0
       },
       "fixturesRemaining": true,
       "dataChecked": false,
@@ -583,15 +583,15 @@
       "revealFromUtc": "2026-09-15T08:05:00.000Z",
       "scores": {
         "rushy": 28,
-        "kellett": 31,
-        "wallis": 27,
-        "jls": 41,
-        "paddy": 24,
+        "kellett": 35,
+        "wallis": 39,
+        "jls": 42,
+        "paddy": 31,
         "bennett": 31,
-        "wood": 71,
-        "rowan": 31,
-        "jason": 35,
-        "dj": 44,
+        "wood": 73,
+        "rowan": 33,
+        "jason": 36,
+        "dj": 45,
         "ollie": 57
       },
       "kochKeys": [],
@@ -608,8 +608,8 @@
           "managerKey": "kellett"
         },
         "wallis": {
-          "playerName": "Gabriel",
-          "points": 9,
+          "playerName": "Calvert-Lewin",
+          "points": 11,
           "managerKey": "wallis"
         },
         "jls": {
@@ -667,16 +667,16 @@
           "element": 398
         },
         "wallis": {
-          "playerName": "Ndiaye",
+          "playerName": "Ampadu",
           "points": 1,
           "managerKey": "wallis",
-          "element": 237
+          "element": 338
         },
         "jls": {
-          "playerName": "Marmoush",
-          "points": 2,
+          "playerName": "Dedić",
+          "points": 0,
           "managerKey": "jls",
-          "element": 401
+          "element": 595
         },
         "paddy": {
           "playerName": "Havertz",
@@ -703,10 +703,10 @@
           "element": 148
         },
         "jason": {
-          "playerName": "Kerkez",
-          "points": 1,
+          "playerName": "Hall",
+          "points": 0,
           "managerKey": "jason",
-          "element": 358
+          "element": 449
         },
         "dj": {
           "playerName": "James",
@@ -715,10 +715,10 @@
           "element": 142
         },
         "ollie": {
-          "playerName": "Grealish",
-          "points": 1,
+          "playerName": "Thiaw",
+          "points": 0,
           "managerKey": "ollie",
-          "element": 238
+          "element": 445
         }
       },
       "kochGraphicByManager": {
@@ -1518,5 +1518,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-09-14T15:33:20.117Z"
+  "generatedAt": "2026-09-14T19:58:53.546Z"
 }
