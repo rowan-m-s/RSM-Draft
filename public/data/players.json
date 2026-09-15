@@ -5314,10 +5314,10 @@
       "teamId": 17,
       "photoCode": 232653,
       "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
+      "status": "d",
+      "chanceOfPlaying": 25,
+      "news": "Thigh injury - 25% chance of playing",
+      "newsAdded": "2026-09-15T09:00:08.191022Z",
       "points": 7,
       "ppg": 2.3,
       "goals": 1,
@@ -5842,10 +5842,10 @@
       "teamId": 7,
       "photoCode": 428580,
       "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
+      "status": "d",
+      "chanceOfPlaying": 50,
+      "news": "Hand injury - 50% chance of playing",
+      "newsAdded": "2026-09-15T09:00:07.851220Z",
       "points": 6,
       "ppg": 2,
       "goals": 0,
@@ -14523,5 +14523,5 @@
     "bonus": 6,
     "positionRank": 1
   },
-  "generatedAt": "2026-09-15T08:14:31.667Z"
+  "generatedAt": "2026-09-15T12:52:59.179Z"
 }
