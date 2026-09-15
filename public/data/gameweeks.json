@@ -560,9 +560,9 @@
       "waiversUtc": "2026-09-11T12:30:00Z",
       "tradesUtc": "2026-09-10T12:30:00Z",
       "month": "2026-09",
-      "finished": false,
+      "finished": true,
       "started": true,
-      "scoresProvisional": true,
+      "scoresProvisional": false,
       "kochReady": true,
       "yetByManager": {
         "rushy": 0,
@@ -578,7 +578,7 @@
         "ollie": 0
       },
       "fixturesRemaining": false,
-      "dataChecked": false,
+      "dataChecked": true,
       "confirmExpectedUtc": "2026-09-15T19:00:00.000Z",
       "revealFromUtc": "2026-09-15T08:05:00.000Z",
       "scores": {
@@ -594,8 +594,10 @@
         "dj": 45,
         "ollie": 59
       },
-      "kochKeys": [],
-      "charged": 0,
+      "kochKeys": [
+        "paddy"
+      ],
+      "charged": 5,
       "topPerformerByManager": {
         "rushy": {
           "playerName": "Rogers",
@@ -1518,5 +1520,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-09-15T08:14:31.667Z"
+  "generatedAt": "2026-09-15T08:17:04.962Z"
 }

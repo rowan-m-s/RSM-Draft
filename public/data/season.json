@@ -23,11 +23,11 @@
       "total": 188,
       "gw": 31,
       "month": 81,
-      "kochCount": 0,
+      "kochCount": 1,
       "motmCount": 1,
-      "forfeits": 0,
+      "forfeits": 5,
       "potsWon": 10,
-      "balance": 10,
+      "balance": 5,
       "topPerformer": {
         "playerName": "Palmer",
         "points": 26,
@@ -188,7 +188,7 @@
       }
     }
   ],
-  "latestSettledGameweek": 3,
+  "latestSettledGameweek": 4,
   "currentMonth": "2026-09",
   "seasonPrize": 110,
   "leader": {
@@ -196,16 +196,16 @@
       "wood"
     ],
     "total": 208,
-    "since": null,
+    "since": 4,
     "sinceByKey": {
-      "wood": null
+      "wood": 4
     },
     "asOf": 4,
-    "weeks": 0,
-    "displaced": null,
-    "changed": false
+    "weeks": 1,
+    "displaced": "paddy",
+    "changed": true
   },
-  "generatedAt": "2026-09-15T08:14:31.667Z",
+  "generatedAt": "2026-09-15T08:17:04.962Z",
   "graphics": {
     "koch": {
       "rushy": 244850,
@@ -265,7 +265,7 @@
     "kellett": 0,
     "wallis": 1,
     "jls": 1,
-    "paddy": 0,
+    "paddy": 1,
     "bennett": 0,
     "wood": 0,
     "rowan": 1,
