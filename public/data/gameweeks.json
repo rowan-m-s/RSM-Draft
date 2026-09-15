@@ -577,17 +577,17 @@
         "dj": 0,
         "ollie": 0
       },
-      "fixturesRemaining": true,
+      "fixturesRemaining": false,
       "dataChecked": false,
       "confirmExpectedUtc": "2026-09-15T19:00:00.000Z",
       "revealFromUtc": "2026-09-15T08:05:00.000Z",
       "scores": {
-        "rushy": 28,
+        "rushy": 37,
         "kellett": 33,
-        "wallis": 44,
-        "jls": 50,
-        "paddy": 33,
-        "bennett": 31,
+        "wallis": 46,
+        "jls": 65,
+        "paddy": 31,
+        "bennett": 38,
         "wood": 73,
         "rowan": 39,
         "jason": 38,
@@ -613,8 +613,8 @@
           "managerKey": "wallis"
         },
         "jls": {
-          "playerName": "João Pedro",
-          "points": 12,
+          "playerName": "Bogle",
+          "points": 15,
           "managerKey": "jls"
         },
         "paddy": {
@@ -679,10 +679,10 @@
           "element": 595
         },
         "paddy": {
-          "playerName": "Havertz",
-          "points": 1,
+          "playerName": "Awoniyi",
+          "points": -2,
           "managerKey": "paddy",
-          "element": 26
+          "element": 492
         },
         "bennett": {
           "playerName": "N.Jackson",
@@ -1518,5 +1518,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-09-15T01:05:39.219Z"
+  "generatedAt": "2026-09-15T08:14:31.667Z"
 }

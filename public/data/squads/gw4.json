@@ -17,20 +17,20 @@
         "points": 3
       },
       {
-        "element": 499,
+        "element": 469,
         "position": 2,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 2
       },
       {
-        "element": 469,
+        "element": 151,
         "position": 3,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 2
+        "points": 0
       },
       {
         "element": 588,
@@ -41,12 +41,12 @@
         "points": 7
       },
       {
-        "element": 151,
+        "element": 53,
         "position": 5,
         "starter": true,
-        "subbedOn": false,
+        "subbedOn": true,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 40,
@@ -57,7 +57,7 @@
         "points": 8
       },
       {
-        "element": 14,
+        "element": 367,
         "position": 7,
         "starter": true,
         "subbedOn": false,
@@ -65,7 +65,7 @@
         "points": 1
       },
       {
-        "element": 371,
+        "element": 14,
         "position": 8,
         "starter": true,
         "subbedOn": false,
@@ -73,7 +73,7 @@
         "points": 1
       },
       {
-        "element": 367,
+        "element": 371,
         "position": 9,
         "starter": true,
         "subbedOn": false,
@@ -81,20 +81,20 @@
         "points": 1
       },
       {
-        "element": 646,
+        "element": 222,
         "position": 10,
         "starter": true,
-        "subbedOn": false,
+        "subbedOn": true,
         "subbedOff": false,
-        "points": 5
+        "points": 8
       },
       {
-        "element": 25,
+        "element": 646,
         "position": 11,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 5
       },
       {
         "element": 571,
@@ -105,12 +105,12 @@
         "points": 2
       },
       {
-        "element": 53,
+        "element": 499,
         "position": 13,
         "starter": false,
         "subbedOn": false,
-        "subbedOff": false,
-        "points": 1
+        "subbedOff": true,
+        "points": 0
       },
       {
         "element": 11,
@@ -121,12 +121,12 @@
         "points": 0
       },
       {
-        "element": 222,
+        "element": 25,
         "position": 15,
         "starter": false,
         "subbedOn": false,
-        "subbedOff": false,
-        "points": 8
+        "subbedOff": true,
+        "points": 0
       }
     ],
     "kellett": [
@@ -269,28 +269,28 @@
         "points": 9
       },
       {
-        "element": 60,
-        "position": 3,
-        "starter": true,
-        "subbedOn": false,
-        "subbedOff": false,
-        "points": 2
-      },
-      {
         "element": 504,
-        "position": 4,
+        "position": 3,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
         "points": 6
       },
       {
-        "element": 203,
-        "position": 5,
+        "element": 60,
+        "position": 4,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 2
+      },
+      {
+        "element": 387,
+        "position": 5,
+        "starter": true,
+        "subbedOn": true,
+        "subbedOff": false,
+        "points": 1
       },
       {
         "element": 237,
@@ -325,12 +325,12 @@
         "points": 3
       },
       {
-        "element": 224,
+        "element": 136,
         "position": 10,
         "starter": true,
-        "subbedOn": false,
+        "subbedOn": true,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 346,
@@ -349,20 +349,20 @@
         "points": 2
       },
       {
-        "element": 136,
+        "element": 203,
         "position": 13,
         "starter": false,
         "subbedOn": false,
-        "subbedOff": false,
-        "points": 1
+        "subbedOff": true,
+        "points": 0
       },
       {
-        "element": 387,
+        "element": 224,
         "position": 14,
         "starter": false,
         "subbedOn": false,
-        "subbedOff": false,
-        "points": 1
+        "subbedOff": true,
+        "points": 0
       },
       {
         "element": 123,
@@ -383,12 +383,12 @@
         "points": 9
       },
       {
-        "element": 393,
+        "element": 330,
         "position": 2,
         "starter": true,
-        "subbedOn": false,
+        "subbedOn": true,
         "subbedOff": false,
-        "points": 0
+        "points": 15
       },
       {
         "element": 388,
@@ -407,16 +407,8 @@
         "points": 0
       },
       {
-        "element": 403,
-        "position": 5,
-        "starter": true,
-        "subbedOn": false,
-        "subbedOff": false,
-        "points": 3
-      },
-      {
         "element": 452,
-        "position": 6,
+        "position": 5,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
@@ -424,11 +416,19 @@
       },
       {
         "element": 67,
-        "position": 7,
+        "position": 6,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
         "points": 2
+      },
+      {
+        "element": 403,
+        "position": 7,
+        "starter": true,
+        "subbedOn": false,
+        "subbedOff": false,
+        "points": 3
       },
       {
         "element": 336,
@@ -439,16 +439,8 @@
         "points": 9
       },
       {
-        "element": 593,
-        "position": 9,
-        "starter": true,
-        "subbedOn": false,
-        "subbedOff": false,
-        "points": 0
-      },
-      {
         "element": 165,
-        "position": 10,
+        "position": 9,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
@@ -456,11 +448,19 @@
       },
       {
         "element": 401,
-        "position": 11,
+        "position": 10,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
         "points": 2
+      },
+      {
+        "element": 593,
+        "position": 11,
+        "starter": true,
+        "subbedOn": false,
+        "subbedOff": false,
+        "points": 0
       },
       {
         "element": 109,
@@ -471,12 +471,12 @@
         "points": 8
       },
       {
-        "element": 330,
+        "element": 393,
         "position": 13,
         "starter": false,
         "subbedOn": false,
-        "subbedOff": false,
-        "points": 15
+        "subbedOff": true,
+        "points": 0
       },
       {
         "element": 400,
@@ -537,16 +537,8 @@
         "points": 6
       },
       {
-        "element": 471,
-        "position": 6,
-        "starter": true,
-        "subbedOn": false,
-        "subbedOff": false,
-        "points": 0
-      },
-      {
         "element": 154,
-        "position": 7,
+        "position": 6,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
@@ -554,11 +546,19 @@
       },
       {
         "element": 399,
-        "position": 8,
+        "position": 7,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
         "points": 1
+      },
+      {
+        "element": 155,
+        "position": 8,
+        "starter": true,
+        "subbedOn": false,
+        "subbedOff": false,
+        "points": 2
       },
       {
         "element": 453,
@@ -569,12 +569,12 @@
         "points": 2
       },
       {
-        "element": 155,
+        "element": 492,
         "position": 10,
         "starter": true,
-        "subbedOn": false,
+        "subbedOn": true,
         "subbedOff": false,
-        "points": 2
+        "points": -2
       },
       {
         "element": 26,
@@ -593,12 +593,12 @@
         "points": 0
       },
       {
-        "element": 492,
+        "element": 471,
         "position": 13,
         "starter": false,
         "subbedOn": false,
-        "subbedOff": false,
-        "points": -2
+        "subbedOff": true,
+        "points": 0
       },
       {
         "element": 631,
@@ -619,31 +619,31 @@
     ],
     "bennett": [
       {
-        "element": 198,
+        "element": 496,
         "position": 1,
         "starter": true,
-        "subbedOn": false,
+        "subbedOn": true,
         "subbedOff": false,
-        "points": 0
-      },
-      {
-        "element": 580,
-        "position": 2,
-        "starter": true,
-        "subbedOn": false,
-        "subbedOff": false,
-        "points": 6
+        "points": 7
       },
       {
         "element": 61,
-        "position": 3,
+        "position": 2,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
         "points": 3
       },
       {
-        "element": 88,
+        "element": 580,
+        "position": 3,
+        "starter": true,
+        "subbedOn": false,
+        "subbedOff": false,
+        "points": 6
+      },
+      {
+        "element": 204,
         "position": 4,
         "starter": true,
         "subbedOn": false,
@@ -651,7 +651,7 @@
         "points": 1
       },
       {
-        "element": 204,
+        "element": 88,
         "position": 5,
         "starter": true,
         "subbedOn": false,
@@ -659,16 +659,8 @@
         "points": 1
       },
       {
-        "element": 429,
-        "position": 6,
-        "starter": true,
-        "subbedOn": false,
-        "subbedOff": false,
-        "points": 2
-      },
-      {
         "element": 13,
-        "position": 7,
+        "position": 6,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
@@ -676,6 +668,14 @@
       },
       {
         "element": 236,
+        "position": 7,
+        "starter": true,
+        "subbedOn": false,
+        "subbedOff": false,
+        "points": 2
+      },
+      {
+        "element": 429,
         "position": 8,
         "starter": true,
         "subbedOn": false,
@@ -707,12 +707,12 @@
         "points": 0
       },
       {
-        "element": 496,
+        "element": 198,
         "position": 12,
         "starter": false,
         "subbedOn": false,
-        "subbedOff": false,
-        "points": 7
+        "subbedOff": true,
+        "points": 0
       },
       {
         "element": 229,
@@ -3332,5 +3332,5 @@
       "newsAdded": null
     }
   },
-  "generatedAt": "2026-09-15T01:05:39.219Z"
+  "generatedAt": "2026-09-15T08:14:31.667Z"
 }
