@@ -57,7 +57,7 @@
         "points": 0
       },
       {
-        "element": 367,
+        "element": 14,
         "starter": true,
         "position": 7,
         "subbedOn": false,
@@ -65,7 +65,7 @@
         "points": 0
       },
       {
-        "element": 14,
+        "element": 371,
         "starter": true,
         "position": 8,
         "subbedOn": false,
@@ -73,7 +73,7 @@
         "points": 0
       },
       {
-        "element": 371,
+        "element": 222,
         "starter": true,
         "position": 9,
         "subbedOn": false,
@@ -81,7 +81,7 @@
         "points": 0
       },
       {
-        "element": 222,
+        "element": 646,
         "starter": true,
         "position": 10,
         "subbedOn": false,
@@ -89,17 +89,9 @@
         "points": 0
       },
       {
-        "element": 646,
-        "starter": true,
-        "position": 11,
-        "subbedOn": false,
-        "subbedOff": false,
-        "points": 0
-      },
-      {
         "element": 571,
         "starter": false,
-        "position": 12,
+        "position": 11,
         "subbedOn": false,
         "subbedOff": false,
         "points": 0
@@ -107,7 +99,7 @@
       {
         "element": 499,
         "starter": false,
-        "position": 13,
+        "position": 12,
         "subbedOn": false,
         "subbedOff": false,
         "points": 0
@@ -115,13 +107,21 @@
       {
         "element": 11,
         "starter": false,
-        "position": 14,
+        "position": 13,
         "subbedOn": false,
         "subbedOff": false,
         "points": 0
       },
       {
         "element": 25,
+        "starter": false,
+        "position": 14,
+        "subbedOn": false,
+        "subbedOff": false,
+        "points": 0
+      },
+      {
+        "element": 366,
         "starter": false,
         "position": 15,
         "subbedOn": false,
@@ -895,7 +895,7 @@
         "points": 0
       },
       {
-        "element": 366,
+        "element": 556,
         "starter": true,
         "position": 5,
         "subbedOn": false,
@@ -903,7 +903,7 @@
         "points": 0
       },
       {
-        "element": 556,
+        "element": 335,
         "starter": true,
         "position": 6,
         "subbedOn": false,
@@ -911,7 +911,7 @@
         "points": 0
       },
       {
-        "element": 335,
+        "element": 480,
         "starter": true,
         "position": 7,
         "subbedOn": false,
@@ -919,7 +919,7 @@
         "points": 0
       },
       {
-        "element": 480,
+        "element": 512,
         "starter": true,
         "position": 8,
         "subbedOn": false,
@@ -927,7 +927,7 @@
         "points": 0
       },
       {
-        "element": 512,
+        "element": 464,
         "starter": true,
         "position": 9,
         "subbedOn": false,
@@ -935,17 +935,9 @@
         "points": 0
       },
       {
-        "element": 464,
-        "starter": true,
-        "position": 10,
-        "subbedOn": false,
-        "subbedOff": false,
-        "points": 0
-      },
-      {
         "element": 564,
         "starter": false,
-        "position": 11,
+        "position": 10,
         "subbedOn": false,
         "subbedOff": false,
         "points": 0
@@ -953,7 +945,7 @@
       {
         "element": 295,
         "starter": false,
-        "position": 12,
+        "position": 11,
         "subbedOn": false,
         "subbedOff": false,
         "points": 0
@@ -961,13 +953,21 @@
       {
         "element": 152,
         "starter": false,
-        "position": 13,
+        "position": 12,
         "subbedOn": false,
         "subbedOff": false,
         "points": 0
       },
       {
         "element": 533,
+        "starter": false,
+        "position": 13,
+        "subbedOn": false,
+        "subbedOff": false,
+        "points": 0
+      },
+      {
+        "element": 367,
         "starter": false,
         "position": 14,
         "subbedOn": false,
@@ -3242,10 +3242,10 @@
       "clubShort": "NEW",
       "clubCode": 4,
       "photoCode": 463726,
-      "status": "a",
+      "status": "i",
       "chanceOfPlaying": 75,
-      "news": null,
-      "newsAdded": "2026-09-09T14:30:08.475769Z"
+      "news": "Unspecified injury - Unknown return date",
+      "newsAdded": "2026-09-17T14:30:09.823731Z"
     },
     "597": {
       "name": "Suzuki",
@@ -3332,5 +3332,5 @@
       "newsAdded": null
     }
   },
-  "generatedAt": "2026-09-17T14:01:35.065Z"
+  "generatedAt": "2026-09-17T17:35:13.609Z"
 }
