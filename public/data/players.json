@@ -617,28 +617,6 @@
       "positionRank": 12
     },
     {
-      "id": 305,
-      "name": "Davis",
-      "position": "DEF",
-      "club": "Ipswich Town",
-      "clubShort": "IPS",
-      "clubCode": 40,
-      "teamId": 12,
-      "photoCode": 455084,
-      "owner": "rowan",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 23,
-      "ppg": 5.8,
-      "goals": 2,
-      "assists": 2,
-      "cleanSheets": 0,
-      "bonus": 1,
-      "positionRank": 13
-    },
-    {
       "id": 427,
       "name": "Mbeumo",
       "position": "MID",
@@ -2971,6 +2949,28 @@
       "positionRank": 87
     },
     {
+      "id": 581,
+      "name": "Diomande",
+      "position": "DEF",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 568420,
+      "owner": "rowan",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 5,
+      "ppg": 2.5,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 90
+    },
+    {
       "id": 125,
       "name": "Georginio",
       "position": "FWD",
@@ -3719,6 +3719,28 @@
       "cleanSheets": 3,
       "bonus": 2,
       "positionRank": 11
+    },
+    {
+      "id": 305,
+      "name": "Davis",
+      "position": "DEF",
+      "club": "Ipswich Town",
+      "clubShort": "IPS",
+      "clubCode": 40,
+      "teamId": 12,
+      "photoCode": 455084,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 23,
+      "ppg": 5.8,
+      "goals": 2,
+      "assists": 2,
+      "cleanSheets": 0,
+      "bonus": 1,
+      "positionRank": 13
     },
     {
       "id": 608,
@@ -5985,28 +6007,6 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 116
-    },
-    {
-      "id": 581,
-      "name": "Diomande",
-      "position": "DEF",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 568420,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 5,
-      "ppg": 2.5,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 90
     },
     {
       "id": 405,
@@ -14523,5 +14523,5 @@
     "bonus": 6,
     "positionRank": 1
   },
-  "generatedAt": "2026-09-17T18:43:48.719Z"
+  "generatedAt": "2026-09-17T19:21:35.877Z"
 }

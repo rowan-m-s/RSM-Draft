@@ -951,7 +951,7 @@
         "points": 0
       },
       {
-        "element": 305,
+        "element": 581,
         "starter": false,
         "position": 12,
         "subbedOn": false,
@@ -2287,18 +2287,6 @@
       "news": null,
       "newsAdded": null
     },
-    "305": {
-      "name": "Davis",
-      "position": "DEF",
-      "teamId": 12,
-      "clubShort": "IPS",
-      "clubCode": 40,
-      "photoCode": 455084,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
-    },
     "316": {
       "name": "Emersonn",
       "position": "FWD",
@@ -3223,6 +3211,18 @@
       "news": null,
       "newsAdded": null
     },
+    "581": {
+      "name": "Diomande",
+      "position": "DEF",
+      "teamId": 18,
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "photoCode": 568420,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null
+    },
     "588": {
       "name": "Khalaili",
       "position": "DEF",
@@ -3332,5 +3332,5 @@
       "newsAdded": null
     }
   },
-  "generatedAt": "2026-09-17T18:43:48.719Z"
+  "generatedAt": "2026-09-17T19:21:35.877Z"
 }
