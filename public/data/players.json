@@ -2782,9 +2782,9 @@
       "teamId": 8,
       "photoCode": 205533,
       "owner": "wallis",
-      "status": "d",
-      "chanceOfPlaying": 75,
-      "news": "Unspecified injury - 75% chance of playing",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
       "newsAdded": "2026-09-12T14:00:09.427136Z",
       "points": 7,
       "ppg": 2.3,
@@ -3618,9 +3618,9 @@
       "teamId": 8,
       "photoCode": 232185,
       "owner": "kellett",
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 0,
-      "news": "Groin injury - 50% chance of playing",
+      "news": null,
       "newsAdded": "2026-08-22T18:00:07.363165Z",
       "points": 0,
       "ppg": 0,
@@ -14523,5 +14523,5 @@
     "bonus": 6,
     "positionRank": 1
   },
-  "generatedAt": "2026-09-17T19:21:35.877Z"
+  "generatedAt": "2026-09-17T20:54:16.768Z"
 }
