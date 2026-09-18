@@ -1195,7 +1195,7 @@
         "points": 0
       },
       {
-        "element": 29,
+        "element": 389,
         "starter": false,
         "position": 12,
         "subbedOn": false,
@@ -1203,7 +1203,7 @@
         "points": 0
       },
       {
-        "element": 389,
+        "element": 5,
         "starter": false,
         "position": 13,
         "subbedOn": false,
@@ -1211,7 +1211,7 @@
         "points": 0
       },
       {
-        "element": 5,
+        "element": 199,
         "starter": false,
         "position": 14,
         "subbedOn": false,
@@ -1418,9 +1418,9 @@
       "clubShort": "ARS",
       "clubCode": 3,
       "photoCode": 198869,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 100,
-      "news": "Muscular injury - 75% chance of playing",
+      "news": null,
       "newsAdded": "2026-09-15T19:30:09.494382Z"
     },
     "11": {
@@ -1430,9 +1430,9 @@
       "clubShort": "ARS",
       "clubCode": 3,
       "photoCode": 500040,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 50,
-      "news": "Muscular injury - 50% chance of playing",
+      "news": null,
       "newsAdded": "2026-09-04T14:00:08.080310Z"
     },
     "12": {
@@ -1518,18 +1518,6 @@
       "chanceOfPlaying": null,
       "news": null,
       "newsAdded": null
-    },
-    "29": {
-      "name": "M.Bizot",
-      "position": "GKP",
-      "teamId": 2,
-      "clubShort": "AVL",
-      "clubCode": 7,
-      "photoCode": 72147,
-      "status": "d",
-      "chanceOfPlaying": 75,
-      "news": "Back injury - 75% chance of playing",
-      "newsAdded": "2026-09-17T07:30:09.058151Z"
     },
     "31": {
       "name": "Konsa",
@@ -1898,10 +1886,10 @@
       "clubShort": "CHE",
       "clubCode": 8,
       "photoCode": 225796,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
+      "status": "d",
+      "chanceOfPlaying": 75,
+      "news": "Unspecified injury - 75% chance of playing",
+      "newsAdded": "2026-09-18T10:30:09.719371Z"
     },
     "151": {
       "name": "Acheampong",
@@ -2010,6 +1998,18 @@
       "chanceOfPlaying": 100,
       "news": "Foot injury - Expected back 11 Oct",
       "newsAdded": "2026-09-12T14:00:09.378740Z"
+    },
+    "199": {
+      "name": "Benitez",
+      "position": "GKP",
+      "teamId": 8,
+      "clubShort": "CRY",
+      "clubCode": 31,
+      "photoCode": 121709,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null
     },
     "200": {
       "name": "Lacroix",
@@ -2834,9 +2834,9 @@
       "clubShort": "TOT",
       "clubCode": 6,
       "photoCode": 432422,
-      "status": "d",
-      "chanceOfPlaying": 75,
-      "news": "Knock - 75% chance of playing",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
       "newsAdded": "2026-09-14T14:30:07.387706Z"
     },
     "464": {
@@ -3002,9 +3002,9 @@
       "clubShort": "TOT",
       "clubCode": 6,
       "photoCode": 441164,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 75,
-      "news": "Unspecified injury - 75% chance of playing",
+      "news": null,
       "newsAdded": "2026-09-11T18:00:09.076279Z"
     },
     "503": {
@@ -3332,5 +3332,5 @@
       "newsAdded": null
     }
   },
-  "generatedAt": "2026-09-18T07:51:22.275Z"
+  "generatedAt": "2026-09-18T12:39:13.598Z"
 }

@@ -1913,9 +1913,9 @@
       "clubShort": "ARS",
       "clubCode": 3,
       "photoCode": 198869,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 100,
-      "news": "Muscular injury - 75% chance of playing",
+      "news": null,
       "newsAdded": "2026-09-15T19:30:09.494382Z"
     },
     "11": {
@@ -1925,9 +1925,9 @@
       "clubShort": "ARS",
       "clubCode": 3,
       "photoCode": 500040,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 50,
-      "news": "Muscular injury - 50% chance of playing",
+      "news": null,
       "newsAdded": "2026-09-04T14:00:08.080310Z"
     },
     "12": {
@@ -2381,10 +2381,10 @@
       "clubShort": "CHE",
       "clubCode": 8,
       "photoCode": 225796,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
+      "status": "d",
+      "chanceOfPlaying": 75,
+      "news": "Unspecified injury - 75% chance of playing",
+      "newsAdded": "2026-09-18T10:30:09.719371Z"
     },
     "149": {
       "name": "Colwill",
@@ -3389,9 +3389,9 @@
       "clubShort": "TOT",
       "clubCode": 6,
       "photoCode": 432422,
-      "status": "d",
-      "chanceOfPlaying": 75,
-      "news": "Knock - 75% chance of playing",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
       "newsAdded": "2026-09-14T14:30:07.387706Z"
     },
     "463": {
@@ -3581,9 +3581,9 @@
       "clubShort": "TOT",
       "clubCode": 6,
       "photoCode": 441164,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 75,
-      "news": "Unspecified injury - 75% chance of playing",
+      "news": null,
       "newsAdded": "2026-09-11T18:00:09.076279Z"
     },
     "503": {
@@ -3827,5 +3827,5 @@
       "newsAdded": "2026-08-15T16:00:07.974271Z"
     }
   },
-  "generatedAt": "2026-09-18T07:51:22.275Z"
+  "generatedAt": "2026-09-18T12:39:13.598Z"
 }
