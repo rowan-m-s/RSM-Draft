@@ -96,19 +96,20 @@
       "shortLabel": "September",
       "gameweekIds": [
         3,
-        4
+        4,
+        5
       ],
       "totals": {
-        "rushy": 81,
+        "rushy": 82,
         "kellett": 72,
-        "wallis": 77,
+        "wallis": 80,
         "jls": 99,
-        "paddy": 81,
-        "bennett": 79,
+        "paddy": 82,
+        "bennett": 80,
         "wood": 117,
         "rowan": 70,
-        "jason": 82,
-        "dj": 81,
+        "jason": 85,
+        "dj": 84,
         "ollie": 100
       },
       "pot": 15,
@@ -123,7 +124,7 @@
       "topPerformerByManager": {
         "rushy": {
           "playerName": "Rogers",
-          "points": 14,
+          "points": 15,
           "managerKey": "rushy"
         },
         "kellett": {
@@ -167,8 +168,8 @@
           "managerKey": "jason"
         },
         "dj": {
-          "playerName": "Dunk",
-          "points": 17,
+          "playerName": "Schade",
+          "points": 19,
           "managerKey": "dj"
         },
         "ollie": {
@@ -179,5 +180,5 @@
       }
     }
   ],
-  "generatedAt": "2026-09-18T16:55:16.351Z"
+  "generatedAt": "2026-09-18T19:25:25.784Z"
 }

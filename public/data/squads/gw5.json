@@ -3,7 +3,7 @@
   "isDraft": false,
   "isPreview": false,
   "deadlineUtc": "2026-09-18T17:30:00Z",
-  "started": false,
+  "started": true,
   "finished": false,
   "dataChecked": false,
   "squads": {
@@ -46,7 +46,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 14,
@@ -224,7 +224,7 @@
         "starter": false,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 3
       },
       {
         "element": 465,
@@ -258,7 +258,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 4,
@@ -330,7 +330,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 2
       },
       {
         "element": 346,
@@ -542,7 +542,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 399,
@@ -688,7 +688,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 379,
@@ -1022,7 +1022,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 12,
@@ -1062,7 +1062,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 2
       },
       {
         "element": 138,
@@ -1168,7 +1168,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 2
       },
       {
         "element": 439,
@@ -1192,7 +1192,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 199,
@@ -1216,7 +1216,7 @@
         "starter": false,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 116,
@@ -1876,7 +1876,7 @@
       "photoCode": 225796,
       "status": "d",
       "chanceOfPlaying": 75,
-      "news": "Unspecified injury - 75% chance of playing",
+      "news": "Hamstring injury - 75% chance of playing",
       "newsAdded": "2026-09-18T10:30:09.719371Z"
     },
     "151": {
@@ -3332,5 +3332,5 @@
       "newsAdded": null
     }
   },
-  "generatedAt": "2026-09-18T18:00:04.719Z"
+  "generatedAt": "2026-09-18T19:25:25.784Z"
 }
