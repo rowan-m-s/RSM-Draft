@@ -766,16 +766,16 @@
       "confirmExpectedUtc": "2026-09-21T15:30:00.000Z",
       "revealFromUtc": "2026-09-21T08:05:00.000Z",
       "scores": {
-        "rushy": 1,
+        "rushy": 2,
         "kellett": 0,
-        "wallis": 3,
+        "wallis": 4,
         "jls": 0,
-        "paddy": 1,
-        "bennett": 1,
+        "paddy": 2,
+        "bennett": 3,
         "wood": 0,
         "rowan": 0,
-        "jason": 3,
-        "dj": 3,
+        "jason": 6,
+        "dj": 11,
         "ollie": 0
       },
       "kochKeys": [],
@@ -783,7 +783,7 @@
       "topPerformerByManager": {
         "rushy": {
           "playerName": "Rogers",
-          "points": 1,
+          "points": 2,
           "managerKey": "rushy"
         },
         "kellett": {
@@ -792,7 +792,7 @@
           "managerKey": "kellett"
         },
         "wallis": {
-          "playerName": "Welbeck",
+          "playerName": "Martinez",
           "points": 2,
           "managerKey": "wallis"
         },
@@ -803,12 +803,12 @@
         },
         "paddy": {
           "playerName": "Palmer",
-          "points": 1,
+          "points": 2,
           "managerKey": "paddy"
         },
         "bennett": {
           "playerName": "Janelt",
-          "points": 1,
+          "points": 3,
           "managerKey": "bennett"
         },
         "wood": {
@@ -822,13 +822,13 @@
           "managerKey": "rowan"
         },
         "jason": {
-          "playerName": "Lewis-Potter",
-          "points": 2,
+          "playerName": "Lacroix",
+          "points": 3,
           "managerKey": "jason"
         },
         "dj": {
           "playerName": "Schade",
-          "points": 2,
+          "points": 6,
           "managerKey": "dj"
         },
         "ollie": {
@@ -840,41 +840,46 @@
       "scapegoatByManager": {
         "rushy": {
           "playerName": "Rogers",
-          "points": 1,
+          "points": 2,
           "managerKey": "rushy",
           "element": 40
         },
         "kellett": null,
         "wallis": {
           "playerName": "Martinez",
-          "points": 1,
+          "points": 2,
           "managerKey": "wallis",
           "element": 28
         },
         "jls": null,
         "paddy": {
           "playerName": "Palmer",
-          "points": 1,
+          "points": 2,
           "managerKey": "paddy",
           "element": 154
         },
         "bennett": {
           "playerName": "Janelt",
-          "points": 1,
+          "points": 3,
           "managerKey": "bennett",
           "element": 98
         },
         "wood": null,
-        "rowan": null,
+        "rowan": {
+          "playerName": "M.Sangaré",
+          "points": 0,
+          "managerKey": "rowan",
+          "element": 556
+        },
         "jason": {
           "playerName": "Lacroix",
-          "points": 1,
+          "points": 3,
           "managerKey": "jason",
           "element": 200
         },
         "dj": {
           "playerName": "Thiago",
-          "points": 1,
+          "points": 5,
           "managerKey": "dj",
           "element": 106
         },
@@ -1654,5 +1659,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-09-18T19:25:25.784Z"
+  "generatedAt": "2026-09-18T20:45:51.134Z"
 }
