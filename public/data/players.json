@@ -67,6 +67,28 @@
       "positionRank": 2
     },
     {
+      "id": 115,
+      "name": "De Cuyper",
+      "position": "DEF",
+      "club": "Brighton",
+      "clubShort": "BHA",
+      "clubCode": 36,
+      "teamId": 5,
+      "photoCode": 465730,
+      "owner": "wood",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 38,
+      "ppg": 7.6,
+      "goals": 1,
+      "assists": 3,
+      "cleanSheets": 3,
+      "bonus": 5,
+      "positionRank": 2
+    },
+    {
       "id": 330,
       "name": "Bogle",
       "position": "DEF",
@@ -87,28 +109,6 @@
       "cleanSheets": 3,
       "bonus": 6,
       "positionRank": 3
-    },
-    {
-      "id": 115,
-      "name": "De Cuyper",
-      "position": "DEF",
-      "club": "Brighton",
-      "clubShort": "BHA",
-      "clubCode": 36,
-      "teamId": 5,
-      "photoCode": 465730,
-      "owner": "wood",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 37,
-      "ppg": 7.4,
-      "goals": 1,
-      "assists": 3,
-      "cleanSheets": 3,
-      "bonus": 4,
-      "positionRank": 2
     },
     {
       "id": 571,
@@ -278,12 +278,12 @@
       "chanceOfPlaying": null,
       "news": null,
       "newsAdded": null,
-      "points": 30,
-      "ppg": 6,
+      "points": 31,
+      "ppg": 6.2,
       "goals": 1,
       "assists": 1,
       "cleanSheets": 1,
-      "bonus": 5,
+      "bonus": 6,
       "positionRank": 6
     },
     {
@@ -815,28 +815,6 @@
       "positionRank": 16
     },
     {
-      "id": 109,
-      "name": "Verbruggen",
-      "position": "GKP",
-      "club": "Brighton",
-      "clubShort": "BHA",
-      "clubCode": 36,
-      "teamId": 5,
-      "photoCode": 489639,
-      "owner": "jls",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 24,
-      "ppg": 4.8,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 3,
-      "bonus": 1,
-      "positionRank": 4
-    },
-    {
       "id": 427,
       "name": "Mbeumo",
       "position": "MID",
@@ -879,6 +857,28 @@
       "cleanSheets": 1,
       "bonus": 0,
       "positionRank": 20
+    },
+    {
+      "id": 109,
+      "name": "Verbruggen",
+      "position": "GKP",
+      "club": "Brighton",
+      "clubShort": "BHA",
+      "clubCode": 36,
+      "teamId": 5,
+      "photoCode": 489639,
+      "owner": "jls",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 23,
+      "ppg": 4.6,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 3,
+      "bonus": 0,
+      "positionRank": 4
     },
     {
       "id": 116,
@@ -2352,7 +2352,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 62
+      "positionRank": 61
     },
     {
       "id": 239,
@@ -4249,28 +4249,6 @@
       "positionRank": 40
     },
     {
-      "id": 632,
-      "name": "Andrés",
-      "position": "MID",
-      "club": "Brighton",
-      "clubShort": "BHA",
-      "clubCode": 36,
-      "teamId": 5,
-      "photoCode": 592984,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 13,
-      "ppg": 6.5,
-      "goals": 1,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 1,
-      "positionRank": 59
-    },
-    {
       "id": 113,
       "name": "F.Kadıoğlu",
       "position": "DEF",
@@ -4335,6 +4313,28 @@
       "cleanSheets": 1,
       "bonus": 0,
       "positionRank": 58
+    },
+    {
+      "id": 632,
+      "name": "Andrés",
+      "position": "MID",
+      "club": "Brighton",
+      "clubShort": "BHA",
+      "clubCode": 36,
+      "teamId": 5,
+      "photoCode": 592984,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 12,
+      "ppg": 6,
+      "goals": 1,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 65
     },
     {
       "id": 532,
@@ -4422,7 +4422,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 63
+      "positionRank": 62
     },
     {
       "id": 486,
@@ -4444,7 +4444,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 64
+      "positionRank": 63
     },
     {
       "id": 551,
@@ -4466,7 +4466,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 65
+      "positionRank": 64
     },
     {
       "id": 345,
@@ -4488,7 +4488,7 @@
       "assists": 2,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 61
+      "positionRank": 60
     },
     {
       "id": 211,
@@ -4510,7 +4510,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 60
+      "positionRank": 59
     },
     {
       "id": 313,
@@ -12895,6 +12895,28 @@
       "positionRank": 296
     },
     {
+      "id": 666,
+      "name": "Mills",
+      "position": "MID",
+      "club": "Newcastle",
+      "clubShort": "NEW",
+      "clubCode": 4,
+      "teamId": 17,
+      "photoCode": 655585,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 0,
+      "ppg": 0,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 297
+    },
+    {
       "id": 63,
       "name": "Milosavljević",
       "position": "DEF",
@@ -13599,6 +13621,28 @@
       "positionRank": 69
     },
     {
+      "id": 664,
+      "name": "Pivas",
+      "position": "DEF",
+      "club": "Newcastle",
+      "clubShort": "NEW",
+      "clubCode": 4,
+      "teamId": 17,
+      "photoCode": 578512,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 0,
+      "ppg": 0,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 217
+    },
+    {
       "id": 442,
       "name": "Pope",
       "position": "GKP",
@@ -13795,6 +13839,28 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 66
+    },
+    {
+      "id": 665,
+      "name": "Salia",
+      "position": "FWD",
+      "club": "Newcastle",
+      "clubShort": "NEW",
+      "clubCode": 4,
+      "teamId": 17,
+      "photoCode": 601767,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 0,
+      "ppg": 0,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 79
     },
     {
       "id": 653,
@@ -14127,6 +14193,28 @@
       "positionRank": 173
     },
     {
+      "id": 667,
+      "name": "Thompson",
+      "position": "MID",
+      "club": "Newcastle",
+      "clubShort": "NEW",
+      "clubCode": 4,
+      "teamId": 17,
+      "photoCode": 671875,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 0,
+      "ppg": 0,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 298
+    },
+    {
       "id": 227,
       "name": "Travers",
       "position": "GKP",
@@ -14457,6 +14545,28 @@
       "positionRank": 60
     },
     {
+      "id": 663,
+      "name": "Wright",
+      "position": "GKP",
+      "club": "Aston Villa",
+      "clubShort": "AVL",
+      "clubCode": 7,
+      "teamId": 2,
+      "photoCode": 481283,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 0,
+      "ppg": 0,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 73
+    },
+    {
       "id": 513,
       "name": "Xavi",
       "position": "MID",
@@ -14589,5 +14699,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-09-19T18:24:32.234Z"
+  "generatedAt": "2026-09-19T19:52:43.234Z"
 }

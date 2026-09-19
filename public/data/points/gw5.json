@@ -414,7 +414,7 @@
         ]
       },
       "109": {
-        "total": 7,
+        "total": 6,
         "components": [
           {
             "stat": "minutes",
@@ -427,17 +427,11 @@
             "name": "Clean sheets",
             "value": 1,
             "points": 4
-          },
-          {
-            "stat": "bonus",
-            "name": "Bonus",
-            "value": 1,
-            "points": 1
           }
         ]
       },
       "115": {
-        "total": 5,
+        "total": 6,
         "components": [
           {
             "stat": "minutes",
@@ -456,6 +450,12 @@
             "name": "Yellow cards",
             "value": 1,
             "points": -1
+          },
+          {
+            "stat": "bonus",
+            "name": "Bonus",
+            "value": 1,
+            "points": 1
           }
         ]
       },
@@ -1079,7 +1079,7 @@
           {
             "stat": "defensive_contribution",
             "name": "Defensive Contribution",
-            "value": 14,
+            "value": 13,
             "points": 2
           }
         ]
@@ -1096,13 +1096,13 @@
           {
             "stat": "defensive_contribution",
             "name": "Defensive Contribution",
-            "value": 17,
+            "value": 18,
             "points": 2
           }
         ]
       },
       "449": {
-        "total": 12,
+        "total": 13,
         "components": [
           {
             "stat": "minutes",
@@ -1119,8 +1119,8 @@
           {
             "stat": "bonus",
             "name": "Bonus",
-            "value": 2,
-            "points": 2
+            "value": 3,
+            "points": 3
           },
           {
             "stat": "defensive_contribution",
@@ -1809,5 +1809,5 @@
       }
     }
   },
-  "generatedAt": "2026-09-19T18:24:32.234Z"
+  "generatedAt": "2026-09-19T19:52:43.234Z"
 }
