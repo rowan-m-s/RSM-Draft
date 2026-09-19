@@ -3,26 +3,26 @@
     {
       "key": "wood",
       "rank": 1,
-      "total": 208,
-      "gw": 0,
-      "month": 117,
+      "total": 223,
+      "gw": 15,
+      "month": 132,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
       "potsWon": 0,
       "balance": 0,
       "topPerformer": {
-        "playerName": "Gvardiol",
-        "points": 33,
+        "playerName": "De Cuyper",
+        "points": 37,
         "managerKey": "wood"
       }
     },
     {
       "key": "paddy",
       "rank": 2,
-      "total": 190,
-      "gw": 2,
-      "month": 83,
+      "total": 209,
+      "gw": 21,
+      "month": 102,
       "kochCount": 1,
       "motmCount": 1,
       "forfeits": 5,
@@ -37,9 +37,9 @@
     {
       "key": "jason",
       "rank": 3,
-      "total": 182,
-      "gw": 6,
-      "month": 88,
+      "total": 208,
+      "gw": 32,
+      "month": 114,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -47,33 +47,33 @@
       "balance": 0,
       "topPerformer": {
         "playerName": "Saka",
-        "points": 30,
+        "points": 32,
         "managerKey": "jason"
       }
     },
     {
-      "key": "rushy",
+      "key": "bennett",
       "rank": 4,
-      "total": 179,
-      "gw": 16,
-      "month": 97,
+      "total": 195,
+      "gw": 37,
+      "month": 116,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
       "potsWon": 0,
       "balance": 0,
       "topPerformer": {
-        "playerName": "Rogers",
-        "points": 29,
-        "managerKey": "rushy"
+        "playerName": "Tarkowski",
+        "points": 35,
+        "managerKey": "bennett"
       }
     },
     {
       "key": "ollie",
       "rank": 5,
-      "total": 178,
-      "gw": 1,
-      "month": 101,
+      "total": 193,
+      "gw": 16,
+      "month": 116,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -81,16 +81,16 @@
       "balance": 0,
       "topPerformer": {
         "playerName": "Raya",
-        "points": 29,
+        "points": 30,
         "managerKey": "ollie"
       }
     },
     {
       "key": "rowan",
       "rank": 6,
-      "total": 172,
-      "gw": 6,
-      "month": 76,
+      "total": 189,
+      "gw": 23,
+      "month": 93,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -103,11 +103,28 @@
       }
     },
     {
-      "key": "kellett",
+      "key": "rushy",
       "rank": 7,
-      "total": 170,
-      "gw": 11,
-      "month": 83,
+      "total": 181,
+      "gw": 18,
+      "month": 99,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "Rogers",
+        "points": 29,
+        "managerKey": "rushy"
+      }
+    },
+    {
+      "key": "kellett",
+      "rank": 8,
+      "total": 176,
+      "gw": 17,
+      "month": 89,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -120,28 +137,11 @@
       }
     },
     {
-      "key": "bennett",
-      "rank": 8,
-      "total": 169,
-      "gw": 11,
-      "month": 90,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "Tavernier",
-        "points": 29,
-        "managerKey": "bennett"
-      }
-    },
-    {
       "key": "wallis",
       "rank": 9,
-      "total": 167,
-      "gw": 4,
-      "month": 81,
+      "total": 168,
+      "gw": 5,
+      "month": 82,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -149,16 +149,16 @@
       "balance": -5,
       "topPerformer": {
         "playerName": "Gabriel",
-        "points": 24,
+        "points": 25,
         "managerKey": "wallis"
       }
     },
     {
       "key": "jls",
       "rank": 10,
-      "total": 164,
-      "gw": 4,
-      "month": 103,
+      "total": 165,
+      "gw": 5,
+      "month": 104,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -173,9 +173,9 @@
     {
       "key": "dj",
       "rank": 11,
-      "total": 149,
-      "gw": 16,
-      "month": 97,
+      "total": 151,
+      "gw": 18,
+      "month": 99,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -195,7 +195,7 @@
     "keys": [
       "wood"
     ],
-    "total": 208,
+    "total": 223,
     "since": 4,
     "sinceByKey": {
       "wood": 4
@@ -205,7 +205,7 @@
     "displaced": "paddy",
     "changed": true
   },
-  "generatedAt": "2026-09-19T13:38:34.975Z",
+  "generatedAt": "2026-09-19T15:59:57.376Z",
   "graphics": {
     "koch": {
       "rushy": 244850,
@@ -249,13 +249,13 @@
     "leaderMonth": {
       "rushy": 244850,
       "kellett": 223094,
-      "wallis": 177815,
+      "wallis": 226597,
       "jls": 475168,
       "paddy": 219847,
       "bennett": 219168,
       "wood": 444102,
       "rowan": 222531,
-      "jason": 97032,
+      "jason": 184029,
       "dj": 437730,
       "ollie": 154561
     }
