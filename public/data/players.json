@@ -221,6 +221,28 @@
       "positionRank": 3
     },
     {
+      "id": 504,
+      "name": "Vuskovic",
+      "position": "DEF",
+      "club": "Brighton",
+      "clubShort": "BHA",
+      "clubCode": 36,
+      "teamId": 5,
+      "photoCode": 610799,
+      "owner": "wallis",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 32,
+      "ppg": 6.4,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 3,
+      "bonus": 2,
+      "positionRank": 5
+    },
+    {
       "id": 286,
       "name": "Belloumi",
       "position": "MID",
@@ -262,7 +284,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 5,
-      "positionRank": 5
+      "positionRank": 6
     },
     {
       "id": 1,
@@ -285,28 +307,6 @@
       "cleanSheets": 3,
       "bonus": 3,
       "positionRank": 2
-    },
-    {
-      "id": 504,
-      "name": "Vuskovic",
-      "position": "DEF",
-      "club": "Brighton",
-      "clubShort": "BHA",
-      "clubCode": 36,
-      "teamId": 5,
-      "photoCode": 610799,
-      "owner": "wallis",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 30,
-      "ppg": 6,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 3,
-      "bonus": 2,
-      "positionRank": 6
     },
     {
       "id": 426,
@@ -573,6 +573,28 @@
       "positionRank": 8
     },
     {
+      "id": 480,
+      "name": "Gibbs-White",
+      "position": "MID",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 222531,
+      "owner": "rowan",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-24T15:30:08.350159Z",
+      "points": 27,
+      "ppg": 5.4,
+      "goals": 1,
+      "assists": 2,
+      "cleanSheets": 1,
+      "bonus": 6,
+      "positionRank": 14
+    },
+    {
       "id": 233,
       "name": "Mykolenko",
       "position": "DEF",
@@ -614,7 +636,7 @@
       "assists": 2,
       "cleanSheets": 1,
       "bonus": 4,
-      "positionRank": 14
+      "positionRank": 15
     },
     {
       "id": 316,
@@ -637,28 +659,6 @@
       "cleanSheets": 0,
       "bonus": 6,
       "positionRank": 4
-    },
-    {
-      "id": 480,
-      "name": "Gibbs-White",
-      "position": "MID",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 222531,
-      "owner": "rowan",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-24T15:30:08.350159Z",
-      "points": 26,
-      "ppg": 6.5,
-      "goals": 1,
-      "assists": 2,
-      "cleanSheets": 1,
-      "bonus": 6,
-      "positionRank": 15
     },
     {
       "id": 388,
@@ -815,6 +815,28 @@
       "positionRank": 16
     },
     {
+      "id": 109,
+      "name": "Verbruggen",
+      "position": "GKP",
+      "club": "Brighton",
+      "clubShort": "BHA",
+      "clubCode": 36,
+      "teamId": 5,
+      "photoCode": 489639,
+      "owner": "jls",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 24,
+      "ppg": 4.8,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 3,
+      "bonus": 1,
+      "positionRank": 4
+    },
+    {
       "id": 427,
       "name": "Mbeumo",
       "position": "MID",
@@ -835,28 +857,6 @@
       "cleanSheets": 0,
       "bonus": 3,
       "positionRank": 17
-    },
-    {
-      "id": 109,
-      "name": "Verbruggen",
-      "position": "GKP",
-      "club": "Brighton",
-      "clubShort": "BHA",
-      "clubCode": 36,
-      "teamId": 5,
-      "photoCode": 489639,
-      "owner": "jls",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 23,
-      "ppg": 4.6,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 3,
-      "bonus": 0,
-      "positionRank": 4
     },
     {
       "id": 116,
@@ -1145,6 +1145,28 @@
       "positionRank": 5
     },
     {
+      "id": 472,
+      "name": "Murillo",
+      "position": "DEF",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 575476,
+      "owner": "kellett",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-07-23T12:01:23.801183Z",
+      "points": 20,
+      "ppg": 4,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 25
+    },
+    {
       "id": 13,
       "name": "Rice",
       "position": "MID",
@@ -1208,7 +1230,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 26
+      "positionRank": 27
     },
     {
       "id": 242,
@@ -1253,28 +1275,6 @@
       "cleanSheets": 3,
       "bonus": 2,
       "positionRank": 8
-    },
-    {
-      "id": 472,
-      "name": "Murillo",
-      "position": "DEF",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 575476,
-      "owner": "kellett",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-07-23T12:01:23.801183Z",
-      "points": 19,
-      "ppg": 4.8,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 27
     },
     {
       "id": 544,
@@ -1365,6 +1365,28 @@
       "positionRank": 8
     },
     {
+      "id": 469,
+      "name": "N.Williams",
+      "position": "DEF",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 215136,
+      "owner": "rushy",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 18,
+      "ppg": 3.6,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 1,
+      "positionRank": 30
+    },
+    {
       "id": 368,
       "name": "Szoboszlai",
       "position": "MID",
@@ -1450,29 +1472,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 30
-    },
-    {
-      "id": 469,
-      "name": "N.Williams",
-      "position": "DEF",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 215136,
-      "owner": "rushy",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 17,
-      "ppg": 4.3,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 1,
-      "positionRank": 32
+      "positionRank": 31
     },
     {
       "id": 237,
@@ -1516,7 +1516,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 31
+      "positionRank": 32
     },
     {
       "id": 338,
@@ -1604,7 +1604,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 34
+      "positionRank": 35
     },
     {
       "id": 397,
@@ -1692,7 +1692,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 35
+      "positionRank": 36
     },
     {
       "id": 580,
@@ -1781,6 +1781,28 @@
       "cleanSheets": 1,
       "bonus": 2,
       "positionRank": 11
+    },
+    {
+      "id": 483,
+      "name": "Ndoye",
+      "position": "MID",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 456512,
+      "owner": "paddy",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 15,
+      "ppg": 3,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 2,
+      "positionRank": 48
     },
     {
       "id": 336,
@@ -1890,7 +1912,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 50
+      "positionRank": 51
     },
     {
       "id": 295,
@@ -1934,29 +1956,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 52
-    },
-    {
-      "id": 483,
-      "name": "Ndoye",
-      "position": "MID",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 456512,
-      "owner": "paddy",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 14,
-      "ppg": 3.5,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 2,
-      "positionRank": 54
+      "positionRank": 53
     },
     {
       "id": 156,
@@ -1978,7 +1978,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 51
+      "positionRank": 52
     },
     {
       "id": 445,
@@ -2022,7 +2022,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 53
+      "positionRank": 54
     },
     {
       "id": 481,
@@ -2157,6 +2157,28 @@
       "positionRank": 43
     },
     {
+      "id": 467,
+      "name": "Sels",
+      "position": "GKP",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 85633,
+      "owner": "rushy",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 13,
+      "ppg": 2.6,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 13
+    },
+    {
       "id": 569,
       "name": "Gonzalo",
       "position": "FWD",
@@ -2245,28 +2267,6 @@
       "positionRank": 46
     },
     {
-      "id": 467,
-      "name": "Sels",
-      "position": "GKP",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 85633,
-      "owner": "rushy",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 12,
-      "ppg": 3,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 13
-    },
-    {
       "id": 222,
       "name": "Strand Larsen",
       "position": "FWD",
@@ -2330,7 +2330,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 64
+      "positionRank": 65
     },
     {
       "id": 491,
@@ -2396,7 +2396,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 57
+      "positionRank": 58
     },
     {
       "id": 166,
@@ -2440,7 +2440,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 55
+      "positionRank": 56
     },
     {
       "id": 106,
@@ -2484,7 +2484,29 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 82
+      "positionRank": 84
+    },
+    {
+      "id": 167,
+      "name": "Delap",
+      "position": "FWD",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 463034,
+      "owner": "ollie",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 9,
+      "ppg": 2.3,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 18
     },
     {
       "id": 398,
@@ -2506,7 +2528,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 81
+      "positionRank": 83
     },
     {
       "id": 393,
@@ -2595,28 +2617,6 @@
       "cleanSheets": 1,
       "bonus": 0,
       "positionRank": 72
-    },
-    {
-      "id": 167,
-      "name": "Delap",
-      "position": "FWD",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 463034,
-      "owner": "ollie",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 8,
-      "ppg": 2.7,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 18
     },
     {
       "id": 371,
@@ -2726,7 +2726,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 88
+      "positionRank": 90
     },
     {
       "id": 403,
@@ -2836,7 +2836,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 78
+      "positionRank": 79
     },
     {
       "id": 412,
@@ -2968,7 +2968,29 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 83
+      "positionRank": 84
+    },
+    {
+      "id": 581,
+      "name": "Diomande",
+      "position": "DEF",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 568420,
+      "owner": "rowan",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 6,
+      "ppg": 2,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 90
     },
     {
       "id": 155,
@@ -2990,7 +3012,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 111
+      "positionRank": 112
     },
     {
       "id": 646,
@@ -3012,7 +3034,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 27
+      "positionRank": 28
     },
     {
       "id": 125,
@@ -3056,7 +3078,29 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 112
+      "positionRank": 113
+    },
+    {
+      "id": 110,
+      "name": "Rushworth",
+      "position": "GKP",
+      "club": "Coventry City",
+      "clubShort": "COV",
+      "clubCode": 9,
+      "teamId": 7,
+      "photoCode": 472739,
+      "owner": "paddy",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 6,
+      "ppg": 1.2,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 19
     },
     {
       "id": 151,
@@ -3078,29 +3122,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 92
-    },
-    {
-      "id": 581,
-      "name": "Diomande",
-      "position": "DEF",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 568420,
-      "owner": "rowan",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 5,
-      "ppg": 2.5,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 95
+      "positionRank": 94
     },
     {
       "id": 198,
@@ -3144,29 +3166,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 94
-    },
-    {
-      "id": 110,
-      "name": "Rushworth",
-      "position": "GKP",
-      "club": "Coventry City",
-      "clubShort": "COV",
-      "clubCode": 9,
-      "teamId": 7,
-      "photoCode": 472739,
-      "owner": "paddy",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 5,
-      "ppg": 1.3,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 19
+      "positionRank": 95
     },
     {
       "id": 56,
@@ -3232,7 +3232,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 125
+      "positionRank": 126
     },
     {
       "id": 649,
@@ -3274,6 +3274,28 @@
       "ppg": 2,
       "goals": 0,
       "assists": 1,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 103
+    },
+    {
+      "id": 201,
+      "name": "Muñoz",
+      "position": "DEF",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 247348,
+      "owner": "dj",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 4,
+      "ppg": 1,
+      "goals": 0,
+      "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 102
@@ -3364,29 +3386,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 104
-    },
-    {
-      "id": 201,
-      "name": "Muñoz",
-      "position": "DEF",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 247348,
-      "owner": "dj",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 3,
-      "ppg": 1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 106
+      "positionRank": 105
     },
     {
       "id": 199,
@@ -3540,7 +3540,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 214
+      "positionRank": 215
     },
     {
       "id": 152,
@@ -3562,7 +3562,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 160
+      "positionRank": 161
     },
     {
       "id": 557,
@@ -3606,7 +3606,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 145
+      "positionRank": 146
     },
     {
       "id": 208,
@@ -3686,9 +3686,9 @@
       "teamId": 11,
       "photoCode": 606930,
       "owner": null,
-      "status": "i",
+      "status": "a",
       "chanceOfPlaying": 0,
-      "news": "Concussion - Expected back 11 Oct",
+      "news": null,
       "newsAdded": "2026-09-12T18:00:09.334142Z",
       "points": 25,
       "ppg": 6.3,
@@ -3850,7 +3850,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 25
+      "positionRank": 26
     },
     {
       "id": 454,
@@ -4029,6 +4029,28 @@
       "positionRank": 36
     },
     {
+      "id": 173,
+      "name": "Thomas",
+      "position": "DEF",
+      "club": "Coventry City",
+      "clubShort": "COV",
+      "clubCode": 9,
+      "teamId": 7,
+      "photoCode": 461102,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 16,
+      "ppg": 3.2,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 2,
+      "positionRank": 34
+    },
+    {
       "id": 105,
       "name": "Anthony",
       "position": "MID",
@@ -4092,7 +4114,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 48
+      "positionRank": 49
     },
     {
       "id": 591,
@@ -4114,7 +4136,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 49
+      "positionRank": 50
     },
     {
       "id": 47,
@@ -4159,28 +4181,6 @@
       "cleanSheets": 3,
       "bonus": 0,
       "positionRank": 46
-    },
-    {
-      "id": 173,
-      "name": "Thomas",
-      "position": "DEF",
-      "club": "Coventry City",
-      "clubShort": "COV",
-      "clubCode": 9,
-      "teamId": 7,
-      "photoCode": 461102,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 15,
-      "ppg": 3.8,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 2,
-      "positionRank": 36
     },
     {
       "id": 280,
@@ -4359,6 +4359,28 @@
       "positionRank": 62
     },
     {
+      "id": 567,
+      "name": "Schlager",
+      "position": "MID",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 204561,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 12,
+      "ppg": 2.4,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 63
+    },
+    {
       "id": 345,
       "name": "Tanaka",
       "position": "MID",
@@ -4422,7 +4444,29 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 66
+      "positionRank": 67
+    },
+    {
+      "id": 474,
+      "name": "Jair Cunha",
+      "position": "DEF",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 575458,
+      "owner": null,
+      "status": "d",
+      "chanceOfPlaying": 75,
+      "news": "Hamstring injury - 75% chance of playing",
+      "newsAdded": "2026-09-12T14:00:09.724349Z",
+      "points": 11,
+      "ppg": 2.8,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 52
     },
     {
       "id": 161,
@@ -4444,7 +4488,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 63
+      "positionRank": 64
     },
     {
       "id": 267,
@@ -4466,7 +4510,29 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 65
+      "positionRank": 66
+    },
+    {
+      "id": 486,
+      "name": "McAtee",
+      "position": "MID",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 432714,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 11,
+      "ppg": 2.2,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 0,
+      "positionRank": 68
     },
     {
       "id": 541,
@@ -4488,7 +4554,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 52
+      "positionRank": 53
     },
     {
       "id": 570,
@@ -4510,7 +4576,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 68
+      "positionRank": 69
     },
     {
       "id": 619,
@@ -4532,29 +4598,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 69
-    },
-    {
-      "id": 567,
-      "name": "Schlager",
-      "position": "MID",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 204561,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 11,
-      "ppg": 2.8,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 67
+      "positionRank": 70
     },
     {
       "id": 46,
@@ -4576,7 +4620,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 71
+      "positionRank": 72
     },
     {
       "id": 264,
@@ -4598,7 +4642,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 74
+      "positionRank": 75
     },
     {
       "id": 84,
@@ -4620,7 +4664,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 54
+      "positionRank": 55
     },
     {
       "id": 247,
@@ -4642,51 +4686,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 73
-    },
-    {
-      "id": 474,
-      "name": "Jair Cunha",
-      "position": "DEF",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 575458,
-      "owner": null,
-      "status": "d",
-      "chanceOfPlaying": 75,
-      "news": "Hamstring injury - 75% chance of playing",
-      "newsAdded": "2026-09-12T14:00:09.724349Z",
-      "points": 10,
-      "ppg": 3.3,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 58
-    },
-    {
-      "id": 486,
-      "name": "McAtee",
-      "position": "MID",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 432714,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 10,
-      "ppg": 2.5,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 0,
-      "positionRank": 75
+      "positionRank": 74
     },
     {
       "id": 33,
@@ -4708,7 +4708,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 53
+      "positionRank": 54
     },
     {
       "id": 304,
@@ -4730,7 +4730,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 56
+      "positionRank": 57
     },
     {
       "id": 555,
@@ -4774,7 +4774,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 70
+      "positionRank": 71
     },
     {
       "id": 210,
@@ -4796,7 +4796,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 72
+      "positionRank": 73
     },
     {
       "id": 257,
@@ -4840,7 +4840,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 85
+      "positionRank": 87
     },
     {
       "id": 618,
@@ -4862,7 +4862,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 86
+      "positionRank": 88
     },
     {
       "id": 519,
@@ -4884,7 +4884,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 83
+      "positionRank": 85
     },
     {
       "id": 51,
@@ -4928,7 +4928,29 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 84
+      "positionRank": 86
+    },
+    {
+      "id": 184,
+      "name": "Grimes",
+      "position": "MID",
+      "club": "Coventry City",
+      "clubShort": "COV",
+      "clubCode": 9,
+      "teamId": 7,
+      "photoCode": 168144,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 9,
+      "ppg": 1.8,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 80
     },
     {
       "id": 534,
@@ -4972,7 +4994,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 80
+      "positionRank": 82
     },
     {
       "id": 209,
@@ -4994,7 +5016,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 79
+      "positionRank": 81
     },
     {
       "id": 7,
@@ -5041,6 +5063,28 @@
       "positionRank": 60
     },
     {
+      "id": 183,
+      "name": "Rudoni",
+      "position": "MID",
+      "club": "Coventry City",
+      "clubShort": "COV",
+      "clubCode": 9,
+      "teamId": 7,
+      "photoCode": 480457,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-07-23T12:01:23.481435Z",
+      "points": 9,
+      "ppg": 1.8,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 79
+    },
+    {
       "id": 102,
       "name": "Yarmoliuk",
       "position": "MID",
@@ -5082,7 +5126,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 89
+      "positionRank": 91
     },
     {
       "id": 640,
@@ -5126,7 +5170,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 87
+      "positionRank": 89
     },
     {
       "id": 265,
@@ -5215,28 +5259,6 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 68
-    },
-    {
-      "id": 184,
-      "name": "Grimes",
-      "position": "MID",
-      "club": "Coventry City",
-      "clubShort": "COV",
-      "clubCode": 9,
-      "teamId": 7,
-      "photoCode": 168144,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 8,
-      "ppg": 2,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 91
     },
     {
       "id": 331,
@@ -5347,28 +5369,6 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 71
-    },
-    {
-      "id": 183,
-      "name": "Rudoni",
-      "position": "MID",
-      "club": "Coventry City",
-      "clubShort": "COV",
-      "clubCode": 9,
-      "teamId": 7,
-      "photoCode": 480457,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-07-23T12:01:23.481435Z",
-      "points": 8,
-      "ppg": 2,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 90
     },
     {
       "id": 545,
@@ -5522,7 +5522,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 82
+      "positionRank": 83
     },
     {
       "id": 525,
@@ -5544,7 +5544,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 106
+      "positionRank": 107
     },
     {
       "id": 456,
@@ -5566,7 +5566,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 104
+      "positionRank": 105
     },
     {
       "id": 512,
@@ -5588,7 +5588,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 105
+      "positionRank": 106
     },
     {
       "id": 95,
@@ -5613,6 +5613,50 @@
       "positionRank": 103
     },
     {
+      "id": 104,
+      "name": "Onyeka",
+      "position": "MID",
+      "club": "Coventry City",
+      "clubShort": "COV",
+      "clubCode": 9,
+      "teamId": 7,
+      "photoCode": 428580,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-15T09:00:07.851220Z",
+      "points": 7,
+      "ppg": 1.8,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 104
+    },
+    {
+      "id": 91,
+      "name": "Pinnock",
+      "position": "DEF",
+      "club": "Coventry City",
+      "clubShort": "COV",
+      "clubCode": 9,
+      "teamId": 7,
+      "photoCode": 231065,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 7,
+      "ppg": 1.8,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 75
+    },
+    {
       "id": 536,
       "name": "Reinildo",
       "position": "DEF",
@@ -5632,7 +5676,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 81
+      "positionRank": 82
     },
     {
       "id": 329,
@@ -5654,7 +5698,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 77
+      "positionRank": 78
     },
     {
       "id": 423,
@@ -5676,7 +5720,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 79
+      "positionRank": 80
     },
     {
       "id": 577,
@@ -5698,7 +5742,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 107
+      "positionRank": 109
     },
     {
       "id": 328,
@@ -5720,7 +5764,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 76
+      "positionRank": 77
     },
     {
       "id": 506,
@@ -5742,7 +5786,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 80
+      "positionRank": 81
     },
     {
       "id": 130,
@@ -5764,7 +5808,29 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 75
+      "positionRank": 76
+    },
+    {
+      "id": 574,
+      "name": "Yirenkyi",
+      "position": "MID",
+      "club": "Coventry City",
+      "clubShort": "COV",
+      "clubCode": 9,
+      "teamId": 7,
+      "photoCode": 661888,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 7,
+      "ppg": 1.4,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 108
     },
     {
       "id": 337,
@@ -5786,7 +5852,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 116
+      "positionRank": 117
     },
     {
       "id": 100,
@@ -5808,7 +5874,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 109
+      "positionRank": 111
     },
     {
       "id": 417,
@@ -5830,7 +5896,29 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 87
+      "positionRank": 88
+    },
+    {
+      "id": 176,
+      "name": "Dasilva",
+      "position": "DEF",
+      "club": "Coventry City",
+      "clubShort": "COV",
+      "clubCode": 9,
+      "teamId": 7,
+      "photoCode": 173878,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 6,
+      "ppg": 1.2,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 86
     },
     {
       "id": 415,
@@ -5852,7 +5940,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 118
+      "positionRank": 119
     },
     {
       "id": 97,
@@ -5874,7 +5962,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 108
+      "positionRank": 110
     },
     {
       "id": 372,
@@ -5896,7 +5984,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 117
+      "positionRank": 118
     },
     {
       "id": 419,
@@ -5918,7 +6006,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 88
+      "positionRank": 89
     },
     {
       "id": 287,
@@ -5940,7 +6028,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 114
+      "positionRank": 115
     },
     {
       "id": 347,
@@ -5962,7 +6050,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 26
+      "positionRank": 27
     },
     {
       "id": 309,
@@ -5984,29 +6072,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 115
-    },
-    {
-      "id": 104,
-      "name": "Onyeka",
-      "position": "MID",
-      "club": "Coventry City",
-      "clubShort": "COV",
-      "clubCode": 9,
-      "teamId": 7,
-      "photoCode": 428580,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-15T09:00:07.851220Z",
-      "points": 6,
-      "ppg": 2,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 110
+      "positionRank": 116
     },
     {
       "id": 592,
@@ -6028,29 +6094,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 89
-    },
-    {
-      "id": 91,
-      "name": "Pinnock",
-      "position": "DEF",
-      "club": "Coventry City",
-      "clubShort": "COV",
-      "clubCode": 9,
-      "teamId": 7,
-      "photoCode": 231065,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 6,
-      "ppg": 2,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 84
+      "positionRank": 91
     },
     {
       "id": 202,
@@ -6072,7 +6116,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 86
+      "positionRank": 87
     },
     {
       "id": 246,
@@ -6094,7 +6138,29 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 113
+      "positionRank": 114
+    },
+    {
+      "id": 194,
+      "name": "Thomas-Asante",
+      "position": "FWD",
+      "club": "Coventry City",
+      "clubShort": "COV",
+      "clubCode": 9,
+      "teamId": 7,
+      "photoCode": 230730,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 6,
+      "ppg": 1.2,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 26
     },
     {
       "id": 635,
@@ -6128,10 +6194,10 @@
       "teamId": 7,
       "photoCode": 451284,
       "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
+      "status": "d",
+      "chanceOfPlaying": 75,
+      "news": "Hamstring injury - 75% chance of playing",
+      "newsAdded": "2026-09-19T16:00:09.486751Z",
       "points": 6,
       "ppg": 1.5,
       "goals": 0,
@@ -6160,29 +6226,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 90
-    },
-    {
-      "id": 574,
-      "name": "Yirenkyi",
-      "position": "MID",
-      "club": "Coventry City",
-      "clubShort": "COV",
-      "clubCode": 9,
-      "teamId": 7,
-      "photoCode": 661888,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 6,
-      "ppg": 1.5,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 119
+      "positionRank": 92
     },
     {
       "id": 583,
@@ -6207,28 +6251,6 @@
       "positionRank": 96
     },
     {
-      "id": 176,
-      "name": "Dasilva",
-      "position": "DEF",
-      "club": "Coventry City",
-      "clubShort": "COV",
-      "clubCode": 9,
-      "teamId": 7,
-      "photoCode": 173878,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 5,
-      "ppg": 1.3,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 93
-    },
-    {
       "id": 543,
       "name": "Diarra",
       "position": "MID",
@@ -6248,7 +6270,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 124
+      "positionRank": 125
     },
     {
       "id": 585,
@@ -6292,7 +6314,29 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 91
+      "positionRank": 93
+    },
+    {
+      "id": 186,
+      "name": "Mason-Clark",
+      "position": "MID",
+      "club": "Coventry City",
+      "clubShort": "COV",
+      "clubCode": 9,
+      "teamId": 7,
+      "photoCode": 241293,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-19T18:00:08.310507Z",
+      "points": 5,
+      "ppg": 1.3,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 122
     },
     {
       "id": 405,
@@ -6304,9 +6348,9 @@
       "teamId": 17,
       "photoCode": 465694,
       "owner": null,
-      "status": "i",
+      "status": "a",
       "chanceOfPlaying": 0,
-      "news": "Concussion - Expected back 12 Oct",
+      "news": null,
       "newsAdded": "2026-09-14T21:30:07.343728Z",
       "points": 5,
       "ppg": 1.7,
@@ -6314,7 +6358,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 123
+      "positionRank": 124
     },
     {
       "id": 596,
@@ -6339,28 +6383,6 @@
       "positionRank": 98
     },
     {
-      "id": 194,
-      "name": "Thomas-Asante",
-      "position": "FWD",
-      "club": "Coventry City",
-      "clubShort": "COV",
-      "clubCode": 9,
-      "teamId": 7,
-      "photoCode": 230730,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 5,
-      "ppg": 1.3,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 28
-    },
-    {
       "id": 260,
       "name": "Wilson",
       "position": "MID",
@@ -6380,7 +6402,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 122
+      "positionRank": 123
     },
     {
       "id": 19,
@@ -6414,9 +6436,9 @@
       "teamId": 7,
       "photoCode": 539142,
       "owner": null,
-      "status": "d",
+      "status": "i",
       "chanceOfPlaying": 25,
-      "news": "Calf injury - 25% chance of playing",
+      "news": "Calf injury - Unknown return date",
       "newsAdded": "2026-09-17T07:30:09.329041Z",
       "points": 4,
       "ppg": 1,
@@ -6446,7 +6468,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 128
+      "positionRank": 129
     },
     {
       "id": 119,
@@ -6490,7 +6512,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 127
+      "positionRank": 128
     },
     {
       "id": 589,
@@ -6537,28 +6559,6 @@
       "positionRank": 100
     },
     {
-      "id": 186,
-      "name": "Mason-Clark",
-      "position": "MID",
-      "club": "Coventry City",
-      "clubShort": "COV",
-      "clubCode": 9,
-      "teamId": 7,
-      "photoCode": 241293,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-19T18:00:08.310507Z",
-      "points": 4,
-      "ppg": 1.3,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 129
-    },
-    {
       "id": 17,
       "name": "Merino",
       "position": "MID",
@@ -6578,7 +6578,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 126
+      "positionRank": 127
     },
     {
       "id": 369,
@@ -6798,7 +6798,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 105
+      "positionRank": 106
     },
     {
       "id": 289,
@@ -7194,7 +7194,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 103
+      "positionRank": 104
     },
     {
       "id": 498,
@@ -8847,6 +8847,28 @@
       "positionRank": 134
     },
     {
+      "id": 656,
+      "name": "Mfuni",
+      "position": "DEF",
+      "club": "Coventry City",
+      "clubShort": "COV",
+      "clubCode": 9,
+      "teamId": 7,
+      "photoCode": 566213,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 1,
+      "ppg": 1,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 145
+    },
+    {
       "id": 561,
       "name": "Morita",
       "position": "MID",
@@ -9240,7 +9262,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 147
+      "positionRank": 148
     },
     {
       "id": 451,
@@ -9262,7 +9284,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 190
+      "positionRank": 191
     },
     {
       "id": 477,
@@ -9284,7 +9306,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 194
+      "positionRank": 195
     },
     {
       "id": 546,
@@ -9372,7 +9394,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 184
+      "positionRank": 185
     },
     {
       "id": 296,
@@ -9460,7 +9482,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 185
+      "positionRank": 186
     },
     {
       "id": 431,
@@ -9504,7 +9526,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 187
+      "positionRank": 188
     },
     {
       "id": 192,
@@ -9592,7 +9614,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 206
+      "positionRank": 207
     },
     {
       "id": 2,
@@ -9680,7 +9702,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 171
+      "positionRank": 172
     },
     {
       "id": 146,
@@ -9702,7 +9724,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 158
+      "positionRank": 159
     },
     {
       "id": 648,
@@ -9988,7 +10010,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 163
+      "positionRank": 164
     },
     {
       "id": 479,
@@ -10010,7 +10032,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 195
+      "positionRank": 196
     },
     {
       "id": 191,
@@ -10054,7 +10076,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 178
+      "positionRank": 179
     },
     {
       "id": 360,
@@ -10076,7 +10098,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 180
+      "positionRank": 181
     },
     {
       "id": 181,
@@ -10098,7 +10120,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 166
+      "positionRank": 167
     },
     {
       "id": 128,
@@ -10142,7 +10164,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 189
+      "positionRank": 190
     },
     {
       "id": 311,
@@ -10274,7 +10296,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 200
+      "positionRank": 201
     },
     {
       "id": 373,
@@ -10362,7 +10384,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 168
+      "positionRank": 169
     },
     {
       "id": 275,
@@ -10406,7 +10428,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 157
+      "positionRank": 158
     },
     {
       "id": 370,
@@ -10472,7 +10494,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 155
+      "positionRank": 156
     },
     {
       "id": 624,
@@ -10648,7 +10670,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 199
+      "positionRank": 200
     },
     {
       "id": 610,
@@ -10670,7 +10692,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 211
+      "positionRank": 212
     },
     {
       "id": 416,
@@ -10692,7 +10714,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 186
+      "positionRank": 187
     },
     {
       "id": 59,
@@ -10802,7 +10824,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 149
+      "positionRank": 150
     },
     {
       "id": 30,
@@ -10824,7 +10846,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 146
+      "positionRank": 147
     },
     {
       "id": 218,
@@ -11264,7 +11286,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 188
+      "positionRank": 189
     },
     {
       "id": 107,
@@ -11418,7 +11440,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 179
+      "positionRank": 180
     },
     {
       "id": 617,
@@ -11528,7 +11550,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 213
+      "positionRank": 214
     },
     {
       "id": 342,
@@ -11616,7 +11638,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 204
+      "positionRank": 205
     },
     {
       "id": 132,
@@ -11660,7 +11682,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 173
+      "positionRank": 174
     },
     {
       "id": 601,
@@ -11748,7 +11770,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 156
+      "positionRank": 157
     },
     {
       "id": 49,
@@ -11814,7 +11836,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 151
+      "positionRank": 152
     },
     {
       "id": 434,
@@ -11880,7 +11902,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 174
+      "positionRank": 175
     },
     {
       "id": 444,
@@ -11946,7 +11968,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 154
+      "positionRank": 155
     },
     {
       "id": 550,
@@ -12034,7 +12056,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 177
+      "positionRank": 178
     },
     {
       "id": 141,
@@ -12100,7 +12122,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 169
+      "positionRank": 170
     },
     {
       "id": 177,
@@ -12122,7 +12144,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 162
+      "positionRank": 163
     },
     {
       "id": 228,
@@ -12166,7 +12188,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 176
+      "positionRank": 177
     },
     {
       "id": 174,
@@ -12188,7 +12210,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 161
+      "positionRank": 162
     },
     {
       "id": 78,
@@ -12276,7 +12298,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 164
+      "positionRank": 165
     },
     {
       "id": 251,
@@ -12320,7 +12342,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 182
+      "positionRank": 183
     },
     {
       "id": 602,
@@ -12342,7 +12364,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 208
+      "positionRank": 209
     },
     {
       "id": 276,
@@ -12386,7 +12408,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 181
+      "positionRank": 182
     },
     {
       "id": 606,
@@ -12452,7 +12474,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 159
+      "positionRank": 160
     },
     {
       "id": 582,
@@ -12584,7 +12606,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 205
+      "positionRank": 206
     },
     {
       "id": 291,
@@ -12694,7 +12716,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 175
+      "positionRank": 176
     },
     {
       "id": 378,
@@ -12804,29 +12826,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 212
-    },
-    {
-      "id": 656,
-      "name": "Mfuni",
-      "position": "DEF",
-      "club": "Coventry City",
-      "clubShort": "COV",
-      "clubCode": 9,
-      "teamId": 7,
-      "photoCode": 566213,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 0,
-      "ppg": 0,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 215
+      "positionRank": 213
     },
     {
       "id": 169,
@@ -12914,7 +12914,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 150
+      "positionRank": 151
     },
     {
       "id": 122,
@@ -13002,7 +13002,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 191
+      "positionRank": 192
     },
     {
       "id": 430,
@@ -13112,7 +13112,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 148
+      "positionRank": 149
     },
     {
       "id": 24,
@@ -13222,7 +13222,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 193
+      "positionRank": 194
     },
     {
       "id": 441,
@@ -13442,7 +13442,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 170
+      "positionRank": 171
     },
     {
       "id": 530,
@@ -13574,7 +13574,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 198
+      "positionRank": 199
     },
     {
       "id": 348,
@@ -13640,7 +13640,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 183
+      "positionRank": 184
     },
     {
       "id": 270,
@@ -13728,7 +13728,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 196
+      "positionRank": 197
     },
     {
       "id": 605,
@@ -13750,7 +13750,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 209
+      "positionRank": 210
     },
     {
       "id": 510,
@@ -13772,7 +13772,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 201
+      "positionRank": 202
     },
     {
       "id": 587,
@@ -13838,7 +13838,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 207
+      "positionRank": 208
     },
     {
       "id": 475,
@@ -13860,7 +13860,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 192
+      "positionRank": 193
     },
     {
       "id": 528,
@@ -13904,7 +13904,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 203
+      "positionRank": 204
     },
     {
       "id": 609,
@@ -13926,7 +13926,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 210
+      "positionRank": 211
     },
     {
       "id": 189,
@@ -13970,7 +13970,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 152
+      "positionRank": 153
     },
     {
       "id": 205,
@@ -13992,7 +13992,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 167
+      "positionRank": 168
     },
     {
       "id": 511,
@@ -14014,7 +14014,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 202
+      "positionRank": 203
     },
     {
       "id": 505,
@@ -14036,7 +14036,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 197
+      "positionRank": 198
     },
     {
       "id": 111,
@@ -14124,7 +14124,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 172
+      "positionRank": 173
     },
     {
       "id": 227,
@@ -14256,7 +14256,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 153
+      "positionRank": 154
     },
     {
       "id": 562,
@@ -14432,7 +14432,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 165
+      "positionRank": 166
     },
     {
       "id": 193,
@@ -14589,5 +14589,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-09-19T15:59:57.376Z"
+  "generatedAt": "2026-09-19T16:48:19.397Z"
 }
