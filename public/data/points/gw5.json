@@ -1248,7 +1248,7 @@
     },
     "47": {
       "110": {
-        "total": 12,
+        "total": 11,
         "components": [
           {
             "stat": "minutes",
@@ -1271,8 +1271,8 @@
           {
             "stat": "bonus",
             "name": "Bonus",
-            "value": 3,
-            "points": 3
+            "value": 2,
+            "points": 2
           }
         ]
       },
@@ -1342,7 +1342,7 @@
           {
             "stat": "defensive_contribution",
             "name": "Defensive Contribution",
-            "value": 10,
+            "value": 11,
             "points": 2
           }
         ]
@@ -1809,5 +1809,5 @@
       }
     }
   },
-  "generatedAt": "2026-09-19T22:36:24.329Z"
+  "generatedAt": "2026-09-19T23:20:23.540Z"
 }
