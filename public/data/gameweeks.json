@@ -766,16 +766,16 @@
       "confirmExpectedUtc": "2026-09-21T15:30:00.000Z",
       "revealFromUtc": "2026-09-21T08:05:00.000Z",
       "scores": {
-        "rushy": 12,
-        "kellett": 2,
+        "rushy": 16,
+        "kellett": 11,
         "wallis": 4,
-        "jls": 2,
+        "jls": 4,
         "paddy": 2,
-        "bennett": 4,
+        "bennett": 11,
         "wood": 0,
-        "rowan": 0,
+        "rowan": 6,
         "jason": 6,
-        "dj": 17,
+        "dj": 16,
         "ollie": 1
       },
       "kochKeys": [],
@@ -783,12 +783,12 @@
       "topPerformerByManager": {
         "rushy": {
           "playerName": "Manzambi",
-          "points": 9,
+          "points": 13,
           "managerKey": "rushy"
         },
         "kellett": {
-          "playerName": "Cash",
-          "points": 1,
+          "playerName": "Buendía",
+          "points": 12,
           "managerKey": "kellett"
         },
         "wallis": {
@@ -798,7 +798,7 @@
         },
         "jls": {
           "playerName": "Sávio",
-          "points": 1,
+          "points": 2,
           "managerKey": "jls"
         },
         "paddy": {
@@ -807,8 +807,8 @@
           "managerKey": "paddy"
         },
         "bennett": {
-          "playerName": "Janelt",
-          "points": 3,
+          "playerName": "N.Jackson",
+          "points": 6,
           "managerKey": "bennett"
         },
         "wood": {
@@ -817,8 +817,8 @@
           "managerKey": "wood"
         },
         "rowan": {
-          "playerName": "Pickford",
-          "points": 0,
+          "playerName": "Van Hecke",
+          "points": 6,
           "managerKey": "rowan"
         },
         "jason": {
@@ -845,10 +845,10 @@
           "element": 499
         },
         "kellett": {
-          "playerName": "Buendía",
-          "points": 1,
+          "playerName": "Cash",
+          "points": -1,
           "managerKey": "kellett",
-          "element": 41
+          "element": 32
         },
         "wallis": {
           "playerName": "Martinez",
@@ -858,7 +858,7 @@
         },
         "jls": {
           "playerName": "Marmoush",
-          "points": 1,
+          "points": 2,
           "managerKey": "jls",
           "element": 401
         },
@@ -869,10 +869,10 @@
           "element": 154
         },
         "bennett": {
-          "playerName": "N.Jackson",
-          "points": 0,
+          "playerName": "Kinsky",
+          "points": 2,
           "managerKey": "bennett",
-          "element": 166
+          "element": 496
         },
         "wood": null,
         "rowan": {
@@ -889,7 +889,7 @@
         },
         "dj": {
           "playerName": "Suzuki",
-          "points": 3,
+          "points": 2,
           "managerKey": "dj",
           "element": 597
         },
@@ -1674,5 +1674,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-09-19T12:48:49.622Z"
+  "generatedAt": "2026-09-19T13:38:34.975Z"
 }

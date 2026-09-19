@@ -665,35 +665,36 @@
     },
     "48": {
       "32": {
-        "total": 1,
+        "total": -1,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 8,
+            "value": 45,
             "points": 1
+          },
+          {
+            "stat": "goals_conceded",
+            "name": "Goals conceded",
+            "value": 2,
+            "points": -1
+          },
+          {
+            "stat": "yellow_cards",
+            "name": "Yellow cards",
+            "value": 1,
+            "points": -1
           }
         ]
       },
       "41": {
-        "total": 1,
+        "total": 12,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 53,
-            "points": 1
-          }
-        ]
-      },
-      "53": {
-        "total": 9,
-        "components": [
-          {
-            "stat": "minutes",
-            "name": "Minutes played",
-            "value": 53,
-            "points": 1
+            "value": 90,
+            "points": 2
           },
           {
             "stat": "goals_scored",
@@ -706,21 +707,81 @@
             "name": "Bonus",
             "value": 3,
             "points": 3
+          },
+          {
+            "stat": "defensive_contribution",
+            "name": "Defensive Contribution",
+            "value": 13,
+            "points": 2
           }
         ]
       },
-      "56": {
-        "total": 0,
-        "components": []
-      },
-      "112": {
-        "total": 0,
+      "53": {
+        "total": 13,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 53,
+            "value": 71,
+            "points": 2
+          },
+          {
+            "stat": "goals_scored",
+            "name": "Goals scored",
+            "value": 1,
+            "points": 5
+          },
+          {
+            "stat": "assists",
+            "name": "Assists",
+            "value": 1,
+            "points": 3
+          },
+          {
+            "stat": "clean_sheets",
+            "name": "Clean sheets",
+            "value": 1,
             "points": 1
+          },
+          {
+            "stat": "bonus",
+            "name": "Bonus",
+            "value": 2,
+            "points": 2
+          }
+        ]
+      },
+      "56": {
+        "total": 1,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 2,
+            "points": 1
+          }
+        ]
+      },
+      "112": {
+        "total": 6,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 90,
+            "points": 2
+          },
+          {
+            "stat": "goals_scored",
+            "name": "Goals scored",
+            "value": 1,
+            "points": 6
+          },
+          {
+            "stat": "goals_conceded",
+            "name": "Goals conceded",
+            "value": 3,
+            "points": -1
           },
           {
             "stat": "yellow_cards",
@@ -731,62 +792,86 @@
         ]
       },
       "166": {
-        "total": 0,
+        "total": 6,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 53,
-            "points": 1
+            "value": 87,
+            "points": 2
+          },
+          {
+            "stat": "goals_scored",
+            "name": "Goals scored",
+            "value": 1,
+            "points": 4
           },
           {
             "stat": "yellow_cards",
             "name": "Yellow cards",
             "value": 1,
             "points": -1
+          },
+          {
+            "stat": "bonus",
+            "name": "Bonus",
+            "value": 1,
+            "points": 1
           }
         ]
       },
       "401": {
-        "total": 1,
+        "total": 2,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 53,
-            "points": 1
+            "value": 90,
+            "points": 2
           }
         ]
       },
       "403": {
-        "total": 1,
+        "total": 2,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 53,
-            "points": 1
+            "value": 90,
+            "points": 2
           }
         ]
       },
       "455": {
-        "total": 1,
+        "total": 2,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 53,
-            "points": 1
+            "value": 83,
+            "points": 2
           }
         ]
       },
       "496": {
-        "total": 1,
+        "total": 2,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 53,
+            "value": 90,
+            "points": 2
+          },
+          {
+            "stat": "goals_conceded",
+            "name": "Goals conceded",
+            "value": 3,
+            "points": -1
+          },
+          {
+            "stat": "saves",
+            "name": "Saves",
+            "value": 3,
             "points": 1
           }
         ]
@@ -808,41 +893,47 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 53,
-            "points": 1
+            "value": 90,
+            "points": 2
+          },
+          {
+            "stat": "goals_conceded",
+            "name": "Goals conceded",
+            "value": 3,
+            "points": -1
           }
         ]
       },
       "526": {
-        "total": 1,
+        "total": 2,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 53,
-            "points": 1
+            "value": 65,
+            "points": 2
           }
         ]
       },
       "597": {
-        "total": 3,
+        "total": 2,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 53,
-            "points": 1
+            "value": 90,
+            "points": 2
+          },
+          {
+            "stat": "goals_conceded",
+            "name": "Goals conceded",
+            "value": 2,
+            "points": -1
           },
           {
             "stat": "saves",
             "name": "Saves",
-            "value": 4,
-            "points": 1
-          },
-          {
-            "stat": "bonus",
-            "name": "Bonus",
-            "value": 1,
+            "value": 5,
             "points": 1
           }
         ]
@@ -981,5 +1072,5 @@
       }
     }
   },
-  "generatedAt": "2026-09-19T12:48:49.622Z"
+  "generatedAt": "2026-09-19T13:38:34.975Z"
 }
