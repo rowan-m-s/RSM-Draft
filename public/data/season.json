@@ -3,9 +3,9 @@
     {
       "key": "wood",
       "rank": 1,
-      "total": 238,
-      "gw": 30,
-      "month": 147,
+      "total": 249,
+      "gw": 41,
+      "month": 158,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -18,28 +18,11 @@
       }
     },
     {
-      "key": "paddy",
-      "rank": 2,
-      "total": 225,
-      "gw": 37,
-      "month": 118,
-      "kochCount": 1,
-      "motmCount": 1,
-      "forfeits": 5,
-      "potsWon": 10,
-      "balance": 5,
-      "topPerformer": {
-        "playerName": "Cherki",
-        "points": 33,
-        "managerKey": "paddy"
-      }
-    },
-    {
       "key": "jason",
-      "rank": 3,
-      "total": 219,
-      "gw": 43,
-      "month": 125,
+      "rank": 2,
+      "total": 234,
+      "gw": 58,
+      "month": 140,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -52,11 +35,28 @@
       }
     },
     {
+      "key": "paddy",
+      "rank": 3,
+      "total": 232,
+      "gw": 44,
+      "month": 125,
+      "kochCount": 1,
+      "motmCount": 1,
+      "forfeits": 5,
+      "potsWon": 10,
+      "balance": 5,
+      "topPerformer": {
+        "playerName": "Cherki",
+        "points": 34,
+        "managerKey": "paddy"
+      }
+    },
+    {
       "key": "bennett",
       "rank": 4,
-      "total": 198,
-      "gw": 40,
-      "month": 119,
+      "total": 212,
+      "gw": 54,
+      "month": 133,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -71,9 +71,9 @@
     {
       "key": "ollie",
       "rank": 5,
-      "total": 197,
-      "gw": 20,
-      "month": 120,
+      "total": 200,
+      "gw": 23,
+      "month": 123,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -86,28 +86,11 @@
       }
     },
     {
-      "key": "rowan",
-      "rank": 6,
-      "total": 195,
-      "gw": 29,
-      "month": 99,
-      "kochCount": 1,
-      "motmCount": 0,
-      "forfeits": 5,
-      "potsWon": 0,
-      "balance": -5,
-      "topPerformer": {
-        "playerName": "Gibbs-White",
-        "points": 28,
-        "managerKey": "rowan"
-      }
-    },
-    {
       "key": "rushy",
-      "rank": 7,
-      "total": 188,
-      "gw": 25,
-      "month": 106,
+      "rank": 6,
+      "total": 199,
+      "gw": 36,
+      "month": 117,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -120,11 +103,28 @@
       }
     },
     {
+      "key": "rowan",
+      "rank": 6,
+      "total": 199,
+      "gw": 33,
+      "month": 103,
+      "kochCount": 1,
+      "motmCount": 0,
+      "forfeits": 5,
+      "potsWon": 0,
+      "balance": -5,
+      "topPerformer": {
+        "playerName": "Gibbs-White",
+        "points": 28,
+        "managerKey": "rowan"
+      }
+    },
+    {
       "key": "kellett",
       "rank": 8,
-      "total": 183,
-      "gw": 24,
-      "month": 96,
+      "total": 197,
+      "gw": 38,
+      "month": 110,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -132,16 +132,16 @@
       "balance": 0,
       "topPerformer": {
         "playerName": "Haaland",
-        "points": 34,
+        "points": 39,
         "managerKey": "kellett"
       }
     },
     {
       "key": "wallis",
       "rank": 9,
-      "total": 179,
-      "gw": 16,
-      "month": 93,
+      "total": 189,
+      "gw": 26,
+      "month": 103,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -156,9 +156,9 @@
     {
       "key": "jls",
       "rank": 10,
-      "total": 172,
-      "gw": 12,
-      "month": 111,
+      "total": 187,
+      "gw": 27,
+      "month": 126,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -173,9 +173,9 @@
     {
       "key": "dj",
       "rank": 11,
-      "total": 166,
-      "gw": 33,
-      "month": 114,
+      "total": 176,
+      "gw": 43,
+      "month": 124,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -195,7 +195,7 @@
     "keys": [
       "wood"
     ],
-    "total": 238,
+    "total": 249,
     "since": 4,
     "sinceByKey": {
       "wood": 4
@@ -205,7 +205,7 @@
     "displaced": "paddy",
     "changed": true
   },
-  "generatedAt": "2026-09-20T13:52:29.453Z",
+  "generatedAt": "2026-09-20T14:56:59.558Z",
   "graphics": {
     "koch": {
       "rushy": 244850,
