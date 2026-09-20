@@ -20,9 +20,9 @@
     {
       "key": "jason",
       "rank": 2,
-      "total": 236,
-      "gw": 60,
-      "month": 142,
+      "total": 244,
+      "gw": 68,
+      "month": 150,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -71,9 +71,9 @@
     {
       "key": "ollie",
       "rank": 5,
-      "total": 209,
-      "gw": 32,
-      "month": 132,
+      "total": 205,
+      "gw": 28,
+      "month": 128,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -86,8 +86,25 @@
       }
     },
     {
-      "key": "rushy",
+      "key": "rowan",
       "rank": 6,
+      "total": 201,
+      "gw": 35,
+      "month": 105,
+      "kochCount": 1,
+      "motmCount": 0,
+      "forfeits": 5,
+      "potsWon": 0,
+      "balance": -5,
+      "topPerformer": {
+        "playerName": "Gibbs-White",
+        "points": 28,
+        "managerKey": "rowan"
+      }
+    },
+    {
+      "key": "rushy",
+      "rank": 7,
       "total": 199,
       "gw": 36,
       "month": 117,
@@ -100,23 +117,6 @@
         "playerName": "Rogers",
         "points": 29,
         "managerKey": "rushy"
-      }
-    },
-    {
-      "key": "rowan",
-      "rank": 6,
-      "total": 199,
-      "gw": 33,
-      "month": 103,
-      "kochCount": 1,
-      "motmCount": 0,
-      "forfeits": 5,
-      "potsWon": 0,
-      "balance": -5,
-      "topPerformer": {
-        "playerName": "Gibbs-White",
-        "points": 28,
-        "managerKey": "rowan"
       }
     },
     {
@@ -138,10 +138,10 @@
     },
     {
       "key": "wallis",
-      "rank": 8,
-      "total": 197,
-      "gw": 34,
-      "month": 111,
+      "rank": 9,
+      "total": 191,
+      "gw": 28,
+      "month": 105,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -205,7 +205,7 @@
     "displaced": "paddy",
     "changed": true
   },
-  "generatedAt": "2026-09-20T17:13:40.976Z",
+  "generatedAt": "2026-09-20T17:51:14.171Z",
   "graphics": {
     "koch": {
       "rushy": 244850,
