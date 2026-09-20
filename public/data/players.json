@@ -2220,7 +2220,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 55
+      "positionRank": 54
     },
     {
       "id": 155,
@@ -2289,28 +2289,6 @@
       "positionRank": 50
     },
     {
-      "id": 389,
-      "name": "Matheus N.",
-      "position": "DEF",
-      "club": "Man City",
-      "clubShort": "MCI",
-      "clubCode": 43,
-      "teamId": 15,
-      "photoCode": 465351,
-      "owner": "dj",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-27T11:30:08.171622Z",
-      "points": 13,
-      "ppg": 4.3,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 1,
-      "positionRank": 52
-    },
-    {
       "id": 295,
       "name": "McBurnie",
       "position": "FWD",
@@ -2352,7 +2330,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 53
+      "positionRank": 52
     },
     {
       "id": 60,
@@ -2374,7 +2352,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 59
+      "positionRank": 58
     },
     {
       "id": 491,
@@ -2418,7 +2396,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 58
+      "positionRank": 57
     },
     {
       "id": 471,
@@ -2440,7 +2418,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 63
+      "positionRank": 62
     },
     {
       "id": 11,
@@ -2462,7 +2440,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 57
+      "positionRank": 56
     },
     {
       "id": 254,
@@ -2484,7 +2462,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 60
+      "positionRank": 59
     },
     {
       "id": 239,
@@ -2529,6 +2507,28 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 15
+    },
+    {
+      "id": 389,
+      "name": "Matheus N.",
+      "position": "DEF",
+      "club": "Man City",
+      "clubShort": "MCI",
+      "clubCode": 43,
+      "teamId": 15,
+      "photoCode": 465351,
+      "owner": "dj",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-27T11:30:08.171622Z",
+      "points": 11,
+      "ppg": 3.7,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 1,
+      "positionRank": 64
     },
     {
       "id": 529,
@@ -4532,7 +4532,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 56
+      "positionRank": 55
     },
     {
       "id": 113,
@@ -4620,7 +4620,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 54
+      "positionRank": 53
     },
     {
       "id": 73,
@@ -4664,7 +4664,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 64
+      "positionRank": 63
     },
     {
       "id": 632,
@@ -4708,7 +4708,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 62
+      "positionRank": 61
     },
     {
       "id": 259,
@@ -4730,7 +4730,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 61
+      "positionRank": 60
     },
     {
       "id": 459,
@@ -14158,9 +14158,9 @@
       "teamId": 10,
       "photoCode": 167074,
       "owner": null,
-      "status": "i",
+      "status": "a",
       "chanceOfPlaying": 0,
-      "news": "Concussion - Expected back 10 Oct",
+      "news": null,
       "newsAdded": "2026-09-18T12:30:09.546158Z",
       "points": 0,
       "ppg": 0,
@@ -14699,5 +14699,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-09-20T17:51:14.171Z"
+  "generatedAt": "2026-09-20T19:27:36.537Z"
 }
