@@ -2153,10 +2153,10 @@
       "clubShort": "BOU",
       "clubCode": 91,
       "photoCode": 222683,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
+      "status": "i",
+      "chanceOfPlaying": 0,
+      "news": "Unspecified injury - Unknown return date",
+      "newsAdded": "2026-09-20T15:30:09.074071Z"
     },
     "78": {
       "name": "Kroupi.Jr",
@@ -3233,9 +3233,9 @@
       "clubShort": "MUN",
       "clubCode": 1,
       "photoCode": 106760,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 50,
-      "news": "Unspecified injury - 50% chance of playing",
+      "news": null,
       "newsAdded": "2026-09-11T13:00:09.030120Z"
     },
     "426": {
@@ -3827,5 +3827,5 @@
       "newsAdded": "2026-08-15T16:00:07.974271Z"
     }
   },
-  "generatedAt": "2026-09-20T14:56:59.558Z"
+  "generatedAt": "2026-09-20T17:13:40.976Z"
 }

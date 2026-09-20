@@ -282,7 +282,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 8
       },
       {
         "element": 387,
@@ -346,7 +346,7 @@
         "starter": false,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 4
       },
       {
         "element": 127,
@@ -574,7 +574,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 2
       },
       {
         "element": 26,
@@ -656,7 +656,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 2
       },
       {
         "element": 13,
@@ -736,7 +736,7 @@
         "starter": false,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 7
+        "points": 8
       }
     ],
     "wood": [
@@ -802,7 +802,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 2
       },
       {
         "element": 286,
@@ -1038,7 +1038,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 2
       },
       {
         "element": 15,
@@ -1136,7 +1136,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 1
+        "points": 3
       },
       {
         "element": 397,
@@ -1250,7 +1250,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 5
       },
       {
         "element": 233,
@@ -1282,7 +1282,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 2
       },
       {
         "element": 427,
@@ -1290,7 +1290,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 2
       },
       {
         "element": 554,
@@ -1322,7 +1322,7 @@
         "starter": false,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 9
       },
       {
         "element": 526,
@@ -1670,10 +1670,10 @@
       "clubShort": "BOU",
       "clubCode": 91,
       "photoCode": 222683,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
+      "status": "i",
+      "chanceOfPlaying": 0,
+      "news": "Unspecified injury - Unknown return date",
+      "newsAdded": "2026-09-20T15:30:09.074071Z"
     },
     "79": {
       "name": "Evanilson",
@@ -3332,5 +3332,5 @@
       "newsAdded": null
     }
   },
-  "generatedAt": "2026-09-20T14:56:59.558Z"
+  "generatedAt": "2026-09-20T17:13:40.976Z"
 }

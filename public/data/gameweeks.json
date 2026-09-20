@@ -751,15 +751,15 @@
       "yetByManager": {
         "rushy": 0,
         "kellett": 0,
-        "wallis": 1,
+        "wallis": 0,
         "jls": 0,
-        "paddy": 1,
-        "bennett": 1,
-        "wood": 1,
+        "paddy": 0,
+        "bennett": 0,
+        "wood": 0,
         "rowan": 0,
-        "jason": 1,
-        "dj": 1,
-        "ollie": 3
+        "jason": 0,
+        "dj": 0,
+        "ollie": 0
       },
       "fixturesRemaining": true,
       "dataChecked": false,
@@ -768,15 +768,15 @@
       "scores": {
         "rushy": 36,
         "kellett": 38,
-        "wallis": 26,
+        "wallis": 34,
         "jls": 27,
-        "paddy": 44,
-        "bennett": 54,
-        "wood": 41,
+        "paddy": 46,
+        "bennett": 56,
+        "wood": 43,
         "rowan": 33,
-        "jason": 58,
-        "dj": 43,
-        "ollie": 23
+        "jason": 60,
+        "dj": 45,
+        "ollie": 32
       },
       "kochKeys": [],
       "charged": 0,
@@ -792,8 +792,8 @@
           "managerKey": "kellett"
         },
         "wallis": {
-          "playerName": "Ndiaye",
-          "points": 5,
+          "playerName": "Robinson",
+          "points": 8,
           "managerKey": "wallis"
         },
         "jls": {
@@ -1679,5 +1679,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-09-20T14:56:59.558Z"
+  "generatedAt": "2026-09-20T17:13:40.976Z"
 }
