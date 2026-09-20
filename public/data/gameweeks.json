@@ -749,34 +749,34 @@
       "scoresProvisional": true,
       "kochReady": true,
       "yetByManager": {
-        "rushy": 3,
-        "kellett": 5,
-        "wallis": 8,
-        "jls": 6,
-        "paddy": 6,
-        "bennett": 4,
-        "wood": 5,
-        "rowan": 2,
-        "jason": 5,
-        "dj": 5,
-        "ollie": 4
+        "rushy": 0,
+        "kellett": 0,
+        "wallis": 1,
+        "jls": 0,
+        "paddy": 1,
+        "bennett": 1,
+        "wood": 1,
+        "rowan": 0,
+        "jason": 1,
+        "dj": 1,
+        "ollie": 3
       },
       "fixturesRemaining": true,
       "dataChecked": false,
       "confirmExpectedUtc": "2026-09-21T15:30:00.000Z",
       "revealFromUtc": "2026-09-21T08:05:00.000Z",
       "scores": {
-        "rushy": 22,
-        "kellett": 21,
-        "wallis": 5,
-        "jls": 5,
-        "paddy": 22,
-        "bennett": 37,
-        "wood": 16,
-        "rowan": 27,
-        "jason": 33,
-        "dj": 20,
-        "ollie": 17
+        "rushy": 28,
+        "kellett": 27,
+        "wallis": 14,
+        "jls": 12,
+        "paddy": 32,
+        "bennett": 42,
+        "wood": 24,
+        "rowan": 31,
+        "jason": 38,
+        "dj": 24,
+        "ollie": 18
       },
       "kochKeys": [],
       "charged": 0,
@@ -792,13 +792,13 @@
           "managerKey": "kellett"
         },
         "wallis": {
-          "playerName": "Martinez",
-          "points": 2,
+          "playerName": "Ndiaye",
+          "points": 4,
           "managerKey": "wallis"
         },
         "jls": {
-          "playerName": "Sávio",
-          "points": 2,
+          "playerName": "A.Becker",
+          "points": 3,
           "managerKey": "jls"
         },
         "paddy": {
@@ -857,16 +857,16 @@
           "element": 4
         },
         "jls": {
-          "playerName": "Bruno G.",
+          "playerName": "Bogle",
           "points": 1,
           "managerKey": "jls",
-          "element": 452
+          "element": 330
         },
         "paddy": {
-          "playerName": "Ndoye",
+          "playerName": "Cherki",
           "points": 1,
           "managerKey": "paddy",
-          "element": 483
+          "element": 399
         },
         "bennett": {
           "playerName": "Rice",
@@ -887,10 +887,10 @@
           "element": 464
         },
         "jason": {
-          "playerName": "Ødegaard",
-          "points": 2,
+          "playerName": "Kerkez",
+          "points": 1,
           "managerKey": "jason",
-          "element": 15
+          "element": 358
         },
         "dj": {
           "playerName": "J.Timber",
@@ -1679,5 +1679,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-09-20T08:11:06.829Z"
+  "generatedAt": "2026-09-20T13:23:34.242Z"
 }
