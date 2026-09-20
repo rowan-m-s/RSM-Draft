@@ -766,17 +766,17 @@
       "confirmExpectedUtc": "2026-09-21T15:30:00.000Z",
       "revealFromUtc": "2026-09-21T08:05:00.000Z",
       "scores": {
-        "rushy": 28,
-        "kellett": 27,
-        "wallis": 14,
+        "rushy": 25,
+        "kellett": 24,
+        "wallis": 16,
         "jls": 12,
-        "paddy": 32,
-        "bennett": 42,
-        "wood": 24,
-        "rowan": 31,
-        "jason": 38,
-        "dj": 24,
-        "ollie": 18
+        "paddy": 37,
+        "bennett": 40,
+        "wood": 30,
+        "rowan": 29,
+        "jason": 43,
+        "dj": 33,
+        "ollie": 20
       },
       "kochKeys": [],
       "charged": 0,
@@ -797,7 +797,7 @@
           "managerKey": "wallis"
         },
         "jls": {
-          "playerName": "A.Becker",
+          "playerName": "Guéhi",
           "points": 3,
           "managerKey": "jls"
         },
@@ -812,8 +812,8 @@
           "managerKey": "bennett"
         },
         "wood": {
-          "playerName": "De Cuyper",
-          "points": 6,
+          "playerName": "Brobbey",
+          "points": 12,
           "managerKey": "wood"
         },
         "rowan": {
@@ -827,8 +827,8 @@
           "managerKey": "jason"
         },
         "dj": {
-          "playerName": "Schade",
-          "points": 9,
+          "playerName": "Semenyo",
+          "points": 11,
           "managerKey": "dj"
         },
         "ollie": {
@@ -858,15 +858,15 @@
         },
         "jls": {
           "playerName": "Bogle",
-          "points": 1,
+          "points": 0,
           "managerKey": "jls",
           "element": 330
         },
         "paddy": {
-          "playerName": "Cherki",
-          "points": 1,
+          "playerName": "Roefs",
+          "points": 0,
           "managerKey": "paddy",
-          "element": 399
+          "element": 529
         },
         "bennett": {
           "playerName": "Rice",
@@ -875,10 +875,10 @@
           "element": 13
         },
         "wood": {
-          "playerName": "Konsa",
-          "points": 1,
+          "playerName": "Donnarumma",
+          "points": 0,
           "managerKey": "wood",
-          "element": 31
+          "element": 384
         },
         "rowan": {
           "playerName": "Wissa",
@@ -1679,5 +1679,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-09-20T13:23:34.242Z"
+  "generatedAt": "2026-09-20T13:52:29.453Z"
 }

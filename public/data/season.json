@@ -3,9 +3,9 @@
     {
       "key": "wood",
       "rank": 1,
-      "total": 232,
-      "gw": 24,
-      "month": 141,
+      "total": 238,
+      "gw": 30,
+      "month": 147,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -20,26 +20,26 @@
     {
       "key": "paddy",
       "rank": 2,
-      "total": 220,
-      "gw": 32,
-      "month": 113,
+      "total": 225,
+      "gw": 37,
+      "month": 118,
       "kochCount": 1,
       "motmCount": 1,
       "forfeits": 5,
       "potsWon": 10,
       "balance": 5,
       "topPerformer": {
-        "playerName": "Palmer",
-        "points": 28,
+        "playerName": "Cherki",
+        "points": 33,
         "managerKey": "paddy"
       }
     },
     {
       "key": "jason",
       "rank": 3,
-      "total": 214,
-      "gw": 38,
-      "month": 120,
+      "total": 219,
+      "gw": 43,
+      "month": 125,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -54,9 +54,9 @@
     {
       "key": "bennett",
       "rank": 4,
-      "total": 200,
-      "gw": 42,
-      "month": 121,
+      "total": 198,
+      "gw": 40,
+      "month": 119,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -69,28 +69,11 @@
       }
     },
     {
-      "key": "rowan",
+      "key": "ollie",
       "rank": 5,
       "total": 197,
-      "gw": 31,
-      "month": 101,
-      "kochCount": 1,
-      "motmCount": 0,
-      "forfeits": 5,
-      "potsWon": 0,
-      "balance": -5,
-      "topPerformer": {
-        "playerName": "Gibbs-White",
-        "points": 28,
-        "managerKey": "rowan"
-      }
-    },
-    {
-      "key": "ollie",
-      "rank": 6,
-      "total": 195,
-      "gw": 18,
-      "month": 118,
+      "gw": 20,
+      "month": 120,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -103,11 +86,28 @@
       }
     },
     {
+      "key": "rowan",
+      "rank": 6,
+      "total": 195,
+      "gw": 29,
+      "month": 99,
+      "kochCount": 1,
+      "motmCount": 0,
+      "forfeits": 5,
+      "potsWon": 0,
+      "balance": -5,
+      "topPerformer": {
+        "playerName": "Gibbs-White",
+        "points": 28,
+        "managerKey": "rowan"
+      }
+    },
+    {
       "key": "rushy",
       "rank": 7,
-      "total": 191,
-      "gw": 28,
-      "month": 109,
+      "total": 188,
+      "gw": 25,
+      "month": 106,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -122,9 +122,9 @@
     {
       "key": "kellett",
       "rank": 8,
-      "total": 186,
-      "gw": 27,
-      "month": 99,
+      "total": 183,
+      "gw": 24,
+      "month": 96,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -139,9 +139,9 @@
     {
       "key": "wallis",
       "rank": 9,
-      "total": 177,
-      "gw": 14,
-      "month": 91,
+      "total": 179,
+      "gw": 16,
+      "month": 93,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -173,9 +173,9 @@
     {
       "key": "dj",
       "rank": 11,
-      "total": 157,
-      "gw": 24,
-      "month": 105,
+      "total": 166,
+      "gw": 33,
+      "month": 114,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -195,7 +195,7 @@
     "keys": [
       "wood"
     ],
-    "total": 232,
+    "total": 238,
     "since": 4,
     "sinceByKey": {
       "wood": 4
@@ -205,7 +205,7 @@
     "displaced": "paddy",
     "changed": true
   },
-  "generatedAt": "2026-09-20T13:23:34.242Z",
+  "generatedAt": "2026-09-20T13:52:29.453Z",
   "graphics": {
     "koch": {
       "rushy": 244850,
@@ -243,7 +243,7 @@
       "wood": 141746,
       "rowan": 222531,
       "jason": 223340,
-      "dj": 424876,
+      "dj": 437730,
       "ollie": 154561
     },
     "leaderMonth": {

@@ -67,28 +67,6 @@
       "positionRank": 2
     },
     {
-      "id": 330,
-      "name": "Bogle",
-      "position": "DEF",
-      "club": "Leeds",
-      "clubShort": "LEE",
-      "clubCode": 2,
-      "teamId": 13,
-      "photoCode": 226182,
-      "owner": "jls",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 38,
-      "ppg": 7.6,
-      "goals": 2,
-      "assists": 0,
-      "cleanSheets": 3,
-      "bonus": 6,
-      "positionRank": 3
-    },
-    {
       "id": 115,
       "name": "De Cuyper",
       "position": "DEF",
@@ -111,26 +89,26 @@
       "positionRank": 2
     },
     {
-      "id": 391,
-      "name": "Gvardiol",
+      "id": 330,
+      "name": "Bogle",
       "position": "DEF",
-      "club": "Man City",
-      "clubShort": "MCI",
-      "clubCode": 43,
-      "teamId": 15,
-      "photoCode": 477424,
-      "owner": "wood",
+      "club": "Leeds",
+      "clubShort": "LEE",
+      "clubCode": 2,
+      "teamId": 13,
+      "photoCode": 226182,
+      "owner": "jls",
       "status": "a",
       "chanceOfPlaying": null,
       "news": null,
       "newsAdded": null,
-      "points": 34,
-      "ppg": 6.8,
-      "goals": 1,
-      "assists": 2,
-      "cleanSheets": 2,
+      "points": 37,
+      "ppg": 7.4,
+      "goals": 2,
+      "assists": 0,
+      "cleanSheets": 3,
       "bonus": 6,
-      "positionRank": 4
+      "positionRank": 3
     },
     {
       "id": 411,
@@ -177,6 +155,50 @@
       "positionRank": 1
     },
     {
+      "id": 399,
+      "name": "Cherki",
+      "position": "MID",
+      "club": "Man City",
+      "clubShort": "MCI",
+      "clubCode": 43,
+      "teamId": 15,
+      "photoCode": 466052,
+      "owner": "paddy",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 33,
+      "ppg": 6.6,
+      "goals": 3,
+      "assists": 2,
+      "cleanSheets": 1,
+      "bonus": 5,
+      "positionRank": 3
+    },
+    {
+      "id": 391,
+      "name": "Gvardiol",
+      "position": "DEF",
+      "club": "Man City",
+      "clubShort": "MCI",
+      "clubCode": 43,
+      "teamId": 15,
+      "photoCode": 477424,
+      "owner": "wood",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 33,
+      "ppg": 6.6,
+      "goals": 1,
+      "assists": 2,
+      "cleanSheets": 2,
+      "bonus": 6,
+      "positionRank": 4
+    },
+    {
       "id": 165,
       "name": "João Pedro",
       "position": "FWD",
@@ -218,28 +240,6 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 4,
-      "positionRank": 3
-    },
-    {
-      "id": 68,
-      "name": "Tavernier",
-      "position": "MID",
-      "club": "Bournemouth",
-      "clubShort": "BOU",
-      "clubCode": 91,
-      "teamId": 3,
-      "photoCode": 201658,
-      "owner": "bennett",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 32,
-      "ppg": 6.4,
-      "goals": 3,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 10,
       "positionRank": 4
     },
     {
@@ -328,7 +328,7 @@
       "assists": 3,
       "cleanSheets": 1,
       "bonus": 5,
-      "positionRank": 6
+      "positionRank": 8
     },
     {
       "id": 1,
@@ -353,6 +353,50 @@
       "positionRank": 2
     },
     {
+      "id": 69,
+      "name": "Scott",
+      "position": "MID",
+      "club": "Bournemouth",
+      "clubShort": "BOU",
+      "clubCode": 91,
+      "teamId": 3,
+      "photoCode": 503139,
+      "owner": "wallis",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 30,
+      "ppg": 6,
+      "goals": 1,
+      "assists": 2,
+      "cleanSheets": 1,
+      "bonus": 6,
+      "positionRank": 7
+    },
+    {
+      "id": 68,
+      "name": "Tavernier",
+      "position": "MID",
+      "club": "Bournemouth",
+      "clubShort": "BOU",
+      "clubCode": 91,
+      "teamId": 3,
+      "photoCode": 201658,
+      "owner": "bennett",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 30,
+      "ppg": 6,
+      "goals": 3,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 8,
+      "positionRank": 6
+    },
+    {
       "id": 426,
       "name": "B.Fernandes",
       "position": "MID",
@@ -372,7 +416,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 3,
-      "positionRank": 10
+      "positionRank": 11
     },
     {
       "id": 8,
@@ -397,6 +441,28 @@
       "positionRank": 7
     },
     {
+      "id": 388,
+      "name": "Guéhi",
+      "position": "DEF",
+      "club": "Man City",
+      "clubShort": "MCI",
+      "clubCode": 43,
+      "teamId": 15,
+      "photoCode": 209036,
+      "owner": "jls",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 29,
+      "ppg": 5.8,
+      "goals": 1,
+      "assists": 1,
+      "cleanSheets": 2,
+      "bonus": 4,
+      "positionRank": 8
+    },
+    {
       "id": 15,
       "name": "Ødegaard",
       "position": "MID",
@@ -416,7 +482,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 6,
-      "positionRank": 7
+      "positionRank": 9
     },
     {
       "id": 40,
@@ -438,29 +504,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 8
-    },
-    {
-      "id": 69,
-      "name": "Scott",
-      "position": "MID",
-      "club": "Bournemouth",
-      "clubShort": "BOU",
-      "clubCode": 91,
-      "teamId": 3,
-      "photoCode": 503139,
-      "owner": "wallis",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 29,
-      "ppg": 5.8,
-      "goals": 1,
-      "assists": 2,
-      "cleanSheets": 1,
-      "bonus": 5,
-      "positionRank": 9
+      "positionRank": 10
     },
     {
       "id": 453,
@@ -482,7 +526,7 @@
       "assists": 3,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 13
+      "positionRank": 14
     },
     {
       "id": 480,
@@ -504,7 +548,7 @@
       "assists": 2,
       "cleanSheets": 1,
       "bonus": 6,
-      "positionRank": 14
+      "positionRank": 15
     },
     {
       "id": 98,
@@ -526,7 +570,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 11
+      "positionRank": 12
     },
     {
       "id": 138,
@@ -570,7 +614,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 3,
-      "positionRank": 12
+      "positionRank": 13
     },
     {
       "id": 230,
@@ -592,51 +636,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 8
-    },
-    {
-      "id": 399,
-      "name": "Cherki",
-      "position": "MID",
-      "club": "Man City",
-      "clubShort": "MCI",
-      "clubCode": 43,
-      "teamId": 15,
-      "photoCode": 466052,
-      "owner": "paddy",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 27,
-      "ppg": 5.4,
-      "goals": 2,
-      "assists": 2,
-      "cleanSheets": 1,
-      "bonus": 4,
-      "positionRank": 15
-    },
-    {
-      "id": 388,
-      "name": "Guéhi",
-      "position": "DEF",
-      "club": "Man City",
-      "clubShort": "MCI",
-      "clubCode": 43,
-      "teamId": 15,
-      "photoCode": 209036,
-      "owner": "jls",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 27,
-      "ppg": 5.4,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 4,
-      "positionRank": 11
+      "positionRank": 9
     },
     {
       "id": 233,
@@ -658,7 +658,29 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 3,
-      "positionRank": 9
+      "positionRank": 10
+    },
+    {
+      "id": 397,
+      "name": "Semenyo",
+      "position": "MID",
+      "club": "Man City",
+      "clubShort": "MCI",
+      "clubCode": 43,
+      "teamId": 15,
+      "photoCode": 437730,
+      "owner": "dj",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 27,
+      "ppg": 5.4,
+      "goals": 1,
+      "assists": 3,
+      "cleanSheets": 2,
+      "bonus": 2,
+      "positionRank": 16
     },
     {
       "id": 316,
@@ -771,28 +793,6 @@
       "positionRank": 3
     },
     {
-      "id": 335,
-      "name": "Stach",
-      "position": "MID",
-      "club": "Leeds",
-      "clubShort": "LEE",
-      "clubCode": 2,
-      "teamId": 13,
-      "photoCode": 466525,
-      "owner": "rowan",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 25,
-      "ppg": 5,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 5,
-      "positionRank": 16
-    },
-    {
       "id": 127,
       "name": "Gomez",
       "position": "MID",
@@ -856,7 +856,29 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 3,
-      "positionRank": 18
+      "positionRank": 19
+    },
+    {
+      "id": 334,
+      "name": "Muharemović",
+      "position": "DEF",
+      "club": "Leeds",
+      "clubShort": "LEE",
+      "clubCode": 2,
+      "teamId": 13,
+      "photoCode": 522047,
+      "owner": "paddy",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 23,
+      "ppg": 4.6,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 1,
+      "positionRank": 20
     },
     {
       "id": 472,
@@ -878,7 +900,51 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 20
+      "positionRank": 21
+    },
+    {
+      "id": 335,
+      "name": "Stach",
+      "position": "MID",
+      "club": "Leeds",
+      "clubShort": "LEE",
+      "clubCode": 2,
+      "teamId": 13,
+      "photoCode": 466525,
+      "owner": "rowan",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 23,
+      "ppg": 4.6,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 3,
+      "positionRank": 18
+    },
+    {
+      "id": 385,
+      "name": "Trafford",
+      "position": "GKP",
+      "club": "Leeds",
+      "clubShort": "LEE",
+      "clubCode": 2,
+      "teamId": 13,
+      "photoCode": 432720,
+      "owner": "jason",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 23,
+      "ppg": 4.6,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 5,
+      "positionRank": 5
     },
     {
       "id": 109,
@@ -903,28 +969,6 @@
       "positionRank": 4
     },
     {
-      "id": 350,
-      "name": "A.Becker",
-      "position": "GKP",
-      "club": "Liverpool",
-      "clubShort": "LIV",
-      "clubCode": 14,
-      "teamId": 14,
-      "photoCode": 116535,
-      "owner": "jls",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 22,
-      "ppg": 4.4,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 5,
-      "positionRank": 5
-    },
-    {
       "id": 116,
       "name": "Dunk",
       "position": "DEF",
@@ -944,28 +988,6 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 21
-    },
-    {
-      "id": 332,
-      "name": "Justin",
-      "position": "DEF",
-      "club": "Leeds",
-      "clubShort": "LEE",
-      "clubCode": 2,
-      "teamId": 13,
-      "photoCode": 220627,
-      "owner": "kellett",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 22,
-      "ppg": 4.4,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 5,
       "positionRank": 22
     },
     {
@@ -988,7 +1010,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 20
+      "positionRank": 21
     },
     {
       "id": 86,
@@ -1010,7 +1032,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 19
+      "positionRank": 20
     },
     {
       "id": 556,
@@ -1032,29 +1054,29 @@
       "assists": 2,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 22
+      "positionRank": 23
     },
     {
-      "id": 334,
-      "name": "Muharemović",
-      "position": "DEF",
-      "club": "Leeds",
-      "clubShort": "LEE",
-      "clubCode": 2,
-      "teamId": 13,
-      "photoCode": 522047,
-      "owner": "paddy",
+      "id": 350,
+      "name": "A.Becker",
+      "position": "GKP",
+      "club": "Liverpool",
+      "clubShort": "LIV",
+      "clubCode": 14,
+      "teamId": 14,
+      "photoCode": 116535,
+      "owner": "jls",
       "status": "a",
       "chanceOfPlaying": null,
       "news": null,
       "newsAdded": null,
-      "points": 22,
-      "ppg": 4.4,
+      "points": 21,
+      "ppg": 4.2,
       "goals": 0,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 23
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 4,
+      "positionRank": 6
     },
     {
       "id": 41,
@@ -1076,7 +1098,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 23
+      "positionRank": 24
     },
     {
       "id": 346,
@@ -1101,6 +1123,28 @@
       "positionRank": 6
     },
     {
+      "id": 362,
+      "name": "Jacquet",
+      "position": "DEF",
+      "club": "Liverpool",
+      "clubShort": "LIV",
+      "clubCode": 14,
+      "teamId": 14,
+      "photoCode": 606702,
+      "owner": "ollie",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-07-23T12:01:23.581126Z",
+      "points": 21,
+      "ppg": 4.2,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 5,
+      "positionRank": 27
+    },
+    {
       "id": 637,
       "name": "Maitland-Niles",
       "position": "DEF",
@@ -1120,7 +1164,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 2,
-      "positionRank": 27
+      "positionRank": 28
     },
     {
       "id": 237,
@@ -1142,17 +1186,17 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 24
+      "positionRank": 25
     },
     {
-      "id": 385,
-      "name": "Trafford",
-      "position": "GKP",
-      "club": "Leeds",
-      "clubShort": "LEE",
-      "clubCode": 2,
-      "teamId": 13,
-      "photoCode": 432720,
+      "id": 356,
+      "name": "Virgil",
+      "position": "DEF",
+      "club": "Liverpool",
+      "clubShort": "LIV",
+      "clubCode": 14,
+      "teamId": 14,
+      "photoCode": 97032,
       "owner": "jason",
       "status": "a",
       "chanceOfPlaying": null,
@@ -1162,9 +1206,9 @@
       "ppg": 4.2,
       "goals": 0,
       "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 4,
-      "positionRank": 6
+      "cleanSheets": 2,
+      "bonus": 3,
+      "positionRank": 26
     },
     {
       "id": 10,
@@ -1186,7 +1230,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 24
+      "positionRank": 23
     },
     {
       "id": 249,
@@ -1230,7 +1274,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 3,
-      "positionRank": 26
+      "positionRank": 27
     },
     {
       "id": 82,
@@ -1274,7 +1318,7 @@
       "assists": 2,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 25
+      "positionRank": 26
     },
     {
       "id": 544,
@@ -1296,7 +1340,29 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 5,
-      "positionRank": 27
+      "positionRank": 28
+    },
+    {
+      "id": 552,
+      "name": "Brobbey",
+      "position": "FWD",
+      "club": "Sunderland",
+      "clubShort": "SUN",
+      "clubCode": 56,
+      "teamId": 20,
+      "photoCode": 441264,
+      "owner": "wood",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 19,
+      "ppg": 3.8,
+      "goals": 2,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 3,
+      "positionRank": 9
     },
     {
       "id": 258,
@@ -1318,7 +1384,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 30
+      "positionRank": 31
     },
     {
       "id": 242,
@@ -1340,7 +1406,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 30
+      "positionRank": 31
     },
     {
       "id": 26,
@@ -1365,26 +1431,26 @@
       "positionRank": 8
     },
     {
-      "id": 362,
-      "name": "Jacquet",
+      "id": 332,
+      "name": "Justin",
       "position": "DEF",
-      "club": "Liverpool",
-      "clubShort": "LIV",
-      "clubCode": 14,
-      "teamId": 14,
-      "photoCode": 606702,
-      "owner": "ollie",
+      "club": "Leeds",
+      "clubShort": "LEE",
+      "clubCode": 2,
+      "teamId": 13,
+      "photoCode": 220627,
+      "owner": "kellett",
       "status": "a",
-      "chanceOfPlaying": 100,
+      "chanceOfPlaying": null,
       "news": null,
-      "newsAdded": "2026-07-23T12:01:23.581126Z",
+      "newsAdded": null,
       "points": 19,
       "ppg": 3.8,
       "goals": 0,
       "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 3,
-      "positionRank": 31
+      "cleanSheets": 1,
+      "bonus": 2,
+      "positionRank": 32
     },
     {
       "id": 469,
@@ -1406,7 +1472,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 32
+      "positionRank": 33
     },
     {
       "id": 368,
@@ -1428,17 +1494,39 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 31
+      "positionRank": 32
     },
     {
-      "id": 384,
-      "name": "Donnarumma",
-      "position": "GKP",
-      "club": "Man City",
-      "clubShort": "MCI",
-      "clubCode": 43,
-      "teamId": 15,
-      "photoCode": 204936,
+      "id": 338,
+      "name": "Ampadu",
+      "position": "MID",
+      "club": "Leeds",
+      "clubShort": "LEE",
+      "clubCode": 2,
+      "teamId": 13,
+      "photoCode": 199598,
+      "owner": "wallis",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 18,
+      "ppg": 3.6,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 1,
+      "positionRank": 33
+    },
+    {
+      "id": 79,
+      "name": "Evanilson",
+      "position": "FWD",
+      "club": "Bournemouth",
+      "clubShort": "BOU",
+      "clubCode": 91,
+      "teamId": 3,
+      "photoCode": 444102,
       "owner": "wood",
       "status": "a",
       "chanceOfPlaying": null,
@@ -1447,10 +1535,10 @@
       "points": 18,
       "ppg": 3.6,
       "goals": 0,
-      "assists": 0,
+      "assists": 3,
       "cleanSheets": 2,
-      "bonus": 0,
-      "positionRank": 8
+      "bonus": 1,
+      "positionRank": 10
     },
     {
       "id": 496,
@@ -1472,7 +1560,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 9
+      "positionRank": 8
     },
     {
       "id": 204,
@@ -1494,40 +1582,18 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 33
-    },
-    {
-      "id": 356,
-      "name": "Virgil",
-      "position": "DEF",
-      "club": "Liverpool",
-      "clubShort": "LIV",
-      "clubCode": 14,
-      "teamId": 14,
-      "photoCode": 97032,
-      "owner": "jason",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 18,
-      "ppg": 3.6,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 0,
       "positionRank": 34
     },
     {
-      "id": 338,
-      "name": "Ampadu",
-      "position": "MID",
-      "club": "Leeds",
-      "clubShort": "LEE",
-      "clubCode": 2,
-      "teamId": 13,
-      "photoCode": 199598,
-      "owner": "wallis",
+      "id": 384,
+      "name": "Donnarumma",
+      "position": "GKP",
+      "club": "Man City",
+      "clubShort": "MCI",
+      "clubCode": 43,
+      "teamId": 15,
+      "photoCode": 204936,
+      "owner": "wood",
       "status": "a",
       "chanceOfPlaying": null,
       "news": null,
@@ -1535,10 +1601,10 @@
       "points": 17,
       "ppg": 3.4,
       "goals": 0,
-      "assists": 1,
-      "cleanSheets": 1,
+      "assists": 0,
+      "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 35
+      "positionRank": 9
     },
     {
       "id": 542,
@@ -1561,72 +1627,6 @@
       "cleanSheets": 1,
       "bonus": 1,
       "positionRank": 37
-    },
-    {
-      "id": 79,
-      "name": "Evanilson",
-      "position": "FWD",
-      "club": "Bournemouth",
-      "clubShort": "BOU",
-      "clubCode": 91,
-      "teamId": 3,
-      "photoCode": 444102,
-      "owner": "wood",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 17,
-      "ppg": 3.4,
-      "goals": 0,
-      "assists": 3,
-      "cleanSheets": 2,
-      "bonus": 0,
-      "positionRank": 9
-    },
-    {
-      "id": 390,
-      "name": "Rúben",
-      "position": "DEF",
-      "club": "Man City",
-      "clubShort": "MCI",
-      "clubCode": 43,
-      "teamId": 15,
-      "photoCode": 171314,
-      "owner": "paddy",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 17,
-      "ppg": 3.4,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 0,
-      "positionRank": 35
-    },
-    {
-      "id": 397,
-      "name": "Semenyo",
-      "position": "MID",
-      "club": "Man City",
-      "clubShort": "MCI",
-      "clubCode": 43,
-      "teamId": 15,
-      "photoCode": 437730,
-      "owner": "dj",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 17,
-      "ppg": 3.4,
-      "goals": 0,
-      "assists": 2,
-      "cleanSheets": 2,
-      "bonus": 0,
-      "positionRank": 36
     },
     {
       "id": 580,
@@ -1670,7 +1670,7 @@
       "assists": 2,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 43
+      "positionRank": 42
     },
     {
       "id": 336,
@@ -1693,6 +1693,28 @@
       "cleanSheets": 2,
       "bonus": 1,
       "positionRank": 41
+    },
+    {
+      "id": 390,
+      "name": "Rúben",
+      "position": "DEF",
+      "club": "Man City",
+      "clubShort": "MCI",
+      "clubCode": 43,
+      "teamId": 15,
+      "photoCode": 171314,
+      "owner": "paddy",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 16,
+      "ppg": 3.2,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 0,
+      "positionRank": 36
     },
     {
       "id": 110,
@@ -1758,7 +1780,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 44
+      "positionRank": 43
     },
     {
       "id": 503,
@@ -1781,28 +1803,6 @@
       "cleanSheets": 2,
       "bonus": 3,
       "positionRank": 37
-    },
-    {
-      "id": 366,
-      "name": "Wirtz",
-      "position": "MID",
-      "club": "Liverpool",
-      "clubShort": "LIV",
-      "clubCode": 14,
-      "teamId": 14,
-      "photoCode": 494595,
-      "owner": "rushy",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 16,
-      "ppg": 3.2,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 2,
-      "bonus": 3,
-      "positionRank": 42
     },
     {
       "id": 447,
@@ -1846,7 +1846,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 46
+      "positionRank": 45
     },
     {
       "id": 250,
@@ -1890,7 +1890,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 50
+      "positionRank": 49
     },
     {
       "id": 464,
@@ -1912,7 +1912,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 10
+      "positionRank": 11
     },
     {
       "id": 481,
@@ -1934,7 +1934,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 57
+      "positionRank": 56
     },
     {
       "id": 566,
@@ -1978,7 +1978,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 3,
-      "positionRank": 11
+      "positionRank": 12
     },
     {
       "id": 588,
@@ -2022,29 +2022,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 53
-    },
-    {
-      "id": 533,
-      "name": "Mukiele",
-      "position": "DEF",
-      "club": "Sunderland",
-      "clubShort": "SUN",
-      "clubCode": 56,
-      "teamId": 20,
-      "photoCode": 200834,
-      "owner": "rowan",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-09T08:30:05.954750Z",
-      "points": 14,
-      "ppg": 3.5,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 1,
-      "positionRank": 43
+      "positionRank": 52
     },
     {
       "id": 377,
@@ -2066,7 +2044,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 55
+      "positionRank": 54
     },
     {
       "id": 156,
@@ -2088,7 +2066,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 54
+      "positionRank": 53
     },
     {
       "id": 467,
@@ -2154,7 +2132,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 56
+      "positionRank": 55
     },
     {
       "id": 595,
@@ -2220,7 +2198,29 @@
       "assists": 2,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 13
+      "positionRank": 14
+    },
+    {
+      "id": 533,
+      "name": "Mukiele",
+      "position": "DEF",
+      "club": "Sunderland",
+      "clubShort": "SUN",
+      "clubCode": 56,
+      "teamId": 20,
+      "photoCode": 200834,
+      "owner": "rowan",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-09T08:30:05.954750Z",
+      "points": 13,
+      "ppg": 3.3,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 1,
+      "positionRank": 47
     },
     {
       "id": 222,
@@ -2242,29 +2242,29 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 12
+      "positionRank": 13
     },
     {
-      "id": 552,
-      "name": "Brobbey",
-      "position": "FWD",
-      "club": "Sunderland",
-      "clubShort": "SUN",
-      "clubCode": 56,
-      "teamId": 20,
-      "photoCode": 441264,
-      "owner": "wood",
+      "id": 366,
+      "name": "Wirtz",
+      "position": "MID",
+      "club": "Liverpool",
+      "clubShort": "LIV",
+      "clubCode": 14,
+      "teamId": 14,
+      "photoCode": 494595,
+      "owner": "rushy",
       "status": "a",
       "chanceOfPlaying": null,
       "news": null,
       "newsAdded": null,
-      "points": 12,
-      "ppg": 2.4,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 1,
+      "points": 13,
+      "ppg": 2.6,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 15
+      "positionRank": 60
     },
     {
       "id": 155,
@@ -2330,7 +2330,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 14
+      "positionRank": 15
     },
     {
       "id": 31,
@@ -2399,28 +2399,6 @@
       "positionRank": 49
     },
     {
-      "id": 529,
-      "name": "Roefs",
-      "position": "GKP",
-      "club": "Sunderland",
-      "clubShort": "SUN",
-      "clubCode": 56,
-      "teamId": 20,
-      "photoCode": 498016,
-      "owner": "paddy",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 12,
-      "ppg": 2.4,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 15
-    },
-    {
       "id": 239,
       "name": "Garner",
       "position": "MID",
@@ -2443,6 +2421,28 @@
       "positionRank": 70
     },
     {
+      "id": 529,
+      "name": "Roefs",
+      "position": "GKP",
+      "club": "Sunderland",
+      "clubShort": "SUN",
+      "clubCode": 56,
+      "teamId": 20,
+      "photoCode": 498016,
+      "owner": "paddy",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 11,
+      "ppg": 2.2,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 15
+    },
+    {
       "id": 389,
       "name": "Matheus N.",
       "position": "DEF",
@@ -2456,13 +2456,13 @@
       "chanceOfPlaying": 100,
       "news": null,
       "newsAdded": "2026-08-27T11:30:08.171622Z",
-      "points": 11,
-      "ppg": 3.7,
+      "points": 10,
+      "ppg": 3.3,
       "goals": 0,
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 56
+      "positionRank": 62
     },
     {
       "id": 166,
@@ -2506,7 +2506,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 61
+      "positionRank": 59
     },
     {
       "id": 106,
@@ -2616,7 +2616,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 64
+      "positionRank": 65
     },
     {
       "id": 393,
@@ -2638,7 +2638,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 67
+      "positionRank": 68
     },
     {
       "id": 28,
@@ -2682,7 +2682,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 68
+      "positionRank": 69
     },
     {
       "id": 67,
@@ -2726,7 +2726,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 65
+      "positionRank": 66
     },
     {
       "id": 473,
@@ -2748,7 +2748,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 75
+      "positionRank": 76
     },
     {
       "id": 371,
@@ -2792,7 +2792,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 73
+      "positionRank": 74
     },
     {
       "id": 401,
@@ -3298,7 +3298,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 105
+      "positionRank": 104
     },
     {
       "id": 465,
@@ -3408,7 +3408,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 109
+      "positionRank": 107
     },
     {
       "id": 25,
@@ -3540,7 +3540,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 215
+      "positionRank": 214
     },
     {
       "id": 152,
@@ -3652,7 +3652,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 2,
-      "positionRank": 10
+      "positionRank": 11
     },
     {
       "id": 277,
@@ -3784,7 +3784,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 21
+      "positionRank": 22
     },
     {
       "id": 87,
@@ -3806,7 +3806,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 25
+      "positionRank": 24
     },
     {
       "id": 93,
@@ -3828,7 +3828,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 26
+      "positionRank": 25
     },
     {
       "id": 176,
@@ -3850,7 +3850,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 28
+      "positionRank": 29
     },
     {
       "id": 608,
@@ -3872,7 +3872,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 28
+      "positionRank": 29
     },
     {
       "id": 114,
@@ -3894,7 +3894,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 29
+      "positionRank": 30
     },
     {
       "id": 214,
@@ -3916,7 +3916,7 @@
       "assists": 3,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 29
+      "positionRank": 30
     },
     {
       "id": 454,
@@ -3938,7 +3938,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 33
+      "positionRank": 35
     },
     {
       "id": 432,
@@ -3960,7 +3960,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 32
+      "positionRank": 34
     },
     {
       "id": 45,
@@ -3982,7 +3982,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 34
+      "positionRank": 36
     },
     {
       "id": 502,
@@ -4004,7 +4004,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 36
+      "positionRank": 35
     },
     {
       "id": 244,
@@ -4092,7 +4092,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 2,
-      "positionRank": 47
+      "positionRank": 46
     },
     {
       "id": 129,
@@ -4114,7 +4114,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 48
+      "positionRank": 47
     },
     {
       "id": 516,
@@ -4136,7 +4136,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 51
+      "positionRank": 50
     },
     {
       "id": 591,
@@ -4158,7 +4158,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 52
+      "positionRank": 51
     },
     {
       "id": 47,
@@ -4180,7 +4180,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 45
+      "positionRank": 44
     },
     {
       "id": 290,
@@ -4202,7 +4202,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 49
+      "positionRank": 48
     },
     {
       "id": 280,
@@ -4227,6 +4227,28 @@
       "positionRank": 41
     },
     {
+      "id": 541,
+      "name": "Meunier",
+      "position": "DEF",
+      "club": "Sunderland",
+      "clubShort": "SUN",
+      "clubCode": 56,
+      "teamId": 20,
+      "photoCode": 93605,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-16T08:30:07.830062Z",
+      "points": 14,
+      "ppg": 2.8,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 43
+    },
+    {
       "id": 91,
       "name": "Pinnock",
       "position": "DEF",
@@ -4247,28 +4269,6 @@
       "cleanSheets": 1,
       "bonus": 0,
       "positionRank": 40
-    },
-    {
-      "id": 532,
-      "name": "Ballard",
-      "position": "DEF",
-      "club": "Sunderland",
-      "clubShort": "SUN",
-      "clubCode": 56,
-      "teamId": 20,
-      "photoCode": 223827,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 13,
-      "ppg": 2.6,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 47
     },
     {
       "id": 113,
@@ -4334,7 +4334,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 58
+      "positionRank": 57
     },
     {
       "id": 567,
@@ -4378,7 +4378,7 @@
       "assists": 2,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 60
+      "positionRank": 59
     },
     {
       "id": 211,
@@ -4400,7 +4400,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 59
+      "positionRank": 58
     },
     {
       "id": 632,
@@ -4423,6 +4423,28 @@
       "cleanSheets": 1,
       "bonus": 0,
       "positionRank": 66
+    },
+    {
+      "id": 532,
+      "name": "Ballard",
+      "position": "DEF",
+      "club": "Sunderland",
+      "clubShort": "SUN",
+      "clubCode": 56,
+      "teamId": 20,
+      "photoCode": 223827,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 12,
+      "ppg": 2.4,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 54
     },
     {
       "id": 327,
@@ -4513,28 +4535,6 @@
       "positionRank": 65
     },
     {
-      "id": 541,
-      "name": "Meunier",
-      "position": "DEF",
-      "club": "Sunderland",
-      "clubShort": "SUN",
-      "clubCode": 56,
-      "teamId": 20,
-      "photoCode": 93605,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-16T08:30:07.830062Z",
-      "points": 12,
-      "ppg": 2.4,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 54
-    },
-    {
       "id": 313,
       "name": "Clarke",
       "position": "MID",
@@ -4579,28 +4579,6 @@
       "positionRank": 68
     },
     {
-      "id": 331,
-      "name": "Gudmundsson",
-      "position": "DEF",
-      "club": "Leeds",
-      "clubShort": "LEE",
-      "clubCode": 2,
-      "teamId": 13,
-      "photoCode": 243526,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-08T20:00:07.546568Z",
-      "points": 11,
-      "ppg": 3.7,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 2,
-      "positionRank": 55
-    },
-    {
       "id": 474,
       "name": "Jair Cunha",
       "position": "DEF",
@@ -4620,7 +4598,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 57
+      "positionRank": 55
     },
     {
       "id": 161,
@@ -4730,7 +4708,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 58
+      "positionRank": 56
     },
     {
       "id": 210,
@@ -4818,7 +4796,51 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 60
+      "positionRank": 58
+    },
+    {
+      "id": 599,
+      "name": "Elvedi",
+      "position": "DEF",
+      "club": "Leeds",
+      "clubShort": "LEE",
+      "clubCode": 2,
+      "teamId": 13,
+      "photoCode": 173774,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 10,
+      "ppg": 2.5,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 2,
+      "positionRank": 63
+    },
+    {
+      "id": 331,
+      "name": "Gudmundsson",
+      "position": "DEF",
+      "club": "Leeds",
+      "clubShort": "LEE",
+      "clubCode": 2,
+      "teamId": 13,
+      "photoCode": 243526,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-08T20:00:07.546568Z",
+      "points": 10,
+      "ppg": 3.3,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 1,
+      "positionRank": 61
     },
     {
       "id": 247,
@@ -4862,7 +4884,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 59
+      "positionRank": 57
     },
     {
       "id": 304,
@@ -4884,7 +4906,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 62
+      "positionRank": 60
     },
     {
       "id": 43,
@@ -4950,7 +4972,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 66
+      "positionRank": 67
     },
     {
       "id": 579,
@@ -5082,7 +5104,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 69
+      "positionRank": 70
     },
     {
       "id": 261,
@@ -5170,7 +5192,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 63
+      "positionRank": 64
     },
     {
       "id": 104,
@@ -5371,28 +5393,6 @@
       "positionRank": 77
     },
     {
-      "id": 599,
-      "name": "Elvedi",
-      "position": "DEF",
-      "club": "Leeds",
-      "clubShort": "LEE",
-      "clubCode": 2,
-      "teamId": 13,
-      "photoCode": 173774,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 8,
-      "ppg": 2,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 76
-    },
-    {
       "id": 315,
       "name": "Fatawu",
       "position": "MID",
@@ -5434,7 +5434,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 71
+      "positionRank": 72
     },
     {
       "id": 148,
@@ -5456,7 +5456,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 72
+      "positionRank": 73
     },
     {
       "id": 37,
@@ -5478,7 +5478,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 70
+      "positionRank": 71
     },
     {
       "id": 563,
@@ -5522,7 +5522,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 74
+      "positionRank": 75
     },
     {
       "id": 462,
@@ -6270,7 +6270,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 99
+      "positionRank": 98
     },
     {
       "id": 543,
@@ -6314,7 +6314,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 100
+      "positionRank": 99
     },
     {
       "id": 90,
@@ -6402,7 +6402,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 101
+      "positionRank": 100
     },
     {
       "id": 190,
@@ -6425,28 +6425,6 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 123
-    },
-    {
-      "id": 575,
-      "name": "Tomiyasu",
-      "position": "DEF",
-      "club": "Crystal Palace",
-      "clubShort": "CRY",
-      "clubCode": 31,
-      "teamId": 8,
-      "photoCode": 223723,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 5,
-      "ppg": 1.3,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 2,
-      "positionRank": 98
     },
     {
       "id": 260,
@@ -6512,7 +6490,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 104
+      "positionRank": 103
     },
     {
       "id": 162,
@@ -6578,29 +6556,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 102
-    },
-    {
-      "id": 501,
-      "name": "Danso",
-      "position": "DEF",
-      "club": "Sunderland",
-      "clubShort": "SUN",
-      "clubCode": 56,
-      "teamId": 20,
-      "photoCode": 135720,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 4,
-      "ppg": 1.3,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 106
+      "positionRank": 101
     },
     {
       "id": 157,
@@ -6666,7 +6622,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 103
+      "positionRank": 102
     },
     {
       "id": 488,
@@ -6930,7 +6886,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 111
+      "positionRank": 109
     },
     {
       "id": 149,
@@ -6952,7 +6908,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 110
+      "positionRank": 108
     },
     {
       "id": 289,
@@ -6975,6 +6931,28 @@
       "cleanSheets": 1,
       "bonus": 0,
       "positionRank": 143
+    },
+    {
+      "id": 501,
+      "name": "Danso",
+      "position": "DEF",
+      "club": "Sunderland",
+      "clubShort": "SUN",
+      "clubCode": 56,
+      "teamId": 20,
+      "photoCode": 135720,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 3,
+      "ppg": 1,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 116
     },
     {
       "id": 72,
@@ -7040,7 +7018,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 114
+      "positionRank": 112
     },
     {
       "id": 584,
@@ -7084,7 +7062,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 112
+      "positionRank": 110
     },
     {
       "id": 457,
@@ -7172,7 +7150,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 115
+      "positionRank": 113
     },
     {
       "id": 323,
@@ -7282,7 +7260,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 116
+      "positionRank": 114
     },
     {
       "id": 600,
@@ -7326,7 +7304,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 107
+      "positionRank": 105
     },
     {
       "id": 498,
@@ -7348,7 +7326,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 117
+      "positionRank": 115
     },
     {
       "id": 269,
@@ -7370,7 +7348,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 113
+      "positionRank": 111
     },
     {
       "id": 64,
@@ -7392,7 +7370,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 108
+      "positionRank": 106
     },
     {
       "id": 262,
@@ -7415,6 +7393,28 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 141
+    },
+    {
+      "id": 575,
+      "name": "Tomiyasu",
+      "position": "DEF",
+      "club": "Crystal Palace",
+      "clubShort": "CRY",
+      "clubCode": 31,
+      "teamId": 8,
+      "photoCode": 223723,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 3,
+      "ppg": 0.8,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 117
     },
     {
       "id": 188,
@@ -11286,7 +11286,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 216
+      "positionRank": 215
     },
     {
       "id": 425,
@@ -11572,7 +11572,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 214
+      "positionRank": 213
     },
     {
       "id": 342,
@@ -12807,28 +12807,6 @@
       "positionRank": 26
     },
     {
-      "id": 612,
-      "name": "Methalie",
-      "position": "DEF",
-      "club": "Sunderland",
-      "clubShort": "SUN",
-      "clubCode": 56,
-      "teamId": 20,
-      "photoCode": 638411,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-28T13:00:08.950445Z",
-      "points": 0,
-      "ppg": 0,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 213
-    },
-    {
       "id": 169,
       "name": "Mheuka",
       "position": "FWD",
@@ -13640,7 +13618,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 217
+      "positionRank": 216
     },
     {
       "id": 442,
@@ -14675,6 +14653,28 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 71
+    },
+    {
+      "id": 612,
+      "name": "Methalie",
+      "position": "DEF",
+      "club": "Sunderland",
+      "clubShort": "SUN",
+      "clubCode": 56,
+      "teamId": 20,
+      "photoCode": 638411,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-28T13:00:08.950445Z",
+      "points": -1,
+      "ppg": -1,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 217
     }
   ],
   "leadingScorer": {
@@ -14699,5 +14699,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-09-20T13:23:34.242Z"
+  "generatedAt": "2026-09-20T13:52:29.453Z"
 }
