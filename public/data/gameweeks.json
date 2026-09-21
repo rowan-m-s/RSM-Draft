@@ -744,9 +744,9 @@
       "waiversUtc": "2026-09-17T17:30:00Z",
       "tradesUtc": "2026-09-16T17:30:00Z",
       "month": "2026-09",
-      "finished": false,
+      "finished": true,
       "started": true,
-      "scoresProvisional": true,
+      "scoresProvisional": false,
       "kochReady": true,
       "yetByManager": {
         "rushy": 0,
@@ -761,25 +761,29 @@
         "dj": 0,
         "ollie": 0
       },
-      "fixturesRemaining": true,
-      "dataChecked": false,
+      "fixturesRemaining": false,
+      "dataChecked": true,
       "confirmExpectedUtc": "2026-09-21T15:30:00.000Z",
       "revealFromUtc": "2026-09-21T08:05:00.000Z",
       "scores": {
         "rushy": 36,
         "kellett": 38,
         "wallis": 28,
-        "jls": 27,
+        "jls": 28,
         "paddy": 46,
         "bennett": 56,
-        "wood": 43,
+        "wood": 44,
         "rowan": 35,
         "jason": 68,
-        "dj": 43,
+        "dj": 45,
         "ollie": 28
       },
-      "kochKeys": [],
-      "charged": 0,
+      "kochKeys": [
+        "wallis",
+        "jls",
+        "ollie"
+      ],
+      "charged": 15,
       "topPerformerByManager": {
         "rushy": {
           "playerName": "Manzambi",
@@ -881,10 +885,10 @@
           "element": 31
         },
         "rowan": {
-          "playerName": "Wissa",
+          "playerName": "Mukiele",
           "points": 0,
           "managerKey": "rowan",
-          "element": 464
+          "element": 533
         },
         "jason": {
           "playerName": "Munoz",
@@ -1679,5 +1683,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-09-21T01:40:26.637Z"
+  "generatedAt": "2026-09-21T08:28:04.545Z"
 }

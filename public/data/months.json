@@ -103,19 +103,21 @@
         "rushy": 117,
         "kellett": 110,
         "wallis": 105,
-        "jls": 126,
+        "jls": 127,
         "paddy": 127,
         "bennett": 135,
-        "wood": 160,
+        "wood": 161,
         "rowan": 105,
         "jason": 150,
-        "dj": 124,
+        "dj": 126,
         "ollie": 128
       },
-      "pot": 15,
-      "settled": false,
-      "winnerKeys": [],
-      "potPerWinner": 0,
+      "pot": 30,
+      "settled": true,
+      "winnerKeys": [
+        "wood"
+      ],
+      "potPerWinner": 30,
       "topPerformer": {
         "playerName": "Semenyo",
         "points": 26,
@@ -180,5 +182,5 @@
       }
     }
   ],
-  "generatedAt": "2026-09-21T01:40:26.637Z"
+  "generatedAt": "2026-09-21T08:28:04.545Z"
 }

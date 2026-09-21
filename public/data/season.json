@@ -3,14 +3,14 @@
     {
       "key": "wood",
       "rank": 1,
-      "total": 251,
-      "gw": 43,
-      "month": 160,
+      "total": 252,
+      "gw": 44,
+      "month": 161,
       "kochCount": 0,
-      "motmCount": 0,
+      "motmCount": 1,
       "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
+      "potsWon": 30,
+      "balance": 30,
       "topPerformer": {
         "playerName": "De Cuyper",
         "points": 38,
@@ -74,11 +74,11 @@
       "total": 205,
       "gw": 28,
       "month": 128,
-      "kochCount": 0,
+      "kochCount": 1,
       "motmCount": 0,
-      "forfeits": 0,
+      "forfeits": 5,
       "potsWon": 0,
-      "balance": 0,
+      "balance": -5,
       "topPerformer": {
         "playerName": "Raya",
         "points": 30,
@@ -142,11 +142,11 @@
       "total": 191,
       "gw": 28,
       "month": 105,
-      "kochCount": 1,
+      "kochCount": 2,
       "motmCount": 0,
-      "forfeits": 5,
+      "forfeits": 10,
       "potsWon": 0,
-      "balance": -5,
+      "balance": -10,
       "topPerformer": {
         "playerName": "Gabriel",
         "points": 25,
@@ -156,14 +156,14 @@
     {
       "key": "jls",
       "rank": 10,
-      "total": 187,
-      "gw": 27,
-      "month": 126,
-      "kochCount": 1,
+      "total": 188,
+      "gw": 28,
+      "month": 127,
+      "kochCount": 2,
       "motmCount": 0,
-      "forfeits": 5,
+      "forfeits": 10,
       "potsWon": 0,
-      "balance": -5,
+      "balance": -10,
       "topPerformer": {
         "playerName": "João Pedro",
         "points": 33,
@@ -173,9 +173,9 @@
     {
       "key": "dj",
       "rank": 11,
-      "total": 176,
-      "gw": 43,
-      "month": 124,
+      "total": 178,
+      "gw": 45,
+      "month": 126,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -188,24 +188,24 @@
       }
     }
   ],
-  "latestSettledGameweek": 4,
+  "latestSettledGameweek": 5,
   "currentMonth": "2026-09",
   "seasonPrize": 110,
   "leader": {
     "keys": [
       "wood"
     ],
-    "total": 251,
+    "total": 252,
     "since": 4,
     "sinceByKey": {
       "wood": 4
     },
     "asOf": 5,
-    "weeks": 1,
+    "weeks": 2,
     "displaced": "paddy",
-    "changed": true
+    "changed": false
   },
-  "generatedAt": "2026-09-21T01:40:26.637Z",
+  "generatedAt": "2026-09-21T08:28:04.545Z",
   "graphics": {
     "koch": {
       "rushy": 244850,
@@ -263,14 +263,14 @@
   "kochCount": {
     "rushy": 0,
     "kellett": 0,
-    "wallis": 1,
-    "jls": 1,
+    "wallis": 2,
+    "jls": 2,
     "paddy": 1,
     "bennett": 0,
     "wood": 0,
     "rowan": 1,
     "jason": 0,
     "dj": 1,
-    "ollie": 0
+    "ollie": 1
   }
 }
