@@ -1198,10 +1198,10 @@
       "teamId": 5,
       "photoCode": 83299,
       "owner": "dj",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
+      "status": "d",
+      "chanceOfPlaying": 75,
+      "news": "Neck injury - 75% chance of playing",
+      "newsAdded": "2026-09-22T09:30:09.629652Z",
       "points": 22,
       "ppg": 5.5,
       "goals": 1,
@@ -5996,10 +5996,10 @@
       "teamId": 5,
       "photoCode": 222694,
       "owner": null,
-      "status": "a",
+      "status": "d",
       "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-15T20:30:07.523574Z",
+      "news": "Hamstring injury - 75% chance of playing",
+      "newsAdded": "2026-09-22T10:00:09.404233Z",
       "points": 7,
       "ppg": 2.3,
       "goals": 0,
@@ -14699,5 +14699,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-09-22T08:08:25.829Z"
+  "generatedAt": "2026-09-22T13:49:25.612Z"
 }
