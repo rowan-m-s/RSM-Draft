@@ -2657,10 +2657,10 @@
       "clubShort": "EVE",
       "clubCode": 11,
       "photoCode": 224967,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
+      "status": "d",
+      "chanceOfPlaying": 75,
+      "news": "Leg injury - 75% chance of playing",
+      "newsAdded": "2026-10-01T19:30:09.402881Z"
     },
     "236": {
       "name": "Dewsbury-Hall",
@@ -3017,10 +3017,10 @@
       "clubShort": "MCI",
       "clubCode": 43,
       "photoCode": 472769,
-      "status": "a",
+      "status": "d",
       "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-05T18:00:06.379802Z"
+      "news": "Unspecified injury - 75% chance of playing",
+      "newsAdded": "2026-10-01T15:30:10.272693Z"
     },
     "388": {
       "name": "Guéhi",
@@ -3827,5 +3827,5 @@
       "newsAdded": "2026-08-15T16:00:07.974271Z"
     }
   },
-  "generatedAt": "2026-10-01T15:02:30.657Z"
+  "generatedAt": "2026-10-01T20:02:41.147Z"
 }
