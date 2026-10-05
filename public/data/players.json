@@ -472,10 +472,10 @@
       "teamId": 3,
       "photoCode": 503139,
       "owner": "wallis",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
+      "status": "d",
+      "chanceOfPlaying": 50,
+      "news": "Thigh injury - 50% chance of playing",
+      "newsAdded": "2026-10-05T09:30:09.910752Z",
       "points": 30,
       "ppg": 6,
       "goals": 1,
@@ -2386,10 +2386,10 @@
       "teamId": 1,
       "photoCode": 199798,
       "owner": "wood",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
+      "status": "d",
+      "chanceOfPlaying": 75,
+      "news": "Unspecified injury - 75% chance of playing",
+      "newsAdded": "2026-10-05T09:30:09.853316Z",
       "points": 12,
       "ppg": 3,
       "goals": 0,
@@ -14699,5 +14699,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-05T03:30:07.099Z"
+  "generatedAt": "2026-10-05T13:17:31.101Z"
 }
