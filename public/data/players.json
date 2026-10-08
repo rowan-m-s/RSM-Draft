@@ -2210,9 +2210,9 @@
       "teamId": 17,
       "photoCode": 463726,
       "owner": "jls",
-      "status": "i",
+      "status": "d",
       "chanceOfPlaying": 0,
-      "news": "Unspecified injury - Unknown return date",
+      "news": "Unspecified injury - 50% chance of playing",
       "newsAdded": "2026-09-17T14:30:09.823731Z",
       "points": 13,
       "ppg": 3.3,
@@ -3312,7 +3312,7 @@
       "owner": "rowan",
       "status": "d",
       "chanceOfPlaying": 100,
-      "news": "Unspecified injury - 75% chance of playing",
+      "news": "Unspecified injury - 50% chance of playing",
       "newsAdded": "2026-09-19T14:00:09.046677Z",
       "points": 4,
       "ppg": 2,
@@ -3332,9 +3332,9 @@
       "teamId": 17,
       "photoCode": 538207,
       "owner": "kellett",
-      "status": "i",
+      "status": "d",
       "chanceOfPlaying": 0,
-      "news": "Foot injury - Unknown return date",
+      "news": "Foot injury - 50% chance of playing",
       "newsAdded": "2026-08-25T19:00:08.004915Z",
       "points": 4,
       "ppg": 4,
@@ -14699,5 +14699,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-08T18:17:06.519Z"
+  "generatedAt": "2026-10-08T20:45:22.400Z"
 }
