@@ -74,7 +74,7 @@ public/data/*.json      →  read by the React app at load
 
 - **Stack:** Vite + React + Tailwind, TypeScript. No backend, no database. Deployed to GitHub Pages by an Action — set Vite's `base` to the repo name or every asset 404s and you get a blank white page.
 - **Schedule:** Actions minutes are unlimited on a public repo, so run the job often. Roughly:
-  - every **15 minutes** Sat–Sun, 11:00–23:00 UTC
+  - every **5 minutes** Sat–Sun, 11:00–23:00 UTC
   - every **30 minutes** Mon–Fri, 17:00–23:00 UTC (evening fixtures)
   - every **3 hours** otherwise
   - plus `workflow_dispatch` for manual runs
@@ -93,7 +93,7 @@ Build two things instead:
 1. **A reload control** available to everyone — re-fetches the JSON files with a cache-busting query so nobody is looking at a stale copy held by their browser. This does not pull new data from FPL, so label it "Reload", never "Refresh".
 2. **A "Force update (admin)" link** that opens the repo's Actions page, where I can run the workflow manually. Only I have write access, so it does nothing for anyone else. State next to it that an update takes a couple of minutes and needs a reload afterwards.
 
-With a 15-minute cron on match days this should rarely be needed. If it turns out to be, the upgrade path is a free Cloudflare Worker holding a fine-grained token and calling `workflow_dispatch` — don't build that now.
+With a 5-minute cron on match days this should rarely be needed. If it turns out to be, the upgrade path is a free Cloudflare Worker holding a fine-grained token and calling `workflow_dispatch` — don't build that now.
 
 ---
 
