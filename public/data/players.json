@@ -3655,6 +3655,28 @@
       "positionRank": 7
     },
     {
+      "id": 45,
+      "name": "McGinn",
+      "position": "MID",
+      "club": "Aston Villa",
+      "clubShort": "AVL",
+      "clubCode": 7,
+      "teamId": 2,
+      "photoCode": 122806,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 27,
+      "ppg": 4.5,
+      "goals": 1,
+      "assists": 2,
+      "cleanSheets": 2,
+      "bonus": 4,
+      "positionRank": 22
+    },
+    {
       "id": 277,
       "name": "Egan",
       "position": "DEF",
@@ -3697,28 +3719,6 @@
       "cleanSheets": 0,
       "bonus": 2,
       "positionRank": 24
-    },
-    {
-      "id": 45,
-      "name": "McGinn",
-      "position": "MID",
-      "club": "Aston Villa",
-      "clubShort": "AVL",
-      "clubCode": 7,
-      "teamId": 2,
-      "photoCode": 122806,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 26,
-      "ppg": 4.3,
-      "goals": 1,
-      "assists": 2,
-      "cleanSheets": 2,
-      "bonus": 3,
-      "positionRank": 22
     },
     {
       "id": 586,
@@ -14699,5 +14699,5 @@
     "bonus": 8,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-10T19:01:52.966Z"
+  "generatedAt": "2026-10-10T20:59:27.859Z"
 }
