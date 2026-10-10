@@ -878,7 +878,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 2,
-      "positionRank": 15
+      "positionRank": 16
     },
     {
       "id": 87,
@@ -922,7 +922,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 13
+      "positionRank": 14
     },
     {
       "id": 4,
@@ -966,7 +966,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 3,
-      "positionRank": 14
+      "positionRank": 15
     },
     {
       "id": 13,
@@ -991,6 +991,28 @@
       "positionRank": 21
     },
     {
+      "id": 112,
+      "name": "Van Hecke",
+      "position": "DEF",
+      "club": "Spurs",
+      "clubShort": "TOT",
+      "clubCode": 6,
+      "teamId": 19,
+      "photoCode": 469142,
+      "owner": "rowan",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-30T16:00:09.552205Z",
+      "points": 27,
+      "ppg": 4.5,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 2,
+      "positionRank": 13
+    },
+    {
       "id": 305,
       "name": "Davis",
       "position": "DEF",
@@ -1010,7 +1032,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 18
+      "positionRank": 19
     },
     {
       "id": 268,
@@ -1054,7 +1076,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 16
+      "positionRank": 17
     },
     {
       "id": 41,
@@ -1121,28 +1143,6 @@
       "cleanSheets": 3,
       "bonus": 1,
       "positionRank": 6
-    },
-    {
-      "id": 112,
-      "name": "Van Hecke",
-      "position": "DEF",
-      "club": "Spurs",
-      "clubShort": "TOT",
-      "clubCode": 6,
-      "teamId": 19,
-      "photoCode": 469142,
-      "owner": "rowan",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-30T16:00:09.552205Z",
-      "points": 25,
-      "ppg": 4.2,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 2,
-      "positionRank": 19
     },
     {
       "id": 356,
@@ -3696,7 +3696,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 1,
-      "positionRank": 17
+      "positionRank": 18
     },
     {
       "id": 432,
@@ -14699,5 +14699,5 @@
     "bonus": 8,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-10T20:59:27.859Z"
+  "generatedAt": "2026-10-10T22:56:11.503Z"
 }
