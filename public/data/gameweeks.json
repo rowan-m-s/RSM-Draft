@@ -954,15 +954,15 @@
       "scores": {
         "rushy": 15,
         "kellett": 16,
-        "wallis": 21,
-        "jls": 42,
-        "paddy": 20,
-        "bennett": 20,
+        "wallis": 22,
+        "jls": 44,
+        "paddy": 22,
+        "bennett": 23,
         "wood": 40,
         "rowan": 16,
-        "jason": 15,
+        "jason": 24,
         "dj": 13,
-        "ollie": 8
+        "ollie": 16
       },
       "kochKeys": [],
       "charged": 0,
@@ -1008,8 +1008,8 @@
           "managerKey": "rowan"
         },
         "jason": {
-          "playerName": "Georginio",
-          "points": 4,
+          "playerName": "Cunha",
+          "points": 10,
           "managerKey": "jason"
         },
         "dj": {
@@ -1018,8 +1018,8 @@
           "managerKey": "dj"
         },
         "ollie": {
-          "playerName": "Raya",
-          "points": 3,
+          "playerName": "Mbeumo",
+          "points": 8,
           "managerKey": "ollie"
         }
       },
@@ -1049,10 +1049,10 @@
           "element": 330
         },
         "paddy": {
-          "playerName": "Muharemović",
-          "points": 0,
+          "playerName": "Roefs",
+          "points": 1,
           "managerKey": "paddy",
-          "element": 334
+          "element": 529
         },
         "bennett": {
           "playerName": "Truffert",
@@ -1067,10 +1067,10 @@
           "element": 426
         },
         "rowan": {
-          "playerName": "M.Sangaré",
+          "playerName": "Van Hecke",
           "points": 1,
           "managerKey": "rowan",
-          "element": 556
+          "element": 112
         },
         "jason": {
           "playerName": "Ødegaard",
@@ -1085,10 +1085,10 @@
           "element": 5
         },
         "ollie": {
-          "playerName": "Mbeumo",
+          "playerName": "Van de Ven",
           "points": 1,
           "managerKey": "ollie",
-          "element": 427
+          "element": 503
         }
       },
       "kochGraphicByManager": {
@@ -1102,7 +1102,7 @@
         "rowan": null,
         "jason": null,
         "dj": null,
-        "ollie": 446008
+        "ollie": null
       }
     },
     {
@@ -1842,5 +1842,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-10-10T16:45:34.937Z"
+  "generatedAt": "2026-10-10T19:01:52.966Z"
 }
