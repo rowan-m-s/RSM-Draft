@@ -54,7 +54,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 10
+        "points": 9
       },
       {
         "element": 14,
@@ -176,7 +176,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 1
+        "points": 0
       },
       {
         "element": 208,
@@ -258,7 +258,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 4,
@@ -274,7 +274,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 8
+        "points": 3
       },
       {
         "element": 254,
@@ -290,7 +290,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 6
+        "points": 8
       },
       {
         "element": 481,
@@ -330,7 +330,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 224,
@@ -404,7 +404,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 1
+        "points": 6
       },
       {
         "element": 403,
@@ -412,7 +412,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 452,
@@ -502,7 +502,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 2
+        "points": 1
       },
       {
         "element": 390,
@@ -542,7 +542,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 3
+        "points": 4
       },
       {
         "element": 154,
@@ -624,7 +624,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 61,
@@ -802,7 +802,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 286,
@@ -826,7 +826,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 6
+        "points": 7
       },
       {
         "element": 557,
@@ -876,7 +876,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 533,
@@ -884,7 +884,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 2
+        "points": 3
       },
       {
         "element": 113,
@@ -892,7 +892,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 7
+        "points": 9
       },
       {
         "element": 556,
@@ -1038,7 +1038,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 15,
@@ -1062,7 +1062,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 4
       },
       {
         "element": 138,
@@ -1112,7 +1112,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 3
+        "points": 2
       },
       {
         "element": 5,
@@ -1136,7 +1136,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 7
+        "points": 2
       },
       {
         "element": 142,
@@ -1282,7 +1282,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 554,
@@ -1322,7 +1322,7 @@
         "starter": false,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 9
+        "points": 2
       },
       {
         "element": 362,
@@ -1338,7 +1338,7 @@
         "starter": false,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 608,
@@ -1706,10 +1706,10 @@
       "clubShort": "BRE",
       "clubCode": 94,
       "photoCode": 513418,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
+      "status": "d",
+      "chanceOfPlaying": 75,
+      "news": "Shoulder injury - 75% chance of playing",
+      "newsAdded": "2026-10-10T16:30:08.848962Z"
     },
     "98": {
       "name": "Janelt",
@@ -2774,9 +2774,9 @@
       "clubShort": "MUN",
       "clubCode": 1,
       "photoCode": 176297,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 75,
-      "news": "Unspecified injury - 75% chance of playing",
+      "news": null,
       "newsAdded": "2026-09-21T10:30:09.221479Z"
     },
     "439": {
@@ -3332,5 +3332,5 @@
       "newsAdded": null
     }
   },
-  "generatedAt": "2026-10-10T15:39:41.613Z"
+  "generatedAt": "2026-10-10T16:45:34.937Z"
 }

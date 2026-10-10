@@ -935,41 +935,41 @@
       "scoresProvisional": true,
       "kochReady": true,
       "yetByManager": {
-        "rushy": 6,
+        "rushy": 5,
         "kellett": 6,
-        "wallis": 4,
-        "jls": 4,
+        "wallis": 3,
+        "jls": 2,
         "paddy": 5,
-        "bennett": 6,
-        "wood": 5,
-        "rowan": 7,
-        "jason": 4,
+        "bennett": 4,
+        "wood": 4,
+        "rowan": 6,
+        "jason": 3,
         "dj": 4,
-        "ollie": 6
+        "ollie": 4
       },
       "fixturesRemaining": true,
       "dataChecked": false,
       "confirmExpectedUtc": "2026-10-13T19:00:00.000Z",
       "revealFromUtc": "2026-10-13T08:05:00.000Z",
       "scores": {
-        "rushy": 16,
-        "kellett": 17,
-        "wallis": 22,
-        "jls": 36,
+        "rushy": 15,
+        "kellett": 16,
+        "wallis": 21,
+        "jls": 42,
         "paddy": 20,
-        "bennett": 19,
-        "wood": 38,
-        "rowan": 12,
-        "jason": 10,
-        "dj": 19,
-        "ollie": 7
+        "bennett": 20,
+        "wood": 40,
+        "rowan": 16,
+        "jason": 15,
+        "dj": 13,
+        "ollie": 8
       },
       "kochKeys": [],
       "charged": 0,
       "topPerformerByManager": {
         "rushy": {
           "playerName": "Rogers",
-          "points": 10,
+          "points": 9,
           "managerKey": "rushy"
         },
         "kellett": {
@@ -978,7 +978,7 @@
           "managerKey": "kellett"
         },
         "wallis": {
-          "playerName": "Affengruber",
+          "playerName": "Vuskovic",
           "points": 8,
           "managerKey": "wallis"
         },
@@ -1004,17 +1004,17 @@
         },
         "rowan": {
           "playerName": "F.Kadıoğlu",
-          "points": 7,
+          "points": 9,
           "managerKey": "rowan"
         },
         "jason": {
-          "playerName": "Trafford",
-          "points": 2,
+          "playerName": "Georginio",
+          "points": 4,
           "managerKey": "jason"
         },
         "dj": {
-          "playerName": "Bassey",
-          "points": 7,
+          "playerName": "Thiago",
+          "points": 4,
           "managerKey": "dj"
         },
         "ollie": {
@@ -1032,7 +1032,7 @@
         },
         "kellett": {
           "playerName": "Cash",
-          "points": 1,
+          "points": 0,
           "managerKey": "kellett",
           "element": 32
         },
@@ -1043,10 +1043,10 @@
           "element": 338
         },
         "jls": {
-          "playerName": "Ajer",
+          "playerName": "Bogle",
           "points": 1,
           "managerKey": "jls",
-          "element": 87
+          "element": 330
         },
         "paddy": {
           "playerName": "Muharemović",
@@ -1061,10 +1061,10 @@
           "element": 61
         },
         "wood": {
-          "playerName": "E.Le Fée",
-          "points": 2,
+          "playerName": "B.Fernandes",
+          "points": 1,
           "managerKey": "wood",
-          "element": 542
+          "element": 426
         },
         "rowan": {
           "playerName": "M.Sangaré",
@@ -1085,10 +1085,10 @@
           "element": 5
         },
         "ollie": {
-          "playerName": "King",
-          "points": 2,
+          "playerName": "Mbeumo",
+          "points": 1,
           "managerKey": "ollie",
-          "element": 268
+          "element": 427
         }
       },
       "kochGraphicByManager": {
@@ -1098,11 +1098,11 @@
         "jls": null,
         "paddy": null,
         "bennett": null,
-        "wood": null,
+        "wood": 141746,
         "rowan": null,
         "jason": null,
         "dj": null,
-        "ollie": null
+        "ollie": 446008
       }
     },
     {
@@ -1842,5 +1842,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-10-10T15:39:41.613Z"
+  "generatedAt": "2026-10-10T16:45:34.937Z"
 }
