@@ -931,20 +931,169 @@
       "tradesUtc": "2026-10-08T10:00:00Z",
       "month": "2026-10",
       "finished": false,
-      "started": false,
-      "scoresProvisional": false,
-      "kochReady": false,
-      "yetByManager": {},
+      "started": true,
+      "scoresProvisional": true,
+      "kochReady": true,
+      "yetByManager": {
+        "rushy": 8,
+        "kellett": 10,
+        "wallis": 9,
+        "jls": 8,
+        "paddy": 9,
+        "bennett": 10,
+        "wood": 10,
+        "rowan": 10,
+        "jason": 8,
+        "dj": 10,
+        "ollie": 9
+      },
       "fixturesRemaining": true,
       "dataChecked": false,
       "confirmExpectedUtc": "2026-10-13T19:00:00.000Z",
       "revealFromUtc": "2026-10-13T08:05:00.000Z",
-      "scores": {},
+      "scores": {
+        "rushy": 0,
+        "kellett": 1,
+        "wallis": 2,
+        "jls": 2,
+        "paddy": 2,
+        "bennett": 1,
+        "wood": 1,
+        "rowan": 1,
+        "jason": 3,
+        "dj": 0,
+        "ollie": 1
+      },
       "kochKeys": [],
       "charged": 0,
-      "topPerformerByManager": {},
-      "scapegoatByManager": {},
-      "kochGraphicByManager": {}
+      "topPerformerByManager": {
+        "rushy": {
+          "playerName": "Tzolakis",
+          "points": 0,
+          "managerKey": "rushy"
+        },
+        "kellett": {
+          "playerName": "Calafiori",
+          "points": 1,
+          "managerKey": "kellett"
+        },
+        "wallis": {
+          "playerName": "Gabriel",
+          "points": 1,
+          "managerKey": "wallis"
+        },
+        "jls": {
+          "playerName": "Bogle",
+          "points": 1,
+          "managerKey": "jls"
+        },
+        "paddy": {
+          "playerName": "Muharemović",
+          "points": 1,
+          "managerKey": "paddy"
+        },
+        "bennett": {
+          "playerName": "Rice",
+          "points": 1,
+          "managerKey": "bennett"
+        },
+        "wood": {
+          "playerName": "Konsa",
+          "points": 1,
+          "managerKey": "wood"
+        },
+        "rowan": {
+          "playerName": "Stach",
+          "points": 1,
+          "managerKey": "rowan"
+        },
+        "jason": {
+          "playerName": "Trafford",
+          "points": 1,
+          "managerKey": "jason"
+        },
+        "dj": {
+          "playerName": "Suzuki",
+          "points": 0,
+          "managerKey": "dj"
+        },
+        "ollie": {
+          "playerName": "Raya",
+          "points": 1,
+          "managerKey": "ollie"
+        }
+      },
+      "scapegoatByManager": {
+        "rushy": null,
+        "kellett": {
+          "playerName": "Calafiori",
+          "points": 1,
+          "managerKey": "kellett",
+          "element": 8
+        },
+        "wallis": {
+          "playerName": "Ampadu",
+          "points": 1,
+          "managerKey": "wallis",
+          "element": 338
+        },
+        "jls": {
+          "playerName": "Bogle",
+          "points": 1,
+          "managerKey": "jls",
+          "element": 330
+        },
+        "paddy": {
+          "playerName": "Muharemović",
+          "points": 1,
+          "managerKey": "paddy",
+          "element": 334
+        },
+        "bennett": {
+          "playerName": "Rice",
+          "points": 1,
+          "managerKey": "bennett",
+          "element": 13
+        },
+        "wood": {
+          "playerName": "Konsa",
+          "points": 1,
+          "managerKey": "wood",
+          "element": 31
+        },
+        "rowan": {
+          "playerName": "Stach",
+          "points": 1,
+          "managerKey": "rowan",
+          "element": 335
+        },
+        "jason": {
+          "playerName": "Ødegaard",
+          "points": 1,
+          "managerKey": "jason",
+          "element": 15
+        },
+        "dj": null,
+        "ollie": {
+          "playerName": "Raya",
+          "points": 1,
+          "managerKey": "ollie",
+          "element": 1
+        }
+      },
+      "kochGraphicByManager": {
+        "rushy": null,
+        "kellett": null,
+        "wallis": null,
+        "jls": null,
+        "paddy": null,
+        "bennett": null,
+        "wood": null,
+        "rowan": null,
+        "jason": null,
+        "dj": null,
+        "ollie": null
+      }
     },
     {
       "id": 7,
@@ -1683,5 +1832,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-10-10T03:48:36.739Z"
+  "generatedAt": "2026-10-10T11:43:29.608Z"
 }

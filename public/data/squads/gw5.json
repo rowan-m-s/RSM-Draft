@@ -1454,9 +1454,9 @@
       "clubShort": "ARS",
       "clubCode": 3,
       "photoCode": 204480,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 75,
-      "news": "Unspecified injury - 75% chance of playing",
+      "news": null,
       "newsAdded": "2026-09-21T13:00:08.896379Z"
     },
     "14": {
@@ -1502,9 +1502,9 @@
       "clubShort": "ARS",
       "clubCode": 3,
       "photoCode": 219847,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 75,
-      "news": "Hamstring injury - 75% chance of playing",
+      "news": null,
       "newsAdded": "2026-09-24T22:00:09.120308Z"
     },
     "28": {
@@ -1526,9 +1526,9 @@
       "clubShort": "ARS",
       "clubCode": 3,
       "photoCode": 199798,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 75,
-      "news": "Unspecified injury - 75% chance of playing",
+      "news": null,
       "newsAdded": "2026-10-05T09:30:09.853316Z"
     },
     "32": {
@@ -1875,7 +1875,7 @@
       "clubCode": 8,
       "photoCode": 225796,
       "status": "a",
-      "chanceOfPlaying": 75,
+      "chanceOfPlaying": 100,
       "news": null,
       "newsAdded": "2026-09-18T10:30:09.719371Z"
     },
@@ -1899,7 +1899,7 @@
       "clubCode": 8,
       "photoCode": 620109,
       "status": "a",
-      "chanceOfPlaying": 50,
+      "chanceOfPlaying": 100,
       "news": null,
       "newsAdded": "2026-08-24T18:30:07.421239Z"
     },
@@ -1947,7 +1947,7 @@
       "clubCode": 8,
       "photoCode": 475168,
       "status": "a",
-      "chanceOfPlaying": 75,
+      "chanceOfPlaying": 100,
       "news": null,
       "newsAdded": "2026-09-16T19:00:09.919929Z"
     },
@@ -2451,7 +2451,7 @@
       "clubCode": 14,
       "photoCode": 243298,
       "status": "i",
-      "chanceOfPlaying": 100,
+      "chanceOfPlaying": 0,
       "news": "Ankle injury - Unknown return date",
       "newsAdded": "2026-09-27T21:30:07.786183Z"
     },
@@ -2535,7 +2535,7 @@
       "clubCode": 43,
       "photoCode": 472769,
       "status": "d",
-      "chanceOfPlaying": 100,
+      "chanceOfPlaying": 75,
       "news": "Unspecified injury - 75% chance of playing",
       "newsAdded": "2026-10-01T15:30:10.272693Z"
     },
@@ -2643,7 +2643,7 @@
       "clubCode": 43,
       "photoCode": 248875,
       "status": "a",
-      "chanceOfPlaying": 75,
+      "chanceOfPlaying": 100,
       "news": null,
       "newsAdded": "2026-08-18T17:00:08.385597Z"
     },
@@ -2751,7 +2751,7 @@
       "clubCode": 1,
       "photoCode": 485711,
       "status": "i",
-      "chanceOfPlaying": 100,
+      "chanceOfPlaying": 0,
       "news": "Shin injury - Expected back 18 Oct",
       "newsAdded": "2026-09-20T19:30:08.505755Z"
     },
@@ -2799,7 +2799,7 @@
       "clubCode": 4,
       "photoCode": 441191,
       "status": "d",
-      "chanceOfPlaying": 100,
+      "chanceOfPlaying": 50,
       "news": "Unspecified injury - 50% chance of playing",
       "newsAdded": "2026-09-19T14:00:09.046677Z"
     },
@@ -2859,7 +2859,7 @@
       "clubCode": 4,
       "photoCode": 538207,
       "status": "d",
-      "chanceOfPlaying": 0,
+      "chanceOfPlaying": 50,
       "news": "Foot injury - 50% chance of playing",
       "newsAdded": "2026-08-25T19:00:08.004915Z"
     },
@@ -3003,7 +3003,7 @@
       "clubCode": 6,
       "photoCode": 441164,
       "status": "i",
-      "chanceOfPlaying": 100,
+      "chanceOfPlaying": 0,
       "news": "Hamstring injury - Unknown return date",
       "newsAdded": "2026-09-19T12:00:08.823872Z"
     },
@@ -3255,7 +3255,7 @@
       "clubCode": 4,
       "photoCode": 463726,
       "status": "d",
-      "chanceOfPlaying": 0,
+      "chanceOfPlaying": 50,
       "news": "Unspecified injury - 50% chance of playing",
       "newsAdded": "2026-09-17T14:30:09.823731Z"
     },
@@ -3332,5 +3332,5 @@
       "newsAdded": null
     }
   },
-  "generatedAt": "2026-10-10T03:48:36.739Z"
+  "generatedAt": "2026-10-10T11:43:29.608Z"
 }
