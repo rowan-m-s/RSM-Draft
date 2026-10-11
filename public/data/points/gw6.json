@@ -1667,12 +1667,12 @@
         "components": []
       },
       "371": {
-        "total": 2,
+        "total": 0,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 62,
+            "value": 61,
             "points": 2
           },
           {
@@ -1682,10 +1682,10 @@
             "points": 1
           },
           {
-            "stat": "yellow_cards",
-            "name": "Yellow cards",
+            "stat": "red_cards",
+            "name": "Red cards",
             "value": 1,
-            "points": -1
+            "points": -3
           }
         ]
       },
@@ -2444,5 +2444,5 @@
       }
     }
   },
-  "generatedAt": "2026-10-11T16:52:02.705Z"
+  "generatedAt": "2026-10-11T16:53:12.927Z"
 }
