@@ -969,6 +969,28 @@
       "positionRank": 16
     },
     {
+      "id": 384,
+      "name": "Donnarumma",
+      "position": "GKP",
+      "club": "Man City",
+      "clubShort": "MCI",
+      "clubCode": 43,
+      "teamId": 15,
+      "photoCode": 204936,
+      "owner": "wood",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 27,
+      "ppg": 4.5,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 3,
+      "bonus": 1,
+      "positionRank": 6
+    },
+    {
       "id": 4,
       "name": "Gabriel",
       "position": "DEF",
@@ -1123,28 +1145,6 @@
       "positionRank": 23
     },
     {
-      "id": 384,
-      "name": "Donnarumma",
-      "position": "GKP",
-      "club": "Man City",
-      "clubShort": "MCI",
-      "clubCode": 43,
-      "teamId": 15,
-      "photoCode": 204936,
-      "owner": "wood",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 26,
-      "ppg": 4.3,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 3,
-      "bonus": 0,
-      "positionRank": 7
-    },
-    {
       "id": 268,
       "name": "King",
       "position": "MID",
@@ -1186,7 +1186,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 1,
-      "positionRank": 6
+      "positionRank": 7
     },
     {
       "id": 356,
@@ -14699,5 +14699,5 @@
     "bonus": 8,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-11T17:09:48.482Z"
+  "generatedAt": "2026-10-11T17:13:18.992Z"
 }
