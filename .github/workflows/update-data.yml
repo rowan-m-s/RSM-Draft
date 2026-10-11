@@ -109,9 +109,23 @@ jobs:
 
       # A push made with the workflow's own token never triggers another
       # workflow, so the data would sit on main unpublished. Deploy is
-      # dispatched by hand instead, and only when something was pushed.
+      # dispatched by hand instead, and only when something was pushed. A
+      # Pages deployment cancels whatever deployment is still in flight the
+      # moment a new one is queued — that's the Pages environment's own
+      # concurrency, separate from this workflow's `concurrency:` block, and
+      # it cannot be turned off. Dispatching on every commit regardless left
+      # a run of frequent updates cancelling each other before any of them
+      # finished publishing, so the site sat stale for days despite the data
+      # being current throughout. Skip the dispatch while one is already
+      # queued or running; the next commit's run will catch the data up.
       - name: Deploy
         if: steps.commit.outputs.pushed == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh workflow run deploy.yml --ref "${GITHUB_REF_NAME}"
+        run: |
+          running=$(gh run list --workflow deploy.yml --status in_progress --status queued --json databaseId --jq 'length')
+          if [ "$running" -gt 0 ]; then
+            echo "A deploy is already in flight ($running); skipping dispatch so it isn't cancelled. The next data run will catch this up."
+          else
+            gh workflow run deploy.yml --ref "${GITHUB_REF_NAME}"
+          fi
