@@ -2267,28 +2267,6 @@
       "positionRank": 50
     },
     {
-      "id": 155,
-      "name": "Enzo",
-      "position": "MID",
-      "club": "Man City",
-      "clubShort": "MCI",
-      "clubCode": 43,
-      "teamId": 15,
-      "photoCode": 448047,
-      "owner": "paddy",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 15,
-      "ppg": 3,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 1,
-      "positionRank": 69
-    },
-    {
       "id": 239,
       "name": "Garner",
       "position": "MID",
@@ -2308,7 +2286,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 70
+      "positionRank": 69
     },
     {
       "id": 200,
@@ -2353,6 +2331,28 @@
       "cleanSheets": 1,
       "bonus": 2,
       "positionRank": 15
+    },
+    {
+      "id": 155,
+      "name": "Enzo",
+      "position": "MID",
+      "club": "Man City",
+      "clubShort": "MCI",
+      "clubCode": 43,
+      "teamId": 15,
+      "photoCode": 448047,
+      "owner": "paddy",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 14,
+      "ppg": 2.8,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 0,
+      "positionRank": 75
     },
     {
       "id": 566,
@@ -4532,7 +4532,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 75
+      "positionRank": 74
     },
     {
       "id": 313,
@@ -4554,7 +4554,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 72
+      "positionRank": 71
     },
     {
       "id": 280,
@@ -4620,7 +4620,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 71
+      "positionRank": 70
     },
     {
       "id": 541,
@@ -4664,7 +4664,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 74
+      "positionRank": 73
     },
     {
       "id": 345,
@@ -4686,7 +4686,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 73
+      "positionRank": 72
     },
     {
       "id": 532,
@@ -14699,5 +14699,5 @@
     "bonus": 8,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-11T16:37:57.588Z"
+  "generatedAt": "2026-10-11T16:39:08.673Z"
 }
