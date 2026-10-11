@@ -935,34 +935,34 @@
       "scoresProvisional": true,
       "kochReady": true,
       "yetByManager": {
-        "rushy": 5,
-        "kellett": 6,
-        "wallis": 3,
+        "rushy": 1,
+        "kellett": 3,
+        "wallis": 2,
         "jls": 2,
-        "paddy": 5,
-        "bennett": 4,
-        "wood": 4,
-        "rowan": 6,
+        "paddy": 4,
+        "bennett": 0,
+        "wood": 3,
+        "rowan": 1,
         "jason": 3,
-        "dj": 4,
-        "ollie": 4
+        "dj": 3,
+        "ollie": 1
       },
       "fixturesRemaining": true,
       "dataChecked": false,
       "confirmExpectedUtc": "2026-10-13T19:00:00.000Z",
       "revealFromUtc": "2026-10-13T08:05:00.000Z",
       "scores": {
-        "rushy": 15,
-        "kellett": 16,
-        "wallis": 22,
+        "rushy": 25,
+        "kellett": 20,
+        "wallis": 23,
         "jls": 44,
-        "paddy": 22,
-        "bennett": 23,
-        "wood": 40,
-        "rowan": 18,
+        "paddy": 25,
+        "bennett": 47,
+        "wood": 46,
+        "rowan": 32,
         "jason": 24,
-        "dj": 13,
-        "ollie": 16
+        "dj": 14,
+        "ollie": 20
       },
       "kochKeys": [],
       "charged": 0,
@@ -993,8 +993,8 @@
           "managerKey": "paddy"
         },
         "bennett": {
-          "playerName": "N.Jackson",
-          "points": 9,
+          "playerName": "Dewsbury-Hall",
+          "points": 13,
           "managerKey": "bennett"
         },
         "wood": {
@@ -1025,10 +1025,10 @@
       },
       "scapegoatByManager": {
         "rushy": {
-          "playerName": "Gyökeres",
+          "playerName": "N.Williams",
           "points": 1,
           "managerKey": "rushy",
-          "element": 25
+          "element": 469
         },
         "kellett": {
           "playerName": "Cash",
@@ -1067,10 +1067,10 @@
           "element": 426
         },
         "rowan": {
-          "playerName": "M.Sangaré",
+          "playerName": "McBurnie",
           "points": 1,
           "managerKey": "rowan",
-          "element": 556
+          "element": 295
         },
         "jason": {
           "playerName": "Ødegaard",
@@ -1079,10 +1079,10 @@
           "element": 15
         },
         "dj": {
-          "playerName": "J.Timber",
+          "playerName": "Muñoz",
           "points": 1,
           "managerKey": "dj",
-          "element": 5
+          "element": 201
         },
         "ollie": {
           "playerName": "Van de Ven",
@@ -1842,5 +1842,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-10-11T09:34:12.033Z"
+  "generatedAt": "2026-10-11T15:06:04.132Z"
 }

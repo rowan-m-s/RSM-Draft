@@ -6188,11 +6188,11 @@
       "kickoff": "2026-10-11T13:00:00Z",
       "home": 8,
       "away": 18,
-      "homeScore": null,
-      "awayScore": null,
-      "started": false,
+      "homeScore": 3,
+      "awayScore": 1,
+      "started": true,
       "finished": false,
-      "finishedProvisional": false,
+      "finishedProvisional": true,
       "homeDifficulty": 3,
       "awayDifficulty": 3
     },
@@ -6202,11 +6202,11 @@
       "kickoff": "2026-10-11T13:00:00Z",
       "home": 11,
       "away": 9,
-      "homeScore": null,
-      "awayScore": null,
-      "started": false,
+      "homeScore": 2,
+      "awayScore": 2,
+      "started": true,
       "finished": false,
-      "finishedProvisional": false,
+      "finishedProvisional": true,
       "homeDifficulty": 3,
       "awayDifficulty": 2
     },
@@ -10841,5 +10841,5 @@
       "code": 56
     }
   ],
-  "generatedAt": "2026-10-11T09:34:12.033Z"
+  "generatedAt": "2026-10-11T15:06:04.132Z"
 }

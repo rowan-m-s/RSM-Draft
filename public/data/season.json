@@ -3,9 +3,9 @@
     {
       "key": "wood",
       "rank": 1,
-      "total": 292,
-      "gw": 40,
-      "month": 40,
+      "total": 298,
+      "gw": 46,
+      "month": 46,
       "kochCount": 0,
       "motmCount": 1,
       "forfeits": 0,
@@ -35,11 +35,28 @@
       }
     },
     {
-      "key": "paddy",
+      "key": "bennett",
       "rank": 3,
-      "total": 256,
-      "gw": 22,
-      "month": 22,
+      "total": 261,
+      "gw": 47,
+      "month": 47,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "Tarkowski",
+        "points": 38,
+        "managerKey": "bennett"
+      }
+    },
+    {
+      "key": "paddy",
+      "rank": 4,
+      "total": 259,
+      "gw": 25,
+      "month": 25,
       "kochCount": 1,
       "motmCount": 1,
       "forfeits": 5,
@@ -52,25 +69,25 @@
       }
     },
     {
-      "key": "bennett",
-      "rank": 4,
-      "total": 237,
-      "gw": 23,
-      "month": 23,
-      "kochCount": 0,
+      "key": "rowan",
+      "rank": 5,
+      "total": 233,
+      "gw": 32,
+      "month": 32,
+      "kochCount": 1,
       "motmCount": 0,
-      "forfeits": 0,
+      "forfeits": 5,
       "potsWon": 0,
-      "balance": 0,
+      "balance": -5,
       "topPerformer": {
-        "playerName": "Tarkowski",
-        "points": 35,
-        "managerKey": "bennett"
+        "playerName": "Gibbs-White",
+        "points": 30,
+        "managerKey": "rowan"
       }
     },
     {
       "key": "jls",
-      "rank": 5,
+      "rank": 6,
       "total": 232,
       "gw": 44,
       "month": 44,
@@ -87,10 +104,10 @@
     },
     {
       "key": "ollie",
-      "rank": 6,
-      "total": 221,
-      "gw": 16,
-      "month": 16,
+      "rank": 7,
+      "total": 225,
+      "gw": 20,
+      "month": 20,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -103,28 +120,11 @@
       }
     },
     {
-      "key": "rowan",
-      "rank": 7,
-      "total": 219,
-      "gw": 18,
-      "month": 18,
-      "kochCount": 1,
-      "motmCount": 0,
-      "forfeits": 5,
-      "potsWon": 0,
-      "balance": -5,
-      "topPerformer": {
-        "playerName": "Stach",
-        "points": 29,
-        "managerKey": "rowan"
-      }
-    },
-    {
       "key": "rushy",
       "rank": 8,
-      "total": 214,
-      "gw": 15,
-      "month": 15,
+      "total": 224,
+      "gw": 25,
+      "month": 25,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -139,9 +139,9 @@
     {
       "key": "kellett",
       "rank": 9,
-      "total": 213,
-      "gw": 16,
-      "month": 16,
+      "total": 217,
+      "gw": 20,
+      "month": 20,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -155,10 +155,10 @@
     },
     {
       "key": "wallis",
-      "rank": 9,
-      "total": 213,
-      "gw": 22,
-      "month": 22,
+      "rank": 10,
+      "total": 214,
+      "gw": 23,
+      "month": 23,
       "kochCount": 2,
       "motmCount": 0,
       "forfeits": 10,
@@ -173,9 +173,9 @@
     {
       "key": "dj",
       "rank": 11,
-      "total": 191,
-      "gw": 13,
-      "month": 13,
+      "total": 192,
+      "gw": 14,
+      "month": 14,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -195,7 +195,7 @@
     "keys": [
       "wood"
     ],
-    "total": 292,
+    "total": 298,
     "since": 4,
     "sinceByKey": {
       "wood": 4
@@ -205,7 +205,7 @@
     "displaced": "paddy",
     "changed": false
   },
-  "generatedAt": "2026-10-11T09:34:12.033Z",
+  "generatedAt": "2026-10-11T15:06:04.132Z",
   "graphics": {
     "koch": {
       "rushy": 244850,
@@ -241,7 +241,7 @@
       "paddy": 244851,
       "bennett": 219168,
       "wood": 141746,
-      "rowan": 466525,
+      "rowan": 222531,
       "jason": 430871,
       "dj": 437730,
       "ollie": 154561
@@ -254,7 +254,7 @@
       "paddy": 244851,
       "bennett": 204480,
       "wood": 444102,
-      "rowan": 466525,
+      "rowan": 222531,
       "jason": 430871,
       "dj": 502500,
       "ollie": 446008

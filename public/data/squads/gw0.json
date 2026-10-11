@@ -2945,10 +2945,10 @@
       "clubShort": "LIV",
       "clubCode": 14,
       "photoCode": 424876,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
+      "status": "d",
+      "chanceOfPlaying": 75,
+      "news": "Hamstring injury - 75% chance of playing",
+      "newsAdded": "2026-10-11T15:00:09.494018Z"
     },
     "369": {
       "name": "Ngumoha",
@@ -3017,9 +3017,9 @@
       "clubShort": "MCI",
       "clubCode": 43,
       "photoCode": 472769,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 75,
-      "news": "Unspecified injury - 75% chance of playing",
+      "news": null,
       "newsAdded": "2026-10-01T15:30:10.272693Z"
     },
     "388": {
@@ -3089,9 +3089,9 @@
       "clubShort": "MCI",
       "clubCode": 43,
       "photoCode": 437730,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 75,
-      "news": "Ankle injury - 75% chance of playing",
+      "news": null,
       "newsAdded": "2026-09-24T12:00:09.848000Z"
     },
     "398": {
@@ -3449,9 +3449,9 @@
       "clubShort": "NFO",
       "clubCode": 17,
       "photoCode": 215136,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 50,
-      "news": "Illness - 50% chance of playing",
+      "news": null,
       "newsAdded": "2026-10-09T14:30:11.466887Z"
     },
     "471": {
@@ -3827,5 +3827,5 @@
       "newsAdded": "2026-08-15T16:00:07.974271Z"
     }
   },
-  "generatedAt": "2026-10-11T09:34:12.033Z"
+  "generatedAt": "2026-10-11T15:06:04.132Z"
 }
