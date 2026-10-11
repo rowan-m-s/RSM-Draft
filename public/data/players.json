@@ -1387,6 +1387,28 @@
       "positionRank": 28
     },
     {
+      "id": 384,
+      "name": "Donnarumma",
+      "position": "GKP",
+      "club": "Man City",
+      "clubShort": "MCI",
+      "clubCode": 43,
+      "teamId": 15,
+      "photoCode": 204936,
+      "owner": "wood",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 23,
+      "ppg": 3.8,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 2,
+      "positionRank": 7
+    },
+    {
       "id": 556,
       "name": "M.Sangaré",
       "position": "MID",
@@ -1497,28 +1519,6 @@
       "positionRank": 33
     },
     {
-      "id": 384,
-      "name": "Donnarumma",
-      "position": "GKP",
-      "club": "Man City",
-      "clubShort": "MCI",
-      "clubCode": 43,
-      "teamId": 15,
-      "photoCode": 204936,
-      "owner": "wood",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 22,
-      "ppg": 3.7,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 1,
-      "positionRank": 8
-    },
-    {
       "id": 113,
       "name": "F.Kadıoğlu",
       "position": "DEF",
@@ -1560,7 +1560,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 7
+      "positionRank": 8
     },
     {
       "id": 26,
@@ -14699,5 +14699,5 @@
     "bonus": 8,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-11T16:39:08.673Z"
+  "generatedAt": "2026-10-11T16:40:19.717Z"
 }
