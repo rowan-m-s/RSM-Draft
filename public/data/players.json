@@ -45,28 +45,6 @@
       "positionRank": 1
     },
     {
-      "id": 411,
-      "name": "Haaland",
-      "position": "FWD",
-      "club": "Man City",
-      "clubShort": "MCI",
-      "clubCode": 43,
-      "teamId": 15,
-      "photoCode": 223094,
-      "owner": "kellett",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 46,
-      "ppg": 7.7,
-      "goals": 6,
-      "assists": 0,
-      "cleanSheets": 3,
-      "bonus": 10,
-      "positionRank": 1
-    },
-    {
       "id": 229,
       "name": "Tarkowski",
       "position": "DEF",
@@ -89,6 +67,28 @@
       "positionRank": 2
     },
     {
+      "id": 411,
+      "name": "Haaland",
+      "position": "FWD",
+      "club": "Man City",
+      "clubShort": "MCI",
+      "clubCode": 43,
+      "teamId": 15,
+      "photoCode": 223094,
+      "owner": "kellett",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 45,
+      "ppg": 7.5,
+      "goals": 6,
+      "assists": 0,
+      "cleanSheets": 3,
+      "bonus": 9,
+      "positionRank": 2
+    },
+    {
       "id": 165,
       "name": "João Pedro",
       "position": "FWD",
@@ -108,7 +108,7 @@
       "assists": 3,
       "cleanSheets": 0,
       "bonus": 9,
-      "positionRank": 2
+      "positionRank": 1
     },
     {
       "id": 399,
@@ -749,6 +749,28 @@
       "positionRank": 4
     },
     {
+      "id": 384,
+      "name": "Donnarumma",
+      "position": "GKP",
+      "club": "Man City",
+      "clubShort": "MCI",
+      "clubCode": 43,
+      "teamId": 15,
+      "photoCode": 204936,
+      "owner": "wood",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 29,
+      "ppg": 4.8,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 3,
+      "bonus": 2,
+      "positionRank": 5
+    },
+    {
       "id": 127,
       "name": "Gomez",
       "position": "MID",
@@ -856,7 +878,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 5,
-      "positionRank": 5
+      "positionRank": 6
     },
     {
       "id": 279,
@@ -967,28 +989,6 @@
       "cleanSheets": 2,
       "bonus": 1,
       "positionRank": 16
-    },
-    {
-      "id": 384,
-      "name": "Donnarumma",
-      "position": "GKP",
-      "club": "Man City",
-      "clubShort": "MCI",
-      "clubCode": 43,
-      "teamId": 15,
-      "photoCode": 204936,
-      "owner": "wood",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 27,
-      "ppg": 4.5,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 3,
-      "bonus": 1,
-      "positionRank": 6
     },
     {
       "id": 4,
@@ -3474,7 +3474,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 176
+      "positionRank": 175
     },
     {
       "id": 593,
@@ -7571,28 +7571,6 @@
       "positionRank": 167
     },
     {
-      "id": 616,
-      "name": "Bouaddi",
-      "position": "MID",
-      "club": "Man City",
-      "clubShort": "MCI",
-      "clubCode": 43,
-      "teamId": 15,
-      "photoCode": 637238,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 3,
-      "ppg": 1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 170
-    },
-    {
       "id": 620,
       "name": "Diouf",
       "position": "DEF",
@@ -7876,7 +7854,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 171
+      "positionRank": 170
     },
     {
       "id": 323,
@@ -8184,7 +8162,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 178
+      "positionRank": 177
     },
     {
       "id": 648,
@@ -8231,6 +8209,28 @@
       "positionRank": 45
     },
     {
+      "id": 616,
+      "name": "Bouaddi",
+      "position": "MID",
+      "club": "Man City",
+      "clubShort": "MCI",
+      "clubCode": 43,
+      "teamId": 15,
+      "photoCode": 637238,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 2,
+      "ppg": 0.7,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 185
+    },
+    {
       "id": 245,
       "name": "Dibling",
       "position": "MID",
@@ -8250,7 +8250,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 179
+      "positionRank": 178
     },
     {
       "id": 281,
@@ -8294,7 +8294,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 185
+      "positionRank": 184
     },
     {
       "id": 42,
@@ -8316,7 +8316,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 172
+      "positionRank": 171
     },
     {
       "id": 421,
@@ -8360,7 +8360,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 182
+      "positionRank": 181
     },
     {
       "id": 212,
@@ -8382,7 +8382,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 177
+      "positionRank": 176
     },
     {
       "id": 493,
@@ -8426,7 +8426,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 181
+      "positionRank": 180
     },
     {
       "id": 339,
@@ -8448,7 +8448,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 180
+      "positionRank": 179
     },
     {
       "id": 621,
@@ -8514,7 +8514,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 184
+      "positionRank": 183
     },
     {
       "id": 126,
@@ -8536,7 +8536,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 174
+      "positionRank": 173
     },
     {
       "id": 164,
@@ -8558,7 +8558,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 175
+      "positionRank": 174
     },
     {
       "id": 527,
@@ -8602,7 +8602,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 183
+      "positionRank": 182
     },
     {
       "id": 140,
@@ -8668,7 +8668,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 173
+      "positionRank": 172
     },
     {
       "id": 364,
@@ -14699,5 +14699,5 @@
     "bonus": 8,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-11T17:13:18.992Z"
+  "generatedAt": "2026-10-11T17:16:47.709Z"
 }
