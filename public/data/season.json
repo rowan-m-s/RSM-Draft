@@ -3,9 +3,9 @@
     {
       "key": "wood",
       "rank": 1,
-      "total": 298,
-      "gw": 46,
-      "month": 46,
+      "total": 301,
+      "gw": 49,
+      "month": 49,
       "kochCount": 0,
       "motmCount": 1,
       "forfeits": 0,
@@ -20,9 +20,9 @@
     {
       "key": "jason",
       "rank": 2,
-      "total": 268,
-      "gw": 24,
-      "month": 24,
+      "total": 270,
+      "gw": 26,
+      "month": 26,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -35,8 +35,25 @@
       }
     },
     {
-      "key": "bennett",
+      "key": "paddy",
       "rank": 3,
+      "total": 262,
+      "gw": 28,
+      "month": 28,
+      "kochCount": 1,
+      "motmCount": 1,
+      "forfeits": 5,
+      "potsWon": 10,
+      "balance": 5,
+      "topPerformer": {
+        "playerName": "Palmer",
+        "points": 36,
+        "managerKey": "paddy"
+      }
+    },
+    {
+      "key": "bennett",
+      "rank": 4,
       "total": 261,
       "gw": 47,
       "month": 47,
@@ -52,20 +69,20 @@
       }
     },
     {
-      "key": "paddy",
-      "rank": 4,
-      "total": 259,
-      "gw": 25,
-      "month": 25,
-      "kochCount": 1,
-      "motmCount": 1,
-      "forfeits": 5,
-      "potsWon": 10,
-      "balance": 5,
+      "key": "jls",
+      "rank": 5,
+      "total": 233,
+      "gw": 45,
+      "month": 45,
+      "kochCount": 2,
+      "motmCount": 0,
+      "forfeits": 10,
+      "potsWon": 0,
+      "balance": -10,
       "topPerformer": {
-        "playerName": "Palmer",
-        "points": 36,
-        "managerKey": "paddy"
+        "playerName": "João Pedro",
+        "points": 45,
+        "managerKey": "jls"
       }
     },
     {
@@ -86,20 +103,20 @@
       }
     },
     {
-      "key": "jls",
-      "rank": 6,
-      "total": 232,
-      "gw": 44,
-      "month": 44,
-      "kochCount": 2,
+      "key": "rushy",
+      "rank": 7,
+      "total": 225,
+      "gw": 26,
+      "month": 26,
+      "kochCount": 0,
       "motmCount": 0,
-      "forfeits": 10,
+      "forfeits": 0,
       "potsWon": 0,
-      "balance": -10,
+      "balance": 0,
       "topPerformer": {
-        "playerName": "João Pedro",
-        "points": 45,
-        "managerKey": "jls"
+        "playerName": "Rogers",
+        "points": 38,
+        "managerKey": "rushy"
       }
     },
     {
@@ -120,28 +137,11 @@
       }
     },
     {
-      "key": "rushy",
-      "rank": 8,
-      "total": 224,
-      "gw": 25,
-      "month": 25,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "Rogers",
-        "points": 38,
-        "managerKey": "rushy"
-      }
-    },
-    {
       "key": "kellett",
       "rank": 9,
-      "total": 217,
-      "gw": 20,
-      "month": 20,
+      "total": 218,
+      "gw": 21,
+      "month": 21,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -149,16 +149,16 @@
       "balance": 0,
       "topPerformer": {
         "playerName": "Haaland",
-        "points": 39,
+        "points": 40,
         "managerKey": "kellett"
       }
     },
     {
       "key": "wallis",
       "rank": 10,
-      "total": 214,
-      "gw": 23,
-      "month": 23,
+      "total": 216,
+      "gw": 25,
+      "month": 25,
       "kochCount": 2,
       "motmCount": 0,
       "forfeits": 10,
@@ -173,9 +173,9 @@
     {
       "key": "dj",
       "rank": 11,
-      "total": 192,
-      "gw": 14,
-      "month": 14,
+      "total": 197,
+      "gw": 19,
+      "month": 19,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -195,7 +195,7 @@
     "keys": [
       "wood"
     ],
-    "total": 298,
+    "total": 301,
     "since": 4,
     "sinceByKey": {
       "wood": 4
@@ -205,7 +205,7 @@
     "displaced": "paddy",
     "changed": false
   },
-  "generatedAt": "2026-10-11T15:06:04.132Z",
+  "generatedAt": "2026-10-11T16:05:48.588Z",
   "graphics": {
     "koch": {
       "rushy": 244850,
@@ -248,7 +248,7 @@
     },
     "leaderMonth": {
       "rushy": 244850,
-      "kellett": 209244,
+      "kellett": 223094,
       "wallis": 226597,
       "jls": 475168,
       "paddy": 244851,

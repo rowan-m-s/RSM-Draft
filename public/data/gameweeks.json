@@ -935,16 +935,16 @@
       "scoresProvisional": true,
       "kochReady": true,
       "yetByManager": {
-        "rushy": 1,
-        "kellett": 3,
-        "wallis": 2,
-        "jls": 2,
-        "paddy": 4,
+        "rushy": 0,
+        "kellett": 2,
+        "wallis": 0,
+        "jls": 0,
+        "paddy": 1,
         "bennett": 0,
-        "wood": 3,
+        "wood": 1,
         "rowan": 1,
-        "jason": 3,
-        "dj": 3,
+        "jason": 1,
+        "dj": 1,
         "ollie": 1
       },
       "fixturesRemaining": true,
@@ -952,16 +952,16 @@
       "confirmExpectedUtc": "2026-10-13T19:00:00.000Z",
       "revealFromUtc": "2026-10-13T08:05:00.000Z",
       "scores": {
-        "rushy": 25,
-        "kellett": 20,
-        "wallis": 23,
-        "jls": 44,
-        "paddy": 25,
+        "rushy": 26,
+        "kellett": 21,
+        "wallis": 25,
+        "jls": 45,
+        "paddy": 28,
         "bennett": 47,
-        "wood": 46,
+        "wood": 49,
         "rowan": 32,
-        "jason": 24,
-        "dj": 14,
+        "jason": 26,
+        "dj": 19,
         "ollie": 20
       },
       "kochKeys": [],
@@ -1013,7 +1013,7 @@
           "managerKey": "jason"
         },
         "dj": {
-          "playerName": "Thiago",
+          "playerName": "Barcola",
           "points": 4,
           "managerKey": "dj"
         },
@@ -1842,5 +1842,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-10-11T15:06:04.132Z"
+  "generatedAt": "2026-10-11T16:05:48.588Z"
 }
