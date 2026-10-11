@@ -5,6 +5,17 @@ name: Deploy to Pages
 # push start another workflow), so that job dispatches this one directly
 # after it pushes; the data is baked into the published output, so a
 # data-only change must redeploy.
+#
+# Note (11 Oct 2026): GitHub Pages deployments for this workflow stalled
+# for several days — queued runs sat at "pending" with no job ever
+# scheduled, both for workflow_dispatch and (per the push that added this
+# comment) for push-triggered runs too. No incident was reported on
+# githubstatus.com and nothing in this repo's config explained it. If the
+# site looks stale again, check the Actions tab before suspecting the data
+# pipeline — compare public/data/gameweeks.json's generatedAt against the
+# repo's actions/runs/latest and the environments/github-pages/deployments
+# API; a live, current data commit with no matching deployment means this
+# has recurred.
 on:
   push:
     branches: [main]
