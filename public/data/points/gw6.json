@@ -1818,13 +1818,19 @@
         ]
       },
       "400": {
-        "total": 1,
+        "total": 4,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
             "value": 9,
             "points": 1
+          },
+          {
+            "stat": "assists",
+            "name": "Assists",
+            "value": 1,
+            "points": 3
           }
         ]
       },
@@ -2396,5 +2402,5 @@
       }
     }
   },
-  "generatedAt": "2026-10-11T16:54:23.589Z"
+  "generatedAt": "2026-10-11T16:55:34.454Z"
 }
