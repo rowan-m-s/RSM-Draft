@@ -2066,6 +2066,28 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 0,
+      "positionRank": 63
+    },
+    {
+      "id": 155,
+      "name": "Enzo",
+      "position": "MID",
+      "club": "Man City",
+      "clubShort": "MCI",
+      "clubCode": 43,
+      "teamId": 15,
+      "photoCode": 448047,
+      "owner": "paddy",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 16,
+      "ppg": 3.2,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 2,
       "positionRank": 62
     },
     {
@@ -2154,7 +2176,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 63
+      "positionRank": 64
     },
     {
       "id": 110,
@@ -2220,7 +2242,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 65
+      "positionRank": 66
     },
     {
       "id": 640,
@@ -2286,7 +2308,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 69
+      "positionRank": 70
     },
     {
       "id": 200,
@@ -2331,28 +2353,6 @@
       "cleanSheets": 1,
       "bonus": 2,
       "positionRank": 15
-    },
-    {
-      "id": 155,
-      "name": "Enzo",
-      "position": "MID",
-      "club": "Man City",
-      "clubShort": "MCI",
-      "clubCode": 43,
-      "teamId": 15,
-      "photoCode": 448047,
-      "owner": "paddy",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 14,
-      "ppg": 2.8,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 0,
-      "positionRank": 75
     },
     {
       "id": 566,
@@ -2707,28 +2707,6 @@
       "positionRank": 17
     },
     {
-      "id": 628,
-      "name": "Barcola",
-      "position": "MID",
-      "club": "Liverpool",
-      "clubShort": "LIV",
-      "clubCode": 14,
-      "teamId": 14,
-      "photoCode": 482616,
-      "owner": "dj",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 11,
-      "ppg": 2.8,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 3,
-      "positionRank": 97
-    },
-    {
       "id": 199,
       "name": "Benitez",
       "position": "GKP",
@@ -2773,28 +2751,6 @@
       "positionRank": 20
     },
     {
-      "id": 371,
-      "name": "Gravenberch",
-      "position": "MID",
-      "club": "Liverpool",
-      "clubShort": "LIV",
-      "clubCode": 14,
-      "teamId": 14,
-      "photoCode": 441266,
-      "owner": "rushy",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 11,
-      "ppg": 1.8,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 0,
-      "bonus": 1,
-      "positionRank": 94
-    },
-    {
       "id": 429,
       "name": "Rashford",
       "position": "MID",
@@ -2814,7 +2770,29 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 95
+      "positionRank": 94
+    },
+    {
+      "id": 628,
+      "name": "Barcola",
+      "position": "MID",
+      "club": "Liverpool",
+      "clubShort": "LIV",
+      "clubCode": 14,
+      "teamId": 14,
+      "photoCode": 482616,
+      "owner": "dj",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 10,
+      "ppg": 2.5,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 2,
+      "positionRank": 102
     },
     {
       "id": 125,
@@ -2839,6 +2817,28 @@
       "positionRank": 21
     },
     {
+      "id": 371,
+      "name": "Gravenberch",
+      "position": "MID",
+      "club": "Liverpool",
+      "clubShort": "LIV",
+      "clubCode": 14,
+      "teamId": 14,
+      "photoCode": 441266,
+      "owner": "rushy",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 10,
+      "ppg": 1.7,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 97
+    },
+    {
       "id": 403,
       "name": "Sávio",
       "position": "MID",
@@ -2858,7 +2858,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 99
+      "positionRank": 98
     },
     {
       "id": 398,
@@ -4400,7 +4400,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 66
+      "positionRank": 67
     },
     {
       "id": 96,
@@ -4466,7 +4466,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 64
+      "positionRank": 65
     },
     {
       "id": 592,
@@ -4510,7 +4510,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 67
+      "positionRank": 68
     },
     {
       "id": 632,
@@ -4532,7 +4532,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 74
+      "positionRank": 75
     },
     {
       "id": 313,
@@ -4554,7 +4554,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 71
+      "positionRank": 72
     },
     {
       "id": 280,
@@ -4598,7 +4598,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 68
+      "positionRank": 69
     },
     {
       "id": 267,
@@ -4620,7 +4620,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 70
+      "positionRank": 71
     },
     {
       "id": 541,
@@ -4664,7 +4664,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 73
+      "positionRank": 74
     },
     {
       "id": 345,
@@ -4686,7 +4686,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 72
+      "positionRank": 73
     },
     {
       "id": 532,
@@ -5390,7 +5390,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 96
+      "positionRank": 95
     },
     {
       "id": 644,
@@ -5412,7 +5412,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 98
+      "positionRank": 96
     },
     {
       "id": 583,
@@ -5478,7 +5478,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 100
+      "positionRank": 99
     },
     {
       "id": 512,
@@ -5500,7 +5500,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 101
+      "positionRank": 100
     },
     {
       "id": 563,
@@ -5522,7 +5522,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 102
+      "positionRank": 101
     },
     {
       "id": 269,
@@ -14699,5 +14699,5 @@
     "bonus": 8,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-11T16:14:03.098Z"
+  "generatedAt": "2026-10-11T16:15:14.129Z"
 }
