@@ -58,12 +58,12 @@
       "chanceOfPlaying": null,
       "news": null,
       "newsAdded": null,
-      "points": 47,
-      "ppg": 7.8,
+      "points": 46,
+      "ppg": 7.7,
       "goals": 6,
       "assists": 0,
       "cleanSheets": 3,
-      "bonus": 11,
+      "bonus": 10,
       "positionRank": 1
     },
     {
@@ -111,6 +111,28 @@
       "positionRank": 2
     },
     {
+      "id": 399,
+      "name": "Cherki",
+      "position": "MID",
+      "club": "Man City",
+      "clubShort": "MCI",
+      "clubCode": 43,
+      "teamId": 15,
+      "photoCode": 466052,
+      "owner": "paddy",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 44,
+      "ppg": 7.3,
+      "goals": 4,
+      "assists": 2,
+      "cleanSheets": 2,
+      "bonus": 7,
+      "positionRank": 2
+    },
+    {
       "id": 330,
       "name": "Bogle",
       "position": "DEF",
@@ -152,7 +174,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 6,
-      "positionRank": 2
+      "positionRank": 3
     },
     {
       "id": 504,
@@ -240,7 +262,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 3
+      "positionRank": 4
     },
     {
       "id": 286,
@@ -262,28 +284,6 @@
       "assists": 2,
       "cleanSheets": 3,
       "bonus": 2,
-      "positionRank": 4
-    },
-    {
-      "id": 399,
-      "name": "Cherki",
-      "position": "MID",
-      "club": "Man City",
-      "clubShort": "MCI",
-      "clubCode": 43,
-      "teamId": 15,
-      "photoCode": 466052,
-      "owner": "paddy",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 37,
-      "ppg": 6.2,
-      "goals": 3,
-      "assists": 2,
-      "cleanSheets": 2,
-      "bonus": 5,
       "positionRank": 5
     },
     {
@@ -969,28 +969,6 @@
       "positionRank": 16
     },
     {
-      "id": 384,
-      "name": "Donnarumma",
-      "position": "GKP",
-      "club": "Man City",
-      "clubShort": "MCI",
-      "clubCode": 43,
-      "teamId": 15,
-      "photoCode": 204936,
-      "owner": "wood",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 27,
-      "ppg": 4.5,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 3,
-      "bonus": 1,
-      "positionRank": 6
-    },
-    {
       "id": 4,
       "name": "Gabriel",
       "position": "DEF",
@@ -1145,6 +1123,28 @@
       "positionRank": 23
     },
     {
+      "id": 384,
+      "name": "Donnarumma",
+      "position": "GKP",
+      "club": "Man City",
+      "clubShort": "MCI",
+      "clubCode": 43,
+      "teamId": 15,
+      "photoCode": 204936,
+      "owner": "wood",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 26,
+      "ppg": 4.3,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 3,
+      "bonus": 0,
+      "positionRank": 7
+    },
+    {
       "id": 268,
       "name": "King",
       "position": "MID",
@@ -1186,7 +1186,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 1,
-      "positionRank": 7
+      "positionRank": 6
     },
     {
       "id": 356,
@@ -1519,28 +1519,6 @@
       "positionRank": 33
     },
     {
-      "id": 481,
-      "name": "Anderson",
-      "position": "MID",
-      "club": "Man City",
-      "clubShort": "MCI",
-      "clubCode": 43,
-      "teamId": 15,
-      "photoCode": 215379,
-      "owner": "wallis",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-23T17:00:07.952697Z",
-      "points": 22,
-      "ppg": 3.7,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 3,
-      "bonus": 1,
-      "positionRank": 35
-    },
-    {
       "id": 580,
       "name": "Araujo",
       "position": "DEF",
@@ -1605,6 +1583,28 @@
       "cleanSheets": 2,
       "bonus": 0,
       "positionRank": 8
+    },
+    {
+      "id": 481,
+      "name": "Anderson",
+      "position": "MID",
+      "club": "Man City",
+      "clubShort": "MCI",
+      "clubCode": 43,
+      "teamId": 15,
+      "photoCode": 215379,
+      "owner": "wallis",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-23T17:00:07.952697Z",
+      "points": 21,
+      "ppg": 3.5,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 3,
+      "bonus": 0,
+      "positionRank": 37
     },
     {
       "id": 26,
@@ -3894,7 +3894,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 36
+      "positionRank": 35
     },
     {
       "id": 93,
@@ -3982,7 +3982,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 2,
-      "positionRank": 37
+      "positionRank": 36
     },
     {
       "id": 105,
@@ -14699,5 +14699,5 @@
     "bonus": 8,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-11T17:07:26.296Z"
+  "generatedAt": "2026-10-11T17:08:37.703Z"
 }
