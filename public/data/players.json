@@ -1189,28 +1189,6 @@
       "positionRank": 7
     },
     {
-      "id": 356,
-      "name": "Virgil",
-      "position": "DEF",
-      "club": "Liverpool",
-      "clubShort": "LIV",
-      "clubCode": 14,
-      "teamId": 14,
-      "photoCode": 97032,
-      "owner": "jason",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 26,
-      "ppg": 4.3,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 3,
-      "bonus": 0,
-      "positionRank": 24
-    },
-    {
       "id": 10,
       "name": "White",
       "position": "DEF",
@@ -1319,6 +1297,28 @@
       "cleanSheets": 1,
       "bonus": 0,
       "positionRank": 25
+    },
+    {
+      "id": 356,
+      "name": "Virgil",
+      "position": "DEF",
+      "club": "Liverpool",
+      "clubShort": "LIV",
+      "clubCode": 14,
+      "teamId": 14,
+      "photoCode": 97032,
+      "owner": "jason",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 25,
+      "ppg": 4.2,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 3,
+      "bonus": 0,
+      "positionRank": 24
     },
     {
       "id": 114,
@@ -14699,5 +14699,5 @@
     "bonus": 8,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-11T17:21:24.519Z"
+  "generatedAt": "2026-10-11T17:22:36.180Z"
 }
