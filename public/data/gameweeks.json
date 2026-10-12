@@ -936,16 +936,16 @@
       "kochReady": true,
       "yetByManager": {
         "rushy": 0,
-        "kellett": 2,
+        "kellett": 0,
         "wallis": 0,
         "jls": 0,
-        "paddy": 1,
+        "paddy": 0,
         "bennett": 0,
-        "wood": 1,
-        "rowan": 1,
-        "jason": 1,
-        "dj": 1,
-        "ollie": 1
+        "wood": 0,
+        "rowan": 0,
+        "jason": 0,
+        "dj": 0,
+        "ollie": 0
       },
       "fixturesRemaining": true,
       "dataChecked": false,
@@ -953,15 +953,15 @@
       "revealFromUtc": "2026-10-13T08:05:00.000Z",
       "scores": {
         "rushy": 27,
-        "kellett": 26,
+        "kellett": 27,
         "wallis": 30,
         "jls": 62,
-        "paddy": 44,
+        "paddy": 46,
         "bennett": 47,
-        "wood": 59,
-        "rowan": 32,
+        "wood": 67,
+        "rowan": 34,
         "jason": 25,
-        "dj": 19,
+        "dj": 21,
         "ollie": 20
       },
       "kochKeys": [],
@@ -1073,10 +1073,10 @@
           "element": 295
         },
         "jason": {
-          "playerName": "Virgil",
+          "playerName": "Hall",
           "points": 0,
           "managerKey": "jason",
-          "element": 356
+          "element": 449
         },
         "dj": {
           "playerName": "Muñoz",
@@ -1085,10 +1085,10 @@
           "element": 201
         },
         "ollie": {
-          "playerName": "Van de Ven",
-          "points": 1,
+          "playerName": "Thiaw",
+          "points": 0,
           "managerKey": "ollie",
-          "element": 503
+          "element": 445
         }
       },
       "kochGraphicByManager": {
@@ -1842,5 +1842,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-10-12T14:07:17.341Z"
+  "generatedAt": "2026-10-12T22:20:43.386Z"
 }

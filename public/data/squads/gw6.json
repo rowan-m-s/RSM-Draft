@@ -208,7 +208,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 411,
@@ -566,7 +566,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 2
       },
       {
         "element": 155,
@@ -590,7 +590,7 @@
         "starter": false,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 3
       },
       {
         "element": 26,
@@ -770,7 +770,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 8
       },
       {
         "element": 115,
@@ -948,7 +948,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 2
       },
       {
         "element": 564,
@@ -1184,7 +1184,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 2
       },
       {
         "element": 106,
@@ -2870,9 +2870,9 @@
       "clubShort": "NEW",
       "clubCode": 4,
       "photoCode": 538207,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 50,
-      "news": "Foot injury - 50% chance of playing",
+      "news": null,
       "newsAdded": "2026-08-25T19:00:08.004915Z"
     },
     "467": {
@@ -2966,9 +2966,9 @@
       "clubShort": "COV",
       "clubCode": 9,
       "photoCode": 210156,
-      "status": "s",
+      "status": "a",
       "chanceOfPlaying": 0,
-      "news": "Suspended until 19 Oct",
+      "news": null,
       "newsAdded": "2026-09-13T15:00:09.305127Z"
     },
     "496": {
@@ -3332,5 +3332,5 @@
       "newsAdded": null
     }
   },
-  "generatedAt": "2026-10-12T14:07:17.341Z"
+  "generatedAt": "2026-10-12T22:20:43.386Z"
 }

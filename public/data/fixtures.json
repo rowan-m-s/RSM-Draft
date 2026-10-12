@@ -6230,11 +6230,11 @@
       "kickoff": "2026-10-12T19:00:00Z",
       "home": 7,
       "away": 17,
-      "homeScore": null,
-      "awayScore": null,
-      "started": false,
+      "homeScore": 4,
+      "awayScore": 1,
+      "started": true,
       "finished": false,
-      "finishedProvisional": false,
+      "finishedProvisional": true,
       "homeDifficulty": 3,
       "awayDifficulty": 2
     },
@@ -10841,5 +10841,5 @@
       "code": 56
     }
   ],
-  "generatedAt": "2026-10-12T14:07:17.341Z"
+  "generatedAt": "2026-10-12T22:20:43.386Z"
 }
