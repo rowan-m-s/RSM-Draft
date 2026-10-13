@@ -731,204 +731,167 @@
   animation: none;
 }
 
-/* The Koch-only reveal sequence: BreakingNewsGraphic as a backdrop for two
-   quick beats, then a hard cut to the ordinary card. Koch only — Manager of
-   the Month keeps the original sting above, untouched, background and all;
-   "has anyone seen" is a mocking line and wrong for a winner.
-
-   One shared 2700ms clock, same hold-then-jump technique as the sting above
-   (two keyframe stops at the same instant minus a hair, so the browser has
-   nothing to interpolate and the change reads as a cut, not a slide):
-     0      background + scrim appear, BREAKING NEWS cuts in
-     0.06   BREAKING NEWS visible
-     0.40   cuts to the NEW / KOCH / ANNOUNCED stack
-     0.50   KOCH
-     0.60   ANNOUNCED
-     1.00   cuts to "HAAAAS ANYONE SEEN" + the Koch's name — five hard cuts
-            to a new position, size and tilt, 340ms each (2.94/s, under the
-            3/s photosensitivity cap), background held steady throughout
-     2.70   hard cut: overlay gone, the ordinary card lands
-   Reduced motion skips straight to the card, same as the sting above. */
+/* ====================================================================
+   Koch-only reveal, v2: slower, separated beats, white word stack (the
+   earlier color fix missed .koch-phase2's own CSS color — it still had
+   color: var(--color-pl-bg), inherited by NEW/KOCH/ANNOUNCED, invisible
+   on the dark backdrop the same way BREAKING NEWS and "seen" were).
+   One shared 4400ms clock:
+     0ms      BREAKING NEWS cuts in
+     60ms     visible
+     760ms    starts fading
+     900ms    gone — a clean 150ms gap, nothing on screen
+     1050ms   gap ends, NEW / KOCH / ANNOUNCED cuts in (white)
+     2250ms   starts fading
+     2400ms   gap ends, the flash beat starts — a clean 150ms gap.
+                Slot 1 (600ms, the "seen" line's own moment, and the
+                desktop sweep) then four more at 350ms each, under
+                the 3-flashes/second photosensitivity cap throughout.
+     4400ms   hard cut: overlay gone, the card lands
+   ==================================================================== */
 .koch-overlay {
   opacity: 1;
-  animation: koch-overlay-out 2700ms linear forwards;
+  animation: koch-overlay-out 4400ms linear forwards;
 }
 @keyframes koch-overlay-out {
-  0%,
-  99.8% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  } /* 2.70s: gone the instant the card cuts in */
+  0%, 99.864% { opacity: 1; }
+  100% { opacity: 0; }
 }
 .koch-breaking {
-  color: var(--color-pl-bg);
+  color: var(--color-pl-amber);
   opacity: 0;
-  animation: koch-breaking 2700ms linear forwards;
+  animation: koch-breaking 4400ms linear forwards;
 }
 @keyframes koch-breaking {
-  0%,
-  2.1% {
-    opacity: 0;
-    transform: scale(1);
-  }
-  2.222% {
-    opacity: 1;
-  } /* 0.06s: hard cut in */
-  13% {
-    opacity: 1;
-    transform: scale(1.04);
-  }
-  14.815%,
-  100% {
-    opacity: 0;
-    transform: scale(1.04);
-  } /* gone by 0.40s */
+  0%, 1.227% { opacity: 0; transform: scale(1); }
+  1.364% { opacity: 1; }
+  17.273% { opacity: 1; transform: scale(1.04); }
+  20.455%, 100% { opacity: 0; transform: scale(1.04); }
 }
 .koch-phase2 {
-  color: var(--color-pl-bg);
+  color: var(--color-pl-text);
   opacity: 0;
-  animation: koch-phase2 2700ms linear forwards;
+  animation: koch-phase2 4400ms linear forwards;
 }
 @keyframes koch-phase2 {
-  0%,
-  14.7% {
-    opacity: 0;
-  }
-  14.815%,
-  36.9% {
-    opacity: 1;
-  } /* visible 0.40s - 1.00s */
-  37.037%,
-  100% {
-    opacity: 0;
-  }
+  0%, 23.727% { opacity: 0; }
+  23.864%, 51.000% { opacity: 1; }
+  51.136%, 100% { opacity: 0; }
 }
-.koch-word {
-  opacity: 0;
-}
-.koch-word1 {
-  animation: koch-word1 2700ms linear forwards;
-}
-.koch-word2 {
-  animation: koch-word2 2700ms linear forwards;
-}
-.koch-word3 {
-  animation: koch-word3 2700ms linear forwards;
-}
-@keyframes koch-word1 {
-  0%,
-  14.7% {
-    opacity: 0;
-    transform: translateY(6px);
-  }
-  14.815%,
-  100% {
-    opacity: 1;
-    transform: none;
-  } /* 0.40s */
-}
-@keyframes koch-word2 {
-  0%,
-  18.4% {
-    opacity: 0;
-    transform: translateY(6px);
-  }
-  18.519%,
-  100% {
-    opacity: 1;
-    transform: none;
-  } /* 0.50s */
-}
-@keyframes koch-word3 {
-  0%,
-  22.1% {
-    opacity: 0;
-    transform: translateY(6px);
-  }
-  22.222%,
-  100% {
-    opacity: 1;
-    transform: none;
-  } /* 0.60s */
-}
-/* Five hard cuts to a new position, size and tilt. The background stays
-   completely still — only this text moves — which is what keeps a chaotic,
-   rapidly-cutting graphic clear of a full-screen photosensitivity trigger. */
-.koch-flash {
+.koch-word { opacity: 0; }
+.koch-word1 { animation: koch-word1 4400ms linear forwards; }
+.koch-word2 { animation: koch-word2 4400ms linear forwards; }
+.koch-word3 { animation: koch-word3 4400ms linear forwards; }
+@keyframes koch-word1 { 0%, 24.636% { opacity: 0; transform: translateY(6px); } 24.773%, 100% { opacity: 1; transform: none; } }
+@keyframes koch-word2 { 0%, 28.273% { opacity: 0; transform: translateY(6px); } 28.409%, 100% { opacity: 1; transform: none; } }
+@keyframes koch-word3 { 0%, 31.909% { opacity: 0; transform: translateY(6px); } 32.045%, 100% { opacity: 1; transform: none; } }
+
+/* The flash beat: five slots, each its own transform animation (not a
+   shared container jump) so slot 1 can be swapped for a left-to-right
+   sweep on desktop below, independent of slots 2-5's instant cuts. */
+.koch-flash { position: absolute; inset: 0; }
+.koch-flash-slot-1 {
   position: absolute;
   top: 50%;
   left: 50%;
+  max-width: 90vw;
+  text-align: center;
   opacity: 0;
-  animation: koch-flash 2700ms linear forwards;
+  animation: koch-flash-slot-1 4400ms linear forwards;
 }
-@keyframes koch-flash {
-  0%,
-  36.9% {
-    opacity: 0;
+@keyframes koch-flash-slot-1 {
+  0%, 54.409% { opacity: 0; }
+  54.545% { opacity: 1; transform: translate(-50%, -50%) translate(-5vw, -8vh) rotate(-5deg) scale(0.95); }
+  68.045% { opacity: 1; transform: translate(-50%, -50%) translate(-5vw, -8vh) rotate(-5deg) scale(0.95); }
+  68.182%, 100% { opacity: 0; }
+}
+.koch-flash-slot-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 90vw;
+  text-align: center;
+  opacity: 0;
+  animation: koch-flash-slot-2 4400ms linear forwards;
+}
+@keyframes koch-flash-slot-2 {
+  0%, 68.045% { opacity: 0; }
+  68.182% { opacity: 1; transform: translate(-50%, -50%) translate(6vw, 5vh) rotate(6deg) scale(1); }
+  76.000% { opacity: 1; transform: translate(-50%, -50%) translate(6vw, 5vh) rotate(6deg) scale(1); }
+  76.136%, 100% { opacity: 0; }
+}
+.koch-flash-slot-3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 90vw;
+  text-align: center;
+  opacity: 0;
+  animation: koch-flash-slot-3 4400ms linear forwards;
+}
+@keyframes koch-flash-slot-3 {
+  0%, 76.000% { opacity: 0; }
+  76.136% { opacity: 1; transform: translate(-50%, -50%) translate(-4vw, 9vh) rotate(-6deg) scale(0.88); }
+  83.955% { opacity: 1; transform: translate(-50%, -50%) translate(-4vw, 9vh) rotate(-6deg) scale(0.88); }
+  84.091%, 100% { opacity: 0; }
+}
+.koch-flash-slot-4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 90vw;
+  text-align: center;
+  opacity: 0;
+  animation: koch-flash-slot-4 4400ms linear forwards;
+}
+@keyframes koch-flash-slot-4 {
+  0%, 83.955% { opacity: 0; }
+  84.091% { opacity: 1; transform: translate(-50%, -50%) translate(5vw, -7vh) rotate(4deg) scale(1); }
+  91.909% { opacity: 1; transform: translate(-50%, -50%) translate(5vw, -7vh) rotate(4deg) scale(1); }
+  92.045%, 100% { opacity: 0; }
+}
+.koch-flash-slot-5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 90vw;
+  text-align: center;
+  opacity: 0;
+  animation: koch-flash-slot-5 4400ms linear forwards;
+}
+@keyframes koch-flash-slot-5 {
+  0%, 91.909% { opacity: 0; }
+  92.045% { opacity: 1; transform: translate(-50%, -50%) translate(0vw, 0vh) rotate(-3deg) scale(1.1); }
+  99.864% { opacity: 1; transform: translate(-50%, -50%) translate(0vw, 0vh) rotate(-3deg) scale(1.1); }
+  100.000%, 100% { opacity: 0; }
+}
+
+/* Desktop only: slot 1 — "HAAAAS ANYONE SEEN" itself — sweeps the full
+   width left to right instead of holding a fixed offset position. Its
+   600ms window is unchanged; only the motion differs. */
+@media (min-width: 640px) {
+  .koch-flash-slot-1 {
+    animation: koch-flash-slot-1-desktop 4400ms linear forwards;
   }
-  /* Scale and horizontal offset trade off deliberately: whenever a position
-     pushes sideways it also shrinks, and the one position that enlarges
-     (87.407%, last before the cut) stays dead centre — otherwise KELLETT,
-     upscaled and shoved toward an edge, risks clipping against the dialog's
-     own overflow-hidden at 375px. */
-  37.037% {
-    opacity: 1;
-    transform: translate(-50%, -50%) translate(-5vw, -8vh) rotate(-5deg) scale(0.95);
-  } /* 1.00s */
-  49.5% {
-    transform: translate(-50%, -50%) translate(-5vw, -8vh) rotate(-5deg) scale(0.95);
-  }
-  49.630% {
-    transform: translate(-50%, -50%) translate(6vw, 5vh) rotate(6deg) scale(1);
-  } /* 1.34s */
-  62.1% {
-    transform: translate(-50%, -50%) translate(6vw, 5vh) rotate(6deg) scale(1);
-  }
-  62.222% {
-    transform: translate(-50%, -50%) translate(-4vw, 9vh) rotate(-6deg) scale(0.88);
-  } /* 1.68s */
-  74.7% {
-    transform: translate(-50%, -50%) translate(-4vw, 9vh) rotate(-6deg) scale(0.88);
-  }
-  74.815% {
-    transform: translate(-50%, -50%) translate(5vw, -7vh) rotate(4deg) scale(1);
-  } /* 2.02s */
-  87.3% {
-    transform: translate(-50%, -50%) translate(5vw, -7vh) rotate(4deg) scale(1);
-  }
-  87.407% {
-    transform: translate(-50%, -50%) translate(0vw, 0vh) rotate(-3deg) scale(1.1);
-  } /* 2.36s: the last, biggest flash before the cut, held centred */
-  100% {
-    transform: translate(-50%, -50%) translate(0vw, 0vh) rotate(-3deg) scale(1.1);
+  @keyframes koch-flash-slot-1-desktop {
+    0%, 54.409% { opacity: 0; transform: translate(-130vw, -50%) rotate(0deg) scale(1); }
+    54.545% { opacity: 1; transform: translate(-130vw, -50%) rotate(0deg) scale(1); }
+    68.182% { opacity: 1; transform: translate(30vw, -50%) rotate(0deg) scale(1); }
+    68.182%, 100% { opacity: 0; }
   }
 }
+
 .koch-sting-card {
   opacity: 0;
-  animation: koch-sting-card 2700ms linear forwards;
+  animation: koch-sting-card 4400ms linear forwards;
 }
 @keyframes koch-sting-card {
-  0%,
-  99.8% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  } /* 2.70s: hard cut, fully assembled at once */
+  0%, 99.864% { opacity: 0; }
+  100% { opacity: 1; }
 }
-.sting-still .koch-overlay {
-  animation: none;
-  opacity: 0;
-}
-.sting-still .koch-breaking,
-.sting-still .koch-phase2,
-.sting-still .koch-word,
-.sting-still .koch-flash {
-  animation: none;
-}
-.sting-still .koch-sting-card {
-  animation: none;
-  opacity: 1;
-}
+.sting-still .koch-overlay { animation: none; opacity: 0; }
+.sting-still .koch-breaking, .sting-still .koch-phase2, .sting-still .koch-word { animation: none; }
+.sting-still .koch-flash-slot-1, .sting-still .koch-flash-slot-2, .sting-still .koch-flash-slot-3,
+.sting-still .koch-flash-slot-4, .sting-still .koch-flash-slot-5 { animation: none; opacity: 0; }
+.sting-still .koch-sting-card { animation: none; opacity: 1; }
+

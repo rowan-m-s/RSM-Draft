@@ -220,8 +220,8 @@ function Sting({ item, nameOf, onDone }: { item: RevealItem; nameOf: (k: string)
   // The Koch-only extra beat lands the card at 2.7s; the Month's original
   // sting still takes its own, much longer timeline. The ticker is shared,
   // so it is the one piece told explicitly when to start.
-  const tickerDelay = item.kind === 'koch' ? '2700ms' : undefined
-  const tickerLoopDelay = item.kind === 'koch' ? '2900ms' : undefined
+  const tickerDelay = item.kind === 'koch' ? '4400ms' : undefined
+  const tickerLoopDelay = item.kind === 'koch' ? '4600ms' : undefined
 
   return createPortal(
     <div
@@ -362,35 +362,61 @@ function MotmContent({
 }
 
 /**
- * The Koch-only sequence: BREAKING NEWS over the new backdrop, then
- * "HAAAAS ANYONE SEEN" flashing the name around the screen, then a hard cut
- * to the ordinary card. One shared 2700ms clock — see the CSS.
+ * The Koch-only sequence: BREAKING NEWS over the new backdrop, fully
+ * separate from a five-slot flash beat, then a hard cut to the ordinary
+ * card. One shared 4400ms clock — see the CSS.
  *
- * The flashing name is its own layer, not folded into the backdrop's
+ * Every flash slot is its own layer, not folded into the backdrop's
  * position, so only the text moves and the photo beneath never does: a
  * rapidly-cutting full-screen flash is a real photosensitive epilepsy
  * trigger and most people affected do not have reduced motion enabled, so
  * the backdrop stays completely still regardless.
  */
+const MOCK_LINES = ['GOOOD TEAM', 'ENCOURAGING SIGNS']
+const SEEN_LINE = 'HAAAAS ANYONE SEEN'
+
+function shuffled<T>(items: T[]): T[] {
+  const copy = [...items]
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[copy[i], copy[j]] = [copy[j], copy[i]]
+  }
+  return copy
+}
+
 function KochContent({ item, names, nameOf }: { item: RevealItem; names: string; nameOf: (k: string) => string }) {
+  // Slots 2-4: a random mix of the seen line again and the two mocking
+  // lines, re-rolled on every reveal. Slot 1 is always the seen line itself
+  // — it is what sweeps across the screen on desktop — and slot 5 is always
+  // the name alone, never sharing a slot with anything else.
+  const middleSlots = useMemo(() => shuffled([SEEN_LINE, ...MOCK_LINES]), [item.id])
+
+  const flashText = (text: string, extra: string) => (
+    <p
+      className={`display max-w-[80vw] text-nowrap text-[9vw] leading-tight tracking-tight uppercase sm:text-5xl ${text === SEEN_LINE ? 'text-pl-amber' : 'text-pl-red'} ${extra}`}
+    >
+      {text}
+    </p>
+  )
+
   return (
     <>
-      {/* Beats 1 and 2: BREAKING NEWS, then the flashing name, both over the
-          new backdrop. Gone in one hard cut the instant the card lands. */}
+      {/* Beats 1 and 2: BREAKING NEWS, then the flash beat, both over the new
+          backdrop. Gone in one hard cut the instant the card lands. */}
       <div
         className="koch-overlay absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${BREAKING_NEWS_BG})` }}
       >
         <div className="absolute inset-0 bg-pl-bg/70" aria-hidden="true" />
 
-        {/* Beat 1: the same BREAKING NEWS cut-in and word stack as the
-            Month's sting, just much faster. text-pl-bg was carried over from
-            the original, where it sits on the amber panel; here it sits on
-            the dark backdrop, so it needs the light/amber treatment instead
-            or it is nearly invisible — same fix as the "seen" line below. */}
+        {/* Beat 1a: BREAKING NEWS, its own moment — a clean gap separates it
+            from 1b below, which is itself separated from the flash beat. */}
         <div className="koch-breaking absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
-          <p className="display text-[14vw] leading-none tracking-tight text-pl-amber sm:text-[9rem]">BREAKING NEWS</p>
+          <p className="display text-[14vw] leading-none tracking-tight sm:text-[9rem]">BREAKING NEWS</p>
         </div>
+        {/* Beat 1b: white, not text-pl-bg — that near-black sits fine on the
+            Month's amber panel but is nearly invisible on this dark photo,
+            which is exactly the bug this whole sequence started from. */}
         <div className="koch-phase2 absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
           <p className="koch-word koch-word1 display text-[13vw] leading-[1.05] tracking-tight sm:text-[6.5rem]">
             NEW
@@ -403,17 +429,28 @@ function KochContent({ item, names, nameOf }: { item: RevealItem; names: string;
           </p>
         </div>
 
-        {/* Beat 2: "has anyone seen" flashes around the screen, the name
-            stacked large beneath it — never run across one line, since
-            KELLETT and DJ cannot share a comfortable size at 375px. */}
-        <div className="koch-flash max-w-[90vw] text-center" aria-hidden="true">
-          <p className="display max-w-[80vw] text-[9vw] leading-tight tracking-tight text-pl-amber sm:text-5xl">
-            HAAAAS ANYONE SEEN
-          </p>
-          {/* Never wraps, whatever the name: a mid-word break reads as broken,
-              not chaotic. The flash positions below keep clear of the edges
-              instead, same reasoning as the single-line ban in the brief. */}
-          <p className="display mt-1 text-nowrap text-[16vw] leading-[0.95] tracking-tight text-pl-amber uppercase sm:text-8xl">
+        {/* Beat 2: five slots. Slot 1 is always "has anyone seen" — amber,
+            and on desktop it sweeps the full width left to right rather than
+            holding a position (see the CSS media query). Slots 2-4 mix that
+            line with the two mocking ones, red, reshuffled every reveal.
+            Slot 5 is always the name alone, amber, biggest, dead centre —
+            introduced distinctly after everything else, never sharing a
+            slot. Never one line: KELLETT and DJ cannot share a comfortable
+            size at 375px run together. */}
+        <div className="koch-flash-slot-1" aria-hidden="true">
+          {flashText(SEEN_LINE, '')}
+        </div>
+        <div className="koch-flash-slot-2" aria-hidden="true">
+          {flashText(middleSlots[0], '')}
+        </div>
+        <div className="koch-flash-slot-3" aria-hidden="true">
+          {flashText(middleSlots[1], '')}
+        </div>
+        <div className="koch-flash-slot-4" aria-hidden="true">
+          {flashText(middleSlots[2], '')}
+        </div>
+        <div className="koch-flash-slot-5 text-center" aria-hidden="true">
+          <p className="display text-nowrap text-[16vw] leading-[0.95] tracking-tight text-pl-amber uppercase sm:text-8xl">
             {names}
           </p>
         </div>
