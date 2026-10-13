@@ -384,9 +384,12 @@ function KochContent({ item, names, nameOf }: { item: RevealItem; names: string;
         <div className="absolute inset-0 bg-pl-bg/70" aria-hidden="true" />
 
         {/* Beat 1: the same BREAKING NEWS cut-in and word stack as the
-            Month's sting, just much faster. */}
+            Month's sting, just much faster. text-pl-bg was carried over from
+            the original, where it sits on the amber panel; here it sits on
+            the dark backdrop, so it needs the light/amber treatment instead
+            or it is nearly invisible — same fix as the "seen" line below. */}
         <div className="koch-breaking absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
-          <p className="display text-[14vw] leading-none tracking-tight text-pl-bg sm:text-[9rem]">BREAKING NEWS</p>
+          <p className="display text-[14vw] leading-none tracking-tight text-pl-amber sm:text-[9rem]">BREAKING NEWS</p>
         </div>
         <div className="koch-phase2 absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
           <p className="koch-word koch-word1 display text-[13vw] leading-[1.05] tracking-tight sm:text-[6.5rem]">
@@ -404,7 +407,7 @@ function KochContent({ item, names, nameOf }: { item: RevealItem; names: string;
             stacked large beneath it — never run across one line, since
             KELLETT and DJ cannot share a comfortable size at 375px. */}
         <div className="koch-flash max-w-[90vw] text-center" aria-hidden="true">
-          <p className="display max-w-[80vw] text-[7vw] leading-tight tracking-tight text-pl-bg sm:text-4xl">
+          <p className="display max-w-[80vw] text-[9vw] leading-tight tracking-tight text-pl-amber sm:text-5xl">
             HAAAAS ANYONE SEEN
           </p>
           {/* Never wraps, whatever the name: a mid-word break reads as broken,
