@@ -4,8 +4,10 @@
   "isPreview": false,
   "deadlineUtc": "2026-10-10T10:00:00Z",
   "started": true,
-  "finished": false,
-  "dataChecked": false,
+  "finished": true,
+  "dataChecked": true,
+  "locallyFinalised": true,
+  "confirmed": true,
   "squads": {
     "rushy": [
       {
@@ -17,12 +19,12 @@
         "points": 2
       },
       {
-        "element": 11,
+        "element": 151,
         "position": 2,
         "starter": true,
-        "subbedOn": false,
+        "subbedOn": true,
         "subbedOff": false,
-        "points": 0
+        "points": 2
       },
       {
         "element": 469,
@@ -41,12 +43,12 @@
         "points": 2
       },
       {
-        "element": 499,
+        "element": 371,
         "position": 5,
         "starter": true,
-        "subbedOn": false,
+        "subbedOn": true,
         "subbedOff": false,
-        "points": 0
+        "points": -1
       },
       {
         "element": 40,
@@ -57,12 +59,12 @@
         "points": 9
       },
       {
-        "element": 14,
+        "element": 366,
         "position": 7,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 2
       },
       {
         "element": 53,
@@ -73,28 +75,28 @@
         "points": 5
       },
       {
-        "element": 366,
+        "element": 646,
         "position": 9,
         "starter": true,
-        "subbedOn": false,
+        "subbedOn": true,
         "subbedOff": false,
-        "points": 2
+        "points": 1
       },
       {
-        "element": 222,
+        "element": 25,
         "position": 10,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 5
+        "points": 1
       },
       {
-        "element": 25,
+        "element": 222,
         "position": 11,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 1
+        "points": 5
       },
       {
         "element": 467,
@@ -105,28 +107,28 @@
         "points": 2
       },
       {
-        "element": 151,
+        "element": 499,
         "position": 13,
         "starter": false,
         "subbedOn": false,
-        "subbedOff": false,
-        "points": 2
+        "subbedOff": true,
+        "points": 0
       },
       {
-        "element": 371,
+        "element": 11,
         "position": 14,
         "starter": false,
         "subbedOn": false,
-        "subbedOff": false,
-        "points": -1
+        "subbedOff": true,
+        "points": 0
       },
       {
-        "element": 646,
+        "element": 14,
         "position": 15,
         "starter": false,
         "subbedOn": false,
-        "subbedOff": false,
-        "points": 1
+        "subbedOff": true,
+        "points": 0
       }
     ],
     "kellett": [
@@ -269,28 +271,28 @@
         "points": 2
       },
       {
-        "element": 640,
+        "element": 504,
         "position": 3,
+        "starter": true,
+        "subbedOn": false,
+        "subbedOff": false,
+        "points": 8
+      },
+      {
+        "element": 640,
+        "position": 4,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
         "points": 3
       },
       {
-        "element": 254,
-        "position": 4,
-        "starter": true,
-        "subbedOn": false,
-        "subbedOff": false,
-        "points": 0
-      },
-      {
-        "element": 504,
+        "element": 237,
         "position": 5,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 8
+        "points": 1
       },
       {
         "element": 481,
@@ -301,7 +303,7 @@
         "points": 6
       },
       {
-        "element": 237,
+        "element": 338,
         "position": 7,
         "starter": true,
         "subbedOn": false,
@@ -317,15 +319,15 @@
         "points": 5
       },
       {
-        "element": 338,
+        "element": 346,
         "position": 9,
         "starter": true,
-        "subbedOn": false,
+        "subbedOn": true,
         "subbedOff": false,
-        "points": 1
+        "points": 2
       },
       {
-        "element": 136,
+        "element": 224,
         "position": 10,
         "starter": true,
         "subbedOn": false,
@@ -333,7 +335,7 @@
         "points": 1
       },
       {
-        "element": 224,
+        "element": 136,
         "position": 11,
         "starter": true,
         "subbedOn": false,
@@ -349,12 +351,12 @@
         "points": 3
       },
       {
-        "element": 346,
+        "element": 254,
         "position": 13,
         "starter": false,
         "subbedOn": false,
-        "subbedOff": false,
-        "points": 2
+        "subbedOff": true,
+        "points": 0
       },
       {
         "element": 69,
@@ -1123,8 +1125,16 @@
         "points": 1
       },
       {
-        "element": 201,
+        "element": 389,
         "position": 3,
+        "starter": true,
+        "subbedOn": true,
+        "subbedOff": false,
+        "points": 6
+      },
+      {
+        "element": 201,
+        "position": 4,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
@@ -1132,19 +1142,11 @@
       },
       {
         "element": 257,
-        "position": 4,
-        "starter": true,
-        "subbedOn": false,
-        "subbedOff": false,
-        "points": 2
-      },
-      {
-        "element": 142,
         "position": 5,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 2
       },
       {
         "element": 397,
@@ -1155,12 +1157,12 @@
         "points": 3
       },
       {
-        "element": 628,
+        "element": 264,
         "position": 7,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 2
+        "points": 3
       },
       {
         "element": 94,
@@ -1171,16 +1173,8 @@
         "points": 1
       },
       {
-        "element": 264,
+        "element": 628,
         "position": 9,
-        "starter": true,
-        "subbedOn": false,
-        "subbedOff": false,
-        "points": 3
-      },
-      {
-        "element": 649,
-        "position": 10,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
@@ -1188,11 +1182,19 @@
       },
       {
         "element": 106,
-        "position": 11,
+        "position": 10,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
         "points": 4
+      },
+      {
+        "element": 649,
+        "position": 11,
+        "starter": true,
+        "subbedOn": false,
+        "subbedOff": false,
+        "points": 2
       },
       {
         "element": 199,
@@ -1211,12 +1213,12 @@
         "points": 0
       },
       {
-        "element": 389,
+        "element": 142,
         "position": 14,
         "starter": false,
         "subbedOn": false,
-        "subbedOff": false,
-        "points": 6
+        "subbedOff": true,
+        "points": 0
       },
       {
         "element": 439,
@@ -1237,20 +1239,20 @@
         "points": 3
       },
       {
-        "element": 258,
+        "element": 362,
         "position": 2,
         "starter": true,
-        "subbedOn": false,
+        "subbedOn": true,
         "subbedOff": false,
-        "points": 0
+        "points": 3
       },
       {
-        "element": 233,
+        "element": 503,
         "position": 3,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 445,
@@ -1261,44 +1263,44 @@
         "points": 0
       },
       {
-        "element": 503,
-        "position": 5,
-        "starter": true,
-        "subbedOn": false,
-        "subbedOff": false,
-        "points": 1
-      },
-      {
-        "element": 268,
-        "position": 6,
-        "starter": true,
-        "subbedOn": false,
-        "subbedOff": false,
-        "points": 2
-      },
-      {
         "element": 427,
-        "position": 7,
+        "position": 5,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
         "points": 8
       },
       {
-        "element": 554,
-        "position": 8,
+        "element": 608,
+        "position": 6,
         "starter": true,
-        "subbedOn": false,
+        "subbedOn": true,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 238,
-        "position": 9,
+        "position": 7,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
         "points": 2
+      },
+      {
+        "element": 268,
+        "position": 8,
+        "starter": true,
+        "subbedOn": false,
+        "subbedOff": false,
+        "points": 2
+      },
+      {
+        "element": 526,
+        "position": 9,
+        "starter": true,
+        "subbedOn": true,
+        "subbedOff": false,
+        "points": 7
       },
       {
         "element": 316,
@@ -1325,28 +1327,28 @@
         "points": 2
       },
       {
-        "element": 362,
+        "element": 258,
         "position": 13,
         "starter": false,
         "subbedOn": false,
-        "subbedOff": false,
-        "points": 3
+        "subbedOff": true,
+        "points": 0
       },
       {
-        "element": 526,
+        "element": 233,
         "position": 14,
         "starter": false,
         "subbedOn": false,
-        "subbedOff": false,
-        "points": 7
+        "subbedOff": true,
+        "points": 0
       },
       {
-        "element": 608,
+        "element": 554,
         "position": 15,
         "starter": false,
         "subbedOn": false,
-        "subbedOff": false,
-        "points": 1
+        "subbedOff": true,
+        "points": 0
       }
     ]
   },
@@ -3112,7 +3114,7 @@
       "photoCode": 439509,
       "status": "i",
       "chanceOfPlaying": 0,
-      "news": "Hamstring injury - Expected back 24 Oct",
+      "news": "Hamstring injury - Expected back 1 Nov",
       "newsAdded": "2026-10-02T15:00:11.091226Z"
     },
     "555": {
@@ -3332,5 +3334,5 @@
       "newsAdded": null
     }
   },
-  "generatedAt": "2026-10-13T04:57:14.170Z"
+  "generatedAt": "2026-10-13T09:51:16.716Z"
 }

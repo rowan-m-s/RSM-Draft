@@ -6,6 +6,8 @@
   "started": false,
   "finished": false,
   "dataChecked": false,
+  "locallyFinalised": false,
+  "confirmed": false,
   "squads": {
     "rushy": [
       {
@@ -17,7 +19,7 @@
         "points": 0
       },
       {
-        "element": 11,
+        "element": 151,
         "starter": true,
         "position": 2,
         "subbedOn": false,
@@ -41,7 +43,7 @@
         "points": 0
       },
       {
-        "element": 499,
+        "element": 371,
         "starter": true,
         "position": 5,
         "subbedOn": false,
@@ -57,7 +59,7 @@
         "points": 0
       },
       {
-        "element": 14,
+        "element": 366,
         "starter": true,
         "position": 7,
         "subbedOn": false,
@@ -73,7 +75,7 @@
         "points": 0
       },
       {
-        "element": 366,
+        "element": 646,
         "starter": true,
         "position": 9,
         "subbedOn": false,
@@ -81,7 +83,7 @@
         "points": 0
       },
       {
-        "element": 222,
+        "element": 25,
         "starter": true,
         "position": 10,
         "subbedOn": false,
@@ -89,7 +91,7 @@
         "points": 0
       },
       {
-        "element": 25,
+        "element": 222,
         "starter": true,
         "position": 11,
         "subbedOn": false,
@@ -105,7 +107,7 @@
         "points": 0
       },
       {
-        "element": 151,
+        "element": 499,
         "starter": false,
         "position": 13,
         "subbedOn": false,
@@ -113,7 +115,7 @@
         "points": 0
       },
       {
-        "element": 371,
+        "element": 11,
         "starter": false,
         "position": 14,
         "subbedOn": false,
@@ -121,7 +123,7 @@
         "points": 0
       },
       {
-        "element": 646,
+        "element": 14,
         "starter": false,
         "position": 15,
         "subbedOn": false,
@@ -269,7 +271,7 @@
         "points": 0
       },
       {
-        "element": 640,
+        "element": 504,
         "starter": true,
         "position": 3,
         "subbedOn": false,
@@ -277,7 +279,7 @@
         "points": 0
       },
       {
-        "element": 254,
+        "element": 640,
         "starter": true,
         "position": 4,
         "subbedOn": false,
@@ -285,7 +287,7 @@
         "points": 0
       },
       {
-        "element": 504,
+        "element": 237,
         "starter": true,
         "position": 5,
         "subbedOn": false,
@@ -301,7 +303,7 @@
         "points": 0
       },
       {
-        "element": 237,
+        "element": 338,
         "starter": true,
         "position": 7,
         "subbedOn": false,
@@ -317,7 +319,7 @@
         "points": 0
       },
       {
-        "element": 338,
+        "element": 346,
         "starter": true,
         "position": 9,
         "subbedOn": false,
@@ -325,7 +327,7 @@
         "points": 0
       },
       {
-        "element": 136,
+        "element": 224,
         "starter": true,
         "position": 10,
         "subbedOn": false,
@@ -333,7 +335,7 @@
         "points": 0
       },
       {
-        "element": 224,
+        "element": 136,
         "starter": true,
         "position": 11,
         "subbedOn": false,
@@ -349,7 +351,7 @@
         "points": 0
       },
       {
-        "element": 346,
+        "element": 254,
         "starter": false,
         "position": 13,
         "subbedOn": false,
@@ -1123,7 +1125,7 @@
         "points": 0
       },
       {
-        "element": 201,
+        "element": 389,
         "starter": true,
         "position": 3,
         "subbedOn": false,
@@ -1131,7 +1133,7 @@
         "points": 0
       },
       {
-        "element": 257,
+        "element": 201,
         "starter": true,
         "position": 4,
         "subbedOn": false,
@@ -1139,7 +1141,7 @@
         "points": 0
       },
       {
-        "element": 142,
+        "element": 257,
         "starter": true,
         "position": 5,
         "subbedOn": false,
@@ -1155,7 +1157,7 @@
         "points": 0
       },
       {
-        "element": 628,
+        "element": 264,
         "starter": true,
         "position": 7,
         "subbedOn": false,
@@ -1171,7 +1173,7 @@
         "points": 0
       },
       {
-        "element": 264,
+        "element": 628,
         "starter": true,
         "position": 9,
         "subbedOn": false,
@@ -1179,7 +1181,7 @@
         "points": 0
       },
       {
-        "element": 649,
+        "element": 106,
         "starter": true,
         "position": 10,
         "subbedOn": false,
@@ -1187,7 +1189,7 @@
         "points": 0
       },
       {
-        "element": 106,
+        "element": 649,
         "starter": true,
         "position": 11,
         "subbedOn": false,
@@ -1211,7 +1213,7 @@
         "points": 0
       },
       {
-        "element": 389,
+        "element": 142,
         "starter": false,
         "position": 14,
         "subbedOn": false,
@@ -1237,7 +1239,7 @@
         "points": 0
       },
       {
-        "element": 258,
+        "element": 362,
         "starter": true,
         "position": 2,
         "subbedOn": false,
@@ -1245,7 +1247,7 @@
         "points": 0
       },
       {
-        "element": 233,
+        "element": 503,
         "starter": true,
         "position": 3,
         "subbedOn": false,
@@ -1261,7 +1263,7 @@
         "points": 0
       },
       {
-        "element": 503,
+        "element": 427,
         "starter": true,
         "position": 5,
         "subbedOn": false,
@@ -1269,7 +1271,7 @@
         "points": 0
       },
       {
-        "element": 268,
+        "element": 608,
         "starter": true,
         "position": 6,
         "subbedOn": false,
@@ -1277,7 +1279,7 @@
         "points": 0
       },
       {
-        "element": 427,
+        "element": 238,
         "starter": true,
         "position": 7,
         "subbedOn": false,
@@ -1285,7 +1287,7 @@
         "points": 0
       },
       {
-        "element": 554,
+        "element": 268,
         "starter": true,
         "position": 8,
         "subbedOn": false,
@@ -1293,7 +1295,7 @@
         "points": 0
       },
       {
-        "element": 238,
+        "element": 526,
         "starter": true,
         "position": 9,
         "subbedOn": false,
@@ -1325,7 +1327,7 @@
         "points": 0
       },
       {
-        "element": 362,
+        "element": 258,
         "starter": false,
         "position": 13,
         "subbedOn": false,
@@ -1333,7 +1335,7 @@
         "points": 0
       },
       {
-        "element": 526,
+        "element": 233,
         "starter": false,
         "position": 14,
         "subbedOn": false,
@@ -1341,7 +1343,7 @@
         "points": 0
       },
       {
-        "element": 608,
+        "element": 554,
         "starter": false,
         "position": 15,
         "subbedOn": false,
@@ -3112,7 +3114,7 @@
       "photoCode": 439509,
       "status": "i",
       "chanceOfPlaying": 0,
-      "news": "Hamstring injury - Expected back 24 Oct",
+      "news": "Hamstring injury - Expected back 1 Nov",
       "newsAdded": "2026-10-02T15:00:11.091226Z"
     },
     "555": {
@@ -3332,5 +3334,5 @@
       "newsAdded": null
     }
   },
-  "generatedAt": "2026-10-13T04:57:14.170Z"
+  "generatedAt": "2026-10-13T09:51:16.716Z"
 }
