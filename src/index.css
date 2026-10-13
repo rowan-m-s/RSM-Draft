@@ -731,17 +731,13 @@
   animation: none;
 }
 /* ====================================================================
-   Koch-only reveal, v6. NEW/KOCH/ANNOUNCED holds 450ms a word now (was
-   400), a small nudge, not a rebuild — everything after it shifts the
-   same 150ms. "Seen" alone grows continuously while it's on screen
-   (1 -> 1.15) rather than sitting static, which read as stale; the box
-   is 80vw, not 90-92, because a scaled (not relaid-out) element grows
-   outward from its painted centre and needs real margin for that or it
-   clips at the peak. Every keyframe stop below states transform
-   explicitly, including ones where it does not change from the previous
-   stop: omitting it is what caused the transform-drifts-toward-"none"
-   bug found last round — Chromium does not just hold the prior value
-   through a gap like that.
+   Koch-only reveal, v7. "HAAAAS ANYONE SEEN" is never removed or
+   replaced any more — no crossfade, no second copy of the line. It wipes
+   in once, keeps growing the whole time it is on screen, and the name
+   reveals underneath it, in the same spot, joining it rather than
+   swapping it out. Floaters now finish before the name starts revealing
+   (by 4550ms) rather than running into it — they used to
+   overlap the name on most plays, which was the point of this pass.
    ==================================================================== */
 .koch-overlay {
   opacity: 1;
@@ -780,6 +776,12 @@
 @keyframes koch-word2 { 0%, 25.538% { opacity: 0; transform: translateY(6px); } 25.641% { opacity: 1; transform: none; } 33.231%, 100% { opacity: 0; transform: none; } }
 @keyframes koch-word3 { 0%, 33.231% { opacity: 0; transform: translateY(6px); } 33.333% { opacity: 1; transform: none; } 40.923%, 100% { opacity: 0; transform: none; } }
 
+/* The one persistent block: "seen" wipes in, keeps growing the whole
+   time (1 -> 1.15) right through to the card's fade-in — it is never
+   faded out on its own, .koch-overlay handles that for the whole group
+   at once. 80vw, not 90-92: a scaled element grows outward from its
+   painted centre without relaying out, so it needs real margin of its
+   own at the peak or it clips. */
 .koch-flash-seen-alone {
   position: absolute; top: 50%; left: 50%; width: 80vw; text-align: center;
   opacity: 0;
@@ -788,18 +790,12 @@
 @keyframes koch-flash-seen-alone {
   0%, 43.487% { opacity: 0; transform: translate(-50%, -50%) scale(1); }
   43.590% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
-  77.778% { opacity: 1; transform: translate(-50%, -50%) scale(1.12); }
-  82.906%, 100% { opacity: 0; transform: translate(-50%, -50%) scale(1.15); }
+  93.162% { opacity: 1; transform: translate(-50%, -50%) scale(1.15); }
+  100% { opacity: 1; transform: translate(-50%, -50%) scale(1.15); }
 }
-/* The whole line is deliberately drawn out, so it should look drawn out:
-   one continuous 600ms left-to-right wipe across "HAAAAS ANYONE SEEN" in
-   full, not an instant cut like everything else here. Splitting the wipe
-   onto "HAAAAS" alone and cutting "ANYONE SEEN" in separately read as two
-   different things stitched together, which is exactly what looked
-   awkward — one wipe across the full line is the fix. Only this first,
-   suspenseful appearance gets the treatment; the smaller repeat of the
-   line in the finale below does not, since it is not introducing
-   anything new a second time. */
+/* One continuous 600ms wipe across the whole line — splitting it onto
+   "HAAAAS" alone and cutting "ANYONE SEEN" in separately read as two
+   different things stitched together. */
 .koch-haaas {
   display: inline-block;
   clip-path: inset(0 100% 0 0);
@@ -809,16 +805,16 @@
   0%, 43.487% { clip-path: inset(0 100% 0 0); }
   53.846%, 100% { clip-path: inset(0 0 0 0); }
 }
-.koch-flash-finale {
-  position: absolute; top: 50%; left: 50%; width: 90vw; text-align: center;
-  opacity: 0;
-  animation: koch-flash-finale 5850ms linear forwards;
+/* The name's own wipe, underneath "seen", once it has held alone for a
+   moment — joining the line rather than replacing it. */
+.koch-name-reveal {
+  display: inline-block;
+  clip-path: inset(0 100% 0 0);
+  animation: koch-name-reveal 5850ms linear forwards;
 }
-@keyframes koch-flash-finale {
-  0%, 77.778% { opacity: 0; transform: translate(-50%, -50%) scale(0.97); }
-  82.906% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
-  93.162% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
-  100.000%, 100% { opacity: 0; transform: translate(-50%, -50%) scale(1); }
+@keyframes koch-name-reveal {
+  0%, 77.675% { clip-path: inset(0 100% 0 0); }
+  86.325%, 100% { clip-path: inset(0 0 0 0); }
 }
 .koch-sting-card {
   opacity: 0;
@@ -828,8 +824,6 @@
   0%, 93.162% { opacity: 0; }
   100% { opacity: 1; }
 }
-
-.koch-floater-wrap { position: absolute; inset: 0; }
 .koch-floater-1 {
   position: absolute; top: 50%; left: 50%; max-width: 44vw; text-align: center;
   opacity: 0;
@@ -838,8 +832,8 @@
 @keyframes koch-floater-1 {
   0%, 43.487% { opacity: 0; }
   43.590% { opacity: 1; transform: translate(-50%, -50%) translate(-18vw, -28vh) rotate(-8deg) scale(0.9); }
-  53.402% { opacity: 1; transform: translate(-50%, -50%) translate(-18vw, -28vh) rotate(-8deg) scale(0.9); }
-  53.504%, 100% { opacity: 0; transform: translate(-50%, -50%) translate(-18vw, -28vh) rotate(-8deg) scale(0.9); }
+  50.325% { opacity: 1; transform: translate(-50%, -50%) translate(-18vw, -28vh) rotate(-8deg) scale(0.9); }
+  50.427%, 100% { opacity: 0; transform: translate(-50%, -50%) translate(-18vw, -28vh) rotate(-8deg) scale(0.9); }
 }
 .koch-floater-2 {
   position: absolute; top: 50%; left: 50%; max-width: 44vw; text-align: center;
@@ -847,10 +841,10 @@
   animation: koch-floater-2 5850ms linear forwards;
 }
 @keyframes koch-floater-2 {
-  0%, 53.402% { opacity: 0; }
-  53.504% { opacity: 1; transform: translate(-50%, -50%) translate(18vw, -18vh) rotate(7deg) scale(0.85); }
-  63.316% { opacity: 1; transform: translate(-50%, -50%) translate(18vw, -18vh) rotate(7deg) scale(0.85); }
-  63.419%, 100% { opacity: 0; transform: translate(-50%, -50%) translate(18vw, -18vh) rotate(7deg) scale(0.85); }
+  0%, 50.325% { opacity: 0; }
+  50.427% { opacity: 1; transform: translate(-50%, -50%) translate(18vw, -18vh) rotate(7deg) scale(0.85); }
+  57.162% { opacity: 1; transform: translate(-50%, -50%) translate(18vw, -18vh) rotate(7deg) scale(0.85); }
+  57.265%, 100% { opacity: 0; transform: translate(-50%, -50%) translate(18vw, -18vh) rotate(7deg) scale(0.85); }
 }
 .koch-floater-3 {
   position: absolute; top: 50%; left: 50%; max-width: 44vw; text-align: center;
@@ -858,10 +852,10 @@
   animation: koch-floater-3 5850ms linear forwards;
 }
 @keyframes koch-floater-3 {
-  0%, 63.316% { opacity: 0; }
-  63.419% { opacity: 1; transform: translate(-50%, -50%) translate(-18vw, 24vh) rotate(-6deg) scale(0.95); }
-  73.231% { opacity: 1; transform: translate(-50%, -50%) translate(-18vw, 24vh) rotate(-6deg) scale(0.95); }
-  73.333%, 100% { opacity: 0; transform: translate(-50%, -50%) translate(-18vw, 24vh) rotate(-6deg) scale(0.95); }
+  0%, 57.162% { opacity: 0; }
+  57.265% { opacity: 1; transform: translate(-50%, -50%) translate(-18vw, 24vh) rotate(-6deg) scale(0.95); }
+  64.000% { opacity: 1; transform: translate(-50%, -50%) translate(-18vw, 24vh) rotate(-6deg) scale(0.95); }
+  64.103%, 100% { opacity: 0; transform: translate(-50%, -50%) translate(-18vw, 24vh) rotate(-6deg) scale(0.95); }
 }
 .koch-floater-4 {
   position: absolute; top: 50%; left: 50%; max-width: 44vw; text-align: center;
@@ -869,10 +863,10 @@
   animation: koch-floater-4 5850ms linear forwards;
 }
 @keyframes koch-floater-4 {
-  0%, 73.231% { opacity: 0; }
-  73.333% { opacity: 1; transform: translate(-50%, -50%) translate(18vw, 20vh) rotate(9deg) scale(0.88); }
-  83.145% { opacity: 1; transform: translate(-50%, -50%) translate(18vw, 20vh) rotate(9deg) scale(0.88); }
-  83.248%, 100% { opacity: 0; transform: translate(-50%, -50%) translate(18vw, 20vh) rotate(9deg) scale(0.88); }
+  0%, 64.000% { opacity: 0; }
+  64.103% { opacity: 1; transform: translate(-50%, -50%) translate(18vw, 20vh) rotate(9deg) scale(0.88); }
+  70.838% { opacity: 1; transform: translate(-50%, -50%) translate(18vw, 20vh) rotate(9deg) scale(0.88); }
+  70.940%, 100% { opacity: 0; transform: translate(-50%, -50%) translate(18vw, 20vh) rotate(9deg) scale(0.88); }
 }
 .koch-floater-5 {
   position: absolute; top: 50%; left: 50%; max-width: 44vw; text-align: center;
@@ -880,16 +874,17 @@
   animation: koch-floater-5 5850ms linear forwards;
 }
 @keyframes koch-floater-5 {
-  0%, 83.145% { opacity: 0; }
-  83.248% { opacity: 1; transform: translate(-50%, -50%) translate(-18vw, 4vh) rotate(-5deg) scale(0.82); }
-  93.060% { opacity: 1; transform: translate(-50%, -50%) translate(-18vw, 4vh) rotate(-5deg) scale(0.82); }
-  93.162%, 100% { opacity: 0; transform: translate(-50%, -50%) translate(-18vw, 4vh) rotate(-5deg) scale(0.82); }
+  0%, 70.838% { opacity: 0; }
+  70.940% { opacity: 1; transform: translate(-50%, -50%) translate(-20vw, -34vh) rotate(-5deg) scale(0.82); }
+  77.675% { opacity: 1; transform: translate(-50%, -50%) translate(-20vw, -34vh) rotate(-5deg) scale(0.82); }
+  77.778%, 100% { opacity: 0; transform: translate(-50%, -50%) translate(-20vw, -34vh) rotate(-5deg) scale(0.82); }
 }
 
 .sting-still .koch-overlay { animation: none; opacity: 0; }
 .sting-still .koch-breaking, .sting-still .koch-phase2, .sting-still .koch-word,
-.sting-still .koch-flash-seen-alone, .sting-still .koch-flash-finale { animation: none; }
+.sting-still .koch-flash-seen-alone { animation: none; }
 .sting-still .koch-haaas { animation: none; clip-path: inset(0 0 0 0); }
+.sting-still .koch-name-reveal { animation: none; clip-path: inset(0 0 0 0); }
 .sting-still .koch-floater-1 { animation: none; }
 .sting-still .koch-floater-2 { animation: none; }
 .sting-still .koch-floater-3 { animation: none; }

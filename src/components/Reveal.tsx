@@ -438,10 +438,11 @@ function KochContent({ item, names, nameOf }: { item: RevealItem; names: string;
           </div>
         ))}
 
-        {/* The centred narrative's final beat: "HAAAAS ANYONE SEEN" alone,
-            bigger and held a full second for suspense, then a real
-            crossfade — not a cut — into "seen" shown together with the
-            name, which is never introduced any other way. */}
+        {/* The centred narrative's final beat: "HAAAAS ANYONE SEEN" wipes
+            in, bigger, and keeps growing the whole time it is on screen —
+            it is never removed or replaced. The name reveals underneath it
+            in the same place, its own wipe, once "seen" has held alone for
+            a moment — joining it, not swapping it out from under it. */}
         {/* Allowed to wrap, deliberately — two words to a line still reads
             as bold and dramatic at 375px; it is only a single word like the
             name that breaks awkwardly mid-word, which is the thing nowrap
@@ -450,12 +451,7 @@ function KochContent({ item, names, nameOf }: { item: RevealItem; names: string;
           <p className="koch-haaas display max-w-[80vw] text-[10vw] leading-[1.05] tracking-tight text-pl-amber uppercase sm:text-6xl">
             {SEEN_LINE}
           </p>
-        </div>
-        <div className="koch-flash-finale text-center" aria-hidden="true">
-          <p className="display max-w-[80vw] text-[6vw] leading-tight tracking-tight text-pl-amber uppercase sm:text-4xl">
-            {SEEN_LINE}
-          </p>
-          <p className="display mt-1 text-nowrap text-[16vw] leading-[0.95] tracking-tight text-pl-amber uppercase sm:text-8xl">
+          <p className="koch-name-reveal display mt-2 max-w-[85vw] text-nowrap text-[14vw] leading-[0.95] tracking-tight text-pl-amber uppercase sm:text-7xl">
             {names}?
           </p>
         </div>
