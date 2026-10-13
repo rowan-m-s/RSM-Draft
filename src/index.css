@@ -817,16 +817,20 @@
   0%, 91.489% { opacity: 0; }
   100% { opacity: 1; }
 }
+/* Floaters start only once NEW / KOCH / ANNOUNCED has fully passed (51.064%
+   = 2400ms = the same instant the centred "seen" beat begins), not
+   overlapping it — five slots across the remaining window, not six, to
+   stay under the 3-flashes/second cap at the shorter span. */
 .koch-floater-1 {
   position: absolute; top: 50%; left: 50%; max-width: 44vw; text-align: center;
   opacity: 0;
   animation: koch-floater-1 4700ms linear forwards;
 }
 @keyframes koch-floater-1 {
-  0%, 19.021% { opacity: 0; }
-  19.149% { opacity: 1; transform: translate(-50%, -50%) translate(-18vw, -28vh) rotate(-8deg) scale(0.9); }
-  31.078% { opacity: 1; transform: translate(-50%, -50%) translate(-18vw, -28vh) rotate(-8deg) scale(0.9); }
-  31.206%, 100% { opacity: 0; }
+  0%, 50.936% { opacity: 0; }
+  51.064% { opacity: 1; transform: translate(-50%, -50%) translate(-18vw, -28vh) rotate(-8deg) scale(0.9); }
+  59.021% { opacity: 1; transform: translate(-50%, -50%) translate(-18vw, -28vh) rotate(-8deg) scale(0.9); }
+  59.149%, 100% { opacity: 0; }
 }
 .koch-floater-2 {
   position: absolute; top: 50%; left: 50%; max-width: 44vw; text-align: center;
@@ -834,10 +838,10 @@
   animation: koch-floater-2 4700ms linear forwards;
 }
 @keyframes koch-floater-2 {
-  0%, 31.078% { opacity: 0; }
-  31.206% { opacity: 1; transform: translate(-50%, -50%) translate(18vw, -18vh) rotate(7deg) scale(0.85); }
-  43.135% { opacity: 1; transform: translate(-50%, -50%) translate(18vw, -18vh) rotate(7deg) scale(0.85); }
-  43.262%, 100% { opacity: 0; }
+  0%, 59.021% { opacity: 0; }
+  59.149% { opacity: 1; transform: translate(-50%, -50%) translate(18vw, -18vh) rotate(7deg) scale(0.85); }
+  67.106% { opacity: 1; transform: translate(-50%, -50%) translate(18vw, -18vh) rotate(7deg) scale(0.85); }
+  67.234%, 100% { opacity: 0; }
 }
 .koch-floater-3 {
   position: absolute; top: 50%; left: 50%; max-width: 44vw; text-align: center;
@@ -845,10 +849,10 @@
   animation: koch-floater-3 4700ms linear forwards;
 }
 @keyframes koch-floater-3 {
-  0%, 43.135% { opacity: 0; }
-  43.262% { opacity: 1; transform: translate(-50%, -50%) translate(-18vw, 24vh) rotate(-6deg) scale(0.95); }
-  55.191% { opacity: 1; transform: translate(-50%, -50%) translate(-18vw, 24vh) rotate(-6deg) scale(0.95); }
-  55.319%, 100% { opacity: 0; }
+  0%, 67.106% { opacity: 0; }
+  67.234% { opacity: 1; transform: translate(-50%, -50%) translate(-18vw, 24vh) rotate(-6deg) scale(0.95); }
+  75.191% { opacity: 1; transform: translate(-50%, -50%) translate(-18vw, 24vh) rotate(-6deg) scale(0.95); }
+  75.319%, 100% { opacity: 0; }
 }
 .koch-floater-4 {
   position: absolute; top: 50%; left: 50%; max-width: 44vw; text-align: center;
@@ -856,10 +860,10 @@
   animation: koch-floater-4 4700ms linear forwards;
 }
 @keyframes koch-floater-4 {
-  0%, 55.191% { opacity: 0; }
-  55.319% { opacity: 1; transform: translate(-50%, -50%) translate(18vw, 20vh) rotate(9deg) scale(0.88); }
-  67.248% { opacity: 1; transform: translate(-50%, -50%) translate(18vw, 20vh) rotate(9deg) scale(0.88); }
-  67.376%, 100% { opacity: 0; }
+  0%, 75.191% { opacity: 0; }
+  75.319% { opacity: 1; transform: translate(-50%, -50%) translate(18vw, 20vh) rotate(9deg) scale(0.88); }
+  83.277% { opacity: 1; transform: translate(-50%, -50%) translate(18vw, 20vh) rotate(9deg) scale(0.88); }
+  83.404%, 100% { opacity: 0; }
 }
 .koch-floater-5 {
   position: absolute; top: 50%; left: 50%; max-width: 44vw; text-align: center;
@@ -867,20 +871,9 @@
   animation: koch-floater-5 4700ms linear forwards;
 }
 @keyframes koch-floater-5 {
-  0%, 67.248% { opacity: 0; }
-  67.376% { opacity: 1; transform: translate(-50%, -50%) translate(-18vw, 4vh) rotate(-5deg) scale(0.82); }
-  79.305% { opacity: 1; transform: translate(-50%, -50%) translate(-18vw, 4vh) rotate(-5deg) scale(0.82); }
-  79.433%, 100% { opacity: 0; }
-}
-.koch-floater-6 {
-  position: absolute; top: 50%; left: 50%; max-width: 44vw; text-align: center;
-  opacity: 0;
-  animation: koch-floater-6 4700ms linear forwards;
-}
-@keyframes koch-floater-6 {
-  0%, 79.305% { opacity: 0; }
-  79.433% { opacity: 1; transform: translate(-50%, -50%) translate(16vw, -28vh) rotate(6deg) scale(0.92); }
-  91.362% { opacity: 1; transform: translate(-50%, -50%) translate(16vw, -28vh) rotate(6deg) scale(0.92); }
+  0%, 83.277% { opacity: 0; }
+  83.404% { opacity: 1; transform: translate(-50%, -50%) translate(-18vw, 4vh) rotate(-5deg) scale(0.82); }
+  91.362% { opacity: 1; transform: translate(-50%, -50%) translate(-18vw, 4vh) rotate(-5deg) scale(0.82); }
   91.489%, 100% { opacity: 0; }
 }
 
@@ -892,6 +885,5 @@
 .sting-still .koch-floater-3 { animation: none; }
 .sting-still .koch-floater-4 { animation: none; }
 .sting-still .koch-floater-5 { animation: none; }
-.sting-still .koch-floater-6 { animation: none; }
 .sting-still .koch-sting-card { animation: none; opacity: 1; }
 

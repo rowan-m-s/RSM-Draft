@@ -374,7 +374,7 @@ function MotmContent({
  */
 const MOCK_LINES = ['GOOOD TEAM', 'ENCOURAGING SIGNS', 'GOOOOD MANAGER']
 const SEEN_LINE = 'HAAAAS ANYONE SEEN'
-const FLOATER_COUNT = 6
+const FLOATER_COUNT = 5
 
 function shuffled<T>(items: T[]): T[] {
   const copy = [...items]
@@ -456,7 +456,7 @@ function KochContent({ item, names, nameOf }: { item: RevealItem; names: string;
             {SEEN_LINE}
           </p>
           <p className="display mt-1 text-nowrap text-[16vw] leading-[0.95] tracking-tight text-pl-amber uppercase sm:text-8xl">
-            {names}
+            {names}?
           </p>
         </div>
       </div>
