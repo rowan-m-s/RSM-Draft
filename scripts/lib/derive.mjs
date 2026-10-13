@@ -21,6 +21,7 @@ import {
   monthShortLabel,
   monthWinnersOf,
 } from '../../src/lib/season.ts'
+import { ASSUMED_MATCH_DURATION_MS, DEFAULT_FINALISATION_BUFFER_MS } from './finalisation.mjs'
 
 /**
  * Money only locks once FPL confirms the gameweek.
@@ -134,26 +135,43 @@ export function buildGameweeks({
     if (!current || f.kickoff_time > current) lastKickoffByEvent[f.event] = f.kickoff_time
   }
   const dayAfter = (iso) => new Date(new Date(iso).getTime() + 24 * 60 * 60 * 1000).toISOString()
-  // The breaking news sting is allowed from 09:00 London on the day after
-  // the week's last match, and not before, however early FPL confirms.
-  // 09:05, not 09:00: FPL locks scores and applies auto-subs at nine on
-  // the morning after the last match, and firing on the hour races that
-  // flip. Five minutes of headroom; the reveal still also waits for
-  // confirmation, whichever is later.
-  const revealFrom = (iso) => londonNextDayAt(iso, 9, 5)
+  /**
+   * The breaking news sting is allowed from whichever is later (Addendum:
+   * own-gameweek-finalisation §3):
+   *   - 00:00 London the day after the week's last match, or
+   *   - the earliest instant local finalisation could possibly complete:
+   *     the last kickoff plus an assumed match duration plus the
+   *     finalisation buffer (§2's own figures, so the two stay in step).
+   * This is only ever the *earliest worth checking* instant — the actual
+   * reveal still waits for `locallyFinalised` (or `dataChecked`) to really
+   * be true, never fires on the clock alone. Never weakened to force the
+   * midnight slot: a late kickoff can and does push this past 00:00.
+   */
+  const revealFrom = (iso, bufferMs = DEFAULT_FINALISATION_BUFFER_MS) => {
+    const midnightAfter = londonNextDayAt(iso, 0, 0)
+    const earliestLocalFinalisation = new Date(new Date(iso).getTime() + ASSUMED_MATCH_DURATION_MS + bufferMs).toISOString()
+    return midnightAfter > earliestLocalFinalisation ? midnightAfter : earliestLocalFinalisation
+  }
 
   return events.map((event) => {
     const dataChecked = isSettled(event, classicDataCheckedById.get(event.id))
     const record = perGw[event.id]
+    // Our own confirmation, computed independently of FPL's (§2). Never
+    // waits on `dataChecked`, which is exactly what it exists to route
+    // around; `confirmed` below is what everything downstream should ask.
+    const locallyFinalised = Boolean(record?.locallyFinalised)
+    const confirmed = dataChecked || locallyFinalised
     // Official totals once the week has finished; until then, the live XI
-    // sums, marked provisional. Before kickoff there is nothing to show.
+    // sums (auto-subs applied once locally finalised — see fetch-data.mjs),
+    // marked provisional. Before kickoff there is nothing to show.
     const inPlay = !event.finished && Boolean(record?.started)
     const scores = event.finished ? (scoresByGw[event.id] ?? {}) : inPlay ? provisionalScores(record) : {}
     const hasScores = Object.keys(scores).length > 0
 
-    // No Koch and no money until the week is confirmed. A finished-but-
-    // unconfirmed week shows as provisional with nothing attached.
-    const kochKeys = dataChecked && hasScores ? kochesOf(scores) : []
+    // No Koch and no money until the week is confirmed — by FPL, or by us.
+    // A finished-but-unconfirmed week shows as provisional with nothing
+    // attached.
+    const kochKeys = confirmed && hasScores ? kochesOf(scores) : []
 
     return {
       id: event.id,
@@ -165,8 +183,10 @@ export function buildGameweeks({
       finished: Boolean(event.finished),
       /** A match in the week has kicked off. */
       started: Boolean(event.finished) || inPlay,
-      /** Scores are live XI sums, not FPL's official figure. */
-      scoresProvisional: inPlay && hasScores,
+      /** Scores are live XI sums, not FPL's official figure. Settles once
+       *  confirmed, by either route — not provisional just because FPL is
+       *  still slow to flip its own flag. */
+      scoresProvisional: inPlay && hasScores && !confirmed,
       /** A provisional Koch can be named: nobody is on nought for want of a kickoff. */
       kochReady: Boolean(event.finished) || everyManagerStarted({ record, fixtures, event: event.id, teamOfElement }),
       /** Each manager's starters whose fixture has not kicked off. */
@@ -174,6 +194,10 @@ export function buildGameweeks({
       /** A fixture in the week has not finished; the Yet column earns its place. */
       fixturesRemaining: fixtures.some((f) => f.event === event.id && !f.finished),
       dataChecked,
+      /** Our own confirmation (Addendum §2), independent of FPL's timing. */
+      locallyFinalised,
+      /** What everything else should actually gate on: either route in. */
+      confirmed,
       confirmExpectedUtc: lastKickoffByEvent[event.id] ? dayAfter(lastKickoffByEvent[event.id]) : null,
       revealFromUtc: lastKickoffByEvent[event.id] ? revealFrom(lastKickoffByEvent[event.id]) : null,
       scores: hasScores ? scores : {},
@@ -295,16 +319,17 @@ export function buildMonths({ gameweeks, managerKeys, perGw, elementName }) {
   return monthIds.map((id) => {
     const played = gameweeks.filter((gw) => gw.month === id && hasScores(gw))
     const allInMonth = gameweeks.filter((gw) => gw.month === id)
-    const confirmed = played.filter((gw) => gw.dataChecked)
+    const confirmedWeeks = played.filter((gw) => gw.confirmed)
 
     const totals = Object.fromEntries(
       managerKeys.map((key) => [key, played.reduce((sum, gw) => sum + (gw.scores[key] ?? 0), 0)])
     )
 
-    // A month settles only when every gameweek in it is confirmed — including
-    // ones not played yet, so September cannot settle after its first week.
-    const settled = allInMonth.length > 0 && allInMonth.every((gw) => gw.dataChecked)
-    const pot = confirmed.reduce((sum, gw) => sum + gw.charged, 0)
+    // A month settles only when every gameweek in it is confirmed — by FPL
+    // or by us — including ones not played yet, so September cannot settle
+    // after its first week.
+    const settled = allInMonth.length > 0 && allInMonth.every((gw) => gw.confirmed)
+    const pot = confirmedWeeks.reduce((sum, gw) => sum + gw.charged, 0)
     const winnerKeys = settled ? monthWinnersOf(totals) : []
 
     // Top performers count every week with scores, the one in play
@@ -350,7 +375,7 @@ export function buildSeason({ gameweeks, months, managerKeys, generatedAt, perGw
     seasonBest[key] = best ? { ...best, managerKey: key } : null
   }
 
-  const settledGameweeks = gameweeks.filter((gw) => gw.dataChecked)
+  const settledGameweeks = gameweeks.filter((gw) => gw.confirmed)
   // Finished weeks and the one in play: the table moves during a match.
   const playedGameweeks = gameweeks.filter((gw) => gw.finished || gw.scoresProvisional)
   const latestSettledGameweek = settledGameweeks.at(-1)?.id ?? null
@@ -425,7 +450,7 @@ export function buildLeader({ gameweeks }) {
   // only, so the line holds still while the name can move during a match.
   const scored = gameweeks.filter(withScores)
   if (scored.length === 0) return null
-  const confirmed = scored.filter((gw) => gw.dataChecked)
+  const confirmed = scored.filter((gw) => gw.confirmed)
 
   const sumTo = (weeks) => {
     const totals = {}

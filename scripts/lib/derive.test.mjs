@@ -81,6 +81,7 @@ function build({ dataCheckedIds, scores = SCORES, perGw = noPicks }) {
     events: EVENTS,
     classicDataCheckedById: checked(...dataCheckedIds),
     scoresByGw: scores,
+    perGw,
   })
   const months = buildMonths({ gameweeks, managerKeys: KEYS, perGw, elementName })
   const season = buildSeason({ gameweeks, months, managerKeys: KEYS, generatedAt: '2026-09-20T10:00:00Z' })
@@ -115,6 +116,69 @@ describe('buildGameweeks', () => {
     const gw2 = gameweeks.find((gw) => gw.id === 2)
     expect(gw2.kochKeys.sort()).toEqual(['kellett', 'paddy'])
     expect(gw2.charged).toBe(10)
+  })
+
+  it('names a Koch and charges money from locallyFinalised alone, with FPL still unconfirmed', () => {
+    // GW5 in EVENTS is not finished, and 5 is excluded from dataCheckedIds —
+    // FPL has confirmed nothing here. locallyFinalised is Addendum §2's own
+    // route in, and must be enough on its own.
+    const perGw = {
+      5: {
+        started: true,
+        locallyFinalised: true,
+        squads: Object.fromEntries(KEYS.map((key, i) => [key, [{ element: i, starter: true }]])),
+        elementPoints: Object.fromEntries(KEYS.map((_, i) => [i, i === 10 ? 0 : 40])), // ollie (last) lowest
+      },
+    }
+    const { gameweeks } = build({ dataCheckedIds: [1, 2, 3, 4], perGw })
+    const gw5 = gameweeks.find((gw) => gw.id === 5)
+    expect(gw5.finished).toBe(false)
+    expect(gw5.dataChecked).toBe(false)
+    expect(gw5.locallyFinalised).toBe(true)
+    expect(gw5.confirmed).toBe(true)
+    expect(gw5.kochKeys).toEqual(['ollie'])
+    expect(gw5.charged).toBe(5)
+    // Settled money, not a live XI sum shown with a "provisional" caveat.
+    expect(gw5.scoresProvisional).toBe(false)
+  })
+
+  it('stays provisional and un-Kochable while merely in play, not yet locally finalised', () => {
+    const perGw = {
+      5: {
+        started: true,
+        locallyFinalised: false,
+        squads: Object.fromEntries(KEYS.map((key, i) => [key, [{ element: i, starter: true }]])),
+        elementPoints: Object.fromEntries(KEYS.map((_, i) => [i, i === 10 ? 0 : 40])),
+      },
+    }
+    const { gameweeks } = build({ dataCheckedIds: [1, 2, 3, 4], perGw })
+    const gw5 = gameweeks.find((gw) => gw.id === 5)
+    expect(gw5.confirmed).toBe(false)
+    expect(gw5.kochKeys).toEqual([])
+    expect(gw5.charged).toBe(0)
+    expect(gw5.scoresProvisional).toBe(true)
+  })
+
+  it('reveals at midnight London the day after an early finish, when that is later than the finalisation buffer', () => {
+    const events = [{ id: 1, deadline_time: '2026-09-18T17:30:00Z', finished: false }]
+    const fixtures = [{ event: 1, kickoff_time: '2026-09-18T13:00:00Z' }] // last kickoff 13:00 UTC
+    const { gameweeks } = (() => {
+      const gw = buildGameweeks({ events, classicDataCheckedById: new Map(), scoresByGw: {}, fixtures })
+      return { gameweeks: gw }
+    })()
+    // 13:00 UTC + 130min duration + 120min buffer = 17:10 UTC same day — well
+    // before 00:00 BST the day after (23:00 UTC on the 18th). Midnight wins.
+    expect(gameweeks[0].revealFromUtc).toBe('2026-09-18T23:00:00.000Z')
+  })
+
+  it('reveals at the finalisation buffer, not midnight, when a late kickoff pushes past it', () => {
+    const events = [{ id: 1, deadline_time: '2026-09-18T17:30:00Z', finished: false }]
+    const fixtures = [{ event: 1, kickoff_time: '2026-09-18T20:00:00Z' }] // last kickoff 20:00 UTC
+    const gameweeks = buildGameweeks({ events, classicDataCheckedById: new Map(), scoresByGw: {}, fixtures })
+    // 20:00 UTC + 130min + 120min = 00:10 UTC the next day — later than
+    // midnight BST (23:00 UTC on the 18th). The buffer wins; never weakened
+    // back to the midnight slot.
+    expect(gameweeks[0].revealFromUtc).toBe('2026-09-19T00:10:00.000Z')
   })
 
   it('assigns gameweeks to the month of their London deadline', () => {
@@ -829,7 +893,7 @@ describe('buildFixturePoints', () => {
 })
 
 describe('buildLeader', () => {
-  const gw = (id, dataChecked, scores) => ({ id, dataChecked, scores })
+  const gw = (id, dataChecked, scores) => ({ id, dataChecked, confirmed: dataChecked, scores })
 
   it('is null until anyone has scored', () => {
     expect(buildLeader({ gameweeks: [gw(1, false, {})] })).toBeNull()

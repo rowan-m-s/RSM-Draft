@@ -13,8 +13,10 @@
  *   is written until every payload has been built and the money invariant has
  *   been checked, so a partial run can never overwrite good data.
  *
- *   Money only locks once the gameweek is confirmed. Draft applies automatic
- *   substitutions after a gameweek finishes, so `finished` alone is not enough.
+ *   Money only locks once the gameweek is confirmed — by FPL, or by us.
+ *   Draft applies automatic substitutions after a gameweek finishes, so
+ *   `finished` alone is not enough; our own locallyFinalised check (Addendum:
+ *   own-gameweek-finalisation §2) is what no longer waits on FPL for it.
  */
 
 import { mkdir, readFile, readdir, rename, writeFile } from 'node:fs/promises'
@@ -34,6 +36,8 @@ import {
   checkBalanceInvariant,
   playerPointsForManager,
 } from './lib/derive.mjs'
+import { isLocallyFinalised, DEFAULT_FINALISATION_BUFFER_MS } from './lib/finalisation.mjs'
+import { applySubstitutions } from './lib/substitution.mjs'
 import { pickGraphic } from './lib/graphics.mjs'
 import { MANAGER_KEYS } from './images.shared.mjs'
 import { findMissingPhotos, formatMissingReport, readOverrides } from './lib/photos.mjs'
@@ -357,6 +361,11 @@ async function main() {
     throw new FetchError(`bootstrap-static looks empty: ${events.length} events, ${elements.length} elements`)
   }
 
+  // Shared across the draft XI inference, the preview squads and our own
+  // substitution engine — one lookup, not three copies of the same map.
+  const positionById = new Map(elements.map((e) => [e.id, ['', 'GKP', 'DEF', 'MID', 'FWD'][e.element_type]]))
+  const positionOf = (id) => positionById.get(id)
+
   // Draft has no data_checked; the classic game does, and the two share event
   // ids. Verify that assumption rather than trusting it.
   const classicEvents = classicBootstrap.events ?? []
@@ -536,7 +545,47 @@ async function main() {
       )
     }
 
-    // The top-performer maths wants the scoring XI only.
+    /* Our own confirmation (Addendum: own-gameweek-finalisation §2), checked
+       whether or not FPL has confirmed yet — it is what lets everything
+       downstream stop waiting on FPL's own timing. `squads[key]` at this
+       point is still each manager's ORIGINAL pre-deadline fifteen: we only
+       reach here when `dataChecked` is false, so FPL has not run its own
+       substitution pass and `subs` on the picks endpoint is still empty.
+       That is exactly the input our substitution engine (§1) needs — no
+       reversal required, unlike reconstructing an *already FPL-confirmed*
+       week's original lineup (§4's reconciliation will need that instead). */
+    const eventFixtures = allFixtures
+      .filter((f) => f.event === event.id)
+      .map((f) => ({
+        id: f.id,
+        kickoff: f.kickoff_time,
+        finished: Boolean(f.finished),
+        finishedProvisional: Boolean(f.finished_provisional),
+      }))
+    const finalisation = isLocallyFinalised({ fixtures: eventFixtures, livePayload, now })
+    const locallyFinalised = finalisation.finalised
+    if (locallyFinalised) {
+      log(`  GW${event.id}: locally finalised (FPL dataChecked=${dataChecked}) — applying our own auto-subs.`)
+      for (const key of Object.keys(squads)) {
+        const subbed = applySubstitutions({
+          picks: squads[key],
+          positionOf,
+          minutesOf: (element) => elementMinutes[element] ?? 0,
+        })
+        const subbedByElement = new Map(subbed.map((s) => [s.element, s]))
+        squads[key] = squads[key].map((pick) => ({
+          ...pick,
+          starter: subbedByElement.get(pick.element).starter,
+          subbedOn: subbedByElement.get(pick.element).subbedOn,
+          subbedOff: subbedByElement.get(pick.element).subbedOff,
+        }))
+      }
+    } else if (!dataChecked) {
+      log(`  GW${event.id}: not yet locally finalised (${finalisation.reason}).`)
+    }
+
+    // The top-performer maths wants the scoring XI only. Reflects our own
+    // substitutions once locally finalised, same as the official app would.
     const scoringXI = Object.fromEntries(
       Object.entries(squads).map(([key, picks]) => [key, picks.filter((p) => p.starter).map((p) => p.element)])
     )
@@ -552,6 +601,8 @@ async function main() {
       started: Boolean(event.finished) || allFixtures.some((f) => f.event === event.id && f.started),
       finished: Boolean(event.finished),
       dataChecked: Boolean(dataChecked),
+      // Our own confirmation, independent of FPL's — see the comment above.
+      locallyFinalised: Boolean(locallyFinalised),
       squads,
       scoringXI,
       elementPoints,
@@ -567,12 +618,11 @@ async function main() {
      is until the first deadline passes. */
   const choices = draftChoices?.choices ?? []
   if (choices.length > 0) {
-    const positionById = new Map(elements.map((e) => [e.id, ['', 'GKP', 'DEF', 'MID', 'FWD'][e.element_type]]))
     const keyByEntryId = new Map(managers.map((m) => [m.entryId, m.key]))
     const { squads, formations } = buildDraftSquads({
       choices,
       keyByEntryId,
-      positionOf: (id) => positionById.get(id),
+      positionOf,
     })
 
     const covered = Object.keys(squads)
@@ -623,7 +673,6 @@ async function main() {
      The moment its deadline passes, the picks loop above takes over. */
   const nextEvent = events.find((e) => !e.finished && new Date(e.deadline_time).getTime() > Date.now())
   if (nextEvent && !perGw[nextEvent.id]) {
-    const positionById = new Map(elements.map((e) => [e.id, ['', 'GKP', 'DEF', 'MID', 'FWD'][e.element_type]]))
     squadFiles.push({
       event: nextEvent.id,
       isPreview: true,
@@ -634,7 +683,7 @@ async function main() {
       squads: buildPreviewSquads({
         managerKeys: managers.map((m) => m.key),
         ownerByElementId,
-        positionOf: (id) => positionById.get(id),
+        positionOf,
         // The same XI and bench split as the most recent week with picks.
         lastSquads: Object.values(perGw).sort((a, b) => b.event - a.event)[0]?.squads ?? {},
       }),
@@ -838,6 +887,8 @@ async function main() {
       started: record.started,
       finished: record.finished,
       dataChecked: record.dataChecked,
+      locallyFinalised: Boolean(record.locallyFinalised),
+      confirmed: Boolean(record.dataChecked) || Boolean(record.locallyFinalised),
       squads: Object.fromEntries(
         Object.entries(record.squads).map(([key, picks]) => [
           key,
@@ -860,6 +911,8 @@ async function main() {
             started: record.started,
             finished: record.finished,
             dataChecked: record.dataChecked,
+            locallyFinalised: Boolean(record.locallyFinalised),
+            confirmed: Boolean(record.dataChecked) || Boolean(record.locallyFinalised),
             byFixture: record.fixturePoints,
             generatedAt,
           },
@@ -907,7 +960,8 @@ async function main() {
   )
   log(
     `Owned ${players.owned.length}, free agents ${players.freeAgents.length}, ` +
-      `months ${months.length}, confirmed gameweeks ${gameweeks.filter((g) => g.dataChecked).length}.`
+      `months ${months.length}, confirmed gameweeks ${gameweeks.filter((g) => g.confirmed).length} ` +
+      `(${gameweeks.filter((g) => g.locallyFinalised && !g.dataChecked).length} of those via locallyFinalised only).`
   )
   if (overrides.size > 0) log(`Local photo overrides in use: ${overrides.size}.`)
 

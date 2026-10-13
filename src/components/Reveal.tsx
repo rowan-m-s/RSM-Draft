@@ -12,10 +12,12 @@ import type { ManagerKey } from '../types'
  * Roughly two and a half seconds, all linear and stepped, no easing, no sound.
  *
  * Rules, all kept here:
- *  - fires on confirmation only: a Koch needs the week's dataChecked, a MOTM
+ *  - fires on confirmation only: a Koch needs the week's confirmed (FPL's
+ *    dataChecked, or our own locallyFinalised — Addendum §2/§3), a MOTM
  *    needs the month settled. Provisional cards never reach this component.
- *  - and not before 09:00 London on the day after the week's last match
- *    (for a MOTM, the month's last week), however early FPL confirms. So it
+ *  - and not before revealFromUtc: 00:00 London the day after the week's
+ *    last match (for a MOTM, the month's last week), or the earliest our
+ *    own finalisation buffer could have elapsed, whichever is later. So it
  *    plays the first time someone opens the site after that.
  *  - plays once per person: seen ids are kept in localStorage, so once it
  *    has shown on a device it never shows there again.
@@ -73,7 +75,7 @@ function writeSeen(ids: Iterable<string>) {
 export function confirmedAwards(data: Dataset): RevealItem[] {
   const items: RevealItem[] = []
   for (const gw of data.gameweeks) {
-    if (!gw.dataChecked || gw.kochKeys.length === 0) continue
+    if (!gw.confirmed || gw.kochKeys.length === 0) continue
     items.push({
       id: `koch-gw${gw.id}`,
       kind: 'koch',

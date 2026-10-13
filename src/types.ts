@@ -67,8 +67,12 @@ export interface Gameweek {
   /** Calendar month of the deadline *in Europe/London*, as YYYY-MM. */
   month: string
   finished: boolean
-  /** From the classic FPL API — Draft has no such field. Money gate. */
+  /** From the classic FPL API — Draft has no such field. FPL's own confirmation. */
   dataChecked: boolean
+  /** Our own confirmation (own-gameweek-finalisation §2), independent of FPL's timing. */
+  locallyFinalised: boolean
+  /** The actual money/reveal gate: dataChecked OR locallyFinalised, whichever comes first. */
+  confirmed: boolean
   /** When FPL is expected to confirm the week: the day after its last kickoff. An estimate for copy, never a gate. */
   confirmExpectedUtc: string | null
   /** The breaking news sting may play from here: 09:00 London on the day after the week's last match. */
@@ -281,6 +285,8 @@ export interface PointsFile {
   started: boolean
   finished: boolean
   dataChecked: boolean
+  locallyFinalised: boolean
+  confirmed: boolean
   /** fixture id → element id → that fixture's contribution. */
   byFixture: Record<string, Record<string, { total: number; components: PointsComponent[] }>>
   generatedAt: string
@@ -338,6 +344,8 @@ export interface SquadFile {
   started: boolean
   finished: boolean
   dataChecked: boolean
+  locallyFinalised: boolean
+  confirmed: boolean
   squads: Record<ManagerKey, SquadPick[]>
   players: Record<string, SquadPlayer>
   generatedAt: string

@@ -36,7 +36,7 @@ export function Honours() {
 
   // Newest first.
   const motm = [...data.months].filter((m) => m.settled).reverse()
-  const kochWeeks = [...data.gameweeks].filter((gw) => gw.dataChecked && gw.kochKeys.length > 0).reverse()
+  const kochWeeks = [...data.gameweeks].filter((gw) => gw.confirmed && gw.kochKeys.length > 0).reverse()
 
   // Koches are grouped by month.
   const kochByMonth = kochWeeks.reduce<Record<string, typeof kochWeeks>>((acc, gw) => {

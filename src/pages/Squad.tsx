@@ -242,7 +242,7 @@ export function Squad() {
     toggle,
     close,
     isLive,
-    confirmed: squad?.dataChecked ?? false,
+    confirmed: squad?.confirmed ?? false,
   }
 
   const setGameweek = (wanted: number) => {
@@ -339,7 +339,7 @@ export function Squad() {
             squads={squad.squads}
             managerKey={manager.key}
             gameweek={gameweek}
-            koch={Boolean(squad.dataChecked && gameweekMeta?.kochKeys.includes(manager.key))}
+            koch={Boolean(squad.confirmed && gameweekMeta?.kochKeys.includes(manager.key))}
           />
         )}
 

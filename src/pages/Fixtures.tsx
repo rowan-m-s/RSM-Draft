@@ -327,7 +327,7 @@ export function Fixtures() {
                         nameOf={nameOf}
                         doubles={doubles.get(m.id)}
                         fixturePoints={points?.byFixture[String(m.id)]}
-                        confirmed={Boolean(points?.dataChecked)}
+                        confirmed={Boolean(points?.confirmed)}
                       />
                     ))}
                   </ul>

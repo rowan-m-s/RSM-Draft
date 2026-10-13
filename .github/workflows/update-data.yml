@@ -36,6 +36,20 @@ on:
     - cron: '*/15 8-10 * * *'
     # A slower tail into the afternoon for the mornings FPL seals late.
     - cron: '*/30 11-14 * * *'
+    # Local finalisation's own reveal window (Addendum: own-gameweek-
+    # finalisation §3): the reveal now fires at 00:00 London the day after a
+    # gameweek's last match, or as soon as we locally finalise it ourselves
+    # if that is later — it no longer waits on FPL's 09:00 flip. Every 15
+    # minutes from 23:30 to 01:30 UK on both sides of the clock change, plus
+    # a punctual 00:02 UK strike for the midnight slot itself. Which nights
+    # matter cannot be read from cron either, so these fire daily too and the
+    # same fixture-data gate below (is-reveal-morning.mjs, which already
+    # reads the published revealFromUtc rather than assuming a time) skips
+    # them otherwise — a gameweek can finish on any day of the week.
+    - cron: '2 23 * * *'
+    - cron: '2 0 * * *'
+    - cron: '*/15 22,23 * * *'
+    - cron: '*/15 0,1 * * *'
     # Every 3 hours otherwise, so a quiet day still proves the job is alive.
     # Unrelated to match polling: fetch-data.mjs forces its own rewrite every
     # 2.5 hours regardless of real change, purely so the site's own staleness
@@ -84,7 +98,8 @@ jobs:
                 echo "watch=false" >> "$GITHUB_OUTPUT"
               fi
               ;;
-            "2 8 * * *"|"2 9 * * *"|"45 7 * * *"|"*/15 8-10 * * *"|"*/30 11-14 * * *")
+            "2 8 * * *"|"2 9 * * *"|"45 7 * * *"|"*/15 8-10 * * *"|"*/30 11-14 * * *"| \
+            "2 23 * * *"|"2 0 * * *"|"*/15 22,23 * * *"|"*/15 0,1 * * *")
               echo "watch=false" >> "$GITHUB_OUTPUT"
               node scripts/is-reveal-morning.mjs \
                 && echo "run=true" >> "$GITHUB_OUTPUT" \

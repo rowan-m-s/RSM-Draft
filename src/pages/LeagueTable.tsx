@@ -204,7 +204,7 @@ function GameweekTable({ gameweek, nameOf }: { gameweek: Gameweek; nameOf: (k: M
     )
   }
 
-  const provisional = !gameweek.dataChecked
+  const provisional = !gameweek.confirmed
   const ranked = [...data.season.rows]
     .map((row) => ({ key: row.key, points: gameweek.scores[row.key] ?? 0 }))
     .sort((a, b) => b.points - a.points)
@@ -368,8 +368,8 @@ function MonthTable({ month, nameOf }: { month: Month; nameOf: (k: ManagerKey) =
   // The pot only counts confirmed gameweeks, so say which ones those are
   // rather than listing every week the month has played.
   const inMonth = data.gameweeks.filter((gw) => gw.month === month.id && gw.started)
-  const confirmed = inMonth.filter((gw) => gw.dataChecked)
-  const provisional = inMonth.filter((gw) => !gw.dataChecked)
+  const confirmed = inMonth.filter((gw) => gw.confirmed)
+  const provisional = inMonth.filter((gw) => !gw.confirmed)
   // Everyone level on top leads together, as the settled view does with winners.
   const leading = ranked.filter((row) => row.points === ranked[0].points).map((row) => row.key)
 

@@ -60,7 +60,7 @@ function KochCard({
   nameOf: (key: ManagerKey) => string
   /** Confirmed Koch awards per manager so far, for a provisional card's graphic. */
 }) {
-  const confirmed = gameweek.dataChecked
+  const confirmed = gameweek.confirmed
   const koches = confirmed ? gameweek.kochKeys : kochesOf(gameweek.scores)
   const tied = koches.length > 1
 
@@ -359,7 +359,7 @@ function MoneyStrip({
   const anyPlayed = data.gameweeks.some((gw) => gw.started)
   // Only confirmed gameweeks have money attached, so count those rather than
   // every gameweek the month has played.
-  const confirmed = month ? data.gameweeks.filter((gw) => gw.month === month.id && gw.dataChecked).length : 0
+  const confirmed = month ? data.gameweeks.filter((gw) => gw.month === month.id && gw.confirmed).length : 0
 
   return (
     <section className="card grid gap-px overflow-hidden bg-pl-border sm:grid-cols-2">
@@ -397,7 +397,7 @@ export function Home() {
   // The Koch card shows the latest week that has any scores: live and marked
   // as things stand while unconfirmed, final once FPL confirms it.
   const latestKoch = [...data.gameweeks].reverse().find((gw) => Object.keys(gw.scores).length > 0) ?? null
-  const provisional = latestKoch && !latestKoch.dataChecked ? latestKoch : null
+  const provisional = latestKoch && !latestKoch.confirmed ? latestKoch : null
 
   // The month card's one rule: the latest month with any scores. Settled
   // means the winner on the MOTM graphic; otherwise the provisional leader.
