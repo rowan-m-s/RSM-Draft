@@ -220,8 +220,8 @@ function Sting({ item, nameOf, onDone }: { item: RevealItem; nameOf: (k: string)
   // The Koch-only extra beat lands the card at 2.7s; the Month's original
   // sting still takes its own, much longer timeline. The ticker is shared,
   // so it is the one piece told explicitly when to start.
-  const tickerDelay = item.kind === 'koch' ? '4400ms' : undefined
-  const tickerLoopDelay = item.kind === 'koch' ? '4600ms' : undefined
+  const tickerDelay = item.kind === 'koch' ? '5700ms' : undefined
+  const tickerLoopDelay = item.kind === 'koch' ? '5900ms' : undefined
 
   return createPortal(
     <div
@@ -405,7 +405,7 @@ function KochContent({ item, names, nameOf }: { item: RevealItem; names: string;
         className="koch-overlay absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${BREAKING_NEWS_BG})` }}
       >
-        <div className="absolute inset-0 bg-pl-bg/70" aria-hidden="true" />
+        <div className="absolute inset-0 bg-pl-bg/55" aria-hidden="true" />
 
         {/* Beat 1a: BREAKING NEWS, its own moment — a clean gap separates it
             from 1b below, which is itself separated from the flash beat. */}
