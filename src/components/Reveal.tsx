@@ -372,8 +372,9 @@ function MotmContent({
  * trigger and most people affected do not have reduced motion enabled, so
  * the backdrop stays completely still regardless.
  */
-const MOCK_LINES = ['GOOOD TEAM', 'ENCOURAGING SIGNS']
+const MOCK_LINES = ['GOOOD TEAM', 'ENCOURAGING SIGNS', 'GOOOOD MANAGER']
 const SEEN_LINE = 'HAAAAS ANYONE SEEN'
+const FLOATER_COUNT = 6
 
 function shuffled<T>(items: T[]): T[] {
   const copy = [...items]
@@ -384,25 +385,22 @@ function shuffled<T>(items: T[]): T[] {
   return copy
 }
 
-function KochContent({ item, names, nameOf }: { item: RevealItem; names: string; nameOf: (k: string) => string }) {
-  // Slots 2-4: a random mix of the seen line again and the two mocking
-  // lines, re-rolled on every reveal. Slot 1 is always the seen line itself
-  // — it is what sweeps across the screen on desktop — and slot 5 is always
-  // the name alone, never sharing a slot with anything else.
-  const middleSlots = useMemo(() => shuffled([SEEN_LINE, ...MOCK_LINES]), [item.id])
+/** Six floater slots, filled by cycling the three mocking lines shuffled —
+ *  every line appears at least once, which two appear a second time varies
+ *  by reveal. */
+function floaterLines(): string[] {
+  const first = shuffled(MOCK_LINES)
+  const second = shuffled(MOCK_LINES)
+  return [...first, ...second].slice(0, FLOATER_COUNT)
+}
 
-  const flashText = (text: string, extra: string) => (
-    <p
-      className={`display max-w-[80vw] text-nowrap text-[9vw] leading-tight tracking-tight uppercase sm:text-5xl ${text === SEEN_LINE ? 'text-pl-amber' : 'text-pl-red'} ${extra}`}
-    >
-      {text}
-    </p>
-  )
+function KochContent({ item, names, nameOf }: { item: RevealItem; names: string; nameOf: (k: string) => string }) {
+  const floaters = useMemo(() => floaterLines(), [item.id])
 
   return (
     <>
       {/* Beats 1 and 2: BREAKING NEWS, then the flash beat, both over the new
-          backdrop. Gone in one hard cut the instant the card lands. */}
+          backdrop. Gone in one fade the instant the card lands. */}
       <div
         className="koch-overlay absolute inset-0 bg-cover bg-center"
         style={{ backgroundImage: `url(${BREAKING_NEWS_BG})` }}
@@ -429,28 +427,35 @@ function KochContent({ item, names, nameOf }: { item: RevealItem; names: string;
           </p>
         </div>
 
-        {/* Beat 2: five slots. Slot 1 is always "has anyone seen" — amber,
-            and on desktop it sweeps the full width left to right rather than
-            holding a position (see the CSS media query). Slots 2-4 mix that
-            line with the two mocking ones, red, reshuffled every reveal.
-            Slot 5 is always the name alone, amber, biggest, dead centre —
-            introduced distinctly after everything else, never sharing a
-            slot. Never one line: KELLETT and DJ cannot share a comfortable
-            size at 375px run together. */}
-        <div className="koch-flash-slot-1" aria-hidden="true">
-          {flashText(SEEN_LINE, '')}
+        {/* The mocking lines: a separate layer from the centred narrative
+            below, scattered off-centre, running the whole time alongside
+            it rather than taking turns in the same spot. Red throughout. */}
+        {floaters.map((line, i) => (
+          <div key={i} className={`koch-floater-${i + 1}`} aria-hidden="true">
+            <p className="display max-w-[44vw] text-[5.5vw] leading-tight tracking-tight text-pl-red uppercase sm:text-2xl">
+              {line}
+            </p>
+          </div>
+        ))}
+
+        {/* The centred narrative's final beat: "HAAAAS ANYONE SEEN" alone,
+            bigger and held a full second for suspense, then a real
+            crossfade — not a cut — into "seen" shown together with the
+            name, which is never introduced any other way. */}
+        {/* Allowed to wrap, deliberately — two words to a line still reads
+            as bold and dramatic at 375px; it is only a single word like the
+            name that breaks awkwardly mid-word, which is the thing nowrap
+            is for. */}
+        <div className="koch-flash-seen-alone" aria-hidden="true">
+          <p className="display max-w-[80vw] text-[10vw] leading-[1.05] tracking-tight text-pl-amber uppercase sm:text-6xl">
+            {SEEN_LINE}
+          </p>
         </div>
-        <div className="koch-flash-slot-2" aria-hidden="true">
-          {flashText(middleSlots[0], '')}
-        </div>
-        <div className="koch-flash-slot-3" aria-hidden="true">
-          {flashText(middleSlots[1], '')}
-        </div>
-        <div className="koch-flash-slot-4" aria-hidden="true">
-          {flashText(middleSlots[2], '')}
-        </div>
-        <div className="koch-flash-slot-5 text-center" aria-hidden="true">
-          <p className="display text-nowrap text-[16vw] leading-[0.95] tracking-tight text-pl-amber uppercase sm:text-8xl">
+        <div className="koch-flash-finale text-center" aria-hidden="true">
+          <p className="display max-w-[80vw] text-[6vw] leading-tight tracking-tight text-pl-amber uppercase sm:text-4xl">
+            {SEEN_LINE}
+          </p>
+          <p className="display mt-1 text-nowrap text-[16vw] leading-[0.95] tracking-tight text-pl-amber uppercase sm:text-8xl">
             {names}
           </p>
         </div>
