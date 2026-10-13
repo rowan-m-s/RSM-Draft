@@ -2,6 +2,7 @@ import { Link, NavLink, Outlet, ScrollRestoration } from 'react-router-dom'
 import { useDataState } from '../data'
 import { Freshness } from './Freshness'
 import { Reveal } from './Reveal'
+import { ReconciliationAlert } from './ReconciliationAlert'
 import { ManagerAvatar } from './Img'
 import { LION_ONLY } from '../lib/assets'
 import { rankLabel } from '../lib/season'
@@ -144,7 +145,7 @@ export function Layout() {
   const nameOf = (key: string) => data?.league.managers.find((m) => m.key === key)?.displayName ?? key
 
   return (
-    <div className="min-h-dvh lg:flex">
+    <>
       {/*
         Scroll handling. Keyed per history entry, which is the default: a fresh
         navigation has no saved position and therefore starts at the top, while
@@ -158,73 +159,81 @@ export function Layout() {
         is whatever it was when the page first loaded.
       */}
       <ScrollRestoration />
-      {/* Desktop sidebar. Fixed, on the page colour, table pinned at the
+
+      {/* The §4 safety net: a Koch mismatch once FPL confirms, full width,
+          above everything — money is already out the door by the time this
+          can fire, so it does not get to be a sidebar detail. */}
+      {data && <ReconciliationAlert data={data} />}
+
+      <div className="min-h-dvh lg:flex">
+        {/* Desktop sidebar. Fixed, on the page colour, table pinned at the
           bottom on a raised surface. */}
-      <aside className="hidden w-[260px] shrink-0 border-r border-pl-border bg-pl-bg pt-[env(safe-area-inset-top)] lg:sticky lg:top-0 lg:flex lg:h-dvh lg:flex-col">
-        <div className="px-4 pt-5 pb-4">
-          <Mark />
-          <p className="mt-1.5 pl-10 text-xs text-pl-muted">RSM · 26/27</p>
-        </div>
+        <aside className="hidden w-[260px] shrink-0 border-r border-pl-border bg-pl-bg pt-[env(safe-area-inset-top)] lg:sticky lg:top-0 lg:flex lg:h-dvh lg:flex-col">
+          <div className="px-4 pt-5 pb-4">
+            <Mark />
+            <p className="mt-1.5 pl-10 text-xs text-pl-muted">RSM · 26/27</p>
+          </div>
 
-        <div className="border-y border-pl-border py-2">
-          <NavItems />
-        </div>
+          <div className="border-y border-pl-border py-2">
+            <NavItems />
+          </div>
 
-        <div className="mt-auto min-h-0 overflow-y-auto p-3">
-          {data && (
-            <div className="card px-3 py-3">
-              <MiniTable rows={data.season.rows} nameOf={nameOf} ranked={data.gameweeks.some((gw) => gw.started)} />
-            </div>
-          )}
-        </div>
+          <div className="mt-auto min-h-0 overflow-y-auto p-3">
+            {data && (
+              <div className="card px-3 py-3">
+                <MiniTable rows={data.season.rows} nameOf={nameOf} ranked={data.gameweeks.some((gw) => gw.started)} />
+              </div>
+            )}
+          </div>
 
-        <div className="border-t border-pl-border px-4 py-2.5">
-          <Freshness />
-        </div>
-      </aside>
+          <div className="border-t border-pl-border px-4 py-2.5">
+            <Freshness />
+          </div>
+        </aside>
 
-      {/* Mobile top bar. With viewport-fit=cover the page runs up under the
+        {/* Mobile top bar. With viewport-fit=cover the page runs up under the
           status bar, so the bar takes the top inset as extra padding and the
           wordmark starts below the clock and battery. */}
-      <div className="flex items-center justify-between border-b border-pl-border bg-pl-bg px-4 pt-[calc(0.75rem+env(safe-area-inset-top))] pb-3 lg:hidden">
-        <Mark compact />
-        <Freshness compact />
-      </div>
+        <div className="flex items-center justify-between border-b border-pl-border bg-pl-bg px-4 pt-[calc(0.75rem+env(safe-area-inset-top))] pb-3 lg:hidden">
+          <Mark compact />
+          <Freshness compact />
+        </div>
 
-      <main className="min-w-0 flex-1 pb-[calc(5rem+env(safe-area-inset-bottom))] lg:pb-0">
-        {data ? <Outlet /> : <DataGate state={state} />}
-      </main>
+        <main className="min-w-0 flex-1 pb-[calc(5rem+env(safe-area-inset-bottom))] lg:pb-0">
+          {data ? <Outlet /> : <DataGate state={state} />}
+        </main>
 
-      {/* The breaking news sting for a newly confirmed Koch or MOTM. Decides
+        {/* The breaking news sting for a newly confirmed Koch or MOTM. Decides
           for itself whether there is anything to play. */}
-      {data && <Reveal data={data} />}
+        {data && <Reveal data={data} />}
 
-      {/* Mobile bottom tabs. The mini table is not one of them — it lives
+        {/* Mobile bottom tabs. The mini table is not one of them — it lives
           inline on Home instead. */}
-      <nav
-        aria-label="Main"
-        className="fixed inset-x-0 bottom-0 z-20 border-t border-pl-border bg-pl-bg pb-[env(safe-area-inset-bottom)] lg:hidden"
-      >
-        <ul className="grid grid-cols-6">
-          {NAV.map((item) => (
-            <li key={item.to}>
-              <NavLink
-                to={item.to}
-                end={item.end}
-                className={({ isActive }) =>
-                  [
-                    'font-brand flex h-14 flex-col items-center justify-center gap-1 border-t-2 px-0.5 text-center text-[10px] leading-tight',
-                    isActive ? 'border-pl-cyan font-semibold text-pl-text' : 'border-transparent text-pl-muted',
-                  ].join(' ')
-                }
-              >
-                {item.label === 'League Table' ? 'Table' : item.label}
-              </NavLink>
-            </li>
-          ))}
-        </ul>
-      </nav>
-    </div>
+        <nav
+          aria-label="Main"
+          className="fixed inset-x-0 bottom-0 z-20 border-t border-pl-border bg-pl-bg pb-[env(safe-area-inset-bottom)] lg:hidden"
+        >
+          <ul className="grid grid-cols-6">
+            {NAV.map((item) => (
+              <li key={item.to}>
+                <NavLink
+                  to={item.to}
+                  end={item.end}
+                  className={({ isActive }) =>
+                    [
+                      'font-brand flex h-14 flex-col items-center justify-center gap-1 border-t-2 px-0.5 text-center text-[10px] leading-tight',
+                      isActive ? 'border-pl-cyan font-semibold text-pl-text' : 'border-transparent text-pl-muted',
+                    ].join(' ')
+                  }
+                >
+                  {item.label === 'League Table' ? 'Table' : item.label}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
+    </>
   )
 }
 

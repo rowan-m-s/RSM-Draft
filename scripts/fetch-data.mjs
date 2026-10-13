@@ -36,8 +36,9 @@ import {
   checkBalanceInvariant,
   playerPointsForManager,
 } from './lib/derive.mjs'
-import { isLocallyFinalised, DEFAULT_FINALISATION_BUFFER_MS } from './lib/finalisation.mjs'
+import { isLocallyFinalised } from './lib/finalisation.mjs'
 import { applySubstitutions } from './lib/substitution.mjs'
+import { reconcile } from './lib/reconciliation.mjs'
 import { pickGraphic } from './lib/graphics.mjs'
 import { MANAGER_KEYS } from './images.shared.mjs'
 import { findMissingPhotos, formatMissingReport, readOverrides } from './lib/photos.mjs'
@@ -237,18 +238,30 @@ function readLivePoints(payload, event) {
    Cache. Confirmed gameweeks never change again, so they are fetched once.
    ------------------------------------------------------------------------- */
 
-async function readCache(event) {
+async function readCacheFile(filename) {
   try {
-    return JSON.parse(await readFile(path.join(CACHE_DIR, `gw-${event}.json`), 'utf8'))
+    return JSON.parse(await readFile(path.join(CACHE_DIR, filename), 'utf8'))
   } catch {
     return null
   }
 }
 
-async function writeCache(event, payload) {
+async function writeCacheFile(filename, payload) {
   await mkdir(CACHE_DIR, { recursive: true })
-  await writeFile(path.join(CACHE_DIR, `gw-${event}.json`), JSON.stringify(payload) + '\n')
+  await writeFile(path.join(CACHE_DIR, filename), JSON.stringify(payload) + '\n')
 }
+
+const readCache = (event) => readCacheFile(`gw-${event}.json`)
+const writeCache = (event, payload) => writeCacheFile(`gw-${event}.json`, payload)
+
+/* Our own locally-finalised result (Addendum §2/§3), locked in the first
+   time it exists for the same reason the confirmed-week cache above is:
+   money, a Koch and a reveal have already been acted on by then, and it
+   must not silently recompute into something different on a later run.
+   Also what §4's reconciliation compares FPL's eventual confirmation
+   against, once it finally arrives. */
+const readLocalSnapshot = (event) => readCacheFile(`gw-${event}-local.json`)
+const writeLocalSnapshot = (event, payload) => writeCacheFile(`gw-${event}-local.json`, payload)
 
 /* -------------------------------------------------------------------------
    Writing. Everything is built first; nothing touches disk until it all
@@ -486,12 +499,33 @@ async function main() {
   const now = Date.now()
   const locked = events.filter((e) => new Date(e.deadline_time).getTime() <= now)
 
+  /* The reconciliation ledger (Addendum §4): one entry per gameweek, written
+     the first time FPL's own confirmation catches up with a result we had
+     already locally finalised and acted on. Loaded first so a week already
+     reconciled on a previous run is never reconciled, or logged, twice. */
+  let reconciliationRecords = []
+  try {
+    reconciliationRecords = JSON.parse(await readFile(path.join(DATA_DIR, 'reconciliation.json'), 'utf8')).records ?? []
+  } catch {
+    // First run, or the file was removed.
+  }
+
   for (const event of locked) {
     const dataChecked = classicDataCheckedById.get(event.id) && event.finished
     const cached = dataChecked ? await readCache(event.id) : null
     if (cached) {
       perGw[event.id] = cached
       squadFiles.push(cached)
+      continue
+    }
+
+    // Not yet confirmed. If we already locked in our own locally-finalised
+    // result for this week, reuse it rather than recomputing from live data
+    // again — same reasoning as the cache above, just a step earlier.
+    const localSnapshot = dataChecked ? null : await readLocalSnapshot(event.id)
+    if (localSnapshot) {
+      perGw[event.id] = localSnapshot
+      squadFiles.push(localSnapshot)
       continue
     }
 
@@ -564,8 +598,13 @@ async function main() {
       }))
     const finalisation = isLocallyFinalised({ fixtures: eventFixtures, livePayload, now })
     const locallyFinalised = finalisation.finalised
-    if (locallyFinalised) {
-      log(`  GW${event.id}: locally finalised (FPL dataChecked=${dataChecked}) — applying our own auto-subs.`)
+    // Only apply our own subs while FPL is still unconfirmed. Once
+    // dataChecked is true, `squads[key]`'s `position` already reflects
+    // FPL's own final, post-sub state (not the original fifteen), and
+    // running our engine over that a second time is at best a no-op and at
+    // worst wrong — it must never run here.
+    if (locallyFinalised && !dataChecked) {
+      log(`  GW${event.id}: locally finalised — applying our own auto-subs.`)
       for (const key of Object.keys(squads)) {
         const subbed = applySubstitutions({
           picks: squads[key],
@@ -611,7 +650,30 @@ async function main() {
     }
     perGw[event.id] = record
     squadFiles.push(record)
-    if (dataChecked) await writeCache(event.id, record)
+
+    if (dataChecked) {
+      await writeCache(event.id, record)
+      // FPL has just confirmed a week we may already have locally finalised
+      // and acted on — money charged, a reveal already run. §4: compare the
+      // two, and never let the comparison happen silently.
+      const ourSnapshot = await readLocalSnapshot(event.id)
+      if (ourSnapshot && !reconciliationRecords.some((r) => r.event === event.id)) {
+        const comparison = reconcile({
+          managerKeys: managers.map((m) => m.key),
+          ourSquads: ourSnapshot.squads,
+          ourElementPoints: ourSnapshot.elementPoints,
+          fplSquads: record.squads,
+          fplScores: scoresByGw[event.id] ?? {},
+        })
+        reconciliationRecords.push({ event: event.id, reconciledAt: new Date(now).toISOString(), ...comparison })
+        log(
+          `  GW${event.id}: reconciled against FPL's confirmation. ` +
+            `Koch ${comparison.kochMatch ? 'matched' : `DID NOT MATCH (ours ${comparison.ourKochKeys.join(', ')} vs FPL ${comparison.fplKochKeys.join(', ')})`}.`
+        )
+      }
+    } else if (locallyFinalised) {
+      await writeLocalSnapshot(event.id, record)
+    }
   }
 
   /* GW0, the initial draft. Always available, and the only squad view there
@@ -841,6 +903,7 @@ async function main() {
     ['season.json', season],
     ['players.json', players],
     ['fixtures.json', fixtures],
+    ['reconciliation.json', { records: reconciliationRecords, generatedAt }],
   ]) {
     results.push(await writeIfChanged(file, payload, startedAt))
   }

@@ -350,3 +350,31 @@ export interface SquadFile {
   players: Record<string, SquadPlayer>
   generatedAt: string
 }
+
+/**
+ * One manager's comparison in a reconciliation record (own-gameweek-
+ * finalisation §4): what we decided locally against what FPL's own
+ * confirmation eventually said.
+ */
+export interface ReconciliationManagerResult {
+  xiMatch: boolean
+  ourTotal: number
+  fplTotal: number
+  totalMatch: boolean
+  totalDelta: number
+  /** Where a mismatch came from — our substitution choice, or the points
+   *  themselves moving (a late stat/bonus correction). Null when it matched. */
+  mismatchSource: 'substitution' | 'points' | null
+}
+
+/** data/reconciliation.json: one entry per gameweek FPL has confirmed since
+ *  we locally finalised it ourselves. Never retroactive — only gameweeks
+ *  reconciled from the moment this existed onward. */
+export interface ReconciliationRecord {
+  event: number
+  reconciledAt: string
+  perManager: Record<ManagerKey, ReconciliationManagerResult>
+  ourKochKeys: ManagerKey[]
+  fplKochKeys: ManagerKey[]
+  kochMatch: boolean
+}

@@ -1,5 +1,5 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react'
-import type { Gameweek, League, Month, PlayersFile, Season } from './types'
+import type { Gameweek, League, Month, PlayersFile, ReconciliationRecord, Season } from './types'
 import { asset, setPlayerImageOverrides } from './lib/assets'
 import { setPhotoFraming } from './lib/photoFraming'
 
@@ -9,6 +9,9 @@ export interface Dataset {
   months: Month[]
   season: Season
   players: PlayersFile
+  /** Addendum §4: gameweeks FPL has confirmed since we locally finalised
+   *  them ourselves, and whether the two agreed. */
+  reconciliation: ReconciliationRecord[]
   generatedAt: string
 }
 
@@ -34,7 +37,7 @@ interface DataContextValue {
 
 const DataContext = createContext<DataContextValue | null>(null)
 
-const FILES = ['league', 'gameweeks', 'months', 'season', 'players', 'photo-framing'] as const
+const FILES = ['league', 'gameweeks', 'months', 'season', 'players', 'photo-framing', 'reconciliation'] as const
 
 async function loadDataset(cacheBust: number | null): Promise<Dataset> {
   const suffix = cacheBust === null ? '' : `?t=${cacheBust}`
@@ -58,6 +61,7 @@ async function loadDataset(cacheBust: number | null): Promise<Dataset> {
     season: Season
     players: PlayersFile
     'photo-framing': { framing: Record<string, { scale: number; top: number }>; generatedAt: string }
+    reconciliation: { records: ReconciliationRecord[]; generatedAt: string }
   }
 
   // Published once with the data rather than probed per image.
@@ -70,6 +74,7 @@ async function loadDataset(cacheBust: number | null): Promise<Dataset> {
     months: files.months.months,
     season: files.season,
     players: files.players,
+    reconciliation: files.reconciliation.records,
     // The oldest of the five, so a file that stopped updating is what gets
     // reported rather than being hidden by its fresher neighbours.
     generatedAt: [
