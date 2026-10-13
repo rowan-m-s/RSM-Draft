@@ -731,153 +731,139 @@
   animation: none;
 }
 /* ====================================================================
-   Koch-only reveal, v7. "HAAAAS ANYONE SEEN" is never removed or
-   replaced any more — no crossfade, no second copy of the line. It wipes
-   in once, keeps growing the whole time it is on screen, and the name
-   reveals underneath it, in the same spot, joining it rather than
-   swapping it out. Floaters now finish before the name starts revealing
-   (by 4550ms) rather than running into it — they used to
-   overlap the name on most plays, which was the point of this pass.
+   Koch-only reveal, v8. The hold after the name finishes filling in,
+   before the card transition starts, is a full 500ms now (was 400) —
+   everything else about the shape is unchanged, this only pushed the
+   card's own fade-in and the ticker 100ms later.
    ==================================================================== */
 .koch-overlay {
   opacity: 1;
-  animation: koch-overlay-out 5850ms linear forwards;
+  animation: koch-overlay-out 5950ms linear forwards;
 }
 @keyframes koch-overlay-out {
-  0%, 93.162% { opacity: 1; }
+  0%, 93.277% { opacity: 1; }
   100% { opacity: 0; }
 }
 .koch-breaking {
   color: var(--color-pl-amber);
   opacity: 0;
-  animation: koch-breaking 5850ms linear forwards;
+  animation: koch-breaking 5950ms linear forwards;
 }
 @keyframes koch-breaking {
-  0%, 0.923% { opacity: 0; transform: scale(1); }
-  1.026% { opacity: 1; transform: scale(1); }
-  12.991% { opacity: 1; transform: scale(1.04); }
-  15.385%, 100% { opacity: 0; transform: scale(1.04); }
+  0%, 0.908% { opacity: 0; transform: scale(1); }
+  1.008% { opacity: 1; transform: scale(1); }
+  12.773% { opacity: 1; transform: scale(1.04); }
+  15.126%, 100% { opacity: 0; transform: scale(1.04); }
 }
 .koch-phase2 {
   color: var(--color-pl-text);
   opacity: 0;
-  animation: koch-phase2 5850ms linear forwards;
+  animation: koch-phase2 5950ms linear forwards;
 }
 @keyframes koch-phase2 {
-  0%, 17.846% { opacity: 0; }
-  17.949%, 40.923% { opacity: 1; }
-  41.026%, 100% { opacity: 0; }
+  0%, 17.546% { opacity: 0; }
+  17.647%, 40.235% { opacity: 1; }
+  40.336%, 100% { opacity: 0; }
 }
 .koch-word { opacity: 0; }
-.koch-word1 { animation: koch-word1 5850ms linear forwards; }
-.koch-word2 { animation: koch-word2 5850ms linear forwards; }
-.koch-word3 { animation: koch-word3 5850ms linear forwards; }
-@keyframes koch-word1 { 0%, 17.846% { opacity: 0; transform: translateY(6px); } 17.949% { opacity: 1; transform: none; } 25.538%, 100% { opacity: 0; transform: none; } }
-@keyframes koch-word2 { 0%, 25.538% { opacity: 0; transform: translateY(6px); } 25.641% { opacity: 1; transform: none; } 33.231%, 100% { opacity: 0; transform: none; } }
-@keyframes koch-word3 { 0%, 33.231% { opacity: 0; transform: translateY(6px); } 33.333% { opacity: 1; transform: none; } 40.923%, 100% { opacity: 0; transform: none; } }
+.koch-word1 { animation: koch-word1 5950ms linear forwards; }
+.koch-word2 { animation: koch-word2 5950ms linear forwards; }
+.koch-word3 { animation: koch-word3 5950ms linear forwards; }
+@keyframes koch-word1 { 0%, 17.546% { opacity: 0; transform: translateY(6px); } 17.647% { opacity: 1; transform: none; } 25.109%, 100% { opacity: 0; transform: none; } }
+@keyframes koch-word2 { 0%, 25.109% { opacity: 0; transform: translateY(6px); } 25.210% { opacity: 1; transform: none; } 32.672%, 100% { opacity: 0; transform: none; } }
+@keyframes koch-word3 { 0%, 32.672% { opacity: 0; transform: translateY(6px); } 32.773% { opacity: 1; transform: none; } 40.235%, 100% { opacity: 0; transform: none; } }
 
-/* The one persistent block: "seen" wipes in, keeps growing the whole
-   time (1 -> 1.15) right through to the card's fade-in — it is never
-   faded out on its own, .koch-overlay handles that for the whole group
-   at once. 80vw, not 90-92: a scaled element grows outward from its
-   painted centre without relaying out, so it needs real margin of its
-   own at the peak or it clips. */
 .koch-flash-seen-alone {
   position: absolute; top: 50%; left: 50%; width: 80vw; text-align: center;
   opacity: 0;
-  animation: koch-flash-seen-alone 5850ms linear forwards;
+  animation: koch-flash-seen-alone 5950ms linear forwards;
 }
 @keyframes koch-flash-seen-alone {
-  0%, 43.487% { opacity: 0; transform: translate(-50%, -50%) scale(1); }
-  43.590% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
-  93.162% { opacity: 1; transform: translate(-50%, -50%) scale(1.15); }
+  0%, 42.756% { opacity: 0; transform: translate(-50%, -50%) scale(1); }
+  42.857% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+  93.277% { opacity: 1; transform: translate(-50%, -50%) scale(1.15); }
   100% { opacity: 1; transform: translate(-50%, -50%) scale(1.15); }
 }
-/* One continuous 600ms wipe across the whole line — splitting it onto
-   "HAAAAS" alone and cutting "ANYONE SEEN" in separately read as two
-   different things stitched together. */
 .koch-haaas {
   display: inline-block;
   clip-path: inset(0 100% 0 0);
-  animation: koch-haaas-reveal 5850ms linear forwards;
+  animation: koch-haaas-reveal 5950ms linear forwards;
 }
 @keyframes koch-haaas-reveal {
-  0%, 43.487% { clip-path: inset(0 100% 0 0); }
-  53.846%, 100% { clip-path: inset(0 0 0 0); }
+  0%, 42.756% { clip-path: inset(0 100% 0 0); }
+  52.941%, 100% { clip-path: inset(0 0 0 0); }
 }
-/* The name's own wipe, underneath "seen", once it has held alone for a
-   moment — joining the line rather than replacing it. */
 .koch-name-reveal {
   display: inline-block;
   clip-path: inset(0 100% 0 0);
-  animation: koch-name-reveal 5850ms linear forwards;
+  animation: koch-name-reveal 5950ms linear forwards;
 }
 @keyframes koch-name-reveal {
-  0%, 77.675% { clip-path: inset(0 100% 0 0); }
-  86.325%, 100% { clip-path: inset(0 0 0 0); }
+  0%, 76.370% { clip-path: inset(0 100% 0 0); }
+  84.874%, 100% { clip-path: inset(0 0 0 0); }
 }
 .koch-sting-card {
   opacity: 0;
-  animation: koch-sting-card 5850ms linear forwards;
+  animation: koch-sting-card 5950ms linear forwards;
 }
 @keyframes koch-sting-card {
-  0%, 93.162% { opacity: 0; }
+  0%, 93.277% { opacity: 0; }
   100% { opacity: 1; }
 }
 .koch-floater-1 {
   position: absolute; top: 50%; left: 50%; max-width: 44vw; text-align: center;
   opacity: 0;
-  animation: koch-floater-1 5850ms linear forwards;
+  animation: koch-floater-1 5950ms linear forwards;
 }
 @keyframes koch-floater-1 {
-  0%, 43.487% { opacity: 0; }
-  43.590% { opacity: 1; transform: translate(-50%, -50%) translate(-18vw, -28vh) rotate(-8deg) scale(0.9); }
-  50.325% { opacity: 1; transform: translate(-50%, -50%) translate(-18vw, -28vh) rotate(-8deg) scale(0.9); }
-  50.427%, 100% { opacity: 0; transform: translate(-50%, -50%) translate(-18vw, -28vh) rotate(-8deg) scale(0.9); }
+  0%, 42.756% { opacity: 0; }
+  42.857% { opacity: 1; transform: translate(-50%, -50%) translate(-18vw, -28vh) rotate(-8deg) scale(0.9); }
+  49.479% { opacity: 1; transform: translate(-50%, -50%) translate(-18vw, -28vh) rotate(-8deg) scale(0.9); }
+  49.580%, 100% { opacity: 0; transform: translate(-50%, -50%) translate(-18vw, -28vh) rotate(-8deg) scale(0.9); }
 }
 .koch-floater-2 {
   position: absolute; top: 50%; left: 50%; max-width: 44vw; text-align: center;
   opacity: 0;
-  animation: koch-floater-2 5850ms linear forwards;
+  animation: koch-floater-2 5950ms linear forwards;
 }
 @keyframes koch-floater-2 {
-  0%, 50.325% { opacity: 0; }
-  50.427% { opacity: 1; transform: translate(-50%, -50%) translate(18vw, -18vh) rotate(7deg) scale(0.85); }
-  57.162% { opacity: 1; transform: translate(-50%, -50%) translate(18vw, -18vh) rotate(7deg) scale(0.85); }
-  57.265%, 100% { opacity: 0; transform: translate(-50%, -50%) translate(18vw, -18vh) rotate(7deg) scale(0.85); }
+  0%, 49.479% { opacity: 0; }
+  49.580% { opacity: 1; transform: translate(-50%, -50%) translate(18vw, -18vh) rotate(7deg) scale(0.85); }
+  56.202% { opacity: 1; transform: translate(-50%, -50%) translate(18vw, -18vh) rotate(7deg) scale(0.85); }
+  56.303%, 100% { opacity: 0; transform: translate(-50%, -50%) translate(18vw, -18vh) rotate(7deg) scale(0.85); }
 }
 .koch-floater-3 {
   position: absolute; top: 50%; left: 50%; max-width: 44vw; text-align: center;
   opacity: 0;
-  animation: koch-floater-3 5850ms linear forwards;
+  animation: koch-floater-3 5950ms linear forwards;
 }
 @keyframes koch-floater-3 {
-  0%, 57.162% { opacity: 0; }
-  57.265% { opacity: 1; transform: translate(-50%, -50%) translate(-18vw, 24vh) rotate(-6deg) scale(0.95); }
-  64.000% { opacity: 1; transform: translate(-50%, -50%) translate(-18vw, 24vh) rotate(-6deg) scale(0.95); }
-  64.103%, 100% { opacity: 0; transform: translate(-50%, -50%) translate(-18vw, 24vh) rotate(-6deg) scale(0.95); }
+  0%, 56.202% { opacity: 0; }
+  56.303% { opacity: 1; transform: translate(-50%, -50%) translate(-18vw, 24vh) rotate(-6deg) scale(0.95); }
+  62.924% { opacity: 1; transform: translate(-50%, -50%) translate(-18vw, 24vh) rotate(-6deg) scale(0.95); }
+  63.025%, 100% { opacity: 0; transform: translate(-50%, -50%) translate(-18vw, 24vh) rotate(-6deg) scale(0.95); }
 }
 .koch-floater-4 {
   position: absolute; top: 50%; left: 50%; max-width: 44vw; text-align: center;
   opacity: 0;
-  animation: koch-floater-4 5850ms linear forwards;
+  animation: koch-floater-4 5950ms linear forwards;
 }
 @keyframes koch-floater-4 {
-  0%, 64.000% { opacity: 0; }
-  64.103% { opacity: 1; transform: translate(-50%, -50%) translate(18vw, 20vh) rotate(9deg) scale(0.88); }
-  70.838% { opacity: 1; transform: translate(-50%, -50%) translate(18vw, 20vh) rotate(9deg) scale(0.88); }
-  70.940%, 100% { opacity: 0; transform: translate(-50%, -50%) translate(18vw, 20vh) rotate(9deg) scale(0.88); }
+  0%, 62.924% { opacity: 0; }
+  63.025% { opacity: 1; transform: translate(-50%, -50%) translate(18vw, 20vh) rotate(9deg) scale(0.88); }
+  69.647% { opacity: 1; transform: translate(-50%, -50%) translate(18vw, 20vh) rotate(9deg) scale(0.88); }
+  69.748%, 100% { opacity: 0; transform: translate(-50%, -50%) translate(18vw, 20vh) rotate(9deg) scale(0.88); }
 }
 .koch-floater-5 {
   position: absolute; top: 50%; left: 50%; max-width: 44vw; text-align: center;
   opacity: 0;
-  animation: koch-floater-5 5850ms linear forwards;
+  animation: koch-floater-5 5950ms linear forwards;
 }
 @keyframes koch-floater-5 {
-  0%, 70.838% { opacity: 0; }
-  70.940% { opacity: 1; transform: translate(-50%, -50%) translate(-20vw, -34vh) rotate(-5deg) scale(0.82); }
-  77.675% { opacity: 1; transform: translate(-50%, -50%) translate(-20vw, -34vh) rotate(-5deg) scale(0.82); }
-  77.778%, 100% { opacity: 0; transform: translate(-50%, -50%) translate(-20vw, -34vh) rotate(-5deg) scale(0.82); }
+  0%, 69.647% { opacity: 0; }
+  69.748% { opacity: 1; transform: translate(-50%, -50%) translate(-20vw, -34vh) rotate(-5deg) scale(0.82); }
+  76.370% { opacity: 1; transform: translate(-50%, -50%) translate(-20vw, -34vh) rotate(-5deg) scale(0.82); }
+  76.471%, 100% { opacity: 0; transform: translate(-50%, -50%) translate(-20vw, -34vh) rotate(-5deg) scale(0.82); }
 }
 
 .sting-still .koch-overlay { animation: none; opacity: 0; }

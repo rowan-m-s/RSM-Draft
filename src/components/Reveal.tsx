@@ -220,8 +220,8 @@ function Sting({ item, nameOf, onDone }: { item: RevealItem; nameOf: (k: string)
   // The Koch-only extra beat lands the card at 2.7s; the Month's original
   // sting still takes its own, much longer timeline. The ticker is shared,
   // so it is the one piece told explicitly when to start.
-  const tickerDelay = item.kind === 'koch' ? '5850ms' : undefined
-  const tickerLoopDelay = item.kind === 'koch' ? '6050ms' : undefined
+  const tickerDelay = item.kind === 'koch' ? '5950ms' : undefined
+  const tickerLoopDelay = item.kind === 'koch' ? '6150ms' : undefined
 
   return createPortal(
     <div
