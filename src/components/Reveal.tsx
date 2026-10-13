@@ -2,14 +2,25 @@ import { useCallback, useEffect, useLayoutEffect, useMemo, useRef, useState } fr
 import { createPortal } from 'react-dom'
 import { CardImage } from './Img'
 import { money } from '../lib/season'
+import { asset } from '../lib/assets'
 import type { Dataset } from '../data'
 import type { ManagerKey } from '../types'
+
+/** The Koch-only reveal's backdrop for its first two beats. See the Sting
+ *  component for why it is Koch-only. */
+const BREAKING_NEWS_BG = asset('images/reveal/breaking-news.webp')
 
 /**
  * The breaking news sting for a confirmed Koch of the Week or Manager of the
  * Month. Television mechanics, our palette: a colour panel wipes in, BREAKING
  * cuts in hard, the panel wipes out to the card, a ticker runs the headline.
- * Roughly two and a half seconds, all linear and stepped, no easing, no sound.
+ * All linear and stepped, no easing, no sound.
+ *
+ * Koch gets an extra beat the Month does not: BREAKING NEWS plays over a new
+ * backdrop photo, then "HAAAAS ANYONE SEEN" flashes the name around the
+ * screen a few times, then a hard cut to the ordinary card, about 2.7s in
+ * all. Koch only — "has anyone seen" mocks, which is wrong for Manager of
+ * the Month, and the backdrop does not apply there either unless asked.
  *
  * Rules, all kept here:
  *  - fires on confirmation only: a Koch needs the week's confirmed (FPL's
@@ -206,6 +217,12 @@ function Sting({ item, nameOf, onDone }: { item: RevealItem; nameOf: (k: string)
     }
   }, [onDone])
 
+  // The Koch-only extra beat lands the card at 2.7s; the Month's original
+  // sting still takes its own, much longer timeline. The ticker is shared,
+  // so it is the one piece told explicitly when to start.
+  const tickerDelay = item.kind === 'koch' ? '2700ms' : undefined
+  const tickerLoopDelay = item.kind === 'koch' ? '2900ms' : undefined
+
   return createPortal(
     <div
       role="dialog"
@@ -214,6 +231,71 @@ function Sting({ item, nameOf, onDone }: { item: RevealItem; nameOf: (k: string)
       onClick={onDone}
       className={`sting fixed inset-0 z-50 overflow-hidden bg-pl-bg text-pl-text select-none sting-${tone} ${reduced ? 'sting-still' : ''}`}
     >
+      {item.kind === 'koch' ? (
+        <KochContent item={item} names={names} nameOf={nameOf} />
+      ) : (
+        <MotmContent item={item} names={names} nameOf={nameOf} />
+      )}
+
+      {/* 4. The ticker. */}
+      <div
+        className="sting-ticker absolute inset-x-0 bottom-0 flex h-12 items-center overflow-hidden border-t border-pl-border bg-pl-surface pb-[env(safe-area-inset-bottom)]"
+        style={tickerDelay ? { animationDelay: tickerDelay } : undefined}
+      >
+        <span className="display sting-accent-bg z-10 flex h-full shrink-0 items-center px-4 text-sm tracking-wider text-pl-bg uppercase">
+          Breaking news
+        </span>
+        {/* Two identical halves, the track slides one half-width then repeats,
+            so the bar is always full and the loop is seamless. */}
+        <div
+          ref={trackRef}
+          className="sting-ticker-track flex whitespace-nowrap"
+          style={tickerLoopDelay ? { animationDelay: tickerLoopDelay } : undefined}
+        >
+          {[0, 1].map((half) => (
+            <span key={half} className="flex shrink-0">
+              {[0, 1, 2, 3, 4, 5].flatMap((i) =>
+                tickerItems.map((text, j) => (
+                  <span key={`${i}-${j}`} className="flex items-center gap-10 pl-10">
+                    <span className="text-sm font-semibold tracking-wide uppercase">{text}</span>
+                    <span className="sting-accent-bg h-1.5 w-1.5 shrink-0 rounded-full" aria-hidden="true" />
+                  </span>
+                ))
+              )}
+            </span>
+          ))}
+        </div>
+      </div>
+
+      <button
+        type="button"
+        onClick={(event) => {
+          // The overlay dismisses on any tap; do not let this tap count twice.
+          event.stopPropagation()
+          onDone()
+        }}
+        className="absolute top-[calc(0.75rem+env(safe-area-inset-top))] right-3 z-20 rounded border border-pl-border bg-pl-bg/60 px-2.5 py-1 text-xs font-semibold text-pl-text"
+      >
+        Dismiss
+      </button>
+    </div>,
+    document.body
+  )
+}
+
+/** Manager of the Month's original sting, unchanged: panel wipe, BREAKING
+ *  NEWS, the word stack, then the card as the panel leaves. */
+function MotmContent({
+  item,
+  names,
+  nameOf,
+}: {
+  item: RevealItem
+  names: string
+  nameOf: (k: string) => string
+}) {
+  return (
+    <>
       {/* 1. The panel, wiping in from the left then out to the right, with
           2. BREAKING cut in on it, so it leaves with the panel. */}
       <div className="sting-panel absolute inset-0">
@@ -228,9 +310,7 @@ function Sting({ item, nameOf, onDone }: { item: RevealItem; nameOf: (k: string)
         {/* The announcement lands a word at a time, one per line. */}
         <div className="sting-breaking2 absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
           <p className="sting-word sting-w1 display text-[13vw] leading-[1.05] tracking-tight sm:text-[6.5rem]">NEW</p>
-          <p className="sting-word sting-w2 display text-[13vw] leading-[1.05] tracking-tight sm:text-[6.5rem]">
-            {item.kind === 'koch' ? 'KOCH' : 'MOTM'}
-          </p>
+          <p className="sting-word sting-w2 display text-[13vw] leading-[1.05] tracking-tight sm:text-[6.5rem]">MOTM</p>
           <p className="sting-word sting-w3 display text-[13vw] leading-[1.05] tracking-tight sm:text-[6.5rem]">
             ANNOUNCED
           </p>
@@ -277,42 +357,95 @@ function Sting({ item, nameOf, onDone }: { item: RevealItem; nameOf: (k: string)
           </div>
         </div>
       </div>
+    </>
+  )
+}
 
-      {/* 4. The ticker. */}
-      <div className="sting-ticker absolute inset-x-0 bottom-0 flex h-12 items-center overflow-hidden border-t border-pl-border bg-pl-surface pb-[env(safe-area-inset-bottom)]">
-        <span className="display sting-accent-bg z-10 flex h-full shrink-0 items-center px-4 text-sm tracking-wider text-pl-bg uppercase">
-          Breaking news
-        </span>
-        {/* Two identical halves, the track slides one half-width then repeats,
-            so the bar is always full and the loop is seamless. */}
-        <div ref={trackRef} className="sting-ticker-track flex whitespace-nowrap">
-          {[0, 1].map((half) => (
-            <span key={half} className="flex shrink-0">
-              {[0, 1, 2, 3, 4, 5].flatMap((i) =>
-                tickerItems.map((text, j) => (
-                  <span key={`${i}-${j}`} className="flex items-center gap-10 pl-10">
-                    <span className="text-sm font-semibold tracking-wide uppercase">{text}</span>
-                    <span className="sting-accent-bg h-1.5 w-1.5 shrink-0 rounded-full" aria-hidden="true" />
-                  </span>
-                ))
-              )}
-            </span>
-          ))}
+/**
+ * The Koch-only sequence: BREAKING NEWS over the new backdrop, then
+ * "HAAAAS ANYONE SEEN" flashing the name around the screen, then a hard cut
+ * to the ordinary card. One shared 2700ms clock — see the CSS.
+ *
+ * The flashing name is its own layer, not folded into the backdrop's
+ * position, so only the text moves and the photo beneath never does: a
+ * rapidly-cutting full-screen flash is a real photosensitive epilepsy
+ * trigger and most people affected do not have reduced motion enabled, so
+ * the backdrop stays completely still regardless.
+ */
+function KochContent({ item, names, nameOf }: { item: RevealItem; names: string; nameOf: (k: string) => string }) {
+  return (
+    <>
+      {/* Beats 1 and 2: BREAKING NEWS, then the flashing name, both over the
+          new backdrop. Gone in one hard cut the instant the card lands. */}
+      <div
+        className="koch-overlay absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: `url(${BREAKING_NEWS_BG})` }}
+      >
+        <div className="absolute inset-0 bg-pl-bg/70" aria-hidden="true" />
+
+        {/* Beat 1: the same BREAKING NEWS cut-in and word stack as the
+            Month's sting, just much faster. */}
+        <div className="koch-breaking absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
+          <p className="display text-[14vw] leading-none tracking-tight text-pl-bg sm:text-[9rem]">BREAKING NEWS</p>
+        </div>
+        <div className="koch-phase2 absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
+          <p className="koch-word koch-word1 display text-[13vw] leading-[1.05] tracking-tight sm:text-[6.5rem]">
+            NEW
+          </p>
+          <p className="koch-word koch-word2 display text-[13vw] leading-[1.05] tracking-tight sm:text-[6.5rem]">
+            KOCH
+          </p>
+          <p className="koch-word koch-word3 display text-[13vw] leading-[1.05] tracking-tight sm:text-[6.5rem]">
+            ANNOUNCED
+          </p>
+        </div>
+
+        {/* Beat 2: "has anyone seen" flashes around the screen, the name
+            stacked large beneath it — never run across one line, since
+            KELLETT and DJ cannot share a comfortable size at 375px. */}
+        <div className="koch-flash max-w-[90vw] text-center" aria-hidden="true">
+          <p className="display max-w-[80vw] text-[7vw] leading-tight tracking-tight text-pl-bg sm:text-4xl">
+            HAAAAS ANYONE SEEN
+          </p>
+          {/* Never wraps, whatever the name: a mid-word break reads as broken,
+              not chaotic. The flash positions below keep clear of the edges
+              instead, same reasoning as the single-line ban in the brief. */}
+          <p className="display mt-1 text-nowrap text-[16vw] leading-[0.95] tracking-tight text-pl-amber uppercase sm:text-8xl">
+            {names}
+          </p>
         </div>
       </div>
 
-      <button
-        type="button"
-        onClick={(event) => {
-          // The overlay dismisses on any tap; do not let this tap count twice.
-          event.stopPropagation()
-          onDone()
-        }}
-        className="absolute top-[calc(0.75rem+env(safe-area-inset-top))] right-3 z-20 rounded border border-pl-border bg-pl-bg/60 px-2.5 py-1 text-xs font-semibold text-pl-text"
-      >
-        Dismiss
-      </button>
-    </div>,
-    document.body
+      {/* Beat 3: a hard cut to the ordinary card, fully assembled at once
+          rather than built up piece by piece — there is no time left to
+          stagger it, and a hard cut is the point. */}
+      <div className="koch-sting-card absolute inset-x-0 top-12 bottom-12 flex items-center justify-center px-6">
+        <div className="flex max-w-3xl flex-col items-center gap-3 sm:flex-row sm:gap-8">
+          {item.managerKeys.map((key) => (
+            <CardImage
+              key={key}
+              set={item.setFor(key)}
+              playerCode={item.playerCodeFor?.(key) ?? null}
+              managerKey={key}
+              alt={`${nameOf(key)}, ${item.label}`}
+              className="aspect-square w-[74vw] max-w-[350px] shrink-0 sm:w-96 sm:max-w-none"
+            />
+          ))}
+          <div className="text-center sm:text-left">
+            <p className="eyebrow sting-accent-text">{item.label}</p>
+            <p className="display mt-1.5 text-3xl leading-[1.1] sm:mt-2 sm:text-6xl">{names}</p>
+            <p className="mt-2 text-base text-pl-muted sm:mt-3 sm:text-lg">
+              <span className="display tnum sting-accent-text text-4xl sm:text-5xl">{item.points}</span> pts
+            </p>
+            {/* The consequence, set apart from the score it follows. */}
+            <p
+              className={`display mt-3 border-t border-pl-border pt-3 text-xl sm:mt-6 sm:pt-4 sm:text-2xl ${item.moneyTone === 'red' ? 'text-pl-red' : 'text-pl-green'}`}
+            >
+              {item.money}
+            </p>
+          </div>
+        </div>
+      </div>
+    </>
   )
 }

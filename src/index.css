@@ -730,3 +730,205 @@
 .sting-still .sting-word {
   animation: none;
 }
+
+/* The Koch-only reveal sequence: BreakingNewsGraphic as a backdrop for two
+   quick beats, then a hard cut to the ordinary card. Koch only — Manager of
+   the Month keeps the original sting above, untouched, background and all;
+   "has anyone seen" is a mocking line and wrong for a winner.
+
+   One shared 2700ms clock, same hold-then-jump technique as the sting above
+   (two keyframe stops at the same instant minus a hair, so the browser has
+   nothing to interpolate and the change reads as a cut, not a slide):
+     0      background + scrim appear, BREAKING NEWS cuts in
+     0.06   BREAKING NEWS visible
+     0.40   cuts to the NEW / KOCH / ANNOUNCED stack
+     0.50   KOCH
+     0.60   ANNOUNCED
+     1.00   cuts to "HAAAAS ANYONE SEEN" + the Koch's name — five hard cuts
+            to a new position, size and tilt, 340ms each (2.94/s, under the
+            3/s photosensitivity cap), background held steady throughout
+     2.70   hard cut: overlay gone, the ordinary card lands
+   Reduced motion skips straight to the card, same as the sting above. */
+.koch-overlay {
+  opacity: 1;
+  animation: koch-overlay-out 2700ms linear forwards;
+}
+@keyframes koch-overlay-out {
+  0%,
+  99.8% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  } /* 2.70s: gone the instant the card cuts in */
+}
+.koch-breaking {
+  color: var(--color-pl-bg);
+  opacity: 0;
+  animation: koch-breaking 2700ms linear forwards;
+}
+@keyframes koch-breaking {
+  0%,
+  2.1% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  2.222% {
+    opacity: 1;
+  } /* 0.06s: hard cut in */
+  13% {
+    opacity: 1;
+    transform: scale(1.04);
+  }
+  14.815%,
+  100% {
+    opacity: 0;
+    transform: scale(1.04);
+  } /* gone by 0.40s */
+}
+.koch-phase2 {
+  color: var(--color-pl-bg);
+  opacity: 0;
+  animation: koch-phase2 2700ms linear forwards;
+}
+@keyframes koch-phase2 {
+  0%,
+  14.7% {
+    opacity: 0;
+  }
+  14.815%,
+  36.9% {
+    opacity: 1;
+  } /* visible 0.40s - 1.00s */
+  37.037%,
+  100% {
+    opacity: 0;
+  }
+}
+.koch-word {
+  opacity: 0;
+}
+.koch-word1 {
+  animation: koch-word1 2700ms linear forwards;
+}
+.koch-word2 {
+  animation: koch-word2 2700ms linear forwards;
+}
+.koch-word3 {
+  animation: koch-word3 2700ms linear forwards;
+}
+@keyframes koch-word1 {
+  0%,
+  14.7% {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  14.815%,
+  100% {
+    opacity: 1;
+    transform: none;
+  } /* 0.40s */
+}
+@keyframes koch-word2 {
+  0%,
+  18.4% {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  18.519%,
+  100% {
+    opacity: 1;
+    transform: none;
+  } /* 0.50s */
+}
+@keyframes koch-word3 {
+  0%,
+  22.1% {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  22.222%,
+  100% {
+    opacity: 1;
+    transform: none;
+  } /* 0.60s */
+}
+/* Five hard cuts to a new position, size and tilt. The background stays
+   completely still — only this text moves — which is what keeps a chaotic,
+   rapidly-cutting graphic clear of a full-screen photosensitivity trigger. */
+.koch-flash {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  animation: koch-flash 2700ms linear forwards;
+}
+@keyframes koch-flash {
+  0%,
+  36.9% {
+    opacity: 0;
+  }
+  /* Scale and horizontal offset trade off deliberately: whenever a position
+     pushes sideways it also shrinks, and the one position that enlarges
+     (87.407%, last before the cut) stays dead centre — otherwise KELLETT,
+     upscaled and shoved toward an edge, risks clipping against the dialog's
+     own overflow-hidden at 375px. */
+  37.037% {
+    opacity: 1;
+    transform: translate(-50%, -50%) translate(-5vw, -8vh) rotate(-5deg) scale(0.95);
+  } /* 1.00s */
+  49.5% {
+    transform: translate(-50%, -50%) translate(-5vw, -8vh) rotate(-5deg) scale(0.95);
+  }
+  49.630% {
+    transform: translate(-50%, -50%) translate(6vw, 5vh) rotate(6deg) scale(1);
+  } /* 1.34s */
+  62.1% {
+    transform: translate(-50%, -50%) translate(6vw, 5vh) rotate(6deg) scale(1);
+  }
+  62.222% {
+    transform: translate(-50%, -50%) translate(-4vw, 9vh) rotate(-6deg) scale(0.88);
+  } /* 1.68s */
+  74.7% {
+    transform: translate(-50%, -50%) translate(-4vw, 9vh) rotate(-6deg) scale(0.88);
+  }
+  74.815% {
+    transform: translate(-50%, -50%) translate(5vw, -7vh) rotate(4deg) scale(1);
+  } /* 2.02s */
+  87.3% {
+    transform: translate(-50%, -50%) translate(5vw, -7vh) rotate(4deg) scale(1);
+  }
+  87.407% {
+    transform: translate(-50%, -50%) translate(0vw, 0vh) rotate(-3deg) scale(1.1);
+  } /* 2.36s: the last, biggest flash before the cut, held centred */
+  100% {
+    transform: translate(-50%, -50%) translate(0vw, 0vh) rotate(-3deg) scale(1.1);
+  }
+}
+.koch-sting-card {
+  opacity: 0;
+  animation: koch-sting-card 2700ms linear forwards;
+}
+@keyframes koch-sting-card {
+  0%,
+  99.8% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  } /* 2.70s: hard cut, fully assembled at once */
+}
+.sting-still .koch-overlay {
+  animation: none;
+  opacity: 0;
+}
+.sting-still .koch-breaking,
+.sting-still .koch-phase2,
+.sting-still .koch-word,
+.sting-still .koch-flash {
+  animation: none;
+}
+.sting-still .koch-sting-card {
+  animation: none;
+  opacity: 1;
+}
