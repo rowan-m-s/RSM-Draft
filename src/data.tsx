@@ -49,7 +49,13 @@ async function loadDataset(cacheBust: number | null): Promise<Dataset> {
       // cheap 304, and a changed one is never served stale from the cache
       // for the ten minutes Pages allows. A manual reload bypasses outright.
       const response = await fetch(url, { cache: cacheBust === null ? 'no-cache' : 'reload' })
-      if (!response.ok) throw new Error(`${name}.json failed with HTTP ${response.status}`)
+      if (!response.ok) {
+        // reconciliation.json is additive, not essential — a league with
+        // nothing reconciled yet should still render. Every other file is
+        // load-bearing and still fails the whole dataset, same as before.
+        if (name === 'reconciliation') return [name, { records: [], generatedAt: new Date(0).toISOString() }] as const
+        throw new Error(`${name}.json failed with HTTP ${response.status}`)
+      }
       return [name, await response.json()] as const
     })
   )
