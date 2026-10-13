@@ -57,11 +57,19 @@ export const ALL_SETS = [...MANAGER_SETS, ...SEASON_SETS, ...PLAYER_SETS]
  * underscores, hyphens, dots and spaces, lowercase. Both the filename and the
  * FPL names go through this, so `O_Reilly`, `Gyokeres` and `JoãoPedro` meet
  * their players.
+ *
+ * The eszett is folded to 'ss' explicitly: NFKD decomposes a letter plus a
+ * diacritic (ö into o plus a combining mark), but ß has no such
+ * decomposition — it is its own codepoint — so it survives NFKD untouched
+ * otherwise. FPL's own data is inconsistent about which German surnames even
+ * carry it (Groß some seasons, Gross others), so both forms have to meet in
+ * the middle.
  */
 export function normaliseName(value) {
   return String(value)
     .normalize('NFKD')
     .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[ßẞ]/g, 'ss')
     .replace(/[\s'’_\-.]/g, '')
     .toLowerCase()
 }

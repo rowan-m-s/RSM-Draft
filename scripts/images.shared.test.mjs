@@ -6,8 +6,24 @@ import {
   MANAGER_SETS,
   PLAYER_SILHOUETTE_SVG,
   classifySourceFile,
+  normaliseName,
   parseSourceName,
 } from './images.shared.mjs'
+
+describe('normaliseName', () => {
+  it('folds the eszett to a double s, either case', () => {
+    // FPL's own data is inconsistent about which German surnames even carry
+    // it — Pascal Groß resolved as "Groß" one week and "Gross" another.
+    expect(normaliseName('Groß')).toBe('gross')
+    expect(normaliseName('GROSS')).toBe('gross')
+    expect(normaliseName('STRASSE')).toBe('strasse')
+    expect(normaliseName('STRAßE')).toBe('strasse')
+  })
+
+  it('strips a diacritic and the eszett together, not just one', () => {
+    expect(normaliseName('Größ')).toBe('gross')
+  })
+})
 
 describe('parseSourceName', () => {
   it('accepts either extension for the same key and type', () => {

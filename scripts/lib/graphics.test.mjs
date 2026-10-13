@@ -8,6 +8,8 @@ const squad = [
   { code: 4, webName: 'B.Fernandes', firstName: 'Bruno', secondName: 'Borges Fernandes' },
   { code: 5, webName: 'Fernandes', firstName: 'Pedro', secondName: 'Fernandes' },
   { code: 6, webName: 'Virgil', firstName: 'Virgil', secondName: 'van Dijk' },
+  { code: 7, webName: 'De Cuyper', firstName: 'Maxim', secondName: 'De Cuyper' },
+  { code: 8, webName: 'Groß', firstName: 'Pascal', secondName: 'Groß' },
 ]
 
 describe('resolvePlayerName', () => {
@@ -20,6 +22,11 @@ describe('resolvePlayerName', () => {
     const alone = squad.filter((p) => p.code !== 5)
     expect(resolvePlayerName({ name: 'Fernandes', candidates: alone }).player.code).toBe(4)
     expect(resolvePlayerName({ name: 'BFernandes', candidates: alone }).player.code).toBe(4)
+    // A run-together two-part surname.
+    expect(resolvePlayerName({ name: 'DeCuyper', candidates: squad }).player.code).toBe(7)
+    // FPL carries this one as "Groß" with an eszett some seasons and as a
+    // plain double s other seasons — the filename has to meet whichever.
+    expect(resolvePlayerName({ name: 'Gross', candidates: squad }).player.code).toBe(8)
   })
 
   it('reports rather than guesses when a name misses or hits twice', () => {
