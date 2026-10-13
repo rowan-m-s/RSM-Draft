@@ -374,10 +374,6 @@ function MotmContent({
  */
 const MOCK_LINES = ['GOOOD TEAM', 'ENCOURAGING SIGNS', 'GOOOOD MANAGER']
 const SEEN_LINE = 'HAAAAS ANYONE SEEN'
-/** Split so the drawn-out word can wipe in slowly on its own, with the
- *  rest flowing in normally right after — see the .koch-haaas CSS. */
-const [SEEN_WORD, ...SEEN_REST_WORDS] = SEEN_LINE.split(' ')
-const SEEN_REST = SEEN_REST_WORDS.join(' ')
 const FLOATER_COUNT = 5
 
 function shuffled<T>(items: T[]): T[] {
@@ -451,9 +447,8 @@ function KochContent({ item, names, nameOf }: { item: RevealItem; names: string;
             name that breaks awkwardly mid-word, which is the thing nowrap
             is for. */}
         <div className="koch-flash-seen-alone" aria-hidden="true">
-          <p className="display max-w-[80vw] text-[10vw] leading-[1.05] tracking-tight text-pl-amber uppercase sm:text-6xl">
-            <span className="koch-haaas">{SEEN_WORD}</span>{' '}
-            <span className="koch-anyone-seen">{SEEN_REST}</span>
+          <p className="koch-haaas display max-w-[80vw] text-[10vw] leading-[1.05] tracking-tight text-pl-amber uppercase sm:text-6xl">
+            {SEEN_LINE}
           </p>
         </div>
         <div className="koch-flash-finale text-center" aria-hidden="true">

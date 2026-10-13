@@ -791,12 +791,15 @@
   77.778% { opacity: 1; transform: translate(-50%, -50%) scale(1.12); }
   82.906%, 100% { opacity: 0; transform: translate(-50%, -50%) scale(1.15); }
 }
-/* The word "HAAAAS" is deliberately drawn out, so it should look drawn
-   out: a 600ms left-to-right wipe, not an instant cut like everything
-   else here. "ANYONE SEEN" then flows in normally, quickly, right after —
-   only this first, suspenseful appearance gets the treatment; the smaller
-   repeat of the line in the finale below does not, since it is not
-   introducing anything new a second time. */
+/* The whole line is deliberately drawn out, so it should look drawn out:
+   one continuous 600ms left-to-right wipe across "HAAAAS ANYONE SEEN" in
+   full, not an instant cut like everything else here. Splitting the wipe
+   onto "HAAAAS" alone and cutting "ANYONE SEEN" in separately read as two
+   different things stitched together, which is exactly what looked
+   awkward — one wipe across the full line is the fix. Only this first,
+   suspenseful appearance gets the treatment; the smaller repeat of the
+   line in the finale below does not, since it is not introducing
+   anything new a second time. */
 .koch-haaas {
   display: inline-block;
   clip-path: inset(0 100% 0 0);
@@ -805,14 +808,6 @@
 @keyframes koch-haaas-reveal {
   0%, 43.487% { clip-path: inset(0 100% 0 0); }
   53.846%, 100% { clip-path: inset(0 0 0 0); }
-}
-.koch-anyone-seen {
-  opacity: 0;
-  animation: koch-anyone-seen-in 5850ms linear forwards;
-}
-@keyframes koch-anyone-seen-in {
-  0%, 53.743% { opacity: 0; }
-  56.410%, 100% { opacity: 1; }
 }
 .koch-flash-finale {
   position: absolute; top: 50%; left: 50%; width: 90vw; text-align: center;
@@ -895,7 +890,6 @@
 .sting-still .koch-breaking, .sting-still .koch-phase2, .sting-still .koch-word,
 .sting-still .koch-flash-seen-alone, .sting-still .koch-flash-finale { animation: none; }
 .sting-still .koch-haaas { animation: none; clip-path: inset(0 0 0 0); }
-.sting-still .koch-anyone-seen { animation: none; opacity: 1; }
 .sting-still .koch-floater-1 { animation: none; }
 .sting-still .koch-floater-2 { animation: none; }
 .sting-still .koch-floater-3 { animation: none; }
