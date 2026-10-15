@@ -3088,9 +3088,9 @@
       "clubShort": "SUN",
       "clubCode": 56,
       "photoCode": 441264,
-      "status": "i",
+      "status": "a",
       "chanceOfPlaying": 0,
-      "news": "Hamstring injury - Expected back 25 Oct",
+      "news": null,
       "newsAdded": "2026-09-24T21:30:10.382142Z"
     },
     "553": {
@@ -3100,10 +3100,10 @@
       "clubShort": "SUN",
       "clubCode": 56,
       "photoCode": 437505,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
+      "status": "d",
+      "chanceOfPlaying": 50,
+      "news": "Knock - 50% chance of playing",
+      "newsAdded": "2026-10-15T16:30:07.851112Z"
     },
     "554": {
       "name": "Tzolis",
@@ -3334,5 +3334,5 @@
       "newsAdded": null
     }
   },
-  "generatedAt": "2026-10-15T13:02:09.905Z"
+  "generatedAt": "2026-10-15T17:50:06.325Z"
 }
