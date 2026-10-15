@@ -279,7 +279,7 @@
         "points": 0
       },
       {
-        "element": 640,
+        "element": 237,
         "starter": true,
         "position": 4,
         "subbedOn": false,
@@ -287,7 +287,7 @@
         "points": 0
       },
       {
-        "element": 237,
+        "element": 481,
         "starter": true,
         "position": 5,
         "subbedOn": false,
@@ -295,7 +295,7 @@
         "points": 0
       },
       {
-        "element": 481,
+        "element": 338,
         "starter": true,
         "position": 6,
         "subbedOn": false,
@@ -303,7 +303,7 @@
         "points": 0
       },
       {
-        "element": 338,
+        "element": 127,
         "starter": true,
         "position": 7,
         "subbedOn": false,
@@ -311,7 +311,7 @@
         "points": 0
       },
       {
-        "element": 127,
+        "element": 346,
         "starter": true,
         "position": 8,
         "subbedOn": false,
@@ -319,7 +319,7 @@
         "points": 0
       },
       {
-        "element": 346,
+        "element": 224,
         "starter": true,
         "position": 9,
         "subbedOn": false,
@@ -327,7 +327,7 @@
         "points": 0
       },
       {
-        "element": 224,
+        "element": 136,
         "starter": true,
         "position": 10,
         "subbedOn": false,
@@ -335,17 +335,9 @@
         "points": 0
       },
       {
-        "element": 136,
-        "starter": true,
-        "position": 11,
-        "subbedOn": false,
-        "subbedOff": false,
-        "points": 0
-      },
-      {
         "element": 28,
         "starter": false,
-        "position": 12,
+        "position": 11,
         "subbedOn": false,
         "subbedOff": false,
         "points": 0
@@ -353,7 +345,7 @@
       {
         "element": 254,
         "starter": false,
-        "position": 13,
+        "position": 12,
         "subbedOn": false,
         "subbedOff": false,
         "points": 0
@@ -361,13 +353,21 @@
       {
         "element": 69,
         "starter": false,
-        "position": 14,
+        "position": 13,
         "subbedOn": false,
         "subbedOff": false,
         "points": 0
       },
       {
         "element": 387,
+        "starter": false,
+        "position": 14,
+        "subbedOn": false,
+        "subbedOff": false,
+        "points": 0
+      },
+      {
+        "element": 447,
         "starter": false,
         "position": 15,
         "subbedOn": false,
@@ -767,7 +767,7 @@
         "points": 0
       },
       {
-        "element": 447,
+        "element": 115,
         "starter": true,
         "position": 4,
         "subbedOn": false,
@@ -775,7 +775,7 @@
         "points": 0
       },
       {
-        "element": 115,
+        "element": 114,
         "starter": true,
         "position": 5,
         "subbedOn": false,
@@ -783,7 +783,7 @@
         "points": 0
       },
       {
-        "element": 114,
+        "element": 124,
         "starter": true,
         "position": 6,
         "subbedOn": false,
@@ -791,7 +791,7 @@
         "points": 0
       },
       {
-        "element": 124,
+        "element": 426,
         "starter": true,
         "position": 7,
         "subbedOn": false,
@@ -799,7 +799,7 @@
         "points": 0
       },
       {
-        "element": 426,
+        "element": 286,
         "starter": true,
         "position": 8,
         "subbedOn": false,
@@ -807,7 +807,7 @@
         "points": 0
       },
       {
-        "element": 286,
+        "element": 542,
         "starter": true,
         "position": 9,
         "subbedOn": false,
@@ -815,7 +815,7 @@
         "points": 0
       },
       {
-        "element": 542,
+        "element": 79,
         "starter": true,
         "position": 10,
         "subbedOn": false,
@@ -823,17 +823,9 @@
         "points": 0
       },
       {
-        "element": 79,
-        "starter": true,
-        "position": 11,
-        "subbedOn": false,
-        "subbedOff": false,
-        "points": 0
-      },
-      {
         "element": 557,
         "starter": false,
-        "position": 12,
+        "position": 11,
         "subbedOn": false,
         "subbedOff": false,
         "points": 0
@@ -841,7 +833,7 @@
       {
         "element": 170,
         "starter": false,
-        "position": 13,
+        "position": 12,
         "subbedOn": false,
         "subbedOff": false,
         "points": 0
@@ -849,13 +841,21 @@
       {
         "element": 78,
         "starter": false,
-        "position": 14,
+        "position": 13,
         "subbedOn": false,
         "subbedOff": false,
         "points": 0
       },
       {
         "element": 552,
+        "starter": false,
+        "position": 14,
+        "subbedOn": false,
+        "subbedOff": false,
+        "points": 0
+      },
+      {
+        "element": 640,
         "starter": false,
         "position": 15,
         "subbedOn": false,
@@ -3334,5 +3334,5 @@
       "newsAdded": null
     }
   },
-  "generatedAt": "2026-10-15T07:54:28.667Z"
+  "generatedAt": "2026-10-15T13:02:09.905Z"
 }
