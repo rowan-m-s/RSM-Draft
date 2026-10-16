@@ -165,7 +165,7 @@
         "points": 0
       },
       {
-        "element": 32,
+        "element": 208,
         "starter": true,
         "position": 5,
         "subbedOn": false,
@@ -173,7 +173,7 @@
         "points": 0
       },
       {
-        "element": 208,
+        "element": 41,
         "starter": true,
         "position": 6,
         "subbedOn": false,
@@ -181,7 +181,7 @@
         "points": 0
       },
       {
-        "element": 41,
+        "element": 544,
         "starter": true,
         "position": 7,
         "subbedOn": false,
@@ -189,7 +189,7 @@
         "points": 0
       },
       {
-        "element": 544,
+        "element": 465,
         "starter": true,
         "position": 8,
         "subbedOn": false,
@@ -197,7 +197,7 @@
         "points": 0
       },
       {
-        "element": 465,
+        "element": 411,
         "starter": true,
         "position": 9,
         "subbedOn": false,
@@ -205,17 +205,9 @@
         "points": 0
       },
       {
-        "element": 411,
-        "starter": true,
-        "position": 10,
-        "subbedOn": false,
-        "subbedOff": false,
-        "points": 0
-      },
-      {
         "element": 82,
         "starter": false,
-        "position": 11,
+        "position": 10,
         "subbedOn": false,
         "subbedOff": false,
         "points": 0
@@ -223,7 +215,7 @@
       {
         "element": 398,
         "starter": false,
-        "position": 12,
+        "position": 11,
         "subbedOn": false,
         "subbedOff": false,
         "points": 0
@@ -231,13 +223,21 @@
       {
         "element": 223,
         "starter": false,
-        "position": 13,
+        "position": 12,
         "subbedOn": false,
         "subbedOff": false,
         "points": 0
       },
       {
         "element": 31,
+        "starter": false,
+        "position": 13,
+        "subbedOn": false,
+        "subbedOff": false,
+        "points": 0
+      },
+      {
+        "element": 149,
         "starter": false,
         "position": 14,
         "subbedOn": false,
@@ -1509,18 +1509,6 @@
       "news": null,
       "newsAdded": "2026-10-05T09:30:09.853316Z"
     },
-    "32": {
-      "name": "Cash",
-      "position": "DEF",
-      "teamId": 2,
-      "clubShort": "AVL",
-      "clubCode": 7,
-      "photoCode": 199796,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-09T14:30:08.192142Z"
-    },
     "40": {
       "name": "Rogers",
       "position": "MID",
@@ -1869,6 +1857,18 @@
       "news": null,
       "newsAdded": null
     },
+    "149": {
+      "name": "Colwill",
+      "position": "DEF",
+      "teamId": 6,
+      "clubShort": "CHE",
+      "clubCode": 8,
+      "photoCode": 460028,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null
+    },
     "151": {
       "name": "Acheampong",
       "position": "DEF",
@@ -2118,7 +2118,7 @@
       "photoCode": 480455,
       "status": "d",
       "chanceOfPlaying": 75,
-      "news": "Unspecified injury - 75% chance of playing",
+      "news": "Leg injury - 75% chance of playing",
       "newsAdded": "2026-10-16T17:00:07.929499Z"
     },
     "233": {
@@ -2896,10 +2896,10 @@
       "clubShort": "NFO",
       "clubCode": 17,
       "photoCode": 222531,
-      "status": "a",
+      "status": "d",
       "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-24T15:30:08.350159Z"
+      "news": "Muscular injury - 75% chance of playing",
+      "newsAdded": "2026-10-16T17:30:09.546992Z"
     },
     "481": {
       "name": "Anderson",
@@ -3334,5 +3334,5 @@
       "newsAdded": null
     }
   },
-  "generatedAt": "2026-10-16T17:15:24.155Z"
+  "generatedAt": "2026-10-16T18:33:39.948Z"
 }
