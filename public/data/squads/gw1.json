@@ -2152,10 +2152,10 @@
       "clubShort": "EVE",
       "clubCode": 11,
       "photoCode": 480455,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
+      "status": "d",
+      "chanceOfPlaying": 75,
+      "news": "Unspecified injury - 75% chance of playing",
+      "newsAdded": "2026-10-16T17:00:07.929499Z"
     },
     "233": {
       "name": "Mykolenko",
@@ -2166,7 +2166,7 @@
       "photoCode": 224967,
       "status": "d",
       "chanceOfPlaying": 75,
-      "news": "Leg injury - 75% chance of playing",
+      "news": "Leg injury - 50% chance of playing",
       "newsAdded": "2026-10-01T19:30:09.402881Z"
     },
     "236": {
@@ -3334,5 +3334,5 @@
       "newsAdded": "2026-08-15T16:00:07.974271Z"
     }
   },
-  "generatedAt": "2026-10-16T13:41:11.340Z"
+  "generatedAt": "2026-10-16T17:15:24.155Z"
 }

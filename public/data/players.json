@@ -692,10 +692,10 @@
       "teamId": 9,
       "photoCode": 480455,
       "owner": "paddy",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
+      "status": "d",
+      "chanceOfPlaying": 75,
+      "news": "Unspecified injury - 75% chance of playing",
+      "newsAdded": "2026-10-16T17:00:07.929499Z",
       "points": 30,
       "ppg": 5,
       "goals": 0,
@@ -1068,7 +1068,7 @@
       "owner": "ollie",
       "status": "d",
       "chanceOfPlaying": 75,
-      "news": "Leg injury - 75% chance of playing",
+      "news": "Leg injury - 50% chance of playing",
       "newsAdded": "2026-10-01T19:30:09.402881Z",
       "points": 27,
       "ppg": 5.4,
@@ -14699,5 +14699,5 @@
     "bonus": 8,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-16T13:41:11.340Z"
+  "generatedAt": "2026-10-16T17:15:24.155Z"
 }
