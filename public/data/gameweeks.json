@@ -1150,24 +1150,24 @@
       "confirmExpectedUtc": "2026-10-20T19:00:00.000Z",
       "revealFromUtc": "2026-10-19T23:10:00.000Z",
       "scores": {
-        "rushy": 19,
-        "kellett": 35,
+        "rushy": 21,
+        "kellett": 36,
         "wallis": 19,
         "jls": 11,
-        "paddy": 5,
-        "bennett": 3,
+        "paddy": 6,
+        "bennett": 4,
         "wood": 9,
-        "rowan": 9,
-        "jason": 22,
-        "dj": 24,
-        "ollie": 18
+        "rowan": 10,
+        "jason": 23,
+        "dj": 31,
+        "ollie": 19
       },
       "kochKeys": [],
       "charged": 0,
       "topPerformerByManager": {
         "rushy": {
           "playerName": "Manzambi",
-          "points": 9,
+          "points": 11,
           "managerKey": "rushy"
         },
         "kellett": {
@@ -1211,7 +1211,7 @@
           "managerKey": "jason"
         },
         "dj": {
-          "playerName": "Bassey",
+          "playerName": "Suzuki",
           "points": 8,
           "managerKey": "dj"
         },
@@ -1229,10 +1229,10 @@
           "element": 40
         },
         "kellett": {
-          "playerName": "Horníček",
+          "playerName": "Osula",
           "points": 1,
           "managerKey": "kellett",
-          "element": 566
+          "element": 465
         },
         "wallis": {
           "playerName": "Anderson",
@@ -1266,13 +1266,13 @@
         },
         "rowan": {
           "playerName": "Wissa",
-          "points": 0,
+          "points": 1,
           "managerKey": "rowan",
           "element": 464
         },
         "jason": {
           "playerName": "Hall",
-          "points": 1,
+          "points": 2,
           "managerKey": "jason",
           "element": 449
         },
@@ -1283,10 +1283,10 @@
           "element": 94
         },
         "ollie": {
-          "playerName": "Thiaw",
-          "points": 1,
+          "playerName": "King",
+          "points": 2,
           "managerKey": "ollie",
-          "element": 445
+          "element": 268
         }
       },
       "kochGraphicByManager": {
@@ -2079,5 +2079,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-10-17T17:46:15.435Z"
+  "generatedAt": "2026-10-17T17:50:56.640Z"
 }
