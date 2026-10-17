@@ -3279,28 +3279,6 @@
       "positionRank": 101
     },
     {
-      "id": 465,
-      "name": "Osula",
-      "position": "FWD",
-      "club": "Newcastle",
-      "clubShort": "NEW",
-      "clubCode": 4,
-      "teamId": 17,
-      "photoCode": 538207,
-      "owner": "kellett",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-25T19:00:08.004915Z",
-      "points": 6,
-      "ppg": 2,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 33
-    },
-    {
       "id": 300,
       "name": "Walton",
       "position": "GKP",
@@ -3365,6 +3343,28 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 22
+    },
+    {
+      "id": 465,
+      "name": "Osula",
+      "position": "FWD",
+      "club": "Newcastle",
+      "clubShort": "NEW",
+      "clubCode": 4,
+      "teamId": 17,
+      "photoCode": 538207,
+      "owner": "kellett",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-25T19:00:08.004915Z",
+      "points": 5,
+      "ppg": 1.7,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 33
     },
     {
       "id": 498,
@@ -14699,5 +14699,5 @@
     "bonus": 12,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-17T18:07:31.330Z"
+  "generatedAt": "2026-10-17T18:08:42.408Z"
 }
