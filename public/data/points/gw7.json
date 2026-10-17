@@ -1362,13 +1362,19 @@
     },
     "68": {
       "41": {
-        "total": 1,
+        "total": 3,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 45,
+            "value": 48,
             "points": 1
+          },
+          {
+            "stat": "bonus",
+            "name": "Bonus",
+            "value": 2,
+            "points": 2
           }
         ]
       },
@@ -1378,7 +1384,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 1,
+            "value": 3,
             "points": 1
           }
         ]
@@ -1389,7 +1395,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 45,
+            "value": 48,
             "points": 1
           },
           {
@@ -1412,7 +1418,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 45,
+            "value": 48,
             "points": 1
           }
         ]
@@ -1423,7 +1429,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 45,
+            "value": 48,
             "points": 1
           }
         ]
@@ -1434,7 +1440,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 45,
+            "value": 48,
             "points": 1
           },
           {
@@ -1446,18 +1452,12 @@
         ]
       },
       "449": {
-        "total": 2,
+        "total": 1,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 45,
-            "points": 1
-          },
-          {
-            "stat": "bonus",
-            "name": "Bonus",
-            "value": 1,
+            "value": 48,
             "points": 1
           }
         ]
@@ -1468,7 +1468,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 45,
+            "value": 48,
             "points": 1
           }
         ]
@@ -1479,7 +1479,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 45,
+            "value": 48,
             "points": 1
           }
         ]
@@ -1494,7 +1494,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 45,
+            "value": 48,
             "points": 1
           }
         ]
@@ -1505,7 +1505,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 45,
+            "value": 48,
             "points": 1
           }
         ]
@@ -1520,7 +1520,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 45,
+            "value": 48,
             "points": 1
           }
         ]
@@ -1671,5 +1671,5 @@
       }
     }
   },
-  "generatedAt": "2026-10-17T17:34:29.749Z"
+  "generatedAt": "2026-10-17T17:37:55.298Z"
 }
