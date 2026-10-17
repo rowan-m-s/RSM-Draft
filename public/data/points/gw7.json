@@ -218,13 +218,19 @@
     },
     "64": {
       "28": {
-        "total": 5,
+        "total": 8,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 45,
-            "points": 1
+            "value": 74,
+            "points": 2
+          },
+          {
+            "stat": "clean_sheets",
+            "name": "Clean sheets",
+            "value": 1,
+            "points": 4
           },
           {
             "stat": "saves",
@@ -235,18 +241,24 @@
           {
             "stat": "bonus",
             "name": "Bonus",
-            "value": 3,
-            "points": 3
+            "value": 1,
+            "points": 1
           }
         ]
       },
       "40": {
-        "total": 0,
+        "total": 2,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 45,
+            "value": 90,
+            "points": 2
+          },
+          {
+            "stat": "clean_sheets",
+            "name": "Clean sheets",
+            "value": 1,
             "points": 1
           },
           {
@@ -258,28 +270,47 @@
         ]
       },
       "136": {
-        "total": 0,
-        "components": []
-      },
-      "149": {
         "total": 1,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 45,
+            "value": 1,
             "points": 1
           }
         ]
       },
-      "151": {
-        "total": 0,
+      "149": {
+        "total": 6,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 45,
-            "points": 1
+            "value": 90,
+            "points": 2
+          },
+          {
+            "stat": "clean_sheets",
+            "name": "Clean sheets",
+            "value": 1,
+            "points": 4
+          }
+        ]
+      },
+      "151": {
+        "total": 5,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 90,
+            "points": 2
+          },
+          {
+            "stat": "clean_sheets",
+            "name": "Clean sheets",
+            "value": 1,
+            "points": 4
           },
           {
             "stat": "yellow_cards",
@@ -290,27 +321,29 @@
         ]
       },
       "152": {
-        "total": 0,
-        "components": []
-      },
-      "154": {
         "total": 1,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 45,
+            "value": 1,
             "points": 1
           }
         ]
       },
-      "156": {
-        "total": 0,
+      "154": {
+        "total": 2,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 45,
+            "value": 90,
+            "points": 2
+          },
+          {
+            "stat": "clean_sheets",
+            "name": "Clean sheets",
+            "value": 1,
             "points": 1
           },
           {
@@ -321,41 +354,88 @@
           }
         ]
       },
-      "165": {
-        "total": 1,
+      "156": {
+        "total": 15,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 45,
-            "points": 1
-          }
-        ]
-      },
-      "200": {
-        "total": 3,
-        "components": [
+            "value": 90,
+            "points": 2
+          },
           {
-            "stat": "minutes",
-            "name": "Minutes played",
-            "value": 45,
+            "stat": "goals_scored",
+            "name": "Goals scored",
+            "value": 2,
+            "points": 10
+          },
+          {
+            "stat": "clean_sheets",
+            "name": "Clean sheets",
+            "value": 1,
             "points": 1
+          },
+          {
+            "stat": "yellow_cards",
+            "name": "Yellow cards",
+            "value": 1,
+            "points": -1
           },
           {
             "stat": "bonus",
             "name": "Bonus",
-            "value": 2,
-            "points": 2
+            "value": 3,
+            "points": 3
           }
         ]
       },
-      "226": {
-        "total": 1,
+      "165": {
+        "total": 2,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 45,
+            "value": 90,
+            "points": 2
+          }
+        ]
+      },
+      "200": {
+        "total": 6,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 90,
+            "points": 2
+          },
+          {
+            "stat": "clean_sheets",
+            "name": "Clean sheets",
+            "value": 1,
+            "points": 4
+          }
+        ]
+      },
+      "226": {
+        "total": 2,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 90,
+            "points": 2
+          },
+          {
+            "stat": "goals_conceded",
+            "name": "Goals conceded",
+            "value": 2,
+            "points": -1
+          },
+          {
+            "stat": "saves",
+            "name": "Saves",
+            "value": 4,
             "points": 1
           }
         ]
@@ -366,8 +446,14 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 45,
-            "points": 1
+            "value": 90,
+            "points": 2
+          },
+          {
+            "stat": "goals_conceded",
+            "name": "Goals conceded",
+            "value": 2,
+            "points": -1
           },
           {
             "stat": "yellow_cards",
@@ -383,8 +469,14 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 45,
-            "points": 1
+            "value": 90,
+            "points": 2
+          },
+          {
+            "stat": "goals_conceded",
+            "name": "Goals conceded",
+            "value": 2,
+            "points": -1
           }
         ]
       },
@@ -394,19 +486,25 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 45,
-            "points": 1
+            "value": 90,
+            "points": 2
+          },
+          {
+            "stat": "goals_conceded",
+            "name": "Goals conceded",
+            "value": 2,
+            "points": -1
           }
         ]
       },
       "236": {
-        "total": 1,
+        "total": 2,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 45,
-            "points": 1
+            "value": 90,
+            "points": 2
           }
         ]
       },
@@ -416,42 +514,43 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 45,
-            "points": 1
-          },
-          {
-            "stat": "bonus",
-            "name": "Bonus",
-            "value": 1,
-            "points": 1
+            "value": 84,
+            "points": 2
           }
         ]
       },
       "239": {
-        "total": 1,
+        "total": 2,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 45,
-            "points": 1
+            "value": 90,
+            "points": 2
           }
         ]
       },
       "249": {
+        "total": 2,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 90,
+            "points": 2
+          }
+        ]
+      },
+      "557": {
         "total": 1,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 45,
+            "value": 15,
             "points": 1
           }
         ]
-      },
-      "557": {
-        "total": 0,
-        "components": []
       },
       "583": {
         "total": 0,
@@ -463,7 +562,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 45,
+            "value": 54,
             "points": 1
           }
         ]
@@ -854,5 +953,5 @@
       }
     }
   },
-  "generatedAt": "2026-10-17T12:37:44.912Z"
+  "generatedAt": "2026-10-17T13:24:39.635Z"
 }

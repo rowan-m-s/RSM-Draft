@@ -56,7 +56,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 2
       },
       {
         "element": 14,
@@ -112,7 +112,7 @@
         "starter": false,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 5
       },
       {
         "element": 646,
@@ -162,7 +162,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 1
+        "points": 6
       },
       {
         "element": 398,
@@ -260,7 +260,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 5
+        "points": 8
       },
       {
         "element": 4,
@@ -372,7 +372,7 @@
         "starter": false,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       }
     ],
     "jls": [
@@ -454,7 +454,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 1
+        "points": 2
       },
       {
         "element": 401,
@@ -544,7 +544,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 1
+        "points": 2
       },
       {
         "element": 399,
@@ -674,7 +674,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 1
+        "points": 2
       },
       {
         "element": 68,
@@ -836,7 +836,7 @@
         "starter": false,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 542,
@@ -870,7 +870,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 1
+        "points": 2
       },
       {
         "element": 112,
@@ -902,7 +902,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 335,
@@ -926,7 +926,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 1
+        "points": 2
       },
       {
         "element": 295,
@@ -942,7 +942,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 1
+        "points": 2
       },
       {
         "element": 464,
@@ -1024,7 +1024,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 3
+        "points": 6
       },
       {
         "element": 12,
@@ -1088,7 +1088,7 @@
         "starter": false,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 15
       },
       {
         "element": 630,
@@ -1684,9 +1684,9 @@
       "clubShort": "BRE",
       "clubCode": 94,
       "photoCode": 513418,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 75,
-      "news": "Shoulder injury - 75% chance of playing",
+      "news": null,
       "newsAdded": "2026-10-10T16:30:08.848962Z"
     },
     "98": {
@@ -2476,9 +2476,9 @@
       "clubShort": "LIV",
       "clubCode": 14,
       "photoCode": 243298,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 25,
-      "news": "Ankle injury - 25% chance of playing",
+      "news": null,
       "newsAdded": "2026-09-27T21:30:07.786183Z"
     },
     "368": {
@@ -2488,9 +2488,9 @@
       "clubShort": "LIV",
       "clubCode": 14,
       "photoCode": 424876,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 25,
-      "news": "Hamstring injury - 25% chance of playing",
+      "news": null,
       "newsAdded": "2026-10-11T15:00:09.494018Z"
     },
     "377": {
@@ -2512,9 +2512,9 @@
       "clubShort": "LIV",
       "clubCode": 14,
       "photoCode": 219168,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 25,
-      "news": "Thigh injury - 25% chance of playing",
+      "news": null,
       "newsAdded": "2026-09-27T10:30:09.051435Z"
     },
     "384": {
@@ -3334,5 +3334,5 @@
       "newsAdded": null
     }
   },
-  "generatedAt": "2026-10-17T12:37:44.912Z"
+  "generatedAt": "2026-10-17T13:24:39.635Z"
 }
