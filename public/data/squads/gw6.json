@@ -1720,10 +1720,10 @@
       "clubShort": "BRE",
       "clubCode": 94,
       "photoCode": 204580,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
+      "status": "s",
+      "chanceOfPlaying": 0,
+      "news": "Suspended until 31 Oct",
+      "newsAdded": "2026-10-17T16:30:09.272910Z"
     },
     "106": {
       "name": "Thiago",
@@ -2596,10 +2596,10 @@
       "clubShort": "MCI",
       "clubCode": 43,
       "photoCode": 465351,
-      "status": "a",
+      "status": "d",
       "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-27T11:30:08.171622Z"
+      "news": "Unspecified injury - 75% chance of playing",
+      "newsAdded": "2026-10-17T16:30:09.444861Z"
     },
     "390": {
       "name": "Rúben",
@@ -3334,5 +3334,5 @@
       "newsAdded": null
     }
   },
-  "generatedAt": "2026-10-17T16:33:52.207Z"
+  "generatedAt": "2026-10-17T16:35:07.737Z"
 }
