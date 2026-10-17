@@ -1692,7 +1692,7 @@
       "assists": 2,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 36
+      "positionRank": 37
     },
     {
       "id": 390,
@@ -1758,7 +1758,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 5,
-      "positionRank": 39
+      "positionRank": 40
     },
     {
       "id": 481,
@@ -3831,6 +3831,28 @@
       "positionRank": 28
     },
     {
+      "id": 47,
+      "name": "Kamara",
+      "position": "MID",
+      "club": "Aston Villa",
+      "clubShort": "AVL",
+      "clubCode": 7,
+      "teamId": 2,
+      "photoCode": 226944,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-07-23T12:01:23.337269Z",
+      "points": 24,
+      "ppg": 3.4,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 3,
+      "bonus": 0,
+      "positionRank": 35
+    },
+    {
       "id": 88,
       "name": "Kayode",
       "position": "DEF",
@@ -3894,7 +3916,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 35
+      "positionRank": 36
     },
     {
       "id": 116,
@@ -3938,7 +3960,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 37
+      "positionRank": 38
     },
     {
       "id": 211,
@@ -3960,7 +3982,7 @@
       "assists": 2,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 38
+      "positionRank": 39
     },
     {
       "id": 338,
@@ -4005,28 +4027,6 @@
       "cleanSheets": 2,
       "bonus": 2,
       "positionRank": 41
-    },
-    {
-      "id": 47,
-      "name": "Kamara",
-      "position": "MID",
-      "club": "Aston Villa",
-      "clubShort": "AVL",
-      "clubCode": 7,
-      "teamId": 2,
-      "photoCode": 226944,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-07-23T12:01:23.337269Z",
-      "points": 22,
-      "ppg": 3.1,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 3,
-      "bonus": 0,
-      "positionRank": 40
     },
     {
       "id": 483,
@@ -14699,5 +14699,5 @@
     "bonus": 12,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-17T17:55:40.386Z"
+  "generatedAt": "2026-10-17T18:00:24.849Z"
 }
