@@ -186,20 +186,21 @@
       "label": "October 2026",
       "shortLabel": "October",
       "gameweekIds": [
-        6
+        6,
+        7
       ],
       "totals": {
         "rushy": 29,
-        "kellett": 27,
-        "wallis": 32,
-        "jls": 62,
-        "paddy": 46,
-        "bennett": 47,
+        "kellett": 28,
+        "wallis": 37,
+        "jls": 63,
+        "paddy": 47,
+        "bennett": 48,
         "wood": 67,
-        "rowan": 34,
-        "jason": 25,
+        "rowan": 37,
+        "jason": 28,
         "dj": 27,
-        "ollie": 31
+        "ollie": 33
       },
       "pot": 5,
       "settled": false,
@@ -227,8 +228,8 @@
           "managerKey": "wallis"
         },
         "jls": {
-          "playerName": "Doku",
-          "points": 12,
+          "playerName": "João Pedro",
+          "points": 13,
           "managerKey": "jls"
         },
         "paddy": {
@@ -238,7 +239,7 @@
         },
         "bennett": {
           "playerName": "Dewsbury-Hall",
-          "points": 13,
+          "points": 14,
           "managerKey": "bennett"
         },
         "wood": {
@@ -269,5 +270,5 @@
       }
     }
   ],
-  "generatedAt": "2026-10-17T07:24:59.288Z"
+  "generatedAt": "2026-10-17T12:37:44.912Z"
 }
