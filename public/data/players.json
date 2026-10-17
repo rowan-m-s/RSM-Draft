@@ -925,6 +925,28 @@
       "positionRank": 5
     },
     {
+      "id": 41,
+      "name": "Buendía",
+      "position": "MID",
+      "club": "Aston Villa",
+      "clubShort": "AVL",
+      "clubCode": 7,
+      "teamId": 2,
+      "photoCode": 195546,
+      "owner": "kellett",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 29,
+      "ppg": 4.1,
+      "goals": 1,
+      "assists": 1,
+      "cleanSheets": 2,
+      "bonus": 4,
+      "positionRank": 23
+    },
+    {
       "id": 384,
       "name": "Donnarumma",
       "position": "GKP",
@@ -966,7 +988,7 @@
       "assists": 3,
       "cleanSheets": 4,
       "bonus": 0,
-      "positionRank": 23
+      "positionRank": 24
     },
     {
       "id": 261,
@@ -988,7 +1010,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 6,
-      "positionRank": 25
+      "positionRank": 26
     },
     {
       "id": 138,
@@ -1054,7 +1076,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 3,
-      "positionRank": 26
+      "positionRank": 27
     },
     {
       "id": 356,
@@ -1099,28 +1121,6 @@
       "cleanSheets": 3,
       "bonus": 2,
       "positionRank": 6
-    },
-    {
-      "id": 41,
-      "name": "Buendía",
-      "position": "MID",
-      "club": "Aston Villa",
-      "clubShort": "AVL",
-      "clubCode": 7,
-      "teamId": 2,
-      "photoCode": 195546,
-      "owner": "kellett",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 28,
-      "ppg": 4,
-      "goals": 1,
-      "assists": 1,
-      "cleanSheets": 2,
-      "bonus": 3,
-      "positionRank": 27
     },
     {
       "id": 258,
@@ -3718,7 +3718,7 @@
       "assists": 3,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 24
+      "positionRank": 25
     },
     {
       "id": 586,
@@ -14699,5 +14699,5 @@
     "bonus": 12,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-17T17:50:56.640Z"
+  "generatedAt": "2026-10-17T17:55:40.386Z"
 }
