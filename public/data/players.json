@@ -3056,7 +3056,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 109
+      "positionRank": 110
     },
     {
       "id": 403,
@@ -3279,6 +3279,28 @@
       "positionRank": 101
     },
     {
+      "id": 465,
+      "name": "Osula",
+      "position": "FWD",
+      "club": "Newcastle",
+      "clubShort": "NEW",
+      "clubCode": 4,
+      "teamId": 17,
+      "photoCode": 538207,
+      "owner": "kellett",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-25T19:00:08.004915Z",
+      "points": 6,
+      "ppg": 2,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 33
+    },
+    {
       "id": 300,
       "name": "Walton",
       "position": "GKP",
@@ -3343,28 +3365,6 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 22
-    },
-    {
-      "id": 465,
-      "name": "Osula",
-      "position": "FWD",
-      "club": "Newcastle",
-      "clubShort": "NEW",
-      "clubCode": 4,
-      "teamId": 17,
-      "photoCode": 538207,
-      "owner": "kellett",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-25T19:00:08.004915Z",
-      "points": 5,
-      "ppg": 2.5,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 33
     },
     {
       "id": 498,
@@ -5701,6 +5701,28 @@
       "positionRank": 25
     },
     {
+      "id": 461,
+      "name": "Touré",
+      "position": "MID",
+      "club": "Newcastle",
+      "clubShort": "NEW",
+      "clubCode": 4,
+      "teamId": 17,
+      "photoCode": 611665,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 75,
+      "news": null,
+      "newsAdded": "2026-10-12T21:30:09.043536Z",
+      "points": 10,
+      "ppg": 2,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 109
+    },
+    {
       "id": 320,
       "name": "Akpom",
       "position": "FWD",
@@ -5742,7 +5764,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 111
+      "positionRank": 112
     },
     {
       "id": 618,
@@ -5786,7 +5808,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 113
+      "positionRank": 114
     },
     {
       "id": 51,
@@ -5808,7 +5830,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 110
+      "positionRank": 111
     },
     {
       "id": 54,
@@ -5830,7 +5852,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 112
+      "positionRank": 113
     },
     {
       "id": 213,
@@ -5852,7 +5874,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 115
+      "positionRank": 116
     },
     {
       "id": 36,
@@ -5918,7 +5940,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 114
+      "positionRank": 115
     },
     {
       "id": 536,
@@ -5941,28 +5963,6 @@
       "cleanSheets": 1,
       "bonus": 0,
       "positionRank": 88
-    },
-    {
-      "id": 461,
-      "name": "Touré",
-      "position": "MID",
-      "club": "Newcastle",
-      "clubShort": "NEW",
-      "clubCode": 4,
-      "teamId": 17,
-      "photoCode": 611665,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 75,
-      "news": null,
-      "newsAdded": "2026-10-12T21:30:09.043536Z",
-      "points": 9,
-      "ppg": 2.3,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 116
     },
     {
       "id": 337,
@@ -14699,5 +14699,5 @@
     "bonus": 12,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-17T17:45:04.610Z"
+  "generatedAt": "2026-10-17T17:46:15.435Z"
 }
