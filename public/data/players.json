@@ -2333,28 +2333,6 @@
       "positionRank": 68
     },
     {
-      "id": 566,
-      "name": "Horníček",
-      "position": "GKP",
-      "club": "Newcastle",
-      "clubShort": "NEW",
-      "clubCode": 4,
-      "teamId": 17,
-      "photoCode": 470551,
-      "owner": "kellett",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 17,
-      "ppg": 2.4,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 2,
-      "positionRank": 14
-    },
-    {
       "id": 553,
       "name": "Isidor",
       "position": "FWD",
@@ -2419,6 +2397,28 @@
       "cleanSheets": 1,
       "bonus": 3,
       "positionRank": 70
+    },
+    {
+      "id": 566,
+      "name": "Horníček",
+      "position": "GKP",
+      "club": "Newcastle",
+      "clubShort": "NEW",
+      "clubCode": 4,
+      "teamId": 17,
+      "photoCode": 470551,
+      "owner": "kellett",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 16,
+      "ppg": 2.3,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 1,
+      "positionRank": 15
     },
     {
       "id": 358,
@@ -2528,7 +2528,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 15
+      "positionRank": 14
     },
     {
       "id": 554,
@@ -2946,7 +2946,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 103
+      "positionRank": 102
     },
     {
       "id": 583,
@@ -5459,28 +5459,6 @@
       "positionRank": 73
     },
     {
-      "id": 52,
-      "name": "Alysson",
-      "position": "MID",
-      "club": "Aston Villa",
-      "clubShort": "AVL",
-      "clubCode": 7,
-      "teamId": 2,
-      "photoCode": 653481,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-19T11:30:09.355376Z",
-      "points": 11,
-      "ppg": 1.8,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 2,
-      "positionRank": 101
-    },
-    {
       "id": 46,
       "name": "Barkley",
       "position": "MID",
@@ -5522,7 +5500,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 102
+      "positionRank": 101
     },
     {
       "id": 534,
@@ -5610,6 +5588,28 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 0,
+      "positionRank": 103
+    },
+    {
+      "id": 52,
+      "name": "Alysson",
+      "position": "MID",
+      "club": "Aston Villa",
+      "clubShort": "AVL",
+      "clubCode": 7,
+      "teamId": 2,
+      "photoCode": 653481,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-19T11:30:09.355376Z",
+      "points": 10,
+      "ppg": 1.7,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 1,
       "positionRank": 104
     },
     {
@@ -14699,5 +14699,5 @@
     "bonus": 12,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-17T16:59:58.711Z"
+  "generatedAt": "2026-10-17T17:02:20.829Z"
 }
