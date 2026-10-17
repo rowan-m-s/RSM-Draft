@@ -6128,9 +6128,9 @@
       "teamId": 14,
       "photoCode": 441266,
       "owner": null,
-      "status": "s",
+      "status": "a",
       "chanceOfPlaying": 0,
-      "news": "Suspended until 25 Oct",
+      "news": null,
       "newsAdded": "2026-10-11T17:00:08.994657Z",
       "points": 8,
       "ppg": 1.3,
@@ -7580,10 +7580,10 @@
       "teamId": 11,
       "photoCode": 631000,
       "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
+      "status": "d",
+      "chanceOfPlaying": 50,
+      "news": "Achilles injury - 50% chance of playing",
+      "newsAdded": "2026-10-17T17:00:08.108262Z",
       "points": 4,
       "ppg": 1,
       "goals": 0,
@@ -14699,5 +14699,5 @@
     "bonus": 12,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-17T17:02:20.829Z"
+  "generatedAt": "2026-10-17T17:04:43.043Z"
 }
