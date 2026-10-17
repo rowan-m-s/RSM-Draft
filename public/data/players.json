@@ -2242,7 +2242,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 0,
-      "positionRank": 15
+      "positionRank": 14
     },
     {
       "id": 106,
@@ -2265,28 +2265,6 @@
       "cleanSheets": 2,
       "bonus": 0,
       "positionRank": 13
-    },
-    {
-      "id": 464,
-      "name": "Wissa",
-      "position": "FWD",
-      "club": "Newcastle",
-      "clubShort": "NEW",
-      "clubCode": 4,
-      "teamId": 17,
-      "photoCode": 216646,
-      "owner": "rowan",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 18,
-      "ppg": 2.6,
-      "goals": 1,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 2,
-      "positionRank": 14
     },
     {
       "id": 155,
@@ -2375,6 +2353,28 @@
       "cleanSheets": 2,
       "bonus": 3,
       "positionRank": 53
+    },
+    {
+      "id": 464,
+      "name": "Wissa",
+      "position": "FWD",
+      "club": "Newcastle",
+      "clubShort": "NEW",
+      "clubCode": 4,
+      "teamId": 17,
+      "photoCode": 216646,
+      "owner": "rowan",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 17,
+      "ppg": 2.4,
+      "goals": 1,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 2,
+      "positionRank": 15
     },
     {
       "id": 123,
@@ -5764,7 +5764,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 116
+      "positionRank": 117
     },
     {
       "id": 71,
@@ -5786,7 +5786,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 112
+      "positionRank": 113
     },
     {
       "id": 51,
@@ -5811,6 +5811,28 @@
       "positionRank": 110
     },
     {
+      "id": 54,
+      "name": "Gomes",
+      "position": "MID",
+      "club": "Aston Villa",
+      "clubShort": "AVL",
+      "clubCode": 7,
+      "teamId": 2,
+      "photoCode": 448089,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-16T19:30:08.742410Z",
+      "points": 9,
+      "ppg": 2.3,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 0,
+      "bonus": 2,
+      "positionRank": 112
+    },
+    {
       "id": 213,
       "name": "Lerma",
       "position": "MID",
@@ -5830,7 +5852,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 114
+      "positionRank": 115
     },
     {
       "id": 36,
@@ -5896,7 +5918,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 113
+      "positionRank": 114
     },
     {
       "id": 536,
@@ -5940,7 +5962,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 115
+      "positionRank": 116
     },
     {
       "id": 337,
@@ -6117,28 +6139,6 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 89
-    },
-    {
-      "id": 54,
-      "name": "Gomes",
-      "position": "MID",
-      "club": "Aston Villa",
-      "clubShort": "AVL",
-      "clubCode": 7,
-      "teamId": 2,
-      "photoCode": 448089,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-16T19:30:08.742410Z",
-      "points": 8,
-      "ppg": 2,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 0,
-      "bonus": 1,
-      "positionRank": 117
     },
     {
       "id": 371,
@@ -14699,5 +14699,5 @@
     "bonus": 12,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-17T17:43:50.940Z"
+  "generatedAt": "2026-10-17T17:45:04.610Z"
 }
