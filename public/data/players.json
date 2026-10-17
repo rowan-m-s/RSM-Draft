@@ -441,6 +441,28 @@
       "positionRank": 9
     },
     {
+      "id": 449,
+      "name": "Hall",
+      "position": "DEF",
+      "club": "Newcastle",
+      "clubShort": "NEW",
+      "clubCode": 4,
+      "teamId": 17,
+      "photoCode": 487838,
+      "owner": "jason",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 34,
+      "ppg": 4.9,
+      "goals": 1,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 8,
+      "positionRank": 8
+    },
+    {
       "id": 156,
       "name": "Neto",
       "position": "MID",
@@ -573,28 +595,6 @@
       "positionRank": 15
     },
     {
-      "id": 449,
-      "name": "Hall",
-      "position": "DEF",
-      "club": "Newcastle",
-      "clubShort": "NEW",
-      "clubCode": 4,
-      "teamId": 17,
-      "photoCode": 487838,
-      "owner": "jason",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 32,
-      "ppg": 4.6,
-      "goals": 1,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 6,
-      "positionRank": 9
-    },
-    {
       "id": 332,
       "name": "Justin",
       "position": "DEF",
@@ -614,7 +614,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 4,
-      "positionRank": 8
+      "positionRank": 9
     },
     {
       "id": 68,
@@ -1871,6 +1871,28 @@
       "positionRank": 40
     },
     {
+      "id": 53,
+      "name": "Manzambi",
+      "position": "MID",
+      "club": "Aston Villa",
+      "clubShort": "AVL",
+      "clubCode": 7,
+      "teamId": 2,
+      "photoCode": 614071,
+      "owner": "rushy",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-15T15:30:06.388335Z",
+      "points": 21,
+      "ppg": 5.3,
+      "goals": 1,
+      "assists": 2,
+      "cleanSheets": 1,
+      "bonus": 3,
+      "positionRank": 43
+    },
+    {
       "id": 368,
       "name": "Szoboszlai",
       "position": "MID",
@@ -1890,7 +1912,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 1,
-      "positionRank": 44
+      "positionRank": 45
     },
     {
       "id": 608,
@@ -1912,7 +1934,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 46
+      "positionRank": 47
     },
     {
       "id": 542,
@@ -1935,28 +1957,6 @@
       "cleanSheets": 1,
       "bonus": 1,
       "positionRank": 51
-    },
-    {
-      "id": 53,
-      "name": "Manzambi",
-      "position": "MID",
-      "club": "Aston Villa",
-      "clubShort": "AVL",
-      "clubCode": 7,
-      "teamId": 2,
-      "photoCode": 614071,
-      "owner": "rushy",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-15T15:30:06.388335Z",
-      "points": 20,
-      "ppg": 5,
-      "goals": 1,
-      "assists": 2,
-      "cleanSheets": 1,
-      "bonus": 2,
-      "positionRank": 48
     },
     {
       "id": 28,
@@ -2399,6 +2399,28 @@
       "positionRank": 70
     },
     {
+      "id": 566,
+      "name": "Horníček",
+      "position": "GKP",
+      "club": "Newcastle",
+      "clubShort": "NEW",
+      "clubCode": 4,
+      "teamId": 17,
+      "photoCode": 470551,
+      "owner": "kellett",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 16,
+      "ppg": 2.3,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 1,
+      "positionRank": 15
+    },
+    {
       "id": 358,
       "name": "Kerkez",
       "position": "DEF",
@@ -2529,28 +2551,6 @@
       "cleanSheets": 2,
       "bonus": 1,
       "positionRank": 73
-    },
-    {
-      "id": 566,
-      "name": "Horníček",
-      "position": "GKP",
-      "club": "Newcastle",
-      "clubShort": "NEW",
-      "clubCode": 4,
-      "teamId": 17,
-      "photoCode": 470551,
-      "owner": "kellett",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 15,
-      "ppg": 2.1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 15
     },
     {
       "id": 70,
@@ -2704,7 +2704,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 92
+      "positionRank": 93
     },
     {
       "id": 598,
@@ -2836,7 +2836,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 94
+      "positionRank": 95
     },
     {
       "id": 529,
@@ -2946,7 +2946,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 102
+      "positionRank": 103
     },
     {
       "id": 583,
@@ -4070,7 +4070,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 43
+      "positionRank": 44
     },
     {
       "id": 455,
@@ -4092,7 +4092,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 2,
-      "positionRank": 45
+      "positionRank": 46
     },
     {
       "id": 47,
@@ -4114,7 +4114,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 47
+      "positionRank": 48
     },
     {
       "id": 183,
@@ -4950,6 +4950,28 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
+      "positionRank": 85
+    },
+    {
+      "id": 52,
+      "name": "Alysson",
+      "position": "MID",
+      "club": "Aston Villa",
+      "clubShort": "AVL",
+      "clubCode": 7,
+      "teamId": 2,
+      "photoCode": 653481,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-19T11:30:09.355376Z",
+      "points": 13,
+      "ppg": 2.2,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 3,
       "positionRank": 84
     },
     {
@@ -4972,7 +4994,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 88
+      "positionRank": 89
     },
     {
       "id": 327,
@@ -5038,7 +5060,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 86
+      "positionRank": 87
     },
     {
       "id": 161,
@@ -5060,7 +5082,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 85
+      "positionRank": 86
     },
     {
       "id": 656,
@@ -5104,7 +5126,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 87
+      "positionRank": 88
     },
     {
       "id": 570,
@@ -5126,7 +5148,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 90
+      "positionRank": 91
     },
     {
       "id": 545,
@@ -5148,7 +5170,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 89
+      "positionRank": 90
     },
     {
       "id": 644,
@@ -5170,7 +5192,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 93
+      "positionRank": 94
     },
     {
       "id": 574,
@@ -5192,7 +5214,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 91
+      "positionRank": 92
     },
     {
       "id": 315,
@@ -5214,7 +5236,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 96
+      "positionRank": 97
     },
     {
       "id": 519,
@@ -5236,7 +5258,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 97
+      "positionRank": 98
     },
     {
       "id": 522,
@@ -5258,7 +5280,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 98
+      "positionRank": 99
     },
     {
       "id": 491,
@@ -5302,7 +5324,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 95
+      "positionRank": 96
     },
     {
       "id": 37,
@@ -5478,7 +5500,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 100
+      "positionRank": 101
     },
     {
       "id": 247,
@@ -5500,7 +5522,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 101
+      "positionRank": 102
     },
     {
       "id": 534,
@@ -5566,7 +5588,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 99
+      "positionRank": 100
     },
     {
       "id": 577,
@@ -5587,28 +5609,6 @@
       "goals": 0,
       "assists": 1,
       "cleanSheets": 2,
-      "bonus": 0,
-      "positionRank": 103
-    },
-    {
-      "id": 52,
-      "name": "Alysson",
-      "position": "MID",
-      "club": "Aston Villa",
-      "clubShort": "AVL",
-      "clubCode": 7,
-      "teamId": 2,
-      "photoCode": 653481,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-19T11:30:09.355376Z",
-      "points": 10,
-      "ppg": 1.7,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 104
     },
@@ -14699,5 +14699,5 @@
     "bonus": 12,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-17T16:50:25.930Z"
+  "generatedAt": "2026-10-17T16:52:47.735Z"
 }
