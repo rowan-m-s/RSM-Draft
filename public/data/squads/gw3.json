@@ -2416,9 +2416,9 @@
       "clubShort": "LIV",
       "clubCode": 14,
       "photoCode": 216094,
-      "status": "d",
-      "chanceOfPlaying": 75,
-      "news": "Unspecified injury - 75% chance of playing",
+      "status": "i",
+      "chanceOfPlaying": 0,
+      "news": "Muscular injury - Unknown return date",
       "newsAdded": "2026-10-17T15:30:09.979166Z"
     },
     "358": {
@@ -2476,9 +2476,9 @@
       "clubShort": "LIV",
       "clubCode": 14,
       "photoCode": 424876,
-      "status": "d",
+      "status": "i",
       "chanceOfPlaying": 25,
-      "news": "Unspecified injury - 75% chance of playing",
+      "news": "Hamstring injury - Unknown return date",
       "newsAdded": "2026-10-17T15:00:08.293301Z"
     },
     "371": {
@@ -2620,10 +2620,10 @@
       "clubShort": "MCI",
       "clubCode": 43,
       "photoCode": 437730,
-      "status": "a",
+      "status": "d",
       "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-24T12:00:09.848000Z"
+      "news": "Knee injury - 75% chance of playing",
+      "newsAdded": "2026-10-17T17:30:09.977110Z"
     },
     "398": {
       "name": "Foden",
@@ -3334,5 +3334,5 @@
       "newsAdded": null
     }
   },
-  "generatedAt": "2026-10-17T17:04:43.043Z"
+  "generatedAt": "2026-10-17T17:34:29.749Z"
 }

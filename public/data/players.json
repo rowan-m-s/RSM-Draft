@@ -384,10 +384,10 @@
       "teamId": 15,
       "photoCode": 437730,
       "owner": "dj",
-      "status": "a",
+      "status": "d",
       "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-24T12:00:09.848000Z",
+      "news": "Knee injury - 75% chance of playing",
+      "newsAdded": "2026-10-17T17:30:09.977110Z",
       "points": 37,
       "ppg": 5.3,
       "goals": 2,
@@ -1120,7 +1120,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 3,
-      "positionRank": 28
+      "positionRank": 29
     },
     {
       "id": 53,
@@ -1142,6 +1142,28 @@
       "assists": 2,
       "cleanSheets": 1,
       "bonus": 5,
+      "positionRank": 27
+    },
+    {
+      "id": 45,
+      "name": "McGinn",
+      "position": "MID",
+      "club": "Aston Villa",
+      "clubShort": "AVL",
+      "clubCode": 7,
+      "teamId": 2,
+      "photoCode": 122806,
+      "owner": "wallis",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 28,
+      "ppg": 4,
+      "goals": 1,
+      "assists": 2,
+      "cleanSheets": 2,
+      "bonus": 4,
       "positionRank": 26
     },
     {
@@ -1208,7 +1230,7 @@
       "assists": 3,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 27
+      "positionRank": 28
     },
     {
       "id": 226,
@@ -1255,28 +1277,6 @@
       "positionRank": 22
     },
     {
-      "id": 45,
-      "name": "McGinn",
-      "position": "MID",
-      "club": "Aston Villa",
-      "clubShort": "AVL",
-      "clubCode": 7,
-      "teamId": 2,
-      "photoCode": 122806,
-      "owner": "wallis",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 27,
-      "ppg": 4.5,
-      "goals": 1,
-      "assists": 2,
-      "cleanSheets": 2,
-      "bonus": 4,
-      "positionRank": 30
-    },
-    {
       "id": 13,
       "name": "Rice",
       "position": "MID",
@@ -1296,7 +1296,7 @@
       "assists": 3,
       "cleanSheets": 3,
       "bonus": 2,
-      "positionRank": 29
+      "positionRank": 30
     },
     {
       "id": 112,
@@ -1902,9 +1902,9 @@
       "teamId": 14,
       "photoCode": 424876,
       "owner": "dj",
-      "status": "d",
+      "status": "i",
       "chanceOfPlaying": 25,
-      "news": "Unspecified injury - 75% chance of playing",
+      "news": "Hamstring injury - Unknown return date",
       "newsAdded": "2026-10-17T15:00:08.293301Z",
       "points": 21,
       "ppg": 3.5,
@@ -7272,9 +7272,9 @@
       "teamId": 14,
       "photoCode": 216094,
       "owner": null,
-      "status": "d",
-      "chanceOfPlaying": 75,
-      "news": "Unspecified injury - 75% chance of playing",
+      "status": "i",
+      "chanceOfPlaying": 0,
+      "news": "Muscular injury - Unknown return date",
       "newsAdded": "2026-10-17T15:30:09.979166Z",
       "points": 4,
       "ppg": 0.8,
@@ -14699,5 +14699,5 @@
     "bonus": 12,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-17T17:08:16.061Z"
+  "generatedAt": "2026-10-17T17:34:29.749Z"
 }
