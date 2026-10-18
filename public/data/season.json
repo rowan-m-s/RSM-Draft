@@ -3,9 +3,9 @@
     {
       "key": "wood",
       "rank": 1,
-      "total": 361,
-      "gw": 42,
-      "month": 109,
+      "total": 362,
+      "gw": 43,
+      "month": 110,
       "kochCount": 0,
       "motmCount": 1,
       "forfeits": 0,
@@ -20,9 +20,9 @@
     {
       "key": "jason",
       "rank": 2,
-      "total": 307,
-      "gw": 38,
-      "month": 63,
+      "total": 312,
+      "gw": 43,
+      "month": 68,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -37,9 +37,9 @@
     {
       "key": "paddy",
       "rank": 3,
-      "total": 301,
-      "gw": 21,
-      "month": 67,
+      "total": 302,
+      "gw": 22,
+      "month": 68,
       "kochCount": 1,
       "motmCount": 1,
       "forfeits": 5,
@@ -54,9 +54,9 @@
     {
       "key": "bennett",
       "rank": 4,
-      "total": 274,
-      "gw": 13,
-      "month": 60,
+      "total": 281,
+      "gw": 20,
+      "month": 67,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -64,16 +64,16 @@
       "balance": 0,
       "topPerformer": {
         "playerName": "Tavernier",
-        "points": 40,
+        "points": 42,
         "managerKey": "bennett"
       }
     },
     {
       "key": "jls",
       "rank": 5,
-      "total": 266,
-      "gw": 16,
-      "month": 78,
+      "total": 268,
+      "gw": 18,
+      "month": 80,
       "kochCount": 2,
       "motmCount": 0,
       "forfeits": 10,
@@ -105,9 +105,9 @@
     {
       "key": "kellett",
       "rank": 7,
-      "total": 260,
-      "gw": 36,
-      "month": 63,
+      "total": 261,
+      "gw": 37,
+      "month": 64,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -121,7 +121,7 @@
     },
     {
       "key": "wallis",
-      "rank": 7,
+      "rank": 8,
       "total": 260,
       "gw": 37,
       "month": 69,
@@ -139,9 +139,9 @@
     {
       "key": "rowan",
       "rank": 9,
-      "total": 255,
-      "gw": 20,
-      "month": 54,
+      "total": 256,
+      "gw": 21,
+      "month": 55,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -173,9 +173,9 @@
     {
       "key": "dj",
       "rank": 11,
-      "total": 237,
-      "gw": 32,
-      "month": 59,
+      "total": 243,
+      "gw": 38,
+      "month": 65,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -195,7 +195,7 @@
     "keys": [
       "wood"
     ],
-    "total": 361,
+    "total": 362,
     "since": 4,
     "sinceByKey": {
       "wood": 4
@@ -205,7 +205,7 @@
     "displaced": "paddy",
     "changed": false
   },
-  "generatedAt": "2026-10-18T14:21:49.407Z",
+  "generatedAt": "2026-10-18T14:24:08.643Z",
   "graphics": {
     "koch": {
       "rushy": 244850,
