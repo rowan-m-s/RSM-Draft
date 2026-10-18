@@ -2156,7 +2156,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 66,
+            "value": 67,
             "points": 2
           },
           {
@@ -2168,12 +2168,12 @@
         ]
       },
       "4": {
-        "total": 11,
+        "total": 9,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 66,
+            "value": 67,
             "points": 2
           },
           {
@@ -2185,8 +2185,8 @@
           {
             "stat": "bonus",
             "name": "Bonus",
-            "value": 3,
-            "points": 3
+            "value": 1,
+            "points": 1
           },
           {
             "stat": "defensive_contribution",
@@ -2213,7 +2213,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 66,
+            "value": 67,
             "points": 2
           },
           {
@@ -2247,7 +2247,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 66,
+            "value": 67,
             "points": 2
           },
           {
@@ -2264,7 +2264,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 66,
+            "value": 67,
             "points": 2
           },
           {
@@ -2292,7 +2292,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 66,
+            "value": 67,
             "points": 2
           },
           {
@@ -2304,8 +2304,15 @@
         ]
       },
       "25": {
-        "total": 0,
-        "components": []
+        "total": 1,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 1,
+            "points": 1
+          }
+        ]
       },
       "26": {
         "total": 2,
@@ -2313,18 +2320,18 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 66,
+            "value": 65,
             "points": 2
           }
         ]
       },
       "31": {
-        "total": 8,
+        "total": 9,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 66,
+            "value": 67,
             "points": 2
           },
           {
@@ -2336,8 +2343,8 @@
           {
             "stat": "bonus",
             "name": "Bonus",
-            "value": 2,
-            "points": 2
+            "value": 3,
+            "points": 3
           }
         ]
       },
@@ -2347,7 +2354,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 66,
+            "value": 67,
             "points": 2
           }
         ]
@@ -2358,7 +2365,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 66,
+            "value": 67,
             "points": 2
           },
           {
@@ -2375,7 +2382,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 66,
+            "value": 65,
             "points": 2
           },
           {
@@ -2392,7 +2399,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 66,
+            "value": 67,
             "points": 2
           },
           {
@@ -2409,7 +2416,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 66,
+            "value": 67,
             "points": 2
           },
           {
@@ -2427,12 +2434,12 @@
         ]
       },
       "472": {
-        "total": 8,
+        "total": 9,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 66,
+            "value": 67,
             "points": 2
           },
           {
@@ -2444,8 +2451,8 @@
           {
             "stat": "bonus",
             "name": "Bonus",
-            "value": 2,
-            "points": 2
+            "value": 3,
+            "points": 3
           }
         ]
       },
@@ -2521,5 +2528,5 @@
       }
     }
   },
-  "generatedAt": "2026-10-18T16:57:45.360Z"
+  "generatedAt": "2026-10-18T16:58:53.221Z"
 }
