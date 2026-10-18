@@ -822,13 +822,19 @@
         ]
       },
       "504": {
-        "total": 8,
+        "total": 11,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
             "value": 84,
             "points": 2
+          },
+          {
+            "stat": "assists",
+            "name": "Assists",
+            "value": 1,
+            "points": 3
           },
           {
             "stat": "clean_sheets",
@@ -2282,5 +2288,5 @@
       }
     }
   },
-  "generatedAt": "2026-10-18T14:43:51.393Z"
+  "generatedAt": "2026-10-18T14:45:06.283Z"
 }
