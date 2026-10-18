@@ -322,12 +322,12 @@
       "chanceOfPlaying": null,
       "news": null,
       "newsAdded": null,
-      "points": 40,
-      "ppg": 5.7,
+      "points": 41,
+      "ppg": 5.9,
       "goals": 0,
       "assists": 0,
       "cleanSheets": 4,
-      "bonus": 4,
+      "bonus": 5,
       "positionRank": 1
     },
     {
@@ -595,28 +595,6 @@
       "positionRank": 11
     },
     {
-      "id": 4,
-      "name": "Gabriel",
-      "position": "DEF",
-      "club": "Arsenal",
-      "clubShort": "ARS",
-      "clubCode": 3,
-      "teamId": 1,
-      "photoCode": 226597,
-      "owner": "wallis",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 36,
-      "ppg": 5.1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 4,
-      "bonus": 3,
-      "positionRank": 8
-    },
-    {
       "id": 114,
       "name": "Boscagli",
       "position": "DEF",
@@ -659,6 +637,28 @@
       "cleanSheets": 3,
       "bonus": 6,
       "positionRank": 14
+    },
+    {
+      "id": 4,
+      "name": "Gabriel",
+      "position": "DEF",
+      "club": "Arsenal",
+      "clubShort": "ARS",
+      "clubCode": 3,
+      "teamId": 1,
+      "photoCode": 226597,
+      "owner": "wallis",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 35,
+      "ppg": 5,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 4,
+      "bonus": 2,
+      "positionRank": 8
     },
     {
       "id": 449,
@@ -14699,5 +14699,5 @@
     "bonus": 8,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-18T17:13:34.492Z"
+  "generatedAt": "2026-10-18T17:14:42.525Z"
 }
