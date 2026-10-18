@@ -419,6 +419,28 @@
       "positionRank": 2
     },
     {
+      "id": 4,
+      "name": "Gabriel",
+      "position": "DEF",
+      "club": "Arsenal",
+      "clubShort": "ARS",
+      "clubCode": 3,
+      "teamId": 1,
+      "photoCode": 226597,
+      "owner": "wallis",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 38,
+      "ppg": 5.4,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 4,
+      "bonus": 5,
+      "positionRank": 7
+    },
+    {
       "id": 154,
       "name": "Palmer",
       "position": "MID",
@@ -548,7 +570,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 4,
-      "positionRank": 7
+      "positionRank": 8
     },
     {
       "id": 12,
@@ -637,28 +659,6 @@
       "cleanSheets": 3,
       "bonus": 6,
       "positionRank": 13
-    },
-    {
-      "id": 4,
-      "name": "Gabriel",
-      "position": "DEF",
-      "club": "Arsenal",
-      "clubShort": "ARS",
-      "clubCode": 3,
-      "teamId": 1,
-      "photoCode": 226597,
-      "owner": "wallis",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 35,
-      "ppg": 5,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 4,
-      "bonus": 2,
-      "positionRank": 8
     },
     {
       "id": 449,
@@ -14699,5 +14699,5 @@
     "bonus": 8,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-18T17:02:15.831Z"
+  "generatedAt": "2026-10-18T17:03:24.133Z"
 }
