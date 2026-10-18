@@ -106,12 +106,18 @@
         ]
       },
       "529": {
-        "total": 1,
+        "total": 2,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
             "value": 45,
+            "points": 1
+          },
+          {
+            "stat": "saves",
+            "name": "Saves",
+            "value": 3,
             "points": 1
           }
         ]
@@ -2083,5 +2089,5 @@
       }
     }
   },
-  "generatedAt": "2026-10-18T13:47:31.301Z"
+  "generatedAt": "2026-10-18T13:48:40.874Z"
 }
