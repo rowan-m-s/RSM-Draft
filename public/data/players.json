@@ -1824,7 +1824,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 43
+      "positionRank": 42
     },
     {
       "id": 26,
@@ -1868,7 +1868,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 42
+      "positionRank": 41
     },
     {
       "id": 496,
@@ -1912,7 +1912,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 41
+      "positionRank": 40
     },
     {
       "id": 166,
@@ -4095,28 +4095,6 @@
       "positionRank": 45
     },
     {
-      "id": 37,
-      "name": "Lindelöf",
-      "position": "DEF",
-      "club": "Aston Villa",
-      "clubShort": "AVL",
-      "clubCode": 7,
-      "teamId": 2,
-      "photoCode": 184667,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 21,
-      "ppg": 3,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 2,
-      "positionRank": 40
-    },
-    {
       "id": 455,
       "name": "Tonali",
       "position": "MID",
@@ -4137,6 +4115,28 @@
       "cleanSheets": 2,
       "bonus": 2,
       "positionRank": 47
+    },
+    {
+      "id": 37,
+      "name": "Lindelöf",
+      "position": "DEF",
+      "club": "Aston Villa",
+      "clubShort": "AVL",
+      "clubCode": 7,
+      "teamId": 2,
+      "photoCode": 184667,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 20,
+      "ppg": 2.9,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 1,
+      "positionRank": 43
     },
     {
       "id": 183,
@@ -4400,7 +4400,29 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 50
+      "positionRank": 51
+    },
+    {
+      "id": 33,
+      "name": "Mings",
+      "position": "DEF",
+      "club": "Aston Villa",
+      "clubShort": "AVL",
+      "clubCode": 7,
+      "teamId": 2,
+      "photoCode": 149484,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 18,
+      "ppg": 3,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 1,
+      "positionRank": 49
     },
     {
       "id": 551,
@@ -4444,7 +4466,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 49
+      "positionRank": 50
     },
     {
       "id": 290,
@@ -4555,28 +4577,6 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 69
-    },
-    {
-      "id": 33,
-      "name": "Mings",
-      "position": "DEF",
-      "club": "Aston Villa",
-      "clubShort": "AVL",
-      "clubCode": 7,
-      "teamId": 2,
-      "photoCode": 149484,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 17,
-      "ppg": 2.8,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 0,
-      "positionRank": 51
     },
     {
       "id": 502,
@@ -14699,5 +14699,5 @@
     "bonus": 12,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-17T22:48:39.843Z"
+  "generatedAt": "2026-10-18T02:32:46.788Z"
 }
