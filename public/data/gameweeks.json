@@ -1150,15 +1150,15 @@
       "confirmExpectedUtc": "2026-10-20T19:00:00.000Z",
       "revealFromUtc": "2026-10-19T23:10:00.000Z",
       "scores": {
-        "rushy": 22,
+        "rushy": 21,
         "kellett": 37,
-        "wallis": 30,
+        "wallis": 29,
         "jls": 14,
         "paddy": 10,
         "bennett": 15,
-        "wood": 24,
+        "wood": 23,
         "rowan": 13,
-        "jason": 30,
+        "jason": 37,
         "dj": 32,
         "ollie": 27
       },
@@ -1176,8 +1176,8 @@
           "managerKey": "kellett"
         },
         "wallis": {
-          "playerName": "Gomez",
-          "points": 9,
+          "playerName": "Martinez",
+          "points": 8,
           "managerKey": "wallis"
         },
         "jls": {
@@ -1206,8 +1206,8 @@
           "managerKey": "rowan"
         },
         "jason": {
-          "playerName": "Munoz",
-          "points": 9,
+          "playerName": "Kostoulas",
+          "points": 11,
           "managerKey": "jason"
         },
         "dj": {
@@ -1224,7 +1224,7 @@
       "scapegoatByManager": {
         "rushy": {
           "playerName": "Khalaili",
-          "points": 0,
+          "points": -1,
           "managerKey": "rushy",
           "element": 588
         },
@@ -2079,5 +2079,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-10-18T14:08:58.225Z"
+  "generatedAt": "2026-10-18T14:10:07.489Z"
 }
