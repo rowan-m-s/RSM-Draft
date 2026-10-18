@@ -2330,7 +2330,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 3,
-      "positionRank": 64
+      "positionRank": 65
     },
     {
       "id": 569,
@@ -2440,7 +2440,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 69
+      "positionRank": 70
     },
     {
       "id": 239,
@@ -2462,7 +2462,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 70
+      "positionRank": 71
     },
     {
       "id": 553,
@@ -4290,7 +4290,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 60
+      "positionRank": 61
     },
     {
       "id": 591,
@@ -4312,7 +4312,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 61
+      "positionRank": 62
     },
     {
       "id": 331,
@@ -4403,6 +4403,28 @@
       "positionRank": 50
     },
     {
+      "id": 567,
+      "name": "Schlager",
+      "position": "MID",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 204561,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 19,
+      "ppg": 2.7,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 60
+    },
+    {
       "id": 265,
       "name": "Berge",
       "position": "MID",
@@ -4422,7 +4444,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 62
+      "positionRank": 63
     },
     {
       "id": 454,
@@ -4444,7 +4466,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 65
+      "positionRank": 66
     },
     {
       "id": 486,
@@ -4466,7 +4488,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 66
+      "positionRank": 67
     },
     {
       "id": 33,
@@ -4510,7 +4532,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 67
+      "positionRank": 68
     },
     {
       "id": 290,
@@ -4532,7 +4554,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 63
+      "positionRank": 64
     },
     {
       "id": 632,
@@ -4598,7 +4620,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 68
+      "positionRank": 69
     },
     {
       "id": 259,
@@ -4642,7 +4664,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 72
+      "positionRank": 73
     },
     {
       "id": 502,
@@ -4667,28 +4689,6 @@
       "positionRank": 58
     },
     {
-      "id": 567,
-      "name": "Schlager",
-      "position": "MID",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 204561,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 17,
-      "ppg": 2.4,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 73
-    },
-    {
       "id": 345,
       "name": "Tanaka",
       "position": "MID",
@@ -4708,7 +4708,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 71
+      "positionRank": 72
     },
     {
       "id": 635,
@@ -14699,5 +14699,5 @@
     "bonus": 8,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-18T17:18:06.825Z"
+  "generatedAt": "2026-10-18T17:20:21.127Z"
 }
