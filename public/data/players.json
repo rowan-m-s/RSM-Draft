@@ -3323,6 +3323,28 @@
       "positionRank": 32
     },
     {
+      "id": 490,
+      "name": "Wood",
+      "position": "FWD",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 60689,
+      "owner": "jls",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 6,
+      "ppg": 1,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 33
+    },
+    {
       "id": 14,
       "name": "Eze",
       "position": "MID",
@@ -3386,7 +3408,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 33
+      "positionRank": 34
     },
     {
       "id": 498,
@@ -3409,28 +3431,6 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 109
-    },
-    {
-      "id": 490,
-      "name": "Wood",
-      "position": "FWD",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 60689,
-      "owner": "jls",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 5,
-      "ppg": 1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 34
     },
     {
       "id": 25,
@@ -14699,5 +14699,5 @@
     "bonus": 8,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-18T17:15:50.278Z"
+  "generatedAt": "2026-10-18T17:16:58.973Z"
 }
