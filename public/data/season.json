@@ -88,9 +88,9 @@
     {
       "key": "wallis",
       "rank": 6,
-      "total": 273,
-      "gw": 50,
-      "month": 82,
+      "total": 272,
+      "gw": 49,
+      "month": 81,
       "kochCount": 2,
       "motmCount": 0,
       "forfeits": 10,
@@ -103,8 +103,25 @@
       }
     },
     {
+      "key": "ollie",
+      "rank": 6,
+      "total": 272,
+      "gw": 36,
+      "month": 67,
+      "kochCount": 1,
+      "motmCount": 0,
+      "forfeits": 5,
+      "potsWon": 0,
+      "balance": -5,
+      "topPerformer": {
+        "playerName": "Raya",
+        "points": 42,
+        "managerKey": "ollie"
+      }
+    },
+    {
       "key": "jls",
-      "rank": 7,
+      "rank": 8,
       "total": 271,
       "gw": 21,
       "month": 83,
@@ -117,23 +134,6 @@
         "playerName": "João Pedro",
         "points": 47,
         "managerKey": "jls"
-      }
-    },
-    {
-      "key": "ollie",
-      "rank": 8,
-      "total": 269,
-      "gw": 33,
-      "month": 64,
-      "kochCount": 1,
-      "motmCount": 0,
-      "forfeits": 5,
-      "potsWon": 0,
-      "balance": -5,
-      "topPerformer": {
-        "playerName": "Mbeumo",
-        "points": 41,
-        "managerKey": "ollie"
       }
     },
     {
@@ -205,7 +205,7 @@
     "displaced": "paddy",
     "changed": false
   },
-  "generatedAt": "2026-10-18T16:58:53.221Z",
+  "generatedAt": "2026-10-18T17:02:15.831Z",
   "graphics": {
     "koch": {
       "rushy": 244850,
@@ -244,7 +244,7 @@
       "rowan": 466525,
       "jason": 430871,
       "dj": 437730,
-      "ollie": 446008
+      "ollie": 154561
     },
     "leaderMonth": {
       "rushy": 244850,

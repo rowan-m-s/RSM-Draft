@@ -221,6 +221,28 @@
       "positionRank": 3
     },
     {
+      "id": 1,
+      "name": "Raya",
+      "position": "GKP",
+      "club": "Arsenal",
+      "clubShort": "ARS",
+      "clubCode": 3,
+      "teamId": 1,
+      "photoCode": 154561,
+      "owner": "ollie",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 42,
+      "ppg": 6,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 4,
+      "bonus": 6,
+      "positionRank": 1
+    },
+    {
       "id": 68,
       "name": "Tavernier",
       "position": "MID",
@@ -373,28 +395,6 @@
       "cleanSheets": 3,
       "bonus": 2,
       "positionRank": 7
-    },
-    {
-      "id": 1,
-      "name": "Raya",
-      "position": "GKP",
-      "club": "Arsenal",
-      "clubShort": "ARS",
-      "clubCode": 3,
-      "teamId": 1,
-      "photoCode": 154561,
-      "owner": "ollie",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 39,
-      "ppg": 5.6,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 4,
-      "bonus": 3,
-      "positionRank": 1
     },
     {
       "id": 571,
@@ -595,28 +595,6 @@
       "positionRank": 11
     },
     {
-      "id": 4,
-      "name": "Gabriel",
-      "position": "DEF",
-      "club": "Arsenal",
-      "clubShort": "ARS",
-      "clubCode": 3,
-      "teamId": 1,
-      "photoCode": 226597,
-      "owner": "wallis",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 36,
-      "ppg": 5.1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 4,
-      "bonus": 3,
-      "positionRank": 8
-    },
-    {
       "id": 114,
       "name": "Boscagli",
       "position": "DEF",
@@ -659,6 +637,28 @@
       "cleanSheets": 3,
       "bonus": 6,
       "positionRank": 13
+    },
+    {
+      "id": 4,
+      "name": "Gabriel",
+      "position": "DEF",
+      "club": "Arsenal",
+      "clubShort": "ARS",
+      "clubCode": 3,
+      "teamId": 1,
+      "photoCode": 226597,
+      "owner": "wallis",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 35,
+      "ppg": 5,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 4,
+      "bonus": 2,
+      "positionRank": 8
     },
     {
       "id": 449,
@@ -14699,5 +14699,5 @@
     "bonus": 8,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-18T16:58:53.221Z"
+  "generatedAt": "2026-10-18T17:02:15.831Z"
 }
