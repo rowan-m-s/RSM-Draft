@@ -2440,7 +2440,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 15
+      "positionRank": 16
     },
     {
       "id": 358,
@@ -2487,6 +2487,28 @@
       "positionRank": 57
     },
     {
+      "id": 412,
+      "name": "Lammens",
+      "position": "GKP",
+      "club": "Man Utd",
+      "clubShort": "MUN",
+      "clubCode": 1,
+      "teamId": 16,
+      "photoCode": 465247,
+      "owner": "wallis",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 16,
+      "ppg": 2.3,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 1,
+      "positionRank": 14
+    },
+    {
       "id": 295,
       "name": "McBurnie",
       "position": "FWD",
@@ -2528,7 +2550,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 14
+      "positionRank": 15
     },
     {
       "id": 554,
@@ -2595,28 +2617,6 @@
       "cleanSheets": 2,
       "bonus": 1,
       "positionRank": 78
-    },
-    {
-      "id": 412,
-      "name": "Lammens",
-      "position": "GKP",
-      "club": "Man Utd",
-      "clubShort": "MUN",
-      "clubCode": 1,
-      "teamId": 16,
-      "photoCode": 465247,
-      "owner": "wallis",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 15,
-      "ppg": 2.1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 1,
-      "positionRank": 16
     },
     {
       "id": 445,
@@ -14699,5 +14699,5 @@
     "bonus": 12,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-18T13:42:54.981Z"
+  "generatedAt": "2026-10-18T13:45:11.727Z"
 }
