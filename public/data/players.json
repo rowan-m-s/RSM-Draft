@@ -3765,28 +3765,6 @@
       "positionRank": 18
     },
     {
-      "id": 129,
-      "name": "Ayari",
-      "position": "MID",
-      "club": "Brighton",
-      "clubShort": "BHA",
-      "clubCode": 36,
-      "teamId": 5,
-      "photoCode": 509416,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-30T18:00:07.935334Z",
-      "points": 27,
-      "ppg": 4.5,
-      "goals": 2,
-      "assists": 0,
-      "cleanSheets": 4,
-      "bonus": 3,
-      "positionRank": 32
-    },
-    {
       "id": 282,
       "name": "Giles",
       "position": "DEF",
@@ -3807,6 +3785,28 @@
       "cleanSheets": 3,
       "bonus": 2,
       "positionRank": 25
+    },
+    {
+      "id": 129,
+      "name": "Ayari",
+      "position": "MID",
+      "club": "Brighton",
+      "clubShort": "BHA",
+      "clubCode": 36,
+      "teamId": 5,
+      "photoCode": 509416,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-30T18:00:07.935334Z",
+      "points": 26,
+      "ppg": 4.3,
+      "goals": 2,
+      "assists": 0,
+      "cleanSheets": 4,
+      "bonus": 2,
+      "positionRank": 32
     },
     {
       "id": 432,
@@ -14699,5 +14699,5 @@
     "bonus": 12,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-18T13:45:11.727Z"
+  "generatedAt": "2026-10-18T13:47:31.301Z"
 }
