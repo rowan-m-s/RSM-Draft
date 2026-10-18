@@ -71,9 +71,9 @@
     {
       "key": "kellett",
       "rank": 5,
-      "total": 275,
-      "gw": 51,
-      "month": 78,
+      "total": 276,
+      "gw": 52,
+      "month": 79,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -88,9 +88,9 @@
     {
       "key": "wallis",
       "rank": 6,
-      "total": 273,
-      "gw": 50,
-      "month": 82,
+      "total": 274,
+      "gw": 51,
+      "month": 83,
       "kochCount": 2,
       "motmCount": 0,
       "forfeits": 10,
@@ -121,41 +121,24 @@
     },
     {
       "key": "ollie",
-      "rank": 8,
-      "total": 270,
-      "gw": 34,
-      "month": 65,
+      "rank": 7,
+      "total": 271,
+      "gw": 35,
+      "month": 66,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
       "potsWon": 0,
       "balance": -5,
       "topPerformer": {
-        "playerName": "Mbeumo",
+        "playerName": "Raya",
         "points": 41,
         "managerKey": "ollie"
       }
     },
     {
-      "key": "rushy",
-      "rank": 9,
-      "total": 258,
-      "gw": 30,
-      "month": 59,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "Rogers",
-        "points": 40,
-        "managerKey": "rushy"
-      }
-    },
-    {
       "key": "rowan",
-      "rank": 10,
+      "rank": 9,
       "total": 256,
       "gw": 21,
       "month": 55,
@@ -168,6 +151,23 @@
         "playerName": "Stach",
         "points": 31,
         "managerKey": "rowan"
+      }
+    },
+    {
+      "key": "rushy",
+      "rank": 10,
+      "total": 254,
+      "gw": 26,
+      "month": 55,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "Rogers",
+        "points": 40,
+        "managerKey": "rushy"
       }
     },
     {
@@ -205,7 +205,7 @@
     "displaced": "paddy",
     "changed": false
   },
-  "generatedAt": "2026-10-18T17:10:10.778Z",
+  "generatedAt": "2026-10-18T17:12:26.649Z",
   "graphics": {
     "koch": {
       "rushy": 244850,
@@ -244,7 +244,7 @@
       "rowan": 466525,
       "jason": 430871,
       "dj": 437730,
-      "ollie": 446008
+      "ollie": 154561
     },
     "leaderMonth": {
       "rushy": 244850,
