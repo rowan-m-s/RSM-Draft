@@ -1356,13 +1356,25 @@
         ]
       },
       "346": {
-        "total": 1,
+        "total": 8,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
             "value": 51,
             "points": 1
+          },
+          {
+            "stat": "goals_scored",
+            "name": "Goals scored",
+            "value": 1,
+            "points": 4
+          },
+          {
+            "stat": "bonus",
+            "name": "Bonus",
+            "value": 3,
+            "points": 3
           }
         ]
       },
@@ -1378,7 +1390,7 @@
         ]
       },
       "412": {
-        "total": 3,
+        "total": 2,
         "components": [
           {
             "stat": "minutes",
@@ -1390,12 +1402,6 @@
             "stat": "saves",
             "name": "Saves",
             "value": 3,
-            "points": 1
-          },
-          {
-            "stat": "bonus",
-            "name": "Bonus",
-            "value": 1,
             "points": 1
           }
         ]
@@ -1418,7 +1424,7 @@
         ]
       },
       "427": {
-        "total": 9,
+        "total": 7,
         "components": [
           {
             "stat": "minutes",
@@ -1435,8 +1441,8 @@
           {
             "stat": "bonus",
             "name": "Bonus",
-            "value": 3,
-            "points": 3
+            "value": 1,
+            "points": 1
           }
         ]
       },
@@ -2119,5 +2125,5 @@
       }
     }
   },
-  "generatedAt": "2026-10-18T14:11:17.916Z"
+  "generatedAt": "2026-10-18T14:12:29.593Z"
 }
