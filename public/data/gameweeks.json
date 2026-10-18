@@ -1131,17 +1131,17 @@
       "scoresProvisional": true,
       "kochReady": true,
       "yetByManager": {
-        "rushy": 4,
-        "kellett": 1,
-        "wallis": 1,
-        "jls": 4,
-        "paddy": 3,
-        "bennett": 3,
-        "wood": 1,
-        "rowan": 2,
-        "jason": 2,
-        "dj": 1,
-        "ollie": 3
+        "rushy": 1,
+        "kellett": 0,
+        "wallis": 0,
+        "jls": 3,
+        "paddy": 1,
+        "bennett": 2,
+        "wood": 0,
+        "rowan": 1,
+        "jason": 0,
+        "dj": 0,
+        "ollie": 2
       },
       "fixturesRemaining": true,
       "dataChecked": false,
@@ -1150,17 +1150,17 @@
       "confirmExpectedUtc": "2026-10-20T19:00:00.000Z",
       "revealFromUtc": "2026-10-19T23:10:00.000Z",
       "scores": {
-        "rushy": 23,
-        "kellett": 43,
-        "wallis": 41,
-        "jls": 18,
-        "paddy": 22,
-        "bennett": 20,
-        "wood": 44,
+        "rushy": 29,
+        "kellett": 51,
+        "wallis": 52,
+        "jls": 21,
+        "paddy": 30,
+        "bennett": 23,
+        "wood": 50,
         "rowan": 21,
-        "jason": 45,
+        "jason": 51,
         "dj": 38,
-        "ollie": 27
+        "ollie": 33
       },
       "kochKeys": [],
       "charged": 0,
@@ -1176,7 +1176,7 @@
           "managerKey": "kellett"
         },
         "wallis": {
-          "playerName": "Vuskovic",
+          "playerName": "Gabriel",
           "points": 11,
           "managerKey": "wallis"
         },
@@ -2079,5 +2079,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-10-18T15:17:12.714Z"
+  "generatedAt": "2026-10-18T16:56:36.077Z"
 }
