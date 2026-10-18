@@ -15,12 +15,20 @@ import { setPhotoFraming } from './lib/photoFraming'
  * coupling entirely: a data commit publishes itself, and deploy only runs
  * when code changes, rare enough that the cancellation race stops mattering.
  *
- * raw.githubusercontent.com fronts its own CDN cache, so every request here
- * carries a cache-busting query — otherwise a viewer could be held on
- * whatever was first fetched for that CDN's own TTL, the same class of
- * problem as Pages' ten-minute cache, just longer and opaque. In dev this
- * still reads the working tree same-origin instead, so local testing is not
- * hostage to what main happens to have published.
+ * raw.githubusercontent.com fronts Fastly, with a 5-minute max-age — and
+ * that cache keys on path alone: verified directly (curl -I with varying,
+ * random and absent query strings all came back x-cache: HIT against the
+ * same edge copy), so a cache-busting query cannot defeat it the way it
+ * would an origin server that actually varies its cache key by query
+ * string. The query is still worth sending — it stops the *browser's own*
+ * HTTP cache from serving a page load something it fetched earlier in the
+ * same session — but Fastly's shared copy is the real ceiling, and five
+ * minutes of worst-case staleness is what this design actually achieves,
+ * not "instant." That is still a real win over what it replaced: bounded
+ * and short, instead of unboundedly stale whenever a deploy silently
+ * failed to dispatch or got cancelled. In dev this reads the working tree
+ * same-origin instead, so local testing is not hostage to what main has
+ * published, cached or not.
  */
 const REPO_RAW_BASE = 'https://raw.githubusercontent.com/rowan-m-s/RSM-Draft/main/public/data'
 
