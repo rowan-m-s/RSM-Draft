@@ -139,15 +139,20 @@ async function loadDataset(cacheBust: number | null): Promise<Dataset> {
     season: files.season,
     players: files.players,
     reconciliation: files.reconciliation.records,
-    // The oldest of the five, so a file that stopped updating is what gets
-    // reported rather than being hidden by its fresher neighbours.
-    generatedAt: [
-      files.league.generatedAt,
-      files.gameweeks.generatedAt,
-      files.months.generatedAt,
-      files.season.generatedAt,
-      files.players.generatedAt,
-    ].sort()[0],
+    // gameweeks.json specifically, not the oldest of the five: that was the
+    // original idea, but found live on 18 Oct 2026 to be actively
+    // misleading rather than merely conservative. league.json carries the
+    // manager roster, which can go a genuine two and a half hours between
+    // heartbeats without anything being wrong — real content there just
+    // does not change often — and it dragged the whole site's freshness
+    // display down to "2 hours ago" while the scores themselves were six
+    // minutes old. gameweeks.json is what a viewer actually means by
+    // "fresh": the scores, the Koch, the confirmed state, and whatever
+    // triggers a real fetch-data.mjs write updates it in the same run as
+    // everything else, heartbeat or not — so its own age is already a
+    // faithful proxy for "did the pipeline run recently," which is what the
+    // 24h staleness guard checks server-side anyway, on this exact field.
+    generatedAt: files.gameweeks.generatedAt,
   }
 }
 
