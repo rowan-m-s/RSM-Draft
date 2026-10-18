@@ -65,8 +65,6 @@ concurrency:
 
 permissions:
   contents: write
-  # To dispatch the deploy once data is pushed.
-  actions: write
 
 jobs:
   update:
@@ -127,6 +125,16 @@ jobs:
       # The script rewrites a file only when its content changed, or every two
       # and a half hours as a heartbeat, so this is usually a no-op. Without
       # that, a 15-minute cron would produce hundreds of empty commits a week.
+      #
+      # Data lives at raw.githubusercontent.com now, not baked into the Pages
+      # build (see src/data.tsx), so this commit is the whole publish — no
+      # deploy dispatch follows it any more. That used to be the fragile part:
+      # a workflow's own push cannot trigger another workflow, so deploy was
+      # dispatched by hand, which fought Pages' own "cancel whatever is still
+      # in flight" behaviour, which needed a skip-if-in-flight workaround that
+      # only self-corrects if another change-worthy push follows. A commit
+      # here is now the entire mechanism — nothing left to skip or get
+      # cancelled.
       - name: Commit if anything changed
         if: steps.gate.outputs.run == 'true'
         run: |
@@ -138,37 +146,26 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add public/data
           git commit -m "Update league data"
-          # A scheduled run can race a push; rebase and retry rather than fail.
+          # A scheduled run can race a push; rebase and retry rather than
+          # fail. A failed rebase leaves the tree mid-conflict, so each retry
+          # aborts any stuck rebase first — otherwise a genuine conflict (two
+          # runs touching the same file in the same minute, not just a clean
+          # fast-forward) fails identically on every attempt with "unmerged
+          # files" rather than actually retrying the pull.
           for attempt in 1 2 3; do
-            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push && echo "pushed=true" >> "$GITHUB_OUTPUT" && exit 0
+            git rebase --abort 2>/dev/null || true
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push && exit 0
             echo "Push attempt $attempt failed, retrying..."
             sleep 5
           done
           exit 1
-        id: commit
 
-      # A push made with the workflow's own token never triggers another
-      # workflow, so the data would sit on main unpublished. Deploy is
-      # dispatched by hand instead, and only when something was pushed. A
-      # Pages deployment cancels whatever deployment is still in flight the
-      # moment a new one is queued — that's the Pages environment's own
-      # concurrency, separate from this workflow's `concurrency:` block, and
-      # it cannot be turned off. Dispatching on every commit regardless left
-      # a run of frequent updates cancelling each other before any of them
-      # finished publishing, so the site sat stale for days despite the data
-      # being current throughout. Skip the dispatch while one is already
-      # queued or running; the next commit's run will catch the data up.
-      - name: Deploy
-        if: steps.commit.outputs.pushed == 'true'
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          running=$(gh run list --workflow deploy.yml --status in_progress --status queued --json databaseId --jq 'length')
-          if [ "$running" -gt 0 ]; then
-            echo "A deploy is already in flight ($running); skipping dispatch so it isn't cancelled. The next data run will catch this up."
-          else
-            gh workflow run deploy.yml --ref "${GITHUB_REF_NAME}"
-          fi
+      # Runs on every trigger, gated or not — a quiet gate is exactly the
+      # case a silently-dead schedule would also produce, so this cannot
+      # only run alongside the steps above. A silent multi-day freeze has
+      # happened twice now, found by eye both times; this makes it loud.
+      - name: Guard — the data cannot go quiet mid-season
+        run: node scripts/check-data-freshness.mjs
 
       # Only a matchday cron that found a fixture near kickoff reaches here.
       # The step above already did one fetch; this one checks whether that
@@ -176,12 +173,11 @@ jobs:
       # open, polling every 60 seconds, until nothing is live or four hours
       # pass (GitHub's own 6-hour job limit is the backstop beyond that). A
       # manual dispatch or a code push never watches, even mid-match — this
-      # is deliberately scoped to the scheduled matchday trigger alone, so
-      # testing a deploy never accidentally holds a runner open for hours.
+      # is deliberately scoped to the scheduled matchday trigger alone, so a
+      # manual run for testing never accidentally holds a runner open for
+      # hours.
       - name: Watch while a match is live
         if: steps.gate.outputs.watch == 'true'
-        env:
-          GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -200,6 +196,7 @@ jobs:
             git commit -m "Update league data"
             pushed=false
             for attempt in 1 2 3; do
+              git rebase --abort 2>/dev/null || true
               if git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && git push; then
                 pushed=true
                 break
@@ -209,12 +206,5 @@ jobs:
             done
             if [ "$pushed" != "true" ]; then
               echo "Could not push after 3 attempts; the commit stays local and will go out with next minute's push."
-              continue
-            fi
-            running=$(gh run list --workflow deploy.yml --status in_progress --status queued --json databaseId --jq 'length')
-            if [ "$running" -gt 0 ]; then
-              echo "A deploy is already in flight ($running); skipping dispatch."
-            else
-              gh workflow run deploy.yml --ref "${GITHUB_REF_NAME}"
             fi
           done

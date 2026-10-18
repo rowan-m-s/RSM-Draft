@@ -3,6 +3,58 @@ import type { Gameweek, League, Month, PlayersFile, ReconciliationRecord, Season
 import { asset, setPlayerImageOverrides } from './lib/assets'
 import { setPhotoFraming } from './lib/photoFraming'
 
+/**
+ * Data lives at raw.githubusercontent.com, not in the build.
+ *
+ * It used to be baked into the bundle: every data commit needed a full
+ * Pages redeploy, so update-data dispatched deploy by hand, which fought
+ * Pages' own "cancel whatever is still in flight" behaviour, which needed a
+ * skip-if-in-flight workaround, which only self-corrects if another
+ * change-worthy push follows — a quiet stretch with nothing to push left
+ * the site stuck. Fetching straight from the repo at runtime removes the
+ * coupling entirely: a data commit publishes itself, and deploy only runs
+ * when code changes, rare enough that the cancellation race stops mattering.
+ *
+ * raw.githubusercontent.com fronts its own CDN cache, so every request here
+ * carries a cache-busting query — otherwise a viewer could be held on
+ * whatever was first fetched for that CDN's own TTL, the same class of
+ * problem as Pages' ten-minute cache, just longer and opaque. In dev this
+ * still reads the working tree same-origin instead, so local testing is not
+ * hostage to what main happens to have published.
+ */
+const REPO_RAW_BASE = 'https://raw.githubusercontent.com/rowan-m-s/RSM-Draft/main/public/data'
+
+function dataUrl(name: string): string {
+  if (import.meta.env.DEV) return asset(`data/${name}.json`)
+  return `${REPO_RAW_BASE}/${name}.json?t=${Date.now()}`
+}
+
+/**
+ * The last dataset that loaded successfully, kept in localStorage so a
+ * fresh page load has something to show immediately — and something to
+ * fall back to if the live fetch fails — now that nothing is baked into
+ * the build to fall back on. Freshness's own age display is what tells the
+ * viewer it might be stale; this just keeps the page from going blank.
+ */
+const LAST_DATASET_KEY = 'rsm:last-dataset'
+
+function readCachedDataset(): Dataset | null {
+  try {
+    const raw = localStorage.getItem(LAST_DATASET_KEY)
+    return raw ? (JSON.parse(raw) as Dataset) : null
+  } catch {
+    return null
+  }
+}
+
+function writeCachedDataset(data: Dataset) {
+  try {
+    localStorage.setItem(LAST_DATASET_KEY, JSON.stringify(data))
+  } catch {
+    // Private mode, or storage full: next load just starts from 'loading' instead.
+  }
+}
+
 export interface Dataset {
   league: League
   gameweeks: Gameweek[]
@@ -40,14 +92,12 @@ const DataContext = createContext<DataContextValue | null>(null)
 const FILES = ['league', 'gameweeks', 'months', 'season', 'players', 'photo-framing', 'reconciliation'] as const
 
 async function loadDataset(cacheBust: number | null): Promise<Dataset> {
-  const suffix = cacheBust === null ? '' : `?t=${cacheBust}`
-
   const responses = await Promise.all(
     FILES.map(async (name) => {
-      const url = asset(`data/${name}.json${suffix}`)
-      // Always revalidate: the files carry ETags, so an unchanged one is a
-      // cheap 304, and a changed one is never served stale from the cache
-      // for the ten minutes Pages allows. A manual reload bypasses outright.
+      // dataUrl() already cache-busts every call in production (its own
+      // CDN, not Pages') — the fetch-level cache option below only still
+      // matters in dev, where the URL is same-origin and stable.
+      const url = dataUrl(name)
       const response = await fetch(url, { cache: cacheBust === null ? 'no-cache' : 'reload' })
       if (!response.ok) {
         // reconciliation.json is additive, not essential — a league with
@@ -94,7 +144,14 @@ async function loadDataset(cacheBust: number | null): Promise<Dataset> {
 }
 
 export function DataProvider({ children }: { children: ReactNode }) {
-  const [state, setState] = useState<State>({ status: 'loading' })
+  // Seeded from the last successful load, if there is one, so the page has
+  // something to paint before the network even answers — and something to
+  // fall back to if this load fails. Nothing is baked into the build any
+  // more for that job to fall back to otherwise.
+  const [state, setState] = useState<State>(() => {
+    const cached = readCachedDataset()
+    return cached ? { status: 'ready', data: cached } : { status: 'loading' }
+  })
   const [reloadToken, setReloadToken] = useState<number | null>(null)
   const [reloading, setReloading] = useState(false)
   const [lastReload, setLastReload] = useState<DataContextValue['lastReload']>(null)
@@ -108,6 +165,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
     loadDataset(reloadToken)
       .then((data) => {
         if (cancelled) return
+        writeCachedDataset(data)
         setState((previous) => {
           if (manual) {
             // Compare what came back with what was showing, and say so. The
@@ -132,8 +190,10 @@ export function DataProvider({ children }: { children: ReactNode }) {
           console.warn(`[reload] failed: ${message}`)
           setLastReload({ outcome: 'failed', at: Date.now() })
         }
-        // Keep showing the data we already had rather than blanking the page:
-        // stale numbers with a visible age beat an empty screen.
+        // Keep showing the data we already had — from this session, or from
+        // the cache this mounted with — rather than blanking the page: stale
+        // numbers with a visible age beat an empty screen. Only a load that
+        // has nothing at all to fall back on shows the error state.
         setState((previous) => (previous.status === 'ready' ? previous : { status: 'error', message }))
       })
       .finally(() => {

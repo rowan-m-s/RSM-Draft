@@ -1,27 +1,41 @@
 name: Deploy to Pages
 
-# Builds and publishes whenever the site changes. A push made by the data
-# job's own token does not fire this trigger (GitHub never lets a workflow's
-# push start another workflow), so that job dispatches this one directly
-# after it pushes; the data is baked into the published output, so a
-# data-only change must redeploy.
+# Builds and publishes whenever the CODE changes. Data is no longer part of
+# that: the page fetches public/data/*.json from raw.githubusercontent.com
+# at runtime (see src/data.tsx) instead of reading files baked into the
+# build, so a data commit publishes itself with no deploy at all. That used
+# to be the fragile part — a workflow's own push cannot trigger another
+# workflow, so update-data dispatched this one by hand after every push,
+# which fought Pages' own "cancel whatever is still in flight" behaviour on
+# anything more frequent than one deploy at a time, needing a skip-if-in-
+# flight workaround that only self-corrects if another change-worthy push
+# follows. A quiet stretch with nothing to push — after a gameweek, or an
+# international break — left the site stuck with no deploy to catch it up.
+# Decoupling removes the coupling, not just the workaround: data commits are
+# frequent and now irrelevant here; code changes are rare enough that the
+# cancellation race stops mattering.
+#
+# public/data/** is explicitly excluded below rather than dropping public/**
+# outright — the rest of public/ (images, fonts, the manifest) is still
+# baked into the build and still needs a deploy when it changes, same as
+# before; only the data commits specifically should stop triggering this.
 #
 # Note (11 Oct 2026): GitHub Pages deployments for this workflow stalled
 # for several days — queued runs sat at "pending" with no job ever
 # scheduled, both for workflow_dispatch and (per the push that added this
 # comment) for push-triggered runs too. No incident was reported on
-# githubstatus.com and nothing in this repo's config explained it. If the
-# site looks stale again, check the Actions tab before suspecting the data
-# pipeline — compare public/data/gameweeks.json's generatedAt against the
-# repo's actions/runs/latest and the environments/github-pages/deployments
-# API; a live, current data commit with no matching deployment means this
-# has recurred.
+# githubstatus.com and nothing in this repo's config explained it. That
+# particular failure mode cannot recur against data any more now that data
+# never dispatches a deploy, but if the SITE'S CODE looks stale after a
+# genuine code push, check the Actions tab before assuming this workflow
+# ran cleanly.
 on:
   push:
     branches: [main]
     paths:
       - 'src/**'
       - 'public/**'
+      - '!public/data/**'
       - 'index.html'
       - 'package.json'
       - 'package-lock.json'
