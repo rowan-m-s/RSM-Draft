@@ -2113,6 +2113,28 @@
       "positionRank": 45
     },
     {
+      "id": 555,
+      "name": "Silva",
+      "position": "DEF",
+      "club": "Bournemouth",
+      "clubShort": "BOU",
+      "clubCode": 91,
+      "teamId": 3,
+      "photoCode": 483067,
+      "owner": "rowan",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 20,
+      "ppg": 2.9,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 46
+    },
+    {
       "id": 264,
       "name": "Bobb",
       "position": "MID",
@@ -2176,7 +2198,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 49
+      "positionRank": 50
     },
     {
       "id": 533,
@@ -2198,7 +2220,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 50
+      "positionRank": 51
     },
     {
       "id": 110,
@@ -2287,28 +2309,6 @@
       "cleanSheets": 4,
       "bonus": 0,
       "positionRank": 15
-    },
-    {
-      "id": 555,
-      "name": "Silva",
-      "position": "DEF",
-      "club": "Bournemouth",
-      "clubShort": "BOU",
-      "clubCode": 91,
-      "teamId": 3,
-      "photoCode": 483067,
-      "owner": "rowan",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 18,
-      "ppg": 2.6,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 54
     },
     {
       "id": 106,
@@ -4312,7 +4312,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 48
+      "positionRank": 49
     },
     {
       "id": 148,
@@ -4334,7 +4334,7 @@
       "assists": 3,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 46
+      "positionRank": 47
     },
     {
       "id": 592,
@@ -4356,7 +4356,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 51
+      "positionRank": 52
     },
     {
       "id": 254,
@@ -4378,7 +4378,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 47
+      "positionRank": 48
     },
     {
       "id": 265,
@@ -4444,7 +4444,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 52
+      "positionRank": 53
     },
     {
       "id": 551,
@@ -4488,7 +4488,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 53
+      "positionRank": 54
     },
     {
       "id": 290,
@@ -14699,5 +14699,5 @@
     "bonus": 8,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-18T14:34:37.088Z"
+  "generatedAt": "2026-10-18T14:38:02.780Z"
 }
