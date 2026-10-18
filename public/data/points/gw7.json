@@ -134,23 +134,35 @@
         ]
       },
       "542": {
-        "total": 1,
+        "total": 2,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
             "value": 45,
             "points": 1
+          },
+          {
+            "stat": "bonus",
+            "name": "Bonus",
+            "value": 1,
+            "points": 1
           }
         ]
       },
       "544": {
-        "total": 1,
+        "total": 2,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
             "value": 45,
+            "points": 1
+          },
+          {
+            "stat": "bonus",
+            "name": "Bonus",
+            "value": 1,
             "points": 1
           }
         ]
@@ -2089,5 +2101,5 @@
       }
     }
   },
-  "generatedAt": "2026-10-18T13:48:40.874Z"
+  "generatedAt": "2026-10-18T13:52:05.066Z"
 }
