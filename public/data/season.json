@@ -20,9 +20,9 @@
     {
       "key": "jason",
       "rank": 2,
-      "total": 312,
-      "gw": 43,
-      "month": 68,
+      "total": 313,
+      "gw": 44,
+      "month": 69,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -86,6 +86,23 @@
       }
     },
     {
+      "key": "kellett",
+      "rank": 6,
+      "total": 262,
+      "gw": 38,
+      "month": 65,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "Haaland",
+        "points": 58,
+        "managerKey": "kellett"
+      }
+    },
+    {
       "key": "ollie",
       "rank": 6,
       "total": 262,
@@ -103,25 +120,8 @@
       }
     },
     {
-      "key": "kellett",
-      "rank": 7,
-      "total": 261,
-      "gw": 37,
-      "month": 64,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "Haaland",
-        "points": 58,
-        "managerKey": "kellett"
-      }
-    },
-    {
       "key": "wallis",
-      "rank": 7,
+      "rank": 8,
       "total": 261,
       "gw": 38,
       "month": 70,
@@ -205,7 +205,7 @@
     "displaced": "paddy",
     "changed": false
   },
-  "generatedAt": "2026-10-18T14:26:25.318Z",
+  "generatedAt": "2026-10-18T14:32:17.303Z",
   "graphics": {
     "koch": {
       "rushy": 244850,
