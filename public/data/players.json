@@ -2110,7 +2110,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 45
+      "positionRank": 46
     },
     {
       "id": 555,
@@ -2132,7 +2132,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 46
+      "positionRank": 47
     },
     {
       "id": 264,
@@ -2198,7 +2198,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 50
+      "positionRank": 51
     },
     {
       "id": 533,
@@ -2220,7 +2220,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 51
+      "positionRank": 52
     },
     {
       "id": 110,
@@ -4205,6 +4205,28 @@
       "positionRank": 44
     },
     {
+      "id": 202,
+      "name": "Richards",
+      "position": "DEF",
+      "club": "Crystal Palace",
+      "clubShort": "CRY",
+      "clubCode": 31,
+      "teamId": 8,
+      "photoCode": 427623,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 20,
+      "ppg": 2.9,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 45
+    },
+    {
       "id": 183,
       "name": "Rudoni",
       "position": "MID",
@@ -4312,7 +4334,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 49
+      "positionRank": 50
     },
     {
       "id": 148,
@@ -4334,7 +4356,7 @@
       "assists": 3,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 47
+      "positionRank": 48
     },
     {
       "id": 592,
@@ -4356,7 +4378,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 52
+      "positionRank": 53
     },
     {
       "id": 254,
@@ -4378,7 +4400,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 48
+      "positionRank": 49
     },
     {
       "id": 265,
@@ -4444,7 +4466,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 53
+      "positionRank": 54
     },
     {
       "id": 551,
@@ -4467,28 +4489,6 @@
       "cleanSheets": 1,
       "bonus": 0,
       "positionRank": 65
-    },
-    {
-      "id": 202,
-      "name": "Richards",
-      "position": "DEF",
-      "club": "Crystal Palace",
-      "clubShort": "CRY",
-      "clubCode": 31,
-      "teamId": 8,
-      "photoCode": 427623,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 18,
-      "ppg": 2.6,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 54
     },
     {
       "id": 290,
@@ -14699,5 +14699,5 @@
     "bonus": 8,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-18T14:39:12.159Z"
+  "generatedAt": "2026-10-18T14:40:21.746Z"
 }
