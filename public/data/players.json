@@ -3166,7 +3166,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 28
+      "positionRank": 29
     },
     {
       "id": 499,
@@ -6053,6 +6053,28 @@
       "positionRank": 90
     },
     {
+      "id": 347,
+      "name": "Nmecha",
+      "position": "FWD",
+      "club": "Leeds",
+      "clubShort": "LEE",
+      "clubCode": 2,
+      "teamId": 13,
+      "photoCode": 174594,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 9,
+      "ppg": 1.5,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 28
+    },
+    {
       "id": 95,
       "name": "O.Dango",
       "position": "MID",
@@ -6293,28 +6315,6 @@
       "cleanSheets": 1,
       "bonus": 0,
       "positionRank": 120
-    },
-    {
-      "id": 347,
-      "name": "Nmecha",
-      "position": "FWD",
-      "club": "Leeds",
-      "clubShort": "LEE",
-      "clubCode": 2,
-      "teamId": 13,
-      "photoCode": 174594,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 8,
-      "ppg": 1.6,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 29
     },
     {
       "id": 246,
@@ -8272,7 +8272,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 189
+      "positionRank": 190
     },
     {
       "id": 248,
@@ -8404,7 +8404,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 187
+      "positionRank": 188
     },
     {
       "id": 42,
@@ -8470,7 +8470,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 186
+      "positionRank": 187
     },
     {
       "id": 212,
@@ -8558,7 +8558,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 188
+      "positionRank": 189
     },
     {
       "id": 207,
@@ -8581,6 +8581,28 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 128
+    },
+    {
+      "id": 430,
+      "name": "Mount",
+      "position": "MID",
+      "club": "Man Utd",
+      "clubShort": "MUN",
+      "clubCode": 1,
+      "teamId": 16,
+      "photoCode": 184341,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-15T16:00:07.879135Z",
+      "points": 2,
+      "ppg": 1,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 186
     },
     {
       "id": 539,
@@ -8866,7 +8888,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 191
+      "positionRank": 192
     },
     {
       "id": 622,
@@ -8910,7 +8932,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 193
+      "positionRank": 194
     },
     {
       "id": 206,
@@ -8954,7 +8976,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 195
+      "positionRank": 196
     },
     {
       "id": 501,
@@ -9064,7 +9086,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 190
+      "positionRank": 191
     },
     {
       "id": 308,
@@ -9350,7 +9372,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 194
+      "positionRank": 195
     },
     {
       "id": 285,
@@ -9373,28 +9395,6 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 146
-    },
-    {
-      "id": 430,
-      "name": "Mount",
-      "position": "MID",
-      "club": "Man Utd",
-      "clubShort": "MUN",
-      "clubCode": 1,
-      "teamId": 16,
-      "photoCode": 184341,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-15T16:00:07.879135Z",
-      "points": 1,
-      "ppg": 1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 196
     },
     {
       "id": 578,
@@ -9702,7 +9702,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 192
+      "positionRank": 193
     },
     {
       "id": 38,
@@ -14699,5 +14699,5 @@
     "bonus": 8,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-18T14:33:26.893Z"
+  "generatedAt": "2026-10-18T14:34:37.088Z"
 }
