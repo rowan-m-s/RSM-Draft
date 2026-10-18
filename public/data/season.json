@@ -3,9 +3,9 @@
     {
       "key": "wood",
       "rank": 1,
-      "total": 347,
-      "gw": 28,
-      "month": 95,
+      "total": 360,
+      "gw": 41,
+      "month": 108,
       "kochCount": 0,
       "motmCount": 1,
       "forfeits": 0,
@@ -13,16 +13,16 @@
       "balance": 30,
       "topPerformer": {
         "playerName": "De Cuyper",
-        "points": 54,
+        "points": 59,
         "managerKey": "wood"
       }
     },
     {
       "key": "jason",
       "rank": 2,
-      "total": 306,
-      "gw": 37,
-      "month": 62,
+      "total": 307,
+      "gw": 38,
+      "month": 63,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -86,23 +86,6 @@
       }
     },
     {
-      "key": "kellett",
-      "rank": 6,
-      "total": 261,
-      "gw": 37,
-      "month": 64,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "Haaland",
-        "points": 58,
-        "managerKey": "kellett"
-      }
-    },
-    {
       "key": "ollie",
       "rank": 6,
       "total": 261,
@@ -120,11 +103,28 @@
       }
     },
     {
+      "key": "kellett",
+      "rank": 7,
+      "total": 260,
+      "gw": 36,
+      "month": 63,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "Haaland",
+        "points": 58,
+        "managerKey": "kellett"
+      }
+    },
+    {
       "key": "wallis",
       "rank": 8,
-      "total": 253,
-      "gw": 30,
-      "month": 62,
+      "total": 259,
+      "gw": 36,
+      "month": 68,
       "kochCount": 2,
       "motmCount": 0,
       "forfeits": 10,
@@ -132,33 +132,16 @@
       "balance": -10,
       "topPerformer": {
         "playerName": "Vuskovic",
-        "points": 35,
-        "managerKey": "wallis"
-      }
-    },
-    {
-      "key": "rushy",
-      "rank": 9,
-      "total": 249,
-      "gw": 21,
-      "month": 50,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "Rogers",
         "points": 40,
-        "managerKey": "rushy"
+        "managerKey": "wallis"
       }
     },
     {
       "key": "rowan",
       "rank": 9,
-      "total": 249,
-      "gw": 14,
-      "month": 48,
+      "total": 254,
+      "gw": 19,
+      "month": 53,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -168,6 +151,23 @@
         "playerName": "Gibbs-White",
         "points": 30,
         "managerKey": "rowan"
+      }
+    },
+    {
+      "key": "rushy",
+      "rank": 10,
+      "total": 251,
+      "gw": 23,
+      "month": 52,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "Rogers",
+        "points": 40,
+        "managerKey": "rushy"
       }
     },
     {
@@ -195,7 +195,7 @@
     "keys": [
       "wood"
     ],
-    "total": 347,
+    "total": 360,
     "since": 4,
     "sinceByKey": {
       "wood": 4
@@ -205,7 +205,7 @@
     "displaced": "paddy",
     "changed": false
   },
-  "generatedAt": "2026-10-18T14:18:20.619Z",
+  "generatedAt": "2026-10-18T14:20:39.627Z",
   "graphics": {
     "koch": {
       "rushy": 244850,

@@ -1150,15 +1150,15 @@
       "confirmExpectedUtc": "2026-10-20T19:00:00.000Z",
       "revealFromUtc": "2026-10-19T23:10:00.000Z",
       "scores": {
-        "rushy": 21,
-        "kellett": 37,
-        "wallis": 30,
+        "rushy": 23,
+        "kellett": 36,
+        "wallis": 36,
         "jls": 14,
         "paddy": 19,
         "bennett": 13,
-        "wood": 28,
-        "rowan": 14,
-        "jason": 37,
+        "wood": 41,
+        "rowan": 19,
+        "jason": 38,
         "dj": 32,
         "ollie": 25
       },
@@ -1201,13 +1201,13 @@
           "managerKey": "wood"
         },
         "rowan": {
-          "playerName": "Pickford",
-          "points": 2,
+          "playerName": "F.Kadıoğlu",
+          "points": 6,
           "managerKey": "rowan"
         },
         "jason": {
           "playerName": "Kostoulas",
-          "points": 11,
+          "points": 12,
           "managerKey": "jason"
         },
         "dj": {
@@ -1224,7 +1224,7 @@
       "scapegoatByManager": {
         "rushy": {
           "playerName": "Khalaili",
-          "points": -1,
+          "points": 0,
           "managerKey": "rushy",
           "element": 588
         },
@@ -2079,5 +2079,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-10-18T14:18:20.619Z"
+  "generatedAt": "2026-10-18T14:20:39.627Z"
 }
