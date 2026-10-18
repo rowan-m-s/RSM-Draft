@@ -595,28 +595,6 @@
       "positionRank": 11
     },
     {
-      "id": 114,
-      "name": "Boscagli",
-      "position": "DEF",
-      "club": "Brighton",
-      "clubShort": "BHA",
-      "clubCode": 36,
-      "teamId": 5,
-      "photoCode": 204120,
-      "owner": "wood",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 35,
-      "ppg": 5,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 5,
-      "bonus": 2,
-      "positionRank": 9
-    },
-    {
       "id": 236,
       "name": "Dewsbury-Hall",
       "position": "MID",
@@ -680,6 +658,28 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 6,
+      "positionRank": 9
+    },
+    {
+      "id": 114,
+      "name": "Boscagli",
+      "position": "DEF",
+      "club": "Brighton",
+      "clubShort": "BHA",
+      "clubCode": 36,
+      "teamId": 5,
+      "photoCode": 204120,
+      "owner": "wood",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 34,
+      "ppg": 4.9,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 5,
+      "bonus": 1,
       "positionRank": 10
     },
     {
@@ -14721,5 +14721,5 @@
     "bonus": 8,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-18T19:56:35.612Z"
+  "generatedAt": "2026-10-18T22:41:51.103Z"
 }
