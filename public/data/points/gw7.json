@@ -2489,12 +2489,18 @@
         ]
       },
       "112": {
-        "total": 2,
+        "total": 4,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
             "value": 90,
+            "points": 2
+          },
+          {
+            "stat": "defensive_contribution",
+            "name": "Defensive Contribution",
+            "value": 10,
             "points": 2
           }
         ]
@@ -2641,5 +2647,5 @@
       }
     }
   },
-  "generatedAt": "2026-10-19T20:50:53.774Z"
+  "generatedAt": "2026-10-19T20:54:17.348Z"
 }
