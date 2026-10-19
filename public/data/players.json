@@ -2223,28 +2223,6 @@
       "positionRank": 13
     },
     {
-      "id": 194,
-      "name": "Thomas-Asante",
-      "position": "FWD",
-      "club": "Coventry City",
-      "clubShort": "COV",
-      "clubCode": 9,
-      "teamId": 7,
-      "photoCode": 230730,
-      "owner": "bennett",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 20,
-      "ppg": 2.9,
-      "goals": 0,
-      "assists": 2,
-      "cleanSheets": 1,
-      "bonus": 1,
-      "positionRank": 13
-    },
-    {
       "id": 264,
       "name": "Bobb",
       "position": "MID",
@@ -2331,6 +2309,28 @@
       "cleanSheets": 1,
       "bonus": 1,
       "positionRank": 55
+    },
+    {
+      "id": 194,
+      "name": "Thomas-Asante",
+      "position": "FWD",
+      "club": "Coventry City",
+      "clubShort": "COV",
+      "clubCode": 9,
+      "teamId": 7,
+      "photoCode": 230730,
+      "owner": "bennett",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 19,
+      "ppg": 2.7,
+      "goals": 0,
+      "assists": 2,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 13
     },
     {
       "id": 503,
@@ -2619,6 +2619,28 @@
       "positionRank": 76
     },
     {
+      "id": 512,
+      "name": "Kudus",
+      "position": "MID",
+      "club": "Spurs",
+      "clubShort": "TOT",
+      "clubCode": 6,
+      "teamId": 19,
+      "photoCode": 460842,
+      "owner": "rushy",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-07-23T12:01:23.848657Z",
+      "points": 16,
+      "ppg": 2.7,
+      "goals": 0,
+      "assists": 2,
+      "cleanSheets": 1,
+      "bonus": 1,
+      "positionRank": 79
+    },
+    {
       "id": 412,
       "name": "Lammens",
       "position": "GKP",
@@ -2682,29 +2704,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 79
-    },
-    {
-      "id": 512,
-      "name": "Kudus",
-      "position": "MID",
-      "club": "Spurs",
-      "clubShort": "TOT",
-      "clubCode": 6,
-      "teamId": 19,
-      "photoCode": 460842,
-      "owner": "rushy",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-07-23T12:01:23.848657Z",
-      "points": 15,
-      "ppg": 2.5,
-      "goals": 0,
-      "assists": 2,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 87
+      "positionRank": 80
     },
     {
       "id": 57,
@@ -2748,7 +2748,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 81
+      "positionRank": 82
     },
     {
       "id": 526,
@@ -4862,7 +4862,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 80
+      "positionRank": 81
     },
     {
       "id": 184,
@@ -4884,7 +4884,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 83
+      "positionRank": 84
     },
     {
       "id": 459,
@@ -4906,7 +4906,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 86
+      "positionRank": 87
     },
     {
       "id": 267,
@@ -4928,7 +4928,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 84
+      "positionRank": 85
     },
     {
       "id": 541,
@@ -4972,7 +4972,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 85
+      "positionRank": 86
     },
     {
       "id": 545,
@@ -5016,7 +5016,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 82
+      "positionRank": 83
     },
     {
       "id": 532,
@@ -14721,5 +14721,5 @@
     "bonus": 8,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-19T20:44:32.029Z"
+  "generatedAt": "2026-10-19T20:46:15.422Z"
 }
