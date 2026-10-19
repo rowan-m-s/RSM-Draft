@@ -1131,17 +1131,17 @@
       "scoresProvisional": true,
       "kochReady": true,
       "yetByManager": {
-        "rushy": 1,
+        "rushy": 0,
         "kellett": 0,
         "wallis": 0,
-        "jls": 3,
-        "paddy": 1,
-        "bennett": 2,
+        "jls": 0,
+        "paddy": 0,
+        "bennett": 0,
         "wood": 0,
-        "rowan": 1,
+        "rowan": 0,
         "jason": 0,
         "dj": 0,
-        "ollie": 2
+        "ollie": 0
       },
       "fixturesRemaining": true,
       "dataChecked": false,
@@ -1150,17 +1150,17 @@
       "confirmExpectedUtc": "2026-10-20T19:00:00.000Z",
       "revealFromUtc": "2026-10-19T23:10:00.000Z",
       "scores": {
-        "rushy": 28,
+        "rushy": 33,
         "kellett": 52,
         "wallis": 49,
-        "jls": 21,
+        "jls": 30,
         "paddy": 30,
-        "bennett": 29,
+        "bennett": 37,
         "wood": 49,
-        "rowan": 21,
+        "rowan": 23,
         "jason": 51,
         "dj": 39,
-        "ollie": 36
+        "ollie": 39
       },
       "kochKeys": [],
       "charged": 0,
@@ -1181,8 +1181,8 @@
           "managerKey": "wallis"
         },
         "jls": {
-          "playerName": "Doku",
-          "points": 6,
+          "playerName": "Marmoush",
+          "points": 9,
           "managerKey": "jls"
         },
         "paddy": {
@@ -1283,10 +1283,10 @@
           "element": 94
         },
         "ollie": {
-          "playerName": "Thiaw",
+          "playerName": "Solanke",
           "points": 1,
           "managerKey": "ollie",
-          "element": 445
+          "element": 526
         }
       },
       "kochGraphicByManager": {
@@ -2079,5 +2079,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-10-19T16:05:36.272Z"
+  "generatedAt": "2026-10-19T20:44:32.029Z"
 }
