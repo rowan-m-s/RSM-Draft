@@ -595,6 +595,28 @@
       "positionRank": 11
     },
     {
+      "id": 13,
+      "name": "Rice",
+      "position": "MID",
+      "club": "Arsenal",
+      "clubShort": "ARS",
+      "clubCode": 3,
+      "teamId": 1,
+      "photoCode": 204480,
+      "owner": "bennett",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-21T13:00:08.896379Z",
+      "points": 36,
+      "ppg": 5.1,
+      "goals": 0,
+      "assists": 4,
+      "cleanSheets": 4,
+      "bonus": 5,
+      "positionRank": 13
+    },
+    {
       "id": 236,
       "name": "Dewsbury-Hall",
       "position": "MID",
@@ -614,7 +636,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 6,
-      "positionRank": 13
+      "positionRank": 14
     },
     {
       "id": 4,
@@ -747,28 +769,6 @@
       "cleanSheets": 1,
       "bonus": 3,
       "positionRank": 15
-    },
-    {
-      "id": 13,
-      "name": "Rice",
-      "position": "MID",
-      "club": "Arsenal",
-      "clubShort": "ARS",
-      "clubCode": 3,
-      "teamId": 1,
-      "photoCode": 204480,
-      "owner": "bennett",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-21T13:00:08.896379Z",
-      "points": 34,
-      "ppg": 4.9,
-      "goals": 0,
-      "assists": 4,
-      "cleanSheets": 4,
-      "bonus": 3,
-      "positionRank": 14
     },
     {
       "id": 426,
@@ -14721,5 +14721,5 @@
     "bonus": 8,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-18T22:41:51.103Z"
+  "generatedAt": "2026-10-19T02:46:37.488Z"
 }
