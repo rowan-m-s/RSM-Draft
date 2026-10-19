@@ -2477,7 +2477,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 88,
+            "value": 89,
             "points": 2
           },
           {
@@ -2489,12 +2489,18 @@
         ]
       },
       "112": {
-        "total": 2,
+        "total": 4,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 88,
+            "value": 89,
+            "points": 2
+          },
+          {
+            "stat": "defensive_contribution",
+            "name": "Defensive Contribution",
+            "value": 10,
             "points": 2
           }
         ]
@@ -2549,7 +2555,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 28,
+            "value": 29,
             "points": 1
           }
         ]
@@ -2560,7 +2566,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 88,
+            "value": 89,
             "points": 2
           }
         ]
@@ -2579,7 +2585,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 88,
+            "value": 89,
             "points": 2
           }
         ]
@@ -2617,7 +2623,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 88,
+            "value": 89,
             "points": 2
           },
           {
@@ -2641,5 +2647,5 @@
       }
     }
   },
-  "generatedAt": "2026-10-19T20:48:36.114Z"
+  "generatedAt": "2026-10-19T20:49:44.898Z"
 }
