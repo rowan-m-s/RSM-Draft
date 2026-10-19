@@ -2618,13 +2618,19 @@
         ]
       },
       "526": {
-        "total": 1,
+        "total": 4,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
             "value": 90,
             "points": 2
+          },
+          {
+            "stat": "assists",
+            "name": "Assists",
+            "value": 1,
+            "points": 3
           },
           {
             "stat": "yellow_cards",
@@ -2647,5 +2653,5 @@
       }
     }
   },
-  "generatedAt": "2026-10-19T20:57:41.324Z"
+  "generatedAt": "2026-10-19T20:58:50.219Z"
 }
