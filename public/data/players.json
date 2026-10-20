@@ -5380,9 +5380,9 @@
       "teamId": 2,
       "photoCode": 214590,
       "owner": null,
-      "status": "d",
-      "chanceOfPlaying": 75,
-      "news": "Hamstring injury - 75% chance of playing",
+      "status": "i",
+      "chanceOfPlaying": 0,
+      "news": "Hamstring injury - Expected back 21 Nov",
       "newsAdded": "2026-10-17T19:30:10.120990Z",
       "points": 13,
       "ppg": 2.2,
@@ -6106,9 +6106,9 @@
       "teamId": 2,
       "photoCode": 441302,
       "owner": null,
-      "status": "i",
+      "status": "d",
       "chanceOfPlaying": 0,
-      "news": "Ankle injury - Unknown return date",
+      "news": "Ankle injury - 75% chance of playing",
       "newsAdded": "2026-09-12T18:00:08.729468Z",
       "points": 9,
       "ppg": 2.3,
@@ -14721,5 +14721,5 @@
     "bonus": 8,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-20T14:00:23.980Z"
+  "generatedAt": "2026-10-20T15:31:23.754Z"
 }
