@@ -6,8 +6,8 @@
   "started": true,
   "finished": false,
   "dataChecked": false,
-  "locallyFinalised": false,
-  "confirmed": false,
+  "locallyFinalised": true,
+  "confirmed": true,
   "squads": {
     "rushy": [
       {
@@ -21,9 +21,9 @@
       {
         "element": 583,
         "position": 2,
-        "starter": true,
+        "starter": false,
         "subbedOn": false,
-        "subbedOff": false,
+        "subbedOff": true,
         "points": 0
       },
       {
@@ -109,8 +109,8 @@
       {
         "element": 151,
         "position": 13,
-        "starter": false,
-        "subbedOn": false,
+        "starter": true,
+        "subbedOn": true,
         "subbedOff": false,
         "points": 7
       },
@@ -183,9 +183,9 @@
       {
         "element": 208,
         "position": 7,
-        "starter": true,
+        "starter": false,
         "subbedOn": false,
-        "subbedOff": false,
+        "subbedOff": true,
         "points": 0
       },
       {
@@ -231,8 +231,8 @@
       {
         "element": 472,
         "position": 13,
-        "starter": false,
-        "subbedOn": false,
+        "starter": true,
+        "subbedOn": true,
         "subbedOff": false,
         "points": 2
       },
@@ -403,17 +403,17 @@
       {
         "element": 498,
         "position": 4,
-        "starter": true,
+        "starter": false,
         "subbedOn": false,
-        "subbedOff": false,
+        "subbedOff": true,
         "points": 0
       },
       {
         "element": 403,
         "position": 5,
-        "starter": true,
+        "starter": false,
         "subbedOn": false,
-        "subbedOff": false,
+        "subbedOff": true,
         "points": 0
       },
       {
@@ -475,16 +475,16 @@
       {
         "element": 87,
         "position": 13,
-        "starter": false,
-        "subbedOn": false,
+        "starter": true,
+        "subbedOn": true,
         "subbedOff": false,
         "points": 3
       },
       {
         "element": 393,
         "position": 14,
-        "starter": false,
-        "subbedOn": false,
+        "starter": true,
+        "subbedOn": true,
         "subbedOff": false,
         "points": 1
       },
@@ -525,9 +525,9 @@
       {
         "element": 506,
         "position": 4,
-        "starter": true,
+        "starter": false,
         "subbedOn": false,
-        "subbedOff": false,
+        "subbedOff": true,
         "points": 0
       },
       {
@@ -549,9 +549,9 @@
       {
         "element": 399,
         "position": 7,
-        "starter": true,
+        "starter": false,
         "subbedOn": false,
-        "subbedOff": false,
+        "subbedOff": true,
         "points": 0
       },
       {
@@ -597,16 +597,16 @@
       {
         "element": 261,
         "position": 13,
-        "starter": false,
-        "subbedOn": false,
+        "starter": true,
+        "subbedOn": true,
         "subbedOff": false,
         "points": 11
       },
       {
         "element": 230,
         "position": 14,
-        "starter": false,
-        "subbedOn": false,
+        "starter": true,
+        "subbedOn": true,
         "subbedOff": false,
         "points": 1
       },
@@ -655,9 +655,9 @@
       {
         "element": 429,
         "position": 5,
-        "starter": true,
+        "starter": false,
         "subbedOn": false,
-        "subbedOff": false,
+        "subbedOff": true,
         "points": 0
       },
       {
@@ -719,8 +719,8 @@
       {
         "element": 379,
         "position": 13,
-        "starter": false,
-        "subbedOn": false,
+        "starter": true,
+        "subbedOn": true,
         "subbedOff": false,
         "points": 9
       },
@@ -817,9 +817,9 @@
       {
         "element": 552,
         "position": 10,
-        "starter": true,
+        "starter": false,
         "subbedOn": false,
-        "subbedOff": false,
+        "subbedOff": true,
         "points": 0
       },
       {
@@ -841,8 +841,8 @@
       {
         "element": 542,
         "position": 13,
-        "starter": false,
-        "subbedOn": false,
+        "starter": true,
+        "subbedOn": true,
         "subbedOff": false,
         "points": 4
       },
@@ -915,9 +915,9 @@
       {
         "element": 480,
         "position": 7,
-        "starter": true,
+        "starter": false,
         "subbedOn": false,
-        "subbedOff": false,
+        "subbedOff": true,
         "points": 0
       },
       {
@@ -963,8 +963,8 @@
       {
         "element": 555,
         "position": 13,
-        "starter": false,
-        "subbedOn": false,
+        "starter": true,
+        "subbedOn": true,
         "subbedOff": false,
         "points": 8
       },
@@ -2668,10 +2668,10 @@
       "clubShort": "TOT",
       "clubCode": 6,
       "photoCode": 438234,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
+      "status": "d",
+      "chanceOfPlaying": 75,
+      "news": "Calf injury - 75% chance of playing",
+      "newsAdded": "2026-10-19T22:30:08.721497Z"
     },
     "403": {
       "name": "Sávio",
@@ -3004,10 +3004,10 @@
       "clubShort": "TOT",
       "clubCode": 6,
       "photoCode": 487053,
-      "status": "a",
+      "status": "d",
       "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-11T18:00:09.092110Z"
+      "news": "Knee injury - 75% chance of playing",
+      "newsAdded": "2026-10-19T22:30:08.875960Z"
     },
     "512": {
       "name": "Kudus",
@@ -3334,5 +3334,5 @@
       "newsAdded": null
     }
   },
-  "generatedAt": "2026-10-19T20:58:50.219Z"
+  "generatedAt": "2026-10-20T00:58:43.689Z"
 }

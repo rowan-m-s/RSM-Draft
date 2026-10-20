@@ -20,7 +20,7 @@
       },
       {
         "element": 583,
-        "starter": true,
+        "starter": false,
         "position": 2,
         "subbedOn": false,
         "subbedOff": false,
@@ -108,7 +108,7 @@
       },
       {
         "element": 151,
-        "starter": false,
+        "starter": true,
         "position": 13,
         "subbedOn": false,
         "subbedOff": false,
@@ -182,7 +182,7 @@
       },
       {
         "element": 208,
-        "starter": true,
+        "starter": false,
         "position": 7,
         "subbedOn": false,
         "subbedOff": false,
@@ -230,7 +230,7 @@
       },
       {
         "element": 472,
-        "starter": false,
+        "starter": true,
         "position": 13,
         "subbedOn": false,
         "subbedOff": false,
@@ -402,7 +402,7 @@
       },
       {
         "element": 498,
-        "starter": true,
+        "starter": false,
         "position": 4,
         "subbedOn": false,
         "subbedOff": false,
@@ -410,7 +410,7 @@
       },
       {
         "element": 403,
-        "starter": true,
+        "starter": false,
         "position": 5,
         "subbedOn": false,
         "subbedOff": false,
@@ -474,7 +474,7 @@
       },
       {
         "element": 87,
-        "starter": false,
+        "starter": true,
         "position": 13,
         "subbedOn": false,
         "subbedOff": false,
@@ -482,7 +482,7 @@
       },
       {
         "element": 393,
-        "starter": false,
+        "starter": true,
         "position": 14,
         "subbedOn": false,
         "subbedOff": false,
@@ -524,7 +524,7 @@
       },
       {
         "element": 506,
-        "starter": true,
+        "starter": false,
         "position": 4,
         "subbedOn": false,
         "subbedOff": false,
@@ -548,7 +548,7 @@
       },
       {
         "element": 399,
-        "starter": true,
+        "starter": false,
         "position": 7,
         "subbedOn": false,
         "subbedOff": false,
@@ -596,7 +596,7 @@
       },
       {
         "element": 261,
-        "starter": false,
+        "starter": true,
         "position": 13,
         "subbedOn": false,
         "subbedOff": false,
@@ -604,7 +604,7 @@
       },
       {
         "element": 230,
-        "starter": false,
+        "starter": true,
         "position": 14,
         "subbedOn": false,
         "subbedOff": false,
@@ -654,7 +654,7 @@
       },
       {
         "element": 429,
-        "starter": true,
+        "starter": false,
         "position": 5,
         "subbedOn": false,
         "subbedOff": false,
@@ -718,7 +718,7 @@
       },
       {
         "element": 379,
-        "starter": false,
+        "starter": true,
         "position": 13,
         "subbedOn": false,
         "subbedOff": false,
@@ -816,7 +816,7 @@
       },
       {
         "element": 552,
-        "starter": true,
+        "starter": false,
         "position": 10,
         "subbedOn": false,
         "subbedOff": false,
@@ -840,7 +840,7 @@
       },
       {
         "element": 542,
-        "starter": false,
+        "starter": true,
         "position": 13,
         "subbedOn": false,
         "subbedOff": false,
@@ -914,7 +914,7 @@
       },
       {
         "element": 480,
-        "starter": true,
+        "starter": false,
         "position": 7,
         "subbedOn": false,
         "subbedOff": false,
@@ -962,7 +962,7 @@
       },
       {
         "element": 555,
-        "starter": false,
+        "starter": true,
         "position": 13,
         "subbedOn": false,
         "subbedOff": false,
@@ -2668,10 +2668,10 @@
       "clubShort": "TOT",
       "clubCode": 6,
       "photoCode": 438234,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
+      "status": "d",
+      "chanceOfPlaying": 75,
+      "news": "Calf injury - 75% chance of playing",
+      "newsAdded": "2026-10-19T22:30:08.721497Z"
     },
     "403": {
       "name": "Sávio",
@@ -3004,10 +3004,10 @@
       "clubShort": "TOT",
       "clubCode": 6,
       "photoCode": 487053,
-      "status": "a",
+      "status": "d",
       "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-11T18:00:09.092110Z"
+      "news": "Knee injury - 75% chance of playing",
+      "newsAdded": "2026-10-19T22:30:08.875960Z"
     },
     "512": {
       "name": "Kudus",
@@ -3334,5 +3334,5 @@
       "newsAdded": null
     }
   },
-  "generatedAt": "2026-10-19T20:44:32.029Z"
+  "generatedAt": "2026-10-20T00:58:43.689Z"
 }

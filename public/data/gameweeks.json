@@ -1128,7 +1128,7 @@
       "month": "2026-10",
       "finished": false,
       "started": true,
-      "scoresProvisional": true,
+      "scoresProvisional": false,
       "kochReady": true,
       "yetByManager": {
         "rushy": 0,
@@ -1145,25 +1145,27 @@
       },
       "fixturesRemaining": true,
       "dataChecked": false,
-      "locallyFinalised": false,
-      "confirmed": false,
+      "locallyFinalised": true,
+      "confirmed": true,
       "confirmExpectedUtc": "2026-10-20T19:00:00.000Z",
       "revealFromUtc": "2026-10-19T23:10:00.000Z",
       "scores": {
-        "rushy": 34,
-        "kellett": 52,
+        "rushy": 41,
+        "kellett": 54,
         "wallis": 49,
-        "jls": 30,
-        "paddy": 30,
-        "bennett": 36,
-        "wood": 49,
-        "rowan": 25,
+        "jls": 34,
+        "paddy": 42,
+        "bennett": 45,
+        "wood": 53,
+        "rowan": 33,
         "jason": 51,
         "dj": 39,
         "ollie": 42
       },
-      "kochKeys": [],
-      "charged": 0,
+      "kochKeys": [
+        "rowan"
+      ],
+      "charged": 5,
       "topPerformerByManager": {
         "rushy": {
           "playerName": "Manzambi",
@@ -1186,8 +1188,8 @@
           "managerKey": "jls"
         },
         "paddy": {
-          "playerName": "Calvert-Lewin",
-          "points": 9,
+          "playerName": "Iwobi",
+          "points": 11,
           "managerKey": "paddy"
         },
         "bennett": {
@@ -1201,8 +1203,8 @@
           "managerKey": "wood"
         },
         "rowan": {
-          "playerName": "F.Kadıoğlu",
-          "points": 6,
+          "playerName": "Silva",
+          "points": 8,
           "managerKey": "rowan"
         },
         "jason": {
@@ -1247,10 +1249,10 @@
           "element": 388
         },
         "paddy": {
-          "playerName": "Rúben",
+          "playerName": "Branthwaite",
           "points": 1,
           "managerKey": "paddy",
-          "element": 390
+          "element": 230
         },
         "bennett": {
           "playerName": "Janelt",
@@ -2079,5 +2081,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-10-19T20:58:50.219Z"
+  "generatedAt": "2026-10-20T00:58:43.689Z"
 }
