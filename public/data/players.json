@@ -54,9 +54,9 @@
       "teamId": 15,
       "photoCode": 223094,
       "owner": "kellett",
-      "status": "d",
-      "chanceOfPlaying": 75,
-      "news": "Unspecified injury - 75% chance of playing",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
       "newsAdded": "2026-10-19T13:00:10.543876Z",
       "points": 58,
       "ppg": 8.3,
@@ -1572,10 +1572,10 @@
       "teamId": 14,
       "photoCode": 551499,
       "owner": "jason",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
+      "status": "d",
+      "chanceOfPlaying": 75,
+      "news": "Knee injury - 75% chance of playing",
+      "newsAdded": "2026-10-20T18:30:09.999223Z",
       "points": 26,
       "ppg": 3.7,
       "goals": 2,
@@ -14721,5 +14721,5 @@
     "bonus": 8,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-20T15:31:23.754Z"
+  "generatedAt": "2026-10-20T18:51:32.175Z"
 }
