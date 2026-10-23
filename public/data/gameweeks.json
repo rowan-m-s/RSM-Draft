@@ -1336,29 +1336,29 @@
       "confirmExpectedUtc": "2026-10-26T16:30:00.000Z",
       "revealFromUtc": "2026-10-26T00:00:00.000Z",
       "scores": {
-        "rushy": 8,
-        "kellett": 0,
+        "rushy": 9,
+        "kellett": 1,
         "wallis": 0,
         "jls": 0,
         "paddy": 0,
-        "bennett": 1,
+        "bennett": 2,
         "wood": 0,
-        "rowan": 2,
+        "rowan": 4,
         "jason": 0,
-        "dj": 15,
-        "ollie": 2
+        "dj": 17,
+        "ollie": 4
       },
       "kochKeys": [],
       "charged": 0,
       "topPerformerByManager": {
         "rushy": {
           "playerName": "N.Williams",
-          "points": 8,
+          "points": 9,
           "managerKey": "rushy"
         },
         "kellett": {
-          "playerName": "Kelleher",
-          "points": 0,
+          "playerName": "Murillo",
+          "points": 1,
           "managerKey": "kellett"
         },
         "wallis": {
@@ -1378,7 +1378,7 @@
         },
         "bennett": {
           "playerName": "Ndoye",
-          "points": 1,
+          "points": 2,
           "managerKey": "bennett"
         },
         "wood": {
@@ -1388,7 +1388,7 @@
         },
         "rowan": {
           "playerName": "Milenković",
-          "points": 1,
+          "points": 2,
           "managerKey": "rowan"
         },
         "jason": {
@@ -1398,25 +1398,25 @@
         },
         "dj": {
           "playerName": "Enciso",
-          "points": 9,
+          "points": 10,
           "managerKey": "dj"
         },
         "ollie": {
           "playerName": "Delap",
-          "points": 1,
+          "points": 2,
           "managerKey": "ollie"
         }
       },
       "scapegoatByManager": {
         "rushy": {
           "playerName": "N.Williams",
-          "points": 8,
+          "points": 9,
           "managerKey": "rushy",
           "element": 469
         },
         "kellett": {
           "playerName": "Murillo",
-          "points": 0,
+          "points": 1,
           "managerKey": "kellett",
           "element": 472
         },
@@ -1425,27 +1425,27 @@
         "paddy": null,
         "bennett": {
           "playerName": "Ndoye",
-          "points": 1,
+          "points": 2,
           "managerKey": "bennett",
           "element": 483
         },
         "wood": null,
         "rowan": {
           "playerName": "Gibbs-White",
-          "points": 1,
+          "points": 2,
           "managerKey": "rowan",
           "element": 480
         },
         "jason": null,
         "dj": {
           "playerName": "Muñoz",
-          "points": 6,
+          "points": 7,
           "managerKey": "dj",
           "element": 201
         },
         "ollie": {
           "playerName": "Delap",
-          "points": 1,
+          "points": 2,
           "managerKey": "ollie",
           "element": 167
         }
@@ -2215,5 +2215,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-10-23T20:16:30.066Z"
+  "generatedAt": "2026-10-23T20:21:01.066Z"
 }
