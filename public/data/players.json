@@ -2000,7 +2000,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 53
+      "positionRank": 54
     },
     {
       "id": 123,
@@ -2022,7 +2022,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 51
+      "positionRank": 52
     },
     {
       "id": 336,
@@ -2044,7 +2044,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 1,
-      "positionRank": 52
+      "positionRank": 53
     },
     {
       "id": 502,
@@ -4051,6 +4051,28 @@
       "positionRank": 48
     },
     {
+      "id": 486,
+      "name": "McAtee",
+      "position": "MID",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 432714,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 23,
+      "ppg": 2.9,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 1,
+      "positionRank": 49
+    },
+    {
       "id": 567,
       "name": "Schlager",
       "position": "MID",
@@ -4070,7 +4092,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 49
+      "positionRank": 50
     },
     {
       "id": 105,
@@ -4092,29 +4114,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 2,
-      "positionRank": 50
-    },
-    {
-      "id": 486,
-      "name": "McAtee",
-      "position": "MID",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 432714,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 22,
-      "ppg": 2.8,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 0,
-      "positionRank": 54
+      "positionRank": 51
     },
     {
       "id": 242,
@@ -4183,6 +4183,28 @@
       "positionRank": 47
     },
     {
+      "id": 619,
+      "name": "Palacios",
+      "position": "MID",
+      "club": "Ipswich Town",
+      "clubShort": "IPS",
+      "clubCode": 40,
+      "teamId": 12,
+      "photoCode": 218543,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 21,
+      "ppg": 3,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 1,
+      "positionRank": 60
+    },
+    {
       "id": 368,
       "name": "Szoboszlai",
       "position": "MID",
@@ -4247,28 +4269,6 @@
       "cleanSheets": 2,
       "bonus": 1,
       "positionRank": 49
-    },
-    {
-      "id": 619,
-      "name": "Palacios",
-      "position": "MID",
-      "club": "Ipswich Town",
-      "clubShort": "IPS",
-      "clubCode": 40,
-      "teamId": 12,
-      "photoCode": 218543,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 20,
-      "ppg": 2.9,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 60
     },
     {
       "id": 202,
@@ -14721,5 +14721,5 @@
     "bonus": 8,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-23T20:36:50.220Z"
+  "generatedAt": "2026-10-23T20:43:36.614Z"
 }
