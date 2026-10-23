@@ -2616,7 +2616,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 71
+      "positionRank": 72
     },
     {
       "id": 239,
@@ -2638,7 +2638,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 72
+      "positionRank": 73
     },
     {
       "id": 553,
@@ -2839,28 +2839,6 @@
       "positionRank": 21
     },
     {
-      "id": 201,
-      "name": "Muñoz",
-      "position": "DEF",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 247348,
-      "owner": "dj",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 15,
-      "ppg": 2.1,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 0,
-      "bonus": 2,
-      "positionRank": 65
-    },
-    {
       "id": 57,
       "name": "Petrović",
       "position": "GKP",
@@ -2924,7 +2902,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 66
+      "positionRank": 65
     },
     {
       "id": 61,
@@ -2968,7 +2946,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 70
+      "positionRank": 69
     },
     {
       "id": 32,
@@ -2990,7 +2968,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 69
+      "positionRank": 68
     },
     {
       "id": 598,
@@ -3035,6 +3013,28 @@
       "cleanSheets": 1,
       "bonus": 0,
       "positionRank": 71
+    },
+    {
+      "id": 201,
+      "name": "Muñoz",
+      "position": "DEF",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 247348,
+      "owner": "dj",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 14,
+      "ppg": 2,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 0,
+      "bonus": 1,
+      "positionRank": 70
     },
     {
       "id": 529,
@@ -4469,6 +4469,28 @@
       "positionRank": 68
     },
     {
+      "id": 563,
+      "name": "Maeda",
+      "position": "MID",
+      "club": "Ipswich Town",
+      "clubShort": "IPS",
+      "clubCode": 40,
+      "teamId": 12,
+      "photoCode": 442967,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 18,
+      "ppg": 2.3,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 70
+    },
+    {
       "id": 33,
       "name": "Mings",
       "position": "DEF",
@@ -4576,7 +4598,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 73
+      "positionRank": 74
     },
     {
       "id": 280,
@@ -4620,29 +4642,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 70
-    },
-    {
-      "id": 563,
-      "name": "Maeda",
-      "position": "MID",
-      "club": "Ipswich Town",
-      "clubShort": "IPS",
-      "clubCode": 40,
-      "teamId": 12,
-      "photoCode": 442967,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 17,
-      "ppg": 2.4,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 75
+      "positionRank": 71
     },
     {
       "id": 91,
@@ -4686,7 +4686,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 74
+      "positionRank": 75
     },
     {
       "id": 635,
@@ -4818,7 +4818,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 67
+      "positionRank": 66
     },
     {
       "id": 459,
@@ -4884,7 +4884,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 68
+      "positionRank": 67
     },
     {
       "id": 405,
@@ -14721,5 +14721,5 @@
     "bonus": 8,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-23T20:30:03.497Z"
+  "generatedAt": "2026-10-23T20:34:33.882Z"
 }
