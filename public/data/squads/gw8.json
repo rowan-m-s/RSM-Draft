@@ -99,7 +99,7 @@
         "points": 0
       },
       {
-        "element": 583,
+        "element": 646,
         "starter": false,
         "position": 12,
         "subbedOn": false,
@@ -107,7 +107,7 @@
         "points": 0
       },
       {
-        "element": 646,
+        "element": 499,
         "starter": false,
         "position": 13,
         "subbedOn": false,
@@ -115,7 +115,7 @@
         "points": 0
       },
       {
-        "element": 499,
+        "element": 32,
         "starter": false,
         "position": 14,
         "subbedOn": false,
@@ -319,7 +319,7 @@
         "points": 0
       },
       {
-        "element": 45,
+        "element": 70,
         "starter": true,
         "position": 9,
         "subbedOn": false,
@@ -327,7 +327,7 @@
         "points": 0
       },
       {
-        "element": 70,
+        "element": 569,
         "starter": true,
         "position": 10,
         "subbedOn": false,
@@ -335,17 +335,9 @@
         "points": 0
       },
       {
-        "element": 569,
-        "starter": true,
-        "position": 11,
-        "subbedOn": false,
-        "subbedOff": false,
-        "points": 0
-      },
-      {
         "element": 412,
         "starter": false,
-        "position": 12,
+        "position": 11,
         "subbedOn": false,
         "subbedOff": false,
         "points": 0
@@ -353,7 +345,7 @@
       {
         "element": 447,
         "starter": false,
-        "position": 13,
+        "position": 12,
         "subbedOn": false,
         "subbedOff": false,
         "points": 0
@@ -361,13 +353,21 @@
       {
         "element": 224,
         "starter": false,
-        "position": 14,
+        "position": 13,
         "subbedOn": false,
         "subbedOff": false,
         "points": 0
       },
       {
         "element": 136,
+        "starter": false,
+        "position": 14,
+        "subbedOn": false,
+        "subbedOff": false,
+        "points": 0
+      },
+      {
+        "element": 101,
         "starter": false,
         "position": 15,
         "subbedOn": false,
@@ -595,7 +595,7 @@
         "points": 0
       },
       {
-        "element": 506,
+        "element": 399,
         "starter": false,
         "position": 13,
         "subbedOn": false,
@@ -603,7 +603,7 @@
         "points": 0
       },
       {
-        "element": 399,
+        "element": 492,
         "starter": false,
         "position": 14,
         "subbedOn": false,
@@ -611,7 +611,7 @@
         "points": 0
       },
       {
-        "element": 492,
+        "element": 331,
         "starter": false,
         "position": 15,
         "subbedOn": false,
@@ -873,7 +873,7 @@
         "points": 0
       },
       {
-        "element": 152,
+        "element": 112,
         "starter": true,
         "position": 2,
         "subbedOn": false,
@@ -881,7 +881,7 @@
         "points": 0
       },
       {
-        "element": 112,
+        "element": 113,
         "starter": true,
         "position": 3,
         "subbedOn": false,
@@ -889,7 +889,7 @@
         "points": 0
       },
       {
-        "element": 113,
+        "element": 533,
         "starter": true,
         "position": 4,
         "subbedOn": false,
@@ -897,7 +897,7 @@
         "points": 0
       },
       {
-        "element": 533,
+        "element": 555,
         "starter": true,
         "position": 5,
         "subbedOn": false,
@@ -905,7 +905,7 @@
         "points": 0
       },
       {
-        "element": 555,
+        "element": 335,
         "starter": true,
         "position": 6,
         "subbedOn": false,
@@ -913,7 +913,7 @@
         "points": 0
       },
       {
-        "element": 335,
+        "element": 249,
         "starter": true,
         "position": 7,
         "subbedOn": false,
@@ -921,7 +921,7 @@
         "points": 0
       },
       {
-        "element": 249,
+        "element": 464,
         "starter": true,
         "position": 8,
         "subbedOn": false,
@@ -929,7 +929,7 @@
         "points": 0
       },
       {
-        "element": 464,
+        "element": 295,
         "starter": true,
         "position": 9,
         "subbedOn": false,
@@ -937,17 +937,9 @@
         "points": 0
       },
       {
-        "element": 295,
-        "starter": true,
-        "position": 10,
-        "subbedOn": false,
-        "subbedOff": false,
-        "points": 0
-      },
-      {
         "element": 300,
         "starter": false,
-        "position": 11,
+        "position": 10,
         "subbedOn": false,
         "subbedOff": false,
         "points": 0
@@ -955,7 +947,7 @@
       {
         "element": 480,
         "starter": false,
-        "position": 12,
+        "position": 11,
         "subbedOn": false,
         "subbedOff": false,
         "points": 0
@@ -963,13 +955,21 @@
       {
         "element": 556,
         "starter": false,
-        "position": 13,
+        "position": 12,
         "subbedOn": false,
         "subbedOff": false,
         "points": 0
       },
       {
         "element": 367,
+        "starter": false,
+        "position": 13,
+        "subbedOn": false,
+        "subbedOff": false,
+        "points": 0
+      },
+      {
+        "element": 471,
         "starter": false,
         "position": 14,
         "subbedOn": false,
@@ -1521,6 +1521,18 @@
       "news": null,
       "newsAdded": "2026-10-05T09:30:09.853316Z"
     },
+    "32": {
+      "name": "Cash",
+      "position": "DEF",
+      "teamId": 2,
+      "clubShort": "AVL",
+      "clubCode": 7,
+      "photoCode": 199796,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-09T14:30:08.192142Z"
+    },
     "40": {
       "name": "Rogers",
       "position": "MID",
@@ -1540,18 +1552,6 @@
       "clubShort": "AVL",
       "clubCode": 7,
       "photoCode": 195546,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
-    },
-    "45": {
-      "name": "McGinn",
-      "position": "MID",
-      "teamId": 2,
-      "clubShort": "AVL",
-      "clubCode": 7,
-      "photoCode": 122806,
       "status": "a",
       "chanceOfPlaying": null,
       "news": null,
@@ -1650,7 +1650,7 @@
       "photoCode": 560262,
       "status": "d",
       "chanceOfPlaying": 0,
-      "news": "Foot injury - 50% chance of playing",
+      "news": "Foot injury - 75% chance of playing",
       "newsAdded": "2026-07-29T17:30:09.796802Z"
     },
     "79": {
@@ -1724,6 +1724,18 @@
       "chanceOfPlaying": 75,
       "news": null,
       "newsAdded": "2026-10-10T16:30:08.848962Z"
+    },
+    "101": {
+      "name": "Henderson",
+      "position": "MID",
+      "teamId": 6,
+      "clubShort": "CHE",
+      "clubCode": 8,
+      "photoCode": 56979,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-09T09:30:07.136250Z"
     },
     "106": {
       "name": "Thiago",
@@ -1904,18 +1916,6 @@
       "chanceOfPlaying": null,
       "news": null,
       "newsAdded": null
-    },
-    "152": {
-      "name": "Palestra",
-      "position": "DEF",
-      "teamId": 6,
-      "clubShort": "CHE",
-      "clubCode": 8,
-      "photoCode": 620109,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-24T18:30:07.421239Z"
     },
     "154": {
       "name": "Palmer",
@@ -2372,6 +2372,18 @@
       "chanceOfPlaying": null,
       "news": null,
       "newsAdded": null
+    },
+    "331": {
+      "name": "Gudmundsson",
+      "position": "DEF",
+      "teamId": 13,
+      "clubShort": "LEE",
+      "clubCode": 2,
+      "photoCode": 243526,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-08T20:00:07.546568Z"
     },
     "332": {
       "name": "Justin",
@@ -2877,6 +2889,18 @@
       "news": null,
       "newsAdded": "2026-10-09T14:30:11.466887Z"
     },
+    "471": {
+      "name": "Milenković",
+      "position": "DEF",
+      "teamId": 18,
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "photoCode": 227444,
+      "status": "a",
+      "chanceOfPlaying": 75,
+      "news": null,
+      "newsAdded": "2026-09-12T14:00:09.705107Z"
+    },
     "472": {
       "name": "Murillo",
       "position": "DEF",
@@ -2996,18 +3020,6 @@
       "chanceOfPlaying": null,
       "news": null,
       "newsAdded": null
-    },
-    "506": {
-      "name": "Udogie",
-      "position": "DEF",
-      "teamId": 19,
-      "clubShort": "TOT",
-      "clubCode": 6,
-      "photoCode": 487053,
-      "status": "d",
-      "chanceOfPlaying": 100,
-      "news": "Knee injury - 75% chance of playing",
-      "newsAdded": "2026-10-19T22:30:08.875960Z"
     },
     "512": {
       "name": "Kudus",
@@ -3225,18 +3237,6 @@
       "news": null,
       "newsAdded": "2026-08-15T16:00:07.974271Z"
     },
-    "583": {
-      "name": "Chavarria",
-      "position": "DEF",
-      "teamId": 6,
-      "clubShort": "CHE",
-      "clubCode": 8,
-      "photoCode": 498444,
-      "status": "d",
-      "chanceOfPlaying": 75,
-      "news": "Unspecified injury - 75% chance of playing",
-      "newsAdded": "2026-10-17T12:00:10.154091Z"
-    },
     "597": {
       "name": "Suzuki",
       "position": "GKP",
@@ -3334,5 +3334,5 @@
       "newsAdded": null
     }
   },
-  "generatedAt": "2026-10-23T08:10:17.115Z"
+  "generatedAt": "2026-10-23T13:02:29.354Z"
 }
