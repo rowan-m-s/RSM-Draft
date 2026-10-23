@@ -815,28 +815,6 @@
       "positionRank": 6
     },
     {
-      "id": 469,
-      "name": "N.Williams",
-      "position": "DEF",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 215136,
-      "owner": "rushy",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-09T14:30:11.466887Z",
-      "points": 33,
-      "ppg": 4.1,
-      "goals": 1,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 4,
-      "positionRank": 13
-    },
-    {
       "id": 15,
       "name": "Ødegaard",
       "position": "MID",
@@ -903,6 +881,28 @@
       "positionRank": 19
     },
     {
+      "id": 469,
+      "name": "N.Williams",
+      "position": "DEF",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 215136,
+      "owner": "rushy",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-09T14:30:11.466887Z",
+      "points": 32,
+      "ppg": 4,
+      "goals": 1,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 3,
+      "positionRank": 14
+    },
+    {
       "id": 385,
       "name": "Trafford",
       "position": "GKP",
@@ -944,7 +944,7 @@
       "assists": 2,
       "cleanSheets": 3,
       "bonus": 3,
-      "positionRank": 14
+      "positionRank": 13
     },
     {
       "id": 230,
@@ -2817,6 +2817,28 @@
       "positionRank": 81
     },
     {
+      "id": 201,
+      "name": "Muñoz",
+      "position": "DEF",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 247348,
+      "owner": "dj",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 15,
+      "ppg": 2.1,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 0,
+      "bonus": 3,
+      "positionRank": 65
+    },
+    {
       "id": 57,
       "name": "Petrović",
       "position": "GKP",
@@ -2880,7 +2902,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 65
+      "positionRank": 66
     },
     {
       "id": 61,
@@ -2924,7 +2946,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 68
+      "positionRank": 69
     },
     {
       "id": 32,
@@ -2946,7 +2968,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 67
+      "positionRank": 68
     },
     {
       "id": 598,
@@ -2991,28 +3013,6 @@
       "cleanSheets": 1,
       "bonus": 0,
       "positionRank": 21
-    },
-    {
-      "id": 201,
-      "name": "Muñoz",
-      "position": "DEF",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 247348,
-      "owner": "dj",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 14,
-      "ppg": 2,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 0,
-      "bonus": 2,
-      "positionRank": 69
     },
     {
       "id": 529,
@@ -4862,7 +4862,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 66
+      "positionRank": 67
     },
     {
       "id": 405,
@@ -14721,5 +14721,5 @@
     "bonus": 8,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-23T19:35:54.998Z"
+  "generatedAt": "2026-10-23T19:40:26.525Z"
 }
