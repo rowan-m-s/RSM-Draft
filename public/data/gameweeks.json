@@ -1336,7 +1336,7 @@
       "confirmExpectedUtc": "2026-10-26T16:30:00.000Z",
       "revealFromUtc": "2026-10-26T00:00:00.000Z",
       "scores": {
-        "rushy": 9,
+        "rushy": 8,
         "kellett": 1,
         "wallis": 0,
         "jls": 0,
@@ -1345,7 +1345,7 @@
         "wood": 0,
         "rowan": 2,
         "jason": 0,
-        "dj": 8,
+        "dj": 15,
         "ollie": 2
       },
       "kochKeys": [],
@@ -1353,7 +1353,7 @@
       "topPerformerByManager": {
         "rushy": {
           "playerName": "N.Williams",
-          "points": 9,
+          "points": 8,
           "managerKey": "rushy"
         },
         "kellett": {
@@ -1397,8 +1397,8 @@
           "managerKey": "jason"
         },
         "dj": {
-          "playerName": "Muñoz",
-          "points": 7,
+          "playerName": "Enciso",
+          "points": 9,
           "managerKey": "dj"
         },
         "ollie": {
@@ -1410,7 +1410,7 @@
       "scapegoatByManager": {
         "rushy": {
           "playerName": "N.Williams",
-          "points": 9,
+          "points": 8,
           "managerKey": "rushy",
           "element": 469
         },
@@ -1438,10 +1438,10 @@
         },
         "jason": null,
         "dj": {
-          "playerName": "Enciso",
-          "points": 1,
+          "playerName": "Muñoz",
+          "points": 6,
           "managerKey": "dj",
-          "element": 591
+          "element": 201
         },
         "ollie": {
           "playerName": "Delap",
@@ -2215,5 +2215,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-10-23T19:40:26.525Z"
+  "generatedAt": "2026-10-23T19:43:49.355Z"
 }
