@@ -991,6 +991,28 @@
       "positionRank": 23
     },
     {
+      "id": 469,
+      "name": "N.Williams",
+      "position": "DEF",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 215136,
+      "owner": "rushy",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-09T14:30:11.466887Z",
+      "points": 31,
+      "ppg": 3.9,
+      "goals": 1,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 2,
+      "positionRank": 18
+    },
+    {
       "id": 335,
       "name": "Stach",
       "position": "MID",
@@ -1076,7 +1098,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 2,
-      "positionRank": 19
+      "positionRank": 20
     },
     {
       "id": 87,
@@ -1098,7 +1120,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 18
+      "positionRank": 19
     },
     {
       "id": 362,
@@ -1120,7 +1142,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 3,
-      "positionRank": 20
+      "positionRank": 21
     },
     {
       "id": 53,
@@ -1143,28 +1165,6 @@
       "cleanSheets": 2,
       "bonus": 5,
       "positionRank": 24
-    },
-    {
-      "id": 469,
-      "name": "N.Williams",
-      "position": "DEF",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 215136,
-      "owner": "rushy",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-09T14:30:11.466887Z",
-      "points": 30,
-      "ppg": 3.8,
-      "goals": 1,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 1,
-      "positionRank": 21
     },
     {
       "id": 384,
@@ -2616,7 +2616,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 71
+      "positionRank": 70
     },
     {
       "id": 239,
@@ -2638,7 +2638,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 72
+      "positionRank": 71
     },
     {
       "id": 553,
@@ -4491,28 +4491,6 @@
       "positionRank": 68
     },
     {
-      "id": 619,
-      "name": "Palacios",
-      "position": "MID",
-      "club": "Ipswich Town",
-      "clubShort": "IPS",
-      "clubCode": 40,
-      "teamId": 12,
-      "photoCode": 218543,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 18,
-      "ppg": 2.6,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 1,
-      "positionRank": 69
-    },
-    {
       "id": 290,
       "name": "Slater",
       "position": "MID",
@@ -4598,7 +4576,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 70
+      "positionRank": 69
     },
     {
       "id": 563,
@@ -4617,6 +4595,28 @@
       "points": 17,
       "ppg": 2.4,
       "goals": 1,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 73
+    },
+    {
+      "id": 619,
+      "name": "Palacios",
+      "position": "MID",
+      "club": "Ipswich Town",
+      "clubShort": "IPS",
+      "clubCode": 40,
+      "teamId": 12,
+      "photoCode": 218543,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 17,
+      "ppg": 2.4,
+      "goals": 0,
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
@@ -4664,7 +4664,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 73
+      "positionRank": 72
     },
     {
       "id": 635,
@@ -14721,5 +14721,5 @@
     "bonus": 8,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-23T20:07:24.157Z"
+  "generatedAt": "2026-10-23T20:08:32.390Z"
 }
