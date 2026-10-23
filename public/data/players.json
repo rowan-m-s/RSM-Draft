@@ -903,28 +903,6 @@
       "positionRank": 21
     },
     {
-      "id": 469,
-      "name": "N.Williams",
-      "position": "DEF",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 215136,
-      "owner": "rushy",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-09T14:30:11.466887Z",
-      "points": 32,
-      "ppg": 4,
-      "goals": 1,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 2,
-      "positionRank": 14
-    },
-    {
       "id": 385,
       "name": "Trafford",
       "position": "GKP",
@@ -988,7 +966,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 17
+      "positionRank": 16
     },
     {
       "id": 316,
@@ -1011,6 +989,28 @@
       "cleanSheets": 0,
       "bonus": 6,
       "positionRank": 7
+    },
+    {
+      "id": 469,
+      "name": "N.Williams",
+      "position": "DEF",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 215136,
+      "owner": "rushy",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-09T14:30:11.466887Z",
+      "points": 31,
+      "ppg": 3.9,
+      "goals": 1,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 1,
+      "positionRank": 18
     },
     {
       "id": 335,
@@ -1054,7 +1054,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 2,
-      "positionRank": 15
+      "positionRank": 14
     },
     {
       "id": 350,
@@ -3696,7 +3696,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 1,
-      "positionRank": 18
+      "positionRank": 17
     },
     {
       "id": 173,
@@ -3718,7 +3718,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 16
+      "positionRank": 15
     },
     {
       "id": 98,
@@ -4183,28 +4183,6 @@
       "positionRank": 47
     },
     {
-      "id": 619,
-      "name": "Palacios",
-      "position": "MID",
-      "club": "Ipswich Town",
-      "clubShort": "IPS",
-      "clubCode": 40,
-      "teamId": 12,
-      "photoCode": 218543,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 21,
-      "ppg": 3,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 1,
-      "positionRank": 60
-    },
-    {
       "id": 368,
       "name": "Szoboszlai",
       "position": "MID",
@@ -4269,6 +4247,28 @@
       "cleanSheets": 2,
       "bonus": 1,
       "positionRank": 49
+    },
+    {
+      "id": 619,
+      "name": "Palacios",
+      "position": "MID",
+      "club": "Ipswich Town",
+      "clubShort": "IPS",
+      "clubCode": 40,
+      "teamId": 12,
+      "photoCode": 218543,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 20,
+      "ppg": 2.9,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 60
     },
     {
       "id": 202,
@@ -14721,5 +14721,5 @@
     "bonus": 8,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-23T20:47:00.847Z"
+  "generatedAt": "2026-10-23T20:51:33.879Z"
 }
