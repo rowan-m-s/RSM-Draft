@@ -1387,28 +1387,6 @@
       "positionRank": 25
     },
     {
-      "id": 472,
-      "name": "Murillo",
-      "position": "DEF",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 575476,
-      "owner": "kellett",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-07-23T12:01:23.801183Z",
-      "points": 28,
-      "ppg": 3.5,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 28
-    },
-    {
       "id": 233,
       "name": "Mykolenko",
       "position": "DEF",
@@ -1494,6 +1472,28 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 1,
+      "positionRank": 30
+    },
+    {
+      "id": 472,
+      "name": "Murillo",
+      "position": "DEF",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 575476,
+      "owner": "kellett",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-07-23T12:01:23.801183Z",
+      "points": 27,
+      "ppg": 3.4,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 0,
       "positionRank": 31
     },
     {
@@ -3850,7 +3850,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 29
+      "positionRank": 28
     },
     {
       "id": 282,
@@ -3872,7 +3872,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 2,
-      "positionRank": 30
+      "positionRank": 29
     },
     {
       "id": 432,
@@ -14721,5 +14721,5 @@
     "bonus": 8,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-23T20:13:07.355Z"
+  "generatedAt": "2026-10-23T20:16:30.066Z"
 }
