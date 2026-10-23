@@ -991,28 +991,6 @@
       "positionRank": 23
     },
     {
-      "id": 469,
-      "name": "N.Williams",
-      "position": "DEF",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 215136,
-      "owner": "rushy",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-09T14:30:11.466887Z",
-      "points": 31,
-      "ppg": 3.9,
-      "goals": 1,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 2,
-      "positionRank": 18
-    },
-    {
       "id": 335,
       "name": "Stach",
       "position": "MID",
@@ -1098,7 +1076,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 2,
-      "positionRank": 20
+      "positionRank": 19
     },
     {
       "id": 87,
@@ -1120,7 +1098,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 19
+      "positionRank": 18
     },
     {
       "id": 362,
@@ -1142,7 +1120,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 3,
-      "positionRank": 21
+      "positionRank": 20
     },
     {
       "id": 53,
@@ -1165,6 +1143,28 @@
       "cleanSheets": 2,
       "bonus": 5,
       "positionRank": 24
+    },
+    {
+      "id": 469,
+      "name": "N.Williams",
+      "position": "DEF",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 215136,
+      "owner": "rushy",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-09T14:30:11.466887Z",
+      "points": 30,
+      "ppg": 3.8,
+      "goals": 1,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 1,
+      "positionRank": 21
     },
     {
       "id": 384,
@@ -14721,5 +14721,5 @@
     "bonus": 8,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-23T19:43:49.355Z"
+  "generatedAt": "2026-10-23T19:48:22.223Z"
 }
