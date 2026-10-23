@@ -815,6 +815,28 @@
       "positionRank": 6
     },
     {
+      "id": 469,
+      "name": "N.Williams",
+      "position": "DEF",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 215136,
+      "owner": "rushy",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-09T14:30:11.466887Z",
+      "points": 33,
+      "ppg": 4.1,
+      "goals": 1,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 3,
+      "positionRank": 13
+    },
+    {
       "id": 15,
       "name": "Ødegaard",
       "position": "MID",
@@ -903,28 +925,6 @@
       "positionRank": 21
     },
     {
-      "id": 469,
-      "name": "N.Williams",
-      "position": "DEF",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 215136,
-      "owner": "rushy",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-09T14:30:11.466887Z",
-      "points": 32,
-      "ppg": 4,
-      "goals": 1,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 2,
-      "positionRank": 14
-    },
-    {
       "id": 385,
       "name": "Trafford",
       "position": "GKP",
@@ -966,7 +966,7 @@
       "assists": 2,
       "cleanSheets": 3,
       "bonus": 3,
-      "positionRank": 13
+      "positionRank": 14
     },
     {
       "id": 230,
@@ -14721,5 +14721,5 @@
     "bonus": 8,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-23T20:22:09.152Z"
+  "generatedAt": "2026-10-23T20:27:47.271Z"
 }
