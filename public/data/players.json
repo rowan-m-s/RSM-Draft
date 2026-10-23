@@ -859,28 +859,6 @@
       "positionRank": 20
     },
     {
-      "id": 316,
-      "name": "Emersonn",
-      "position": "FWD",
-      "club": "Ipswich Town",
-      "clubShort": "IPS",
-      "clubCode": 40,
-      "teamId": 12,
-      "photoCode": 543968,
-      "owner": "ollie",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-31T09:30:08.306145Z",
-      "points": 32,
-      "ppg": 4,
-      "goals": 2,
-      "assists": 1,
-      "cleanSheets": 0,
-      "bonus": 6,
-      "positionRank": 7
-    },
-    {
       "id": 367,
       "name": "Gakpo",
       "position": "MID",
@@ -1011,6 +989,28 @@
       "cleanSheets": 3,
       "bonus": 0,
       "positionRank": 17
+    },
+    {
+      "id": 316,
+      "name": "Emersonn",
+      "position": "FWD",
+      "club": "Ipswich Town",
+      "clubShort": "IPS",
+      "clubCode": 40,
+      "teamId": 12,
+      "photoCode": 543968,
+      "owner": "ollie",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-31T09:30:08.306145Z",
+      "points": 31,
+      "ppg": 3.9,
+      "goals": 2,
+      "assists": 1,
+      "cleanSheets": 0,
+      "bonus": 6,
+      "positionRank": 7
     },
     {
       "id": 335,
@@ -2726,7 +2726,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 77
+      "positionRank": 78
     },
     {
       "id": 512,
@@ -3081,6 +3081,28 @@
       "positionRank": 98
     },
     {
+      "id": 646,
+      "name": "Flemming",
+      "position": "FWD",
+      "club": "Ipswich Town",
+      "clubShort": "IPS",
+      "clubCode": 40,
+      "teamId": 12,
+      "photoCode": 431639,
+      "owner": "rushy",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 13,
+      "ppg": 2.2,
+      "goals": 2,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 23
+    },
+    {
       "id": 387,
       "name": "O'Reilly",
       "position": "DEF",
@@ -3123,28 +3145,6 @@
       "cleanSheets": 1,
       "bonus": 0,
       "positionRank": 19
-    },
-    {
-      "id": 646,
-      "name": "Flemming",
-      "position": "FWD",
-      "club": "Ipswich Town",
-      "clubShort": "IPS",
-      "clubCode": 40,
-      "teamId": 12,
-      "photoCode": 431639,
-      "owner": "rushy",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 12,
-      "ppg": 2.4,
-      "goals": 2,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 24
     },
     {
       "id": 149,
@@ -4554,7 +4554,29 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 75
+      "positionRank": 76
+    },
+    {
+      "id": 313,
+      "name": "Clarke",
+      "position": "MID",
+      "club": "Ipswich Town",
+      "clubShort": "IPS",
+      "clubCode": 40,
+      "teamId": 12,
+      "photoCode": 443261,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 17,
+      "ppg": 2.4,
+      "goals": 1,
+      "assists": 1,
+      "cleanSheets": 0,
+      "bonus": 1,
+      "positionRank": 73
     },
     {
       "id": 280,
@@ -4620,7 +4642,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 74
+      "positionRank": 75
     },
     {
       "id": 91,
@@ -4664,7 +4686,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 73
+      "positionRank": 74
     },
     {
       "id": 635,
@@ -4686,7 +4708,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 76
+      "positionRank": 77
     },
     {
       "id": 73,
@@ -4708,28 +4730,6 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 78
-    },
-    {
-      "id": 313,
-      "name": "Clarke",
-      "position": "MID",
-      "club": "Ipswich Town",
-      "clubShort": "IPS",
-      "clubCode": 40,
-      "teamId": 12,
-      "photoCode": 443261,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 16,
-      "ppg": 2.7,
-      "goals": 1,
-      "assists": 1,
-      "cleanSheets": 0,
-      "bonus": 1,
       "positionRank": 79
     },
     {
@@ -5412,7 +5412,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 23
+      "positionRank": 24
     },
     {
       "id": 209,
@@ -14721,5 +14721,5 @@
     "bonus": 8,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-23T20:21:01.066Z"
+  "generatedAt": "2026-10-23T20:22:09.152Z"
 }

@@ -1336,7 +1336,7 @@
       "confirmExpectedUtc": "2026-10-26T16:30:00.000Z",
       "revealFromUtc": "2026-10-26T00:00:00.000Z",
       "scores": {
-        "rushy": 9,
+        "rushy": 10,
         "kellett": 1,
         "wallis": 0,
         "jls": 0,
@@ -1346,7 +1346,7 @@
         "rowan": 4,
         "jason": 0,
         "dj": 17,
-        "ollie": 4
+        "ollie": 3
       },
       "kochKeys": [],
       "charged": 0,
@@ -1409,10 +1409,10 @@
       },
       "scapegoatByManager": {
         "rushy": {
-          "playerName": "N.Williams",
-          "points": 9,
+          "playerName": "Flemming",
+          "points": 1,
           "managerKey": "rushy",
-          "element": 469
+          "element": 646
         },
         "kellett": {
           "playerName": "Murillo",
@@ -1444,10 +1444,10 @@
           "element": 201
         },
         "ollie": {
-          "playerName": "Delap",
-          "points": 2,
+          "playerName": "Emersonn",
+          "points": 1,
           "managerKey": "ollie",
-          "element": 167
+          "element": 316
         }
       },
       "kochGraphicByManager": {
@@ -2215,5 +2215,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-10-23T20:21:01.066Z"
+  "generatedAt": "2026-10-23T20:22:09.152Z"
 }
