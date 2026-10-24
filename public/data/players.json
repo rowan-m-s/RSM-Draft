@@ -1450,7 +1450,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 3,
-      "positionRank": 33
+      "positionRank": 34
     },
     {
       "id": 226,
@@ -1516,7 +1516,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 34
+      "positionRank": 35
     },
     {
       "id": 305,
@@ -1670,7 +1670,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 36
+      "positionRank": 37
     },
     {
       "id": 640,
@@ -3831,6 +3831,28 @@
       "positionRank": 29
     },
     {
+      "id": 455,
+      "name": "Tonali",
+      "position": "MID",
+      "club": "Spurs",
+      "clubShort": "TOT",
+      "clubCode": 6,
+      "teamId": 19,
+      "photoCode": 432422,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-14T14:30:07.387706Z",
+      "points": 30,
+      "ppg": 3.8,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 3,
+      "bonus": 2,
+      "positionRank": 33
+    },
+    {
       "id": 116,
       "name": "Dunk",
       "position": "DEF",
@@ -3872,7 +3894,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 35
+      "positionRank": 36
     },
     {
       "id": 586,
@@ -3895,28 +3917,6 @@
       "cleanSheets": 2,
       "bonus": 1,
       "positionRank": 33
-    },
-    {
-      "id": 455,
-      "name": "Tonali",
-      "position": "MID",
-      "club": "Spurs",
-      "clubShort": "TOT",
-      "clubCode": 6,
-      "teamId": 19,
-      "photoCode": 432422,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-14T14:30:07.387706Z",
-      "points": 28,
-      "ppg": 3.5,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 3,
-      "bonus": 2,
-      "positionRank": 37
     },
     {
       "id": 176,
@@ -14721,5 +14721,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-24T18:19:51.515Z"
+  "generatedAt": "2026-10-24T18:24:22.049Z"
 }
