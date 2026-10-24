@@ -1761,28 +1761,6 @@
       "positionRank": 38
     },
     {
-      "id": 502,
-      "name": "Robertson",
-      "position": "DEF",
-      "club": "Spurs",
-      "clubShort": "TOT",
-      "clubCode": 6,
-      "teamId": 19,
-      "photoCode": 122798,
-      "owner": "rushy",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-19T22:30:08.861525Z",
-      "points": 25,
-      "ppg": 3.6,
-      "goals": 0,
-      "assists": 2,
-      "cleanSheets": 1,
-      "bonus": 3,
-      "positionRank": 41
-    },
-    {
       "id": 390,
       "name": "Rúben",
       "position": "DEF",
@@ -1978,7 +1956,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 42
+      "positionRank": 41
     },
     {
       "id": 82,
@@ -2023,6 +2001,28 @@
       "cleanSheets": 1,
       "bonus": 3,
       "positionRank": 48
+    },
+    {
+      "id": 502,
+      "name": "Robertson",
+      "position": "DEF",
+      "club": "Spurs",
+      "clubShort": "TOT",
+      "clubCode": 6,
+      "teamId": 19,
+      "photoCode": 122798,
+      "owner": "rushy",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-19T22:30:08.861525Z",
+      "points": 24,
+      "ppg": 3.4,
+      "goals": 0,
+      "assists": 2,
+      "cleanSheets": 1,
+      "bonus": 2,
+      "positionRank": 42
     },
     {
       "id": 481,
@@ -14721,5 +14721,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-24T17:43:40.817Z"
+  "generatedAt": "2026-10-24T17:44:48.595Z"
 }
