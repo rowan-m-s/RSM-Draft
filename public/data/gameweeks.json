@@ -1340,11 +1340,11 @@
         "kellett": 25,
         "wallis": 26,
         "jls": 11,
-        "paddy": 18,
+        "paddy": 16,
         "bennett": 34,
         "wood": 9,
         "rowan": 13,
-        "jason": 8,
+        "jason": 10,
         "dj": 25,
         "ollie": 29
       },
@@ -1433,10 +1433,10 @@
           "element": 388
         },
         "paddy": {
-          "playerName": "Cherki",
-          "points": 0,
+          "playerName": "Palmer",
+          "points": -1,
           "managerKey": "paddy",
-          "element": 399
+          "element": 154
         },
         "bennett": {
           "playerName": "Tarkowski",
@@ -1458,7 +1458,7 @@
         },
         "jason": {
           "playerName": "Neto",
-          "points": 1,
+          "points": 3,
           "managerKey": "jason",
           "element": 156
         },
@@ -1480,7 +1480,7 @@
         "kellett": null,
         "wallis": null,
         "jls": null,
-        "paddy": null,
+        "paddy": 244851,
         "bennett": null,
         "wood": null,
         "rowan": null,
@@ -2240,5 +2240,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-10-24T18:08:32.407Z"
+  "generatedAt": "2026-10-24T18:10:48.279Z"
 }
