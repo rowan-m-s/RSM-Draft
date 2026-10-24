@@ -1409,28 +1409,6 @@
       "positionRank": 24
     },
     {
-      "id": 502,
-      "name": "Robertson",
-      "position": "DEF",
-      "club": "Spurs",
-      "clubShort": "TOT",
-      "clubCode": 6,
-      "teamId": 19,
-      "photoCode": 122798,
-      "owner": "rushy",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-19T22:30:08.861525Z",
-      "points": 30,
-      "ppg": 4.3,
-      "goals": 0,
-      "assists": 2,
-      "cleanSheets": 2,
-      "bonus": 3,
-      "positionRank": 25
-    },
-    {
       "id": 597,
       "name": "Suzuki",
       "position": "GKP",
@@ -1497,6 +1475,28 @@
       "positionRank": 10
     },
     {
+      "id": 502,
+      "name": "Robertson",
+      "position": "DEF",
+      "club": "Spurs",
+      "clubShort": "TOT",
+      "clubCode": 6,
+      "teamId": 19,
+      "photoCode": 122798,
+      "owner": "rushy",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-19T22:30:08.861525Z",
+      "points": 29,
+      "ppg": 4.1,
+      "goals": 0,
+      "assists": 2,
+      "cleanSheets": 2,
+      "bonus": 2,
+      "positionRank": 27
+    },
+    {
       "id": 356,
       "name": "Virgil",
       "position": "DEF",
@@ -1516,7 +1516,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 27
+      "positionRank": 26
     },
     {
       "id": 41,
@@ -3850,7 +3850,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 1,
-      "positionRank": 26
+      "positionRank": 25
     },
     {
       "id": 47,
@@ -14721,5 +14721,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-24T18:10:48.279Z"
+  "generatedAt": "2026-10-24T18:13:03.157Z"
 }
