@@ -1233,26 +1233,26 @@
       "positionRank": 21
     },
     {
-      "id": 41,
-      "name": "Buendía",
-      "position": "MID",
+      "id": 597,
+      "name": "Suzuki",
+      "position": "GKP",
       "club": "Aston Villa",
       "clubShort": "AVL",
       "clubCode": 7,
       "teamId": 2,
-      "photoCode": 195546,
-      "owner": "kellett",
+      "photoCode": 433969,
+      "owner": "dj",
       "status": "a",
       "chanceOfPlaying": null,
       "news": null,
       "newsAdded": null,
-      "points": 29,
-      "ppg": 3.6,
-      "goals": 1,
-      "assists": 1,
+      "points": 30,
+      "ppg": 4.3,
+      "goals": 0,
+      "assists": 0,
       "cleanSheets": 2,
-      "bonus": 3,
-      "positionRank": 30
+      "bonus": 5,
+      "positionRank": 7
     },
     {
       "id": 591,
@@ -1274,7 +1274,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 3,
-      "positionRank": 32
+      "positionRank": 31
     },
     {
       "id": 261,
@@ -1296,29 +1296,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 6,
-      "positionRank": 31
-    },
-    {
-      "id": 597,
-      "name": "Suzuki",
-      "position": "GKP",
-      "club": "Aston Villa",
-      "clubShort": "AVL",
-      "clubCode": 7,
-      "teamId": 2,
-      "photoCode": 433969,
-      "owner": "dj",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 29,
-      "ppg": 4.1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 5,
-      "positionRank": 7
+      "positionRank": 30
     },
     {
       "id": 356,
@@ -1363,6 +1341,28 @@
       "cleanSheets": 3,
       "bonus": 2,
       "positionRank": 9
+    },
+    {
+      "id": 41,
+      "name": "Buendía",
+      "position": "MID",
+      "club": "Aston Villa",
+      "clubShort": "AVL",
+      "clubCode": 7,
+      "teamId": 2,
+      "photoCode": 195546,
+      "owner": "kellett",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 28,
+      "ppg": 3.5,
+      "goals": 1,
+      "assists": 1,
+      "cleanSheets": 2,
+      "bonus": 3,
+      "positionRank": 32
     },
     {
       "id": 258,
@@ -1805,28 +1805,6 @@
       "positionRank": 39
     },
     {
-      "id": 481,
-      "name": "Anderson",
-      "position": "MID",
-      "club": "Man City",
-      "clubShort": "MCI",
-      "clubCode": 43,
-      "teamId": 15,
-      "photoCode": 215379,
-      "owner": "wallis",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-23T17:00:07.952697Z",
-      "points": 24,
-      "ppg": 3,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 3,
-      "bonus": 0,
-      "positionRank": 45
-    },
-    {
       "id": 552,
       "name": "Brobbey",
       "position": "FWD",
@@ -1868,7 +1846,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 46
+      "positionRank": 45
     },
     {
       "id": 88,
@@ -1934,7 +1912,29 @@
       "assists": 2,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 47
+      "positionRank": 46
+    },
+    {
+      "id": 481,
+      "name": "Anderson",
+      "position": "MID",
+      "club": "Man City",
+      "clubShort": "MCI",
+      "clubCode": 43,
+      "teamId": 15,
+      "photoCode": 215379,
+      "owner": "wallis",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-23T17:00:07.952697Z",
+      "points": 23,
+      "ppg": 2.9,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 3,
+      "bonus": 0,
+      "positionRank": 49
     },
     {
       "id": 580,
@@ -2000,7 +2000,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 48
+      "positionRank": 47
     },
     {
       "id": 496,
@@ -3562,7 +3562,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 186
+      "positionRank": 185
     },
     {
       "id": 557,
@@ -4048,7 +4048,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 49
+      "positionRank": 48
     },
     {
       "id": 486,
@@ -7404,10 +7404,10 @@
       "teamId": 18,
       "photoCode": 250199,
       "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
+      "status": "d",
+      "chanceOfPlaying": 75,
+      "news": "Muscular injury - 75% chance of playing",
+      "newsAdded": "2026-10-24T13:00:08.751863Z",
       "points": 4,
       "ppg": 2,
       "goals": 0,
@@ -7932,9 +7932,9 @@
       "teamId": 1,
       "photoCode": 448104,
       "owner": null,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 75,
-      "news": "Ankle injury - 75% chance of playing",
+      "news": null,
       "newsAdded": "2026-10-12T15:00:07.550884Z",
       "points": 3,
       "ppg": 1,
@@ -8097,28 +8097,6 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 173
-    },
-    {
-      "id": 621,
-      "name": "McAidoo",
-      "position": "MID",
-      "club": "Man City",
-      "clubShort": "MCI",
-      "clubCode": 43,
-      "teamId": 15,
-      "photoCode": 616288,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 3,
-      "ppg": 1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 182
     },
     {
       "id": 323,
@@ -8426,7 +8404,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 187
+      "positionRank": 186
     },
     {
       "id": 648,
@@ -8448,7 +8426,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 192
+      "positionRank": 193
     },
     {
       "id": 248,
@@ -8514,7 +8492,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 188
+      "positionRank": 187
     },
     {
       "id": 281,
@@ -8561,6 +8539,28 @@
       "positionRank": 133
     },
     {
+      "id": 617,
+      "name": "Goretzka",
+      "position": "MID",
+      "club": "Aston Villa",
+      "clubShort": "AVL",
+      "clubCode": 7,
+      "teamId": 2,
+      "photoCode": 119090,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-09T09:30:08.229436Z",
+      "points": 2,
+      "ppg": 1,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 191
+    },
+    {
       "id": 594,
       "name": "Gozo",
       "position": "MID",
@@ -8580,7 +8580,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 191
+      "positionRank": 190
     },
     {
       "id": 42,
@@ -8602,7 +8602,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 183
+      "positionRank": 182
     },
     {
       "id": 421,
@@ -8668,7 +8668,29 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 189
+      "positionRank": 188
+    },
+    {
+      "id": 621,
+      "name": "McAidoo",
+      "position": "MID",
+      "club": "Man City",
+      "clubShort": "MCI",
+      "clubCode": 43,
+      "teamId": 15,
+      "photoCode": 616288,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 2,
+      "ppg": 0.7,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 192
     },
     {
       "id": 207,
@@ -8712,7 +8734,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 190
+      "positionRank": 189
     },
     {
       "id": 539,
@@ -8756,7 +8778,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 185
+      "positionRank": 184
     },
     {
       "id": 152,
@@ -8888,7 +8910,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 184
+      "positionRank": 183
     },
     {
       "id": 364,
@@ -8954,7 +8976,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 195
+      "positionRank": 196
     },
     {
       "id": 614,
@@ -8976,7 +8998,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 207
+      "positionRank": 208
     },
     {
       "id": 629,
@@ -9042,7 +9064,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 194
+      "positionRank": 195
     },
     {
       "id": 622,
@@ -9086,7 +9108,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 197
+      "positionRank": 198
     },
     {
       "id": 206,
@@ -9130,7 +9152,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 198
+      "positionRank": 199
     },
     {
       "id": 501,
@@ -9240,7 +9262,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 193
+      "positionRank": 194
     },
     {
       "id": 308,
@@ -9263,28 +9285,6 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 151
-    },
-    {
-      "id": 617,
-      "name": "Goretzka",
-      "position": "MID",
-      "club": "Aston Villa",
-      "clubShort": "AVL",
-      "clubCode": 7,
-      "teamId": 2,
-      "photoCode": 119090,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-09T09:30:08.229436Z",
-      "points": 1,
-      "ppg": 1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 208
     },
     {
       "id": 89,
@@ -9328,7 +9328,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 205
+      "positionRank": 206
     },
     {
       "id": 651,
@@ -9372,7 +9372,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 204
+      "positionRank": 205
     },
     {
       "id": 458,
@@ -9394,7 +9394,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 200
+      "positionRank": 201
     },
     {
       "id": 231,
@@ -9460,7 +9460,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 201
+      "positionRank": 202
     },
     {
       "id": 435,
@@ -9482,7 +9482,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 199
+      "positionRank": 200
     },
     {
       "id": 179,
@@ -9570,7 +9570,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 206
+      "positionRank": 207
     },
     {
       "id": 547,
@@ -9592,7 +9592,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 202
+      "positionRank": 203
     },
     {
       "id": 662,
@@ -9702,7 +9702,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 203
+      "positionRank": 204
     },
     {
       "id": 560,
@@ -9834,7 +9834,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 196
+      "positionRank": 197
     },
     {
       "id": 38,
@@ -14721,5 +14721,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-24T13:02:21.137Z"
+  "generatedAt": "2026-10-24T13:47:03.208Z"
 }

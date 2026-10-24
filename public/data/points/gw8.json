@@ -111,7 +111,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 74,
+            "value": 90,
             "points": 2
           },
           {
@@ -123,19 +123,25 @@
           {
             "stat": "defensive_contribution",
             "name": "Defensive Contribution",
-            "value": 11,
+            "value": 13,
             "points": 2
           }
         ]
       },
       "41": {
-        "total": 1,
+        "total": 0,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 8,
+            "value": 24,
             "points": 1
+          },
+          {
+            "stat": "yellow_cards",
+            "name": "Yellow cards",
+            "value": 1,
+            "points": -1
           }
         ]
       },
@@ -162,7 +168,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 74,
+            "value": 90,
             "points": 2
           }
         ]
@@ -173,7 +179,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 74,
+            "value": 81,
             "points": 2
           },
           {
@@ -213,7 +219,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 74,
+            "value": 90,
             "points": 2
           },
           {
@@ -255,7 +261,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 74,
+            "value": 90,
             "points": 2
           },
           {
@@ -272,7 +278,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 74,
+            "value": 90,
             "points": 2
           },
           {
@@ -289,7 +295,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 74,
+            "value": 90,
             "points": 2
           },
           {
@@ -301,7 +307,7 @@
           {
             "stat": "defensive_contribution",
             "name": "Defensive Contribution",
-            "value": 11,
+            "value": 16,
             "points": 2
           }
         ]
@@ -316,7 +322,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 29,
+            "value": 45,
             "points": 1
           }
         ]
@@ -344,7 +350,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 74,
+            "value": 90,
             "points": 2
           }
         ]
@@ -355,7 +361,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 74,
+            "value": 90,
             "points": 2
           },
           {
@@ -373,34 +379,53 @@
         ]
       },
       "481": {
-        "total": 2,
+        "total": 1,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 74,
+            "value": 90,
             "points": 2
+          },
+          {
+            "stat": "yellow_cards",
+            "name": "Yellow cards",
+            "value": 1,
+            "points": -1
           }
         ]
       },
       "582": {
         "total": 0,
-        "components": []
-      },
-      "597": {
-        "total": 3,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 74,
+            "value": 8,
+            "points": 1
+          },
+          {
+            "stat": "yellow_cards",
+            "name": "Yellow cards",
+            "value": 1,
+            "points": -1
+          }
+        ]
+      },
+      "597": {
+        "total": 4,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 90,
             "points": 2
           },
           {
             "stat": "saves",
             "name": "Saves",
-            "value": 5,
-            "points": 1
+            "value": 6,
+            "points": 2
           }
         ]
       }
@@ -1035,5 +1060,5 @@
       }
     }
   },
-  "generatedAt": "2026-10-24T13:02:21.137Z"
+  "generatedAt": "2026-10-24T13:47:03.208Z"
 }
