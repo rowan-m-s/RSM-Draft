@@ -717,7 +717,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 60,
+            "value": 62,
             "points": 2
           },
           {
@@ -734,7 +734,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 60,
+            "value": 62,
             "points": 2
           },
           {
@@ -746,12 +746,33 @@
         ]
       },
       "112": {
-        "total": 7,
+        "total": 6,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 60,
+            "value": 62,
+            "points": 2
+          },
+          {
+            "stat": "clean_sheets",
+            "name": "Clean sheets",
+            "value": 1,
+            "points": 4
+          }
+        ]
+      },
+      "136": {
+        "total": 0,
+        "components": []
+      },
+      "149": {
+        "total": 10,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 62,
             "points": 2
           },
           {
@@ -763,29 +784,14 @@
           {
             "stat": "bonus",
             "name": "Bonus",
-            "value": 1,
-            "points": 1
-          }
-        ]
-      },
-      "136": {
-        "total": 0,
-        "components": []
-      },
-      "149": {
-        "total": 6,
-        "components": [
-          {
-            "stat": "minutes",
-            "name": "Minutes played",
-            "value": 60,
+            "value": 2,
             "points": 2
           },
           {
-            "stat": "clean_sheets",
-            "name": "Clean sheets",
-            "value": 1,
-            "points": 4
+            "stat": "defensive_contribution",
+            "name": "Defensive Contribution",
+            "value": 10,
+            "points": 2
           }
         ]
       },
@@ -795,7 +801,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 60,
+            "value": 62,
             "points": 2
           },
           {
@@ -812,7 +818,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 60,
+            "value": 62,
             "points": 2
           },
           {
@@ -829,7 +835,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 60,
+            "value": 62,
             "points": 2
           },
           {
@@ -850,7 +856,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 60,
+            "value": 62,
             "points": 2
           },
           {
@@ -867,7 +873,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 60,
+            "value": 62,
             "points": 2
           }
         ]
@@ -878,7 +884,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 60,
+            "value": 62,
             "points": 2
           },
           {
@@ -911,7 +917,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 60,
+            "value": 62,
             "points": 2
           },
           {
@@ -934,7 +940,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 60,
+            "value": 62,
             "points": 2
           },
           {
@@ -951,7 +957,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 60,
+            "value": 62,
             "points": 2
           },
           {
@@ -972,7 +978,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 60,
+            "value": 62,
             "points": 2
           },
           {
@@ -1680,5 +1686,5 @@
       }
     }
   },
-  "generatedAt": "2026-10-24T17:49:17.825Z"
+  "generatedAt": "2026-10-24T17:50:25.493Z"
 }
