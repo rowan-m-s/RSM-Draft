@@ -966,7 +966,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 1,
-      "positionRank": 16
+      "positionRank": 17
     },
     {
       "id": 346,
@@ -1011,6 +1011,28 @@
       "cleanSheets": 2,
       "bonus": 1,
       "positionRank": 20
+    },
+    {
+      "id": 112,
+      "name": "Van Hecke",
+      "position": "DEF",
+      "club": "Spurs",
+      "clubShort": "TOT",
+      "clubCode": 6,
+      "teamId": 19,
+      "photoCode": 469142,
+      "owner": "rowan",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-30T16:00:09.552205Z",
+      "points": 33,
+      "ppg": 4.1,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 3,
+      "positionRank": 16
     },
     {
       "id": 453,
@@ -1121,28 +1143,6 @@
       "cleanSheets": 2,
       "bonus": 5,
       "positionRank": 5
-    },
-    {
-      "id": 112,
-      "name": "Van Hecke",
-      "position": "DEF",
-      "club": "Spurs",
-      "clubShort": "TOT",
-      "clubCode": 6,
-      "teamId": 19,
-      "photoCode": 469142,
-      "owner": "rowan",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-30T16:00:09.552205Z",
-      "points": 32,
-      "ppg": 4,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 2,
-      "positionRank": 17
     },
     {
       "id": 230,
@@ -5085,6 +5085,28 @@
       "positionRank": 93
     },
     {
+      "id": 519,
+      "name": "Gallagher",
+      "position": "MID",
+      "club": "Spurs",
+      "clubShort": "TOT",
+      "clubCode": 6,
+      "teamId": 19,
+      "photoCode": 232787,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 14,
+      "ppg": 2.3,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 95
+    },
+    {
       "id": 534,
       "name": "Hume",
       "position": "DEF",
@@ -5192,7 +5214,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 95
+      "positionRank": 96
     },
     {
       "id": 46,
@@ -5214,7 +5236,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 97
+      "positionRank": 98
     },
     {
       "id": 516,
@@ -5236,7 +5258,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 99
+      "positionRank": 100
     },
     {
       "id": 327,
@@ -5283,28 +5305,6 @@
       "positionRank": 79
     },
     {
-      "id": 519,
-      "name": "Gallagher",
-      "position": "MID",
-      "club": "Spurs",
-      "clubShort": "TOT",
-      "clubCode": 6,
-      "teamId": 19,
-      "photoCode": 232787,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 13,
-      "ppg": 2.6,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 100
-    },
-    {
       "id": 161,
       "name": "Lavia",
       "position": "MID",
@@ -5324,7 +5324,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 98
+      "positionRank": 99
     },
     {
       "id": 7,
@@ -5346,7 +5346,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 96
+      "positionRank": 97
     },
     {
       "id": 644,
@@ -14721,5 +14721,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-24T17:36:48.903Z"
+  "generatedAt": "2026-10-24T17:40:17.090Z"
 }
