@@ -2245,28 +2245,6 @@
       "positionRank": 59
     },
     {
-      "id": 149,
-      "name": "Colwill",
-      "position": "DEF",
-      "club": "Chelsea",
-      "clubShort": "CHE",
-      "clubCode": 8,
-      "teamId": 6,
-      "photoCode": 460028,
-      "owner": "kellett",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 21,
-      "ppg": 3,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 2,
-      "positionRank": 51
-    },
-    {
       "id": 400,
       "name": "Doku",
       "position": "MID",
@@ -2330,7 +2308,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 52
+      "positionRank": 51
     },
     {
       "id": 222,
@@ -2396,7 +2374,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 55
+      "positionRank": 54
     },
     {
       "id": 239,
@@ -2507,6 +2485,28 @@
       "cleanSheets": 1,
       "bonus": 0,
       "positionRank": 14
+    },
+    {
+      "id": 149,
+      "name": "Colwill",
+      "position": "DEF",
+      "club": "Chelsea",
+      "clubShort": "CHE",
+      "clubCode": 8,
+      "teamId": 6,
+      "photoCode": 460028,
+      "owner": "kellett",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 19,
+      "ppg": 2.7,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 0,
+      "positionRank": 56
     },
     {
       "id": 155,
@@ -4290,7 +4290,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 53
+      "positionRank": 52
     },
     {
       "id": 592,
@@ -4312,7 +4312,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 54
+      "positionRank": 53
     },
     {
       "id": 91,
@@ -4422,7 +4422,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 56
+      "positionRank": 55
     },
     {
       "id": 265,
@@ -14721,5 +14721,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-24T18:00:36.946Z"
+  "generatedAt": "2026-10-24T18:03:59.590Z"
 }
