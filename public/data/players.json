@@ -2792,7 +2792,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 81
+      "positionRank": 80
     },
     {
       "id": 412,
@@ -3078,7 +3078,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 102
+      "positionRank": 101
     },
     {
       "id": 646,
@@ -3210,7 +3210,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 104
+      "positionRank": 103
     },
     {
       "id": 125,
@@ -3254,7 +3254,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 115
+      "positionRank": 114
     },
     {
       "id": 224,
@@ -3556,13 +3556,13 @@
       "chanceOfPlaying": null,
       "news": null,
       "newsAdded": null,
-      "points": 2,
-      "ppg": 1,
+      "points": 3,
+      "ppg": 1.5,
       "goals": 0,
       "assists": 0,
       "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 24
+      "bonus": 1,
+      "positionRank": 23
     },
     {
       "id": 208,
@@ -4598,7 +4598,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 79
+      "positionRank": 78
     },
     {
       "id": 313,
@@ -4689,28 +4689,6 @@
       "positionRank": 74
     },
     {
-      "id": 515,
-      "name": "Maddison",
-      "position": "MID",
-      "club": "Spurs",
-      "clubShort": "TOT",
-      "clubCode": 6,
-      "teamId": 19,
-      "photoCode": 172780,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 75,
-      "news": null,
-      "newsAdded": "2026-10-23T14:30:10.270986Z",
-      "points": 17,
-      "ppg": 2.8,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 5,
-      "positionRank": 78
-    },
-    {
       "id": 345,
       "name": "Tanaka",
       "position": "MID",
@@ -4752,7 +4730,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 80
+      "positionRank": 79
     },
     {
       "id": 73,
@@ -4774,7 +4752,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 82
+      "positionRank": 81
     },
     {
       "id": 599,
@@ -4797,6 +4775,28 @@
       "cleanSheets": 1,
       "bonus": 0,
       "positionRank": 64
+    },
+    {
+      "id": 515,
+      "name": "Maddison",
+      "position": "MID",
+      "club": "Spurs",
+      "clubShort": "TOT",
+      "clubCode": 6,
+      "teamId": 19,
+      "photoCode": 172780,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 75,
+      "news": null,
+      "newsAdded": "2026-10-23T14:30:10.270986Z",
+      "points": 16,
+      "ppg": 2.7,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 4,
+      "positionRank": 82
     },
     {
       "id": 418,
@@ -5283,28 +5283,6 @@
       "positionRank": 79
     },
     {
-      "id": 525,
-      "name": "Fernandes",
-      "position": "MID",
-      "club": "Spurs",
-      "clubShort": "TOT",
-      "clubCode": 6,
-      "teamId": 19,
-      "photoCode": 551226,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 13,
-      "ppg": 1.6,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 3,
-      "positionRank": 101
-    },
-    {
       "id": 519,
       "name": "Gallagher",
       "position": "MID",
@@ -5390,7 +5368,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 103
+      "positionRank": 102
     },
     {
       "id": 611,
@@ -5478,7 +5456,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 106
+      "positionRank": 105
     },
     {
       "id": 491,
@@ -5544,7 +5522,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 105
+      "positionRank": 104
     },
     {
       "id": 423,
@@ -5588,7 +5566,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 108
+      "positionRank": 107
     },
     {
       "id": 54,
@@ -5610,7 +5588,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 107
+      "positionRank": 106
     },
     {
       "id": 36,
@@ -5654,7 +5632,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 109
+      "positionRank": 108
     },
     {
       "id": 577,
@@ -5676,7 +5654,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 110
+      "positionRank": 109
     },
     {
       "id": 320,
@@ -5720,7 +5698,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 111
+      "positionRank": 110
     },
     {
       "id": 583,
@@ -5764,7 +5742,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 112
+      "positionRank": 111
     },
     {
       "id": 84,
@@ -5830,7 +5808,29 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 119
+      "positionRank": 118
+    },
+    {
+      "id": 525,
+      "name": "Fernandes",
+      "position": "MID",
+      "club": "Spurs",
+      "clubShort": "TOT",
+      "clubCode": 6,
+      "teamId": 19,
+      "photoCode": 551226,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 10,
+      "ppg": 1.3,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 121
     },
     {
       "id": 572,
@@ -5874,7 +5874,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 117
+      "positionRank": 116
     },
     {
       "id": 213,
@@ -5896,7 +5896,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 114
+      "positionRank": 113
     },
     {
       "id": 419,
@@ -5940,7 +5940,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 113
+      "positionRank": 112
     },
     {
       "id": 536,
@@ -5984,7 +5984,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 116
+      "positionRank": 115
     },
     {
       "id": 403,
@@ -6006,7 +6006,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 118
+      "positionRank": 117
     },
     {
       "id": 195,
@@ -6072,7 +6072,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 121
+      "positionRank": 120
     },
     {
       "id": 461,
@@ -6094,7 +6094,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 120
+      "positionRank": 119
     },
     {
       "id": 618,
@@ -8888,7 +8888,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 23
+      "positionRank": 24
     },
     {
       "id": 446,
@@ -14721,5 +14721,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-24T17:12:09.079Z"
+  "generatedAt": "2026-10-24T17:14:23.921Z"
 }
