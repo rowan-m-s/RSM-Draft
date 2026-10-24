@@ -243,28 +243,6 @@
       "positionRank": 2
     },
     {
-      "id": 40,
-      "name": "Rogers",
-      "position": "MID",
-      "club": "Chelsea",
-      "clubShort": "CHE",
-      "clubCode": 8,
-      "teamId": 6,
-      "photoCode": 244850,
-      "owner": "rushy",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 43,
-      "ppg": 5.4,
-      "goals": 4,
-      "assists": 1,
-      "cleanSheets": 2,
-      "bonus": 2,
-      "positionRank": 3
-    },
-    {
       "id": 391,
       "name": "Gvardiol",
       "position": "DEF",
@@ -306,6 +284,28 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 11,
+      "positionRank": 3
+    },
+    {
+      "id": 40,
+      "name": "Rogers",
+      "position": "MID",
+      "club": "Chelsea",
+      "clubShort": "CHE",
+      "clubCode": 8,
+      "teamId": 6,
+      "photoCode": 244850,
+      "owner": "rushy",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 42,
+      "ppg": 5.3,
+      "goals": 4,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 2,
       "positionRank": 3
     },
     {
@@ -419,28 +419,6 @@
       "positionRank": 9
     },
     {
-      "id": 154,
-      "name": "Palmer",
-      "position": "MID",
-      "club": "Chelsea",
-      "clubShort": "CHE",
-      "clubCode": 8,
-      "teamId": 6,
-      "photoCode": 244851,
-      "owner": "paddy",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-21T13:00:09.022726Z",
-      "points": 40,
-      "ppg": 5,
-      "goals": 2,
-      "assists": 4,
-      "cleanSheets": 2,
-      "bonus": 3,
-      "positionRank": 7
-    },
-    {
       "id": 94,
       "name": "Schade",
       "position": "MID",
@@ -485,6 +463,28 @@
       "positionRank": 9
     },
     {
+      "id": 154,
+      "name": "Palmer",
+      "position": "MID",
+      "club": "Chelsea",
+      "clubShort": "CHE",
+      "clubCode": 8,
+      "teamId": 6,
+      "photoCode": 244851,
+      "owner": "paddy",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-21T13:00:09.022726Z",
+      "points": 39,
+      "ppg": 4.9,
+      "goals": 2,
+      "assists": 4,
+      "cleanSheets": 1,
+      "bonus": 3,
+      "positionRank": 8
+    },
+    {
       "id": 13,
       "name": "Rice",
       "position": "MID",
@@ -504,7 +504,7 @@
       "assists": 4,
       "cleanSheets": 5,
       "bonus": 5,
-      "positionRank": 8
+      "positionRank": 7
     },
     {
       "id": 571,
@@ -592,7 +592,7 @@
       "assists": 3,
       "cleanSheets": 1,
       "bonus": 7,
-      "positionRank": 15
+      "positionRank": 14
     },
     {
       "id": 236,
@@ -614,7 +614,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 6,
-      "positionRank": 13
+      "positionRank": 12
     },
     {
       "id": 79,
@@ -683,28 +683,6 @@
       "positionRank": 11
     },
     {
-      "id": 156,
-      "name": "Neto",
-      "position": "MID",
-      "club": "Chelsea",
-      "clubShort": "CHE",
-      "clubCode": 8,
-      "teamId": 6,
-      "photoCode": 247632,
-      "owner": "jason",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 37,
-      "ppg": 4.6,
-      "goals": 3,
-      "assists": 1,
-      "cleanSheets": 2,
-      "bonus": 3,
-      "positionRank": 12
-    },
-    {
       "id": 12,
       "name": "Saka",
       "position": "MID",
@@ -746,7 +724,29 @@
       "assists": 3,
       "cleanSheets": 3,
       "bonus": 2,
-      "positionRank": 14
+      "positionRank": 13
+    },
+    {
+      "id": 156,
+      "name": "Neto",
+      "position": "MID",
+      "club": "Chelsea",
+      "clubShort": "CHE",
+      "clubCode": 8,
+      "teamId": 6,
+      "photoCode": 247632,
+      "owner": "jason",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 36,
+      "ppg": 4.5,
+      "goals": 3,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 3,
+      "positionRank": 16
     },
     {
       "id": 15,
@@ -768,7 +768,7 @@
       "assists": 0,
       "cleanSheets": 5,
       "bonus": 6,
-      "positionRank": 16
+      "positionRank": 15
     },
     {
       "id": 258,
@@ -1475,28 +1475,6 @@
       "positionRank": 33
     },
     {
-      "id": 200,
-      "name": "Lacroix",
-      "position": "DEF",
-      "club": "Chelsea",
-      "clubShort": "CHE",
-      "clubCode": 8,
-      "teamId": 6,
-      "photoCode": 437499,
-      "owner": "jason",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 29,
-      "ppg": 3.6,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 2,
-      "bonus": 0,
-      "positionRank": 27
-    },
-    {
       "id": 226,
       "name": "Pickford",
       "position": "GKP",
@@ -1538,7 +1516,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 28
+      "positionRank": 27
     },
     {
       "id": 41,
@@ -1582,7 +1560,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 32
+      "positionRank": 31
     },
     {
       "id": 113,
@@ -1604,7 +1582,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 1,
-      "positionRank": 29
+      "positionRank": 28
     },
     {
       "id": 204,
@@ -1626,7 +1604,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 30
+      "positionRank": 29
     },
     {
       "id": 472,
@@ -1648,7 +1626,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 33
+      "positionRank": 32
     },
     {
       "id": 233,
@@ -1670,7 +1648,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 3,
-      "positionRank": 31
+      "positionRank": 30
     },
     {
       "id": 183,
@@ -1714,7 +1692,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 37
+      "positionRank": 36
     },
     {
       "id": 483,
@@ -1758,28 +1736,6 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 40
-    },
-    {
-      "id": 101,
-      "name": "Henderson",
-      "position": "MID",
-      "club": "Chelsea",
-      "clubShort": "CHE",
-      "clubCode": 8,
-      "teamId": 6,
-      "photoCode": 56979,
-      "owner": "wallis",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-09T09:30:07.136250Z",
-      "points": 26,
-      "ppg": 6.5,
-      "goals": 2,
-      "assists": 1,
-      "cleanSheets": 2,
-      "bonus": 3,
       "positionRank": 39
     },
     {
@@ -1802,7 +1758,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 2,
-      "positionRank": 41
+      "positionRank": 40
     },
     {
       "id": 377,
@@ -1824,7 +1780,51 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 40
+      "positionRank": 39
+    },
+    {
+      "id": 101,
+      "name": "Henderson",
+      "position": "MID",
+      "club": "Chelsea",
+      "clubShort": "CHE",
+      "clubCode": 8,
+      "teamId": 6,
+      "photoCode": 56979,
+      "owner": "wallis",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-09T09:30:07.136250Z",
+      "points": 25,
+      "ppg": 6.3,
+      "goals": 2,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 3,
+      "positionRank": 41
+    },
+    {
+      "id": 200,
+      "name": "Lacroix",
+      "position": "DEF",
+      "club": "Chelsea",
+      "clubShort": "CHE",
+      "clubCode": 8,
+      "teamId": 6,
+      "photoCode": 437499,
+      "owner": "jason",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 25,
+      "ppg": 3.1,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 42
     },
     {
       "id": 390,
@@ -2355,28 +2355,6 @@
       "positionRank": 12
     },
     {
-      "id": 151,
-      "name": "Acheampong",
-      "position": "DEF",
-      "club": "Chelsea",
-      "clubShort": "CHE",
-      "clubCode": 8,
-      "teamId": 6,
-      "photoCode": 577016,
-      "owner": "rushy",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 20,
-      "ppg": 2.9,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 0,
-      "positionRank": 54
-    },
-    {
       "id": 239,
       "name": "Garner",
       "position": "MID",
@@ -2487,28 +2465,6 @@
       "positionRank": 14
     },
     {
-      "id": 149,
-      "name": "Colwill",
-      "position": "DEF",
-      "club": "Chelsea",
-      "clubShort": "CHE",
-      "clubCode": 8,
-      "teamId": 6,
-      "photoCode": 460028,
-      "owner": "kellett",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 19,
-      "ppg": 2.7,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 0,
-      "positionRank": 56
-    },
-    {
       "id": 155,
       "name": "Enzo",
       "position": "MID",
@@ -2572,7 +2528,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 57
+      "positionRank": 55
     },
     {
       "id": 512,
@@ -2616,7 +2572,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 58
+      "positionRank": 56
     },
     {
       "id": 533,
@@ -2638,7 +2594,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 59
+      "positionRank": 57
     },
     {
       "id": 526,
@@ -2726,7 +2682,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 62
+      "positionRank": 60
     },
     {
       "id": 553,
@@ -2749,6 +2705,28 @@
       "cleanSheets": 0,
       "bonus": 3,
       "positionRank": 19
+    },
+    {
+      "id": 151,
+      "name": "Acheampong",
+      "position": "DEF",
+      "club": "Chelsea",
+      "clubShort": "CHE",
+      "clubCode": 8,
+      "teamId": 6,
+      "photoCode": 577016,
+      "owner": "rushy",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 16,
+      "ppg": 2.3,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 62
     },
     {
       "id": 598,
@@ -2814,7 +2792,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 64
+      "positionRank": 63
     },
     {
       "id": 70,
@@ -2902,7 +2880,29 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 83
+      "positionRank": 84
+    },
+    {
+      "id": 149,
+      "name": "Colwill",
+      "position": "DEF",
+      "club": "Chelsea",
+      "clubShort": "CHE",
+      "clubCode": 8,
+      "teamId": 6,
+      "photoCode": 460028,
+      "owner": "kellett",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 15,
+      "ppg": 2.1,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 67
     },
     {
       "id": 167,
@@ -2990,7 +2990,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 85
+      "positionRank": 86
     },
     {
       "id": 445,
@@ -3034,7 +3034,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 67
+      "positionRank": 66
     },
     {
       "id": 471,
@@ -3364,7 +3364,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 128
+      "positionRank": 127
     },
     {
       "id": 439,
@@ -3409,28 +3409,6 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 33
-    },
-    {
-      "id": 557,
-      "name": "Penders",
-      "position": "GKP",
-      "club": "Chelsea",
-      "clubShort": "CHE",
-      "clubCode": 8,
-      "teamId": 6,
-      "photoCode": 549939,
-      "owner": "wood",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 7,
-      "ppg": 3.5,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 21
     },
     {
       "id": 136,
@@ -3496,7 +3474,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 23
+      "positionRank": 22
     },
     {
       "id": 465,
@@ -3585,6 +3563,28 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 188
+    },
+    {
+      "id": 557,
+      "name": "Penders",
+      "position": "GKP",
+      "club": "Chelsea",
+      "clubShort": "CHE",
+      "clubCode": 8,
+      "teamId": 6,
+      "photoCode": 549939,
+      "owner": "wood",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 1,
+      "ppg": 0.5,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 25
     },
     {
       "id": 78,
@@ -3894,7 +3894,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 34
+      "positionRank": 33
     },
     {
       "id": 455,
@@ -3938,7 +3938,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 35
+      "positionRank": 34
     },
     {
       "id": 282,
@@ -3960,7 +3960,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 2,
-      "positionRank": 36
+      "positionRank": 35
     },
     {
       "id": 432,
@@ -3982,7 +3982,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 41
+      "positionRank": 40
     },
     {
       "id": 304,
@@ -4004,7 +4004,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 3,
-      "positionRank": 39
+      "positionRank": 38
     },
     {
       "id": 254,
@@ -4026,7 +4026,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 1,
-      "positionRank": 38
+      "positionRank": 37
     },
     {
       "id": 148,
@@ -4048,7 +4048,7 @@
       "assists": 3,
       "cleanSheets": 2,
       "bonus": 2,
-      "positionRank": 42
+      "positionRank": 41
     },
     {
       "id": 43,
@@ -4422,7 +4422,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 55
+      "positionRank": 54
     },
     {
       "id": 265,
@@ -4466,7 +4466,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 61
+      "positionRank": 59
     },
     {
       "id": 454,
@@ -4532,7 +4532,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 60
+      "positionRank": 58
     },
     {
       "id": 551,
@@ -4642,7 +4642,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 63
+      "positionRank": 61
     },
     {
       "id": 96,
@@ -4796,7 +4796,29 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 66
+      "positionRank": 65
+    },
+    {
+      "id": 525,
+      "name": "Fernandes",
+      "position": "MID",
+      "club": "Spurs",
+      "clubShort": "TOT",
+      "clubCode": 6,
+      "teamId": 19,
+      "photoCode": 551226,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 16,
+      "ppg": 2,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 2,
+      "bonus": 0,
+      "positionRank": 83
     },
     {
       "id": 418,
@@ -4818,7 +4840,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 65
+      "positionRank": 64
     },
     {
       "id": 574,
@@ -4840,7 +4862,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 84
+      "positionRank": 85
     },
     {
       "id": 474,
@@ -4884,7 +4906,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 89
+      "positionRank": 90
     },
     {
       "id": 267,
@@ -4906,7 +4928,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 87
+      "positionRank": 88
     },
     {
       "id": 541,
@@ -4950,7 +4972,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 88
+      "positionRank": 89
     },
     {
       "id": 545,
@@ -4972,7 +4994,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 90
+      "positionRank": 91
     },
     {
       "id": 175,
@@ -5016,7 +5038,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 86
+      "positionRank": 87
     },
     {
       "id": 532,
@@ -5060,7 +5082,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 92
+      "positionRank": 93
     },
     {
       "id": 534,
@@ -5104,7 +5126,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 91
+      "positionRank": 92
     },
     {
       "id": 372,
@@ -5126,7 +5148,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 93
+      "positionRank": 94
     },
     {
       "id": 515,
@@ -5148,7 +5170,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 94
+      "positionRank": 95
     },
     {
       "id": 656,
@@ -5192,7 +5214,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 95
+      "positionRank": 96
     },
     {
       "id": 46,
@@ -5214,7 +5236,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 97
+      "positionRank": 98
     },
     {
       "id": 516,
@@ -5236,7 +5258,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 99
+      "positionRank": 100
     },
     {
       "id": 327,
@@ -5283,28 +5305,6 @@
       "positionRank": 80
     },
     {
-      "id": 525,
-      "name": "Fernandes",
-      "position": "MID",
-      "club": "Spurs",
-      "clubShort": "TOT",
-      "clubCode": 6,
-      "teamId": 19,
-      "photoCode": 551226,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 13,
-      "ppg": 1.6,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 0,
-      "positionRank": 101
-    },
-    {
       "id": 519,
       "name": "Gallagher",
       "position": "MID",
@@ -5324,7 +5324,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 100
+      "positionRank": 101
     },
     {
       "id": 161,
@@ -5346,7 +5346,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 98
+      "positionRank": 99
     },
     {
       "id": 7,
@@ -5368,7 +5368,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 96
+      "positionRank": 97
     },
     {
       "id": 644,
@@ -6097,28 +6097,6 @@
       "positionRank": 121
     },
     {
-      "id": 159,
-      "name": "Caicedo",
-      "position": "MID",
-      "club": "Chelsea",
-      "clubShort": "CHE",
-      "clubCode": 8,
-      "teamId": 6,
-      "photoCode": 486672,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-30T16:00:08.393562Z",
-      "points": 9,
-      "ppg": 2.3,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 0,
-      "positionRank": 126
-    },
-    {
       "id": 618,
       "name": "Cho",
       "position": "MID",
@@ -6138,7 +6116,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 127
+      "positionRank": 126
     },
     {
       "id": 51,
@@ -6317,6 +6295,28 @@
       "positionRank": 98
     },
     {
+      "id": 159,
+      "name": "Caicedo",
+      "position": "MID",
+      "club": "Chelsea",
+      "clubShort": "CHE",
+      "clubCode": 8,
+      "teamId": 6,
+      "photoCode": 486672,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-30T16:00:08.393562Z",
+      "points": 8,
+      "ppg": 2,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 129
+    },
+    {
       "id": 634,
       "name": "Chilwell",
       "position": "DEF",
@@ -6424,7 +6424,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 129
+      "positionRank": 128
     },
     {
       "id": 631,
@@ -6644,7 +6644,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 22
+      "positionRank": 21
     },
     {
       "id": 130,
@@ -8888,7 +8888,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 24
+      "positionRank": 23
     },
     {
       "id": 446,
@@ -9548,7 +9548,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 25
+      "positionRank": 24
     },
     {
       "id": 285,
@@ -14721,5 +14721,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-24T18:03:59.590Z"
+  "generatedAt": "2026-10-24T18:06:16.450Z"
 }
