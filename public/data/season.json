@@ -20,9 +20,9 @@
     {
       "key": "bennett",
       "rank": 2,
-      "total": 340,
-      "gw": 34,
-      "month": 126,
+      "total": 339,
+      "gw": 33,
+      "month": 125,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -54,9 +54,9 @@
     {
       "key": "jason",
       "rank": 4,
-      "total": 330,
-      "gw": 10,
-      "month": 86,
+      "total": 329,
+      "gw": 9,
+      "month": 85,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -120,25 +120,8 @@
       }
     },
     {
-      "key": "rushy",
-      "rank": 8,
-      "total": 296,
-      "gw": 27,
-      "month": 97,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "Rogers",
-        "points": 42,
-        "managerKey": "rushy"
-      }
-    },
-    {
       "key": "jls",
-      "rank": 9,
+      "rank": 8,
       "total": 295,
       "gw": 11,
       "month": 107,
@@ -154,11 +137,28 @@
       }
     },
     {
+      "key": "rushy",
+      "rank": 9,
+      "total": 294,
+      "gw": 25,
+      "month": 95,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "Rogers",
+        "points": 42,
+        "managerKey": "rushy"
+      }
+    },
+    {
       "key": "rowan",
       "rank": 10,
-      "total": 281,
-      "gw": 13,
-      "month": 80,
+      "total": 280,
+      "gw": 12,
+      "month": 79,
       "kochCount": 2,
       "motmCount": 0,
       "forfeits": 10,
@@ -166,7 +166,7 @@
       "balance": -10,
       "topPerformer": {
         "playerName": "Van Hecke",
-        "points": 39,
+        "points": 38,
         "managerKey": "rowan"
       }
     },
@@ -205,7 +205,7 @@
     "displaced": "paddy",
     "changed": false
   },
-  "generatedAt": "2026-10-24T18:13:03.157Z",
+  "generatedAt": "2026-10-24T18:16:26.820Z",
   "graphics": {
     "koch": {
       "rushy": 244850,
