@@ -287,28 +287,6 @@
       "positionRank": 3
     },
     {
-      "id": 40,
-      "name": "Rogers",
-      "position": "MID",
-      "club": "Chelsea",
-      "clubShort": "CHE",
-      "clubCode": 8,
-      "teamId": 6,
-      "photoCode": 244850,
-      "owner": "rushy",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 42,
-      "ppg": 5.3,
-      "goals": 4,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 2,
-      "positionRank": 3
-    },
-    {
       "id": 68,
       "name": "Tavernier",
       "position": "MID",
@@ -328,7 +306,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 10,
-      "positionRank": 4
+      "positionRank": 3
     },
     {
       "id": 10,
@@ -395,6 +373,28 @@
       "cleanSheets": 0,
       "bonus": 5,
       "positionRank": 5
+    },
+    {
+      "id": 40,
+      "name": "Rogers",
+      "position": "MID",
+      "club": "Chelsea",
+      "clubShort": "CHE",
+      "clubCode": 8,
+      "teamId": 6,
+      "photoCode": 244850,
+      "owner": "rushy",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 41,
+      "ppg": 5.1,
+      "goals": 4,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 2,
+      "positionRank": 4
     },
     {
       "id": 31,
@@ -14721,5 +14721,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-24T18:17:34.776Z"
+  "generatedAt": "2026-10-24T18:19:51.515Z"
 }

@@ -712,13 +712,19 @@
         "components": []
       },
       "40": {
-        "total": 2,
+        "total": 1,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
             "value": 90,
             "points": 2
+          },
+          {
+            "stat": "yellow_cards",
+            "name": "Yellow cards",
+            "value": 1,
+            "points": -1
           }
         ]
       },
@@ -1719,5 +1725,5 @@
       }
     }
   },
-  "generatedAt": "2026-10-24T18:18:43.688Z"
+  "generatedAt": "2026-10-24T18:19:51.515Z"
 }
