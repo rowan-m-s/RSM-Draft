@@ -2654,13 +2654,13 @@
       "chanceOfPlaying": null,
       "news": null,
       "newsAdded": null,
-      "points": 18,
-      "ppg": 2.6,
+      "points": 19,
+      "ppg": 2.4,
       "goals": 1,
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 18
+      "positionRank": 16
     },
     {
       "id": 106,
@@ -2682,7 +2682,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 16
+      "positionRank": 17
     },
     {
       "id": 464,
@@ -2704,7 +2704,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 17
+      "positionRank": 18
     },
     {
       "id": 32,
@@ -3279,6 +3279,28 @@
       "positionRank": 27
     },
     {
+      "id": 499,
+      "name": "Pedro Porro",
+      "position": "DEF",
+      "club": "Spurs",
+      "clubShort": "TOT",
+      "clubCode": 6,
+      "teamId": 19,
+      "photoCode": 441164,
+      "owner": "rushy",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-19T12:00:08.823872Z",
+      "points": 10,
+      "ppg": 2.5,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 1,
+      "positionRank": 90
+    },
+    {
       "id": 25,
       "name": "Gyökeres",
       "position": "FWD",
@@ -3299,28 +3321,6 @@
       "cleanSheets": 1,
       "bonus": 0,
       "positionRank": 29
-    },
-    {
-      "id": 499,
-      "name": "Pedro Porro",
-      "position": "DEF",
-      "club": "Spurs",
-      "clubShort": "TOT",
-      "clubCode": 6,
-      "teamId": 19,
-      "photoCode": 441164,
-      "owner": "rushy",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-19T12:00:08.823872Z",
-      "points": 9,
-      "ppg": 3,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 1,
-      "positionRank": 94
     },
     {
       "id": 300,
@@ -5764,7 +5764,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 92
+      "positionRank": 93
     },
     {
       "id": 75,
@@ -5830,7 +5830,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 91
+      "positionRank": 92
     },
     {
       "id": 415,
@@ -5984,7 +5984,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 90
+      "positionRank": 91
     },
     {
       "id": 246,
@@ -6270,7 +6270,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 93
+      "positionRank": 94
     },
     {
       "id": 337,
@@ -14721,5 +14721,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-24T17:53:49.335Z"
+  "generatedAt": "2026-10-24T17:54:57.186Z"
 }
