@@ -966,7 +966,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 1,
-      "positionRank": 17
+      "positionRank": 16
     },
     {
       "id": 346,
@@ -1011,28 +1011,6 @@
       "cleanSheets": 2,
       "bonus": 1,
       "positionRank": 20
-    },
-    {
-      "id": 112,
-      "name": "Van Hecke",
-      "position": "DEF",
-      "club": "Spurs",
-      "clubShort": "TOT",
-      "clubCode": 6,
-      "teamId": 19,
-      "photoCode": 469142,
-      "owner": "rowan",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-30T16:00:09.552205Z",
-      "points": 33,
-      "ppg": 4.1,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 3,
-      "positionRank": 16
     },
     {
       "id": 453,
@@ -1143,6 +1121,28 @@
       "cleanSheets": 2,
       "bonus": 5,
       "positionRank": 5
+    },
+    {
+      "id": 112,
+      "name": "Van Hecke",
+      "position": "DEF",
+      "club": "Spurs",
+      "clubShort": "TOT",
+      "clubCode": 6,
+      "teamId": 19,
+      "photoCode": 469142,
+      "owner": "rowan",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-30T16:00:09.552205Z",
+      "points": 32,
+      "ppg": 4,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 2,
+      "positionRank": 17
     },
     {
       "id": 230,
@@ -2066,28 +2066,6 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 1,
-      "positionRank": 44
-    },
-    {
-      "id": 200,
-      "name": "Lacroix",
-      "position": "DEF",
-      "club": "Chelsea",
-      "clubShort": "CHE",
-      "clubCode": 8,
-      "teamId": 6,
-      "photoCode": 437499,
-      "owner": "jason",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 23,
-      "ppg": 2.9,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 1,
       "positionRank": 43
     },
     {
@@ -2133,6 +2111,28 @@
       "cleanSheets": 1,
       "bonus": 3,
       "positionRank": 56
+    },
+    {
+      "id": 200,
+      "name": "Lacroix",
+      "position": "DEF",
+      "club": "Chelsea",
+      "clubShort": "CHE",
+      "clubCode": 8,
+      "teamId": 6,
+      "photoCode": 437499,
+      "owner": "jason",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 22,
+      "ppg": 2.8,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 46
     },
     {
       "id": 336,
@@ -2198,7 +2198,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 46
+      "positionRank": 45
     },
     {
       "id": 608,
@@ -4224,7 +4224,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 45
+      "positionRank": 44
     },
     {
       "id": 579,
@@ -4840,7 +4840,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 90
+      "positionRank": 89
     },
     {
       "id": 474,
@@ -4909,28 +4909,6 @@
       "positionRank": 86
     },
     {
-      "id": 515,
-      "name": "Maddison",
-      "position": "MID",
-      "club": "Spurs",
-      "clubShort": "TOT",
-      "clubCode": 6,
-      "teamId": 19,
-      "photoCode": 172780,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 75,
-      "news": null,
-      "newsAdded": "2026-10-23T14:30:10.270986Z",
-      "points": 15,
-      "ppg": 2.5,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 3,
-      "positionRank": 89
-    },
-    {
       "id": 541,
       "name": "Meunier",
       "position": "DEF",
@@ -4994,7 +4972,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 91
+      "positionRank": 90
     },
     {
       "id": 175,
@@ -5082,7 +5060,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 93
+      "positionRank": 92
     },
     {
       "id": 519,
@@ -5148,7 +5126,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 92
+      "positionRank": 91
     },
     {
       "id": 372,
@@ -5170,6 +5148,28 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
+      "positionRank": 93
+    },
+    {
+      "id": 515,
+      "name": "Maddison",
+      "position": "MID",
+      "club": "Spurs",
+      "clubShort": "TOT",
+      "clubCode": 6,
+      "teamId": 19,
+      "photoCode": 172780,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 75,
+      "news": null,
+      "newsAdded": "2026-10-23T14:30:10.270986Z",
+      "points": 14,
+      "ppg": 2.3,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 2,
       "positionRank": 94
     },
     {
@@ -5437,6 +5437,28 @@
       "positionRank": 84
     },
     {
+      "id": 525,
+      "name": "Fernandes",
+      "position": "MID",
+      "club": "Spurs",
+      "clubShort": "TOT",
+      "clubCode": 6,
+      "teamId": 19,
+      "photoCode": 551226,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 12,
+      "ppg": 1.5,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 2,
+      "positionRank": 106
+    },
+    {
       "id": 247,
       "name": "Hackney",
       "position": "MID",
@@ -5566,7 +5588,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 107
+      "positionRank": 108
     },
     {
       "id": 54,
@@ -5588,7 +5610,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 106
+      "positionRank": 107
     },
     {
       "id": 36,
@@ -5632,7 +5654,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 108
+      "positionRank": 109
     },
     {
       "id": 577,
@@ -5655,28 +5677,6 @@
       "cleanSheets": 2,
       "bonus": 0,
       "positionRank": 110
-    },
-    {
-      "id": 514,
-      "name": "Tel",
-      "position": "MID",
-      "club": "Spurs",
-      "clubShort": "TOT",
-      "clubCode": 6,
-      "teamId": 19,
-      "photoCode": 511499,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 11,
-      "ppg": 1.8,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 1,
-      "positionRank": 109
     },
     {
       "id": 320,
@@ -5831,28 +5831,6 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 119
-    },
-    {
-      "id": 525,
-      "name": "Fernandes",
-      "position": "MID",
-      "club": "Spurs",
-      "clubShort": "TOT",
-      "clubCode": 6,
-      "teamId": 19,
-      "photoCode": 551226,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 10,
-      "ppg": 1.3,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 121
     },
     {
       "id": 572,
@@ -6073,6 +6051,28 @@
       "cleanSheets": 1,
       "bonus": 0,
       "positionRank": 87
+    },
+    {
+      "id": 514,
+      "name": "Tel",
+      "position": "MID",
+      "club": "Spurs",
+      "clubShort": "TOT",
+      "clubCode": 6,
+      "teamId": 19,
+      "photoCode": 511499,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 10,
+      "ppg": 1.7,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 121
     },
     {
       "id": 461,
@@ -14721,5 +14721,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-24T17:41:24.912Z"
+  "generatedAt": "2026-10-24T17:43:40.817Z"
 }
