@@ -1408,10 +1408,10 @@
       "clubShort": "ARS",
       "clubCode": 3,
       "photoCode": 466075,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
+      "status": "d",
+      "chanceOfPlaying": 75,
+      "news": "Hip injury - 75% chance of playing",
+      "newsAdded": "2026-10-24T18:30:08.735545Z"
     },
     "10": {
       "name": "White",
@@ -2140,10 +2140,10 @@
       "clubShort": "EVE",
       "clubCode": 11,
       "photoCode": 224967,
-      "status": "a",
+      "status": "d",
       "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-01T19:30:09.402881Z"
+      "news": "Unspecified injury - 75% chance of playing",
+      "newsAdded": "2026-10-24T19:00:09.907289Z"
     },
     "236": {
       "name": "Dewsbury-Hall",
@@ -3334,5 +3334,5 @@
       "newsAdded": "2026-10-23T14:30:10.429365Z"
     }
   },
-  "generatedAt": "2026-10-24T17:08:45.935Z"
+  "generatedAt": "2026-10-24T20:03:31.551Z"
 }
