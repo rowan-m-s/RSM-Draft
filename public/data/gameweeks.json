@@ -1336,17 +1336,17 @@
       "confirmExpectedUtc": "2026-10-26T16:30:00.000Z",
       "revealFromUtc": "2026-10-26T00:00:00.000Z",
       "scores": {
-        "rushy": 18,
+        "rushy": 33,
         "kellett": 25,
-        "wallis": 25,
-        "jls": 10,
-        "paddy": 18,
-        "bennett": 29,
+        "wallis": 27,
+        "jls": 11,
+        "paddy": 20,
+        "bennett": 34,
         "wood": 9,
-        "rowan": 6,
-        "jason": 5,
+        "rowan": 12,
+        "jason": 12,
         "dj": 25,
-        "ollie": 24
+        "ollie": 29
       },
       "kochKeys": [],
       "charged": 0,
@@ -1387,13 +1387,13 @@
           "managerKey": "wood"
         },
         "rowan": {
-          "playerName": "Milenković",
-          "points": 2,
+          "playerName": "Van Hecke",
+          "points": 7,
           "managerKey": "rowan"
         },
         "jason": {
-          "playerName": "Ødegaard",
-          "points": 3,
+          "playerName": "Lacroix",
+          "points": 6,
           "managerKey": "jason"
         },
         "dj": {
@@ -1457,10 +1457,10 @@
           "element": 226
         },
         "jason": {
-          "playerName": "Lacroix",
-          "points": 1,
+          "playerName": "Neto",
+          "points": 3,
           "managerKey": "jason",
-          "element": 200
+          "element": 156
         },
         "dj": {
           "playerName": "Muñoz",
@@ -2240,5 +2240,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-10-24T17:44:48.595Z"
+  "generatedAt": "2026-10-24T17:49:17.825Z"
 }
