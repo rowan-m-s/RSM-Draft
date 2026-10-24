@@ -2066,6 +2066,28 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 1,
+      "positionRank": 44
+    },
+    {
+      "id": 200,
+      "name": "Lacroix",
+      "position": "DEF",
+      "club": "Chelsea",
+      "clubShort": "CHE",
+      "clubCode": 8,
+      "teamId": 6,
+      "photoCode": 437499,
+      "owner": "jason",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 23,
+      "ppg": 2.9,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 1,
       "positionRank": 43
     },
     {
@@ -2111,28 +2133,6 @@
       "cleanSheets": 1,
       "bonus": 3,
       "positionRank": 56
-    },
-    {
-      "id": 200,
-      "name": "Lacroix",
-      "position": "DEF",
-      "club": "Chelsea",
-      "clubShort": "CHE",
-      "clubCode": 8,
-      "teamId": 6,
-      "photoCode": 437499,
-      "owner": "jason",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 22,
-      "ppg": 2.8,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 46
     },
     {
       "id": 336,
@@ -2198,7 +2198,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 45
+      "positionRank": 46
     },
     {
       "id": 608,
@@ -4224,7 +4224,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 44
+      "positionRank": 45
     },
     {
       "id": 579,
@@ -14721,5 +14721,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-24T17:16:38.371Z"
+  "generatedAt": "2026-10-24T17:36:48.903Z"
 }
