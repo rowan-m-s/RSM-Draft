@@ -1000,10 +1000,10 @@
       "teamId": 18,
       "photoCode": 215136,
       "owner": "rushy",
-      "status": "a",
+      "status": "d",
       "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-09T14:30:11.466887Z",
+      "news": "Arm injury - 75% chance of playing",
+      "newsAdded": "2026-10-24T00:00:10.181593Z",
       "points": 31,
       "ppg": 3.9,
       "goals": 1,
@@ -3276,7 +3276,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 115
+      "positionRank": 116
     },
     {
       "id": 499,
@@ -5745,6 +5745,28 @@
       "positionRank": 113
     },
     {
+      "id": 572,
+      "name": "Florentino",
+      "position": "MID",
+      "club": "Ipswich Town",
+      "clubShort": "IPS",
+      "clubCode": 40,
+      "teamId": 12,
+      "photoCode": 216055,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-25T11:30:07.678802Z",
+      "points": 10,
+      "ppg": 2,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 115
+    },
+    {
       "id": 340,
       "name": "Gelhardt",
       "position": "MID",
@@ -5940,7 +5962,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 117
+      "positionRank": 118
     },
     {
       "id": 618,
@@ -5962,7 +5984,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 123
+      "positionRank": 124
     },
     {
       "id": 525,
@@ -5984,7 +6006,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 122
+      "positionRank": 123
     },
     {
       "id": 51,
@@ -6006,7 +6028,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 116
+      "positionRank": 117
     },
     {
       "id": 54,
@@ -6028,7 +6050,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 118
+      "positionRank": 119
     },
     {
       "id": 36,
@@ -6072,7 +6094,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 120
+      "positionRank": 121
     },
     {
       "id": 347,
@@ -6116,7 +6138,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 119
+      "positionRank": 120
     },
     {
       "id": 514,
@@ -6138,7 +6160,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 121
+      "positionRank": 122
     },
     {
       "id": 506,
@@ -6204,7 +6226,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 126
+      "positionRank": 127
     },
     {
       "id": 473,
@@ -6251,28 +6273,6 @@
       "positionRank": 100
     },
     {
-      "id": 572,
-      "name": "Florentino",
-      "position": "MID",
-      "club": "Ipswich Town",
-      "clubShort": "IPS",
-      "clubCode": 40,
-      "teamId": 12,
-      "photoCode": 216055,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-25T11:30:07.678802Z",
-      "points": 8,
-      "ppg": 1.6,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 129
-    },
-    {
       "id": 145,
       "name": "Fofana",
       "position": "DEF",
@@ -6314,7 +6314,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 127
+      "positionRank": 128
     },
     {
       "id": 613,
@@ -6358,7 +6358,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 124
+      "positionRank": 125
     },
     {
       "id": 246,
@@ -6380,7 +6380,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 125
+      "positionRank": 126
     },
     {
       "id": 269,
@@ -6424,7 +6424,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 128
+      "positionRank": 129
     },
     {
       "id": 508,
@@ -14721,5 +14721,5 @@
     "bonus": 8,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-23T23:42:20.902Z"
+  "generatedAt": "2026-10-24T02:51:15.612Z"
 }
