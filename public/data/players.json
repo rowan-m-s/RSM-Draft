@@ -67,6 +67,28 @@
       "positionRank": 1
     },
     {
+      "id": 68,
+      "name": "Tavernier",
+      "position": "MID",
+      "club": "Bournemouth",
+      "clubShort": "BOU",
+      "clubCode": 91,
+      "teamId": 3,
+      "photoCode": 201658,
+      "owner": "bennett",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 53,
+      "ppg": 6.6,
+      "goals": 5,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 13,
+      "positionRank": 2
+    },
+    {
       "id": 4,
       "name": "Gabriel",
       "position": "DEF",
@@ -86,28 +108,6 @@
       "assists": 0,
       "cleanSheets": 5,
       "bonus": 5,
-      "positionRank": 2
-    },
-    {
-      "id": 68,
-      "name": "Tavernier",
-      "position": "MID",
-      "club": "Bournemouth",
-      "clubShort": "BOU",
-      "clubCode": 91,
-      "teamId": 3,
-      "photoCode": 201658,
-      "owner": "bennett",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 51,
-      "ppg": 6.4,
-      "goals": 5,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 13,
       "positionRank": 2
     },
     {
@@ -309,6 +309,28 @@
       "positionRank": 3
     },
     {
+      "id": 427,
+      "name": "Mbeumo",
+      "position": "MID",
+      "club": "Man Utd",
+      "clubShort": "MUN",
+      "clubCode": 1,
+      "teamId": 16,
+      "photoCode": 446008,
+      "owner": "ollie",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 43,
+      "ppg": 5.4,
+      "goals": 4,
+      "assists": 1,
+      "cleanSheets": 0,
+      "bonus": 5,
+      "positionRank": 4
+    },
+    {
       "id": 286,
       "name": "Belloumi",
       "position": "MID",
@@ -328,7 +350,7 @@
       "assists": 2,
       "cleanSheets": 4,
       "bonus": 2,
-      "positionRank": 5
+      "positionRank": 6
     },
     {
       "id": 391,
@@ -397,28 +419,6 @@
       "positionRank": 4
     },
     {
-      "id": 427,
-      "name": "Mbeumo",
-      "position": "MID",
-      "club": "Man Utd",
-      "clubShort": "MUN",
-      "clubCode": 1,
-      "teamId": 16,
-      "photoCode": 446008,
-      "owner": "ollie",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 42,
-      "ppg": 5.3,
-      "goals": 4,
-      "assists": 1,
-      "cleanSheets": 0,
-      "bonus": 5,
-      "positionRank": 6
-    },
-    {
       "id": 94,
       "name": "Schade",
       "position": "MID",
@@ -438,7 +438,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 6,
-      "positionRank": 4
+      "positionRank": 5
     },
     {
       "id": 10,
@@ -505,6 +505,28 @@
       "cleanSheets": 2,
       "bonus": 3,
       "positionRank": 8
+    },
+    {
+      "id": 79,
+      "name": "Evanilson",
+      "position": "FWD",
+      "club": "Bournemouth",
+      "clubShort": "BOU",
+      "clubCode": 91,
+      "teamId": 3,
+      "photoCode": 444102,
+      "owner": "wood",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 39,
+      "ppg": 4.9,
+      "goals": 2,
+      "assists": 4,
+      "cleanSheets": 4,
+      "bonus": 4,
+      "positionRank": 5
     },
     {
       "id": 31,
@@ -615,28 +637,6 @@
       "cleanSheets": 1,
       "bonus": 7,
       "positionRank": 11
-    },
-    {
-      "id": 79,
-      "name": "Evanilson",
-      "position": "FWD",
-      "club": "Bournemouth",
-      "clubShort": "BOU",
-      "clubCode": 91,
-      "teamId": 3,
-      "photoCode": 444102,
-      "owner": "wood",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 38,
-      "ppg": 4.8,
-      "goals": 2,
-      "assists": 4,
-      "cleanSheets": 3,
-      "bonus": 4,
-      "positionRank": 5
     },
     {
       "id": 127,
@@ -1453,6 +1453,28 @@
       "positionRank": 8
     },
     {
+      "id": 60,
+      "name": "Hill",
+      "position": "DEF",
+      "club": "Bournemouth",
+      "clubShort": "BOU",
+      "clubCode": 91,
+      "teamId": 3,
+      "photoCode": 463981,
+      "owner": "dj",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 30,
+      "ppg": 3.8,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 2,
+      "positionRank": 27
+    },
+    {
       "id": 597,
       "name": "Suzuki",
       "position": "GKP",
@@ -1516,7 +1538,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 1,
-      "positionRank": 27
+      "positionRank": 28
     },
     {
       "id": 204,
@@ -1538,7 +1560,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 29
+      "positionRank": 30
     },
     {
       "id": 226,
@@ -1604,7 +1626,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 31
+      "positionRank": 32
     },
     {
       "id": 472,
@@ -1626,7 +1648,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 32
+      "positionRank": 33
     },
     {
       "id": 233,
@@ -1648,7 +1670,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 3,
-      "positionRank": 30
+      "positionRank": 31
     },
     {
       "id": 502,
@@ -1670,7 +1692,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 33
+      "positionRank": 34
     },
     {
       "id": 183,
@@ -1714,7 +1736,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 36
+      "positionRank": 38
     },
     {
       "id": 483,
@@ -1737,6 +1759,28 @@
       "cleanSheets": 2,
       "bonus": 2,
       "positionRank": 41
+    },
+    {
+      "id": 555,
+      "name": "Silva",
+      "position": "DEF",
+      "club": "Bournemouth",
+      "clubShort": "BOU",
+      "clubCode": 91,
+      "teamId": 3,
+      "photoCode": 483067,
+      "owner": "rowan",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 27,
+      "ppg": 3.4,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 1,
+      "positionRank": 37
     },
     {
       "id": 211,
@@ -1780,7 +1824,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 40
+      "positionRank": 43
     },
     {
       "id": 88,
@@ -1802,7 +1846,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 37
+      "positionRank": 40
     },
     {
       "id": 82,
@@ -1868,7 +1912,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 2,
-      "positionRank": 41
+      "positionRank": 44
     },
     {
       "id": 377,
@@ -1891,6 +1935,28 @@
       "cleanSheets": 1,
       "bonus": 2,
       "positionRank": 42
+    },
+    {
+      "id": 61,
+      "name": "Truffert",
+      "position": "DEF",
+      "club": "Bournemouth",
+      "clubShort": "BOU",
+      "clubCode": 91,
+      "teamId": 3,
+      "photoCode": 494521,
+      "owner": "bennett",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 26,
+      "ppg": 3.3,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 2,
+      "bonus": 4,
+      "positionRank": 39
     },
     {
       "id": 101,
@@ -1934,7 +2000,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 43
+      "positionRank": 46
     },
     {
       "id": 544,
@@ -1978,7 +2044,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 1,
-      "positionRank": 47
+      "positionRank": 49
     },
     {
       "id": 552,
@@ -2022,7 +2088,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 48
+      "positionRank": 49
     },
     {
       "id": 26,
@@ -2047,28 +2113,6 @@
       "positionRank": 10
     },
     {
-      "id": 60,
-      "name": "Hill",
-      "position": "DEF",
-      "club": "Bournemouth",
-      "clubShort": "BOU",
-      "clubCode": 91,
-      "teamId": 3,
-      "photoCode": 463981,
-      "owner": "dj",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 24,
-      "ppg": 3,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 1,
-      "positionRank": 44
-    },
-    {
       "id": 200,
       "name": "Lacroix",
       "position": "DEF",
@@ -2088,7 +2132,29 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 45
+      "positionRank": 47
+    },
+    {
+      "id": 67,
+      "name": "Rayan",
+      "position": "MID",
+      "club": "Bournemouth",
+      "clubShort": "BOU",
+      "clubCode": 91,
+      "teamId": 3,
+      "photoCode": 499604,
+      "owner": "rowan",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 24,
+      "ppg": 3,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 1,
+      "positionRank": 48
     },
     {
       "id": 503,
@@ -2110,7 +2176,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 3,
-      "positionRank": 46
+      "positionRank": 48
     },
     {
       "id": 481,
@@ -2179,28 +2245,6 @@
       "positionRank": 12
     },
     {
-      "id": 67,
-      "name": "Rayan",
-      "position": "MID",
-      "club": "Bournemouth",
-      "clubShort": "BOU",
-      "clubCode": 91,
-      "teamId": 3,
-      "photoCode": 499604,
-      "owner": "rowan",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 23,
-      "ppg": 2.9,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 2,
-      "positionRank": 49
-    },
-    {
       "id": 608,
       "name": "Yalcouyé",
       "position": "MID",
@@ -2242,7 +2286,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 4,
-      "positionRank": 61
+      "positionRank": 62
     },
     {
       "id": 566,
@@ -2267,6 +2311,28 @@
       "positionRank": 13
     },
     {
+      "id": 70,
+      "name": "Kluivert",
+      "position": "MID",
+      "club": "Bournemouth",
+      "clubShort": "BOU",
+      "clubCode": 91,
+      "teamId": 3,
+      "photoCode": 222683,
+      "owner": "wallis",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-20T15:30:09.074071Z",
+      "points": 22,
+      "ppg": 3.7,
+      "goals": 1,
+      "assists": 1,
+      "cleanSheets": 3,
+      "bonus": 1,
+      "positionRank": 59
+    },
+    {
       "id": 336,
       "name": "Okafor",
       "position": "MID",
@@ -2286,7 +2352,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 1,
-      "positionRank": 60
+      "positionRank": 61
     },
     {
       "id": 110,
@@ -2330,29 +2396,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 51
-    },
-    {
-      "id": 555,
-      "name": "Silva",
-      "position": "DEF",
-      "club": "Bournemouth",
-      "clubShort": "BOU",
-      "clubCode": 91,
-      "teamId": 3,
-      "photoCode": 483067,
-      "owner": "rowan",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 22,
-      "ppg": 2.8,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 1,
-      "positionRank": 52
+      "positionRank": 53
     },
     {
       "id": 400,
@@ -2377,26 +2421,26 @@
       "positionRank": 65
     },
     {
-      "id": 70,
-      "name": "Kluivert",
-      "position": "MID",
+      "id": 57,
+      "name": "Petrović",
+      "position": "GKP",
       "club": "Bournemouth",
       "clubShort": "BOU",
       "clubCode": 91,
       "teamId": 3,
-      "photoCode": 222683,
-      "owner": "wallis",
+      "photoCode": 457569,
+      "owner": "jason",
       "status": "a",
-      "chanceOfPlaying": 100,
+      "chanceOfPlaying": null,
       "news": null,
-      "newsAdded": "2026-09-20T15:30:09.074071Z",
+      "newsAdded": null,
       "points": 21,
-      "ppg": 3.5,
-      "goals": 1,
-      "assists": 1,
+      "ppg": 2.6,
+      "goals": 0,
+      "assists": 0,
       "cleanSheets": 2,
-      "bonus": 2,
-      "positionRank": 62
+      "bonus": 0,
+      "positionRank": 14
     },
     {
       "id": 222,
@@ -2528,7 +2572,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 14
+      "positionRank": 15
     },
     {
       "id": 467,
@@ -2550,7 +2594,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 15
+      "positionRank": 16
     },
     {
       "id": 106,
@@ -2729,28 +2773,6 @@
       "positionRank": 18
     },
     {
-      "id": 61,
-      "name": "Truffert",
-      "position": "DEF",
-      "club": "Bournemouth",
-      "clubShort": "BOU",
-      "clubCode": 91,
-      "teamId": 3,
-      "photoCode": 494521,
-      "owner": "bennett",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 19,
-      "ppg": 2.4,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 2,
-      "positionRank": 57
-    },
-    {
       "id": 628,
       "name": "Barcola",
       "position": "MID",
@@ -2770,7 +2792,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 78
+      "positionRank": 79
     },
     {
       "id": 464,
@@ -2861,6 +2883,28 @@
       "positionRank": 64
     },
     {
+      "id": 412,
+      "name": "Lammens",
+      "position": "GKP",
+      "club": "Man Utd",
+      "clubShort": "MUN",
+      "clubCode": 1,
+      "teamId": 16,
+      "photoCode": 465247,
+      "owner": "wallis",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 17,
+      "ppg": 2.1,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 17
+    },
+    {
       "id": 598,
       "name": "Cherif",
       "position": "FWD",
@@ -2881,50 +2925,6 @@
       "cleanSheets": 1,
       "bonus": 3,
       "positionRank": 21
-    },
-    {
-      "id": 412,
-      "name": "Lammens",
-      "position": "GKP",
-      "club": "Man Utd",
-      "clubShort": "MUN",
-      "clubCode": 1,
-      "teamId": 16,
-      "photoCode": 465247,
-      "owner": "wallis",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 16,
-      "ppg": 2,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 17
-    },
-    {
-      "id": 57,
-      "name": "Petrović",
-      "position": "GKP",
-      "club": "Bournemouth",
-      "clubShort": "BOU",
-      "clubCode": 91,
-      "teamId": 3,
-      "photoCode": 457569,
-      "owner": "jason",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 16,
-      "ppg": 2,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 16
     },
     {
       "id": 554,
@@ -2968,7 +2968,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 66
+      "positionRank": 68
     },
     {
       "id": 167,
@@ -3012,7 +3012,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 68
+      "positionRank": 70
     },
     {
       "id": 445,
@@ -3034,7 +3034,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 70
+      "positionRank": 71
     },
     {
       "id": 149,
@@ -3056,7 +3056,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 73
+      "positionRank": 74
     },
     {
       "id": 471,
@@ -3078,7 +3078,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 74
+      "positionRank": 75
     },
     {
       "id": 465,
@@ -3188,7 +3188,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 81
+      "positionRank": 82
     },
     {
       "id": 387,
@@ -3210,7 +3210,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 80
+      "positionRank": 81
     },
     {
       "id": 16,
@@ -3232,7 +3232,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 106
+      "positionRank": 107
     },
     {
       "id": 125,
@@ -3257,6 +3257,28 @@
       "positionRank": 26
     },
     {
+      "id": 224,
+      "name": "Nketiah",
+      "position": "FWD",
+      "club": "Crystal Palace",
+      "clubShort": "CRY",
+      "clubCode": 31,
+      "teamId": 8,
+      "photoCode": 205533,
+      "owner": "wallis",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-12T14:00:09.427136Z",
+      "points": 11,
+      "ppg": 1.6,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 27
+    },
+    {
       "id": 238,
       "name": "Grealish",
       "position": "MID",
@@ -3279,28 +3301,6 @@
       "positionRank": 118
     },
     {
-      "id": 224,
-      "name": "Nketiah",
-      "position": "FWD",
-      "club": "Crystal Palace",
-      "clubShort": "CRY",
-      "clubCode": 31,
-      "teamId": 8,
-      "photoCode": 205533,
-      "owner": "wallis",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-12T14:00:09.427136Z",
-      "points": 10,
-      "ppg": 1.7,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 28
-    },
-    {
       "id": 499,
       "name": "Pedro Porro",
       "position": "DEF",
@@ -3320,7 +3320,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 91
+      "positionRank": 92
     },
     {
       "id": 25,
@@ -3894,7 +3894,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 1,
-      "positionRank": 28
+      "positionRank": 29
     },
     {
       "id": 47,
@@ -3938,7 +3938,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 34
+      "positionRank": 35
     },
     {
       "id": 176,
@@ -3960,7 +3960,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 35
+      "positionRank": 36
     },
     {
       "id": 460,
@@ -4026,7 +4026,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 3,
-      "positionRank": 39
+      "positionRank": 42
     },
     {
       "id": 254,
@@ -4048,7 +4048,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 1,
-      "positionRank": 38
+      "positionRank": 41
     },
     {
       "id": 148,
@@ -4070,7 +4070,7 @@
       "assists": 3,
       "cleanSheets": 2,
       "bonus": 2,
-      "positionRank": 42
+      "positionRank": 45
     },
     {
       "id": 595,
@@ -4092,7 +4092,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 4,
-      "positionRank": 48
+      "positionRank": 50
     },
     {
       "id": 43,
@@ -4180,7 +4180,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 49
+      "positionRank": 51
     },
     {
       "id": 242,
@@ -4290,7 +4290,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 2,
-      "positionRank": 59
+      "positionRank": 60
     },
     {
       "id": 588,
@@ -4312,7 +4312,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 53
+      "positionRank": 54
     },
     {
       "id": 37,
@@ -4334,7 +4334,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 50
+      "positionRank": 52
     },
     {
       "id": 579,
@@ -4378,7 +4378,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 56
+      "positionRank": 57
     },
     {
       "id": 91,
@@ -4400,7 +4400,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 54
+      "positionRank": 55
     },
     {
       "id": 202,
@@ -4422,7 +4422,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 55
+      "positionRank": 56
     },
     {
       "id": 290,
@@ -4557,6 +4557,28 @@
       "positionRank": 73
     },
     {
+      "id": 73,
+      "name": "Adams",
+      "position": "MID",
+      "club": "Bournemouth",
+      "clubShort": "BOU",
+      "clubCode": 91,
+      "teamId": 3,
+      "photoCode": 200785,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-15T16:30:07.029928Z",
+      "points": 18,
+      "ppg": 2.3,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 0,
+      "positionRank": 75
+    },
+    {
       "id": 632,
       "name": "Andrés",
       "position": "MID",
@@ -4576,7 +4598,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 79
+      "positionRank": 80
     },
     {
       "id": 259,
@@ -4620,7 +4642,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 75
+      "positionRank": 76
     },
     {
       "id": 563,
@@ -4642,7 +4664,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 77
+      "positionRank": 78
     },
     {
       "id": 33,
@@ -4686,7 +4708,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 76
+      "positionRank": 77
     },
     {
       "id": 313,
@@ -4708,7 +4730,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 82
+      "positionRank": 83
     },
     {
       "id": 96,
@@ -4730,7 +4752,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 80
+      "positionRank": 81
     },
     {
       "id": 522,
@@ -4752,7 +4774,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 84
+      "positionRank": 85
     },
     {
       "id": 184,
@@ -4774,7 +4796,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 81
+      "positionRank": 82
     },
     {
       "id": 345,
@@ -4796,7 +4818,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 83
+      "positionRank": 84
     },
     {
       "id": 635,
@@ -4816,28 +4838,6 @@
       "ppg": 3.4,
       "goals": 0,
       "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 85
-    },
-    {
-      "id": 73,
-      "name": "Adams",
-      "position": "MID",
-      "club": "Bournemouth",
-      "clubShort": "BOU",
-      "clubCode": 91,
-      "teamId": 3,
-      "photoCode": 200785,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-15T16:30:07.029928Z",
-      "points": 16,
-      "ppg": 2,
-      "goals": 0,
-      "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
       "positionRank": 86
@@ -4862,7 +4862,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 65
+      "positionRank": 67
     },
     {
       "id": 525,
@@ -4885,6 +4885,50 @@
       "cleanSheets": 2,
       "bonus": 0,
       "positionRank": 87
+    },
+    {
+      "id": 418,
+      "name": "Maguire",
+      "position": "DEF",
+      "club": "Man Utd",
+      "clubShort": "MUN",
+      "clubCode": 1,
+      "teamId": 16,
+      "photoCode": 95658,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 16,
+      "ppg": 2,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 66
+    },
+    {
+      "id": 64,
+      "name": "Smith",
+      "position": "DEF",
+      "club": "Bournemouth",
+      "clubShort": "BOU",
+      "clubCode": 91,
+      "teamId": 3,
+      "photoCode": 54469,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 16,
+      "ppg": 2,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 0,
+      "positionRank": 65
     },
     {
       "id": 574,
@@ -4928,7 +4972,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 71
+      "positionRank": 72
     },
     {
       "id": 459,
@@ -4997,28 +5041,6 @@
       "positionRank": 92
     },
     {
-      "id": 418,
-      "name": "Maguire",
-      "position": "DEF",
-      "club": "Man Utd",
-      "clubShort": "MUN",
-      "clubCode": 1,
-      "teamId": 16,
-      "photoCode": 95658,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 15,
-      "ppg": 1.9,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 69
-    },
-    {
       "id": 541,
       "name": "Meunier",
       "position": "DEF",
@@ -5038,7 +5060,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 72
+      "positionRank": 73
     },
     {
       "id": 545,
@@ -5082,7 +5104,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 67
+      "positionRank": 69
     },
     {
       "id": 102,
@@ -5126,7 +5148,29 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 75
+      "positionRank": 76
+    },
+    {
+      "id": 71,
+      "name": "Cook",
+      "position": "MID",
+      "club": "Bournemouth",
+      "clubShort": "BOU",
+      "clubCode": 91,
+      "teamId": 3,
+      "photoCode": 155408,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 14,
+      "ppg": 1.8,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 4,
+      "bonus": 0,
+      "positionRank": 95
     },
     {
       "id": 315,
@@ -5148,7 +5192,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 96
+      "positionRank": 97
     },
     {
       "id": 534,
@@ -5170,7 +5214,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 76
+      "positionRank": 77
     },
     {
       "id": 209,
@@ -5192,7 +5236,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 95
+      "positionRank": 96
     },
     {
       "id": 515,
@@ -5214,7 +5258,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 97
+      "positionRank": 98
     },
     {
       "id": 656,
@@ -5236,7 +5280,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 77
+      "positionRank": 78
     },
     {
       "id": 570,
@@ -5258,7 +5302,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 98
+      "positionRank": 99
     },
     {
       "id": 577,
@@ -5280,7 +5324,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 99
+      "positionRank": 100
     },
     {
       "id": 46,
@@ -5302,7 +5346,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 101
+      "positionRank": 102
     },
     {
       "id": 516,
@@ -5324,7 +5368,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 103
+      "positionRank": 104
     },
     {
       "id": 327,
@@ -5346,7 +5390,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 79
+      "positionRank": 80
     },
     {
       "id": 203,
@@ -5368,7 +5412,29 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 78
+      "positionRank": 79
+    },
+    {
+      "id": 417,
+      "name": "Dalot",
+      "position": "DEF",
+      "club": "Man Utd",
+      "clubShort": "MUN",
+      "clubCode": 1,
+      "teamId": 16,
+      "photoCode": 216051,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 13,
+      "ppg": 1.6,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 83
     },
     {
       "id": 519,
@@ -5390,7 +5456,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 104
+      "positionRank": 105
     },
     {
       "id": 161,
@@ -5412,7 +5478,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 102
+      "positionRank": 103
     },
     {
       "id": 7,
@@ -5434,7 +5500,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 100
+      "positionRank": 101
     },
     {
       "id": 644,
@@ -5456,7 +5522,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 105
+      "positionRank": 106
     },
     {
       "id": 611,
@@ -5477,50 +5543,6 @@
       "goals": 0,
       "assists": 0,
       "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 82
-    },
-    {
-      "id": 71,
-      "name": "Cook",
-      "position": "MID",
-      "club": "Bournemouth",
-      "clubShort": "BOU",
-      "clubCode": 91,
-      "teamId": 3,
-      "photoCode": 155408,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 12,
-      "ppg": 1.5,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 3,
-      "bonus": 0,
-      "positionRank": 107
-    },
-    {
-      "id": 417,
-      "name": "Dalot",
-      "position": "DEF",
-      "club": "Man Utd",
-      "clubShort": "MUN",
-      "clubCode": 1,
-      "teamId": 16,
-      "photoCode": 216051,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 12,
-      "ppg": 1.5,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 84
     },
@@ -5588,7 +5610,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 83
+      "positionRank": 85
     },
     {
       "id": 104,
@@ -5632,7 +5654,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 85
+      "positionRank": 86
     },
     {
       "id": 54,
@@ -5698,7 +5720,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 86
+      "positionRank": 87
     },
     {
       "id": 95,
@@ -5743,28 +5765,6 @@
       "cleanSheets": 1,
       "bonus": 0,
       "positionRank": 112
-    },
-    {
-      "id": 64,
-      "name": "Smith",
-      "position": "DEF",
-      "club": "Bournemouth",
-      "clubShort": "BOU",
-      "clubCode": 91,
-      "teamId": 3,
-      "photoCode": 54469,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 11,
-      "ppg": 1.4,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 87
     },
     {
       "id": 320,
@@ -5830,7 +5830,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 94
+      "positionRank": 95
     },
     {
       "id": 75,
@@ -5896,7 +5896,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 93
+      "positionRank": 94
     },
     {
       "id": 415,
@@ -6116,7 +6116,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 92
+      "positionRank": 93
     },
     {
       "id": 246,
@@ -6182,7 +6182,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 27
+      "positionRank": 28
     },
     {
       "id": 461,
@@ -6205,6 +6205,28 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 125
+    },
+    {
+      "id": 420,
+      "name": "Yoro",
+      "position": "DEF",
+      "club": "Man Utd",
+      "clubShort": "MUN",
+      "clubCode": 1,
+      "teamId": 16,
+      "photoCode": 550864,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 10,
+      "ppg": 2,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 91
     },
     {
       "id": 618,
@@ -6359,28 +6381,6 @@
       "cleanSheets": 1,
       "bonus": 0,
       "positionRank": 97
-    },
-    {
-      "id": 420,
-      "name": "Yoro",
-      "position": "DEF",
-      "club": "Man Utd",
-      "clubShort": "MUN",
-      "clubCode": 1,
-      "teamId": 16,
-      "photoCode": 550864,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 9,
-      "ppg": 1.8,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 95
     },
     {
       "id": 337,
@@ -6647,6 +6647,28 @@
       "positionRank": 134
     },
     {
+      "id": 131,
+      "name": "Baleba",
+      "position": "MID",
+      "club": "Man Utd",
+      "clubShort": "MUN",
+      "clubCode": 1,
+      "teamId": 16,
+      "photoCode": 535301,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-06T16:00:10.997714Z",
+      "points": 7,
+      "ppg": 2.3,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 136
+    },
+    {
       "id": 456,
       "name": "J.Ramsey",
       "position": "MID",
@@ -6666,7 +6688,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 138
+      "positionRank": 139
     },
     {
       "id": 406,
@@ -6688,7 +6710,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 137
+      "positionRank": 138
     },
     {
       "id": 638,
@@ -6710,7 +6732,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 139
+      "positionRank": 140
     },
     {
       "id": 241,
@@ -6732,7 +6754,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 136
+      "positionRank": 137
     },
     {
       "id": 329,
@@ -6823,26 +6845,26 @@
       "positionRank": 34
     },
     {
-      "id": 131,
-      "name": "Baleba",
+      "id": 162,
+      "name": "Andrey Santos",
       "position": "MID",
       "club": "Man Utd",
       "clubShort": "MUN",
       "clubCode": 1,
       "teamId": 16,
-      "photoCode": 535301,
+      "photoCode": 532605,
       "owner": null,
       "status": "a",
-      "chanceOfPlaying": 100,
+      "chanceOfPlaying": null,
       "news": null,
-      "newsAdded": "2026-08-06T16:00:10.997714Z",
+      "newsAdded": null,
       "points": 6,
-      "ppg": 2,
+      "ppg": 1.2,
       "goals": 0,
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 143
+      "positionRank": 145
     },
     {
       "id": 520,
@@ -6864,7 +6886,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 155
+      "positionRank": 156
     },
     {
       "id": 100,
@@ -6886,7 +6908,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 142
+      "positionRank": 143
     },
     {
       "id": 289,
@@ -6908,7 +6930,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 149
+      "positionRank": 150
     },
     {
       "id": 543,
@@ -6930,7 +6952,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 156
+      "positionRank": 157
     },
     {
       "id": 157,
@@ -6974,7 +6996,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 141
+      "positionRank": 142
     },
     {
       "id": 488,
@@ -6996,7 +7018,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 154
+      "positionRank": 155
     },
     {
       "id": 381,
@@ -7018,7 +7040,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 153
+      "positionRank": 154
     },
     {
       "id": 422,
@@ -7062,7 +7084,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 148
+      "positionRank": 149
     },
     {
       "id": 369,
@@ -7084,7 +7106,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 152
+      "positionRank": 153
     },
     {
       "id": 309,
@@ -7106,7 +7128,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 150
+      "positionRank": 151
     },
     {
       "id": 232,
@@ -7172,7 +7194,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 151
+      "positionRank": 152
     },
     {
       "id": 164,
@@ -7194,7 +7216,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 145
+      "positionRank": 146
     },
     {
       "id": 596,
@@ -7238,7 +7260,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 146
+      "positionRank": 147
     },
     {
       "id": 260,
@@ -7260,7 +7282,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 147
+      "positionRank": 148
     },
     {
       "id": 19,
@@ -7282,29 +7304,29 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 140
+      "positionRank": 141
     },
     {
-      "id": 162,
-      "name": "Andrey Santos",
+      "id": 431,
+      "name": "Amad",
       "position": "MID",
       "club": "Man Utd",
       "clubShort": "MUN",
       "clubCode": 1,
       "teamId": 16,
-      "photoCode": 532605,
+      "photoCode": 493250,
       "owner": null,
       "status": "a",
-      "chanceOfPlaying": null,
+      "chanceOfPlaying": 100,
       "news": null,
-      "newsAdded": null,
+      "newsAdded": "2026-08-22T11:00:08.617283Z",
       "points": 5,
-      "ppg": 1,
+      "ppg": 1.7,
       "goals": 0,
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 157
+      "positionRank": 161
     },
     {
       "id": 119,
@@ -7370,7 +7392,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 161
+      "positionRank": 162
     },
     {
       "id": 263,
@@ -7527,28 +7549,6 @@
       "positionRank": 39
     },
     {
-      "id": 431,
-      "name": "Amad",
-      "position": "MID",
-      "club": "Man Utd",
-      "clubShort": "MUN",
-      "clubCode": 1,
-      "teamId": 16,
-      "photoCode": 493250,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-22T11:00:08.617283Z",
-      "points": 4,
-      "ppg": 1.3,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 164
-    },
-    {
       "id": 182,
       "name": "Amenda",
       "position": "DEF",
@@ -7590,7 +7590,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 169
+      "positionRank": 170
     },
     {
       "id": 74,
@@ -7612,7 +7612,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 162
+      "positionRank": 163
     },
     {
       "id": 620,
@@ -7678,7 +7678,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 167
+      "positionRank": 168
     },
     {
       "id": 650,
@@ -7700,7 +7700,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 170
+      "positionRank": 171
     },
     {
       "id": 357,
@@ -7744,7 +7744,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 168
+      "positionRank": 169
     },
     {
       "id": 306,
@@ -7788,7 +7788,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 166
+      "positionRank": 167
     },
     {
       "id": 458,
@@ -7810,7 +7810,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 165
+      "positionRank": 166
     },
     {
       "id": 450,
@@ -7833,6 +7833,28 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 120
+    },
+    {
+      "id": 430,
+      "name": "Mount",
+      "position": "MID",
+      "club": "Man Utd",
+      "clubShort": "MUN",
+      "clubCode": 1,
+      "teamId": 16,
+      "photoCode": 184341,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-15T16:00:07.879135Z",
+      "points": 4,
+      "ppg": 1.3,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 165
     },
     {
       "id": 478,
@@ -7898,7 +7920,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 163
+      "positionRank": 164
     },
     {
       "id": 642,
@@ -7986,7 +8008,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 173
+      "positionRank": 174
     },
     {
       "id": 253,
@@ -8074,7 +8096,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 174
+      "positionRank": 175
     },
     {
       "id": 160,
@@ -8096,7 +8118,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 171
+      "positionRank": 172
     },
     {
       "id": 9,
@@ -8140,7 +8162,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 172
+      "positionRank": 173
     },
     {
       "id": 255,
@@ -8206,7 +8228,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 178
+      "positionRank": 179
     },
     {
       "id": 607,
@@ -8272,7 +8294,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 177
+      "positionRank": 178
     },
     {
       "id": 323,
@@ -8294,7 +8316,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 176
+      "positionRank": 177
     },
     {
       "id": 523,
@@ -8339,28 +8361,6 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 182
-    },
-    {
-      "id": 430,
-      "name": "Mount",
-      "position": "MID",
-      "club": "Man Utd",
-      "clubShort": "MUN",
-      "clubCode": 1,
-      "teamId": 16,
-      "photoCode": 184341,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-15T16:00:07.879135Z",
-      "points": 3,
-      "ppg": 1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 179
     },
     {
       "id": 643,
@@ -8448,7 +8448,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 175
+      "positionRank": 176
     },
     {
       "id": 575,
@@ -8759,6 +8759,28 @@
       "positionRank": 187
     },
     {
+      "id": 421,
+      "name": "Heaven",
+      "position": "DEF",
+      "club": "Man Utd",
+      "clubShort": "MUN",
+      "clubCode": 1,
+      "teamId": 16,
+      "photoCode": 606745,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-20T20:00:09.902224Z",
+      "points": 2,
+      "ppg": 0.7,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 141
+    },
+    {
       "id": 521,
       "name": "Kulusevski",
       "position": "MID",
@@ -8888,7 +8910,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 141
+      "positionRank": 142
     },
     {
       "id": 126,
@@ -9240,7 +9262,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 147
+      "positionRank": 148
     },
     {
       "id": 370,
@@ -9328,7 +9350,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 142
+      "positionRank": 143
     },
     {
       "id": 308,
@@ -9350,29 +9372,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 150
-    },
-    {
-      "id": 421,
-      "name": "Heaven",
-      "position": "DEF",
-      "club": "Man Utd",
-      "clubShort": "MUN",
-      "clubCode": 1,
-      "teamId": 16,
-      "photoCode": 606745,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-20T20:00:09.902224Z",
-      "points": 1,
-      "ppg": 0.3,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 152
+      "positionRank": 151
     },
     {
       "id": 89,
@@ -9394,7 +9394,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 144
+      "positionRank": 145
     },
     {
       "id": 576,
@@ -9482,7 +9482,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 148
+      "positionRank": 149
     },
     {
       "id": 177,
@@ -9504,7 +9504,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 145
+      "positionRank": 146
     },
     {
       "id": 435,
@@ -9548,7 +9548,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 146
+      "positionRank": 147
     },
     {
       "id": 29,
@@ -9592,7 +9592,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 149
+      "positionRank": 150
     },
     {
       "id": 578,
@@ -9724,7 +9724,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 143
+      "positionRank": 144
     },
     {
       "id": 549,
@@ -9812,7 +9812,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 151
+      "positionRank": 152
     },
     {
       "id": 135,
@@ -14743,5 +14743,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-25T15:20:05.542Z"
+  "generatedAt": "2026-10-25T15:21:14.116Z"
 }
