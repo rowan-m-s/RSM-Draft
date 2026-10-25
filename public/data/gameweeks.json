@@ -1336,16 +1336,16 @@
       "confirmExpectedUtc": "2026-10-26T16:30:00.000Z",
       "revealFromUtc": "2026-10-26T00:00:00.000Z",
       "scores": {
-        "rushy": 34,
-        "kellett": 28,
+        "rushy": 31,
+        "kellett": 29,
         "wallis": 30,
         "jls": 13,
         "paddy": 17,
-        "bennett": 50,
-        "wood": 12,
+        "bennett": 47,
+        "wood": 10,
         "rowan": 23,
         "jason": 14,
-        "dj": 39,
+        "dj": 40,
         "ollie": 31
       },
       "kochKeys": [],
@@ -1439,16 +1439,16 @@
           "element": 154
         },
         "bennett": {
-          "playerName": "Mitchell",
+          "playerName": "Araujo",
           "points": 1,
           "managerKey": "bennett",
-          "element": 204
+          "element": 580
         },
         "wood": {
-          "playerName": "Boscagli",
-          "points": 0,
+          "playerName": "Groß",
+          "points": -1,
           "managerKey": "wood",
-          "element": 114
+          "element": 124
         },
         "rowan": {
           "playerName": "Pickford",
@@ -2240,5 +2240,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-10-25T14:28:30.918Z"
+  "generatedAt": "2026-10-25T14:29:41.429Z"
 }
