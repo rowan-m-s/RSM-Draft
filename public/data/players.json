@@ -287,28 +287,6 @@
       "positionRank": 3
     },
     {
-      "id": 334,
-      "name": "Muharemović",
-      "position": "DEF",
-      "club": "Leeds",
-      "clubShort": "LEE",
-      "clubCode": 2,
-      "teamId": 13,
-      "photoCode": 522047,
-      "owner": "paddy",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 44,
-      "ppg": 5.5,
-      "goals": 0,
-      "assists": 2,
-      "cleanSheets": 3,
-      "bonus": 2,
-      "positionRank": 7
-    },
-    {
       "id": 286,
       "name": "Belloumi",
       "position": "MID",
@@ -395,6 +373,28 @@
       "cleanSheets": 0,
       "bonus": 5,
       "positionRank": 5
+    },
+    {
+      "id": 334,
+      "name": "Muharemović",
+      "position": "DEF",
+      "club": "Leeds",
+      "clubShort": "LEE",
+      "clubCode": 2,
+      "teamId": 13,
+      "photoCode": 522047,
+      "owner": "paddy",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 43,
+      "ppg": 5.4,
+      "goals": 0,
+      "assists": 2,
+      "cleanSheets": 3,
+      "bonus": 1,
+      "positionRank": 7
     },
     {
       "id": 391,
@@ -2311,6 +2311,28 @@
       "positionRank": 56
     },
     {
+      "id": 529,
+      "name": "Roefs",
+      "position": "GKP",
+      "club": "Sunderland",
+      "clubShort": "SUN",
+      "clubCode": 56,
+      "teamId": 20,
+      "photoCode": 498016,
+      "owner": "paddy",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 23,
+      "ppg": 2.9,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 2,
+      "positionRank": 13
+    },
+    {
       "id": 106,
       "name": "Thiago",
       "position": "FWD",
@@ -2440,7 +2462,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 13
+      "positionRank": 14
     },
     {
       "id": 110,
@@ -2462,7 +2484,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 14
+      "positionRank": 15
     },
     {
       "id": 93,
@@ -2638,7 +2660,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 15
+      "positionRank": 16
     },
     {
       "id": 533,
@@ -2663,28 +2685,6 @@
       "positionRank": 60
     },
     {
-      "id": 529,
-      "name": "Roefs",
-      "position": "GKP",
-      "club": "Sunderland",
-      "clubShort": "SUN",
-      "clubCode": 56,
-      "teamId": 20,
-      "photoCode": 498016,
-      "owner": "paddy",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 20,
-      "ppg": 2.5,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 0,
-      "positionRank": 17
-    },
-    {
       "id": 467,
       "name": "Sels",
       "position": "GKP",
@@ -2704,7 +2704,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 16
+      "positionRank": 17
     },
     {
       "id": 628,
@@ -5657,28 +5657,6 @@
       "positionRank": 85
     },
     {
-      "id": 539,
-      "name": "O'Nien",
-      "position": "DEF",
-      "club": "Sunderland",
-      "clubShort": "SUN",
-      "clubCode": 56,
-      "teamId": 20,
-      "photoCode": 167512,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 12,
-      "ppg": 4,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 2,
-      "positionRank": 88
-    },
-    {
       "id": 104,
       "name": "Onyeka",
       "position": "MID",
@@ -5874,7 +5852,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 89
+      "positionRank": 88
     },
     {
       "id": 419,
@@ -5896,6 +5874,28 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
+      "positionRank": 89
+    },
+    {
+      "id": 539,
+      "name": "O'Nien",
+      "position": "DEF",
+      "club": "Sunderland",
+      "clubShort": "SUN",
+      "clubCode": 56,
+      "teamId": 20,
+      "photoCode": 167512,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 11,
+      "ppg": 3.7,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 1,
       "positionRank": 90
     },
     {
@@ -14743,5 +14743,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-25T18:18:03.757Z"
+  "generatedAt": "2026-10-25T18:20:18.988Z"
 }

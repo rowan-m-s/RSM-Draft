@@ -18,8 +18,25 @@
       }
     },
     {
-      "key": "bennett",
+      "key": "paddy",
       "rank": 2,
+      "total": 370,
+      "gw": 48,
+      "month": 136,
+      "kochCount": 1,
+      "motmCount": 1,
+      "forfeits": 5,
+      "potsWon": 10,
+      "balance": 5,
+      "topPerformer": {
+        "playerName": "Cherki",
+        "points": 44,
+        "managerKey": "paddy"
+      }
+    },
+    {
+      "key": "bennett",
+      "rank": 3,
       "total": 369,
       "gw": 63,
       "month": 155,
@@ -32,23 +49,6 @@
         "playerName": "Tavernier",
         "points": 52,
         "managerKey": "bennett"
-      }
-    },
-    {
-      "key": "paddy",
-      "rank": 3,
-      "total": 368,
-      "gw": 46,
-      "month": 134,
-      "kochCount": 1,
-      "motmCount": 1,
-      "forfeits": 5,
-      "potsWon": 10,
-      "balance": 5,
-      "topPerformer": {
-        "playerName": "Muharemović",
-        "points": 44,
-        "managerKey": "paddy"
       }
     },
     {
@@ -205,7 +205,7 @@
     "displaced": "paddy",
     "changed": false
   },
-  "generatedAt": "2026-10-25T18:18:03.757Z",
+  "generatedAt": "2026-10-25T18:20:18.988Z",
   "graphics": {
     "koch": {
       "rushy": 244850,
