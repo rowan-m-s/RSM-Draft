@@ -1336,17 +1336,17 @@
       "confirmExpectedUtc": "2026-10-26T16:30:00.000Z",
       "revealFromUtc": "2026-10-26T00:00:00.000Z",
       "scores": {
-        "rushy": 40,
+        "rushy": 41,
         "kellett": 46,
-        "wallis": 35,
-        "jls": 14,
+        "wallis": 37,
+        "jls": 19,
         "paddy": 24,
-        "bennett": 54,
-        "wood": 12,
-        "rowan": 31,
-        "jason": 28,
-        "dj": 46,
-        "ollie": 33
+        "bennett": 62,
+        "wood": 14,
+        "rowan": 32,
+        "jason": 38,
+        "dj": 47,
+        "ollie": 38
       },
       "kochKeys": [],
       "charged": 0,
@@ -1367,8 +1367,8 @@
           "managerKey": "wallis"
         },
         "jls": {
-          "playerName": "Madueke",
-          "points": 3,
+          "playerName": "A.Becker",
+          "points": 6,
           "managerKey": "jls"
         },
         "paddy": {
@@ -1388,12 +1388,12 @@
         },
         "rowan": {
           "playerName": "Rayan",
-          "points": 9,
+          "points": 8,
           "managerKey": "rowan"
         },
         "jason": {
-          "playerName": "Hall",
-          "points": 7,
+          "playerName": "Virgil",
+          "points": 8,
           "managerKey": "jason"
         },
         "dj": {
@@ -1421,10 +1421,10 @@
           "element": 472
         },
         "wallis": {
-          "playerName": "Vuskovic",
-          "points": 0,
+          "playerName": "Anderson",
+          "points": 1,
           "managerKey": "wallis",
-          "element": 504
+          "element": 481
         },
         "jls": {
           "playerName": "Guéhi",
@@ -2240,5 +2240,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-10-25T15:21:14.116Z"
+  "generatedAt": "2026-10-25T15:22:23.020Z"
 }

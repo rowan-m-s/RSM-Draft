@@ -3,9 +3,9 @@
     {
       "key": "wood",
       "rank": 1,
-      "total": 384,
-      "gw": 12,
-      "month": 132,
+      "total": 386,
+      "gw": 14,
+      "month": 134,
       "kochCount": 0,
       "motmCount": 1,
       "forfeits": 0,
@@ -13,16 +13,16 @@
       "balance": 30,
       "topPerformer": {
         "playerName": "De Cuyper",
-        "points": 59,
+        "points": 60,
         "managerKey": "wood"
       }
     },
     {
       "key": "bennett",
       "rank": 2,
-      "total": 360,
-      "gw": 54,
-      "month": 146,
+      "total": 368,
+      "gw": 62,
+      "month": 154,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -37,9 +37,9 @@
     {
       "key": "jason",
       "rank": 3,
-      "total": 348,
-      "gw": 28,
-      "month": 104,
+      "total": 358,
+      "gw": 38,
+      "month": 114,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -88,9 +88,9 @@
     {
       "key": "ollie",
       "rank": 6,
-      "total": 311,
-      "gw": 33,
-      "month": 106,
+      "total": 316,
+      "gw": 38,
+      "month": 111,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -105,9 +105,9 @@
     {
       "key": "rushy",
       "rank": 7,
-      "total": 309,
-      "gw": 40,
-      "month": 110,
+      "total": 310,
+      "gw": 41,
+      "month": 111,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -122,9 +122,9 @@
     {
       "key": "wallis",
       "rank": 8,
-      "total": 307,
-      "gw": 35,
-      "month": 116,
+      "total": 309,
+      "gw": 37,
+      "month": 118,
       "kochCount": 2,
       "motmCount": 0,
       "forfeits": 10,
@@ -137,28 +137,11 @@
       }
     },
     {
-      "key": "rowan",
-      "rank": 9,
-      "total": 299,
-      "gw": 31,
-      "month": 98,
-      "kochCount": 2,
-      "motmCount": 0,
-      "forfeits": 10,
-      "potsWon": 0,
-      "balance": -10,
-      "topPerformer": {
-        "playerName": "Van Hecke",
-        "points": 38,
-        "managerKey": "rowan"
-      }
-    },
-    {
       "key": "jls",
-      "rank": 10,
-      "total": 298,
-      "gw": 14,
-      "month": 110,
+      "rank": 9,
+      "total": 303,
+      "gw": 19,
+      "month": 115,
       "kochCount": 2,
       "motmCount": 0,
       "forfeits": 10,
@@ -171,11 +154,28 @@
       }
     },
     {
+      "key": "rowan",
+      "rank": 10,
+      "total": 300,
+      "gw": 32,
+      "month": 99,
+      "kochCount": 2,
+      "motmCount": 0,
+      "forfeits": 10,
+      "potsWon": 0,
+      "balance": -10,
+      "topPerformer": {
+        "playerName": "Van Hecke",
+        "points": 38,
+        "managerKey": "rowan"
+      }
+    },
+    {
       "key": "dj",
       "rank": 11,
-      "total": 290,
-      "gw": 46,
-      "month": 112,
+      "total": 291,
+      "gw": 47,
+      "month": 113,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -195,7 +195,7 @@
     "keys": [
       "wood"
     ],
-    "total": 384,
+    "total": 386,
     "since": 4,
     "sinceByKey": {
       "wood": 4
@@ -205,7 +205,7 @@
     "displaced": "paddy",
     "changed": false
   },
-  "generatedAt": "2026-10-25T15:21:14.116Z",
+  "generatedAt": "2026-10-25T15:22:23.020Z",
   "graphics": {
     "koch": {
       "rushy": 244850,
