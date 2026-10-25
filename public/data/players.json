@@ -2003,6 +2003,28 @@
       "positionRank": 45
     },
     {
+      "id": 566,
+      "name": "Horníček",
+      "position": "GKP",
+      "club": "Newcastle",
+      "clubShort": "NEW",
+      "clubCode": 4,
+      "teamId": 17,
+      "photoCode": 470551,
+      "owner": "kellett",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 25,
+      "ppg": 3.1,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 2,
+      "positionRank": 12
+    },
+    {
       "id": 390,
       "name": "Rúben",
       "position": "DEF",
@@ -2111,28 +2133,6 @@
       "cleanSheets": 4,
       "bonus": 2,
       "positionRank": 10
-    },
-    {
-      "id": 566,
-      "name": "Horníček",
-      "position": "GKP",
-      "club": "Newcastle",
-      "clubShort": "NEW",
-      "clubCode": 4,
-      "teamId": 17,
-      "photoCode": 470551,
-      "owner": "kellett",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 24,
-      "ppg": 3,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 1,
-      "positionRank": 12
     },
     {
       "id": 200,
@@ -3320,7 +3320,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 91
+      "positionRank": 92
     },
     {
       "id": 25,
@@ -5855,6 +5855,28 @@
       "positionRank": 115
     },
     {
+      "id": 448,
+      "name": "Burn",
+      "position": "DEF",
+      "club": "Newcastle",
+      "clubShort": "NEW",
+      "clubCode": 4,
+      "teamId": 17,
+      "photoCode": 78916,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-23T18:00:08.367241Z",
+      "points": 10,
+      "ppg": 3.3,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 91
+    },
+    {
       "id": 583,
       "name": "Chavarria",
       "position": "DEF",
@@ -5874,7 +5896,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 94
+      "positionRank": 95
     },
     {
       "id": 618,
@@ -5962,7 +5984,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 93
+      "positionRank": 94
     },
     {
       "id": 415,
@@ -6138,7 +6160,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 92
+      "positionRank": 93
     },
     {
       "id": 246,
@@ -6336,7 +6358,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 95
+      "positionRank": 96
     },
     {
       "id": 506,
@@ -6358,7 +6380,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 96
+      "positionRank": 97
     },
     {
       "id": 337,
@@ -6403,28 +6425,6 @@
       "cleanSheets": 1,
       "bonus": 0,
       "positionRank": 101
-    },
-    {
-      "id": 448,
-      "name": "Burn",
-      "position": "DEF",
-      "club": "Newcastle",
-      "clubShort": "NEW",
-      "clubCode": 4,
-      "teamId": 17,
-      "photoCode": 78916,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-23T18:00:08.367241Z",
-      "points": 8,
-      "ppg": 2.7,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 100
     },
     {
       "id": 159,
@@ -6512,7 +6512,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 98
+      "positionRank": 99
     },
     {
       "id": 613,
@@ -6556,7 +6556,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 97
+      "positionRank": 98
     },
     {
       "id": 631,
@@ -6600,7 +6600,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 99
+      "positionRank": 100
     },
     {
       "id": 462,
@@ -14743,5 +14743,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-25T15:29:17.779Z"
+  "generatedAt": "2026-10-25T15:30:26.387Z"
 }
