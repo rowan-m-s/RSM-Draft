@@ -1708,7 +1708,7 @@
         ]
       },
       "114": {
-        "total": 0,
+        "total": -1,
         "components": [
           {
             "stat": "minutes",
@@ -1720,6 +1720,12 @@
             "stat": "goals_conceded",
             "name": "Goals conceded",
             "value": 2,
+            "points": -1
+          },
+          {
+            "stat": "yellow_cards",
+            "name": "Yellow cards",
+            "value": 1,
             "points": -1
           }
         ]
@@ -2184,5 +2190,5 @@
       }
     }
   },
-  "generatedAt": "2026-10-25T14:46:59.828Z"
+  "generatedAt": "2026-10-25T14:50:25.782Z"
 }

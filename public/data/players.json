@@ -815,28 +815,6 @@
       "positionRank": 13
     },
     {
-      "id": 114,
-      "name": "Boscagli",
-      "position": "DEF",
-      "club": "Brighton",
-      "clubShort": "BHA",
-      "clubCode": 36,
-      "teamId": 5,
-      "photoCode": 204120,
-      "owner": "wood",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 34,
-      "ppg": 4.3,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 5,
-      "bonus": 1,
-      "positionRank": 14
-    },
-    {
       "id": 332,
       "name": "Justin",
       "position": "DEF",
@@ -856,7 +834,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 4,
-      "positionRank": 15
+      "positionRank": 14
     },
     {
       "id": 268,
@@ -922,7 +900,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 16
+      "positionRank": 15
     },
     {
       "id": 166,
@@ -1011,6 +989,28 @@
       "cleanSheets": 3,
       "bonus": 1,
       "positionRank": 17
+    },
+    {
+      "id": 114,
+      "name": "Boscagli",
+      "position": "DEF",
+      "club": "Brighton",
+      "clubShort": "BHA",
+      "clubCode": 36,
+      "teamId": 5,
+      "photoCode": 204120,
+      "owner": "wood",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 33,
+      "ppg": 4.1,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 5,
+      "bonus": 1,
+      "positionRank": 16
     },
     {
       "id": 346,
@@ -2968,7 +2968,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 66
+      "positionRank": 65
     },
     {
       "id": 167,
@@ -3012,7 +3012,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 68
+      "positionRank": 67
     },
     {
       "id": 445,
@@ -4818,7 +4818,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 65
+      "positionRank": 64
     },
     {
       "id": 525,
@@ -4841,28 +4841,6 @@
       "cleanSheets": 2,
       "bonus": 0,
       "positionRank": 86
-    },
-    {
-      "id": 418,
-      "name": "Maguire",
-      "position": "DEF",
-      "club": "Man Utd",
-      "clubShort": "MUN",
-      "clubCode": 1,
-      "teamId": 16,
-      "photoCode": 95658,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 16,
-      "ppg": 2,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 64
     },
     {
       "id": 574,
@@ -4906,7 +4884,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 69
+      "positionRank": 68
     },
     {
       "id": 474,
@@ -4997,6 +4975,28 @@
       "positionRank": 91
     },
     {
+      "id": 418,
+      "name": "Maguire",
+      "position": "DEF",
+      "club": "Man Utd",
+      "clubShort": "MUN",
+      "clubCode": 1,
+      "teamId": 16,
+      "photoCode": 95658,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 15,
+      "ppg": 1.9,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 69
+    },
+    {
       "id": 541,
       "name": "Meunier",
       "position": "DEF",
@@ -5082,7 +5082,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 67
+      "positionRank": 66
     },
     {
       "id": 102,
@@ -14743,5 +14743,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-25T14:48:08.679Z"
+  "generatedAt": "2026-10-25T14:50:25.782Z"
 }
