@@ -2509,28 +2509,6 @@
       "positionRank": 64
     },
     {
-      "id": 529,
-      "name": "Roefs",
-      "position": "GKP",
-      "club": "Sunderland",
-      "clubShort": "SUN",
-      "clubCode": 56,
-      "teamId": 20,
-      "photoCode": 498016,
-      "owner": "paddy",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 21,
-      "ppg": 2.6,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 1,
-      "positionRank": 15
-    },
-    {
       "id": 222,
       "name": "Strand Larsen",
       "position": "FWD",
@@ -2660,7 +2638,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 16
+      "positionRank": 15
     },
     {
       "id": 533,
@@ -2685,6 +2663,28 @@
       "positionRank": 60
     },
     {
+      "id": 529,
+      "name": "Roefs",
+      "position": "GKP",
+      "club": "Sunderland",
+      "clubShort": "SUN",
+      "clubCode": 56,
+      "teamId": 20,
+      "photoCode": 498016,
+      "owner": "paddy",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 20,
+      "ppg": 2.5,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 0,
+      "positionRank": 17
+    },
+    {
       "id": 467,
       "name": "Sels",
       "position": "GKP",
@@ -2704,7 +2704,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 17
+      "positionRank": 16
     },
     {
       "id": 628,
@@ -3320,7 +3320,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 92
+      "positionRank": 93
     },
     {
       "id": 25,
@@ -5657,6 +5657,28 @@
       "positionRank": 85
     },
     {
+      "id": 539,
+      "name": "O'Nien",
+      "position": "DEF",
+      "club": "Sunderland",
+      "clubShort": "SUN",
+      "clubCode": 56,
+      "teamId": 20,
+      "photoCode": 167512,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 12,
+      "ppg": 4,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 2,
+      "positionRank": 88
+    },
+    {
       "id": 104,
       "name": "Onyeka",
       "position": "MID",
@@ -5852,7 +5874,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 88
+      "positionRank": 89
     },
     {
       "id": 419,
@@ -5874,7 +5896,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 89
+      "positionRank": 90
     },
     {
       "id": 429,
@@ -6006,7 +6028,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 90
+      "positionRank": 91
     },
     {
       "id": 581,
@@ -6163,28 +6185,6 @@
       "positionRank": 120
     },
     {
-      "id": 539,
-      "name": "O'Nien",
-      "position": "DEF",
-      "club": "Sunderland",
-      "clubShort": "SUN",
-      "clubCode": 56,
-      "teamId": 20,
-      "photoCode": 167512,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 10,
-      "ppg": 3.3,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 93
-    },
-    {
       "id": 246,
       "name": "Röhl",
       "position": "MID",
@@ -6292,7 +6292,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 91
+      "positionRank": 92
     },
     {
       "id": 51,
@@ -14743,5 +14743,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-25T18:10:08.172Z"
+  "generatedAt": "2026-10-25T18:11:16.296Z"
 }
