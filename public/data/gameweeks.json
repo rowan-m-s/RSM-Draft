@@ -1317,17 +1317,17 @@
       "scoresProvisional": true,
       "kochReady": true,
       "yetByManager": {
-        "rushy": 3,
-        "kellett": 7,
-        "wallis": 6,
-        "jls": 4,
-        "paddy": 4,
-        "bennett": 4,
-        "wood": 7,
-        "rowan": 7,
-        "jason": 7,
-        "dj": 7,
-        "ollie": 4
+        "rushy": 0,
+        "kellett": 1,
+        "wallis": 1,
+        "jls": 2,
+        "paddy": 3,
+        "bennett": 0,
+        "wood": 1,
+        "rowan": 2,
+        "jason": 0,
+        "dj": 0,
+        "ollie": 0
       },
       "fixturesRemaining": true,
       "dataChecked": false,
@@ -1338,15 +1338,15 @@
       "scores": {
         "rushy": 24,
         "kellett": 24,
-        "wallis": 27,
+        "wallis": 29,
         "jls": 11,
         "paddy": 16,
-        "bennett": 33,
-        "wood": 9,
-        "rowan": 12,
-        "jason": 9,
-        "dj": 25,
-        "ollie": 29
+        "bennett": 34,
+        "wood": 10,
+        "rowan": 13,
+        "jason": 10,
+        "dj": 26,
+        "ollie": 30
       },
       "kochKeys": [],
       "charged": 0,
@@ -1439,10 +1439,10 @@
           "element": 154
         },
         "bennett": {
-          "playerName": "Tarkowski",
-          "points": 2,
+          "playerName": "Tavernier",
+          "points": 1,
           "managerKey": "bennett",
-          "element": 229
+          "element": 68
         },
         "wood": {
           "playerName": "Donnarumma",
@@ -1457,16 +1457,16 @@
           "element": 226
         },
         "jason": {
-          "playerName": "Lacroix",
-          "points": 3,
+          "playerName": "Petrović",
+          "points": 1,
           "managerKey": "jason",
-          "element": 200
+          "element": 57
         },
         "dj": {
-          "playerName": "Muñoz",
-          "points": 7,
+          "playerName": "Hill",
+          "points": 1,
           "managerKey": "dj",
-          "element": 201
+          "element": 60
         },
         "ollie": {
           "playerName": "Emersonn",
@@ -2240,5 +2240,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-10-25T13:29:14.082Z"
+  "generatedAt": "2026-10-25T14:03:01.310Z"
 }
