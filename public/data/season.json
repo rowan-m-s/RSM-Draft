@@ -3,9 +3,9 @@
     {
       "key": "wood",
       "rank": 1,
-      "total": 387,
-      "gw": 15,
-      "month": 135,
+      "total": 392,
+      "gw": 20,
+      "month": 140,
       "kochCount": 0,
       "motmCount": 1,
       "forfeits": 0,
@@ -120,8 +120,42 @@
       }
     },
     {
-      "key": "jls",
+      "key": "rowan",
       "rank": 8,
+      "total": 305,
+      "gw": 37,
+      "month": 104,
+      "kochCount": 2,
+      "motmCount": 0,
+      "forfeits": 10,
+      "potsWon": 0,
+      "balance": -10,
+      "topPerformer": {
+        "playerName": "Van Hecke",
+        "points": 38,
+        "managerKey": "rowan"
+      }
+    },
+    {
+      "key": "rushy",
+      "rank": 9,
+      "total": 303,
+      "gw": 34,
+      "month": 104,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "Rogers",
+        "points": 41,
+        "managerKey": "rushy"
+      }
+    },
+    {
+      "key": "jls",
+      "rank": 9,
       "total": 303,
       "gw": 19,
       "month": 115,
@@ -137,45 +171,11 @@
       }
     },
     {
-      "key": "rowan",
-      "rank": 8,
-      "total": 303,
-      "gw": 35,
-      "month": 102,
-      "kochCount": 2,
-      "motmCount": 0,
-      "forfeits": 10,
-      "potsWon": 0,
-      "balance": -10,
-      "topPerformer": {
-        "playerName": "Van Hecke",
-        "points": 38,
-        "managerKey": "rowan"
-      }
-    },
-    {
-      "key": "rushy",
-      "rank": 10,
-      "total": 302,
-      "gw": 33,
-      "month": 103,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "Rogers",
-        "points": 41,
-        "managerKey": "rushy"
-      }
-    },
-    {
       "key": "dj",
       "rank": 11,
-      "total": 295,
-      "gw": 51,
-      "month": 117,
+      "total": 293,
+      "gw": 49,
+      "month": 115,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -195,7 +195,7 @@
     "keys": [
       "wood"
     ],
-    "total": 387,
+    "total": 392,
     "since": 4,
     "sinceByKey": {
       "wood": 4
@@ -205,7 +205,7 @@
     "displaced": "paddy",
     "changed": false
   },
-  "generatedAt": "2026-10-25T15:31:35.375Z",
+  "generatedAt": "2026-10-25T15:32:44.492Z",
   "graphics": {
     "koch": {
       "rushy": 244850,
