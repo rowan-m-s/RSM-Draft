@@ -2660,7 +2660,7 @@
       "assists": 2,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 76
+      "positionRank": 77
     },
     {
       "id": 155,
@@ -2748,7 +2748,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 75
+      "positionRank": 76
     },
     {
       "id": 389,
@@ -2814,7 +2814,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 18
+      "positionRank": 19
     },
     {
       "id": 464,
@@ -2830,13 +2830,13 @@
       "chanceOfPlaying": null,
       "news": null,
       "newsAdded": null,
-      "points": 18,
-      "ppg": 2.6,
+      "points": 19,
+      "ppg": 2.4,
       "goals": 1,
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 19
+      "positionRank": 18
     },
     {
       "id": 32,
@@ -3213,6 +3213,28 @@
       "positionRank": 81
     },
     {
+      "id": 125,
+      "name": "Georginio",
+      "position": "FWD",
+      "club": "Brighton",
+      "clubShort": "BHA",
+      "clubCode": 36,
+      "teamId": 5,
+      "photoCode": 463067,
+      "owner": "jason",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-26T16:00:07.608056Z",
+      "points": 12,
+      "ppg": 2.4,
+      "goals": 0,
+      "assists": 2,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 25
+    },
+    {
       "id": 16,
       "name": "Madueke",
       "position": "MID",
@@ -3233,28 +3255,6 @@
       "cleanSheets": 1,
       "bonus": 0,
       "positionRank": 108
-    },
-    {
-      "id": 125,
-      "name": "Georginio",
-      "position": "FWD",
-      "club": "Brighton",
-      "clubShort": "BHA",
-      "clubCode": 36,
-      "teamId": 5,
-      "photoCode": 463067,
-      "owner": "jason",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-26T16:00:07.608056Z",
-      "points": 11,
-      "ppg": 2.8,
-      "goals": 0,
-      "assists": 2,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 26
     },
     {
       "id": 224,
@@ -4535,6 +4535,28 @@
       "positionRank": 58
     },
     {
+      "id": 454,
+      "name": "Elanga",
+      "position": "MID",
+      "club": "Newcastle",
+      "clubShort": "NEW",
+      "clubCode": 4,
+      "teamId": 17,
+      "photoCode": 449434,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 75,
+      "news": null,
+      "newsAdded": "2026-09-14T20:00:09.505598Z",
+      "points": 19,
+      "ppg": 4.8,
+      "goals": 2,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 2,
+      "positionRank": 75
+    },
+    {
       "id": 405,
       "name": "N.Gonzalez",
       "position": "MID",
@@ -4598,7 +4620,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 77
+      "positionRank": 78
     },
     {
       "id": 632,
@@ -4642,7 +4664,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 78
+      "positionRank": 79
     },
     {
       "id": 259,
@@ -4665,28 +4687,6 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 63
-    },
-    {
-      "id": 454,
-      "name": "Elanga",
-      "position": "MID",
-      "club": "Newcastle",
-      "clubShort": "NEW",
-      "clubCode": 4,
-      "teamId": 17,
-      "photoCode": 449434,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 75,
-      "news": null,
-      "newsAdded": "2026-09-14T20:00:09.505598Z",
-      "points": 18,
-      "ppg": 6,
-      "goals": 2,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 2,
-      "positionRank": 79
     },
     {
       "id": 563,
@@ -5610,7 +5610,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 25
+      "positionRank": 26
     },
     {
       "id": 11,
@@ -6559,6 +6559,28 @@
       "positionRank": 97
     },
     {
+      "id": 456,
+      "name": "J.Ramsey",
+      "position": "MID",
+      "club": "Newcastle",
+      "clubShort": "NEW",
+      "clubCode": 4,
+      "teamId": 17,
+      "photoCode": 232653,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 0,
+      "news": null,
+      "newsAdded": "2026-09-15T09:00:08.191022Z",
+      "points": 8,
+      "ppg": 2,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 134
+    },
+    {
       "id": 631,
       "name": "Mbaye",
       "position": "MID",
@@ -6578,7 +6600,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 135
+      "positionRank": 136
     },
     {
       "id": 269,
@@ -6622,7 +6644,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 134
+      "positionRank": 135
     },
     {
       "id": 131,
@@ -6644,7 +6666,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 137
+      "positionRank": 138
     },
     {
       "id": 72,
@@ -6666,7 +6688,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 136
+      "positionRank": 137
     },
     {
       "id": 585,
@@ -6691,28 +6713,6 @@
       "positionRank": 107
     },
     {
-      "id": 456,
-      "name": "J.Ramsey",
-      "position": "MID",
-      "club": "Newcastle",
-      "clubShort": "NEW",
-      "clubCode": 4,
-      "teamId": 17,
-      "photoCode": 232653,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 0,
-      "news": null,
-      "newsAdded": "2026-09-15T09:00:08.191022Z",
-      "points": 7,
-      "ppg": 2.3,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 140
-    },
-    {
       "id": 406,
       "name": "Kovačić",
       "position": "MID",
@@ -6732,7 +6732,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 139
+      "positionRank": 140
     },
     {
       "id": 638,
@@ -6776,7 +6776,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 138
+      "positionRank": 139
     },
     {
       "id": 329,
@@ -14743,5 +14743,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-25T15:35:01.966Z"
+  "generatedAt": "2026-10-25T15:36:10.682Z"
 }
