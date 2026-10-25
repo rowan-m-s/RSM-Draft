@@ -441,6 +441,28 @@
       "positionRank": 6
     },
     {
+      "id": 453,
+      "name": "Barnes",
+      "position": "MID",
+      "club": "Newcastle",
+      "clubShort": "NEW",
+      "clubCode": 4,
+      "teamId": 17,
+      "photoCode": 201666,
+      "owner": "paddy",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 40,
+      "ppg": 5,
+      "goals": 2,
+      "assists": 3,
+      "cleanSheets": 1,
+      "bonus": 5,
+      "positionRank": 8
+    },
+    {
       "id": 286,
       "name": "Belloumi",
       "position": "MID",
@@ -504,7 +526,7 @@
       "assists": 4,
       "cleanSheets": 5,
       "bonus": 5,
-      "positionRank": 8
+      "positionRank": 9
     },
     {
       "id": 109,
@@ -548,7 +570,7 @@
       "assists": 3,
       "cleanSheets": 1,
       "bonus": 7,
-      "positionRank": 10
+      "positionRank": 11
     },
     {
       "id": 79,
@@ -592,7 +614,7 @@
       "assists": 3,
       "cleanSheets": 5,
       "bonus": 0,
-      "positionRank": 9
+      "positionRank": 10
     },
     {
       "id": 112,
@@ -636,7 +658,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 6,
-      "positionRank": 14
+      "positionRank": 15
     },
     {
       "id": 388,
@@ -661,28 +683,6 @@
       "positionRank": 11
     },
     {
-      "id": 449,
-      "name": "Hall",
-      "position": "DEF",
-      "club": "Newcastle",
-      "clubShort": "NEW",
-      "clubCode": 4,
-      "teamId": 17,
-      "photoCode": 487838,
-      "owner": "jason",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 37,
-      "ppg": 4.6,
-      "goals": 1,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 7,
-      "positionRank": 12
-    },
-    {
       "id": 156,
       "name": "Neto",
       "position": "MID",
@@ -702,7 +702,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 13
+      "positionRank": 14
     },
     {
       "id": 154,
@@ -724,7 +724,7 @@
       "assists": 4,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 12
+      "positionRank": 13
     },
     {
       "id": 12,
@@ -746,7 +746,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 4,
-      "positionRank": 11
+      "positionRank": 12
     },
     {
       "id": 397,
@@ -768,7 +768,29 @@
       "assists": 3,
       "cleanSheets": 3,
       "bonus": 2,
-      "positionRank": 15
+      "positionRank": 16
+    },
+    {
+      "id": 449,
+      "name": "Hall",
+      "position": "DEF",
+      "club": "Newcastle",
+      "clubShort": "NEW",
+      "clubCode": 4,
+      "teamId": 17,
+      "photoCode": 487838,
+      "owner": "jason",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 36,
+      "ppg": 4.5,
+      "goals": 1,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 6,
+      "positionRank": 12
     },
     {
       "id": 15,
@@ -790,7 +812,7 @@
       "assists": 0,
       "cleanSheets": 5,
       "bonus": 6,
-      "positionRank": 16
+      "positionRank": 17
     },
     {
       "id": 258,
@@ -856,7 +878,7 @@
       "assists": 1,
       "cleanSheets": 5,
       "bonus": 3,
-      "positionRank": 19
+      "positionRank": 20
     },
     {
       "id": 250,
@@ -943,28 +965,6 @@
       "goals": 3,
       "assists": 1,
       "cleanSheets": 0,
-      "bonus": 3,
-      "positionRank": 22
-    },
-    {
-      "id": 453,
-      "name": "Barnes",
-      "position": "MID",
-      "club": "Newcastle",
-      "clubShort": "NEW",
-      "clubCode": 4,
-      "teamId": 17,
-      "photoCode": 201666,
-      "owner": "paddy",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 33,
-      "ppg": 4.1,
-      "goals": 1,
-      "assists": 3,
-      "cleanSheets": 1,
       "bonus": 3,
       "positionRank": 23
     },
@@ -1054,7 +1054,7 @@
       "assists": 3,
       "cleanSheets": 2,
       "bonus": 5,
-      "positionRank": 21
+      "positionRank": 22
     },
     {
       "id": 237,
@@ -1076,7 +1076,7 @@
       "assists": 4,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 20
+      "positionRank": 21
     },
     {
       "id": 480,
@@ -1519,28 +1519,6 @@
       "positionRank": 26
     },
     {
-      "id": 204,
-      "name": "Mitchell",
-      "position": "DEF",
-      "club": "Crystal Palace",
-      "clubShort": "CRY",
-      "clubCode": 31,
-      "teamId": 8,
-      "photoCode": 244723,
-      "owner": "bennett",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 29,
-      "ppg": 3.6,
-      "goals": 2,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 3,
-      "positionRank": 28
-    },
-    {
       "id": 226,
       "name": "Pickford",
       "position": "GKP",
@@ -1605,6 +1583,28 @@
       "cleanSheets": 0,
       "bonus": 1,
       "positionRank": 31
+    },
+    {
+      "id": 204,
+      "name": "Mitchell",
+      "position": "DEF",
+      "club": "Crystal Palace",
+      "clubShort": "CRY",
+      "clubCode": 31,
+      "teamId": 8,
+      "photoCode": 244723,
+      "owner": "bennett",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 28,
+      "ppg": 3.5,
+      "goals": 2,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 3,
+      "positionRank": 28
     },
     {
       "id": 472,
@@ -2531,28 +2531,6 @@
       "positionRank": 14
     },
     {
-      "id": 628,
-      "name": "Barcola",
-      "position": "MID",
-      "club": "Liverpool",
-      "clubShort": "LIV",
-      "clubCode": 14,
-      "teamId": 14,
-      "photoCode": 482616,
-      "owner": "dj",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 19,
-      "ppg": 3.2,
-      "goals": 0,
-      "assists": 2,
-      "cleanSheets": 2,
-      "bonus": 2,
-      "positionRank": 74
-    },
-    {
       "id": 155,
       "name": "Enzo",
       "position": "MID",
@@ -2751,6 +2729,28 @@
       "positionRank": 55
     },
     {
+      "id": 628,
+      "name": "Barcola",
+      "position": "MID",
+      "club": "Liverpool",
+      "clubShort": "LIV",
+      "clubCode": 14,
+      "teamId": 14,
+      "photoCode": 482616,
+      "owner": "dj",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 18,
+      "ppg": 3,
+      "goals": 0,
+      "assists": 2,
+      "cleanSheets": 2,
+      "bonus": 1,
+      "positionRank": 77
+    },
+    {
       "id": 464,
       "name": "Wissa",
       "position": "FWD",
@@ -2946,7 +2946,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 87
+      "positionRank": 88
     },
     {
       "id": 151,
@@ -2968,7 +2968,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 65
+      "positionRank": 66
     },
     {
       "id": 167,
@@ -3012,7 +3012,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 67
+      "positionRank": 68
     },
     {
       "id": 445,
@@ -3034,7 +3034,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 69
+      "positionRank": 70
     },
     {
       "id": 149,
@@ -3056,7 +3056,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 72
+      "positionRank": 73
     },
     {
       "id": 471,
@@ -3078,7 +3078,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 73
+      "positionRank": 74
     },
     {
       "id": 529,
@@ -3101,28 +3101,6 @@
       "cleanSheets": 1,
       "bonus": 0,
       "positionRank": 18
-    },
-    {
-      "id": 199,
-      "name": "Benitez",
-      "position": "GKP",
-      "club": "Crystal Palace",
-      "clubShort": "CRY",
-      "clubCode": 31,
-      "teamId": 8,
-      "photoCode": 121709,
-      "owner": "dj",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 13,
-      "ppg": 2.6,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 19
     },
     {
       "id": 646,
@@ -3166,7 +3144,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 81
+      "positionRank": 80
     },
     {
       "id": 387,
@@ -3188,7 +3166,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 80
+      "positionRank": 79
     },
     {
       "id": 465,
@@ -3211,6 +3189,28 @@
       "cleanSheets": 0,
       "bonus": 3,
       "positionRank": 23
+    },
+    {
+      "id": 199,
+      "name": "Benitez",
+      "position": "GKP",
+      "club": "Crystal Palace",
+      "clubShort": "CRY",
+      "clubCode": 31,
+      "teamId": 8,
+      "photoCode": 121709,
+      "owner": "dj",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 12,
+      "ppg": 2.4,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 19
     },
     {
       "id": 16,
@@ -3540,7 +3540,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 121
+      "positionRank": 120
     },
     {
       "id": 208,
@@ -3652,7 +3652,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 5,
-      "positionRank": 18
+      "positionRank": 19
     },
     {
       "id": 45,
@@ -3674,7 +3674,7 @@
       "assists": 3,
       "cleanSheets": 2,
       "bonus": 5,
-      "positionRank": 17
+      "positionRank": 18
     },
     {
       "id": 129,
@@ -4227,28 +4227,6 @@
       "positionRank": 58
     },
     {
-      "id": 588,
-      "name": "Khalaili",
-      "position": "DEF",
-      "club": "Crystal Palace",
-      "clubShort": "CRY",
-      "clubCode": 31,
-      "teamId": 8,
-      "photoCode": 570794,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-04T22:00:08.963040Z",
-      "points": 22,
-      "ppg": 2.8,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 51
-    },
-    {
       "id": 37,
       "name": "Lindelöf",
       "position": "DEF",
@@ -4315,6 +4293,28 @@
       "positionRank": 65
     },
     {
+      "id": 588,
+      "name": "Khalaili",
+      "position": "DEF",
+      "club": "Crystal Palace",
+      "clubShort": "CRY",
+      "clubCode": 31,
+      "teamId": 8,
+      "photoCode": 570794,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-04T22:00:08.963040Z",
+      "points": 21,
+      "ppg": 2.6,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 52
+    },
+    {
       "id": 592,
       "name": "Ouattara",
       "position": "DEF",
@@ -4334,7 +4334,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 54
+      "positionRank": 53
     },
     {
       "id": 91,
@@ -4356,29 +4356,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 52
-    },
-    {
-      "id": 202,
-      "name": "Richards",
-      "position": "DEF",
-      "club": "Crystal Palace",
-      "clubShort": "CRY",
-      "clubCode": 31,
-      "teamId": 8,
-      "photoCode": 427623,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 21,
-      "ppg": 2.6,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 53
+      "positionRank": 51
     },
     {
       "id": 368,
@@ -4423,6 +4401,28 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 68
+    },
+    {
+      "id": 202,
+      "name": "Richards",
+      "position": "DEF",
+      "club": "Crystal Palace",
+      "clubShort": "CRY",
+      "clubCode": 31,
+      "teamId": 8,
+      "photoCode": 427623,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 20,
+      "ppg": 2.5,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 54
     },
     {
       "id": 514,
@@ -4576,7 +4576,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 75
+      "positionRank": 74
     },
     {
       "id": 563,
@@ -4598,7 +4598,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 77
+      "positionRank": 76
     },
     {
       "id": 33,
@@ -4642,7 +4642,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 76
+      "positionRank": 75
     },
     {
       "id": 313,
@@ -4689,6 +4689,28 @@
       "positionRank": 79
     },
     {
+      "id": 595,
+      "name": "Dedić",
+      "position": "DEF",
+      "club": "Newcastle",
+      "clubShort": "NEW",
+      "clubCode": 4,
+      "teamId": 17,
+      "photoCode": 463726,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-17T14:30:09.823731Z",
+      "points": 17,
+      "ppg": 2.8,
+      "goals": 0,
+      "assists": 2,
+      "cleanSheets": 1,
+      "bonus": 2,
+      "positionRank": 64
+    },
+    {
       "id": 522,
       "name": "Gray",
       "position": "MID",
@@ -4708,7 +4730,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 83
+      "positionRank": 84
     },
     {
       "id": 184,
@@ -4731,6 +4753,28 @@
       "cleanSheets": 1,
       "bonus": 0,
       "positionRank": 80
+    },
+    {
+      "id": 405,
+      "name": "N.Gonzalez",
+      "position": "MID",
+      "club": "Newcastle",
+      "clubShort": "NEW",
+      "clubCode": 4,
+      "teamId": 17,
+      "photoCode": 465694,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-14T21:30:07.343728Z",
+      "points": 17,
+      "ppg": 2.8,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 2,
+      "positionRank": 83
     },
     {
       "id": 345,
@@ -4774,7 +4818,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 84
+      "positionRank": 85
     },
     {
       "id": 73,
@@ -4796,7 +4840,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 85
+      "positionRank": 86
     },
     {
       "id": 599,
@@ -4818,7 +4862,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 64
+      "positionRank": 65
     },
     {
       "id": 525,
@@ -4840,7 +4884,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 86
+      "positionRank": 87
     },
     {
       "id": 574,
@@ -4862,7 +4906,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 88
+      "positionRank": 89
     },
     {
       "id": 474,
@@ -4884,7 +4928,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 70
+      "positionRank": 71
     },
     {
       "id": 459,
@@ -4928,7 +4972,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 90
+      "positionRank": 91
     },
     {
       "id": 372,
@@ -4950,7 +4994,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 91
+      "positionRank": 92
     },
     {
       "id": 418,
@@ -4972,7 +5016,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 68
+      "positionRank": 69
     },
     {
       "id": 541,
@@ -4994,29 +5038,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 71
-    },
-    {
-      "id": 405,
-      "name": "N.Gonzalez",
-      "position": "MID",
-      "club": "Newcastle",
-      "clubShort": "NEW",
-      "clubCode": 4,
-      "teamId": 17,
-      "photoCode": 465694,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-14T21:30:07.343728Z",
-      "points": 15,
-      "ppg": 2.5,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 2,
-      "positionRank": 92
+      "positionRank": 72
     },
     {
       "id": 545,
@@ -5060,7 +5082,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 66
+      "positionRank": 67
     },
     {
       "id": 102,
@@ -5082,7 +5104,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 89
+      "positionRank": 90
     },
     {
       "id": 532,
@@ -5104,29 +5126,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 74
-    },
-    {
-      "id": 595,
-      "name": "Dedić",
-      "position": "DEF",
-      "club": "Newcastle",
-      "clubShort": "NEW",
-      "clubCode": 4,
-      "teamId": 17,
-      "photoCode": 463726,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-17T14:30:09.823731Z",
-      "points": 14,
-      "ppg": 2.3,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 2,
-      "positionRank": 76
+      "positionRank": 75
     },
     {
       "id": 315,
@@ -5170,7 +5170,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 75
+      "positionRank": 76
     },
     {
       "id": 209,
@@ -5324,28 +5324,6 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 79
-    },
-    {
-      "id": 203,
-      "name": "Canvot",
-      "position": "DEF",
-      "club": "Crystal Palace",
-      "clubShort": "CRY",
-      "clubCode": 31,
-      "teamId": 8,
-      "photoCode": 651426,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 13,
-      "ppg": 1.9,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
       "positionRank": 78
     },
     {
@@ -5456,7 +5434,29 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 82
+      "positionRank": 81
+    },
+    {
+      "id": 203,
+      "name": "Canvot",
+      "position": "DEF",
+      "club": "Crystal Palace",
+      "clubShort": "CRY",
+      "clubCode": 31,
+      "teamId": 8,
+      "photoCode": 651426,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 12,
+      "ppg": 1.7,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 83
     },
     {
       "id": 71,
@@ -5566,7 +5566,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 83
+      "positionRank": 82
     },
     {
       "id": 104,
@@ -5896,7 +5896,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 125
+      "positionRank": 124
     },
     {
       "id": 340,
@@ -5941,28 +5941,6 @@
       "cleanSheets": 0,
       "bonus": 2,
       "positionRank": 118
-    },
-    {
-      "id": 457,
-      "name": "J.Murphy",
-      "position": "MID",
-      "club": "Newcastle",
-      "clubShort": "NEW",
-      "clubCode": 4,
-      "teamId": 17,
-      "photoCode": 114243,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 10,
-      "ppg": 1.4,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 0,
-      "bonus": 2,
-      "positionRank": 123
     },
     {
       "id": 213,
@@ -6160,7 +6138,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 124
+      "positionRank": 123
     },
     {
       "id": 618,
@@ -6204,7 +6182,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 127
+      "positionRank": 126
     },
     {
       "id": 371,
@@ -6226,6 +6204,28 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
+      "positionRank": 128
+    },
+    {
+      "id": 457,
+      "name": "J.Murphy",
+      "position": "MID",
+      "club": "Newcastle",
+      "clubShort": "NEW",
+      "clubCode": 4,
+      "teamId": 17,
+      "photoCode": 114243,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 9,
+      "ppg": 1.3,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 0,
+      "bonus": 1,
       "positionRank": 129
     },
     {
@@ -6248,7 +6248,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 128
+      "positionRank": 127
     },
     {
       "id": 17,
@@ -6270,7 +6270,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 126
+      "positionRank": 125
     },
     {
       "id": 347,
@@ -7524,7 +7524,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 115
+      "positionRank": 114
     },
     {
       "id": 616,
@@ -7590,29 +7590,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 120
-    },
-    {
-      "id": 153,
-      "name": "Disasi",
-      "position": "DEF",
-      "club": "Crystal Palace",
-      "clubShort": "CRY",
-      "clubCode": 31,
-      "teamId": 8,
-      "photoCode": 220362,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-12T15:30:09.445078Z",
-      "points": 4,
-      "ppg": 1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 114
+      "positionRank": 119
     },
     {
       "id": 487,
@@ -7678,7 +7656,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 117
+      "positionRank": 116
     },
     {
       "id": 589,
@@ -7722,7 +7700,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 116
+      "positionRank": 115
     },
     {
       "id": 482,
@@ -7766,7 +7744,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 118
+      "positionRank": 117
     },
     {
       "id": 478,
@@ -7788,7 +7766,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 119
+      "positionRank": 118
     },
     {
       "id": 81,
@@ -8033,6 +8011,28 @@
       "positionRank": 173
     },
     {
+      "id": 153,
+      "name": "Disasi",
+      "position": "DEF",
+      "club": "Crystal Palace",
+      "clubShort": "CRY",
+      "clubCode": 31,
+      "teamId": 8,
+      "photoCode": 220362,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-12T15:30:09.445078Z",
+      "points": 3,
+      "ppg": 0.8,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 124
+    },
+    {
       "id": 160,
       "name": "Garnacho",
       "position": "MID",
@@ -8074,7 +8074,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 122
+      "positionRank": 121
     },
     {
       "id": 212,
@@ -8140,7 +8140,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 123
+      "positionRank": 122
     },
     {
       "id": 343,
@@ -8448,7 +8448,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 124
+      "positionRank": 123
     },
     {
       "id": 108,
@@ -14743,5 +14743,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-25T15:15:28.675Z"
+  "generatedAt": "2026-10-25T15:16:37.466Z"
 }
