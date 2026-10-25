@@ -5679,6 +5679,28 @@
       "positionRank": 86
     },
     {
+      "id": 75,
+      "name": "Christie",
+      "position": "MID",
+      "club": "Bournemouth",
+      "clubShort": "BOU",
+      "clubCode": 91,
+      "teamId": 3,
+      "photoCode": 158499,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-07-24T17:30:10.035483Z",
+      "points": 11,
+      "ppg": 1.6,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 112
+    },
+    {
       "id": 54,
       "name": "Gomes",
       "position": "MID",
@@ -5720,7 +5742,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 112
+      "positionRank": 113
     },
     {
       "id": 36,
@@ -5786,7 +5808,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 113
+      "positionRank": 114
     },
     {
       "id": 320,
@@ -5830,7 +5852,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 114
+      "positionRank": 115
     },
     {
       "id": 583,
@@ -5875,28 +5897,6 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 128
-    },
-    {
-      "id": 75,
-      "name": "Christie",
-      "position": "MID",
-      "club": "Bournemouth",
-      "clubShort": "BOU",
-      "clubCode": 91,
-      "teamId": 3,
-      "photoCode": 158499,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-07-24T17:30:10.035483Z",
-      "points": 10,
-      "ppg": 1.7,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 115
     },
     {
       "id": 84,
@@ -14743,5 +14743,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-25T15:33:53.323Z"
+  "generatedAt": "2026-10-25T15:35:01.966Z"
 }
