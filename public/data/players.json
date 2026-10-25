@@ -375,6 +375,28 @@
       "positionRank": 7
     },
     {
+      "id": 286,
+      "name": "Belloumi",
+      "position": "MID",
+      "club": "Hull City",
+      "clubShort": "HUL",
+      "clubCode": 88,
+      "teamId": 11,
+      "photoCode": 540324,
+      "owner": "wood",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 41,
+      "ppg": 5.1,
+      "goals": 3,
+      "assists": 2,
+      "cleanSheets": 3,
+      "bonus": 3,
+      "positionRank": 7
+    },
+    {
       "id": 40,
       "name": "Rogers",
       "position": "MID",
@@ -417,28 +439,6 @@
       "cleanSheets": 2,
       "bonus": 6,
       "positionRank": 6
-    },
-    {
-      "id": 286,
-      "name": "Belloumi",
-      "position": "MID",
-      "club": "Hull City",
-      "clubShort": "HUL",
-      "clubCode": 88,
-      "teamId": 11,
-      "photoCode": 540324,
-      "owner": "wood",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 40,
-      "ppg": 5,
-      "goals": 3,
-      "assists": 2,
-      "cleanSheets": 3,
-      "bonus": 2,
-      "positionRank": 7
     },
     {
       "id": 571,
@@ -1079,28 +1079,6 @@
       "positionRank": 20
     },
     {
-      "id": 279,
-      "name": "Ajayi",
-      "position": "DEF",
-      "club": "Hull City",
-      "clubShort": "HUL",
-      "clubCode": 88,
-      "teamId": 11,
-      "photoCode": 146426,
-      "owner": "kellett",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-22T17:30:07.668197Z",
-      "points": 32,
-      "ppg": 4,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 3,
-      "bonus": 3,
-      "positionRank": 20
-    },
-    {
       "id": 480,
       "name": "Gibbs-White",
       "position": "MID",
@@ -1211,6 +1189,28 @@
       "positionRank": 7
     },
     {
+      "id": 279,
+      "name": "Ajayi",
+      "position": "DEF",
+      "club": "Hull City",
+      "clubShort": "HUL",
+      "clubCode": 88,
+      "teamId": 11,
+      "photoCode": 146426,
+      "owner": "kellett",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-22T17:30:07.668197Z",
+      "points": 31,
+      "ppg": 3.9,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 3,
+      "bonus": 2,
+      "positionRank": 22
+    },
+    {
       "id": 87,
       "name": "Ajer",
       "position": "DEF",
@@ -1230,7 +1230,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 21
+      "positionRank": 20
     },
     {
       "id": 230,
@@ -1252,7 +1252,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 22
+      "positionRank": 21
     },
     {
       "id": 316,
@@ -1695,28 +1695,6 @@
       "positionRank": 38
     },
     {
-      "id": 211,
-      "name": "Yeremy",
-      "position": "MID",
-      "club": "Crystal Palace",
-      "clubShort": "CRY",
-      "clubCode": 31,
-      "teamId": 8,
-      "photoCode": 488024,
-      "owner": "dj",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 28,
-      "ppg": 3.5,
-      "goals": 1,
-      "assists": 2,
-      "cleanSheets": 1,
-      "bonus": 5,
-      "positionRank": 39
-    },
-    {
       "id": 640,
       "name": "Affengruber",
       "position": "DEF",
@@ -1759,6 +1737,28 @@
       "cleanSheets": 2,
       "bonus": 2,
       "positionRank": 40
+    },
+    {
+      "id": 211,
+      "name": "Yeremy",
+      "position": "MID",
+      "club": "Crystal Palace",
+      "clubShort": "CRY",
+      "clubCode": 31,
+      "teamId": 8,
+      "photoCode": 488024,
+      "owner": "dj",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 27,
+      "ppg": 3.4,
+      "goals": 1,
+      "assists": 2,
+      "cleanSheets": 1,
+      "bonus": 4,
+      "positionRank": 39
     },
     {
       "id": 447,
@@ -3034,7 +3034,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 70
+      "positionRank": 69
     },
     {
       "id": 149,
@@ -3056,7 +3056,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 73
+      "positionRank": 72
     },
     {
       "id": 471,
@@ -4909,28 +4909,6 @@
       "positionRank": 89
     },
     {
-      "id": 203,
-      "name": "Canvot",
-      "position": "DEF",
-      "club": "Crystal Palace",
-      "clubShort": "CRY",
-      "clubCode": 31,
-      "teamId": 8,
-      "photoCode": 651426,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 15,
-      "ppg": 2.1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 2,
-      "positionRank": 69
-    },
-    {
       "id": 474,
       "name": "Jair Cunha",
       "position": "DEF",
@@ -4950,7 +4928,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 71
+      "positionRank": 70
     },
     {
       "id": 459,
@@ -5038,7 +5016,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 72
+      "positionRank": 71
     },
     {
       "id": 545,
@@ -5127,6 +5105,28 @@
       "cleanSheets": 1,
       "bonus": 0,
       "positionRank": 75
+    },
+    {
+      "id": 203,
+      "name": "Canvot",
+      "position": "DEF",
+      "club": "Crystal Palace",
+      "clubShort": "CRY",
+      "clubCode": 31,
+      "teamId": 8,
+      "photoCode": 651426,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 14,
+      "ppg": 2,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 1,
+      "positionRank": 73
     },
     {
       "id": 595,
@@ -6336,7 +6336,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 132
+      "positionRank": 133
     },
     {
       "id": 473,
@@ -6490,7 +6490,29 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 134
+      "positionRank": 135
+    },
+    {
+      "id": 241,
+      "name": "McNeil",
+      "position": "MID",
+      "club": "Crystal Palace",
+      "clubShort": "CRY",
+      "clubCode": 31,
+      "teamId": 8,
+      "photoCode": 433154,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 8,
+      "ppg": 1.6,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 2,
+      "positionRank": 132
     },
     {
       "id": 269,
@@ -6534,7 +6556,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 133
+      "positionRank": 134
     },
     {
       "id": 90,
@@ -6578,7 +6600,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 136
+      "positionRank": 137
     },
     {
       "id": 406,
@@ -6600,7 +6622,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 135
+      "positionRank": 136
     },
     {
       "id": 638,
@@ -6622,7 +6644,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 137
+      "positionRank": 138
     },
     {
       "id": 329,
@@ -6732,7 +6754,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 141
+      "positionRank": 142
     },
     {
       "id": 520,
@@ -6776,7 +6798,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 140
+      "positionRank": 141
     },
     {
       "id": 289,
@@ -6842,7 +6864,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 142
+      "positionRank": 143
     },
     {
       "id": 72,
@@ -6864,7 +6886,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 139
+      "positionRank": 140
     },
     {
       "id": 421,
@@ -6975,28 +6997,6 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 108
-    },
-    {
-      "id": 241,
-      "name": "McNeil",
-      "position": "MID",
-      "club": "Crystal Palace",
-      "clubShort": "CRY",
-      "clubCode": 31,
-      "teamId": 8,
-      "photoCode": 433154,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 6,
-      "ppg": 1.2,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 145
     },
     {
       "id": 287,
@@ -7150,7 +7150,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 143
+      "positionRank": 144
     },
     {
       "id": 596,
@@ -7194,7 +7194,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 144
+      "positionRank": 145
     },
     {
       "id": 260,
@@ -7238,7 +7238,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 138
+      "positionRank": 139
     },
     {
       "id": 162,
@@ -14743,5 +14743,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-25T14:36:39.423Z"
+  "generatedAt": "2026-10-25T14:37:48.437Z"
 }
