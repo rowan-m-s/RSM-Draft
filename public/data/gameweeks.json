@@ -1336,24 +1336,24 @@
       "confirmExpectedUtc": "2026-10-26T16:30:00.000Z",
       "revealFromUtc": "2026-10-26T00:00:00.000Z",
       "scores": {
-        "rushy": 37,
-        "kellett": 30,
-        "wallis": 31,
+        "rushy": 36,
+        "kellett": 29,
+        "wallis": 30,
         "jls": 13,
         "paddy": 17,
-        "bennett": 42,
-        "wood": 16,
-        "rowan": 17,
+        "bennett": 47,
+        "wood": 13,
+        "rowan": 16,
         "jason": 14,
-        "dj": 33,
+        "dj": 37,
         "ollie": 31
       },
       "kochKeys": [],
       "charged": 0,
       "topPerformerByManager": {
         "rushy": {
-          "playerName": "Wirtz",
-          "points": 9,
+          "playerName": "N.Williams",
+          "points": 8,
           "managerKey": "rushy"
         },
         "kellett": {
@@ -1421,10 +1421,10 @@
           "element": 472
         },
         "wallis": {
-          "playerName": "Anderson",
-          "points": 1,
+          "playerName": "Vuskovic",
+          "points": 0,
           "managerKey": "wallis",
-          "element": 481
+          "element": 504
         },
         "jls": {
           "playerName": "Guéhi",
@@ -1439,16 +1439,16 @@
           "element": 154
         },
         "bennett": {
-          "playerName": "Isak",
+          "playerName": "Mitchell",
           "points": 1,
           "managerKey": "bennett",
-          "element": 379
+          "element": 204
         },
         "wood": {
-          "playerName": "Donnarumma",
-          "points": 1,
+          "playerName": "Boscagli",
+          "points": 0,
           "managerKey": "wood",
-          "element": 384
+          "element": 114
         },
         "rowan": {
           "playerName": "Pickford",
@@ -1463,10 +1463,10 @@
           "element": 449
         },
         "dj": {
-          "playerName": "Barcola",
+          "playerName": "Benitez",
           "points": 1,
           "managerKey": "dj",
-          "element": 628
+          "element": 199
         },
         "ollie": {
           "playerName": "Emersonn",
@@ -1481,7 +1481,7 @@
         "wallis": null,
         "jls": null,
         "paddy": 244851,
-        "bennett": 219168,
+        "bennett": null,
         "wood": null,
         "rowan": null,
         "jason": null,
@@ -2240,5 +2240,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-10-25T14:22:43.125Z"
+  "generatedAt": "2026-10-25T14:23:54.481Z"
 }
