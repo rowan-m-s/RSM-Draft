@@ -287,6 +287,28 @@
       "positionRank": 3
     },
     {
+      "id": 334,
+      "name": "Muharemović",
+      "position": "DEF",
+      "club": "Leeds",
+      "clubShort": "LEE",
+      "clubCode": 2,
+      "teamId": 13,
+      "photoCode": 522047,
+      "owner": "paddy",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 44,
+      "ppg": 5.5,
+      "goals": 0,
+      "assists": 2,
+      "cleanSheets": 3,
+      "bonus": 2,
+      "positionRank": 7
+    },
+    {
       "id": 286,
       "name": "Belloumi",
       "position": "MID",
@@ -373,28 +395,6 @@
       "cleanSheets": 0,
       "bonus": 5,
       "positionRank": 5
-    },
-    {
-      "id": 334,
-      "name": "Muharemović",
-      "position": "DEF",
-      "club": "Leeds",
-      "clubShort": "LEE",
-      "clubCode": 2,
-      "teamId": 13,
-      "photoCode": 522047,
-      "owner": "paddy",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 43,
-      "ppg": 5.4,
-      "goals": 0,
-      "assists": 2,
-      "cleanSheets": 3,
-      "bonus": 1,
-      "positionRank": 7
     },
     {
       "id": 391,
@@ -2396,7 +2396,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 56
+      "positionRank": 55
     },
     {
       "id": 70,
@@ -2507,28 +2507,6 @@
       "cleanSheets": 0,
       "bonus": 4,
       "positionRank": 64
-    },
-    {
-      "id": 529,
-      "name": "Roefs",
-      "position": "GKP",
-      "club": "Sunderland",
-      "clubShort": "SUN",
-      "clubCode": 56,
-      "teamId": 20,
-      "photoCode": 498016,
-      "owner": "paddy",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 21,
-      "ppg": 2.6,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 1,
-      "positionRank": 15
     },
     {
       "id": 222,
@@ -2660,7 +2638,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 16
+      "positionRank": 15
     },
     {
       "id": 533,
@@ -2685,6 +2663,28 @@
       "positionRank": 60
     },
     {
+      "id": 529,
+      "name": "Roefs",
+      "position": "GKP",
+      "club": "Sunderland",
+      "clubShort": "SUN",
+      "clubCode": 56,
+      "teamId": 20,
+      "photoCode": 498016,
+      "owner": "paddy",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 20,
+      "ppg": 2.5,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 0,
+      "positionRank": 17
+    },
+    {
       "id": 467,
       "name": "Sels",
       "position": "GKP",
@@ -2704,7 +2704,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 17
+      "positionRank": 16
     },
     {
       "id": 628,
@@ -4293,28 +4293,6 @@
       "positionRank": 53
     },
     {
-      "id": 327,
-      "name": "Bijol",
-      "position": "DEF",
-      "club": "Leeds",
-      "clubShort": "LEE",
-      "clubCode": 2,
-      "teamId": 13,
-      "photoCode": 434752,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 22,
-      "ppg": 4.4,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 3,
-      "positionRank": 55
-    },
-    {
       "id": 37,
       "name": "Lindelöf",
       "position": "DEF",
@@ -4335,6 +4313,28 @@
       "cleanSheets": 2,
       "bonus": 1,
       "positionRank": 53
+    },
+    {
+      "id": 327,
+      "name": "Bijol",
+      "position": "DEF",
+      "club": "Leeds",
+      "clubShort": "LEE",
+      "clubCode": 2,
+      "teamId": 13,
+      "photoCode": 434752,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 21,
+      "ppg": 4.2,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 2,
+      "positionRank": 57
     },
     {
       "id": 579,
@@ -4444,7 +4444,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 57
+      "positionRank": 56
     },
     {
       "id": 368,
@@ -7678,7 +7678,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 172
+      "positionRank": 173
     },
     {
       "id": 74,
@@ -7744,7 +7744,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 169
+      "positionRank": 170
     },
     {
       "id": 650,
@@ -7766,7 +7766,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 173
+      "positionRank": 174
     },
     {
       "id": 357,
@@ -7810,7 +7810,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 171
+      "positionRank": 172
     },
     {
       "id": 306,
@@ -7854,7 +7854,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 168
+      "positionRank": 169
     },
     {
       "id": 458,
@@ -7876,7 +7876,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 167
+      "positionRank": 168
     },
     {
       "id": 450,
@@ -7901,6 +7901,28 @@
       "positionRank": 122
     },
     {
+      "id": 339,
+      "name": "Longstaff",
+      "position": "MID",
+      "club": "Leeds",
+      "clubShort": "LEE",
+      "clubCode": 2,
+      "teamId": 13,
+      "photoCode": 180135,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 4,
+      "ppg": 1,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 166
+    },
+    {
       "id": 561,
       "name": "Morita",
       "position": "MID",
@@ -7920,7 +7942,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 170
+      "positionRank": 171
     },
     {
       "id": 430,
@@ -7942,7 +7964,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 166
+      "positionRank": 167
     },
     {
       "id": 478,
@@ -8140,7 +8162,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 176
+      "positionRank": 177
     },
     {
       "id": 253,
@@ -8228,7 +8250,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 177
+      "positionRank": 178
     },
     {
       "id": 160,
@@ -8250,7 +8272,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 174
+      "positionRank": 175
     },
     {
       "id": 9,
@@ -8294,7 +8316,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 175
+      "positionRank": 176
     },
     {
       "id": 255,
@@ -8407,28 +8429,6 @@
       "positionRank": 45
     },
     {
-      "id": 339,
-      "name": "Longstaff",
-      "position": "MID",
-      "club": "Leeds",
-      "clubShort": "LEE",
-      "clubCode": 2,
-      "teamId": 13,
-      "photoCode": 180135,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 3,
-      "ppg": 1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 180
-    },
-    {
       "id": 323,
       "name": "McAteer",
       "position": "MID",
@@ -8448,7 +8448,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 179
+      "positionRank": 180
     },
     {
       "id": 523,
@@ -8514,7 +8514,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 178
+      "positionRank": 179
     },
     {
       "id": 575,
@@ -14743,5 +14743,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-25T18:15:47.453Z"
+  "generatedAt": "2026-10-25T18:18:03.757Z"
 }
