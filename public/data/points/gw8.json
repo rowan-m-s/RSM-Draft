@@ -2096,7 +2096,7 @@
         ]
       },
       "580": {
-        "total": 8,
+        "total": 10,
         "components": [
           {
             "stat": "minutes",
@@ -2114,6 +2114,12 @@
             "stat": "bonus",
             "name": "Bonus",
             "value": 2,
+            "points": 2
+          },
+          {
+            "stat": "defensive_contribution",
+            "name": "Defensive Contribution",
+            "value": 11,
             "points": 2
           }
         ]
@@ -2155,7 +2161,7 @@
     },
     "79": {
       "57": {
-        "total": 6,
+        "total": 7,
         "components": [
           {
             "stat": "minutes",
@@ -2168,6 +2174,12 @@
             "name": "Clean sheets",
             "value": 1,
             "points": 4
+          },
+          {
+            "stat": "saves",
+            "name": "Saves",
+            "value": 3,
+            "points": 1
           }
         ]
       },
@@ -2468,5 +2480,5 @@
       }
     }
   },
-  "generatedAt": "2026-10-25T15:53:24.855Z"
+  "generatedAt": "2026-10-25T15:55:44.639Z"
 }
