@@ -133,6 +133,28 @@
       "positionRank": 3
     },
     {
+      "id": 330,
+      "name": "Bogle",
+      "position": "DEF",
+      "club": "Leeds",
+      "clubShort": "LEE",
+      "clubCode": 2,
+      "teamId": 13,
+      "photoCode": 226182,
+      "owner": "jls",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 51,
+      "ppg": 6.4,
+      "goals": 2,
+      "assists": 0,
+      "cleanSheets": 5,
+      "bonus": 7,
+      "positionRank": 4
+    },
+    {
       "id": 379,
       "name": "Isak",
       "position": "FWD",
@@ -153,28 +175,6 @@
       "cleanSheets": 4,
       "bonus": 14,
       "positionRank": 2
-    },
-    {
-      "id": 330,
-      "name": "Bogle",
-      "position": "DEF",
-      "club": "Leeds",
-      "clubShort": "LEE",
-      "clubCode": 2,
-      "teamId": 13,
-      "photoCode": 226182,
-      "owner": "jls",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 50,
-      "ppg": 6.3,
-      "goals": 2,
-      "assists": 0,
-      "cleanSheets": 5,
-      "bonus": 6,
-      "positionRank": 4
     },
     {
       "id": 1,
@@ -14743,5 +14743,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-25T17:56:19.685Z"
+  "generatedAt": "2026-10-25T18:00:50.741Z"
 }
