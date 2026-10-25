@@ -485,28 +485,6 @@
       "positionRank": 7
     },
     {
-      "id": 334,
-      "name": "Muharemović",
-      "position": "DEF",
-      "club": "Leeds",
-      "clubShort": "LEE",
-      "clubCode": 2,
-      "teamId": 13,
-      "photoCode": 522047,
-      "owner": "paddy",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 41,
-      "ppg": 5.1,
-      "goals": 0,
-      "assists": 2,
-      "cleanSheets": 3,
-      "bonus": 1,
-      "positionRank": 9
-    },
-    {
       "id": 40,
       "name": "Rogers",
       "position": "MID",
@@ -592,6 +570,28 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 4,
+      "positionRank": 9
+    },
+    {
+      "id": 334,
+      "name": "Muharemović",
+      "position": "DEF",
+      "club": "Leeds",
+      "clubShort": "LEE",
+      "clubCode": 2,
+      "teamId": 13,
+      "photoCode": 522047,
+      "owner": "paddy",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 40,
+      "ppg": 5,
+      "goals": 0,
+      "assists": 2,
+      "cleanSheets": 3,
+      "bonus": 0,
       "positionRank": 10
     },
     {
@@ -14743,5 +14743,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-25T18:03:05.705Z"
+  "generatedAt": "2026-10-25T18:05:24.665Z"
 }
