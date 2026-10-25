@@ -287,6 +287,28 @@
       "positionRank": 3
     },
     {
+      "id": 286,
+      "name": "Belloumi",
+      "position": "MID",
+      "club": "Hull City",
+      "clubShort": "HUL",
+      "clubCode": 88,
+      "teamId": 11,
+      "photoCode": 540324,
+      "owner": "wood",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 43,
+      "ppg": 5.4,
+      "goals": 3,
+      "assists": 2,
+      "cleanSheets": 3,
+      "bonus": 2,
+      "positionRank": 4
+    },
+    {
       "id": 138,
       "name": "Kostoulas",
       "position": "FWD",
@@ -328,7 +350,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 5,
-      "positionRank": 4
+      "positionRank": 5
     },
     {
       "id": 391,
@@ -372,7 +394,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 6,
-      "positionRank": 5
+      "positionRank": 6
     },
     {
       "id": 571,
@@ -419,28 +441,6 @@
       "positionRank": 7
     },
     {
-      "id": 286,
-      "name": "Belloumi",
-      "position": "MID",
-      "club": "Hull City",
-      "clubShort": "HUL",
-      "clubCode": 88,
-      "teamId": 11,
-      "photoCode": 540324,
-      "owner": "wood",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 41,
-      "ppg": 5.1,
-      "goals": 3,
-      "assists": 2,
-      "cleanSheets": 3,
-      "bonus": 2,
-      "positionRank": 7
-    },
-    {
       "id": 449,
       "name": "Hall",
       "position": "DEF",
@@ -482,7 +482,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 6
+      "positionRank": 7
     },
     {
       "id": 453,
@@ -14743,5 +14743,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-25T15:28:09.084Z"
+  "generatedAt": "2026-10-25T15:29:17.779Z"
 }
