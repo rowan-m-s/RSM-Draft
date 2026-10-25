@@ -80,12 +80,12 @@
       "chanceOfPlaying": null,
       "news": null,
       "newsAdded": null,
-      "points": 51,
-      "ppg": 6.4,
+      "points": 52,
+      "ppg": 6.5,
       "goals": 1,
       "assists": 0,
       "cleanSheets": 5,
-      "bonus": 4,
+      "bonus": 5,
       "positionRank": 2
     },
     {
@@ -397,28 +397,6 @@
       "positionRank": 4
     },
     {
-      "id": 31,
-      "name": "Konsa",
-      "position": "DEF",
-      "club": "Arsenal",
-      "clubShort": "ARS",
-      "clubCode": 3,
-      "teamId": 1,
-      "photoCode": 199798,
-      "owner": "kellett",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-05T09:30:09.853316Z",
-      "points": 40,
-      "ppg": 5.7,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 3,
-      "bonus": 6,
-      "positionRank": 9
-    },
-    {
       "id": 94,
       "name": "Schade",
       "position": "MID",
@@ -461,6 +439,28 @@
       "cleanSheets": 3,
       "bonus": 2,
       "positionRank": 8
+    },
+    {
+      "id": 31,
+      "name": "Konsa",
+      "position": "DEF",
+      "club": "Arsenal",
+      "clubShort": "ARS",
+      "clubCode": 3,
+      "teamId": 1,
+      "photoCode": 199798,
+      "owner": "kellett",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-05T09:30:09.853316Z",
+      "points": 39,
+      "ppg": 5.6,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 3,
+      "bonus": 5,
+      "positionRank": 9
     },
     {
       "id": 13,
@@ -14743,5 +14743,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-24T22:48:37.834Z"
+  "generatedAt": "2026-10-25T02:43:06.146Z"
 }

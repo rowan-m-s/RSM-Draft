@@ -31,7 +31,7 @@
         ]
       },
       "4": {
-        "total": 16,
+        "total": 17,
         "components": [
           {
             "stat": "minutes",
@@ -54,13 +54,13 @@
           {
             "stat": "bonus",
             "name": "Bonus",
-            "value": 2,
-            "points": 2
+            "value": 3,
+            "points": 3
           },
           {
             "stat": "defensive_contribution",
             "name": "Defensive Contribution",
-            "value": 12,
+            "value": 14,
             "points": 2
           }
         ]
@@ -210,7 +210,7 @@
         ]
       },
       "31": {
-        "total": 15,
+        "total": 14,
         "components": [
           {
             "stat": "minutes",
@@ -233,8 +233,8 @@
           {
             "stat": "bonus",
             "name": "Bonus",
-            "value": 3,
-            "points": 3
+            "value": 2,
+            "points": 2
           }
         ]
       },
@@ -1725,5 +1725,5 @@
       }
     }
   },
-  "generatedAt": "2026-10-24T22:48:37.834Z"
+  "generatedAt": "2026-10-25T02:43:06.146Z"
 }
