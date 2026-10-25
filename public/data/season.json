@@ -20,9 +20,9 @@
     {
       "key": "bennett",
       "rank": 2,
-      "total": 351,
-      "gw": 45,
-      "month": 137,
+      "total": 350,
+      "gw": 44,
+      "month": 136,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -86,8 +86,25 @@
       }
     },
     {
-      "key": "kellett",
+      "key": "wallis",
       "rank": 6,
+      "total": 307,
+      "gw": 35,
+      "month": 116,
+      "kochCount": 2,
+      "motmCount": 0,
+      "forfeits": 10,
+      "potsWon": 0,
+      "balance": -10,
+      "topPerformer": {
+        "playerName": "Gabriel",
+        "points": 52,
+        "managerKey": "wallis"
+      }
+    },
+    {
+      "key": "kellett",
+      "rank": 7,
       "total": 306,
       "gw": 28,
       "month": 109,
@@ -103,25 +120,25 @@
       }
     },
     {
-      "key": "wallis",
-      "rank": 7,
-      "total": 302,
-      "gw": 30,
-      "month": 111,
+      "key": "rowan",
+      "rank": 8,
+      "total": 300,
+      "gw": 32,
+      "month": 99,
       "kochCount": 2,
       "motmCount": 0,
       "forfeits": 10,
       "potsWon": 0,
       "balance": -10,
       "topPerformer": {
-        "playerName": "Gabriel",
-        "points": 52,
-        "managerKey": "wallis"
+        "playerName": "Van Hecke",
+        "points": 38,
+        "managerKey": "rowan"
       }
     },
     {
       "key": "rushy",
-      "rank": 8,
+      "rank": 9,
       "total": 299,
       "gw": 30,
       "month": 100,
@@ -138,7 +155,7 @@
     },
     {
       "key": "jls",
-      "rank": 9,
+      "rank": 10,
       "total": 297,
       "gw": 13,
       "month": 109,
@@ -154,28 +171,11 @@
       }
     },
     {
-      "key": "rowan",
-      "rank": 10,
-      "total": 292,
-      "gw": 24,
-      "month": 91,
-      "kochCount": 2,
-      "motmCount": 0,
-      "forfeits": 10,
-      "potsWon": 0,
-      "balance": -10,
-      "topPerformer": {
-        "playerName": "Van Hecke",
-        "points": 38,
-        "managerKey": "rowan"
-      }
-    },
-    {
       "key": "dj",
       "rank": 11,
-      "total": 284,
-      "gw": 40,
-      "month": 106,
+      "total": 281,
+      "gw": 37,
+      "month": 103,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -205,7 +205,7 @@
     "displaced": "paddy",
     "changed": false
   },
-  "generatedAt": "2026-10-25T14:40:07.025Z",
+  "generatedAt": "2026-10-25T14:41:15.663Z",
   "graphics": {
     "koch": {
       "rushy": 244850,
