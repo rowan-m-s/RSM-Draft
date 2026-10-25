@@ -1473,7 +1473,7 @@
           {
             "stat": "defensive_contribution",
             "name": "Defensive Contribution",
-            "value": 10,
+            "value": 11,
             "points": 2
           }
         ]
@@ -1585,7 +1585,7 @@
         ]
       },
       "571": {
-        "total": 3,
+        "total": 4,
         "components": [
           {
             "stat": "minutes",
@@ -1597,6 +1597,12 @@
             "stat": "saves",
             "name": "Saves",
             "value": 5,
+            "points": 1
+          },
+          {
+            "stat": "bonus",
+            "name": "Bonus",
+            "value": 1,
             "points": 1
           }
         ]
@@ -2462,5 +2468,5 @@
       }
     }
   },
-  "generatedAt": "2026-10-25T15:52:16.191Z"
+  "generatedAt": "2026-10-25T15:53:24.855Z"
 }
