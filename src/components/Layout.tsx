@@ -1,6 +1,6 @@
 import { Link, NavLink, Outlet, ScrollRestoration } from 'react-router-dom'
 import { useDataState } from '../data'
-import { Freshness } from './Freshness'
+import { Freshness, StalenessAlert } from './Freshness'
 import { Reveal } from './Reveal'
 import { ReconciliationAlert } from './ReconciliationAlert'
 import { ManagerAvatar } from './Img'
@@ -163,6 +163,7 @@ export function Layout() {
       {/* The §4 safety net: a Koch mismatch once FPL confirms, full width,
           above everything — money is already out the door by the time this
           can fire, so it does not get to be a sidebar detail. */}
+      <StalenessAlert />
       {data && <ReconciliationAlert data={data} />}
 
       <div className="min-h-dvh lg:flex">

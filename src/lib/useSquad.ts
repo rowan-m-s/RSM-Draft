@@ -13,7 +13,22 @@ import type { FixturesFile, PointsFile, SquadFile } from '../types'
  * A missing squad file is an expected state, not an error: picks do not exist
  * until a deadline has passed. The slider only offers weeks that have one, so
  * the page should only meet a missing file if the data is mid-update.
+ *
+ * Fetched the same way as the main dataset (see data.tsx's comment for the
+ * full reasoning): raw.githubusercontent.com in production, so a data commit
+ * publishes itself with no redeploy, and same-origin in dev. This file used
+ * to call asset(path) directly and was missed when that migration happened —
+ * fixtures and squads kept reading whatever was last baked into a code
+ * deploy, frozen for as long as nothing else forced one, which is exactly
+ * the staleness that migration was meant to end.
  */
+
+const REPO_RAW_BASE = 'https://raw.githubusercontent.com/rowan-m-s/RSM-Draft/main/public'
+
+function dataUrl(path: string): string {
+  if (import.meta.env.DEV) return asset(path)
+  return `${REPO_RAW_BASE}/${path}?t=${Date.now()}`
+}
 
 const cache = new Map<string, unknown>()
 
@@ -21,18 +36,22 @@ async function loadJson<T>(path: string): Promise<T | null> {
   if (cache.has(path)) return cache.get(path) as T
 
   // Revalidated on every page load, as the main dataset is; see data.tsx.
-  const response = await fetch(asset(path), { cache: 'no-cache' })
+  const response = await fetch(dataUrl(path), { cache: 'no-cache' })
 
-  // A missing file is an expected state, not an error. Two shapes of missing:
-  // a real 404 (what GitHub Pages sends), and a single-page-app fallback that
-  // answers 200 with index.html (what the dev server sends). Parsing the
-  // second as JSON throws a confusing syntax error, so check the type.
-  const isJson = (response.headers.get('content-type') ?? '').includes('json')
-  if (!response.ok || !isJson) {
-    if (response.status === 404 || !isJson) {
-      cache.set(path, null)
-      return null
-    }
+  // A missing file is an expected state, not an error. In production this
+  // fetches raw.githubusercontent.com, which answers a real 404 for anything
+  // absent and serves every file, present or not, as text/plain regardless of
+  // extension — checking content-type there would misread every real file as
+  // missing. In dev the fetch is same-origin against the dev server, which
+  // instead answers 200 with index.html (the single-page-app fallback) for
+  // anything it doesn't recognise, not real JSON, so that case still needs
+  // its own check; this is why it's scoped to DEV rather than dropped outright.
+  const isDevFallback = import.meta.env.DEV && !(response.headers.get('content-type') ?? '').includes('json')
+  if (response.status === 404 || isDevFallback) {
+    cache.set(path, null)
+    return null
+  }
+  if (!response.ok) {
     throw new Error(`${path} failed with HTTP ${response.status}`)
   }
 

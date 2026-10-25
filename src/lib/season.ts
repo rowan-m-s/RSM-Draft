@@ -206,6 +206,10 @@ export function relativeAge(generatedAt: string, now: Date = new Date()) {
   const ms = now.getTime() - new Date(generatedAt).getTime()
   const minutes = Math.floor(ms / 60_000)
   const stale = ms > 3 * 3600_000
+  // Matches check-data-freshness.mjs's own 24h guard: two silent multi-day
+  // freezes have both been found by eye, not by the site saying so, so past
+  // this point the viewer gets told outright rather than a quietly amber label.
+  const severelyStale = ms > 24 * 3600_000
 
   let text: string
   if (minutes < 1) text = 'just now'
@@ -219,7 +223,7 @@ export function relativeAge(generatedAt: string, now: Date = new Date()) {
       text = days === 1 ? '1 day ago' : `${days} days ago`
     }
   }
-  return { text, stale, minutes }
+  return { text, stale, severelyStale, minutes }
 }
 
 export function formatLondon(iso: string, opts: Intl.DateTimeFormatOptions = {}): string {

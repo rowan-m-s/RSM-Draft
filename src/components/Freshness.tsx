@@ -144,3 +144,34 @@ export function DataFooter() {
     </section>
   )
 }
+
+/**
+ * Full width, above everything, impossible to not notice — same treatment as
+ * ReconciliationAlert, the other thing on this site that must never go
+ * unseen. The quiet amber label above is enough for "the job is running a
+ * bit behind"; past 24 hours mid-season it has gone quiet rather than slow,
+ * which is exactly the failure that has twice now only been caught by
+ * someone noticing the numbers looked wrong.
+ */
+export function StalenessAlert() {
+  const { state } = useDataState()
+  const age = useAge(state.status === 'ready' ? state.data.generatedAt : null)
+  if (!age?.severelyStale) return null
+
+  const hours = Math.floor(age.minutes / 60)
+
+  return (
+    <div role="alert" className="border-b border-pl-red bg-pl-red/10 px-4 py-2.5 sm:px-6">
+      <div className="mx-auto max-w-6xl">
+        <p className="text-sm leading-snug text-pl-text">
+          <span className="font-bold text-pl-red">Data has not updated in {hours} hours.</span> Scores, fixtures and
+          everything else on this page may be badly out of date. The update job may have stopped. Check{' '}
+          <a href={REPO_ACTIONS_URL} target="_blank" rel="noreferrer" className="font-semibold underline">
+            Actions
+          </a>
+          .
+        </p>
+      </div>
+    </div>
+  )
+}
