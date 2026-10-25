@@ -1761,28 +1761,6 @@
       "positionRank": 39
     },
     {
-      "id": 556,
-      "name": "M.Sangaré",
-      "position": "MID",
-      "club": "Brentford",
-      "clubShort": "BRE",
-      "clubCode": 94,
-      "teamId": 4,
-      "photoCode": 513545,
-      "owner": "rowan",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 26,
-      "ppg": 3.3,
-      "goals": 0,
-      "assists": 2,
-      "cleanSheets": 1,
-      "bonus": 4,
-      "positionRank": 43
-    },
-    {
       "id": 637,
       "name": "Maitland-Niles",
       "position": "DEF",
@@ -1868,7 +1846,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 44
+      "positionRank": 43
     },
     {
       "id": 88,
@@ -1915,6 +1893,28 @@
       "positionRank": 11
     },
     {
+      "id": 556,
+      "name": "M.Sangaré",
+      "position": "MID",
+      "club": "Brentford",
+      "clubShort": "BRE",
+      "clubCode": 94,
+      "teamId": 4,
+      "photoCode": 513545,
+      "owner": "rowan",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 25,
+      "ppg": 3.1,
+      "goals": 0,
+      "assists": 2,
+      "cleanSheets": 1,
+      "bonus": 3,
+      "positionRank": 46
+    },
+    {
       "id": 390,
       "name": "Rúben",
       "position": "DEF",
@@ -1956,7 +1956,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 5,
-      "positionRank": 46
+      "positionRank": 45
     },
     {
       "id": 580,
@@ -4070,7 +4070,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 45
+      "positionRank": 44
     },
     {
       "id": 43,
@@ -14743,5 +14743,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-25T15:14:17.933Z"
+  "generatedAt": "2026-10-25T15:15:28.675Z"
 }
