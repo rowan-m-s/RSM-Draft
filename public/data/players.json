@@ -419,28 +419,6 @@
       "positionRank": 6
     },
     {
-      "id": 571,
-      "name": "Tzolakis",
-      "position": "GKP",
-      "club": "Hull City",
-      "clubShort": "HUL",
-      "clubCode": 88,
-      "teamId": 11,
-      "photoCode": 473284,
-      "owner": "rushy",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 41,
-      "ppg": 5.1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 3,
-      "bonus": 7,
-      "positionRank": 2
-    },
-    {
       "id": 286,
       "name": "Belloumi",
       "position": "MID",
@@ -461,6 +439,28 @@
       "cleanSheets": 3,
       "bonus": 2,
       "positionRank": 7
+    },
+    {
+      "id": 571,
+      "name": "Tzolakis",
+      "position": "GKP",
+      "club": "Hull City",
+      "clubShort": "HUL",
+      "clubCode": 88,
+      "teamId": 11,
+      "photoCode": 473284,
+      "owner": "rushy",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 40,
+      "ppg": 5,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 3,
+      "bonus": 6,
+      "positionRank": 2
     },
     {
       "id": 31,
@@ -14743,5 +14743,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-25T14:35:30.763Z"
+  "generatedAt": "2026-10-25T14:36:39.423Z"
 }
