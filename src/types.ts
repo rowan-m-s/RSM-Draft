@@ -23,6 +23,9 @@ export type ManagerKey = (typeof MANAGER_KEYS)[number]
 export interface Manager {
   key: ManagerKey
   displayName: string
+  /** Koch of the Week only: announced by this instead of displayName when set.
+   *  Display-only — image lookups stay keyed on `key` regardless. */
+  kochName?: string
   /** FPL entry id — the one that goes in the /entry/{id}/ URLs. */
   entryId: number
   /** The manager's own name, as FPL knows it. */

@@ -176,7 +176,11 @@ export function Reveal({ data }: { data: Dataset }) {
 
   if (!current) return null
   const nameOf = (key: string) => data.league.managers.find((m) => m.key === key)?.displayName ?? key
-  return <Sting key={current.id} item={current} nameOf={nameOf} onDone={dismiss} />
+  // Koch of the Week only: whoever has a kochName is announced by it instead
+  // of displayName, here and nowhere else. Falls back to nameOf for everyone
+  // without one, so this is a no-op for the rest of the league.
+  const kochNameOf = (key: string) => data.league.managers.find((m) => m.key === key)?.kochName ?? nameOf(key)
+  return <Sting key={current.id} item={current} nameOf={nameOf} kochNameOf={kochNameOf} onDone={dismiss} />
 }
 
 /**
@@ -184,7 +188,17 @@ export function Reveal({ data }: { data: Dataset }) {
  * `steps(1)` or linear timing, started together and offset by delay. The
  * component only knows how to end.
  */
-function Sting({ item, nameOf, onDone }: { item: RevealItem; nameOf: (k: string) => string; onDone: () => void }) {
+function Sting({
+  item,
+  nameOf,
+  kochNameOf,
+  onDone,
+}: {
+  item: RevealItem
+  nameOf: (k: string) => string
+  kochNameOf: (k: string) => string
+  onDone: () => void
+}) {
   /* One speed for the ticker, entrance and loop alike: the CSS cannot know
      the track's width, so it is measured here and the two durations are set
      from it. 85px a second, television pace. */
@@ -198,7 +212,11 @@ function Sting({ item, nameOf, onDone }: { item: RevealItem; nameOf: (k: string)
 
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
   const names = item.managerKeys.map(nameOf).join(' & ')
-  const headline = `${item.label.split(' · ')[0]}: ${names}, ${item.points} pts`
+  // Koch of the Week's own announcement name: the same reveal is "about" the
+  // same person either way, so the ticker headline uses it too, not just the
+  // flash/card text. Every other kind keeps the ordinary names unchanged.
+  const announcedNames = item.kind === 'koch' ? item.managerKeys.map(kochNameOf).join(' & ') : names
+  const headline = `${item.label.split(' · ')[0]}: ${announcedNames}, ${item.points} pts`
   // The award and its footnote (scapegoat, MVP) are separate items on the
   // ticker, each with its own slot and a gap between, not one run-on line.
   const tickerItems = [headline, item.tickerExtra].filter((t): t is string => Boolean(t))
@@ -232,7 +250,7 @@ function Sting({ item, nameOf, onDone }: { item: RevealItem; nameOf: (k: string)
       className={`sting fixed inset-0 z-50 overflow-hidden bg-pl-bg text-pl-text select-none sting-${tone} ${reduced ? 'sting-still' : ''}`}
     >
       {item.kind === 'koch' ? (
-        <KochContent item={item} names={names} nameOf={nameOf} />
+        <KochContent item={item} names={announcedNames} nameOf={nameOf} />
       ) : (
         <MotmContent item={item} names={names} nameOf={nameOf} />
       )}

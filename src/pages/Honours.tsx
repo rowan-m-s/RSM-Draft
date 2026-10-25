@@ -31,6 +31,10 @@ function EmptySection({ children }: { children: React.ReactNode }) {
 export function Honours() {
   const { data } = useData()
   const nameOf = (key: string) => data.league.managers.find((m) => m.key === key)?.displayName ?? key
+  // Koch of the Week records only: whoever has a kochName is listed by it
+  // here, same as on the reveal that announced them. Previous winners and
+  // Manager of the Month below keep reading displayName.
+  const kochNameOf = (key: string) => data.league.managers.find((m) => m.key === key)?.kochName ?? nameOf(key)
 
   const winners = honours as HonoursEntry[]
 
@@ -131,7 +135,7 @@ export function Honours() {
                               className="aspect-square w-full rounded-none"
                             />
                             <figcaption className="px-4 py-3">
-                              <p className="display truncate text-lg leading-[1.2] text-pl-text">{nameOf(key)}</p>
+                              <p className="display truncate text-lg leading-[1.2] text-pl-text">{kochNameOf(key)}</p>
                               <p className="mt-1 text-xs text-pl-muted">
                                 GW{gw.id} · {gw.scores[key]} pts ·{' '}
                                 <span className="font-semibold text-pl-pink">−£5</span>

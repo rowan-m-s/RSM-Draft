@@ -443,6 +443,12 @@ async function main() {
     return {
       key: manager.key,
       displayName: manager.displayName,
+      // Display-only, for Koch of the Week alone: whoever has one is
+      // announced by it there instead of displayName. Everything else
+      // (League Table, Managers, squad view, MOTM, League Leader) keeps
+      // reading displayName, and image lookups stay keyed on `key`
+      // regardless, so this never needs a file renamed.
+      ...(manager.kochName ? { kochName: manager.kochName } : {}),
       entryId: manager.entryId,
       realName: `${entry.player_first_name ?? ''} ${entry.player_last_name ?? ''}`.trim(),
       teamName: entry.entry_name,
