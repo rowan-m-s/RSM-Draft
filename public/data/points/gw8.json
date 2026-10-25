@@ -2474,7 +2474,7 @@
         ]
       },
       "334": {
-        "total": 7,
+        "total": 9,
         "components": [
           {
             "stat": "minutes",
@@ -2493,6 +2493,12 @@
             "name": "Bonus",
             "value": 1,
             "points": 1
+          },
+          {
+            "stat": "defensive_contribution",
+            "name": "Defensive Contribution",
+            "value": 10,
+            "points": 2
           }
         ]
       },
@@ -2643,5 +2649,5 @@
       }
     }
   },
-  "generatedAt": "2026-10-25T18:14:39.499Z"
+  "generatedAt": "2026-10-25T18:15:47.453Z"
 }
