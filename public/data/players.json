@@ -375,6 +375,28 @@
       "positionRank": 7
     },
     {
+      "id": 286,
+      "name": "Belloumi",
+      "position": "MID",
+      "club": "Hull City",
+      "clubShort": "HUL",
+      "clubCode": 88,
+      "teamId": 11,
+      "photoCode": 540324,
+      "owner": "wood",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 41,
+      "ppg": 5.1,
+      "goals": 3,
+      "assists": 2,
+      "cleanSheets": 3,
+      "bonus": 3,
+      "positionRank": 7
+    },
+    {
       "id": 40,
       "name": "Rogers",
       "position": "MID",
@@ -439,28 +461,6 @@
       "cleanSheets": 3,
       "bonus": 7,
       "positionRank": 2
-    },
-    {
-      "id": 286,
-      "name": "Belloumi",
-      "position": "MID",
-      "club": "Hull City",
-      "clubShort": "HUL",
-      "clubCode": 88,
-      "teamId": 11,
-      "photoCode": 540324,
-      "owner": "wood",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 40,
-      "ppg": 5,
-      "goals": 3,
-      "assists": 2,
-      "cleanSheets": 3,
-      "bonus": 2,
-      "positionRank": 7
     },
     {
       "id": 31,
@@ -2902,7 +2902,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 85
+      "positionRank": 84
     },
     {
       "id": 61,
@@ -4645,28 +4645,6 @@
       "positionRank": 74
     },
     {
-      "id": 73,
-      "name": "Adams",
-      "position": "MID",
-      "club": "Bournemouth",
-      "clubShort": "BOU",
-      "clubCode": 91,
-      "teamId": 3,
-      "photoCode": 200785,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-15T16:30:07.029928Z",
-      "points": 17,
-      "ppg": 2.1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 78
-    },
-    {
       "id": 313,
       "name": "Clarke",
       "position": "MID",
@@ -4686,7 +4664,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 81
+      "positionRank": 80
     },
     {
       "id": 96,
@@ -4708,7 +4686,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 79
+      "positionRank": 78
     },
     {
       "id": 522,
@@ -4730,7 +4708,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 83
+      "positionRank": 82
     },
     {
       "id": 184,
@@ -4752,7 +4730,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 80
+      "positionRank": 79
     },
     {
       "id": 418,
@@ -4796,7 +4774,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 82
+      "positionRank": 81
     },
     {
       "id": 635,
@@ -4818,7 +4796,29 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 84
+      "positionRank": 83
+    },
+    {
+      "id": 73,
+      "name": "Adams",
+      "position": "MID",
+      "club": "Bournemouth",
+      "clubShort": "BOU",
+      "clubCode": 91,
+      "teamId": 3,
+      "photoCode": 200785,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-15T16:30:07.029928Z",
+      "points": 16,
+      "ppg": 2,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 85
     },
     {
       "id": 599,
@@ -14743,5 +14743,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-25T14:29:41.429Z"
+  "generatedAt": "2026-10-25T14:30:54.947Z"
 }
