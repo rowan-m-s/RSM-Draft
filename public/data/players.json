@@ -1651,6 +1651,28 @@
       "positionRank": 33
     },
     {
+      "id": 556,
+      "name": "M.Sangaré",
+      "position": "MID",
+      "club": "Brentford",
+      "clubShort": "BRE",
+      "clubCode": 94,
+      "teamId": 4,
+      "photoCode": 513545,
+      "owner": "rowan",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 28,
+      "ppg": 3.5,
+      "goals": 0,
+      "assists": 2,
+      "cleanSheets": 1,
+      "bonus": 3,
+      "positionRank": 39
+    },
+    {
       "id": 472,
       "name": "Murillo",
       "position": "DEF",
@@ -1780,7 +1802,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 2,
-      "positionRank": 41
+      "positionRank": 42
     },
     {
       "id": 555,
@@ -1824,7 +1846,7 @@
       "assists": 2,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 39
+      "positionRank": 40
     },
     {
       "id": 447,
@@ -1893,28 +1915,6 @@
       "positionRank": 11
     },
     {
-      "id": 556,
-      "name": "M.Sangaré",
-      "position": "MID",
-      "club": "Brentford",
-      "clubShort": "BRE",
-      "clubCode": 94,
-      "teamId": 4,
-      "photoCode": 513545,
-      "owner": "rowan",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 26,
-      "ppg": 3.3,
-      "goals": 0,
-      "assists": 2,
-      "cleanSheets": 1,
-      "bonus": 3,
-      "positionRank": 44
-    },
-    {
       "id": 637,
       "name": "Maitland-Niles",
       "position": "DEF",
@@ -1956,7 +1956,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 42
+      "positionRank": 43
     },
     {
       "id": 61,
@@ -2352,7 +2352,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 53
+      "positionRank": 54
     },
     {
       "id": 70,
@@ -2440,7 +2440,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 52
+      "positionRank": 53
     },
     {
       "id": 400,
@@ -3982,7 +3982,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 40
+      "positionRank": 41
     },
     {
       "id": 432,
@@ -4004,7 +4004,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 43
+      "positionRank": 44
     },
     {
       "id": 304,
@@ -4227,6 +4227,28 @@
       "positionRank": 57
     },
     {
+      "id": 202,
+      "name": "Richards",
+      "position": "DEF",
+      "club": "Crystal Palace",
+      "clubShort": "CRY",
+      "clubCode": 31,
+      "teamId": 8,
+      "photoCode": 427623,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 23,
+      "ppg": 2.9,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 51
+    },
+    {
       "id": 567,
       "name": "Schlager",
       "position": "MID",
@@ -4290,7 +4312,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 54
+      "positionRank": 55
     },
     {
       "id": 37,
@@ -4312,7 +4334,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 51
+      "positionRank": 52
     },
     {
       "id": 579,
@@ -4374,28 +4396,6 @@
       "newsAdded": null,
       "points": 21,
       "ppg": 3,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 55
-    },
-    {
-      "id": 202,
-      "name": "Richards",
-      "position": "DEF",
-      "club": "Crystal Palace",
-      "clubShort": "CRY",
-      "clubCode": 31,
-      "teamId": 8,
-      "photoCode": 427623,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 21,
-      "ppg": 2.6,
       "goals": 0,
       "assists": 0,
       "cleanSheets": 1,
@@ -14743,5 +14743,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-25T15:26:59.322Z"
+  "generatedAt": "2026-10-25T15:28:09.084Z"
 }
