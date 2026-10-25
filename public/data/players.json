@@ -5767,6 +5767,28 @@
       "positionRank": 87
     },
     {
+      "id": 419,
+      "name": "Martinez",
+      "position": "DEF",
+      "club": "Man Utd",
+      "clubShort": "MUN",
+      "clubCode": 1,
+      "teamId": 16,
+      "photoCode": 221820,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 75,
+      "news": null,
+      "newsAdded": "2026-10-18T16:30:09.955038Z",
+      "points": 11,
+      "ppg": 1.6,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 88
+    },
+    {
       "id": 429,
       "name": "Rashford",
       "position": "MID",
@@ -5896,7 +5918,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 88
+      "positionRank": 89
     },
     {
       "id": 581,
@@ -6051,28 +6073,6 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 119
-    },
-    {
-      "id": 419,
-      "name": "Martinez",
-      "position": "DEF",
-      "club": "Man Utd",
-      "clubShort": "MUN",
-      "clubCode": 1,
-      "teamId": 16,
-      "photoCode": 221820,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 75,
-      "news": null,
-      "newsAdded": "2026-10-18T16:30:09.955038Z",
-      "points": 10,
-      "ppg": 1.7,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 89
     },
     {
       "id": 186,
@@ -14743,5 +14743,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-25T15:23:31.880Z"
+  "generatedAt": "2026-10-25T15:24:41.952Z"
 }
