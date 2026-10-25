@@ -120,23 +120,6 @@
       }
     },
     {
-      "key": "rushy",
-      "rank": 8,
-      "total": 303,
-      "gw": 34,
-      "month": 104,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "Rogers",
-        "points": 41,
-        "managerKey": "rushy"
-      }
-    },
-    {
       "key": "jls",
       "rank": 8,
       "total": 303,
@@ -171,11 +154,28 @@
       }
     },
     {
+      "key": "rushy",
+      "rank": 10,
+      "total": 302,
+      "gw": 33,
+      "month": 103,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "Rogers",
+        "points": 41,
+        "managerKey": "rushy"
+      }
+    },
+    {
       "key": "dj",
       "rank": 11,
-      "total": 294,
-      "gw": 50,
-      "month": 116,
+      "total": 295,
+      "gw": 51,
+      "month": 117,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -205,7 +205,7 @@
     "displaced": "paddy",
     "changed": false
   },
-  "generatedAt": "2026-10-25T15:29:17.779Z",
+  "generatedAt": "2026-10-25T15:31:35.375Z",
   "graphics": {
     "koch": {
       "rushy": 244850,
