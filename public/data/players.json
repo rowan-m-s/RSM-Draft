@@ -177,6 +177,28 @@
       "positionRank": 1
     },
     {
+      "id": 330,
+      "name": "Bogle",
+      "position": "DEF",
+      "club": "Leeds",
+      "clubShort": "LEE",
+      "clubCode": 2,
+      "teamId": 13,
+      "photoCode": 226182,
+      "owner": "jls",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 48,
+      "ppg": 6,
+      "goals": 2,
+      "assists": 0,
+      "cleanSheets": 4,
+      "bonus": 8,
+      "positionRank": 5
+    },
+    {
       "id": 229,
       "name": "Tarkowski",
       "position": "DEF",
@@ -197,28 +219,6 @@
       "cleanSheets": 3,
       "bonus": 7,
       "positionRank": 4
-    },
-    {
-      "id": 330,
-      "name": "Bogle",
-      "position": "DEF",
-      "club": "Leeds",
-      "clubShort": "LEE",
-      "clubCode": 2,
-      "teamId": 13,
-      "photoCode": 226182,
-      "owner": "jls",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 47,
-      "ppg": 5.9,
-      "goals": 2,
-      "assists": 0,
-      "cleanSheets": 4,
-      "bonus": 7,
-      "positionRank": 5
     },
     {
       "id": 165,
@@ -639,28 +639,6 @@
       "positionRank": 11
     },
     {
-      "id": 334,
-      "name": "Muharemović",
-      "position": "DEF",
-      "club": "Leeds",
-      "clubShort": "LEE",
-      "clubCode": 2,
-      "teamId": 13,
-      "photoCode": 522047,
-      "owner": "paddy",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 38,
-      "ppg": 4.8,
-      "goals": 0,
-      "assists": 2,
-      "cleanSheets": 2,
-      "bonus": 3,
-      "positionRank": 12
-    },
-    {
       "id": 112,
       "name": "Van Hecke",
       "position": "DEF",
@@ -702,7 +680,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 1,
-      "positionRank": 13
+      "positionRank": 12
     },
     {
       "id": 236,
@@ -746,7 +724,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 4,
-      "positionRank": 14
+      "positionRank": 13
     },
     {
       "id": 156,
@@ -879,6 +857,28 @@
       "cleanSheets": 4,
       "bonus": 3,
       "positionRank": 15
+    },
+    {
+      "id": 334,
+      "name": "Muharemović",
+      "position": "DEF",
+      "club": "Leeds",
+      "clubShort": "LEE",
+      "clubCode": 2,
+      "teamId": 13,
+      "photoCode": 522047,
+      "owner": "paddy",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 36,
+      "ppg": 4.5,
+      "goals": 0,
+      "assists": 2,
+      "cleanSheets": 2,
+      "bonus": 1,
+      "positionRank": 14
     },
     {
       "id": 15,
@@ -2726,7 +2726,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 72
+      "positionRank": 73
     },
     {
       "id": 398,
@@ -2748,7 +2748,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 3,
-      "positionRank": 74
+      "positionRank": 75
     },
     {
       "id": 512,
@@ -2770,7 +2770,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 77
+      "positionRank": 78
     },
     {
       "id": 389,
@@ -4447,6 +4447,28 @@
       "positionRank": 66
     },
     {
+      "id": 551,
+      "name": "N.Angulo",
+      "position": "MID",
+      "club": "Sunderland",
+      "clubShort": "SUN",
+      "clubCode": 56,
+      "teamId": 20,
+      "photoCode": 536661,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 20,
+      "ppg": 2.9,
+      "goals": 1,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 1,
+      "positionRank": 70
+    },
+    {
       "id": 619,
       "name": "Palacios",
       "position": "MID",
@@ -4466,7 +4488,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 70
+      "positionRank": 71
     },
     {
       "id": 290,
@@ -4532,7 +4554,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 73
+      "positionRank": 74
     },
     {
       "id": 280,
@@ -4576,29 +4598,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 76
-    },
-    {
-      "id": 551,
-      "name": "N.Angulo",
-      "position": "MID",
-      "club": "Sunderland",
-      "clubShort": "SUN",
-      "clubCode": 56,
-      "teamId": 20,
-      "photoCode": 536661,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 19,
-      "ppg": 2.7,
-      "goals": 1,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 78
+      "positionRank": 77
     },
     {
       "id": 405,
@@ -4620,7 +4620,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 2,
-      "positionRank": 75
+      "positionRank": 76
     },
     {
       "id": 95,
@@ -4642,7 +4642,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 71
+      "positionRank": 72
     },
     {
       "id": 632,
@@ -9221,6 +9221,28 @@
       "positionRank": 210
     },
     {
+      "id": 535,
+      "name": "Alderete",
+      "position": "DEF",
+      "club": "Sunderland",
+      "clubShort": "SUN",
+      "clubCode": 56,
+      "teamId": 20,
+      "photoCode": 201895,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-09T08:30:05.962393Z",
+      "points": 1,
+      "ppg": 0.3,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 154
+    },
+    {
       "id": 629,
       "name": "Allan",
       "position": "MID",
@@ -9262,7 +9284,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 157
+      "positionRank": 158
     },
     {
       "id": 35,
@@ -9306,7 +9328,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 156
+      "positionRank": 157
     },
     {
       "id": 206,
@@ -9702,7 +9724,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 155
+      "positionRank": 156
     },
     {
       "id": 66,
@@ -9768,7 +9790,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 154
+      "positionRank": 155
     },
     {
       "id": 668,
@@ -9856,7 +9878,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 160
+      "positionRank": 161
     },
     {
       "id": 451,
@@ -9878,7 +9900,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 193
+      "positionRank": 194
     },
     {
       "id": 477,
@@ -9900,7 +9922,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 197
+      "positionRank": 198
     },
     {
       "id": 546,
@@ -9944,7 +9966,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 188
+      "positionRank": 189
     },
     {
       "id": 296,
@@ -9991,28 +10013,6 @@
       "positionRank": 69
     },
     {
-      "id": 535,
-      "name": "Alderete",
-      "position": "DEF",
-      "club": "Sunderland",
-      "clubShort": "SUN",
-      "clubCode": 56,
-      "teamId": 20,
-      "photoCode": 201895,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-09T08:30:05.962393Z",
-      "points": 0,
-      "ppg": 0,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 205
-    },
-    {
       "id": 394,
       "name": "Alleyne",
       "position": "DEF",
@@ -10032,7 +10032,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 189
+      "positionRank": 190
     },
     {
       "id": 424,
@@ -10054,7 +10054,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 191
+      "positionRank": 192
     },
     {
       "id": 192,
@@ -10230,7 +10230,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 177
+      "positionRank": 178
     },
     {
       "id": 146,
@@ -10252,7 +10252,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 168
+      "positionRank": 169
     },
     {
       "id": 44,
@@ -10494,7 +10494,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 171
+      "positionRank": 172
     },
     {
       "id": 479,
@@ -10516,7 +10516,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 198
+      "positionRank": 199
     },
     {
       "id": 191,
@@ -10560,7 +10560,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 183
+      "positionRank": 184
     },
     {
       "id": 360,
@@ -10582,7 +10582,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 184
+      "positionRank": 185
     },
     {
       "id": 181,
@@ -10604,7 +10604,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 173
+      "positionRank": 174
     },
     {
       "id": 128,
@@ -10758,7 +10758,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 202
+      "positionRank": 203
     },
     {
       "id": 373,
@@ -10824,7 +10824,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 175
+      "positionRank": 176
     },
     {
       "id": 275,
@@ -10868,7 +10868,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 167
+      "positionRank": 168
     },
     {
       "id": 436,
@@ -10912,7 +10912,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 165
+      "positionRank": 166
     },
     {
       "id": 624,
@@ -11110,7 +11110,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 190
+      "positionRank": 191
     },
     {
       "id": 59,
@@ -11220,7 +11220,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 159
+      "positionRank": 160
     },
     {
       "id": 218,
@@ -11660,7 +11660,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 192
+      "positionRank": 193
     },
     {
       "id": 107,
@@ -12012,7 +12012,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 178
+      "positionRank": 179
     },
     {
       "id": 601,
@@ -12100,7 +12100,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 166
+      "positionRank": 167
     },
     {
       "id": 49,
@@ -12144,7 +12144,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 163
+      "positionRank": 164
     },
     {
       "id": 434,
@@ -12210,7 +12210,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 179
+      "positionRank": 180
     },
     {
       "id": 444,
@@ -12276,7 +12276,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 164
+      "positionRank": 165
     },
     {
       "id": 468,
@@ -12320,7 +12320,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 182
+      "positionRank": 183
     },
     {
       "id": 141,
@@ -12408,7 +12408,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 181
+      "positionRank": 182
     },
     {
       "id": 174,
@@ -12430,7 +12430,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 170
+      "positionRank": 171
     },
     {
       "id": 272,
@@ -12496,7 +12496,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 186
+      "positionRank": 187
     },
     {
       "id": 602,
@@ -12562,7 +12562,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 185
+      "positionRank": 186
     },
     {
       "id": 606,
@@ -12628,7 +12628,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 169
+      "positionRank": 170
     },
     {
       "id": 351,
@@ -12826,7 +12826,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 180
+      "positionRank": 181
     },
     {
       "id": 378,
@@ -13046,7 +13046,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 162
+      "positionRank": 163
     },
     {
       "id": 122,
@@ -13134,7 +13134,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 194
+      "positionRank": 195
     },
     {
       "id": 645,
@@ -13222,7 +13222,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 161
+      "positionRank": 162
     },
     {
       "id": 24,
@@ -13332,7 +13332,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 196
+      "positionRank": 197
     },
     {
       "id": 441,
@@ -13552,7 +13552,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 176
+      "positionRank": 177
     },
     {
       "id": 530,
@@ -13684,7 +13684,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 201
+      "positionRank": 202
     },
     {
       "id": 348,
@@ -13772,7 +13772,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 187
+      "positionRank": 188
     },
     {
       "id": 270,
@@ -13860,7 +13860,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 199
+      "positionRank": 200
     },
     {
       "id": 605,
@@ -13904,7 +13904,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 203
+      "positionRank": 204
     },
     {
       "id": 587,
@@ -13970,7 +13970,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 158
+      "positionRank": 159
     },
     {
       "id": 653,
@@ -14014,7 +14014,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 195
+      "positionRank": 196
     },
     {
       "id": 528,
@@ -14146,7 +14146,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 174
+      "positionRank": 175
     },
     {
       "id": 511,
@@ -14168,7 +14168,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 204
+      "positionRank": 205
     },
     {
       "id": 505,
@@ -14190,7 +14190,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 200
+      "positionRank": 201
     },
     {
       "id": 111,
@@ -14564,7 +14564,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 172
+      "positionRank": 173
     },
     {
       "id": 193,
@@ -14743,5 +14743,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-25T17:38:11.514Z"
+  "generatedAt": "2026-10-25T17:41:35.665Z"
 }
