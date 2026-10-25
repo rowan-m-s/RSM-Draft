@@ -67,28 +67,6 @@
       "positionRank": 1
     },
     {
-      "id": 68,
-      "name": "Tavernier",
-      "position": "MID",
-      "club": "Bournemouth",
-      "clubShort": "BOU",
-      "clubCode": 91,
-      "teamId": 3,
-      "photoCode": 201658,
-      "owner": "bennett",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 53,
-      "ppg": 6.6,
-      "goals": 5,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 13,
-      "positionRank": 2
-    },
-    {
       "id": 4,
       "name": "Gabriel",
       "position": "DEF",
@@ -108,6 +86,28 @@
       "assists": 0,
       "cleanSheets": 5,
       "bonus": 5,
+      "positionRank": 2
+    },
+    {
+      "id": 68,
+      "name": "Tavernier",
+      "position": "MID",
+      "club": "Bournemouth",
+      "clubShort": "BOU",
+      "clubCode": 91,
+      "teamId": 3,
+      "photoCode": 201658,
+      "owner": "bennett",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 52,
+      "ppg": 6.5,
+      "goals": 5,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 12,
       "positionRank": 2
     },
     {
@@ -1164,7 +1164,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 2,
-      "positionRank": 23
+      "positionRank": 24
     },
     {
       "id": 87,
@@ -1186,7 +1186,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 21
+      "positionRank": 22
     },
     {
       "id": 480,
@@ -1209,6 +1209,28 @@
       "cleanSheets": 1,
       "bonus": 6,
       "positionRank": 27
+    },
+    {
+      "id": 60,
+      "name": "Hill",
+      "position": "DEF",
+      "club": "Bournemouth",
+      "clubShort": "BOU",
+      "clubCode": 91,
+      "teamId": 3,
+      "photoCode": 463981,
+      "owner": "dj",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 32,
+      "ppg": 4,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 4,
+      "positionRank": 21
     },
     {
       "id": 261,
@@ -1341,28 +1363,6 @@
       "cleanSheets": 0,
       "bonus": 6,
       "positionRank": 8
-    },
-    {
-      "id": 60,
-      "name": "Hill",
-      "position": "DEF",
-      "club": "Bournemouth",
-      "clubShort": "BOU",
-      "clubCode": 91,
-      "teamId": 3,
-      "photoCode": 463981,
-      "owner": "dj",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 31,
-      "ppg": 3.9,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 3,
-      "positionRank": 24
     },
     {
       "id": 53,
@@ -3762,7 +3762,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 22
+      "positionRank": 23
     },
     {
       "id": 264,
@@ -14743,5 +14743,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-25T15:39:37.565Z"
+  "generatedAt": "2026-10-25T15:40:46.339Z"
 }
