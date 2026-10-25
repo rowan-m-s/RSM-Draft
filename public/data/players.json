@@ -375,28 +375,6 @@
       "positionRank": 7
     },
     {
-      "id": 286,
-      "name": "Belloumi",
-      "position": "MID",
-      "club": "Hull City",
-      "clubShort": "HUL",
-      "clubCode": 88,
-      "teamId": 11,
-      "photoCode": 540324,
-      "owner": "wood",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 41,
-      "ppg": 5.1,
-      "goals": 3,
-      "assists": 2,
-      "cleanSheets": 3,
-      "bonus": 3,
-      "positionRank": 7
-    },
-    {
       "id": 40,
       "name": "Rogers",
       "position": "MID",
@@ -439,6 +417,28 @@
       "cleanSheets": 2,
       "bonus": 6,
       "positionRank": 6
+    },
+    {
+      "id": 286,
+      "name": "Belloumi",
+      "position": "MID",
+      "club": "Hull City",
+      "clubShort": "HUL",
+      "clubCode": 88,
+      "teamId": 11,
+      "photoCode": 540324,
+      "owner": "wood",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 40,
+      "ppg": 5,
+      "goals": 3,
+      "assists": 2,
+      "cleanSheets": 3,
+      "bonus": 2,
+      "positionRank": 7
     },
     {
       "id": 571,
@@ -1868,7 +1868,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 45
+      "positionRank": 44
     },
     {
       "id": 88,
@@ -1956,7 +1956,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 5,
-      "positionRank": 47
+      "positionRank": 46
     },
     {
       "id": 580,
@@ -4051,28 +4051,6 @@
       "positionRank": 42
     },
     {
-      "id": 43,
-      "name": "Tielemans",
-      "position": "MID",
-      "club": "Man Utd",
-      "clubShort": "MUN",
-      "clubCode": 1,
-      "teamId": 16,
-      "photoCode": 166989,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-07-23T12:01:23.321726Z",
-      "points": 25,
-      "ppg": 3.1,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 0,
-      "bonus": 2,
-      "positionRank": 44
-    },
-    {
       "id": 460,
       "name": "Willock",
       "position": "MID",
@@ -4092,7 +4070,29 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 46
+      "positionRank": 45
+    },
+    {
+      "id": 43,
+      "name": "Tielemans",
+      "position": "MID",
+      "club": "Man Utd",
+      "clubShort": "MUN",
+      "clubCode": 1,
+      "teamId": 16,
+      "photoCode": 166989,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-07-23T12:01:23.321726Z",
+      "points": 24,
+      "ppg": 3,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 0,
+      "bonus": 2,
+      "positionRank": 47
     },
     {
       "id": 338,
@@ -14743,5 +14743,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-25T14:41:15.663Z"
+  "generatedAt": "2026-10-25T14:43:33.746Z"
 }
