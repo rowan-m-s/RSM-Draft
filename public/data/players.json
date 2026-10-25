@@ -1252,7 +1252,7 @@
       "assists": 2,
       "cleanSheets": 1,
       "bonus": 6,
-      "positionRank": 27
+      "positionRank": 28
     },
     {
       "id": 60,
@@ -1321,6 +1321,28 @@
       "positionRank": 7
     },
     {
+      "id": 335,
+      "name": "Stach",
+      "position": "MID",
+      "club": "Leeds",
+      "clubShort": "LEE",
+      "clubCode": 2,
+      "teamId": 13,
+      "photoCode": 466525,
+      "owner": "rowan",
+      "status": "a",
+      "chanceOfPlaying": 50,
+      "news": null,
+      "newsAdded": "2026-10-23T13:00:09.404908Z",
+      "points": 32,
+      "ppg": 4,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 3,
+      "bonus": 3,
+      "positionRank": 27
+    },
+    {
       "id": 230,
       "name": "Branthwaite",
       "position": "DEF",
@@ -1384,7 +1406,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 5,
-      "positionRank": 28
+      "positionRank": 29
     },
     {
       "id": 469,
@@ -1407,28 +1429,6 @@
       "cleanSheets": 1,
       "bonus": 1,
       "positionRank": 27
-    },
-    {
-      "id": 335,
-      "name": "Stach",
-      "position": "MID",
-      "club": "Leeds",
-      "clubShort": "LEE",
-      "clubCode": 2,
-      "teamId": 13,
-      "photoCode": 466525,
-      "owner": "rowan",
-      "status": "a",
-      "chanceOfPlaying": 50,
-      "news": null,
-      "newsAdded": "2026-10-23T13:00:09.404908Z",
-      "points": 31,
-      "ppg": 4.4,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 3,
-      "bonus": 3,
-      "positionRank": 29
     },
     {
       "id": 366,
@@ -2264,7 +2264,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 56
+      "positionRank": 57
     },
     {
       "id": 123,
@@ -2287,6 +2287,28 @@
       "cleanSheets": 1,
       "bonus": 3,
       "positionRank": 52
+    },
+    {
+      "id": 336,
+      "name": "Okafor",
+      "position": "MID",
+      "club": "Leeds",
+      "clubShort": "LEE",
+      "clubCode": 2,
+      "teamId": 13,
+      "photoCode": 435997,
+      "owner": "jls",
+      "status": "a",
+      "chanceOfPlaying": 50,
+      "news": null,
+      "newsAdded": "2026-10-23T13:00:09.421868Z",
+      "points": 23,
+      "ppg": 2.9,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 3,
+      "bonus": 1,
+      "positionRank": 56
     },
     {
       "id": 106,
@@ -2330,7 +2352,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 59
+      "positionRank": 60
     },
     {
       "id": 452,
@@ -2394,28 +2416,6 @@
       "ppg": 3.7,
       "goals": 1,
       "assists": 1,
-      "cleanSheets": 3,
-      "bonus": 1,
-      "positionRank": 60
-    },
-    {
-      "id": 336,
-      "name": "Okafor",
-      "position": "MID",
-      "club": "Leeds",
-      "clubShort": "LEE",
-      "clubCode": 2,
-      "teamId": 13,
-      "photoCode": 435997,
-      "owner": "jls",
-      "status": "a",
-      "chanceOfPlaying": 50,
-      "news": null,
-      "newsAdded": "2026-10-23T13:00:09.421868Z",
-      "points": 22,
-      "ppg": 3.1,
-      "goals": 1,
-      "assists": 0,
       "cleanSheets": 3,
       "bonus": 1,
       "positionRank": 61
@@ -4224,7 +4224,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 57
+      "positionRank": 58
     },
     {
       "id": 202,
@@ -4268,7 +4268,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 58
+      "positionRank": 59
     },
     {
       "id": 210,
@@ -14743,5 +14743,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-25T17:54:03.496Z"
+  "generatedAt": "2026-10-25T17:55:11.409Z"
 }
