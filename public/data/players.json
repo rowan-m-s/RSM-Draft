@@ -67,28 +67,6 @@
       "positionRank": 1
     },
     {
-      "id": 330,
-      "name": "Bogle",
-      "position": "DEF",
-      "club": "Leeds",
-      "clubShort": "LEE",
-      "clubCode": 2,
-      "teamId": 13,
-      "photoCode": 226182,
-      "owner": "jls",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 53,
-      "ppg": 6.6,
-      "goals": 2,
-      "assists": 0,
-      "cleanSheets": 5,
-      "bonus": 8,
-      "positionRank": 2
-    },
-    {
       "id": 4,
       "name": "Gabriel",
       "position": "DEF",
@@ -108,7 +86,7 @@
       "assists": 0,
       "cleanSheets": 5,
       "bonus": 5,
-      "positionRank": 3
+      "positionRank": 2
     },
     {
       "id": 68,
@@ -152,7 +130,7 @@
       "assists": 1,
       "cleanSheets": 5,
       "bonus": 2,
-      "positionRank": 4
+      "positionRank": 3
     },
     {
       "id": 379,
@@ -175,6 +153,28 @@
       "cleanSheets": 4,
       "bonus": 14,
       "positionRank": 2
+    },
+    {
+      "id": 330,
+      "name": "Bogle",
+      "position": "DEF",
+      "club": "Leeds",
+      "clubShort": "LEE",
+      "clubCode": 2,
+      "teamId": 13,
+      "photoCode": 226182,
+      "owner": "jls",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 50,
+      "ppg": 6.3,
+      "goals": 2,
+      "assists": 0,
+      "cleanSheets": 5,
+      "bonus": 6,
+      "positionRank": 4
     },
     {
       "id": 1,
@@ -394,6 +394,28 @@
       "assists": 4,
       "cleanSheets": 2,
       "bonus": 6,
+      "positionRank": 9
+    },
+    {
+      "id": 334,
+      "name": "Muharemović",
+      "position": "DEF",
+      "club": "Leeds",
+      "clubShort": "LEE",
+      "clubCode": 2,
+      "teamId": 13,
+      "photoCode": 522047,
+      "owner": "paddy",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 42,
+      "ppg": 5.3,
+      "goals": 0,
+      "assists": 2,
+      "cleanSheets": 3,
+      "bonus": 2,
       "positionRank": 8
     },
     {
@@ -570,28 +592,6 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 4,
-      "positionRank": 9
-    },
-    {
-      "id": 334,
-      "name": "Muharemović",
-      "position": "DEF",
-      "club": "Leeds",
-      "clubShort": "LEE",
-      "clubCode": 2,
-      "teamId": 13,
-      "photoCode": 522047,
-      "owner": "paddy",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 40,
-      "ppg": 5,
-      "goals": 0,
-      "assists": 2,
-      "cleanSheets": 3,
-      "bonus": 0,
       "positionRank": 10
     },
     {
@@ -14743,5 +14743,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-25T17:55:11.409Z"
+  "generatedAt": "2026-10-25T17:56:19.685Z"
 }
