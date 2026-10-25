@@ -375,28 +375,6 @@
       "positionRank": 5
     },
     {
-      "id": 571,
-      "name": "Tzolakis",
-      "position": "GKP",
-      "club": "Hull City",
-      "clubShort": "HUL",
-      "clubCode": 88,
-      "teamId": 11,
-      "photoCode": 473284,
-      "owner": "rushy",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 43,
-      "ppg": 5.4,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 3,
-      "bonus": 7,
-      "positionRank": 2
-    },
-    {
       "id": 391,
       "name": "Gvardiol",
       "position": "DEF",
@@ -439,6 +417,28 @@
       "cleanSheets": 2,
       "bonus": 6,
       "positionRank": 6
+    },
+    {
+      "id": 571,
+      "name": "Tzolakis",
+      "position": "GKP",
+      "club": "Hull City",
+      "clubShort": "HUL",
+      "clubCode": 88,
+      "teamId": 11,
+      "photoCode": 473284,
+      "owner": "rushy",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 42,
+      "ppg": 5.3,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 3,
+      "bonus": 6,
+      "positionRank": 2
     },
     {
       "id": 10,
@@ -3298,7 +3298,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 120
+      "positionRank": 121
     },
     {
       "id": 499,
@@ -5767,25 +5767,25 @@
       "positionRank": 115
     },
     {
-      "id": 97,
-      "name": "Jensen",
+      "id": 240,
+      "name": "Iroegbunam",
       "position": "MID",
-      "club": "Brentford",
-      "clubShort": "BRE",
-      "clubCode": 94,
-      "teamId": 4,
-      "photoCode": 207283,
+      "club": "Hull City",
+      "clubShort": "HUL",
+      "clubCode": 88,
+      "teamId": 11,
+      "photoCode": 490094,
       "owner": null,
       "status": "a",
       "chanceOfPlaying": 100,
       "news": null,
-      "newsAdded": "2026-08-30T12:30:08.176795Z",
+      "newsAdded": "2026-08-15T20:00:06.878792Z",
       "points": 11,
-      "ppg": 2.8,
+      "ppg": 1.8,
       "goals": 0,
       "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 1,
+      "cleanSheets": 0,
+      "bonus": 2,
       "positionRank": 113
     },
     {
@@ -6031,28 +6031,6 @@
       "positionRank": 127
     },
     {
-      "id": 240,
-      "name": "Iroegbunam",
-      "position": "MID",
-      "club": "Hull City",
-      "clubShort": "HUL",
-      "clubCode": 88,
-      "teamId": 11,
-      "photoCode": 490094,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-15T20:00:06.878792Z",
-      "points": 10,
-      "ppg": 1.7,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 0,
-      "bonus": 1,
-      "positionRank": 121
-    },
-    {
       "id": 457,
       "name": "J.Murphy",
       "position": "MID",
@@ -6075,6 +6053,28 @@
       "positionRank": 125
     },
     {
+      "id": 97,
+      "name": "Jensen",
+      "position": "MID",
+      "club": "Brentford",
+      "clubShort": "BRE",
+      "clubCode": 94,
+      "teamId": 4,
+      "photoCode": 207283,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-30T12:30:08.176795Z",
+      "points": 10,
+      "ppg": 2.5,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 118
+    },
+    {
       "id": 213,
       "name": "Lerma",
       "position": "MID",
@@ -6094,7 +6094,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 119
+      "positionRank": 120
     },
     {
       "id": 186,
@@ -6116,7 +6116,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 118
+      "positionRank": 119
     },
     {
       "id": 536,
@@ -14743,5 +14743,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-25T15:59:11.242Z"
+  "generatedAt": "2026-10-25T16:00:19.915Z"
 }
