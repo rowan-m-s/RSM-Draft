@@ -730,140 +730,139 @@
 .sting-still .sting-word {
   animation: none;
 }
+/* KOCH-TIMELINE:GENERATED START — do not hand-edit; run `npm run koch:css` (see src/lib/kochTimeline.ts) */
 /* ====================================================================
-   Koch-only reveal, v8. The hold after the name finishes filling in,
-   before the card transition starts, is a full 500ms now (was 400) —
-   everything else about the shape is unchanged, this only pushed the
-   card's own fade-in and the ticker 100ms later.
+   Koch-only reveal. Timed from src/lib/kochTimeline.ts — do not hand-tune
+   the percentages below; change a *_MS constant there and regenerate.
    ==================================================================== */
 .koch-overlay {
   opacity: 1;
-  animation: koch-overlay-out 5950ms linear forwards;
+  animation: koch-overlay-out 7956ms linear forwards;
 }
 @keyframes koch-overlay-out {
-  0%, 93.277% { opacity: 1; }
+  0%, 94.972% { opacity: 1; }
   100% { opacity: 0; }
 }
 .koch-breaking {
   color: var(--color-pl-amber);
   opacity: 0;
-  animation: koch-breaking 5950ms linear forwards;
+  animation: koch-breaking 7956ms linear forwards;
 }
 @keyframes koch-breaking {
-  0%, 0.908% { opacity: 0; transform: scale(1); }
-  1.008% { opacity: 1; transform: scale(1); }
-  12.773% { opacity: 1; transform: scale(1.04); }
-  15.126%, 100% { opacity: 0; transform: scale(1.04); }
+  0%, 0.679% { opacity: 0; transform: scale(1); }
+  0.754% { opacity: 1; transform: scale(1); }
+  9.553% { opacity: 1; transform: scale(1.04); }
+  11.312%, 100% { opacity: 0; transform: scale(1.04); }
 }
 .koch-phase2 {
   color: var(--color-pl-text);
   opacity: 0;
-  animation: koch-phase2 5950ms linear forwards;
+  animation: koch-phase2 7956ms linear forwards;
 }
 @keyframes koch-phase2 {
-  0%, 17.546% { opacity: 0; }
-  17.647%, 40.235% { opacity: 1; }
-  40.336%, 100% { opacity: 0; }
+  0%, 13.122% { opacity: 0; }
+  13.198%, 30.090% { opacity: 1; }
+  30.166%, 100% { opacity: 0; }
 }
 .koch-word { opacity: 0; }
-.koch-word1 { animation: koch-word1 5950ms linear forwards; }
-.koch-word2 { animation: koch-word2 5950ms linear forwards; }
-.koch-word3 { animation: koch-word3 5950ms linear forwards; }
-@keyframes koch-word1 { 0%, 17.546% { opacity: 0; transform: translateY(6px); } 17.647% { opacity: 1; transform: none; } 25.109%, 100% { opacity: 0; transform: none; } }
-@keyframes koch-word2 { 0%, 25.109% { opacity: 0; transform: translateY(6px); } 25.210% { opacity: 1; transform: none; } 32.672%, 100% { opacity: 0; transform: none; } }
-@keyframes koch-word3 { 0%, 32.672% { opacity: 0; transform: translateY(6px); } 32.773% { opacity: 1; transform: none; } 40.235%, 100% { opacity: 0; transform: none; } }
+.koch-word1 { animation: koch-word1 7956ms linear forwards; }
+.koch-word2 { animation: koch-word2 7956ms linear forwards; }
+.koch-word3 { animation: koch-word3 7956ms linear forwards; }
+@keyframes koch-word1 { 0%, 13.122% { opacity: 0; transform: translateY(6px); } 13.198% { opacity: 1; transform: none; } 18.778%, 100% { opacity: 0; transform: none; } }
+@keyframes koch-word2 { 0%, 18.778% { opacity: 0; transform: translateY(6px); } 18.854% { opacity: 1; transform: none; } 24.434%, 100% { opacity: 0; transform: none; } }
+@keyframes koch-word3 { 0%, 24.434% { opacity: 0; transform: translateY(6px); } 24.510% { opacity: 1; transform: none; } 30.090%, 100% { opacity: 0; transform: none; } }
 
 .koch-flash-seen-alone {
   position: absolute; top: 50%; left: 50%; width: 80vw; text-align: center;
   opacity: 0;
-  animation: koch-flash-seen-alone 5950ms linear forwards;
+  animation: koch-flash-seen-alone 7956ms linear forwards;
 }
 @keyframes koch-flash-seen-alone {
-  0%, 42.756% { opacity: 0; transform: translate(-50%, -50%) scale(1); }
-  42.857% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
-  93.277% { opacity: 1; transform: translate(-50%, -50%) scale(1.15); }
+  0%, 31.976% { opacity: 0; transform: translate(-50%, -50%) scale(1); }
+  32.051% { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+  94.972% { opacity: 1; transform: translate(-50%, -50%) scale(1.15); }
   100% { opacity: 1; transform: translate(-50%, -50%) scale(1.15); }
 }
 .koch-haaas {
   display: inline-block;
   clip-path: inset(0 100% 0 0);
-  animation: koch-haaas-reveal 5950ms linear forwards;
+  animation: koch-haaas-reveal 7956ms linear forwards;
 }
 @keyframes koch-haaas-reveal {
-  0%, 42.756% { clip-path: inset(0 100% 0 0); }
-  52.941%, 100% { clip-path: inset(0 0 0 0); }
+  0%, 31.976% { clip-path: inset(0 100% 0 0); }
+  39.593%, 100% { clip-path: inset(0 0 0 0); }
 }
 .koch-name-reveal {
   display: inline-block;
   clip-path: inset(0 100% 0 0);
-  animation: koch-name-reveal 5950ms linear forwards;
+  animation: koch-name-reveal 7956ms linear forwards;
 }
 @keyframes koch-name-reveal {
-  0%, 76.370% { clip-path: inset(0 100% 0 0); }
-  84.874%, 100% { clip-path: inset(0 0 0 0); }
+  0%, 82.328% { clip-path: inset(0 100% 0 0); }
+  88.688%, 100% { clip-path: inset(0 0 0 0); }
 }
 .koch-sting-card {
   opacity: 0;
-  animation: koch-sting-card 5950ms linear forwards;
+  animation: koch-sting-card 7956ms linear forwards;
 }
 @keyframes koch-sting-card {
-  0%, 93.277% { opacity: 0; }
+  0%, 94.972% { opacity: 0; }
   100% { opacity: 1; }
 }
 .koch-floater-1 {
   position: absolute; top: 50%; left: 50%; max-width: 44vw; text-align: center;
   opacity: 0;
-  animation: koch-floater-1 5950ms linear forwards;
+  animation: koch-floater-1 7956ms linear forwards;
 }
 @keyframes koch-floater-1 {
-  0%, 42.756% { opacity: 0; }
-  42.857% { opacity: 1; transform: translate(-50%, -50%) translate(-18vw, -28vh) rotate(-8deg) scale(0.9); }
-  49.479% { opacity: 1; transform: translate(-50%, -50%) translate(-18vw, -28vh) rotate(-8deg) scale(0.9); }
-  49.580%, 100% { opacity: 0; transform: translate(-50%, -50%) translate(-18vw, -28vh) rotate(-8deg) scale(0.9); }
+  0%, 31.976% { opacity: 0; }
+  32.051% { opacity: 1; transform: translate(-50%, -50%) translate(-18vw, -28vh) rotate(-8deg) scale(0.9); }
+  37.004% { opacity: 1; transform: translate(-50%, -50%) translate(-18vw, -28vh) rotate(-8deg) scale(0.9); }
+  37.079%, 100% { opacity: 0; transform: translate(-50%, -50%) translate(-18vw, -28vh) rotate(-8deg) scale(0.9); }
 }
 .koch-floater-2 {
   position: absolute; top: 50%; left: 50%; max-width: 44vw; text-align: center;
   opacity: 0;
-  animation: koch-floater-2 5950ms linear forwards;
+  animation: koch-floater-2 7956ms linear forwards;
 }
 @keyframes koch-floater-2 {
-  0%, 49.479% { opacity: 0; }
-  49.580% { opacity: 1; transform: translate(-50%, -50%) translate(18vw, -18vh) rotate(7deg) scale(0.85); }
-  56.202% { opacity: 1; transform: translate(-50%, -50%) translate(18vw, -18vh) rotate(7deg) scale(0.85); }
-  56.303%, 100% { opacity: 0; transform: translate(-50%, -50%) translate(18vw, -18vh) rotate(7deg) scale(0.85); }
+  0%, 37.004% { opacity: 0; }
+  37.079% { opacity: 1; transform: translate(-50%, -50%) translate(18vw, -18vh) rotate(7deg) scale(0.85); }
+  42.031% { opacity: 1; transform: translate(-50%, -50%) translate(18vw, -18vh) rotate(7deg) scale(0.85); }
+  42.107%, 100% { opacity: 0; transform: translate(-50%, -50%) translate(18vw, -18vh) rotate(7deg) scale(0.85); }
 }
 .koch-floater-3 {
   position: absolute; top: 50%; left: 50%; max-width: 44vw; text-align: center;
   opacity: 0;
-  animation: koch-floater-3 5950ms linear forwards;
+  animation: koch-floater-3 7956ms linear forwards;
 }
 @keyframes koch-floater-3 {
-  0%, 56.202% { opacity: 0; }
-  56.303% { opacity: 1; transform: translate(-50%, -50%) translate(-18vw, 24vh) rotate(-6deg) scale(0.95); }
-  62.924% { opacity: 1; transform: translate(-50%, -50%) translate(-18vw, 24vh) rotate(-6deg) scale(0.95); }
-  63.025%, 100% { opacity: 0; transform: translate(-50%, -50%) translate(-18vw, 24vh) rotate(-6deg) scale(0.95); }
+  0%, 42.031% { opacity: 0; }
+  42.107% { opacity: 1; transform: translate(-50%, -50%) translate(-18vw, 24vh) rotate(-6deg) scale(0.95); }
+  47.059% { opacity: 1; transform: translate(-50%, -50%) translate(-18vw, 24vh) rotate(-6deg) scale(0.95); }
+  47.134%, 100% { opacity: 0; transform: translate(-50%, -50%) translate(-18vw, 24vh) rotate(-6deg) scale(0.95); }
 }
 .koch-floater-4 {
   position: absolute; top: 50%; left: 50%; max-width: 44vw; text-align: center;
   opacity: 0;
-  animation: koch-floater-4 5950ms linear forwards;
+  animation: koch-floater-4 7956ms linear forwards;
 }
 @keyframes koch-floater-4 {
-  0%, 62.924% { opacity: 0; }
-  63.025% { opacity: 1; transform: translate(-50%, -50%) translate(18vw, 20vh) rotate(9deg) scale(0.88); }
-  69.647% { opacity: 1; transform: translate(-50%, -50%) translate(18vw, 20vh) rotate(9deg) scale(0.88); }
-  69.748%, 100% { opacity: 0; transform: translate(-50%, -50%) translate(18vw, 20vh) rotate(9deg) scale(0.88); }
+  0%, 47.059% { opacity: 0; }
+  47.134% { opacity: 1; transform: translate(-50%, -50%) translate(18vw, 20vh) rotate(9deg) scale(0.88); }
+  52.086% { opacity: 1; transform: translate(-50%, -50%) translate(18vw, 20vh) rotate(9deg) scale(0.88); }
+  52.162%, 100% { opacity: 0; transform: translate(-50%, -50%) translate(18vw, 20vh) rotate(9deg) scale(0.88); }
 }
 .koch-floater-5 {
   position: absolute; top: 50%; left: 50%; max-width: 44vw; text-align: center;
   opacity: 0;
-  animation: koch-floater-5 5950ms linear forwards;
+  animation: koch-floater-5 7956ms linear forwards;
 }
 @keyframes koch-floater-5 {
-  0%, 69.647% { opacity: 0; }
-  69.748% { opacity: 1; transform: translate(-50%, -50%) translate(-20vw, -34vh) rotate(-5deg) scale(0.82); }
-  76.370% { opacity: 1; transform: translate(-50%, -50%) translate(-20vw, -34vh) rotate(-5deg) scale(0.82); }
-  76.471%, 100% { opacity: 0; transform: translate(-50%, -50%) translate(-20vw, -34vh) rotate(-5deg) scale(0.82); }
+  0%, 52.086% { opacity: 0; }
+  52.162% { opacity: 1; transform: translate(-50%, -50%) translate(-20vw, -34vh) rotate(-5deg) scale(0.82); }
+  57.114% { opacity: 1; transform: translate(-50%, -50%) translate(-20vw, -34vh) rotate(-5deg) scale(0.82); }
+  57.190%, 100% { opacity: 0; transform: translate(-50%, -50%) translate(-20vw, -34vh) rotate(-5deg) scale(0.82); }
 }
 
 .sting-still .koch-overlay { animation: none; opacity: 0; }
@@ -877,4 +876,5 @@
 .sting-still .koch-floater-4 { animation: none; }
 .sting-still .koch-floater-5 { animation: none; }
 .sting-still .koch-sting-card { animation: none; opacity: 1; }
+/* KOCH-TIMELINE:GENERATED END */
 

@@ -3,6 +3,7 @@ import { createPortal } from 'react-dom'
 import { CardImage } from './Img'
 import { money } from '../lib/season'
 import { asset } from '../lib/assets'
+import { TICKER_LOOP_GAP_MS, TOTAL_MS as KOCH_TOTAL_MS } from '../lib/kochTimeline'
 import type { Dataset } from '../data'
 import type { ManagerKey } from '../types'
 
@@ -235,11 +236,12 @@ function Sting({
     }
   }, [onDone])
 
-  // The Koch-only extra beat lands the card at 2.7s; the Month's original
-  // sting still takes its own, much longer timeline. The ticker is shared,
-  // so it is the one piece told explicitly when to start.
-  const tickerDelay = item.kind === 'koch' ? '5950ms' : undefined
-  const tickerLoopDelay = item.kind === 'koch' ? '6150ms' : undefined
+  // The Koch-only sequence has its own timeline (src/lib/kochTimeline.ts);
+  // the Month's original sting takes its own, much longer one. The ticker is
+  // shared, so it is the one piece told explicitly when to start — read from
+  // the same constants the CSS is generated from, so the two can never drift.
+  const tickerDelay = item.kind === 'koch' ? `${KOCH_TOTAL_MS}ms` : undefined
+  const tickerLoopDelay = item.kind === 'koch' ? `${KOCH_TOTAL_MS + TICKER_LOOP_GAP_MS}ms` : undefined
 
   return createPortal(
     <div

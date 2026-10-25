@@ -11,6 +11,7 @@
     "test:watch": "vitest",
     "images": "node scripts/optimise-images.mjs",
     "explore": "node scripts/explore.mjs",
+    "koch:css": "node scripts/generate-koch-css.mjs",
     "fetch": "node scripts/fetch-data.mjs"
   },
   "dependencies": {
