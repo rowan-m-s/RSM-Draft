@@ -3,9 +3,9 @@
     {
       "key": "wood",
       "rank": 1,
-      "total": 392,
-      "gw": 20,
-      "month": 140,
+      "total": 394,
+      "gw": 22,
+      "month": 142,
       "kochCount": 0,
       "motmCount": 1,
       "forfeits": 0,
@@ -35,8 +35,25 @@
       }
     },
     {
-      "key": "jason",
+      "key": "paddy",
       "rank": 3,
+      "total": 366,
+      "gw": 44,
+      "month": 132,
+      "kochCount": 1,
+      "motmCount": 1,
+      "forfeits": 5,
+      "potsWon": 10,
+      "balance": 5,
+      "topPerformer": {
+        "playerName": "Cherki",
+        "points": 44,
+        "managerKey": "paddy"
+      }
+    },
+    {
+      "key": "jason",
+      "rank": 4,
       "total": 359,
       "gw": 39,
       "month": 115,
@@ -52,28 +69,11 @@
       }
     },
     {
-      "key": "paddy",
-      "rank": 4,
-      "total": 349,
-      "gw": 27,
-      "month": 115,
-      "kochCount": 1,
-      "motmCount": 1,
-      "forfeits": 5,
-      "potsWon": 10,
-      "balance": 5,
-      "topPerformer": {
-        "playerName": "Cherki",
-        "points": 44,
-        "managerKey": "paddy"
-      }
-    },
-    {
       "key": "kellett",
       "rank": 5,
-      "total": 321,
-      "gw": 43,
-      "month": 124,
+      "total": 323,
+      "gw": 45,
+      "month": 126,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -105,9 +105,9 @@
     {
       "key": "wallis",
       "rank": 7,
-      "total": 310,
-      "gw": 38,
-      "month": 119,
+      "total": 315,
+      "gw": 43,
+      "month": 124,
       "kochCount": 2,
       "motmCount": 0,
       "forfeits": 10,
@@ -120,8 +120,25 @@
       }
     },
     {
-      "key": "rowan",
+      "key": "jls",
       "rank": 8,
+      "total": 311,
+      "gw": 27,
+      "month": 123,
+      "kochCount": 2,
+      "motmCount": 0,
+      "forfeits": 10,
+      "potsWon": 0,
+      "balance": -10,
+      "topPerformer": {
+        "playerName": "João Pedro",
+        "points": 47,
+        "managerKey": "jls"
+      }
+    },
+    {
+      "key": "rowan",
+      "rank": 9,
       "total": 307,
       "gw": 39,
       "month": 106,
@@ -134,23 +151,6 @@
         "playerName": "Van Hecke",
         "points": 38,
         "managerKey": "rowan"
-      }
-    },
-    {
-      "key": "jls",
-      "rank": 9,
-      "total": 304,
-      "gw": 20,
-      "month": 116,
-      "kochCount": 2,
-      "motmCount": 0,
-      "forfeits": 10,
-      "potsWon": 0,
-      "balance": -10,
-      "topPerformer": {
-        "playerName": "João Pedro",
-        "points": 47,
-        "managerKey": "jls"
       }
     },
     {
@@ -195,7 +195,7 @@
     "keys": [
       "wood"
     ],
-    "total": 392,
+    "total": 394,
     "since": 4,
     "sinceByKey": {
       "wood": 4
@@ -205,7 +205,7 @@
     "displaced": "paddy",
     "changed": false
   },
-  "generatedAt": "2026-10-25T17:47:16.439Z",
+  "generatedAt": "2026-10-25T17:48:24.674Z",
   "graphics": {
     "koch": {
       "rushy": 244850,
