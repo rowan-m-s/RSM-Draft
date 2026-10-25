@@ -705,6 +705,28 @@
       "positionRank": 11
     },
     {
+      "id": 362,
+      "name": "Jacquet",
+      "position": "DEF",
+      "club": "Liverpool",
+      "clubShort": "LIV",
+      "clubCode": 14,
+      "teamId": 14,
+      "photoCode": 606702,
+      "owner": "ollie",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-06T00:30:10.323830Z",
+      "points": 38,
+      "ppg": 4.8,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 4,
+      "bonus": 3,
+      "positionRank": 15
+    },
+    {
       "id": 112,
       "name": "Van Hecke",
       "position": "DEF",
@@ -790,7 +812,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 4,
-      "positionRank": 15
+      "positionRank": 16
     },
     {
       "id": 156,
@@ -901,28 +923,6 @@
       "cleanSheets": 4,
       "bonus": 5,
       "positionRank": 5
-    },
-    {
-      "id": 362,
-      "name": "Jacquet",
-      "position": "DEF",
-      "club": "Liverpool",
-      "clubShort": "LIV",
-      "clubCode": 14,
-      "teamId": 14,
-      "photoCode": 606702,
-      "owner": "ollie",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-06T00:30:10.323830Z",
-      "points": 36,
-      "ppg": 4.5,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 4,
-      "bonus": 3,
-      "positionRank": 16
     },
     {
       "id": 15,
@@ -2069,28 +2069,6 @@
       "positionRank": 48
     },
     {
-      "id": 566,
-      "name": "Horníček",
-      "position": "GKP",
-      "club": "Newcastle",
-      "clubShort": "NEW",
-      "clubCode": 4,
-      "teamId": 17,
-      "photoCode": 470551,
-      "owner": "kellett",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 25,
-      "ppg": 3.1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 2,
-      "positionRank": 12
-    },
-    {
       "id": 67,
       "name": "Rayan",
       "position": "MID",
@@ -2177,6 +2155,28 @@
       "cleanSheets": 4,
       "bonus": 2,
       "positionRank": 11
+    },
+    {
+      "id": 566,
+      "name": "Horníček",
+      "position": "GKP",
+      "club": "Newcastle",
+      "clubShort": "NEW",
+      "clubCode": 4,
+      "teamId": 17,
+      "photoCode": 470551,
+      "owner": "kellett",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 24,
+      "ppg": 3,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 1,
+      "positionRank": 12
     },
     {
       "id": 200,
@@ -3254,7 +3254,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 108
+      "positionRank": 109
     },
     {
       "id": 224,
@@ -4095,6 +4095,28 @@
       "positionRank": 46
     },
     {
+      "id": 595,
+      "name": "Dedić",
+      "position": "DEF",
+      "club": "Newcastle",
+      "clubShort": "NEW",
+      "clubCode": 4,
+      "teamId": 17,
+      "photoCode": 463726,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-17T14:30:09.823731Z",
+      "points": 24,
+      "ppg": 4,
+      "goals": 0,
+      "assists": 2,
+      "cleanSheets": 2,
+      "bonus": 4,
+      "positionRank": 51
+    },
+    {
       "id": 43,
       "name": "Tielemans",
       "position": "MID",
@@ -4161,28 +4183,6 @@
       "positionRank": 55
     },
     {
-      "id": 595,
-      "name": "Dedić",
-      "position": "DEF",
-      "club": "Newcastle",
-      "clubShort": "NEW",
-      "clubCode": 4,
-      "teamId": 17,
-      "photoCode": 463726,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-17T14:30:09.823731Z",
-      "points": 23,
-      "ppg": 3.8,
-      "goals": 0,
-      "assists": 2,
-      "cleanSheets": 2,
-      "bonus": 3,
-      "positionRank": 52
-    },
-    {
       "id": 242,
       "name": "George",
       "position": "MID",
@@ -4246,7 +4246,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 51
+      "positionRank": 52
     },
     {
       "id": 567,
@@ -5195,6 +5195,28 @@
       "positionRank": 75
     },
     {
+      "id": 577,
+      "name": "Stroud",
+      "position": "MID",
+      "club": "Hull City",
+      "clubShort": "HUL",
+      "clubCode": 88,
+      "teamId": 11,
+      "photoCode": 608227,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 15,
+      "ppg": 2.5,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 2,
+      "bonus": 0,
+      "positionRank": 97
+    },
+    {
       "id": 175,
       "name": "van Ewijk",
       "position": "DEF",
@@ -5280,7 +5302,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 98
+      "positionRank": 99
     },
     {
       "id": 209,
@@ -5302,7 +5324,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 97
+      "positionRank": 98
     },
     {
       "id": 515,
@@ -5324,7 +5346,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 99
+      "positionRank": 100
     },
     {
       "id": 656,
@@ -5368,7 +5390,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 100
+      "positionRank": 101
     },
     {
       "id": 46,
@@ -5390,7 +5412,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 102
+      "positionRank": 103
     },
     {
       "id": 516,
@@ -5412,7 +5434,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 104
+      "positionRank": 106
     },
     {
       "id": 417,
@@ -5456,6 +5478,28 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
+      "positionRank": 107
+    },
+    {
+      "id": 240,
+      "name": "Iroegbunam",
+      "position": "MID",
+      "club": "Hull City",
+      "clubShort": "HUL",
+      "clubCode": 88,
+      "teamId": 11,
+      "photoCode": 490094,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-15T20:00:06.878792Z",
+      "points": 13,
+      "ppg": 2.2,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 0,
+      "bonus": 2,
       "positionRank": 105
     },
     {
@@ -5478,7 +5522,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 103
+      "positionRank": 104
     },
     {
       "id": 7,
@@ -5500,29 +5544,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 101
-    },
-    {
-      "id": 577,
-      "name": "Stroud",
-      "position": "MID",
-      "club": "Hull City",
-      "clubShort": "HUL",
-      "clubCode": 88,
-      "teamId": 11,
-      "photoCode": 608227,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 13,
-      "ppg": 2.2,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 2,
-      "bonus": 0,
-      "positionRank": 106
+      "positionRank": 102
     },
     {
       "id": 644,
@@ -5544,7 +5566,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 107
+      "positionRank": 108
     },
     {
       "id": 611,
@@ -5610,7 +5632,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 110
+      "positionRank": 111
     },
     {
       "id": 491,
@@ -5676,7 +5698,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 109
+      "positionRank": 110
     },
     {
       "id": 423,
@@ -5742,7 +5764,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 112
+      "positionRank": 113
     },
     {
       "id": 340,
@@ -5786,7 +5808,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 111
+      "positionRank": 112
     },
     {
       "id": 371,
@@ -5809,28 +5831,6 @@
       "cleanSheets": 1,
       "bonus": 0,
       "positionRank": 116
-    },
-    {
-      "id": 240,
-      "name": "Iroegbunam",
-      "position": "MID",
-      "club": "Hull City",
-      "clubShort": "HUL",
-      "clubCode": 88,
-      "teamId": 11,
-      "photoCode": 490094,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-15T20:00:06.878792Z",
-      "points": 11,
-      "ppg": 1.8,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 0,
-      "bonus": 2,
-      "positionRank": 113
     },
     {
       "id": 36,
@@ -9428,9 +9428,9 @@
       "teamId": 20,
       "photoCode": 135720,
       "owner": null,
-      "status": "s",
+      "status": "a",
       "chanceOfPlaying": 0,
-      "news": "Suspended until 31 Oct",
+      "news": null,
       "newsAdded": "2026-10-18T13:30:09.387826Z",
       "points": 1,
       "ppg": 0.2,
@@ -14743,5 +14743,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-25T18:20:18.988Z"
+  "generatedAt": "2026-10-25T22:58:36.127Z"
 }

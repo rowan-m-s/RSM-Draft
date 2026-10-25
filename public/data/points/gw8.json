@@ -3,8 +3,8 @@
   "started": true,
   "finished": false,
   "dataChecked": false,
-  "locallyFinalised": false,
-  "confirmed": false,
+  "locallyFinalised": true,
+  "confirmed": true,
   "byFixture": {
     "71": {
       "1": {
@@ -1405,7 +1405,7 @@
         ]
       },
       "566": {
-        "total": 9,
+        "total": 8,
         "components": [
           {
             "stat": "minutes",
@@ -1428,8 +1428,8 @@
           {
             "stat": "bonus",
             "name": "Bonus",
-            "value": 2,
-            "points": 2
+            "value": 1,
+            "points": 1
           }
         ]
       },
@@ -1579,7 +1579,7 @@
           {
             "stat": "defensive_contribution",
             "name": "Defensive Contribution",
-            "value": 20,
+            "value": 23,
             "points": 2
           }
         ]
@@ -1966,7 +1966,7 @@
           {
             "stat": "defensive_contribution",
             "name": "Defensive Contribution",
-            "value": 12,
+            "value": 13,
             "points": 2
           }
         ]
@@ -1989,7 +1989,7 @@
         ]
       },
       "362": {
-        "total": 6,
+        "total": 8,
         "components": [
           {
             "stat": "minutes",
@@ -2002,6 +2002,12 @@
             "name": "Clean sheets",
             "value": 1,
             "points": 4
+          },
+          {
+            "stat": "defensive_contribution",
+            "name": "Defensive Contribution",
+            "value": 10,
+            "points": 2
           }
         ]
       },
@@ -2497,7 +2503,7 @@
           {
             "stat": "defensive_contribution",
             "name": "Defensive Contribution",
-            "value": 12,
+            "value": 13,
             "points": 2
           }
         ]
@@ -2655,5 +2661,5 @@
       }
     }
   },
-  "generatedAt": "2026-10-25T18:20:18.988Z"
+  "generatedAt": "2026-10-25T22:58:36.127Z"
 }

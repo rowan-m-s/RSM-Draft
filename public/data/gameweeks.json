@@ -1314,7 +1314,7 @@
       "month": "2026-10",
       "finished": false,
       "started": true,
-      "scoresProvisional": true,
+      "scoresProvisional": false,
       "kochReady": true,
       "yetByManager": {
         "rushy": 0,
@@ -1331,25 +1331,27 @@
       },
       "fixturesRemaining": true,
       "dataChecked": false,
-      "locallyFinalised": false,
-      "confirmed": false,
+      "locallyFinalised": true,
+      "confirmed": true,
       "confirmExpectedUtc": "2026-10-26T16:30:00.000Z",
       "revealFromUtc": "2026-10-26T00:00:00.000Z",
       "scores": {
-        "rushy": 33,
-        "kellett": 45,
-        "wallis": 43,
-        "jls": 25,
+        "rushy": 36,
+        "kellett": 48,
+        "wallis": 44,
+        "jls": 28,
         "paddy": 48,
         "bennett": 63,
-        "wood": 22,
+        "wood": 24,
         "rowan": 40,
-        "jason": 39,
+        "jason": 44,
         "dj": 51,
-        "ollie": 39
+        "ollie": 41
       },
-      "kochKeys": [],
-      "charged": 0,
+      "kochKeys": [
+        "wood"
+      ],
+      "charged": 5,
       "topPerformerByManager": {
         "rushy": {
           "playerName": "N.Williams",
@@ -1402,8 +1404,8 @@
           "managerKey": "dj"
         },
         "ollie": {
-          "playerName": "Raya",
-          "points": 7,
+          "playerName": "Jacquet",
+          "points": 8,
           "managerKey": "ollie"
         }
       },
@@ -2240,5 +2242,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-10-25T18:20:18.988Z"
+  "generatedAt": "2026-10-25T22:58:36.127Z"
 }
