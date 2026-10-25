@@ -375,28 +375,6 @@
       "positionRank": 7
     },
     {
-      "id": 286,
-      "name": "Belloumi",
-      "position": "MID",
-      "club": "Hull City",
-      "clubShort": "HUL",
-      "clubCode": 88,
-      "teamId": 11,
-      "photoCode": 540324,
-      "owner": "wood",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 41,
-      "ppg": 5.1,
-      "goals": 3,
-      "assists": 2,
-      "cleanSheets": 3,
-      "bonus": 3,
-      "positionRank": 7
-    },
-    {
       "id": 40,
       "name": "Rogers",
       "position": "MID",
@@ -461,6 +439,28 @@
       "cleanSheets": 3,
       "bonus": 7,
       "positionRank": 2
+    },
+    {
+      "id": 286,
+      "name": "Belloumi",
+      "position": "MID",
+      "club": "Hull City",
+      "clubShort": "HUL",
+      "clubCode": 88,
+      "teamId": 11,
+      "photoCode": 540324,
+      "owner": "wood",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 40,
+      "ppg": 5,
+      "goals": 3,
+      "assists": 2,
+      "cleanSheets": 3,
+      "bonus": 2,
+      "positionRank": 7
     },
     {
       "id": 31,
@@ -14743,5 +14743,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-25T14:30:54.947Z"
+  "generatedAt": "2026-10-25T14:32:03.909Z"
 }
