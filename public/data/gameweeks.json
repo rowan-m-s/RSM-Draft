@@ -1312,7 +1312,7 @@
       "waiversUtc": "2026-10-22T17:30:00Z",
       "tradesUtc": "2026-10-21T17:30:00Z",
       "month": "2026-10",
-      "finished": false,
+      "finished": true,
       "started": true,
       "scoresProvisional": false,
       "kochReady": true,
@@ -1329,8 +1329,8 @@
         "dj": 0,
         "ollie": 0
       },
-      "fixturesRemaining": true,
-      "dataChecked": false,
+      "fixturesRemaining": false,
+      "dataChecked": true,
       "locallyFinalised": true,
       "confirmed": true,
       "confirmExpectedUtc": "2026-10-26T16:30:00.000Z",
@@ -2242,5 +2242,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-10-26T08:22:17.740Z"
+  "generatedAt": "2026-10-26T14:33:01.152Z"
 }
