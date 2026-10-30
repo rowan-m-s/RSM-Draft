@@ -2009,8 +2009,8 @@
       "clubCode": 8,
       "photoCode": 437499,
       "status": "d",
-      "chanceOfPlaying": 75,
-      "news": "Hamstring injury - 75% chance of playing",
+      "chanceOfPlaying": 50,
+      "news": "Hamstring injury - 50% chance of playing",
       "newsAdded": "2026-10-28T23:00:10.088612Z"
     },
     "201": {
@@ -2164,9 +2164,9 @@
       "clubShort": "EVE",
       "clubCode": 11,
       "photoCode": 114283,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 100,
-      "news": "Illness - 75% chance of playing",
+      "news": null,
       "newsAdded": "2026-10-24T14:30:09.610430Z"
     },
     "239": {
@@ -2860,10 +2860,10 @@
       "clubShort": "NEW",
       "clubCode": 4,
       "photoCode": 538207,
-      "status": "a",
+      "status": "d",
       "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-25T19:00:08.004915Z"
+      "news": "Ankle injury - 75% chance of playing",
+      "newsAdded": "2026-10-29T23:00:08.575179Z"
     },
     "467": {
       "name": "Sels",
@@ -3334,5 +3334,5 @@
       "newsAdded": "2026-10-23T14:30:10.429365Z"
     }
   },
-  "generatedAt": "2026-10-29T20:00:27.426Z"
+  "generatedAt": "2026-10-30T00:03:25.597Z"
 }
