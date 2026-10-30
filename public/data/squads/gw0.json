@@ -2455,9 +2455,9 @@
       "clubShort": "CHE",
       "clubCode": 8,
       "photoCode": 486672,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 100,
-      "news": "Unspecified injury - 75% chance of playing",
+      "news": null,
       "newsAdded": "2026-10-29T22:00:09.933708Z"
     },
     "165": {
@@ -2503,9 +2503,9 @@
       "clubShort": "CHE",
       "clubCode": 8,
       "photoCode": 437499,
-      "status": "d",
-      "chanceOfPlaying": 50,
-      "news": "Hamstring injury - 50% chance of playing",
+      "status": "i",
+      "chanceOfPlaying": 0,
+      "news": "Hamstring injury - Unknown return date",
       "newsAdded": "2026-10-28T23:00:10.088612Z"
     },
     "201": {
@@ -3043,9 +3043,9 @@
       "clubShort": "MCI",
       "clubCode": 43,
       "photoCode": 465351,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 75,
-      "news": "Unspecified injury - 75% chance of playing",
+      "news": null,
       "newsAdded": "2026-10-19T15:30:09.094655Z"
     },
     "390": {
@@ -3429,7 +3429,7 @@
       "photoCode": 538207,
       "status": "d",
       "chanceOfPlaying": 100,
-      "news": "Ankle injury - 75% chance of playing",
+      "news": "Ankle injury - 50% chance of playing",
       "newsAdded": "2026-10-29T23:00:08.575179Z"
     },
     "467": {
@@ -3631,9 +3631,9 @@
       "clubShort": "TOT",
       "clubCode": 6,
       "photoCode": 172780,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 75,
-      "news": "Unspecified injury - 75% chance of playing",
+      "news": null,
       "newsAdded": "2026-10-24T19:00:10.113555Z"
     },
     "525": {
@@ -3739,9 +3739,9 @@
       "clubShort": "ARS",
       "clubCode": 3,
       "photoCode": 439509,
-      "status": "i",
+      "status": "d",
       "chanceOfPlaying": 0,
-      "news": "Hamstring injury - Expected back 1 Nov",
+      "news": "Hamstring injury - 75% chance of playing",
       "newsAdded": "2026-10-02T15:00:11.091226Z"
     },
     "556": {
@@ -3829,5 +3829,5 @@
       "newsAdded": "2026-08-15T16:00:07.974271Z"
     }
   },
-  "generatedAt": "2026-10-30T09:25:04.031Z"
+  "generatedAt": "2026-10-30T14:46:19.636Z"
 }
