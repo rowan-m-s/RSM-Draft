@@ -1522,17 +1522,17 @@
       "confirmExpectedUtc": "2026-11-03T20:00:00.000Z",
       "revealFromUtc": "2026-11-03T00:10:00.000Z",
       "scores": {
-        "rushy": 11,
-        "kellett": 16,
+        "rushy": 12,
+        "kellett": 17,
         "wallis": 19,
         "jls": 9,
         "paddy": 21,
         "bennett": 13,
-        "wood": 31,
-        "rowan": 12,
+        "wood": 32,
+        "rowan": 14,
         "jason": 14,
-        "dj": 28,
-        "ollie": 4
+        "dj": 29,
+        "ollie": 5
       },
       "kochKeys": [],
       "charged": 0,
@@ -1574,7 +1574,7 @@
         },
         "rowan": {
           "playerName": "McBurnie",
-          "points": 4,
+          "points": 5,
           "managerKey": "rowan"
         },
         "jason": {
@@ -1595,14 +1595,14 @@
       },
       "scapegoatByManager": {
         "rushy": {
-          "playerName": "Tzolakis",
-          "points": 1,
+          "playerName": "N.Williams",
+          "points": 2,
           "managerKey": "rushy",
-          "element": 571
+          "element": 469
         },
         "kellett": {
           "playerName": "Davis",
-          "points": 1,
+          "points": 2,
           "managerKey": "kellett",
           "element": 305
         },
@@ -1631,16 +1631,16 @@
           "element": 277
         },
         "wood": {
-          "playerName": "Belloumi",
-          "points": 1,
+          "playerName": "B.Fernandes",
+          "points": 2,
           "managerKey": "wood",
-          "element": 286
+          "element": 426
         },
         "rowan": {
-          "playerName": "Mendy",
+          "playerName": "Rayan",
           "points": 1,
           "managerKey": "rowan",
-          "element": 586
+          "element": 67
         },
         "jason": {
           "playerName": "Petrović",
@@ -1649,10 +1649,10 @@
           "element": 57
         },
         "dj": {
-          "playerName": "Enciso",
+          "playerName": "Hill",
           "points": 1,
           "managerKey": "dj",
-          "element": 591
+          "element": 60
         },
         "ollie": {
           "playerName": "Mbeumo",
@@ -1668,7 +1668,7 @@
         "jls": null,
         "paddy": null,
         "bennett": null,
-        "wood": null,
+        "wood": 141746,
         "rowan": null,
         "jason": null,
         "dj": null,
@@ -2401,5 +2401,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-10-31T16:20:29.335Z"
+  "generatedAt": "2026-10-31T16:21:37.760Z"
 }
