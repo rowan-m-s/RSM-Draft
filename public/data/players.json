@@ -2154,7 +2154,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 52
+      "positionRank": 51
     },
     {
       "id": 295,
@@ -4029,28 +4029,6 @@
       "positionRank": 48
     },
     {
-      "id": 481,
-      "name": "Anderson",
-      "position": "MID",
-      "club": "Man City",
-      "clubShort": "MCI",
-      "clubCode": 43,
-      "teamId": 15,
-      "photoCode": 215379,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-23T17:00:07.952697Z",
-      "points": 26,
-      "ppg": 2.9,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 3,
-      "bonus": 2,
-      "positionRank": 51
-    },
-    {
       "id": 432,
       "name": "Mainoo",
       "position": "MID",
@@ -4137,6 +4115,28 @@
       "cleanSheets": 1,
       "bonus": 3,
       "positionRank": 47
+    },
+    {
+      "id": 481,
+      "name": "Anderson",
+      "position": "MID",
+      "club": "Man City",
+      "clubShort": "MCI",
+      "clubCode": 43,
+      "teamId": 15,
+      "photoCode": 215379,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-23T17:00:07.952697Z",
+      "points": 25,
+      "ppg": 2.8,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 3,
+      "bonus": 1,
+      "positionRank": 52
     },
     {
       "id": 148,
@@ -14743,5 +14743,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-31T15:47:19.078Z"
+  "generatedAt": "2026-10-31T15:48:27.764Z"
 }
