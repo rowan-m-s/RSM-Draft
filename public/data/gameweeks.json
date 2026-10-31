@@ -1522,17 +1522,17 @@
       "confirmExpectedUtc": "2026-11-03T20:00:00.000Z",
       "revealFromUtc": "2026-11-03T00:10:00.000Z",
       "scores": {
-        "rushy": 13,
-        "kellett": 21,
+        "rushy": 14,
+        "kellett": 19,
         "wallis": 20,
         "jls": 14,
         "paddy": 20,
         "bennett": 21,
         "wood": 41,
-        "rowan": 32,
+        "rowan": 34,
         "jason": 19,
         "dj": 44,
-        "ollie": 7
+        "ollie": 10
       },
       "kochKeys": [],
       "charged": 0,
@@ -1588,8 +1588,8 @@
           "managerKey": "dj"
         },
         "ollie": {
-          "playerName": "Delap",
-          "points": 2,
+          "playerName": "Van de Ven",
+          "points": 4,
           "managerKey": "ollie"
         }
       },
@@ -1601,10 +1601,10 @@
           "element": 469
         },
         "kellett": {
-          "playerName": "Davis",
-          "points": 1,
+          "playerName": "Mateta",
+          "points": -2,
           "managerKey": "kellett",
-          "element": 305
+          "element": 223
         },
         "wallis": {
           "playerName": "Welbeck",
@@ -1637,10 +1637,10 @@
           "element": 124
         },
         "rowan": {
-          "playerName": "Van Hecke",
-          "points": 1,
+          "playerName": "Gibbs-White",
+          "points": 2,
           "managerKey": "rowan",
-          "element": 112
+          "element": 480
         },
         "jason": {
           "playerName": "Georginio",
@@ -2401,5 +2401,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-10-31T17:35:32.406Z"
+  "generatedAt": "2026-10-31T17:55:30.111Z"
 }
