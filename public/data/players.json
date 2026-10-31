@@ -58,8 +58,8 @@
       "chanceOfPlaying": null,
       "news": null,
       "newsAdded": null,
-      "points": 61,
-      "ppg": 6.8,
+      "points": 60,
+      "ppg": 6.7,
       "goals": 3,
       "assists": 6,
       "cleanSheets": 6,
@@ -2707,6 +2707,28 @@
       "positionRank": 66
     },
     {
+      "id": 398,
+      "name": "Foden",
+      "position": "MID",
+      "club": "Man City",
+      "clubShort": "MCI",
+      "clubCode": 43,
+      "teamId": 15,
+      "photoCode": 209244,
+      "owner": "kellett",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-13T17:00:09.433455Z",
+      "points": 20,
+      "ppg": 2.9,
+      "goals": 1,
+      "assists": 2,
+      "cleanSheets": 0,
+      "bonus": 3,
+      "positionRank": 76
+    },
+    {
       "id": 239,
       "name": "Garner",
       "position": "MID",
@@ -2836,7 +2858,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 76
+      "positionRank": 77
     },
     {
       "id": 628,
@@ -2859,28 +2881,6 @@
       "cleanSheets": 3,
       "bonus": 0,
       "positionRank": 86
-    },
-    {
-      "id": 398,
-      "name": "Foden",
-      "position": "MID",
-      "club": "Man City",
-      "clubShort": "MCI",
-      "clubCode": 43,
-      "teamId": 15,
-      "photoCode": 209244,
-      "owner": "kellett",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-13T17:00:09.433455Z",
-      "points": 19,
-      "ppg": 3.2,
-      "goals": 1,
-      "assists": 2,
-      "cleanSheets": 0,
-      "bonus": 3,
-      "positionRank": 81
     },
     {
       "id": 512,
@@ -4686,7 +4686,7 @@
       "assists": 1,
       "cleanSheets": 4,
       "bonus": 0,
-      "positionRank": 78
+      "positionRank": 79
     },
     {
       "id": 280,
@@ -4774,7 +4774,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 77
+      "positionRank": 78
     },
     {
       "id": 265,
@@ -4796,7 +4796,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 80
+      "positionRank": 81
     },
     {
       "id": 96,
@@ -4818,7 +4818,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 79
+      "positionRank": 80
     },
     {
       "id": 454,
@@ -14743,5 +14743,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-31T16:40:02.006Z"
+  "generatedAt": "2026-10-31T16:41:10.992Z"
 }
