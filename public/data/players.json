@@ -1516,7 +1516,7 @@
       "assists": 0,
       "cleanSheets": 5,
       "bonus": 6,
-      "positionRank": 30
+      "positionRank": 31
     },
     {
       "id": 496,
@@ -1539,6 +1539,28 @@
       "cleanSheets": 3,
       "bonus": 2,
       "positionRank": 9
+    },
+    {
+      "id": 472,
+      "name": "Murillo",
+      "position": "DEF",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 575476,
+      "owner": "kellett",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-07-23T12:01:23.801183Z",
+      "points": 32,
+      "ppg": 3.6,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 31
     },
     {
       "id": 544,
@@ -1582,7 +1604,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 31
+      "positionRank": 32
     },
     {
       "id": 591,
@@ -1714,7 +1736,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 33
+      "positionRank": 34
     },
     {
       "id": 586,
@@ -1737,28 +1759,6 @@
       "cleanSheets": 2,
       "bonus": 1,
       "positionRank": 35
-    },
-    {
-      "id": 472,
-      "name": "Murillo",
-      "position": "DEF",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 575476,
-      "owner": "kellett",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-07-23T12:01:23.801183Z",
-      "points": 30,
-      "ppg": 3.3,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 34
     },
     {
       "id": 69,
@@ -3743,6 +3743,28 @@
       "positionRank": 27
     },
     {
+      "id": 335,
+      "name": "Stach",
+      "position": "MID",
+      "club": "Leeds",
+      "clubShort": "LEE",
+      "clubCode": 2,
+      "teamId": 13,
+      "photoCode": 466525,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 50,
+      "news": null,
+      "newsAdded": "2026-10-29T14:30:08.129193Z",
+      "points": 33,
+      "ppg": 3.7,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 3,
+      "bonus": 3,
+      "positionRank": 29
+    },
+    {
       "id": 214,
       "name": "Kamada",
       "position": "MID",
@@ -3762,29 +3784,7 @@
       "assists": 3,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 29
-    },
-    {
-      "id": 335,
-      "name": "Stach",
-      "position": "MID",
-      "club": "Leeds",
-      "clubShort": "LEE",
-      "clubCode": 2,
-      "teamId": 13,
-      "photoCode": 466525,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 50,
-      "news": null,
-      "newsAdded": "2026-10-29T14:30:08.129193Z",
-      "points": 32,
-      "ppg": 4,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 3,
-      "bonus": 3,
-      "positionRank": 31
+      "positionRank": 30
     },
     {
       "id": 173,
@@ -3828,7 +3828,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 2,
-      "positionRank": 32
+      "positionRank": 33
     },
     {
       "id": 264,
@@ -6053,6 +6053,28 @@
       "positionRank": 28
     },
     {
+      "id": 347,
+      "name": "Nmecha",
+      "position": "FWD",
+      "club": "Leeds",
+      "clubShort": "LEE",
+      "clubCode": 2,
+      "teamId": 13,
+      "photoCode": 174594,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 11,
+      "ppg": 1.4,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 29
+    },
+    {
       "id": 429,
       "name": "Rashford",
       "position": "MID",
@@ -6138,7 +6160,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 30
+      "positionRank": 31
     },
     {
       "id": 52,
@@ -6339,28 +6361,6 @@
       "positionRank": 126
     },
     {
-      "id": 347,
-      "name": "Nmecha",
-      "position": "FWD",
-      "club": "Leeds",
-      "clubShort": "LEE",
-      "clubCode": 2,
-      "teamId": 13,
-      "photoCode": 174594,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 10,
-      "ppg": 1.4,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 31
-    },
-    {
       "id": 246,
       "name": "Röhl",
       "position": "MID",
@@ -6424,7 +6424,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 29
+      "positionRank": 30
     },
     {
       "id": 461,
@@ -7524,7 +7524,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 167
+      "positionRank": 168
     },
     {
       "id": 620,
@@ -7568,7 +7568,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 166
+      "positionRank": 167
     },
     {
       "id": 343,
@@ -7590,7 +7590,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 164
+      "positionRank": 165
     },
     {
       "id": 263,
@@ -7615,6 +7615,28 @@
       "positionRank": 163
     },
     {
+      "id": 339,
+      "name": "Longstaff",
+      "position": "MID",
+      "club": "Leeds",
+      "clubShort": "LEE",
+      "clubCode": 2,
+      "teamId": 13,
+      "photoCode": 180135,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 5,
+      "ppg": 1,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 164
+    },
+    {
       "id": 430,
       "name": "Mount",
       "position": "MID",
@@ -7634,7 +7656,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 165
+      "positionRank": 166
     },
     {
       "id": 271,
@@ -7832,7 +7854,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 168
+      "positionRank": 169
     },
     {
       "id": 153,
@@ -8053,28 +8075,6 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 124
-    },
-    {
-      "id": 339,
-      "name": "Longstaff",
-      "position": "MID",
-      "club": "Leeds",
-      "clubShort": "LEE",
-      "clubCode": 2,
-      "teamId": 13,
-      "photoCode": 180135,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 4,
-      "ppg": 1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 169
     },
     {
       "id": 561,
@@ -14743,5 +14743,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-31T16:26:12.552Z"
+  "generatedAt": "2026-10-31T16:28:29.819Z"
 }
