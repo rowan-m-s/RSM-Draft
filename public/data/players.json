@@ -1475,6 +1475,28 @@
       "positionRank": 29
     },
     {
+      "id": 555,
+      "name": "Silva",
+      "position": "DEF",
+      "club": "Bournemouth",
+      "clubShort": "BOU",
+      "clubCode": 91,
+      "teamId": 3,
+      "photoCode": 483067,
+      "owner": "rowan",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 31,
+      "ppg": 3.4,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 2,
+      "positionRank": 29
+    },
+    {
       "id": 366,
       "name": "Wirtz",
       "position": "MID",
@@ -1539,28 +1561,6 @@
       "cleanSheets": 1,
       "bonus": 5,
       "positionRank": 33
-    },
-    {
-      "id": 555,
-      "name": "Silva",
-      "position": "DEF",
-      "club": "Bournemouth",
-      "clubShort": "BOU",
-      "clubCode": 91,
-      "teamId": 3,
-      "photoCode": 483067,
-      "owner": "rowan",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 30,
-      "ppg": 3.3,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 1,
-      "positionRank": 30
     },
     {
       "id": 597,
@@ -3144,7 +3144,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 105
+      "positionRank": 104
     },
     {
       "id": 465,
@@ -3850,7 +3850,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 2,
-      "positionRank": 29
+      "positionRank": 30
     },
     {
       "id": 113,
@@ -5195,28 +5195,6 @@
       "positionRank": 71
     },
     {
-      "id": 75,
-      "name": "Christie",
-      "position": "MID",
-      "club": "Bournemouth",
-      "clubShort": "BOU",
-      "clubCode": 91,
-      "teamId": 3,
-      "photoCode": 158499,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-07-24T17:30:10.035483Z",
-      "points": 15,
-      "ppg": 1.9,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 1,
-      "positionRank": 97
-    },
-    {
       "id": 315,
       "name": "Fatawu",
       "position": "MID",
@@ -5236,7 +5214,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 100
+      "positionRank": 99
     },
     {
       "id": 459,
@@ -5258,7 +5236,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 101
+      "positionRank": 100
     },
     {
       "id": 267,
@@ -5280,7 +5258,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 99
+      "positionRank": 98
     },
     {
       "id": 541,
@@ -5368,7 +5346,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 98
+      "positionRank": 97
     },
     {
       "id": 532,
@@ -5434,7 +5412,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 104
+      "positionRank": 103
     },
     {
       "id": 209,
@@ -5456,7 +5434,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 103
+      "positionRank": 102
     },
     {
       "id": 570,
@@ -5478,7 +5456,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 106
+      "positionRank": 105
     },
     {
       "id": 185,
@@ -5500,7 +5478,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 102
+      "positionRank": 101
     },
     {
       "id": 46,
@@ -5522,7 +5500,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 108
+      "positionRank": 107
     },
     {
       "id": 516,
@@ -5545,6 +5523,28 @@
       "cleanSheets": 2,
       "bonus": 0,
       "positionRank": 109
+    },
+    {
+      "id": 75,
+      "name": "Christie",
+      "position": "MID",
+      "club": "Bournemouth",
+      "clubShort": "BOU",
+      "clubCode": 91,
+      "teamId": 3,
+      "photoCode": 158499,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-07-24T17:30:10.035483Z",
+      "points": 13,
+      "ppg": 1.6,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 108
     },
     {
       "id": 519,
@@ -5588,7 +5588,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 107
+      "positionRank": 106
     },
     {
       "id": 644,
@@ -14743,5 +14743,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-31T15:48:27.764Z"
+  "generatedAt": "2026-10-31T15:49:38.639Z"
 }
