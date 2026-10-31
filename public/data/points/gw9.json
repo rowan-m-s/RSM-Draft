@@ -1192,12 +1192,18 @@
         "components": []
       },
       "400": {
-        "total": 1,
+        "total": 2,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
             "value": 45,
+            "points": 1
+          },
+          {
+            "stat": "bonus",
+            "name": "Bonus",
+            "value": 1,
             "points": 1
           }
         ]
@@ -1358,5 +1364,5 @@
       }
     }
   },
-  "generatedAt": "2026-10-31T15:49:38.639Z"
+  "generatedAt": "2026-10-31T15:50:48.758Z"
 }
