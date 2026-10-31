@@ -1912,7 +1912,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 40
+      "positionRank": 39
     },
     {
       "id": 640,
@@ -3941,28 +3941,6 @@
       "positionRank": 42
     },
     {
-      "id": 304,
-      "name": "O'Shea",
-      "position": "DEF",
-      "club": "Ipswich Town",
-      "clubShort": "IPS",
-      "clubCode": 40,
-      "teamId": 12,
-      "photoCode": 216616,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 28,
-      "ppg": 3.1,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 4,
-      "positionRank": 39
-    },
-    {
       "id": 592,
       "name": "Ouattara",
       "position": "DEF",
@@ -3982,6 +3960,28 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 5,
+      "positionRank": 40
+    },
+    {
+      "id": 304,
+      "name": "O'Shea",
+      "position": "DEF",
+      "club": "Ipswich Town",
+      "clubShort": "IPS",
+      "clubCode": 40,
+      "teamId": 12,
+      "photoCode": 216616,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 27,
+      "ppg": 3,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 3,
       "positionRank": 41
     },
     {
@@ -5591,28 +5591,6 @@
       "positionRank": 106
     },
     {
-      "id": 471,
-      "name": "Milenković",
-      "position": "DEF",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 227444,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-12T14:00:09.705107Z",
-      "points": 13,
-      "ppg": 2.6,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 84
-    },
-    {
       "id": 644,
       "name": "Thomas",
       "position": "MID",
@@ -5654,7 +5632,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 85
+      "positionRank": 84
     },
     {
       "id": 203,
@@ -5676,7 +5654,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 87
+      "positionRank": 86
     },
     {
       "id": 247,
@@ -5723,6 +5701,28 @@
       "positionRank": 26
     },
     {
+      "id": 471,
+      "name": "Milenković",
+      "position": "DEF",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 227444,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-12T14:00:09.705107Z",
+      "points": 12,
+      "ppg": 2.4,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 88
+    },
+    {
       "id": 11,
       "name": "Mosquera",
       "position": "DEF",
@@ -5742,7 +5742,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 86
+      "positionRank": 85
     },
     {
       "id": 539,
@@ -5808,7 +5808,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 88
+      "positionRank": 87
     },
     {
       "id": 337,
@@ -14743,5 +14743,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-31T15:36:57.384Z"
+  "generatedAt": "2026-10-31T15:39:18.369Z"
 }
