@@ -1255,28 +1255,6 @@
       "positionRank": 25
     },
     {
-      "id": 82,
-      "name": "Kelleher",
-      "position": "GKP",
-      "club": "Brentford",
-      "clubShort": "BRE",
-      "clubCode": 94,
-      "teamId": 4,
-      "photoCode": 200720,
-      "owner": "kellett",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 34,
-      "ppg": 3.8,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 3,
-      "bonus": 2,
-      "positionRank": 6
-    },
-    {
       "id": 268,
       "name": "King",
       "position": "MID",
@@ -1318,7 +1296,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 4,
-      "positionRank": 7
+      "positionRank": 6
     },
     {
       "id": 45,
@@ -1407,6 +1385,28 @@
       "cleanSheets": 0,
       "bonus": 6,
       "positionRank": 8
+    },
+    {
+      "id": 82,
+      "name": "Kelleher",
+      "position": "GKP",
+      "club": "Brentford",
+      "clubShort": "BRE",
+      "clubCode": 94,
+      "teamId": 4,
+      "photoCode": 200720,
+      "owner": "kellett",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 33,
+      "ppg": 3.7,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 3,
+      "bonus": 1,
+      "positionRank": 7
     },
     {
       "id": 469,
@@ -8011,6 +8011,28 @@
       "positionRank": 170
     },
     {
+      "id": 493,
+      "name": "Kalimuendo",
+      "position": "FWD",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 465680,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 4,
+      "ppg": 1,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 45
+    },
+    {
       "id": 450,
       "name": "Livramento",
       "position": "DEF",
@@ -8493,28 +8515,6 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 46
-    },
-    {
-      "id": 493,
-      "name": "Kalimuendo",
-      "position": "FWD",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 465680,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 3,
-      "ppg": 1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 45
     },
     {
       "id": 323,
@@ -14743,5 +14743,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-31T16:23:55.224Z"
+  "generatedAt": "2026-10-31T16:25:03.848Z"
 }
