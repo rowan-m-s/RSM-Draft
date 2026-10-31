@@ -3,9 +3,9 @@
     {
       "key": "wood",
       "rank": 1,
-      "total": 417,
-      "gw": 21,
-      "month": 165,
+      "total": 427,
+      "gw": 31,
+      "month": 175,
       "kochCount": 1,
       "motmCount": 1,
       "forfeits": 5,
@@ -13,16 +13,16 @@
       "balance": 25,
       "topPerformer": {
         "playerName": "De Cuyper",
-        "points": 63,
+        "points": 69,
         "managerKey": "wood"
       }
     },
     {
       "key": "paddy",
       "rank": 2,
-      "total": 389,
-      "gw": 19,
-      "month": 155,
+      "total": 391,
+      "gw": 21,
+      "month": 157,
       "kochCount": 1,
       "motmCount": 1,
       "forfeits": 5,
@@ -54,9 +54,9 @@
     {
       "key": "jason",
       "rank": 4,
-      "total": 377,
-      "gw": 13,
-      "month": 133,
+      "total": 378,
+      "gw": 14,
+      "month": 134,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -71,9 +71,9 @@
     {
       "key": "kellett",
       "rank": 5,
-      "total": 341,
-      "gw": 15,
-      "month": 144,
+      "total": 342,
+      "gw": 16,
+      "month": 145,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -81,16 +81,16 @@
       "balance": 0,
       "topPerformer": {
         "playerName": "Haaland",
-        "points": 67,
+        "points": 68,
         "managerKey": "kellett"
       }
     },
     {
       "key": "wallis",
       "rank": 6,
-      "total": 329,
-      "gw": 13,
-      "month": 138,
+      "total": 335,
+      "gw": 19,
+      "month": 144,
       "kochCount": 2,
       "motmCount": 0,
       "forfeits": 10,
@@ -156,9 +156,9 @@
     {
       "key": "rowan",
       "rank": 10,
-      "total": 317,
-      "gw": 9,
-      "month": 116,
+      "total": 320,
+      "gw": 12,
+      "month": 119,
       "kochCount": 2,
       "motmCount": 0,
       "forfeits": 10,
@@ -195,7 +195,7 @@
     "keys": [
       "wood"
     ],
-    "total": 417,
+    "total": 427,
     "since": 4,
     "sinceByKey": {
       "wood": 4
@@ -205,7 +205,7 @@
     "displaced": "paddy",
     "changed": false
   },
-  "generatedAt": "2026-10-31T16:19:20.510Z",
+  "generatedAt": "2026-10-31T16:20:29.335Z",
   "graphics": {
     "koch": {
       "rushy": 244850,
