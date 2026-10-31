@@ -309,6 +309,28 @@
       "positionRank": 6
     },
     {
+      "id": 399,
+      "name": "Cherki",
+      "position": "MID",
+      "club": "Man City",
+      "clubShort": "MCI",
+      "clubCode": 43,
+      "teamId": 15,
+      "photoCode": 466052,
+      "owner": "paddy",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 45,
+      "ppg": 5.6,
+      "goals": 4,
+      "assists": 2,
+      "cleanSheets": 2,
+      "bonus": 7,
+      "positionRank": 5
+    },
+    {
       "id": 154,
       "name": "Palmer",
       "position": "MID",
@@ -350,28 +372,6 @@
       "assists": 2,
       "cleanSheets": 3,
       "bonus": 2,
-      "positionRank": 5
-    },
-    {
-      "id": 399,
-      "name": "Cherki",
-      "position": "MID",
-      "club": "Man City",
-      "clubShort": "MCI",
-      "clubCode": 43,
-      "teamId": 15,
-      "photoCode": 466052,
-      "owner": "paddy",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 44,
-      "ppg": 6.3,
-      "goals": 4,
-      "assists": 2,
-      "cleanSheets": 2,
-      "bonus": 7,
       "positionRank": 6
     },
     {
@@ -2858,7 +2858,7 @@
       "assists": 2,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 82
+      "positionRank": 83
     },
     {
       "id": 398,
@@ -3298,7 +3298,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 112
+      "positionRank": 111
     },
     {
       "id": 499,
@@ -4733,6 +4733,28 @@
       "positionRank": 79
     },
     {
+      "id": 572,
+      "name": "Florentino",
+      "position": "MID",
+      "club": "Ipswich Town",
+      "clubShort": "IPS",
+      "clubCode": 40,
+      "teamId": 12,
+      "photoCode": 216055,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-25T11:30:07.678802Z",
+      "points": 19,
+      "ppg": 3.2,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 3,
+      "positionRank": 82
+    },
+    {
       "id": 405,
       "name": "N.Gonzalez",
       "position": "MID",
@@ -4818,29 +4840,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 83
-    },
-    {
-      "id": 572,
-      "name": "Florentino",
-      "position": "MID",
-      "club": "Ipswich Town",
-      "clubShort": "IPS",
-      "clubCode": 40,
-      "teamId": 12,
-      "photoCode": 216055,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-25T11:30:07.678802Z",
-      "points": 18,
-      "ppg": 3,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 2,
-      "positionRank": 85
+      "positionRank": 84
     },
     {
       "id": 563,
@@ -4862,7 +4862,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 84
+      "positionRank": 85
     },
     {
       "id": 33,
@@ -5151,28 +5151,6 @@
       "positionRank": 73
     },
     {
-      "id": 577,
-      "name": "Stroud",
-      "position": "MID",
-      "club": "Hull City",
-      "clubShort": "HUL",
-      "clubCode": 88,
-      "teamId": 11,
-      "photoCode": 608227,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 16,
-      "ppg": 2.3,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 2,
-      "bonus": 0,
-      "positionRank": 96
-    },
-    {
       "id": 175,
       "name": "van Ewijk",
       "position": "DEF",
@@ -5214,7 +5192,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 99
+      "positionRank": 98
     },
     {
       "id": 459,
@@ -5236,7 +5214,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 100
+      "positionRank": 99
     },
     {
       "id": 267,
@@ -5258,7 +5236,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 98
+      "positionRank": 97
     },
     {
       "id": 541,
@@ -5327,6 +5305,28 @@
       "positionRank": 77
     },
     {
+      "id": 577,
+      "name": "Stroud",
+      "position": "MID",
+      "club": "Hull City",
+      "clubShort": "HUL",
+      "clubCode": 88,
+      "teamId": 11,
+      "photoCode": 608227,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 15,
+      "ppg": 2.1,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 2,
+      "bonus": 0,
+      "positionRank": 100
+    },
+    {
       "id": 102,
       "name": "Yarmoliuk",
       "position": "MID",
@@ -5346,7 +5346,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 97
+      "positionRank": 96
     },
     {
       "id": 532,
@@ -5500,7 +5500,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 109
+      "positionRank": 108
     },
     {
       "id": 75,
@@ -5544,7 +5544,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 110
+      "positionRank": 109
     },
     {
       "id": 7,
@@ -5569,28 +5569,6 @@
       "positionRank": 105
     },
     {
-      "id": 185,
-      "name": "Sakamoto",
-      "position": "MID",
-      "club": "Coventry City",
-      "clubShort": "COV",
-      "clubCode": 9,
-      "teamId": 7,
-      "photoCode": 501459,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 13,
-      "ppg": 2.6,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 1,
-      "positionRank": 108
-    },
-    {
       "id": 644,
       "name": "Thomas",
       "position": "MID",
@@ -5610,7 +5588,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 111
+      "positionRank": 110
     },
     {
       "id": 611,
@@ -5764,6 +5742,28 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
+      "positionRank": 112
+    },
+    {
+      "id": 185,
+      "name": "Sakamoto",
+      "position": "MID",
+      "club": "Coventry City",
+      "clubShort": "COV",
+      "clubCode": 9,
+      "teamId": 7,
+      "photoCode": 501459,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 12,
+      "ppg": 2.4,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 1,
       "positionRank": 113
     },
     {
@@ -14743,5 +14743,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-31T16:12:26.006Z"
+  "generatedAt": "2026-10-31T16:14:43.358Z"
 }
