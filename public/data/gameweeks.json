@@ -1522,17 +1522,17 @@
       "confirmExpectedUtc": "2026-11-03T20:00:00.000Z",
       "revealFromUtc": "2026-11-03T00:10:00.000Z",
       "scores": {
-        "rushy": 10,
-        "kellett": 5,
+        "rushy": 11,
+        "kellett": 14,
         "wallis": 13,
-        "jls": 4,
+        "jls": 9,
         "paddy": 14,
         "bennett": 11,
         "wood": 19,
-        "rowan": 6,
-        "jason": 8,
-        "dj": 18,
-        "ollie": 3
+        "rowan": 9,
+        "jason": 13,
+        "dj": 28,
+        "ollie": 4
       },
       "kochKeys": [],
       "charged": 0,
@@ -1544,7 +1544,7 @@
         },
         "kellett": {
           "playerName": "Kelleher",
-          "points": 1,
+          "points": 7,
           "managerKey": "kellett"
         },
         "wallis": {
@@ -1553,8 +1553,8 @@
           "managerKey": "wallis"
         },
         "jls": {
-          "playerName": "Doku",
-          "points": 2,
+          "playerName": "Ajer",
+          "points": 6,
           "managerKey": "jls"
         },
         "paddy": {
@@ -1573,32 +1573,32 @@
           "managerKey": "wood"
         },
         "rowan": {
-          "playerName": "Mendy",
-          "points": 1,
+          "playerName": "M.Sangaré",
+          "points": 3,
           "managerKey": "rowan"
         },
         "jason": {
-          "playerName": "Neto",
-          "points": 3,
+          "playerName": "Kayode",
+          "points": 6,
           "managerKey": "jason"
         },
         "dj": {
-          "playerName": "O.Dango",
-          "points": 7,
+          "playerName": "Van den Berg",
+          "points": 11,
           "managerKey": "dj"
         },
         "ollie": {
-          "playerName": "Mbeumo",
-          "points": 1,
+          "playerName": "Delap",
+          "points": 2,
           "managerKey": "ollie"
         }
       },
       "scapegoatByManager": {
         "rushy": {
-          "playerName": "N.Williams",
+          "playerName": "Tzolakis",
           "points": 1,
           "managerKey": "rushy",
-          "element": 469
+          "element": 571
         },
         "kellett": {
           "playerName": "Davis",
@@ -1613,10 +1613,10 @@
           "element": 332
         },
         "jls": {
-          "playerName": "Ajer",
+          "playerName": "Bogle",
           "points": 1,
           "managerKey": "jls",
-          "element": 87
+          "element": 330
         },
         "paddy": {
           "playerName": "Calvert-Lewin",
@@ -1637,16 +1637,16 @@
           "element": 286
         },
         "rowan": {
-          "playerName": "Gibbs-White",
+          "playerName": "McBurnie",
           "points": 1,
           "managerKey": "rowan",
-          "element": 480
+          "element": 295
         },
         "jason": {
-          "playerName": "Kayode",
+          "playerName": "Kostoulas",
           "points": 1,
           "managerKey": "jason",
-          "element": 88
+          "element": 138
         },
         "dj": {
           "playerName": "Hill",
@@ -2401,5 +2401,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-10-31T16:17:01.220Z"
+  "generatedAt": "2026-10-31T16:18:11.880Z"
 }

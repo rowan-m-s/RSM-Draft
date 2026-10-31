@@ -54,9 +54,9 @@
     {
       "key": "jason",
       "rank": 4,
-      "total": 372,
-      "gw": 8,
-      "month": 128,
+      "total": 377,
+      "gw": 13,
+      "month": 133,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -71,9 +71,9 @@
     {
       "key": "kellett",
       "rank": 5,
-      "total": 331,
-      "gw": 5,
-      "month": 134,
+      "total": 340,
+      "gw": 14,
+      "month": 143,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -103,11 +103,28 @@
       }
     },
     {
+      "key": "dj",
+      "rank": 7,
+      "total": 323,
+      "gw": 28,
+      "month": 145,
+      "kochCount": 1,
+      "motmCount": 0,
+      "forfeits": 5,
+      "potsWon": 0,
+      "balance": -5,
+      "topPerformer": {
+        "playerName": "Schade",
+        "points": 45,
+        "managerKey": "dj"
+      }
+    },
+    {
       "key": "ollie",
       "rank": 7,
-      "total": 322,
-      "gw": 3,
-      "month": 117,
+      "total": 323,
+      "gw": 4,
+      "month": 118,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -121,10 +138,10 @@
     },
     {
       "key": "jls",
-      "rank": 8,
-      "total": 316,
-      "gw": 4,
-      "month": 128,
+      "rank": 9,
+      "total": 321,
+      "gw": 9,
+      "month": 133,
       "kochCount": 2,
       "motmCount": 0,
       "forfeits": 10,
@@ -137,28 +154,11 @@
       }
     },
     {
-      "key": "rushy",
-      "rank": 9,
-      "total": 315,
-      "gw": 10,
-      "month": 116,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "Rogers",
-        "points": 49,
-        "managerKey": "rushy"
-      }
-    },
-    {
       "key": "rowan",
       "rank": 10,
-      "total": 314,
-      "gw": 6,
-      "month": 113,
+      "total": 317,
+      "gw": 9,
+      "month": 116,
       "kochCount": 2,
       "motmCount": 0,
       "forfeits": 10,
@@ -171,20 +171,20 @@
       }
     },
     {
-      "key": "dj",
+      "key": "rushy",
       "rank": 11,
-      "total": 313,
-      "gw": 18,
-      "month": 135,
-      "kochCount": 1,
+      "total": 316,
+      "gw": 11,
+      "month": 117,
+      "kochCount": 0,
       "motmCount": 0,
-      "forfeits": 5,
+      "forfeits": 0,
       "potsWon": 0,
-      "balance": -5,
+      "balance": 0,
       "topPerformer": {
-        "playerName": "Schade",
-        "points": 43,
-        "managerKey": "dj"
+        "playerName": "Rogers",
+        "points": 49,
+        "managerKey": "rushy"
       }
     }
   ],
@@ -205,7 +205,7 @@
     "displaced": "paddy",
     "changed": false
   },
-  "generatedAt": "2026-10-31T16:17:01.220Z",
+  "generatedAt": "2026-10-31T16:18:11.880Z",
   "graphics": {
     "koch": {
       "rushy": 244850,
