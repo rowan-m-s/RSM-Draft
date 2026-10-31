@@ -1871,6 +1871,28 @@
       "positionRank": 11
     },
     {
+      "id": 47,
+      "name": "Kamara",
+      "position": "MID",
+      "club": "Aston Villa",
+      "clubShort": "AVL",
+      "clubCode": 7,
+      "teamId": 2,
+      "photoCode": 226944,
+      "owner": "ollie",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-07-23T12:01:23.337269Z",
+      "points": 30,
+      "ppg": 3.3,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 3,
+      "bonus": 1,
+      "positionRank": 39
+    },
+    {
       "id": 69,
       "name": "Scott",
       "position": "MID",
@@ -1890,7 +1912,7 @@
       "assists": 2,
       "cleanSheets": 1,
       "bonus": 5,
-      "positionRank": 39
+      "positionRank": 40
     },
     {
       "id": 503,
@@ -1934,28 +1956,6 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 40
-    },
-    {
-      "id": 47,
-      "name": "Kamara",
-      "position": "MID",
-      "club": "Aston Villa",
-      "clubShort": "AVL",
-      "clubCode": 7,
-      "teamId": 2,
-      "photoCode": 226944,
-      "owner": "ollie",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-07-23T12:01:23.337269Z",
-      "points": 29,
-      "ppg": 3.2,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 3,
-      "bonus": 0,
       "positionRank": 40
     },
     {
@@ -14743,5 +14743,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-31T20:52:11.301Z"
+  "generatedAt": "2026-10-31T21:15:30.395Z"
 }
