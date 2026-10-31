@@ -793,28 +793,6 @@
       "positionRank": 14
     },
     {
-      "id": 591,
-      "name": "Enciso",
-      "position": "MID",
-      "club": "Ipswich Town",
-      "clubShort": "IPS",
-      "clubCode": 40,
-      "teamId": 12,
-      "photoCode": 474120,
-      "owner": "dj",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-22T18:00:07.551930Z",
-      "points": 38,
-      "ppg": 4.2,
-      "goals": 2,
-      "assists": 2,
-      "cleanSheets": 0,
-      "bonus": 5,
-      "positionRank": 16
-    },
-    {
       "id": 60,
       "name": "Hill",
       "position": "DEF",
@@ -944,7 +922,29 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 6,
-      "positionRank": 19
+      "positionRank": 18
+    },
+    {
+      "id": 591,
+      "name": "Enciso",
+      "position": "MID",
+      "club": "Ipswich Town",
+      "clubShort": "IPS",
+      "clubCode": 40,
+      "teamId": 12,
+      "photoCode": 474120,
+      "owner": "dj",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-22T18:00:07.551930Z",
+      "points": 37,
+      "ppg": 4.1,
+      "goals": 2,
+      "assists": 2,
+      "cleanSheets": 0,
+      "bonus": 5,
+      "positionRank": 20
     },
     {
       "id": 388,
@@ -988,7 +988,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 2,
-      "positionRank": 18
+      "positionRank": 17
     },
     {
       "id": 12,
@@ -1010,7 +1010,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 4,
-      "positionRank": 17
+      "positionRank": 16
     },
     {
       "id": 397,
@@ -1032,7 +1032,7 @@
       "assists": 3,
       "cleanSheets": 3,
       "bonus": 2,
-      "positionRank": 20
+      "positionRank": 19
     },
     {
       "id": 555,
@@ -3292,8 +3292,8 @@
       "chanceOfPlaying": 100,
       "news": null,
       "newsAdded": "2026-08-26T16:00:07.608056Z",
-      "points": 12,
-      "ppg": 2.4,
+      "points": 13,
+      "ppg": 2.2,
       "goals": 0,
       "assists": 2,
       "cleanSheets": 1,
@@ -14743,5 +14743,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-31T16:42:19.536Z"
+  "generatedAt": "2026-10-31T16:43:28.071Z"
 }
