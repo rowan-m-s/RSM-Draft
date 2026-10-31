@@ -746,7 +746,7 @@
       "assists": 1,
       "cleanSheets": 6,
       "bonus": 1,
-      "positionRank": 14
+      "positionRank": 15
     },
     {
       "id": 31,
@@ -793,6 +793,28 @@
       "positionRank": 14
     },
     {
+      "id": 112,
+      "name": "Van Hecke",
+      "position": "DEF",
+      "club": "Spurs",
+      "clubShort": "TOT",
+      "clubCode": 6,
+      "teamId": 19,
+      "photoCode": 469142,
+      "owner": "rowan",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-30T16:00:09.552205Z",
+      "points": 39,
+      "ppg": 4.3,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 3,
+      "bonus": 3,
+      "positionRank": 14
+    },
+    {
       "id": 60,
       "name": "Hill",
       "position": "DEF",
@@ -812,7 +834,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 4,
-      "positionRank": 15
+      "positionRank": 16
     },
     {
       "id": 362,
@@ -835,28 +857,6 @@
       "cleanSheets": 4,
       "bonus": 3,
       "positionRank": 18
-    },
-    {
-      "id": 112,
-      "name": "Van Hecke",
-      "position": "DEF",
-      "club": "Spurs",
-      "clubShort": "TOT",
-      "clubCode": 6,
-      "teamId": 19,
-      "photoCode": 469142,
-      "owner": "rowan",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-30T16:00:09.552205Z",
-      "points": 38,
-      "ppg": 4.8,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 3,
-      "bonus": 3,
-      "positionRank": 16
     },
     {
       "id": 356,
@@ -1475,6 +1475,28 @@
       "positionRank": 7
     },
     {
+      "id": 496,
+      "name": "Kinsky",
+      "position": "GKP",
+      "club": "Spurs",
+      "clubShort": "TOT",
+      "clubCode": 6,
+      "teamId": 19,
+      "photoCode": 485055,
+      "owner": "bennett",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 33,
+      "ppg": 3.7,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 3,
+      "bonus": 2,
+      "positionRank": 8
+    },
+    {
       "id": 384,
       "name": "Donnarumma",
       "position": "GKP",
@@ -1494,7 +1516,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 1,
-      "positionRank": 8
+      "positionRank": 9
     },
     {
       "id": 261,
@@ -1517,28 +1539,6 @@
       "cleanSheets": 5,
       "bonus": 6,
       "positionRank": 32
-    },
-    {
-      "id": 496,
-      "name": "Kinsky",
-      "position": "GKP",
-      "club": "Spurs",
-      "clubShort": "TOT",
-      "clubCode": 6,
-      "teamId": 19,
-      "photoCode": 485055,
-      "owner": "bennett",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 32,
-      "ppg": 4,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 3,
-      "bonus": 2,
-      "positionRank": 9
     },
     {
       "id": 469,
@@ -1648,7 +1648,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 36
+      "positionRank": 37
     },
     {
       "id": 53,
@@ -1717,6 +1717,28 @@
       "positionRank": 32
     },
     {
+      "id": 455,
+      "name": "Tonali",
+      "position": "MID",
+      "club": "Spurs",
+      "clubShort": "TOT",
+      "clubCode": 6,
+      "teamId": 19,
+      "photoCode": 432422,
+      "owner": "bennett",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-14T14:30:07.387706Z",
+      "points": 31,
+      "ppg": 3.4,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 3,
+      "bonus": 2,
+      "positionRank": 36
+    },
+    {
       "id": 61,
       "name": "Truffert",
       "position": "DEF",
@@ -1783,6 +1805,28 @@
       "positionRank": 11
     },
     {
+      "id": 204,
+      "name": "Mitchell",
+      "position": "DEF",
+      "club": "Crystal Palace",
+      "clubShort": "CRY",
+      "clubCode": 31,
+      "teamId": 8,
+      "photoCode": 244723,
+      "owner": "bennett",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 30,
+      "ppg": 3.3,
+      "goals": 2,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 3,
+      "positionRank": 34
+    },
+    {
       "id": 69,
       "name": "Scott",
       "position": "MID",
@@ -1802,7 +1846,7 @@
       "assists": 2,
       "cleanSheets": 1,
       "bonus": 5,
-      "positionRank": 37
+      "positionRank": 38
     },
     {
       "id": 597,
@@ -1827,28 +1871,6 @@
       "positionRank": 10
     },
     {
-      "id": 455,
-      "name": "Tonali",
-      "position": "MID",
-      "club": "Spurs",
-      "clubShort": "TOT",
-      "clubCode": 6,
-      "teamId": 19,
-      "photoCode": 432422,
-      "owner": "bennett",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-14T14:30:07.387706Z",
-      "points": 30,
-      "ppg": 3.8,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 3,
-      "bonus": 2,
-      "positionRank": 39
-    },
-    {
       "id": 305,
       "name": "Davis",
       "position": "DEF",
@@ -1871,28 +1893,6 @@
       "positionRank": 38
     },
     {
-      "id": 204,
-      "name": "Mitchell",
-      "position": "DEF",
-      "club": "Crystal Palace",
-      "clubShort": "CRY",
-      "clubCode": 31,
-      "teamId": 8,
-      "photoCode": 244723,
-      "owner": "bennett",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 29,
-      "ppg": 3.6,
-      "goals": 2,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 3,
-      "positionRank": 37
-    },
-    {
       "id": 226,
       "name": "Pickford",
       "position": "GKP",
@@ -1913,6 +1913,28 @@
       "cleanSheets": 3,
       "bonus": 1,
       "positionRank": 11
+    },
+    {
+      "id": 502,
+      "name": "Robertson",
+      "position": "DEF",
+      "club": "Spurs",
+      "clubShort": "TOT",
+      "clubCode": 6,
+      "teamId": 19,
+      "photoCode": 122798,
+      "owner": "rushy",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-19T22:30:08.861525Z",
+      "points": 29,
+      "ppg": 3.6,
+      "goals": 0,
+      "assists": 2,
+      "cleanSheets": 2,
+      "bonus": 1,
+      "positionRank": 39
     },
     {
       "id": 552,
@@ -2000,7 +2022,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 3,
-      "positionRank": 39
+      "positionRank": 40
     },
     {
       "id": 57,
@@ -2045,28 +2067,6 @@
       "cleanSheets": 3,
       "bonus": 0,
       "positionRank": 43
-    },
-    {
-      "id": 502,
-      "name": "Robertson",
-      "position": "DEF",
-      "club": "Spurs",
-      "clubShort": "TOT",
-      "clubCode": 6,
-      "teamId": 19,
-      "photoCode": 122798,
-      "owner": "rushy",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-19T22:30:08.861525Z",
-      "points": 28,
-      "ppg": 4,
-      "goals": 0,
-      "assists": 2,
-      "cleanSheets": 2,
-      "bonus": 1,
-      "positionRank": 40
     },
     {
       "id": 640,
@@ -2245,6 +2245,28 @@
       "positionRank": 53
     },
     {
+      "id": 503,
+      "name": "Van de Ven",
+      "position": "DEF",
+      "club": "Spurs",
+      "clubShort": "TOT",
+      "clubCode": 6,
+      "teamId": 19,
+      "photoCode": 491279,
+      "owner": "ollie",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-21T15:00:07.610517Z",
+      "points": 25,
+      "ppg": 3.1,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 3,
+      "bonus": 3,
+      "positionRank": 50
+    },
+    {
       "id": 151,
       "name": "Acheampong",
       "position": "DEF",
@@ -2264,7 +2286,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 51
+      "positionRank": 52
     },
     {
       "id": 595,
@@ -2286,7 +2308,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 4,
-      "positionRank": 54
+      "positionRank": 55
     },
     {
       "id": 26,
@@ -2374,7 +2396,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 52
+      "positionRank": 53
     },
     {
       "id": 529,
@@ -2419,28 +2441,6 @@
       "cleanSheets": 1,
       "bonus": 2,
       "positionRank": 13
-    },
-    {
-      "id": 503,
-      "name": "Van de Ven",
-      "position": "DEF",
-      "club": "Spurs",
-      "clubShort": "TOT",
-      "clubCode": 6,
-      "teamId": 19,
-      "photoCode": 491279,
-      "owner": "ollie",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-21T15:00:07.610517Z",
-      "points": 24,
-      "ppg": 3.4,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 3,
-      "bonus": 3,
-      "positionRank": 53
     },
     {
       "id": 336,
@@ -2597,6 +2597,28 @@
       "positionRank": 71
     },
     {
+      "id": 401,
+      "name": "Marmoush",
+      "position": "FWD",
+      "club": "Spurs",
+      "clubShort": "TOT",
+      "clubCode": 6,
+      "teamId": 19,
+      "photoCode": 438234,
+      "owner": "jls",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-19T22:30:08.721497Z",
+      "points": 21,
+      "ppg": 2.6,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 3,
+      "bonus": 3,
+      "positionRank": 16
+    },
+    {
       "id": 389,
       "name": "Matheus N.",
       "position": "DEF",
@@ -2685,6 +2707,28 @@
       "positionRank": 73
     },
     {
+      "id": 514,
+      "name": "Tel",
+      "position": "MID",
+      "club": "Spurs",
+      "clubShort": "TOT",
+      "clubCode": 6,
+      "teamId": 19,
+      "photoCode": 511499,
+      "owner": "kellett",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 21,
+      "ppg": 3,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 3,
+      "positionRank": 74
+    },
+    {
       "id": 149,
       "name": "Colwill",
       "position": "DEF",
@@ -2726,7 +2770,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 3,
-      "positionRank": 76
+      "positionRank": 77
     },
     {
       "id": 239,
@@ -2748,7 +2792,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 75
+      "positionRank": 76
     },
     {
       "id": 569,
@@ -2770,7 +2814,29 @@
       "assists": 0,
       "cleanSheets": 5,
       "bonus": 0,
-      "positionRank": 17
+      "positionRank": 18
+    },
+    {
+      "id": 512,
+      "name": "Kudus",
+      "position": "MID",
+      "club": "Spurs",
+      "clubShort": "TOT",
+      "clubCode": 6,
+      "teamId": 19,
+      "photoCode": 460842,
+      "owner": "rushy",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-07-23T12:01:23.848657Z",
+      "points": 20,
+      "ppg": 2.5,
+      "goals": 0,
+      "assists": 2,
+      "cleanSheets": 2,
+      "bonus": 1,
+      "positionRank": 78
     },
     {
       "id": 412,
@@ -2795,28 +2861,6 @@
       "positionRank": 18
     },
     {
-      "id": 401,
-      "name": "Marmoush",
-      "position": "FWD",
-      "club": "Spurs",
-      "clubShort": "TOT",
-      "clubCode": 6,
-      "teamId": 19,
-      "photoCode": 438234,
-      "owner": "jls",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-19T22:30:08.721497Z",
-      "points": 20,
-      "ppg": 2.9,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 3,
-      "bonus": 3,
-      "positionRank": 16
-    },
-    {
       "id": 28,
       "name": "Martinez",
       "position": "GKP",
@@ -2839,26 +2883,26 @@
       "positionRank": 17
     },
     {
-      "id": 514,
-      "name": "Tel",
-      "position": "MID",
+      "id": 526,
+      "name": "Solanke",
+      "position": "FWD",
       "club": "Spurs",
       "clubShort": "TOT",
       "clubCode": 6,
       "teamId": 19,
-      "photoCode": 511499,
-      "owner": "kellett",
+      "photoCode": 154566,
+      "owner": "ollie",
       "status": "a",
       "chanceOfPlaying": null,
       "news": null,
       "newsAdded": null,
       "points": 20,
-      "ppg": 3.3,
+      "ppg": 2.2,
       "goals": 1,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 3,
-      "positionRank": 77
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 1,
+      "positionRank": 17
     },
     {
       "id": 628,
@@ -2883,50 +2927,6 @@
       "positionRank": 86
     },
     {
-      "id": 512,
-      "name": "Kudus",
-      "position": "MID",
-      "club": "Spurs",
-      "clubShort": "TOT",
-      "clubCode": 6,
-      "teamId": 19,
-      "photoCode": 460842,
-      "owner": "rushy",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-07-23T12:01:23.848657Z",
-      "points": 19,
-      "ppg": 2.7,
-      "goals": 0,
-      "assists": 2,
-      "cleanSheets": 2,
-      "bonus": 1,
-      "positionRank": 84
-    },
-    {
-      "id": 526,
-      "name": "Solanke",
-      "position": "FWD",
-      "club": "Spurs",
-      "clubShort": "TOT",
-      "clubCode": 6,
-      "teamId": 19,
-      "photoCode": 154566,
-      "owner": "ollie",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 19,
-      "ppg": 2.4,
-      "goals": 1,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 1,
-      "positionRank": 19
-    },
-    {
       "id": 464,
       "name": "Wissa",
       "position": "FWD",
@@ -2946,7 +2946,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 18
+      "positionRank": 19
     },
     {
       "id": 553,
@@ -3512,13 +3512,35 @@
       "chanceOfPlaying": 100,
       "news": null,
       "newsAdded": "2026-09-12T14:00:09.378740Z",
-      "points": 5,
-      "ppg": 1.7,
+      "points": 6,
+      "ppg": 1.5,
       "goals": 0,
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 23
+    },
+    {
+      "id": 223,
+      "name": "Mateta",
+      "position": "FWD",
+      "club": "Crystal Palace",
+      "clubShort": "CRY",
+      "clubCode": 31,
+      "teamId": 8,
+      "photoCode": 231747,
+      "owner": "kellett",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-28T21:00:08.020382Z",
+      "points": 6,
+      "ppg": 1.5,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 37
     },
     {
       "id": 78,
@@ -3541,28 +3563,6 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 164
-    },
-    {
-      "id": 223,
-      "name": "Mateta",
-      "position": "FWD",
-      "club": "Crystal Palace",
-      "clubShort": "CRY",
-      "clubCode": 31,
-      "teamId": 8,
-      "photoCode": 231747,
-      "owner": "kellett",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-28T21:00:08.020382Z",
-      "points": 5,
-      "ppg": 1.7,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 39
     },
     {
       "id": 5,
@@ -3743,6 +3743,28 @@
       "positionRank": 26
     },
     {
+      "id": 214,
+      "name": "Kamada",
+      "position": "MID",
+      "club": "Crystal Palace",
+      "clubShort": "CRY",
+      "clubCode": 31,
+      "teamId": 8,
+      "photoCode": 209400,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 33,
+      "ppg": 3.7,
+      "goals": 1,
+      "assists": 3,
+      "cleanSheets": 1,
+      "bonus": 1,
+      "positionRank": 30
+    },
+    {
       "id": 335,
       "name": "Stach",
       "position": "MID",
@@ -3762,28 +3784,6 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 3,
-      "positionRank": 30
-    },
-    {
-      "id": 214,
-      "name": "Kamada",
-      "position": "MID",
-      "club": "Crystal Palace",
-      "clubShort": "CRY",
-      "clubCode": 31,
-      "teamId": 8,
-      "photoCode": 209400,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 32,
-      "ppg": 4,
-      "goals": 1,
-      "assists": 3,
-      "cleanSheets": 1,
-      "bonus": 1,
       "positionRank": 31
     },
     {
@@ -3828,7 +3828,7 @@
       "assists": 0,
       "cleanSheets": 6,
       "bonus": 3,
-      "positionRank": 38
+      "positionRank": 39
     },
     {
       "id": 282,
@@ -3850,7 +3850,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 2,
-      "positionRank": 34
+      "positionRank": 35
     },
     {
       "id": 176,
@@ -3872,7 +3872,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 36
+      "positionRank": 37
     },
     {
       "id": 113,
@@ -3894,7 +3894,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 1,
-      "positionRank": 35
+      "positionRank": 36
     },
     {
       "id": 483,
@@ -3982,7 +3982,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 48
+      "positionRank": 49
     },
     {
       "id": 105,
@@ -4047,6 +4047,28 @@
       "goals": 2,
       "assists": 0,
       "cleanSheets": 2,
+      "bonus": 3,
+      "positionRank": 48
+    },
+    {
+      "id": 211,
+      "name": "Yeremy",
+      "position": "MID",
+      "club": "Crystal Palace",
+      "clubShort": "CRY",
+      "clubCode": 31,
+      "teamId": 8,
+      "photoCode": 488024,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 27,
+      "ppg": 3,
+      "goals": 1,
+      "assists": 2,
+      "cleanSheets": 1,
       "bonus": 3,
       "positionRank": 47
     },
@@ -4139,28 +4161,6 @@
       "positionRank": 45
     },
     {
-      "id": 211,
-      "name": "Yeremy",
-      "position": "MID",
-      "club": "Crystal Palace",
-      "clubShort": "CRY",
-      "clubCode": 31,
-      "teamId": 8,
-      "photoCode": 488024,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 26,
-      "ppg": 3.3,
-      "goals": 1,
-      "assists": 2,
-      "cleanSheets": 1,
-      "bonus": 3,
-      "positionRank": 49
-    },
-    {
       "id": 148,
       "name": "Hato",
       "position": "DEF",
@@ -4202,7 +4202,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 50
+      "positionRank": 51
     },
     {
       "id": 91,
@@ -4227,6 +4227,28 @@
       "positionRank": 48
     },
     {
+      "id": 202,
+      "name": "Richards",
+      "position": "DEF",
+      "club": "Crystal Palace",
+      "clubShort": "CRY",
+      "clubCode": 31,
+      "teamId": 8,
+      "photoCode": 427623,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 24,
+      "ppg": 2.7,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 54
+    },
+    {
       "id": 567,
       "name": "Schlager",
       "position": "MID",
@@ -4246,7 +4268,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 58
+      "positionRank": 59
     },
     {
       "id": 43,
@@ -4271,6 +4293,28 @@
       "positionRank": 56
     },
     {
+      "id": 210,
+      "name": "Wharton",
+      "position": "MID",
+      "club": "Crystal Palace",
+      "clubShort": "CRY",
+      "clubCode": 31,
+      "teamId": 8,
+      "photoCode": 496221,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-07-23T12:01:23.498963Z",
+      "points": 24,
+      "ppg": 2.7,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 2,
+      "positionRank": 58
+    },
+    {
       "id": 608,
       "name": "Yalcouyé",
       "position": "MID",
@@ -4290,7 +4334,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 59
+      "positionRank": 60
     },
     {
       "id": 244,
@@ -4357,50 +4401,6 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 64
-    },
-    {
-      "id": 202,
-      "name": "Richards",
-      "position": "DEF",
-      "club": "Crystal Palace",
-      "clubShort": "CRY",
-      "clubCode": 31,
-      "teamId": 8,
-      "photoCode": 427623,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 23,
-      "ppg": 2.9,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 55
-    },
-    {
-      "id": 210,
-      "name": "Wharton",
-      "position": "MID",
-      "club": "Crystal Palace",
-      "clubShort": "CRY",
-      "clubCode": 31,
-      "teamId": 8,
-      "photoCode": 496221,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-07-23T12:01:23.498963Z",
-      "points": 23,
-      "ppg": 2.9,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 2,
-      "positionRank": 60
     },
     {
       "id": 73,
@@ -4576,7 +4576,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 0,
-      "positionRank": 74
+      "positionRank": 75
     },
     {
       "id": 534,
@@ -4664,7 +4664,7 @@
       "assists": 1,
       "cleanSheets": 4,
       "bonus": 0,
-      "positionRank": 79
+      "positionRank": 80
     },
     {
       "id": 280,
@@ -4774,7 +4774,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 78
+      "positionRank": 79
     },
     {
       "id": 265,
@@ -4796,7 +4796,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 81
+      "positionRank": 82
     },
     {
       "id": 96,
@@ -4818,7 +4818,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 80
+      "positionRank": 81
     },
     {
       "id": 454,
@@ -4840,7 +4840,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 83
+      "positionRank": 84
     },
     {
       "id": 563,
@@ -4884,7 +4884,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 2,
-      "positionRank": 82
+      "positionRank": 83
     },
     {
       "id": 175,
@@ -4972,6 +4972,28 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 1,
+      "positionRank": 91
+    },
+    {
+      "id": 522,
+      "name": "Gray",
+      "position": "MID",
+      "club": "Spurs",
+      "clubShort": "TOT",
+      "clubCode": 6,
+      "teamId": 19,
+      "photoCode": 547701,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 18,
+      "ppg": 2.3,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 0,
       "positionRank": 90
     },
     {
@@ -5060,29 +5082,29 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 91
+      "positionRank": 92
     },
     {
-      "id": 522,
-      "name": "Gray",
+      "id": 525,
+      "name": "Fernandes",
       "position": "MID",
       "club": "Spurs",
       "clubShort": "TOT",
       "clubCode": 6,
       "teamId": 19,
-      "photoCode": 547701,
+      "photoCode": 551226,
       "owner": null,
       "status": "a",
       "chanceOfPlaying": null,
       "news": null,
       "newsAdded": null,
       "points": 17,
-      "ppg": 2.4,
+      "ppg": 1.9,
       "goals": 0,
-      "assists": 0,
+      "assists": 1,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 93
+      "positionRank": 94
     },
     {
       "id": 372,
@@ -5104,7 +5126,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 92
+      "positionRank": 93
     },
     {
       "id": 635,
@@ -5126,7 +5148,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 94
+      "positionRank": 95
     },
     {
       "id": 599,
@@ -5169,28 +5191,6 @@
       "goals": 0,
       "assists": 2,
       "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 95
-    },
-    {
-      "id": 525,
-      "name": "Fernandes",
-      "position": "MID",
-      "club": "Spurs",
-      "clubShort": "TOT",
-      "clubCode": 6,
-      "teamId": 19,
-      "photoCode": 551226,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 16,
-      "ppg": 2,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 2,
       "bonus": 0,
       "positionRank": 96
     },
@@ -5547,6 +5547,28 @@
       "positionRank": 109
     },
     {
+      "id": 203,
+      "name": "Canvot",
+      "position": "DEF",
+      "club": "Crystal Palace",
+      "clubShort": "CRY",
+      "clubCode": 31,
+      "teamId": 8,
+      "photoCode": 651426,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 13,
+      "ppg": 1.6,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 87
+    },
+    {
       "id": 119,
       "name": "Costinha",
       "position": "DEF",
@@ -5676,7 +5698,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 87
+      "positionRank": 88
     },
     {
       "id": 337,
@@ -5699,28 +5721,6 @@
       "cleanSheets": 2,
       "bonus": 0,
       "positionRank": 116
-    },
-    {
-      "id": 203,
-      "name": "Canvot",
-      "position": "DEF",
-      "club": "Crystal Palace",
-      "clubShort": "CRY",
-      "clubCode": 31,
-      "teamId": 8,
-      "photoCode": 651426,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 12,
-      "ppg": 1.7,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 89
     },
     {
       "id": 340,
@@ -5830,7 +5830,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 88
+      "positionRank": 89
     },
     {
       "id": 104,
@@ -6820,7 +6820,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 143
+      "positionRank": 144
     },
     {
       "id": 631,
@@ -6842,7 +6842,29 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 144
+      "positionRank": 145
+    },
+    {
+      "id": 241,
+      "name": "McNeil",
+      "position": "MID",
+      "club": "Crystal Palace",
+      "clubShort": "CRY",
+      "clubCode": 31,
+      "teamId": 8,
+      "photoCode": 433154,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 8,
+      "ppg": 1.3,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 142
     },
     {
       "id": 152,
@@ -6886,7 +6908,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 142
+      "positionRank": 143
     },
     {
       "id": 269,
@@ -6986,10 +7008,10 @@
       "teamId": 16,
       "photoCode": 493250,
       "owner": null,
-      "status": "a",
+      "status": "d",
       "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-22T11:00:08.617283Z",
+      "news": "Calf injury - 75% chance of playing",
+      "newsAdded": "2026-10-31T17:30:08.280248Z",
       "points": 7,
       "ppg": 1.8,
       "goals": 0,
@@ -7040,7 +7062,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 145
+      "positionRank": 146
     },
     {
       "id": 381,
@@ -7109,28 +7131,6 @@
       "positionRank": 154
     },
     {
-      "id": 241,
-      "name": "McNeil",
-      "position": "MID",
-      "club": "Crystal Palace",
-      "clubShort": "CRY",
-      "clubCode": 31,
-      "teamId": 8,
-      "photoCode": 433154,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 7,
-      "ppg": 1.4,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 147
-    },
-    {
       "id": 369,
       "name": "Ngumoha",
       "position": "MID",
@@ -7172,7 +7172,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 146
+      "positionRank": 147
     },
     {
       "id": 548,
@@ -7590,7 +7590,29 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 119
+      "positionRank": 120
+    },
+    {
+      "id": 153,
+      "name": "Disasi",
+      "position": "DEF",
+      "club": "Crystal Palace",
+      "clubShort": "CRY",
+      "clubCode": 31,
+      "teamId": 8,
+      "photoCode": 220362,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-12T15:30:09.445078Z",
+      "points": 5,
+      "ppg": 1,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 117
     },
     {
       "id": 650,
@@ -7788,7 +7810,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 120
+      "positionRank": 121
     },
     {
       "id": 81,
@@ -7810,7 +7832,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 37
+      "positionRank": 38
     },
     {
       "id": 498,
@@ -7832,7 +7854,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 118
+      "positionRank": 119
     },
     {
       "id": 328,
@@ -7854,7 +7876,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 117
+      "positionRank": 118
     },
     {
       "id": 190,
@@ -7920,7 +7942,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 38
+      "positionRank": 39
     },
     {
       "id": 56,
@@ -8009,28 +8031,6 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 174
-    },
-    {
-      "id": 153,
-      "name": "Disasi",
-      "position": "DEF",
-      "club": "Crystal Palace",
-      "clubShort": "CRY",
-      "clubCode": 31,
-      "teamId": 8,
-      "photoCode": 220362,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-12T15:30:09.445078Z",
-      "points": 4,
-      "ppg": 1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 121
     },
     {
       "id": 487,
@@ -8294,7 +8294,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 137
+      "positionRank": 138
     },
     {
       "id": 243,
@@ -8338,7 +8338,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 132
+      "positionRank": 133
     },
     {
       "id": 648,
@@ -8470,7 +8470,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 135
+      "positionRank": 136
     },
     {
       "id": 9,
@@ -8536,7 +8536,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 133
+      "positionRank": 134
     },
     {
       "id": 142,
@@ -8603,6 +8603,28 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 185
+    },
+    {
+      "id": 207,
+      "name": "Mingueza",
+      "position": "DEF",
+      "club": "Crystal Palace",
+      "clubShort": "CRY",
+      "clubCode": 31,
+      "teamId": 8,
+      "photoCode": 242313,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 3,
+      "ppg": 1,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 132
     },
     {
       "id": 523,
@@ -8712,7 +8734,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 136
+      "positionRank": 137
     },
     {
       "id": 147,
@@ -8756,7 +8778,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 134
+      "positionRank": 135
     },
     {
       "id": 629,
@@ -9067,28 +9089,6 @@
       "positionRank": 201
     },
     {
-      "id": 207,
-      "name": "Mingueza",
-      "position": "DEF",
-      "club": "Crystal Palace",
-      "clubShort": "CRY",
-      "clubCode": 31,
-      "teamId": 8,
-      "photoCode": 242313,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 2,
-      "ppg": 1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 139
-    },
-    {
       "id": 126,
       "name": "O'Riley",
       "position": "MID",
@@ -9218,7 +9218,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 138
+      "positionRank": 139
     },
     {
       "id": 256,
@@ -9340,10 +9340,10 @@
       "teamId": 20,
       "photoCode": 201895,
       "owner": null,
-      "status": "a",
+      "status": "s",
       "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-09T08:30:05.962393Z",
+      "news": "Suspended until 21 Nov",
+      "newsAdded": "2026-10-31T17:30:08.393957Z",
       "points": 1,
       "ppg": 0.3,
       "goals": 0,
@@ -14743,5 +14743,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-31T17:01:44.343Z"
+  "generatedAt": "2026-10-31T17:35:32.406Z"
 }

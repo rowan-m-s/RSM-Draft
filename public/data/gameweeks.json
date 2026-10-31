@@ -1503,17 +1503,17 @@
       "scoresProvisional": true,
       "kochReady": true,
       "yetByManager": {
-        "rushy": 7,
-        "kellett": 4,
+        "rushy": 4,
+        "kellett": 2,
         "wallis": 4,
-        "jls": 5,
+        "jls": 4,
         "paddy": 4,
-        "bennett": 7,
+        "bennett": 5,
         "wood": 2,
-        "rowan": 5,
+        "rowan": 4,
         "jason": 4,
         "dj": 4,
-        "ollie": 8
+        "ollie": 6
       },
       "fixturesRemaining": true,
       "dataChecked": false,
@@ -1522,17 +1522,17 @@
       "confirmExpectedUtc": "2026-11-03T20:00:00.000Z",
       "revealFromUtc": "2026-11-03T00:10:00.000Z",
       "scores": {
-        "rushy": 11,
-        "kellett": 19,
+        "rushy": 13,
+        "kellett": 21,
         "wallis": 20,
-        "jls": 13,
+        "jls": 14,
         "paddy": 20,
-        "bennett": 19,
+        "bennett": 21,
         "wood": 41,
-        "rowan": 31,
+        "rowan": 32,
         "jason": 19,
         "dj": 44,
-        "ollie": 5
+        "ollie": 7
       },
       "kochKeys": [],
       "charged": 0,
@@ -1637,10 +1637,10 @@
           "element": 124
         },
         "rowan": {
-          "playerName": "Gibbs-White",
-          "points": 2,
+          "playerName": "Van Hecke",
+          "points": 1,
           "managerKey": "rowan",
-          "element": 480
+          "element": 112
         },
         "jason": {
           "playerName": "Georginio",
@@ -2401,5 +2401,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-10-31T16:57:11.249Z"
+  "generatedAt": "2026-10-31T17:35:32.406Z"
 }
