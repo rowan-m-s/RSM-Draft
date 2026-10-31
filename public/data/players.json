@@ -3037,6 +3037,28 @@
       "positionRank": 21
     },
     {
+      "id": 201,
+      "name": "Muñoz",
+      "position": "DEF",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 247348,
+      "owner": "dj",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 16,
+      "ppg": 2,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 0,
+      "bonus": 2,
+      "positionRank": 72
+    },
+    {
       "id": 445,
       "name": "Thiaw",
       "position": "DEF",
@@ -3056,7 +3078,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 73
+      "positionRank": 74
     },
     {
       "id": 554,
@@ -3079,28 +3101,6 @@
       "cleanSheets": 2,
       "bonus": 1,
       "positionRank": 95
-    },
-    {
-      "id": 201,
-      "name": "Muñoz",
-      "position": "DEF",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 247348,
-      "owner": "dj",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 15,
-      "ppg": 2.1,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 0,
-      "bonus": 2,
-      "positionRank": 76
     },
     {
       "id": 393,
@@ -5082,7 +5082,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 75
+      "positionRank": 76
     },
     {
       "id": 525,
@@ -5126,7 +5126,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 74
+      "positionRank": 75
     },
     {
       "id": 418,
@@ -5148,7 +5148,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 72
+      "positionRank": 73
     },
     {
       "id": 577,
@@ -14743,5 +14743,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-31T15:50:48.758Z"
+  "generatedAt": "2026-10-31T16:03:15.044Z"
 }

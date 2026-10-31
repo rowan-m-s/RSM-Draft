@@ -374,8 +374,15 @@
         ]
       },
       "201": {
-        "total": 0,
-        "components": []
+        "total": 1,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 1,
+            "points": 1
+          }
+        ]
       },
       "467": {
         "total": 1,
@@ -1364,5 +1371,5 @@
       }
     }
   },
-  "generatedAt": "2026-10-31T15:50:48.758Z"
+  "generatedAt": "2026-10-31T16:03:15.044Z"
 }
