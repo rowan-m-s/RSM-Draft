@@ -1035,28 +1035,6 @@
       "positionRank": 19
     },
     {
-      "id": 555,
-      "name": "Silva",
-      "position": "DEF",
-      "club": "Bournemouth",
-      "clubShort": "BOU",
-      "clubCode": 91,
-      "teamId": 3,
-      "photoCode": 483067,
-      "owner": "rowan",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 37,
-      "ppg": 4.1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 3,
-      "bonus": 3,
-      "positionRank": 20
-    },
-    {
       "id": 350,
       "name": "A.Becker",
       "position": "GKP",
@@ -1098,7 +1076,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 1,
-      "positionRank": 22
+      "positionRank": 21
     },
     {
       "id": 295,
@@ -1143,6 +1121,28 @@
       "cleanSheets": 5,
       "bonus": 6,
       "positionRank": 21
+    },
+    {
+      "id": 555,
+      "name": "Silva",
+      "position": "DEF",
+      "club": "Bournemouth",
+      "clubShort": "BOU",
+      "clubCode": 91,
+      "teamId": 3,
+      "photoCode": 483067,
+      "owner": "rowan",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 36,
+      "ppg": 4,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 3,
+      "bonus": 2,
+      "positionRank": 22
     },
     {
       "id": 426,
@@ -2990,7 +2990,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 71
+      "positionRank": 72
     },
     {
       "id": 598,
@@ -3696,7 +3696,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 1,
-      "positionRank": 21
+      "positionRank": 20
     },
     {
       "id": 98,
@@ -4887,6 +4887,28 @@
       "positionRank": 82
     },
     {
+      "id": 175,
+      "name": "van Ewijk",
+      "position": "DEF",
+      "club": "Coventry City",
+      "clubShort": "COV",
+      "clubCode": 9,
+      "teamId": 7,
+      "photoCode": 451284,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-19T16:00:09.486751Z",
+      "points": 19,
+      "ppg": 2.4,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 69
+    },
+    {
       "id": 313,
       "name": "Clarke",
       "position": "MID",
@@ -4994,7 +5016,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 70
+      "positionRank": 71
     },
     {
       "id": 33,
@@ -5016,7 +5038,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 69
+      "positionRank": 70
     },
     {
       "id": 574,
@@ -5127,28 +5149,6 @@
       "cleanSheets": 1,
       "bonus": 0,
       "positionRank": 94
-    },
-    {
-      "id": 175,
-      "name": "van Ewijk",
-      "position": "DEF",
-      "club": "Coventry City",
-      "clubShort": "COV",
-      "clubCode": 9,
-      "teamId": 7,
-      "photoCode": 451284,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-19T16:00:09.486751Z",
-      "points": 17,
-      "ppg": 2.1,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 72
     },
     {
       "id": 315,
@@ -14743,5 +14743,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-31T16:51:28.465Z"
+  "generatedAt": "2026-10-31T16:52:36.995Z"
 }
