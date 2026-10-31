@@ -1502,7 +1502,19 @@
       "started": false,
       "scoresProvisional": false,
       "kochReady": false,
-      "yetByManager": {},
+      "yetByManager": {
+        "rushy": 11,
+        "kellett": 11,
+        "wallis": 11,
+        "jls": 11,
+        "paddy": 11,
+        "bennett": 11,
+        "wood": 11,
+        "rowan": 11,
+        "jason": 11,
+        "dj": 11,
+        "ollie": 11
+      },
       "fixturesRemaining": true,
       "dataChecked": false,
       "locallyFinalised": false,
@@ -1512,9 +1524,89 @@
       "scores": {},
       "kochKeys": [],
       "charged": 0,
-      "topPerformerByManager": {},
-      "scapegoatByManager": {},
-      "kochGraphicByManager": {}
+      "topPerformerByManager": {
+        "rushy": {
+          "playerName": "Tzolakis",
+          "points": 0,
+          "managerKey": "rushy"
+        },
+        "kellett": {
+          "playerName": "Kelleher",
+          "points": 0,
+          "managerKey": "kellett"
+        },
+        "wallis": {
+          "playerName": "Lammens",
+          "points": 0,
+          "managerKey": "wallis"
+        },
+        "jls": {
+          "playerName": "A.Becker",
+          "points": 0,
+          "managerKey": "jls"
+        },
+        "paddy": {
+          "playerName": "Rushworth",
+          "points": 0,
+          "managerKey": "paddy"
+        },
+        "bennett": {
+          "playerName": "Kinsky",
+          "points": 0,
+          "managerKey": "bennett"
+        },
+        "wood": {
+          "playerName": "Donnarumma",
+          "points": 0,
+          "managerKey": "wood"
+        },
+        "rowan": {
+          "playerName": "Pickford",
+          "points": 0,
+          "managerKey": "rowan"
+        },
+        "jason": {
+          "playerName": "Petrović",
+          "points": 0,
+          "managerKey": "jason"
+        },
+        "dj": {
+          "playerName": "Suzuki",
+          "points": 0,
+          "managerKey": "dj"
+        },
+        "ollie": {
+          "playerName": "Raya",
+          "points": 0,
+          "managerKey": "ollie"
+        }
+      },
+      "scapegoatByManager": {
+        "rushy": null,
+        "kellett": null,
+        "wallis": null,
+        "jls": null,
+        "paddy": null,
+        "bennett": null,
+        "wood": null,
+        "rowan": null,
+        "jason": null,
+        "dj": null,
+        "ollie": null
+      },
+      "kochGraphicByManager": {
+        "rushy": null,
+        "kellett": null,
+        "wallis": null,
+        "jls": null,
+        "paddy": null,
+        "bennett": null,
+        "wood": null,
+        "rowan": null,
+        "jason": null,
+        "dj": null,
+        "ollie": null
+      }
     },
     {
       "id": 10,
@@ -2242,5 +2334,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-10-31T03:39:13.465Z"
+  "generatedAt": "2026-10-31T11:31:23.962Z"
 }
