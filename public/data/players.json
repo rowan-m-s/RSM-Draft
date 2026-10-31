@@ -1079,6 +1079,28 @@
       "positionRank": 5
     },
     {
+      "id": 279,
+      "name": "Ajayi",
+      "position": "DEF",
+      "club": "Hull City",
+      "clubShort": "HUL",
+      "clubCode": 88,
+      "teamId": 11,
+      "photoCode": 146426,
+      "owner": "kellett",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-22T17:30:07.668197Z",
+      "points": 36,
+      "ppg": 4,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 3,
+      "bonus": 2,
+      "positionRank": 23
+    },
+    {
       "id": 277,
       "name": "Egan",
       "position": "DEF",
@@ -1186,7 +1208,7 @@
       "assists": 2,
       "cleanSheets": 4,
       "bonus": 3,
-      "positionRank": 23
+      "positionRank": 24
     },
     {
       "id": 542,
@@ -1253,28 +1275,6 @@
       "cleanSheets": 2,
       "bonus": 1,
       "positionRank": 23
-    },
-    {
-      "id": 279,
-      "name": "Ajayi",
-      "position": "DEF",
-      "club": "Hull City",
-      "clubShort": "HUL",
-      "clubCode": 88,
-      "teamId": 11,
-      "photoCode": 146426,
-      "owner": "kellett",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-22T17:30:07.668197Z",
-      "points": 34,
-      "ppg": 3.8,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 3,
-      "bonus": 2,
-      "positionRank": 24
     },
     {
       "id": 480,
@@ -14743,5 +14743,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-31T16:54:53.799Z"
+  "generatedAt": "2026-10-31T16:56:02.759Z"
 }

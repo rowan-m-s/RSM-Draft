@@ -1003,7 +1003,7 @@
         ]
       },
       "279": {
-        "total": 0,
+        "total": 2,
         "components": [
           {
             "stat": "minutes",
@@ -1022,6 +1022,12 @@
             "name": "Yellow cards",
             "value": 1,
             "points": -1
+          },
+          {
+            "stat": "defensive_contribution",
+            "name": "Defensive Contribution",
+            "value": 10,
+            "points": 2
           }
         ]
       },
@@ -1759,5 +1765,5 @@
       }
     }
   },
-  "generatedAt": "2026-10-31T16:54:53.799Z"
+  "generatedAt": "2026-10-31T16:56:02.759Z"
 }
