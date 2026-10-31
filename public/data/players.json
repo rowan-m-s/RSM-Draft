@@ -36,8 +36,8 @@
       "chanceOfPlaying": null,
       "news": null,
       "newsAdded": null,
-      "points": 64,
-      "ppg": 7.1,
+      "points": 63,
+      "ppg": 7,
       "goals": 2,
       "assists": 4,
       "cleanSheets": 5,
@@ -1274,7 +1274,7 @@
       "assists": 2,
       "cleanSheets": 1,
       "bonus": 6,
-      "positionRank": 25
+      "positionRank": 26
     },
     {
       "id": 60,
@@ -1340,7 +1340,7 @@
       "assists": 0,
       "cleanSheets": 5,
       "bonus": 6,
-      "positionRank": 27
+      "positionRank": 28
     },
     {
       "id": 496,
@@ -1472,7 +1472,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 5,
-      "positionRank": 29
+      "positionRank": 30
     },
     {
       "id": 555,
@@ -3699,6 +3699,28 @@
       "positionRank": 23
     },
     {
+      "id": 98,
+      "name": "Janelt",
+      "position": "MID",
+      "club": "Brentford",
+      "clubShort": "BRE",
+      "clubCode": 94,
+      "teamId": 4,
+      "photoCode": 204580,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-17T16:30:09.272910Z",
+      "points": 33,
+      "ppg": 4.1,
+      "goals": 2,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 3,
+      "positionRank": 25
+    },
+    {
       "id": 214,
       "name": "Kamada",
       "position": "MID",
@@ -3718,7 +3740,7 @@
       "assists": 3,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 26
+      "positionRank": 27
     },
     {
       "id": 335,
@@ -3740,7 +3762,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 3,
-      "positionRank": 28
+      "positionRank": 29
     },
     {
       "id": 173,
@@ -3785,28 +3807,6 @@
       "cleanSheets": 3,
       "bonus": 1,
       "positionRank": 27
-    },
-    {
-      "id": 98,
-      "name": "Janelt",
-      "position": "MID",
-      "club": "Brentford",
-      "clubShort": "BRE",
-      "clubCode": 94,
-      "teamId": 4,
-      "photoCode": 204580,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-17T16:30:09.272910Z",
-      "points": 31,
-      "ppg": 3.9,
-      "goals": 2,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 3,
-      "positionRank": 30
     },
     {
       "id": 264,
@@ -14743,5 +14743,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-31T16:08:58.274Z"
+  "generatedAt": "2026-10-31T16:10:08.767Z"
 }
