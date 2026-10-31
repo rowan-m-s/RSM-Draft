@@ -199,6 +199,28 @@
       "positionRank": 3
     },
     {
+      "id": 109,
+      "name": "Verbruggen",
+      "position": "GKP",
+      "club": "Brighton",
+      "clubShort": "BHA",
+      "clubCode": 36,
+      "teamId": 5,
+      "photoCode": 489639,
+      "owner": "jls",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 51,
+      "ppg": 5.7,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 6,
+      "bonus": 5,
+      "positionRank": 1
+    },
+    {
       "id": 1,
       "name": "Raya",
       "position": "GKP",
@@ -218,7 +240,7 @@
       "assists": 0,
       "cleanSheets": 5,
       "bonus": 6,
-      "positionRank": 1
+      "positionRank": 2
     },
     {
       "id": 40,
@@ -241,28 +263,6 @@
       "cleanSheets": 2,
       "bonus": 2,
       "positionRank": 3
-    },
-    {
-      "id": 109,
-      "name": "Verbruggen",
-      "position": "GKP",
-      "club": "Brighton",
-      "clubShort": "BHA",
-      "clubCode": 36,
-      "teamId": 5,
-      "photoCode": 489639,
-      "owner": "jls",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 49,
-      "ppg": 5.4,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 6,
-      "bonus": 4,
-      "positionRank": 2
     },
     {
       "id": 286,
@@ -504,7 +504,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 5,
-      "positionRank": 9
+      "positionRank": 8
     },
     {
       "id": 385,
@@ -1673,6 +1673,28 @@
       "positionRank": 34
     },
     {
+      "id": 586,
+      "name": "Mendy",
+      "position": "DEF",
+      "club": "Hull City",
+      "clubShort": "HUL",
+      "clubCode": 88,
+      "teamId": 11,
+      "photoCode": 606930,
+      "owner": "rowan",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-16T12:30:09.976274Z",
+      "points": 31,
+      "ppg": 5.2,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 1,
+      "positionRank": 33
+    },
+    {
       "id": 472,
       "name": "Murillo",
       "position": "DEF",
@@ -1868,28 +1890,6 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 37
-    },
-    {
-      "id": 586,
-      "name": "Mendy",
-      "position": "DEF",
-      "club": "Hull City",
-      "clubShort": "HUL",
-      "clubCode": 88,
-      "teamId": 11,
-      "photoCode": 606930,
-      "owner": "rowan",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-16T12:30:09.976274Z",
-      "points": 29,
-      "ppg": 4.8,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 1,
       "positionRank": 38
     },
     {
@@ -1912,7 +1912,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 36
+      "positionRank": 37
     },
     {
       "id": 226,
@@ -3646,13 +3646,13 @@
       "chanceOfPlaying": 100,
       "news": null,
       "newsAdded": "2026-08-30T18:00:07.935334Z",
-      "points": 44,
-      "ppg": 5.5,
+      "points": 43,
+      "ppg": 5.4,
       "goals": 3,
       "assists": 1,
       "cleanSheets": 6,
-      "bonus": 5,
-      "positionRank": 8
+      "bonus": 4,
+      "positionRank": 9
     },
     {
       "id": 86,
@@ -3850,7 +3850,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 2,
-      "positionRank": 33
+      "positionRank": 34
     },
     {
       "id": 176,
@@ -3872,7 +3872,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 35
+      "positionRank": 36
     },
     {
       "id": 113,
@@ -3894,7 +3894,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 1,
-      "positionRank": 34
+      "positionRank": 35
     },
     {
       "id": 483,
@@ -8294,7 +8294,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 137
+      "positionRank": 138
     },
     {
       "id": 243,
@@ -8338,7 +8338,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 132
+      "positionRank": 133
     },
     {
       "id": 648,
@@ -8383,6 +8383,28 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 186
+    },
+    {
+      "id": 62,
+      "name": "Diakité",
+      "position": "DEF",
+      "club": "Bournemouth",
+      "clubShort": "BOU",
+      "clubCode": 91,
+      "teamId": 3,
+      "photoCode": 242882,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 3,
+      "ppg": 1,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 130
     },
     {
       "id": 245,
@@ -8448,7 +8470,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 135
+      "positionRank": 136
     },
     {
       "id": 9,
@@ -8514,7 +8536,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 133
+      "positionRank": 134
     },
     {
       "id": 142,
@@ -8536,7 +8558,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 130
+      "positionRank": 131
     },
     {
       "id": 607,
@@ -8690,7 +8712,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 136
+      "positionRank": 137
     },
     {
       "id": 147,
@@ -8712,7 +8734,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 131
+      "positionRank": 132
     },
     {
       "id": 364,
@@ -8734,7 +8756,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 134
+      "positionRank": 135
     },
     {
       "id": 77,
@@ -8823,28 +8845,6 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 196
-    },
-    {
-      "id": 62,
-      "name": "Diakité",
-      "position": "DEF",
-      "club": "Bournemouth",
-      "clubShort": "BOU",
-      "clubCode": 91,
-      "teamId": 3,
-      "photoCode": 242882,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 2,
-      "ppg": 1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 138
     },
     {
       "id": 20,
@@ -14743,5 +14743,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-31T16:48:02.726Z"
+  "generatedAt": "2026-10-31T16:49:11.500Z"
 }
