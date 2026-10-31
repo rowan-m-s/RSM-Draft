@@ -221,6 +221,28 @@
       "positionRank": 1
     },
     {
+      "id": 40,
+      "name": "Rogers",
+      "position": "MID",
+      "club": "Chelsea",
+      "clubShort": "CHE",
+      "clubCode": 8,
+      "teamId": 6,
+      "photoCode": 244850,
+      "owner": "rushy",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 50,
+      "ppg": 5.6,
+      "goals": 5,
+      "assists": 1,
+      "cleanSheets": 2,
+      "bonus": 3,
+      "positionRank": 3
+    },
+    {
       "id": 1,
       "name": "Raya",
       "position": "GKP",
@@ -241,28 +263,6 @@
       "cleanSheets": 5,
       "bonus": 6,
       "positionRank": 2
-    },
-    {
-      "id": 40,
-      "name": "Rogers",
-      "position": "MID",
-      "club": "Chelsea",
-      "clubShort": "CHE",
-      "clubCode": 8,
-      "teamId": 6,
-      "photoCode": 244850,
-      "owner": "rushy",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 49,
-      "ppg": 5.4,
-      "goals": 5,
-      "assists": 1,
-      "cleanSheets": 2,
-      "bonus": 2,
-      "positionRank": 3
     },
     {
       "id": 286,
@@ -2506,7 +2506,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 4,
-      "positionRank": 71
+      "positionRank": 70
     },
     {
       "id": 358,
@@ -2616,7 +2616,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 73
+      "positionRank": 72
     },
     {
       "id": 401,
@@ -2770,7 +2770,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 65
+      "positionRank": 64
     },
     {
       "id": 398,
@@ -3056,7 +3056,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 74
+      "positionRank": 75
     },
     {
       "id": 554,
@@ -3100,7 +3100,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 80
+      "positionRank": 81
     },
     {
       "id": 201,
@@ -3122,7 +3122,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 79
+      "positionRank": 80
     },
     {
       "id": 492,
@@ -3210,7 +3210,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 82
+      "positionRank": 83
     },
     {
       "id": 465,
@@ -3336,13 +3336,13 @@
       "chanceOfPlaying": 100,
       "news": null,
       "newsAdded": "2026-09-19T12:00:08.823872Z",
-      "points": 10,
-      "ppg": 2.5,
+      "points": 11,
+      "ppg": 2.2,
       "goals": 0,
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 96
+      "positionRank": 94
     },
     {
       "id": 300,
@@ -4447,28 +4447,6 @@
       "positionRank": 67
     },
     {
-      "id": 161,
-      "name": "Lavia",
-      "position": "MID",
-      "club": "Chelsea",
-      "clubShort": "CHE",
-      "clubCode": 8,
-      "teamId": 6,
-      "photoCode": 514356,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 22,
-      "ppg": 3.1,
-      "goals": 1,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 1,
-      "positionRank": 68
-    },
-    {
       "id": 551,
       "name": "N.Angulo",
       "position": "MID",
@@ -4488,7 +4466,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 72
+      "positionRank": 71
     },
     {
       "id": 290,
@@ -4510,7 +4488,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 69
+      "positionRank": 68
     },
     {
       "id": 64,
@@ -4554,7 +4532,7 @@
       "assists": 2,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 70
+      "positionRank": 69
     },
     {
       "id": 327,
@@ -4667,6 +4645,28 @@
       "positionRank": 63
     },
     {
+      "id": 161,
+      "name": "Lavia",
+      "position": "MID",
+      "club": "Chelsea",
+      "clubShort": "CHE",
+      "clubCode": 8,
+      "teamId": 6,
+      "photoCode": 514356,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 21,
+      "ppg": 3,
+      "goals": 1,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 73
+    },
+    {
       "id": 632,
       "name": "Andrés",
       "position": "MID",
@@ -4708,7 +4708,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 67
+      "positionRank": 66
     },
     {
       "id": 259,
@@ -4730,29 +4730,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 66
-    },
-    {
-      "id": 145,
-      "name": "Fofana",
-      "position": "DEF",
-      "club": "Chelsea",
-      "clubShort": "CHE",
-      "clubCode": 8,
-      "teamId": 6,
-      "photoCode": 444463,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-07-23T12:01:23.464591Z",
-      "points": 20,
-      "ppg": 4,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 3,
-      "positionRank": 64
+      "positionRank": 65
     },
     {
       "id": 533,
@@ -4774,7 +4752,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 68
+      "positionRank": 67
     },
     {
       "id": 545,
@@ -4863,6 +4841,28 @@
       "cleanSheets": 1,
       "bonus": 2,
       "positionRank": 85
+    },
+    {
+      "id": 145,
+      "name": "Fofana",
+      "position": "DEF",
+      "club": "Chelsea",
+      "clubShort": "CHE",
+      "clubCode": 8,
+      "teamId": 6,
+      "photoCode": 444463,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-07-23T12:01:23.464591Z",
+      "points": 19,
+      "ppg": 3.8,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 2,
+      "positionRank": 68
     },
     {
       "id": 563,
@@ -5151,6 +5151,28 @@
       "positionRank": 95
     },
     {
+      "id": 417,
+      "name": "Dalot",
+      "position": "DEF",
+      "club": "Man Utd",
+      "clubShort": "MUN",
+      "clubCode": 1,
+      "teamId": 16,
+      "photoCode": 216051,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 16,
+      "ppg": 1.8,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 73
+    },
+    {
       "id": 599,
       "name": "Elvedi",
       "position": "DEF",
@@ -5170,7 +5192,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 78
+      "positionRank": 79
     },
     {
       "id": 315,
@@ -5214,7 +5236,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 75
+      "positionRank": 76
     },
     {
       "id": 418,
@@ -5236,7 +5258,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 73
+      "positionRank": 74
     },
     {
       "id": 541,
@@ -5258,7 +5280,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 77
+      "positionRank": 78
     },
     {
       "id": 536,
@@ -5280,7 +5302,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 76
+      "positionRank": 77
     },
     {
       "id": 75,
@@ -5368,7 +5390,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 81
+      "positionRank": 82
     },
     {
       "id": 577,
@@ -5435,28 +5457,6 @@
       "cleanSheets": 1,
       "bonus": 0,
       "positionRank": 84
-    },
-    {
-      "id": 417,
-      "name": "Dalot",
-      "position": "DEF",
-      "club": "Man Utd",
-      "clubShort": "MUN",
-      "clubCode": 1,
-      "teamId": 16,
-      "photoCode": 216051,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 14,
-      "ppg": 1.6,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 83
     },
     {
       "id": 209,
@@ -5962,7 +5962,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 94
+      "positionRank": 95
     },
     {
       "id": 618,
@@ -6248,7 +6248,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 95
+      "positionRank": 96
     },
     {
       "id": 581,
@@ -14743,5 +14743,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-31T18:15:39.562Z"
+  "generatedAt": "2026-10-31T18:35:29.924Z"
 }
