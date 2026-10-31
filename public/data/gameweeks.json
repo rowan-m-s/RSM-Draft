@@ -1522,14 +1522,14 @@
       "confirmExpectedUtc": "2026-11-03T20:00:00.000Z",
       "revealFromUtc": "2026-11-03T00:10:00.000Z",
       "scores": {
-        "rushy": 30,
+        "rushy": 29,
         "kellett": 20,
         "wallis": 20,
         "jls": 15,
         "paddy": 20,
         "bennett": 28,
         "wood": 41,
-        "rowan": 37,
+        "rowan": 46,
         "jason": 19,
         "dj": 44,
         "ollie": 13
@@ -1538,7 +1538,7 @@
       "charged": 0,
       "topPerformerByManager": {
         "rushy": {
-          "playerName": "Robertson",
+          "playerName": "Rogers",
           "points": 9,
           "managerKey": "rushy"
         },
@@ -1573,8 +1573,8 @@
           "managerKey": "wood"
         },
         "rowan": {
-          "playerName": "McBurnie",
-          "points": 12,
+          "playerName": "Van Hecke",
+          "points": 15,
           "managerKey": "rowan"
         },
         "jason": {
@@ -2401,5 +2401,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-10-31T18:55:34.567Z"
+  "generatedAt": "2026-10-31T19:15:30.592Z"
 }
