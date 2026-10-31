@@ -1503,17 +1503,17 @@
       "scoresProvisional": true,
       "kochReady": true,
       "yetByManager": {
-        "rushy": 4,
+        "rushy": 2,
         "kellett": 2,
-        "wallis": 4,
+        "wallis": 2,
         "jls": 4,
         "paddy": 4,
-        "bennett": 5,
-        "wood": 2,
-        "rowan": 4,
+        "bennett": 4,
+        "wood": 1,
+        "rowan": 3,
         "jason": 4,
-        "dj": 4,
-        "ollie": 6
+        "dj": 3,
+        "ollie": 3
       },
       "fixturesRemaining": true,
       "dataChecked": false,
@@ -1522,17 +1522,17 @@
       "confirmExpectedUtc": "2026-11-03T20:00:00.000Z",
       "revealFromUtc": "2026-11-03T00:10:00.000Z",
       "scores": {
-        "rushy": 28,
+        "rushy": 30,
         "kellett": 20,
-        "wallis": 20,
+        "wallis": 22,
         "jls": 15,
         "paddy": 20,
-        "bennett": 28,
-        "wood": 41,
-        "rowan": 46,
+        "bennett": 29,
+        "wood": 42,
+        "rowan": 47,
         "jason": 19,
-        "dj": 44,
-        "ollie": 13
+        "dj": 45,
+        "ollie": 16
       },
       "kochKeys": [],
       "charged": 0,
@@ -1607,10 +1607,10 @@
           "element": 223
         },
         "wallis": {
-          "playerName": "Welbeck",
+          "playerName": "Gonzalo",
           "points": 1,
           "managerKey": "wallis",
-          "element": 136
+          "element": 569
         },
         "jls": {
           "playerName": "Bogle",
@@ -1631,16 +1631,16 @@
           "element": 277
         },
         "wood": {
-          "playerName": "Groß",
-          "points": 2,
+          "playerName": "Affengruber",
+          "points": 1,
           "managerKey": "wood",
-          "element": 124
+          "element": 640
         },
         "rowan": {
-          "playerName": "Gibbs-White",
-          "points": 2,
+          "playerName": "Lindelöf",
+          "points": 1,
           "managerKey": "rowan",
-          "element": 480
+          "element": 37
         },
         "jason": {
           "playerName": "Georginio",
@@ -1649,10 +1649,10 @@
           "element": 125
         },
         "dj": {
-          "playerName": "Matheus N.",
-          "points": 2,
+          "playerName": "Suzuki",
+          "points": 1,
           "managerKey": "dj",
-          "element": 389
+          "element": 597
         },
         "ollie": {
           "playerName": "Mbeumo",
@@ -2401,5 +2401,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-10-31T19:32:32.984Z"
+  "generatedAt": "2026-10-31T20:15:28.570Z"
 }
