@@ -66,7 +66,7 @@
     },
     "82": {
       "57": {
-        "total": 8,
+        "total": 7,
         "components": [
           {
             "stat": "minutes",
@@ -83,8 +83,8 @@
           {
             "stat": "bonus",
             "name": "Bonus",
-            "value": 2,
-            "points": 2
+            "value": 1,
+            "points": 1
           }
         ]
       },
@@ -251,12 +251,18 @@
         ]
       },
       "334": {
-        "total": 2,
+        "total": 4,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
             "value": 90,
+            "points": 2
+          },
+          {
+            "stat": "defensive_contribution",
+            "name": "Defensive Contribution",
+            "value": 10,
             "points": 2
           }
         ]
@@ -277,18 +283,24 @@
         ]
       },
       "385": {
-        "total": 2,
+        "total": 3,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
             "value": 90,
             "points": 2
+          },
+          {
+            "stat": "saves",
+            "name": "Saves",
+            "value": 3,
+            "points": 1
           }
         ]
       },
       "555": {
-        "total": 7,
+        "total": 8,
         "components": [
           {
             "stat": "minutes",
@@ -305,8 +317,8 @@
           {
             "stat": "bonus",
             "name": "Bonus",
-            "value": 1,
-            "points": 1
+            "value": 2,
+            "points": 2
           }
         ]
       }
@@ -939,7 +951,7 @@
           {
             "stat": "defensive_contribution",
             "name": "Defensive Contribution",
-            "value": 15,
+            "value": 16,
             "points": 2
           }
         ]
@@ -1314,7 +1326,7 @@
           {
             "stat": "saves",
             "name": "Saves",
-            "value": 6,
+            "value": 7,
             "points": 2
           },
           {
@@ -1747,5 +1759,5 @@
       }
     }
   },
-  "generatedAt": "2026-10-31T16:53:45.461Z"
+  "generatedAt": "2026-10-31T16:54:53.799Z"
 }

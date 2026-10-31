@@ -20,9 +20,9 @@
     {
       "key": "paddy",
       "rank": 2,
-      "total": 389,
-      "gw": 19,
-      "month": 155,
+      "total": 391,
+      "gw": 21,
+      "month": 157,
       "kochCount": 1,
       "motmCount": 1,
       "forfeits": 5,
@@ -30,7 +30,7 @@
       "balance": 5,
       "topPerformer": {
         "playerName": "Muharemović",
-        "points": 45,
+        "points": 47,
         "managerKey": "paddy"
       }
     },
@@ -54,9 +54,9 @@
     {
       "key": "jason",
       "rank": 4,
-      "total": 385,
-      "gw": 21,
-      "month": 141,
+      "total": 384,
+      "gw": 20,
+      "month": 140,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -86,6 +86,23 @@
       }
     },
     {
+      "key": "rowan",
+      "rank": 6,
+      "total": 339,
+      "gw": 31,
+      "month": 138,
+      "kochCount": 2,
+      "motmCount": 0,
+      "forfeits": 10,
+      "potsWon": 0,
+      "balance": -10,
+      "topPerformer": {
+        "playerName": "Van Hecke",
+        "points": 38,
+        "managerKey": "rowan"
+      }
+    },
+    {
       "key": "dj",
       "rank": 6,
       "total": 339,
@@ -100,23 +117,6 @@
         "playerName": "Schade",
         "points": 45,
         "managerKey": "dj"
-      }
-    },
-    {
-      "key": "rowan",
-      "rank": 7,
-      "total": 338,
-      "gw": 30,
-      "month": 137,
-      "kochCount": 2,
-      "motmCount": 0,
-      "forfeits": 10,
-      "potsWon": 0,
-      "balance": -10,
-      "topPerformer": {
-        "playerName": "Van Hecke",
-        "points": 38,
-        "managerKey": "rowan"
       }
     },
     {
@@ -205,7 +205,7 @@
     "displaced": "paddy",
     "changed": false
   },
-  "generatedAt": "2026-10-31T16:52:36.995Z",
+  "generatedAt": "2026-10-31T16:54:53.799Z",
   "graphics": {
     "koch": {
       "rushy": 244850,
