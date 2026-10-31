@@ -617,28 +617,6 @@
       "positionRank": 9
     },
     {
-      "id": 112,
-      "name": "Van Hecke",
-      "position": "DEF",
-      "club": "Spurs",
-      "clubShort": "TOT",
-      "clubCode": 6,
-      "teamId": 19,
-      "photoCode": 469142,
-      "owner": "rowan",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-30T16:00:09.552205Z",
-      "points": 41,
-      "ppg": 4.6,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 3,
-      "bonus": 5,
-      "positionRank": 11
-    },
-    {
       "id": 87,
       "name": "Ajer",
       "position": "DEF",
@@ -658,7 +636,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 1,
-      "positionRank": 12
+      "positionRank": 11
     },
     {
       "id": 453,
@@ -724,7 +702,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 6,
-      "positionRank": 13
+      "positionRank": 12
     },
     {
       "id": 156,
@@ -790,7 +768,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 5,
-      "positionRank": 14
+      "positionRank": 13
     },
     {
       "id": 13,
@@ -812,6 +790,28 @@
       "assists": 4,
       "cleanSheets": 5,
       "bonus": 5,
+      "positionRank": 14
+    },
+    {
+      "id": 112,
+      "name": "Van Hecke",
+      "position": "DEF",
+      "club": "Spurs",
+      "clubShort": "TOT",
+      "clubCode": 6,
+      "teamId": 19,
+      "photoCode": 469142,
+      "owner": "rowan",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-30T16:00:09.552205Z",
+      "points": 39,
+      "ppg": 4.3,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 3,
+      "bonus": 3,
       "positionRank": 14
     },
     {
@@ -1541,6 +1541,28 @@
       "positionRank": 32
     },
     {
+      "id": 204,
+      "name": "Mitchell",
+      "position": "DEF",
+      "club": "Crystal Palace",
+      "clubShort": "CRY",
+      "clubCode": 31,
+      "teamId": 8,
+      "photoCode": 244723,
+      "owner": "bennett",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 32,
+      "ppg": 3.6,
+      "goals": 2,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 3,
+      "positionRank": 29
+    },
+    {
       "id": 469,
       "name": "N.Williams",
       "position": "DEF",
@@ -1560,7 +1582,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 29
+      "positionRank": 30
     },
     {
       "id": 106,
@@ -1626,7 +1648,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 31
+      "positionRank": 32
     },
     {
       "id": 556,
@@ -1692,7 +1714,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 33
+      "positionRank": 34
     },
     {
       "id": 472,
@@ -1714,7 +1736,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 32
+      "positionRank": 33
     },
     {
       "id": 455,
@@ -1758,7 +1780,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 3,
-      "positionRank": 30
+      "positionRank": 31
     },
     {
       "id": 366,
@@ -1805,26 +1827,26 @@
       "positionRank": 11
     },
     {
-      "id": 204,
-      "name": "Mitchell",
+      "id": 502,
+      "name": "Robertson",
       "position": "DEF",
-      "club": "Crystal Palace",
-      "clubShort": "CRY",
-      "clubCode": 31,
-      "teamId": 8,
-      "photoCode": 244723,
-      "owner": "bennett",
+      "club": "Spurs",
+      "clubShort": "TOT",
+      "clubCode": 6,
+      "teamId": 19,
+      "photoCode": 122798,
+      "owner": "rushy",
       "status": "a",
-      "chanceOfPlaying": null,
+      "chanceOfPlaying": 100,
       "news": null,
-      "newsAdded": null,
+      "newsAdded": "2026-10-19T22:30:08.861525Z",
       "points": 30,
-      "ppg": 3.3,
-      "goals": 2,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 3,
-      "positionRank": 34
+      "ppg": 3.8,
+      "goals": 0,
+      "assists": 2,
+      "cleanSheets": 2,
+      "bonus": 2,
+      "positionRank": 36
     },
     {
       "id": 69,
@@ -1890,7 +1912,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 38
+      "positionRank": 39
     },
     {
       "id": 226,
@@ -1913,28 +1935,6 @@
       "cleanSheets": 3,
       "bonus": 1,
       "positionRank": 11
-    },
-    {
-      "id": 502,
-      "name": "Robertson",
-      "position": "DEF",
-      "club": "Spurs",
-      "clubShort": "TOT",
-      "clubCode": 6,
-      "teamId": 19,
-      "photoCode": 122798,
-      "owner": "rushy",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-19T22:30:08.861525Z",
-      "points": 29,
-      "ppg": 3.6,
-      "goals": 0,
-      "assists": 2,
-      "cleanSheets": 2,
-      "bonus": 1,
-      "positionRank": 39
     },
     {
       "id": 552,
@@ -2069,28 +2069,6 @@
       "positionRank": 43
     },
     {
-      "id": 503,
-      "name": "Van de Ven",
-      "position": "DEF",
-      "club": "Spurs",
-      "clubShort": "TOT",
-      "clubCode": 6,
-      "teamId": 19,
-      "photoCode": 491279,
-      "owner": "ollie",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-21T15:00:07.610517Z",
-      "points": 28,
-      "ppg": 3.5,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 3,
-      "bonus": 6,
-      "positionRank": 41
-    },
-    {
       "id": 640,
       "name": "Affengruber",
       "position": "DEF",
@@ -2110,7 +2088,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 45
+      "positionRank": 44
     },
     {
       "id": 331,
@@ -2132,7 +2110,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 43
+      "positionRank": 42
     },
     {
       "id": 390,
@@ -2154,7 +2132,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 44
+      "positionRank": 43
     },
     {
       "id": 447,
@@ -2176,7 +2154,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 47
+      "positionRank": 46
     },
     {
       "id": 377,
@@ -2245,6 +2223,28 @@
       "positionRank": 54
     },
     {
+      "id": 512,
+      "name": "Kudus",
+      "position": "MID",
+      "club": "Spurs",
+      "clubShort": "TOT",
+      "clubCode": 6,
+      "teamId": 19,
+      "photoCode": 460842,
+      "owner": "rushy",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-07-23T12:01:23.848657Z",
+      "points": 25,
+      "ppg": 3.1,
+      "goals": 0,
+      "assists": 3,
+      "cleanSheets": 2,
+      "bonus": 3,
+      "positionRank": 56
+    },
+    {
       "id": 95,
       "name": "O.Dango",
       "position": "MID",
@@ -2265,6 +2265,28 @@
       "cleanSheets": 2,
       "bonus": 3,
       "positionRank": 53
+    },
+    {
+      "id": 503,
+      "name": "Van de Ven",
+      "position": "DEF",
+      "club": "Spurs",
+      "clubShort": "TOT",
+      "clubCode": 6,
+      "teamId": 19,
+      "photoCode": 491279,
+      "owner": "ollie",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-21T15:00:07.610517Z",
+      "points": 25,
+      "ppg": 3.1,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 3,
+      "bonus": 3,
+      "positionRank": 50
     },
     {
       "id": 151,
@@ -2352,7 +2374,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 57
+      "positionRank": 59
     },
     {
       "id": 566,
@@ -2462,7 +2484,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 1,
-      "positionRank": 63
+      "positionRank": 65
     },
     {
       "id": 452,
@@ -2484,7 +2506,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 4,
-      "positionRank": 69
+      "positionRank": 71
     },
     {
       "id": 358,
@@ -2553,28 +2575,6 @@
       "positionRank": 58
     },
     {
-      "id": 514,
-      "name": "Tel",
-      "position": "MID",
-      "club": "Spurs",
-      "clubShort": "TOT",
-      "clubCode": 6,
-      "teamId": 19,
-      "photoCode": 511499,
-      "owner": "kellett",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 22,
-      "ppg": 3.1,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 4,
-      "positionRank": 70
-    },
-    {
       "id": 194,
       "name": "Thomas-Asante",
       "position": "FWD",
@@ -2616,29 +2616,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 72
-    },
-    {
-      "id": 512,
-      "name": "Kudus",
-      "position": "MID",
-      "club": "Spurs",
-      "clubShort": "TOT",
-      "clubCode": 6,
-      "teamId": 19,
-      "photoCode": 460842,
-      "owner": "rushy",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-07-23T12:01:23.848657Z",
-      "points": 21,
-      "ppg": 2.6,
-      "goals": 0,
-      "assists": 2,
-      "cleanSheets": 2,
-      "bonus": 2,
-      "positionRank": 75
+      "positionRank": 73
     },
     {
       "id": 401,
@@ -2748,7 +2726,29 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 1,
-      "positionRank": 74
+      "positionRank": 75
+    },
+    {
+      "id": 514,
+      "name": "Tel",
+      "position": "MID",
+      "club": "Spurs",
+      "clubShort": "TOT",
+      "clubCode": 6,
+      "teamId": 19,
+      "photoCode": 511499,
+      "owner": "kellett",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 21,
+      "ppg": 3,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 3,
+      "positionRank": 76
     },
     {
       "id": 149,
@@ -2792,7 +2792,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 3,
-      "positionRank": 78
+      "positionRank": 79
     },
     {
       "id": 239,
@@ -2814,7 +2814,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 77
+      "positionRank": 78
     },
     {
       "id": 569,
@@ -2924,7 +2924,7 @@
       "assists": 2,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 86
+      "positionRank": 87
     },
     {
       "id": 464,
@@ -3574,10 +3574,10 @@
       "teamId": 8,
       "photoCode": 231747,
       "owner": "kellett",
-      "status": "a",
+      "status": "s",
       "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-28T21:00:08.020382Z",
+      "news": "Suspended until 2 Dec",
+      "newsAdded": "2026-10-31T18:00:09.547671Z",
       "points": 3,
       "ppg": 0.8,
       "goals": 0,
@@ -3872,7 +3872,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 37
+      "positionRank": 38
     },
     {
       "id": 113,
@@ -3894,7 +3894,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 1,
-      "positionRank": 36
+      "positionRank": 37
     },
     {
       "id": 483,
@@ -4026,7 +4026,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 3,
-      "positionRank": 42
+      "positionRank": 41
     },
     {
       "id": 460,
@@ -4114,7 +4114,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 2,
-      "positionRank": 48
+      "positionRank": 47
     },
     {
       "id": 486,
@@ -4158,7 +4158,29 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 1,
-      "positionRank": 46
+      "positionRank": 45
+    },
+    {
+      "id": 522,
+      "name": "Gray",
+      "position": "MID",
+      "club": "Spurs",
+      "clubShort": "TOT",
+      "clubCode": 6,
+      "teamId": 19,
+      "photoCode": 547701,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 25,
+      "ppg": 3.1,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 3,
+      "positionRank": 57
     },
     {
       "id": 148,
@@ -4180,7 +4202,7 @@
       "assists": 3,
       "cleanSheets": 2,
       "bonus": 2,
-      "positionRank": 50
+      "positionRank": 49
     },
     {
       "id": 592,
@@ -4224,7 +4246,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 49
+      "positionRank": 48
     },
     {
       "id": 202,
@@ -4268,7 +4290,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 59
+      "positionRank": 61
     },
     {
       "id": 43,
@@ -4290,7 +4312,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 56
+      "positionRank": 58
     },
     {
       "id": 210,
@@ -4312,7 +4334,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 58
+      "positionRank": 60
     },
     {
       "id": 608,
@@ -4334,7 +4356,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 60
+      "positionRank": 62
     },
     {
       "id": 244,
@@ -4356,7 +4378,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 62
+      "positionRank": 64
     },
     {
       "id": 242,
@@ -4378,7 +4400,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 61
+      "positionRank": 63
     },
     {
       "id": 619,
@@ -4400,7 +4422,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 64
+      "positionRank": 66
     },
     {
       "id": 73,
@@ -4422,7 +4444,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 65
+      "positionRank": 67
     },
     {
       "id": 161,
@@ -4444,7 +4466,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 66
+      "positionRank": 68
     },
     {
       "id": 551,
@@ -4466,7 +4488,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 71
+      "positionRank": 72
     },
     {
       "id": 290,
@@ -4488,7 +4510,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 67
+      "positionRank": 69
     },
     {
       "id": 64,
@@ -4532,7 +4554,7 @@
       "assists": 2,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 68
+      "positionRank": 70
     },
     {
       "id": 327,
@@ -4576,7 +4598,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 0,
-      "positionRank": 76
+      "positionRank": 77
     },
     {
       "id": 534,
@@ -4620,7 +4642,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 3,
-      "positionRank": 73
+      "positionRank": 74
     },
     {
       "id": 588,
@@ -4664,7 +4686,7 @@
       "assists": 1,
       "cleanSheets": 4,
       "bonus": 0,
-      "positionRank": 80
+      "positionRank": 81
     },
     {
       "id": 280,
@@ -4774,7 +4796,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 79
+      "positionRank": 80
     },
     {
       "id": 265,
@@ -4796,7 +4818,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 82
+      "positionRank": 83
     },
     {
       "id": 96,
@@ -4818,7 +4840,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 81
+      "positionRank": 82
     },
     {
       "id": 454,
@@ -4840,7 +4862,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 84
+      "positionRank": 85
     },
     {
       "id": 563,
@@ -4862,7 +4884,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 85
+      "positionRank": 86
     },
     {
       "id": 405,
@@ -4884,7 +4906,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 2,
-      "positionRank": 83
+      "positionRank": 84
     },
     {
       "id": 175,
@@ -4928,7 +4950,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 89
+      "positionRank": 90
     },
     {
       "id": 71,
@@ -4950,7 +4972,7 @@
       "assists": 1,
       "cleanSheets": 4,
       "bonus": 0,
-      "positionRank": 87
+      "positionRank": 88
     },
     {
       "id": 572,
@@ -4972,7 +4994,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 90
+      "positionRank": 91
     },
     {
       "id": 184,
@@ -4994,7 +5016,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 88
+      "positionRank": 89
     },
     {
       "id": 656,
@@ -5060,7 +5082,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 91
+      "positionRank": 92
     },
     {
       "id": 525,
@@ -5085,28 +5107,6 @@
       "positionRank": 94
     },
     {
-      "id": 522,
-      "name": "Gray",
-      "position": "MID",
-      "club": "Spurs",
-      "clubShort": "TOT",
-      "clubCode": 6,
-      "teamId": 19,
-      "photoCode": 547701,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 17,
-      "ppg": 2.1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 0,
-      "positionRank": 93
-    },
-    {
       "id": 372,
       "name": "Mac Allister",
       "position": "MID",
@@ -5126,7 +5126,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 92
+      "positionRank": 93
     },
     {
       "id": 635,
@@ -5402,9 +5402,9 @@
       "teamId": 4,
       "photoCode": 508395,
       "owner": null,
-      "status": "s",
+      "status": "a",
       "chanceOfPlaying": 0,
-      "news": "Suspended until 8 Nov",
+      "news": null,
       "newsAdded": "2026-10-17T15:00:07.992801Z",
       "points": 15,
       "ppg": 2.1,
@@ -7294,10 +7294,10 @@
       "teamId": 11,
       "photoCode": 101282,
       "owner": null,
-      "status": "a",
+      "status": "s",
       "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-29T15:00:08.569326Z",
+      "news": "Suspended until 22 Nov",
+      "newsAdded": "2026-10-31T18:00:09.584315Z",
       "points": 6,
       "ppg": 1,
       "goals": 0,
@@ -14743,5 +14743,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-31T17:55:30.111Z"
+  "generatedAt": "2026-10-31T18:15:39.562Z"
 }
