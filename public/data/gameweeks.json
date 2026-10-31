@@ -1522,7 +1522,7 @@
       "confirmExpectedUtc": "2026-11-03T20:00:00.000Z",
       "revealFromUtc": "2026-11-03T00:10:00.000Z",
       "scores": {
-        "rushy": 37,
+        "rushy": 36,
         "kellett": 20,
         "wallis": 22,
         "jls": 15,
@@ -1531,7 +1531,7 @@
         "wood": 44,
         "rowan": 48,
         "jason": 19,
-        "dj": 44,
+        "dj": 45,
         "ollie": 19
       },
       "kochKeys": [],
@@ -1595,10 +1595,10 @@
       },
       "scapegoatByManager": {
         "rushy": {
-          "playerName": "N.Williams",
+          "playerName": "Cash",
           "points": 1,
           "managerKey": "rushy",
-          "element": 469
+          "element": 32
         },
         "kellett": {
           "playerName": "Mateta",
@@ -1650,7 +1650,7 @@
         },
         "dj": {
           "playerName": "Suzuki",
-          "points": 0,
+          "points": 1,
           "managerKey": "dj",
           "element": 597
         },
@@ -2401,5 +2401,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-10-31T21:35:26.767Z"
+  "generatedAt": "2026-10-31T22:06:45.266Z"
 }
