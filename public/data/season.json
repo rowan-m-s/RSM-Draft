@@ -3,9 +3,9 @@
     {
       "key": "wood",
       "rank": 1,
-      "total": 436,
-      "gw": 40,
-      "month": 184,
+      "total": 439,
+      "gw": 43,
+      "month": 187,
       "kochCount": 1,
       "motmCount": 1,
       "forfeits": 5,
@@ -36,10 +36,10 @@
     },
     {
       "key": "bennett",
-      "rank": 2,
-      "total": 389,
-      "gw": 20,
-      "month": 175,
+      "rank": 3,
+      "total": 388,
+      "gw": 19,
+      "month": 174,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -54,9 +54,9 @@
     {
       "key": "jason",
       "rank": 4,
-      "total": 383,
-      "gw": 19,
-      "month": 139,
+      "total": 384,
+      "gw": 20,
+      "month": 140,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -86,8 +86,25 @@
       }
     },
     {
-      "key": "wallis",
+      "key": "rowan",
       "rank": 6,
+      "total": 337,
+      "gw": 29,
+      "month": 136,
+      "kochCount": 2,
+      "motmCount": 0,
+      "forfeits": 10,
+      "potsWon": 0,
+      "balance": -10,
+      "topPerformer": {
+        "playerName": "Van Hecke",
+        "points": 38,
+        "managerKey": "rowan"
+      }
+    },
+    {
+      "key": "wallis",
+      "rank": 7,
       "total": 336,
       "gw": 20,
       "month": 145,
@@ -100,23 +117,6 @@
         "playerName": "Gabriel",
         "points": 52,
         "managerKey": "wallis"
-      }
-    },
-    {
-      "key": "rowan",
-      "rank": 6,
-      "total": 336,
-      "gw": 28,
-      "month": 135,
-      "kochCount": 2,
-      "motmCount": 0,
-      "forfeits": 10,
-      "potsWon": 0,
-      "balance": -10,
-      "topPerformer": {
-        "playerName": "Van Hecke",
-        "points": 38,
-        "managerKey": "rowan"
       }
     },
     {
@@ -195,7 +195,7 @@
     "keys": [
       "wood"
     ],
-    "total": 436,
+    "total": 439,
     "since": 4,
     "sinceByKey": {
       "wood": 4
@@ -205,7 +205,7 @@
     "displaced": "paddy",
     "changed": false
   },
-  "generatedAt": "2026-10-31T16:29:41.808Z",
+  "generatedAt": "2026-10-31T16:30:50.271Z",
   "graphics": {
     "koch": {
       "rushy": 244850,
