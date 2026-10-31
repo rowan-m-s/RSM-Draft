@@ -6964,9 +6964,9 @@
       "teamId": 10,
       "photoCode": 184349,
       "owner": null,
-      "status": "s",
+      "status": "a",
       "chanceOfPlaying": 0,
-      "news": "Suspended until 7 Nov",
+      "news": null,
       "newsAdded": "2026-10-17T16:30:09.374216Z",
       "points": 8,
       "ppg": 1.6,
@@ -14259,6 +14259,28 @@
       "positionRank": 31
     },
     {
+      "id": 670,
+      "name": "Subuloye",
+      "position": "DEF",
+      "club": "Chelsea",
+      "clubShort": "CHE",
+      "clubCode": 8,
+      "teamId": 6,
+      "photoCode": 616109,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 0,
+      "ppg": 0,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 218
+    },
+    {
       "id": 319,
       "name": "Szmodics",
       "position": "MID",
@@ -14743,5 +14765,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-31T22:31:06.038Z"
+  "generatedAt": "2026-10-31T23:53:54.920Z"
 }
