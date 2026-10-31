@@ -1522,17 +1522,17 @@
       "confirmExpectedUtc": "2026-11-03T20:00:00.000Z",
       "revealFromUtc": "2026-11-03T00:10:00.000Z",
       "scores": {
-        "rushy": 36,
+        "rushy": 37,
         "kellett": 20,
-        "wallis": 20,
+        "wallis": 22,
         "jls": 15,
         "paddy": 20,
-        "bennett": 36,
-        "wood": 41,
+        "bennett": 37,
+        "wood": 44,
         "rowan": 48,
         "jason": 19,
-        "dj": 46,
-        "ollie": 17
+        "dj": 44,
+        "ollie": 19
       },
       "kochKeys": [],
       "charged": 0,
@@ -1608,7 +1608,7 @@
         },
         "wallis": {
           "playerName": "McGinn",
-          "points": -1,
+          "points": 0,
           "managerKey": "wallis",
           "element": 45
         },
@@ -1631,10 +1631,10 @@
           "element": 277
         },
         "wood": {
-          "playerName": "Affengruber",
-          "points": 0,
+          "playerName": "Groß",
+          "points": 2,
           "managerKey": "wood",
-          "element": 640
+          "element": 124
         },
         "rowan": {
           "playerName": "Gibbs-White",
@@ -1649,10 +1649,10 @@
           "element": 125
         },
         "dj": {
-          "playerName": "Matheus N.",
-          "points": 2,
+          "playerName": "Suzuki",
+          "points": 0,
           "managerKey": "dj",
-          "element": 389
+          "element": 597
         },
         "ollie": {
           "playerName": "Mbeumo",
@@ -2401,5 +2401,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-10-31T21:15:30.395Z"
+  "generatedAt": "2026-10-31T21:35:26.767Z"
 }
