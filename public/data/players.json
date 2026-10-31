@@ -2858,7 +2858,7 @@
       "assists": 2,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 83
+      "positionRank": 82
     },
     {
       "id": 398,
@@ -4733,28 +4733,6 @@
       "positionRank": 79
     },
     {
-      "id": 572,
-      "name": "Florentino",
-      "position": "MID",
-      "club": "Ipswich Town",
-      "clubShort": "IPS",
-      "clubCode": 40,
-      "teamId": 12,
-      "photoCode": 216055,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-25T11:30:07.678802Z",
-      "points": 19,
-      "ppg": 3.2,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 3,
-      "positionRank": 82
-    },
-    {
       "id": 405,
       "name": "N.Gonzalez",
       "position": "MID",
@@ -4840,7 +4818,29 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 84
+      "positionRank": 83
+    },
+    {
+      "id": 572,
+      "name": "Florentino",
+      "position": "MID",
+      "club": "Ipswich Town",
+      "clubShort": "IPS",
+      "clubCode": 40,
+      "teamId": 12,
+      "photoCode": 216055,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-25T11:30:07.678802Z",
+      "points": 18,
+      "ppg": 3,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 2,
+      "positionRank": 85
     },
     {
       "id": 563,
@@ -4862,7 +4862,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 85
+      "positionRank": 84
     },
     {
       "id": 33,
@@ -14743,5 +14743,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-10-31T15:40:27.106Z"
+  "generatedAt": "2026-10-31T15:41:35.748Z"
 }
