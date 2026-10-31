@@ -8,30 +8,36 @@
   "byFixture": {
     "81": {
       "32": {
-        "total": 1,
+        "total": 2,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 33,
-            "points": 1
-          }
-        ]
-      },
-      "37": {
-        "total": 3,
-        "components": [
-          {
-            "stat": "minutes",
-            "name": "Minutes played",
-            "value": 33,
+            "value": 45,
             "points": 1
           },
           {
             "stat": "bonus",
             "name": "Bonus",
-            "value": 2,
-            "points": 2
+            "value": 1,
+            "points": 1
+          }
+        ]
+      },
+      "37": {
+        "total": 2,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 45,
+            "points": 1
+          },
+          {
+            "stat": "bonus",
+            "name": "Bonus",
+            "value": 1,
+            "points": 1
           }
         ]
       },
@@ -41,7 +47,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 33,
+            "value": 45,
             "points": 1
           },
           {
@@ -58,30 +64,54 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 33,
+            "value": 45,
             "points": 1
           }
         ]
       },
       "53": {
-        "total": 1,
+        "total": 6,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 33,
+            "value": 45,
             "points": 1
+          },
+          {
+            "stat": "assists",
+            "name": "Assists",
+            "value": 1,
+            "points": 3
+          },
+          {
+            "stat": "bonus",
+            "name": "Bonus",
+            "value": 2,
+            "points": 2
           }
         ]
       },
       "166": {
-        "total": 1,
+        "total": 8,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 33,
+            "value": 45,
             "points": 1
+          },
+          {
+            "stat": "goals_scored",
+            "name": "Goals scored",
+            "value": 1,
+            "points": 4
+          },
+          {
+            "stat": "bonus",
+            "name": "Bonus",
+            "value": 3,
+            "points": 3
           }
         ]
       },
@@ -91,7 +121,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 33,
+            "value": 45,
             "points": 1
           }
         ]
@@ -102,7 +132,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 33,
+            "value": 45,
             "points": 1
           }
         ]
@@ -113,7 +143,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 33,
+            "value": 45,
             "points": 1
           }
         ]
@@ -124,7 +154,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 33,
+            "value": 45,
             "points": 1
           }
         ]
@@ -135,7 +165,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 33,
+            "value": 45,
             "points": 1
           }
         ]
@@ -150,7 +180,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 33,
+            "value": 45,
             "points": 1
           },
           {
@@ -167,7 +197,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 33,
+            "value": 45,
             "points": 1
           },
           {
@@ -2097,5 +2127,5 @@
       }
     }
   },
-  "generatedAt": "2026-10-31T20:35:33.205Z"
+  "generatedAt": "2026-10-31T20:52:11.301Z"
 }
