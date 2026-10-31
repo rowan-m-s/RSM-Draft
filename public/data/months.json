@@ -188,20 +188,21 @@
       "gameweekIds": [
         6,
         7,
-        8
+        8,
+        9
       ],
       "totals": {
-        "rushy": 106,
-        "kellett": 129,
-        "wallis": 125,
-        "jls": 124,
-        "paddy": 136,
-        "bennett": 155,
-        "wood": 144,
-        "rowan": 107,
-        "jason": 120,
-        "dj": 117,
-        "ollie": 114
+        "rushy": 116,
+        "kellett": 134,
+        "wallis": 133,
+        "jls": 127,
+        "paddy": 149,
+        "bennett": 159,
+        "wood": 154,
+        "rowan": 113,
+        "jason": 128,
+        "dj": 124,
+        "ollie": 117
       },
       "pot": 15,
       "settled": false,
@@ -209,18 +210,18 @@
       "potPerWinner": 0,
       "topPerformer": {
         "playerName": "Haaland",
-        "points": 27,
+        "points": 28,
         "managerKey": "kellett"
       },
       "topPerformerByManager": {
         "rushy": {
-          "playerName": "Manzambi",
-          "points": 17,
+          "playerName": "Rogers",
+          "points": 20,
           "managerKey": "rushy"
         },
         "kellett": {
           "playerName": "Haaland",
-          "points": 27,
+          "points": 28,
           "managerKey": "kellett"
         },
         "wallis": {
@@ -230,7 +231,7 @@
         },
         "jls": {
           "playerName": "Doku",
-          "points": 20,
+          "points": 21,
           "managerKey": "jls"
         },
         "paddy": {
@@ -245,7 +246,7 @@
         },
         "wood": {
           "playerName": "Evanilson",
-          "points": 25,
+          "points": 26,
           "managerKey": "wood"
         },
         "rowan": {
@@ -255,12 +256,12 @@
         },
         "jason": {
           "playerName": "Kostoulas",
-          "points": 15,
+          "points": 16,
           "managerKey": "jason"
         },
         "dj": {
-          "playerName": "Bassey",
-          "points": 18,
+          "playerName": "Hill",
+          "points": 19,
           "managerKey": "dj"
         },
         "ollie": {
@@ -271,5 +272,5 @@
       }
     }
   ],
-  "generatedAt": "2026-10-31T11:31:23.962Z"
+  "generatedAt": "2026-10-31T15:05:05.393Z"
 }
