@@ -124,12 +124,12 @@
       "chanceOfPlaying": null,
       "news": null,
       "newsAdded": null,
-      "points": 53,
-      "ppg": 5.9,
+      "points": 54,
+      "ppg": 6,
       "goals": 1,
       "assists": 0,
       "cleanSheets": 5,
-      "bonus": 5,
+      "bonus": 6,
       "positionRank": 3
     },
     {
@@ -922,7 +922,7 @@
       "assists": 1,
       "cleanSheets": 5,
       "bonus": 7,
-      "positionRank": 18
+      "positionRank": 17
     },
     {
       "id": 496,
@@ -965,28 +965,6 @@
       "goals": 2,
       "assists": 3,
       "cleanSheets": 2,
-      "bonus": 7,
-      "positionRank": 16
-    },
-    {
-      "id": 15,
-      "name": "Ødegaard",
-      "position": "MID",
-      "club": "Arsenal",
-      "clubShort": "ARS",
-      "clubCode": 3,
-      "teamId": 1,
-      "photoCode": 184029,
-      "owner": "jason",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 38,
-      "ppg": 4.2,
-      "goals": 2,
-      "assists": 0,
-      "cleanSheets": 5,
       "bonus": 7,
       "positionRank": 15
     },
@@ -1123,6 +1101,28 @@
       "positionRank": 20
     },
     {
+      "id": 15,
+      "name": "Ødegaard",
+      "position": "MID",
+      "club": "Arsenal",
+      "clubShort": "ARS",
+      "clubCode": 3,
+      "teamId": 1,
+      "photoCode": 184029,
+      "owner": "jason",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 37,
+      "ppg": 4.1,
+      "goals": 2,
+      "assists": 0,
+      "cleanSheets": 5,
+      "bonus": 6,
+      "positionRank": 19
+    },
+    {
       "id": 183,
       "name": "Rudoni",
       "position": "MID",
@@ -1164,7 +1164,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 4,
-      "positionRank": 19
+      "positionRank": 18
     },
     {
       "id": 397,
@@ -3674,7 +3674,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 5,
-      "positionRank": 17
+      "positionRank": 16
     },
     {
       "id": 116,
@@ -14765,5 +14765,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-01T16:52:52.792Z"
+  "generatedAt": "2026-11-01T16:55:10.679Z"
 }
