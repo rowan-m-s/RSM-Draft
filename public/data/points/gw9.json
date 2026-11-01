@@ -1444,7 +1444,7 @@
         "components": []
       },
       "13": {
-        "total": 4,
+        "total": 6,
         "components": [
           {
             "stat": "minutes",
@@ -1457,6 +1457,12 @@
             "name": "Assists",
             "value": 1,
             "points": 3
+          },
+          {
+            "stat": "bonus",
+            "name": "Bonus",
+            "value": 2,
+            "points": 2
           }
         ]
       },
@@ -1465,12 +1471,18 @@
         "components": []
       },
       "15": {
-        "total": 1,
+        "total": 2,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
             "value": 20,
+            "points": 1
+          },
+          {
+            "stat": "bonus",
+            "name": "Bonus",
+            "value": 1,
             "points": 1
           }
         ]
@@ -1491,7 +1503,7 @@
         "components": []
       },
       "26": {
-        "total": 5,
+        "total": 8,
         "components": [
           {
             "stat": "minutes",
@@ -1504,6 +1516,12 @@
             "name": "Goals scored",
             "value": 1,
             "points": 4
+          },
+          {
+            "stat": "bonus",
+            "name": "Bonus",
+            "value": 3,
+            "points": 3
           }
         ]
       },
@@ -2297,5 +2315,5 @@
       }
     }
   },
-  "generatedAt": "2026-11-01T16:51:44.227Z"
+  "generatedAt": "2026-11-01T16:52:52.792Z"
 }

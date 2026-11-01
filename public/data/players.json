@@ -416,7 +416,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 7,
-      "positionRank": 7
+      "positionRank": 8
     },
     {
       "id": 138,
@@ -460,7 +460,29 @@
       "assists": 4,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 6
+      "positionRank": 7
+    },
+    {
+      "id": 13,
+      "name": "Rice",
+      "position": "MID",
+      "club": "Arsenal",
+      "clubShort": "ARS",
+      "clubCode": 3,
+      "teamId": 1,
+      "photoCode": 204480,
+      "owner": "bennett",
+      "status": "a",
+      "chanceOfPlaying": 75,
+      "news": null,
+      "newsAdded": "2026-10-28T00:00:08.477333Z",
+      "points": 45,
+      "ppg": 5,
+      "goals": 0,
+      "assists": 5,
+      "cleanSheets": 5,
+      "bonus": 7,
+      "positionRank": 5
     },
     {
       "id": 94,
@@ -482,7 +504,7 @@
       "assists": 2,
       "cleanSheets": 3,
       "bonus": 6,
-      "positionRank": 5
+      "positionRank": 6
     },
     {
       "id": 391,
@@ -526,7 +548,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 5,
-      "positionRank": 8
+      "positionRank": 9
     },
     {
       "id": 385,
@@ -571,28 +593,6 @@
       "cleanSheets": 2,
       "bonus": 10,
       "positionRank": 6
-    },
-    {
-      "id": 13,
-      "name": "Rice",
-      "position": "MID",
-      "club": "Arsenal",
-      "clubShort": "ARS",
-      "clubCode": 3,
-      "teamId": 1,
-      "photoCode": 204480,
-      "owner": "bennett",
-      "status": "a",
-      "chanceOfPlaying": 75,
-      "news": null,
-      "newsAdded": "2026-10-28T00:00:08.477333Z",
-      "points": 43,
-      "ppg": 4.8,
-      "goals": 0,
-      "assists": 5,
-      "cleanSheets": 5,
-      "bonus": 5,
-      "positionRank": 9
     },
     {
       "id": 571,
@@ -922,7 +922,7 @@
       "assists": 1,
       "cleanSheets": 5,
       "bonus": 7,
-      "positionRank": 17
+      "positionRank": 18
     },
     {
       "id": 496,
@@ -965,6 +965,28 @@
       "goals": 2,
       "assists": 3,
       "cleanSheets": 2,
+      "bonus": 7,
+      "positionRank": 16
+    },
+    {
+      "id": 15,
+      "name": "Ødegaard",
+      "position": "MID",
+      "club": "Arsenal",
+      "clubShort": "ARS",
+      "clubCode": 3,
+      "teamId": 1,
+      "photoCode": 184029,
+      "owner": "jason",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 38,
+      "ppg": 4.2,
+      "goals": 2,
+      "assists": 0,
+      "cleanSheets": 5,
       "bonus": 7,
       "positionRank": 15
     },
@@ -1101,28 +1123,6 @@
       "positionRank": 20
     },
     {
-      "id": 15,
-      "name": "Ødegaard",
-      "position": "MID",
-      "club": "Arsenal",
-      "clubShort": "ARS",
-      "clubCode": 3,
-      "teamId": 1,
-      "photoCode": 184029,
-      "owner": "jason",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 37,
-      "ppg": 4.1,
-      "goals": 2,
-      "assists": 0,
-      "cleanSheets": 5,
-      "bonus": 6,
-      "positionRank": 19
-    },
-    {
       "id": 183,
       "name": "Rudoni",
       "position": "MID",
@@ -1164,7 +1164,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 4,
-      "positionRank": 18
+      "positionRank": 19
     },
     {
       "id": 397,
@@ -1607,6 +1607,28 @@
       "positionRank": 9
     },
     {
+      "id": 26,
+      "name": "Havertz",
+      "position": "FWD",
+      "club": "Arsenal",
+      "clubShort": "ARS",
+      "clubCode": 3,
+      "teamId": 1,
+      "photoCode": 219847,
+      "owner": "paddy",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-24T22:00:09.120308Z",
+      "points": 32,
+      "ppg": 3.6,
+      "goals": 3,
+      "assists": 0,
+      "cleanSheets": 4,
+      "bonus": 5,
+      "positionRank": 10
+    },
+    {
       "id": 204,
       "name": "Mitchell",
       "position": "DEF",
@@ -1670,7 +1692,7 @@
       "assists": 3,
       "cleanSheets": 3,
       "bonus": 3,
-      "positionRank": 10
+      "positionRank": 11
     },
     {
       "id": 366,
@@ -1890,7 +1912,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 2,
-      "positionRank": 11
+      "positionRank": 12
     },
     {
       "id": 47,
@@ -1979,28 +2001,6 @@
       "cleanSheets": 0,
       "bonus": 1,
       "positionRank": 42
-    },
-    {
-      "id": 26,
-      "name": "Havertz",
-      "position": "FWD",
-      "club": "Arsenal",
-      "clubShort": "ARS",
-      "clubCode": 3,
-      "teamId": 1,
-      "photoCode": 219847,
-      "owner": "paddy",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-24T22:00:09.120308Z",
-      "points": 29,
-      "ppg": 3.2,
-      "goals": 3,
-      "assists": 0,
-      "cleanSheets": 4,
-      "bonus": 2,
-      "positionRank": 12
     },
     {
       "id": 226,
@@ -3674,7 +3674,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 5,
-      "positionRank": 16
+      "positionRank": 17
     },
     {
       "id": 116,
@@ -14765,5 +14765,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-01T16:48:15.980Z"
+  "generatedAt": "2026-11-01T16:52:52.792Z"
 }
