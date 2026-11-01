@@ -2641,6 +2641,28 @@
       "positionRank": 59
     },
     {
+      "id": 368,
+      "name": "Szoboszlai",
+      "position": "MID",
+      "club": "Liverpool",
+      "clubShort": "LIV",
+      "clubCode": 14,
+      "teamId": 14,
+      "photoCode": 424876,
+      "owner": "rowan",
+      "status": "a",
+      "chanceOfPlaying": 50,
+      "news": null,
+      "newsAdded": "2026-10-17T15:00:08.293301Z",
+      "points": 22,
+      "ppg": 3.1,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 3,
+      "bonus": 1,
+      "positionRank": 72
+    },
+    {
       "id": 194,
       "name": "Thomas-Asante",
       "position": "FWD",
@@ -2682,7 +2704,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 74
+      "positionRank": 75
     },
     {
       "id": 389,
@@ -2771,28 +2793,6 @@
       "cleanSheets": 1,
       "bonus": 2,
       "positionRank": 17
-    },
-    {
-      "id": 368,
-      "name": "Szoboszlai",
-      "position": "MID",
-      "club": "Liverpool",
-      "clubShort": "LIV",
-      "clubCode": 14,
-      "teamId": 14,
-      "photoCode": 424876,
-      "owner": "rowan",
-      "status": "a",
-      "chanceOfPlaying": 50,
-      "news": null,
-      "newsAdded": "2026-10-17T15:00:08.293301Z",
-      "points": 21,
-      "ppg": 3.5,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 3,
-      "bonus": 1,
-      "positionRank": 78
     },
     {
       "id": 149,
@@ -4466,7 +4466,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 72
+      "positionRank": 73
     },
     {
       "id": 588,
@@ -4510,7 +4510,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 73
+      "positionRank": 74
     },
     {
       "id": 290,
@@ -4598,7 +4598,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 77
+      "positionRank": 78
     },
     {
       "id": 327,
@@ -4664,7 +4664,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 3,
-      "positionRank": 76
+      "positionRank": 77
     },
     {
       "id": 161,
@@ -4686,7 +4686,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 75
+      "positionRank": 76
     },
     {
       "id": 632,
@@ -14765,5 +14765,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-01T17:48:36.859Z"
+  "generatedAt": "2026-11-01T17:50:52.658Z"
 }
