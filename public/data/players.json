@@ -3345,6 +3345,28 @@
       "positionRank": 94
     },
     {
+      "id": 25,
+      "name": "Gyökeres",
+      "position": "FWD",
+      "club": "Arsenal",
+      "clubShort": "ARS",
+      "clubCode": 3,
+      "teamId": 1,
+      "photoCode": 224117,
+      "owner": "rushy",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 10,
+      "ppg": 1.7,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 31
+    },
+    {
       "id": 300,
       "name": "Walton",
       "position": "GKP",
@@ -3365,28 +3387,6 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 20
-    },
-    {
-      "id": 25,
-      "name": "Gyökeres",
-      "position": "FWD",
-      "club": "Arsenal",
-      "clubShort": "ARS",
-      "clubCode": 3,
-      "teamId": 1,
-      "photoCode": 224117,
-      "owner": "rushy",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 9,
-      "ppg": 1.8,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 32
     },
     {
       "id": 14,
@@ -6446,7 +6446,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 31
+      "positionRank": 32
     },
     {
       "id": 461,
@@ -14765,5 +14765,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-01T18:14:51.509Z"
+  "generatedAt": "2026-11-01T18:16:00.403Z"
 }
