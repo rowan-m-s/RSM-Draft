@@ -80,12 +80,12 @@
       "chanceOfPlaying": null,
       "news": null,
       "newsAdded": null,
-      "points": 59,
-      "ppg": 6.6,
+      "points": 58,
+      "ppg": 6.4,
       "goals": 1,
       "assists": 0,
       "cleanSheets": 6,
-      "bonus": 6,
+      "bonus": 5,
       "positionRank": 2
     },
     {
@@ -2946,7 +2946,7 @@
       "assists": 2,
       "cleanSheets": 3,
       "bonus": 1,
-      "positionRank": 89
+      "positionRank": 88
     },
     {
       "id": 464,
@@ -4840,7 +4840,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 87
+      "positionRank": 86
     },
     {
       "id": 525,
@@ -4862,7 +4862,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 88
+      "positionRank": 87
     },
     {
       "id": 145,
@@ -4887,28 +4887,6 @@
       "positionRank": 68
     },
     {
-      "id": 372,
-      "name": "Mac Allister",
-      "position": "MID",
-      "club": "Liverpool",
-      "clubShort": "LIV",
-      "clubCode": 14,
-      "teamId": 14,
-      "photoCode": 243016,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 19,
-      "ppg": 2.1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 3,
-      "bonus": 0,
-      "positionRank": 85
-    },
-    {
       "id": 563,
       "name": "Maeda",
       "position": "MID",
@@ -4928,7 +4906,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 90
+      "positionRank": 89
     },
     {
       "id": 405,
@@ -4950,7 +4928,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 2,
-      "positionRank": 86
+      "positionRank": 85
     },
     {
       "id": 175,
@@ -4994,7 +4972,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 93
+      "positionRank": 92
     },
     {
       "id": 71,
@@ -5016,7 +4994,7 @@
       "assists": 1,
       "cleanSheets": 4,
       "bonus": 0,
-      "positionRank": 91
+      "positionRank": 90
     },
     {
       "id": 599,
@@ -5082,7 +5060,29 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 92
+      "positionRank": 91
+    },
+    {
+      "id": 372,
+      "name": "Mac Allister",
+      "position": "MID",
+      "club": "Liverpool",
+      "clubShort": "LIV",
+      "clubCode": 14,
+      "teamId": 14,
+      "photoCode": 243016,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 18,
+      "ppg": 2,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 3,
+      "bonus": 0,
+      "positionRank": 93
     },
     {
       "id": 656,
@@ -14765,5 +14765,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-01T18:03:26.412Z"
+  "generatedAt": "2026-11-01T18:11:25.278Z"
 }
