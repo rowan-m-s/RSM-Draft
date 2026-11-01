@@ -1392,7 +1392,7 @@
     },
     "87": {
       "1": {
-        "total": 6,
+        "total": 5,
         "components": [
           {
             "stat": "minutes",
@@ -1405,6 +1405,12 @@
             "name": "Clean sheets",
             "value": 1,
             "points": 4
+          },
+          {
+            "stat": "yellow_cards",
+            "name": "Yellow cards",
+            "value": 1,
+            "points": -1
           }
         ]
       },
@@ -2438,5 +2444,5 @@
       }
     }
   },
-  "generatedAt": "2026-11-01T18:22:53.291Z"
+  "generatedAt": "2026-11-01T18:24:01.893Z"
 }
