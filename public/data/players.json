@@ -790,7 +790,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 6,
-      "positionRank": 16
+      "positionRank": 15
     },
     {
       "id": 362,
@@ -812,7 +812,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 3,
-      "positionRank": 15
+      "positionRank": 14
     },
     {
       "id": 156,
@@ -837,28 +837,6 @@
       "positionRank": 12
     },
     {
-      "id": 356,
-      "name": "Virgil",
-      "position": "DEF",
-      "club": "Liverpool",
-      "clubShort": "LIV",
-      "clubCode": 14,
-      "teamId": 14,
-      "photoCode": 97032,
-      "owner": "jason",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 40,
-      "ppg": 4.4,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 4,
-      "bonus": 1,
-      "positionRank": 14
-    },
-    {
       "id": 114,
       "name": "Boscagli",
       "position": "DEF",
@@ -878,7 +856,7 @@
       "assists": 1,
       "cleanSheets": 6,
       "bonus": 1,
-      "positionRank": 17
+      "positionRank": 16
     },
     {
       "id": 15,
@@ -901,6 +879,28 @@
       "cleanSheets": 6,
       "bonus": 6,
       "positionRank": 15
+    },
+    {
+      "id": 356,
+      "name": "Virgil",
+      "position": "DEF",
+      "club": "Liverpool",
+      "clubShort": "LIV",
+      "clubCode": 14,
+      "teamId": 14,
+      "photoCode": 97032,
+      "owner": "jason",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 39,
+      "ppg": 4.3,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 4,
+      "bonus": 1,
+      "positionRank": 17
     },
     {
       "id": 350,
@@ -14765,5 +14765,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-01T18:24:01.893Z"
+  "generatedAt": "2026-11-01T18:33:01.995Z"
 }
