@@ -2795,28 +2795,6 @@
       "positionRank": 78
     },
     {
-      "id": 628,
-      "name": "Barcola",
-      "position": "MID",
-      "club": "Liverpool",
-      "clubShort": "LIV",
-      "clubCode": 14,
-      "teamId": 14,
-      "photoCode": 482616,
-      "owner": "dj",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 20,
-      "ppg": 2.9,
-      "goals": 0,
-      "assists": 2,
-      "cleanSheets": 3,
-      "bonus": 0,
-      "positionRank": 82
-    },
-    {
       "id": 149,
       "name": "Colwill",
       "position": "DEF",
@@ -2925,6 +2903,28 @@
       "cleanSheets": 1,
       "bonus": 1,
       "positionRank": 17
+    },
+    {
+      "id": 628,
+      "name": "Barcola",
+      "position": "MID",
+      "club": "Liverpool",
+      "clubShort": "LIV",
+      "clubCode": 14,
+      "teamId": 14,
+      "photoCode": 482616,
+      "owner": "dj",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 19,
+      "ppg": 2.7,
+      "goals": 0,
+      "assists": 2,
+      "cleanSheets": 3,
+      "bonus": 0,
+      "positionRank": 88
     },
     {
       "id": 464,
@@ -4708,7 +4708,7 @@
       "assists": 1,
       "cleanSheets": 4,
       "bonus": 0,
-      "positionRank": 83
+      "positionRank": 82
     },
     {
       "id": 280,
@@ -4818,7 +4818,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 84
+      "positionRank": 83
     },
     {
       "id": 454,
@@ -4840,7 +4840,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 86
+      "positionRank": 85
     },
     {
       "id": 525,
@@ -4862,7 +4862,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 87
+      "positionRank": 86
     },
     {
       "id": 145,
@@ -4906,7 +4906,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 88
+      "positionRank": 87
     },
     {
       "id": 405,
@@ -4928,7 +4928,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 2,
-      "positionRank": 85
+      "positionRank": 84
     },
     {
       "id": 175,
@@ -14765,5 +14765,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-01T17:16:53.572Z"
+  "generatedAt": "2026-11-01T17:19:09.225Z"
 }
