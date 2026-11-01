@@ -45,28 +45,6 @@
       "positionRank": 1
     },
     {
-      "id": 4,
-      "name": "Gabriel",
-      "position": "DEF",
-      "club": "Arsenal",
-      "clubShort": "ARS",
-      "clubCode": 3,
-      "teamId": 1,
-      "photoCode": 226597,
-      "owner": "wallis",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 60,
-      "ppg": 6.7,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 6,
-      "bonus": 7,
-      "positionRank": 2
-    },
-    {
       "id": 124,
       "name": "Groß",
       "position": "MID",
@@ -87,6 +65,28 @@
       "cleanSheets": 6,
       "bonus": 9,
       "positionRank": 1
+    },
+    {
+      "id": 4,
+      "name": "Gabriel",
+      "position": "DEF",
+      "club": "Arsenal",
+      "clubShort": "ARS",
+      "clubCode": 3,
+      "teamId": 1,
+      "photoCode": 226597,
+      "owner": "wallis",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 59,
+      "ppg": 6.6,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 6,
+      "bonus": 6,
+      "positionRank": 2
     },
     {
       "id": 504,
@@ -309,28 +309,6 @@
       "positionRank": 3
     },
     {
-      "id": 31,
-      "name": "Konsa",
-      "position": "DEF",
-      "club": "Arsenal",
-      "clubShort": "ARS",
-      "clubCode": 3,
-      "teamId": 1,
-      "photoCode": 199798,
-      "owner": "kellett",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-05T09:30:09.853316Z",
-      "points": 49,
-      "ppg": 6.1,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 4,
-      "bonus": 7,
-      "positionRank": 7
-    },
-    {
       "id": 286,
       "name": "Belloumi",
       "position": "MID",
@@ -351,6 +329,28 @@
       "cleanSheets": 3,
       "bonus": 2,
       "positionRank": 4
+    },
+    {
+      "id": 31,
+      "name": "Konsa",
+      "position": "DEF",
+      "club": "Arsenal",
+      "clubShort": "ARS",
+      "clubCode": 3,
+      "teamId": 1,
+      "photoCode": 199798,
+      "owner": "kellett",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-05T09:30:09.853316Z",
+      "points": 48,
+      "ppg": 6,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 4,
+      "bonus": 6,
+      "positionRank": 7
     },
     {
       "id": 229,
@@ -14765,5 +14765,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-01T18:00:01.900Z"
+  "generatedAt": "2026-11-01T18:02:17.914Z"
 }
