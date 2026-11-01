@@ -221,28 +221,6 @@
       "positionRank": 5
     },
     {
-      "id": 1,
-      "name": "Raya",
-      "position": "GKP",
-      "club": "Arsenal",
-      "clubShort": "ARS",
-      "clubCode": 3,
-      "teamId": 1,
-      "photoCode": 154561,
-      "owner": "ollie",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 51,
-      "ppg": 5.7,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 5,
-      "bonus": 7,
-      "positionRank": 1
-    },
-    {
       "id": 109,
       "name": "Verbruggen",
       "position": "GKP",
@@ -262,6 +240,28 @@
       "assists": 0,
       "cleanSheets": 6,
       "bonus": 5,
+      "positionRank": 1
+    },
+    {
+      "id": 1,
+      "name": "Raya",
+      "position": "GKP",
+      "club": "Arsenal",
+      "clubShort": "ARS",
+      "clubCode": 3,
+      "teamId": 1,
+      "photoCode": 154561,
+      "owner": "ollie",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 50,
+      "ppg": 5.6,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 5,
+      "bonus": 6,
       "positionRank": 2
     },
     {
@@ -6864,7 +6864,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 145
+      "positionRank": 146
     },
     {
       "id": 638,
@@ -6886,7 +6886,29 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 146
+      "positionRank": 147
+    },
+    {
+      "id": 375,
+      "name": "Nyoni",
+      "position": "MID",
+      "club": "Liverpool",
+      "clubShort": "LIV",
+      "clubCode": 14,
+      "teamId": 14,
+      "photoCode": 591386,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 8,
+      "ppg": 1.1,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 1,
+      "positionRank": 145
     },
     {
       "id": 152,
@@ -7128,7 +7150,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 147
+      "positionRank": 148
     },
     {
       "id": 381,
@@ -7194,28 +7216,6 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 149
-    },
-    {
-      "id": 375,
-      "name": "Nyoni",
-      "position": "MID",
-      "club": "Liverpool",
-      "clubShort": "LIV",
-      "clubCode": 14,
-      "teamId": 14,
-      "photoCode": 591386,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 7,
-      "ppg": 1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
       "positionRank": 150
     },
     {
@@ -7238,7 +7238,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 148
+      "positionRank": 149
     },
     {
       "id": 548,
@@ -14765,5 +14765,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-01T17:07:44.698Z"
+  "generatedAt": "2026-11-01T17:08:53.418Z"
 }
