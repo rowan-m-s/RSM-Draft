@@ -309,6 +309,28 @@
       "positionRank": 3
     },
     {
+      "id": 31,
+      "name": "Konsa",
+      "position": "DEF",
+      "club": "Arsenal",
+      "clubShort": "ARS",
+      "clubCode": 3,
+      "teamId": 1,
+      "photoCode": 199798,
+      "owner": "kellett",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-05T09:30:09.853316Z",
+      "points": 49,
+      "ppg": 6.1,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 4,
+      "bonus": 7,
+      "positionRank": 7
+    },
+    {
       "id": 286,
       "name": "Belloumi",
       "position": "MID",
@@ -350,7 +372,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 7,
-      "positionRank": 7
+      "positionRank": 8
     },
     {
       "id": 165,
@@ -373,28 +395,6 @@
       "cleanSheets": 1,
       "bonus": 9,
       "positionRank": 4
-    },
-    {
-      "id": 31,
-      "name": "Konsa",
-      "position": "DEF",
-      "club": "Arsenal",
-      "clubShort": "ARS",
-      "clubCode": 3,
-      "teamId": 1,
-      "photoCode": 199798,
-      "owner": "kellett",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-05T09:30:09.853316Z",
-      "points": 47,
-      "ppg": 5.9,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 4,
-      "bonus": 7,
-      "positionRank": 8
     },
     {
       "id": 13,
@@ -2352,7 +2352,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 4,
-      "positionRank": 57
+      "positionRank": 56
     },
     {
       "id": 123,
@@ -2397,28 +2397,6 @@
       "cleanSheets": 2,
       "bonus": 1,
       "positionRank": 15
-    },
-    {
-      "id": 358,
-      "name": "Kerkez",
-      "position": "DEF",
-      "club": "Liverpool",
-      "clubShort": "LIV",
-      "clubCode": 14,
-      "teamId": 14,
-      "photoCode": 544877,
-      "owner": "jason",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 24,
-      "ppg": 2.7,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 3,
-      "bonus": 0,
-      "positionRank": 56
     },
     {
       "id": 200,
@@ -2529,6 +2507,28 @@
       "cleanSheets": 0,
       "bonus": 4,
       "positionRank": 65
+    },
+    {
+      "id": 358,
+      "name": "Kerkez",
+      "position": "DEF",
+      "club": "Liverpool",
+      "clubShort": "LIV",
+      "clubCode": 14,
+      "teamId": 14,
+      "photoCode": 544877,
+      "owner": "jason",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 23,
+      "ppg": 2.6,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 3,
+      "bonus": 0,
+      "positionRank": 57
     },
     {
       "id": 336,
@@ -6864,7 +6864,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 145
+      "positionRank": 146
     },
     {
       "id": 638,
@@ -6886,7 +6886,29 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 146
+      "positionRank": 147
+    },
+    {
+      "id": 369,
+      "name": "Ngumoha",
+      "position": "MID",
+      "club": "Liverpool",
+      "clubShort": "LIV",
+      "clubCode": 14,
+      "teamId": 14,
+      "photoCode": 611922,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 8,
+      "ppg": 1.1,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 145
     },
     {
       "id": 152,
@@ -7128,7 +7150,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 147
+      "positionRank": 148
     },
     {
       "id": 381,
@@ -7175,28 +7197,6 @@
       "positionRank": 152
     },
     {
-      "id": 369,
-      "name": "Ngumoha",
-      "position": "MID",
-      "club": "Liverpool",
-      "clubShort": "LIV",
-      "clubCode": 14,
-      "teamId": 14,
-      "photoCode": 611922,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 7,
-      "ppg": 1.2,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 149
-    },
-    {
       "id": 375,
       "name": "Nyoni",
       "position": "MID",
@@ -7238,7 +7238,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 148
+      "positionRank": 149
     },
     {
       "id": 548,
@@ -14765,5 +14765,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-01T17:54:18.480Z"
+  "generatedAt": "2026-11-01T17:57:44.939Z"
 }

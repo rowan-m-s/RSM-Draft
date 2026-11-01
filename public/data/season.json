@@ -54,9 +54,9 @@
     {
       "key": "jason",
       "rank": 4,
-      "total": 390,
-      "gw": 26,
-      "month": 146,
+      "total": 389,
+      "gw": 25,
+      "month": 145,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -66,6 +66,23 @@
         "playerName": "Virgil",
         "points": 40,
         "managerKey": "jason"
+      }
+    },
+    {
+      "key": "kellett",
+      "rank": 5,
+      "total": 356,
+      "gw": 30,
+      "month": 159,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "Haaland",
+        "points": 68,
+        "managerKey": "kellett"
       }
     },
     {
@@ -83,23 +100,6 @@
         "playerName": "Van Hecke",
         "points": 53,
         "managerKey": "rowan"
-      }
-    },
-    {
-      "key": "kellett",
-      "rank": 6,
-      "total": 354,
-      "gw": 28,
-      "month": 157,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "Haaland",
-        "points": 68,
-        "managerKey": "kellett"
       }
     },
     {
@@ -205,7 +205,7 @@
     "displaced": "paddy",
     "changed": false
   },
-  "generatedAt": "2026-11-01T17:52:01.178Z",
+  "generatedAt": "2026-11-01T17:57:44.939Z",
   "graphics": {
     "koch": {
       "rushy": 244850,
