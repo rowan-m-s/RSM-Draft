@@ -1397,7 +1397,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 80,
+            "value": 81,
             "points": 2
           },
           {
@@ -1414,7 +1414,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 80,
+            "value": 81,
             "points": 2
           },
           {
@@ -1426,12 +1426,12 @@
         ]
       },
       "5": {
-        "total": 6,
+        "total": 5,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 80,
+            "value": 81,
             "points": 2
           },
           {
@@ -1439,6 +1439,12 @@
             "name": "Clean sheets",
             "value": 1,
             "points": 4
+          },
+          {
+            "stat": "yellow_cards",
+            "name": "Yellow cards",
+            "value": 1,
+            "points": -1
           }
         ]
       },
@@ -1448,7 +1454,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 80,
+            "value": 81,
             "points": 2
           },
           {
@@ -1473,7 +1479,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 80,
+            "value": 81,
             "points": 2
           },
           {
@@ -1506,7 +1512,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 80,
+            "value": 81,
             "points": 2
           },
           {
@@ -1523,7 +1529,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 80,
+            "value": 81,
             "points": 2
           },
           {
@@ -1550,7 +1556,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 80,
+            "value": 81,
             "points": 2
           },
           {
@@ -1573,7 +1579,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 80,
+            "value": 81,
             "points": 2
           },
           {
@@ -1602,7 +1608,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 80,
+            "value": 81,
             "points": 2
           }
         ]
@@ -1613,7 +1619,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 80,
+            "value": 81,
             "points": 2
           }
         ]
@@ -1641,7 +1647,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 80,
+            "value": 81,
             "points": 2
           }
         ]
@@ -1674,14 +1680,21 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 21,
+            "value": 22,
             "points": 1
           }
         ]
       },
       "377": {
-        "total": 0,
-        "components": []
+        "total": 1,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 1,
+            "points": 1
+          }
+        ]
       },
       "379": {
         "total": 2,
@@ -1689,7 +1702,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 80,
+            "value": 81,
             "points": 2
           }
         ]
@@ -1721,7 +1734,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 80,
+            "value": 81,
             "points": 2
           },
           {
@@ -1755,7 +1768,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 80,
+            "value": 81,
             "points": 2
           },
           {
@@ -2412,5 +2425,5 @@
       }
     }
   },
-  "generatedAt": "2026-11-01T18:11:25.278Z"
+  "generatedAt": "2026-11-01T18:12:33.693Z"
 }
