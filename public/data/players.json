@@ -67,6 +67,28 @@
       "positionRank": 1
     },
     {
+      "id": 4,
+      "name": "Gabriel",
+      "position": "DEF",
+      "club": "Arsenal",
+      "clubShort": "ARS",
+      "clubCode": 3,
+      "teamId": 1,
+      "photoCode": 226597,
+      "owner": "wallis",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 58,
+      "ppg": 6.4,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 6,
+      "bonus": 5,
+      "positionRank": 2
+    },
+    {
       "id": 504,
       "name": "Vuskovic",
       "position": "DEF",
@@ -86,7 +108,29 @@
       "assists": 1,
       "cleanSheets": 6,
       "bonus": 2,
-      "positionRank": 2
+      "positionRank": 3
+    },
+    {
+      "id": 1,
+      "name": "Raya",
+      "position": "GKP",
+      "club": "Arsenal",
+      "clubShort": "ARS",
+      "clubCode": 3,
+      "teamId": 1,
+      "photoCode": 154561,
+      "owner": "ollie",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 55,
+      "ppg": 6.1,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 6,
+      "bonus": 6,
+      "positionRank": 1
     },
     {
       "id": 68,
@@ -111,26 +155,26 @@
       "positionRank": 2
     },
     {
-      "id": 4,
-      "name": "Gabriel",
-      "position": "DEF",
-      "club": "Arsenal",
-      "clubShort": "ARS",
-      "clubCode": 3,
-      "teamId": 1,
-      "photoCode": 226597,
-      "owner": "wallis",
+      "id": 379,
+      "name": "Isak",
+      "position": "FWD",
+      "club": "Liverpool",
+      "clubShort": "LIV",
+      "clubCode": 14,
+      "teamId": 14,
+      "photoCode": 219168,
+      "owner": "bennett",
       "status": "a",
-      "chanceOfPlaying": null,
+      "chanceOfPlaying": 100,
       "news": null,
-      "newsAdded": null,
+      "newsAdded": "2026-09-27T10:30:09.051435Z",
       "points": 53,
-      "ppg": 5.9,
-      "goals": 1,
+      "ppg": 6.6,
+      "goals": 6,
       "assists": 0,
-      "cleanSheets": 5,
-      "bonus": 5,
-      "positionRank": 3
+      "cleanSheets": 4,
+      "bonus": 14,
+      "positionRank": 2
     },
     {
       "id": 112,
@@ -174,28 +218,6 @@
       "assists": 4,
       "cleanSheets": 5,
       "bonus": 7,
-      "positionRank": 2
-    },
-    {
-      "id": 379,
-      "name": "Isak",
-      "position": "FWD",
-      "club": "Liverpool",
-      "clubShort": "LIV",
-      "clubCode": 14,
-      "teamId": 14,
-      "photoCode": 219168,
-      "owner": "bennett",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-27T10:30:09.051435Z",
-      "points": 52,
-      "ppg": 6.5,
-      "goals": 6,
-      "assists": 0,
-      "cleanSheets": 4,
-      "bonus": 14,
       "positionRank": 3
     },
     {
@@ -218,6 +240,28 @@
       "assists": 0,
       "cleanSheets": 5,
       "bonus": 6,
+      "positionRank": 6
+    },
+    {
+      "id": 8,
+      "name": "Calafiori",
+      "position": "DEF",
+      "club": "Arsenal",
+      "clubShort": "ARS",
+      "clubCode": 3,
+      "teamId": 1,
+      "photoCode": 466075,
+      "owner": "wood",
+      "status": "a",
+      "chanceOfPlaying": 75,
+      "news": null,
+      "newsAdded": "2026-10-24T18:30:08.735545Z",
+      "points": 51,
+      "ppg": 5.7,
+      "goals": 1,
+      "assists": 2,
+      "cleanSheets": 5,
+      "bonus": 3,
       "positionRank": 5
     },
     {
@@ -240,28 +284,6 @@
       "assists": 0,
       "cleanSheets": 6,
       "bonus": 5,
-      "positionRank": 1
-    },
-    {
-      "id": 1,
-      "name": "Raya",
-      "position": "GKP",
-      "club": "Arsenal",
-      "clubShort": "ARS",
-      "clubCode": 3,
-      "teamId": 1,
-      "photoCode": 154561,
-      "owner": "ollie",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 50,
-      "ppg": 5.6,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 5,
-      "bonus": 6,
       "positionRank": 2
     },
     {
@@ -328,7 +350,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 7,
-      "positionRank": 6
+      "positionRank": 7
     },
     {
       "id": 165,
@@ -353,26 +375,48 @@
       "positionRank": 4
     },
     {
-      "id": 8,
-      "name": "Calafiori",
+      "id": 31,
+      "name": "Konsa",
       "position": "DEF",
       "club": "Arsenal",
       "clubShort": "ARS",
       "clubCode": 3,
       "teamId": 1,
-      "photoCode": 466075,
-      "owner": "wood",
+      "photoCode": 199798,
+      "owner": "kellett",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-05T09:30:09.853316Z",
+      "points": 47,
+      "ppg": 5.9,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 4,
+      "bonus": 7,
+      "positionRank": 8
+    },
+    {
+      "id": 13,
+      "name": "Rice",
+      "position": "MID",
+      "club": "Arsenal",
+      "clubShort": "ARS",
+      "clubCode": 3,
+      "teamId": 1,
+      "photoCode": 204480,
+      "owner": "bennett",
       "status": "a",
       "chanceOfPlaying": 75,
       "news": null,
-      "newsAdded": "2026-10-24T18:30:08.735545Z",
-      "points": 46,
-      "ppg": 5.1,
-      "goals": 1,
-      "assists": 2,
-      "cleanSheets": 4,
-      "bonus": 3,
-      "positionRank": 7
+      "newsAdded": "2026-10-28T00:00:08.477333Z",
+      "points": 47,
+      "ppg": 5.2,
+      "goals": 0,
+      "assists": 5,
+      "cleanSheets": 6,
+      "bonus": 7,
+      "positionRank": 5
     },
     {
       "id": 334,
@@ -394,7 +438,7 @@
       "assists": 2,
       "cleanSheets": 3,
       "bonus": 1,
-      "positionRank": 8
+      "positionRank": 9
     },
     {
       "id": 399,
@@ -463,28 +507,6 @@
       "positionRank": 7
     },
     {
-      "id": 13,
-      "name": "Rice",
-      "position": "MID",
-      "club": "Arsenal",
-      "clubShort": "ARS",
-      "clubCode": 3,
-      "teamId": 1,
-      "photoCode": 204480,
-      "owner": "bennett",
-      "status": "a",
-      "chanceOfPlaying": 75,
-      "news": null,
-      "newsAdded": "2026-10-28T00:00:08.477333Z",
-      "points": 45,
-      "ppg": 5,
-      "goals": 0,
-      "assists": 5,
-      "cleanSheets": 5,
-      "bonus": 7,
-      "positionRank": 5
-    },
-    {
       "id": 94,
       "name": "Schade",
       "position": "MID",
@@ -526,7 +548,7 @@
       "assists": 4,
       "cleanSheets": 2,
       "bonus": 6,
-      "positionRank": 9
+      "positionRank": 10
     },
     {
       "id": 427,
@@ -658,7 +680,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 4,
-      "positionRank": 11
+      "positionRank": 12
     },
     {
       "id": 10,
@@ -680,29 +702,7 @@
       "assists": 3,
       "cleanSheets": 4,
       "bonus": 4,
-      "positionRank": 10
-    },
-    {
-      "id": 31,
-      "name": "Konsa",
-      "position": "DEF",
-      "club": "Arsenal",
-      "clubShort": "ARS",
-      "clubCode": 3,
-      "teamId": 1,
-      "photoCode": 199798,
-      "owner": "kellett",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-05T09:30:09.853316Z",
-      "points": 41,
-      "ppg": 5.1,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 3,
-      "bonus": 6,
-      "positionRank": 12
+      "positionRank": 11
     },
     {
       "id": 87,
@@ -790,7 +790,29 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 6,
-      "positionRank": 14
+      "positionRank": 16
+    },
+    {
+      "id": 362,
+      "name": "Jacquet",
+      "position": "DEF",
+      "club": "Liverpool",
+      "clubShort": "LIV",
+      "clubCode": 14,
+      "teamId": 14,
+      "photoCode": 606702,
+      "owner": "ollie",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-06T00:30:10.323830Z",
+      "points": 40,
+      "ppg": 4.4,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 4,
+      "bonus": 3,
+      "positionRank": 15
     },
     {
       "id": 156,
@@ -815,6 +837,28 @@
       "positionRank": 12
     },
     {
+      "id": 356,
+      "name": "Virgil",
+      "position": "DEF",
+      "club": "Liverpool",
+      "clubShort": "LIV",
+      "clubCode": 14,
+      "teamId": 14,
+      "photoCode": 97032,
+      "owner": "jason",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 40,
+      "ppg": 4.4,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 4,
+      "bonus": 1,
+      "positionRank": 14
+    },
+    {
       "id": 114,
       "name": "Boscagli",
       "position": "DEF",
@@ -834,39 +878,17 @@
       "assists": 1,
       "cleanSheets": 6,
       "bonus": 1,
-      "positionRank": 15
-    },
-    {
-      "id": 362,
-      "name": "Jacquet",
-      "position": "DEF",
-      "club": "Liverpool",
-      "clubShort": "LIV",
-      "clubCode": 14,
-      "teamId": 14,
-      "photoCode": 606702,
-      "owner": "ollie",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-06T00:30:10.323830Z",
-      "points": 39,
-      "ppg": 4.3,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 4,
-      "bonus": 3,
       "positionRank": 17
     },
     {
-      "id": 356,
-      "name": "Virgil",
-      "position": "DEF",
-      "club": "Liverpool",
-      "clubShort": "LIV",
-      "clubCode": 14,
-      "teamId": 14,
-      "photoCode": 97032,
+      "id": 15,
+      "name": "Ødegaard",
+      "position": "MID",
+      "club": "Arsenal",
+      "clubShort": "ARS",
+      "clubCode": 3,
+      "teamId": 1,
+      "photoCode": 184029,
       "owner": "jason",
       "status": "a",
       "chanceOfPlaying": null,
@@ -874,11 +896,33 @@
       "newsAdded": null,
       "points": 39,
       "ppg": 4.3,
+      "goals": 2,
+      "assists": 0,
+      "cleanSheets": 6,
+      "bonus": 6,
+      "positionRank": 15
+    },
+    {
+      "id": 350,
+      "name": "A.Becker",
+      "position": "GKP",
+      "club": "Liverpool",
+      "clubShort": "LIV",
+      "clubCode": 14,
+      "teamId": 14,
+      "photoCode": 116535,
+      "owner": "jls",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 38,
+      "ppg": 4.2,
       "goals": 0,
       "assists": 0,
       "cleanSheets": 4,
-      "bonus": 1,
-      "positionRank": 16
+      "bonus": 5,
+      "positionRank": 5
     },
     {
       "id": 60,
@@ -922,7 +966,7 @@
       "assists": 1,
       "cleanSheets": 5,
       "bonus": 7,
-      "positionRank": 17
+      "positionRank": 18
     },
     {
       "id": 496,
@@ -944,7 +988,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 2,
-      "positionRank": 5
+      "positionRank": 6
     },
     {
       "id": 53,
@@ -966,29 +1010,7 @@
       "assists": 3,
       "cleanSheets": 2,
       "bonus": 7,
-      "positionRank": 15
-    },
-    {
-      "id": 350,
-      "name": "A.Becker",
-      "position": "GKP",
-      "club": "Liverpool",
-      "clubShort": "LIV",
-      "clubCode": 14,
-      "teamId": 14,
-      "photoCode": 116535,
-      "owner": "jls",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 37,
-      "ppg": 4.1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 4,
-      "bonus": 5,
-      "positionRank": 6
+      "positionRank": 16
     },
     {
       "id": 346,
@@ -1076,7 +1098,29 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 5,
-      "positionRank": 23
+      "positionRank": 24
+    },
+    {
+      "id": 367,
+      "name": "Gakpo",
+      "position": "MID",
+      "club": "Liverpool",
+      "clubShort": "LIV",
+      "clubCode": 14,
+      "teamId": 14,
+      "photoCode": 243298,
+      "owner": "rowan",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-27T21:30:07.786183Z",
+      "points": 37,
+      "ppg": 5.3,
+      "goals": 1,
+      "assists": 3,
+      "cleanSheets": 3,
+      "bonus": 5,
+      "positionRank": 22
     },
     {
       "id": 388,
@@ -1099,28 +1143,6 @@
       "cleanSheets": 3,
       "bonus": 4,
       "positionRank": 20
-    },
-    {
-      "id": 15,
-      "name": "Ødegaard",
-      "position": "MID",
-      "club": "Arsenal",
-      "clubShort": "ARS",
-      "clubCode": 3,
-      "teamId": 1,
-      "photoCode": 184029,
-      "owner": "jason",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 37,
-      "ppg": 4.1,
-      "goals": 2,
-      "assists": 0,
-      "cleanSheets": 5,
-      "bonus": 6,
-      "positionRank": 19
     },
     {
       "id": 183,
@@ -1164,7 +1186,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 4,
-      "positionRank": 18
+      "positionRank": 19
     },
     {
       "id": 397,
@@ -1186,7 +1208,7 @@
       "assists": 3,
       "cleanSheets": 3,
       "bonus": 2,
-      "positionRank": 22
+      "positionRank": 23
     },
     {
       "id": 555,
@@ -1255,28 +1277,6 @@
       "positionRank": 23
     },
     {
-      "id": 367,
-      "name": "Gakpo",
-      "position": "MID",
-      "club": "Liverpool",
-      "clubShort": "LIV",
-      "clubCode": 14,
-      "teamId": 14,
-      "photoCode": 243298,
-      "owner": "rowan",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-27T21:30:07.786183Z",
-      "points": 36,
-      "ppg": 5.1,
-      "goals": 1,
-      "assists": 3,
-      "cleanSheets": 3,
-      "bonus": 5,
-      "positionRank": 25
-    },
-    {
       "id": 268,
       "name": "King",
       "position": "MID",
@@ -1296,7 +1296,7 @@
       "assists": 1,
       "cleanSheets": 5,
       "bonus": 3,
-      "positionRank": 24
+      "positionRank": 25
     },
     {
       "id": 250,
@@ -1365,6 +1365,28 @@
       "positionRank": 25
     },
     {
+      "id": 580,
+      "name": "Araujo",
+      "position": "DEF",
+      "club": "Liverpool",
+      "clubShort": "LIV",
+      "clubCode": 14,
+      "teamId": 14,
+      "photoCode": 445087,
+      "owner": "bennett",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 35,
+      "ppg": 3.9,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 4,
+      "bonus": 3,
+      "positionRank": 26
+    },
+    {
       "id": 426,
       "name": "B.Fernandes",
       "position": "MID",
@@ -1431,28 +1453,6 @@
       "positionRank": 27
     },
     {
-      "id": 580,
-      "name": "Araujo",
-      "position": "DEF",
-      "club": "Liverpool",
-      "clubShort": "LIV",
-      "clubCode": 14,
-      "teamId": 14,
-      "photoCode": 445087,
-      "owner": "bennett",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 34,
-      "ppg": 3.8,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 4,
-      "bonus": 3,
-      "positionRank": 27
-    },
-    {
       "id": 480,
       "name": "Gibbs-White",
       "position": "MID",
@@ -1516,6 +1516,28 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 6,
+      "positionRank": 10
+    },
+    {
+      "id": 26,
+      "name": "Havertz",
+      "position": "FWD",
+      "club": "Arsenal",
+      "clubShort": "ARS",
+      "clubCode": 3,
+      "teamId": 1,
+      "photoCode": 219847,
+      "owner": "paddy",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-24T22:00:09.120308Z",
+      "points": 33,
+      "ppg": 3.7,
+      "goals": 3,
+      "assists": 0,
+      "cleanSheets": 5,
+      "bonus": 5,
       "positionRank": 9
     },
     {
@@ -1582,6 +1604,28 @@
       "assists": 1,
       "cleanSheets": 4,
       "bonus": 2,
+      "positionRank": 35
+    },
+    {
+      "id": 366,
+      "name": "Wirtz",
+      "position": "MID",
+      "club": "Liverpool",
+      "clubShort": "LIV",
+      "clubCode": 14,
+      "teamId": 14,
+      "photoCode": 494595,
+      "owner": "rushy",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-25T17:00:09.888666Z",
+      "points": 33,
+      "ppg": 3.7,
+      "goals": 0,
+      "assists": 4,
+      "cleanSheets": 4,
+      "bonus": 0,
       "positionRank": 34
     },
     {
@@ -1605,28 +1649,6 @@
       "cleanSheets": 3,
       "bonus": 1,
       "positionRank": 9
-    },
-    {
-      "id": 26,
-      "name": "Havertz",
-      "position": "FWD",
-      "club": "Arsenal",
-      "clubShort": "ARS",
-      "clubCode": 3,
-      "teamId": 1,
-      "photoCode": 219847,
-      "owner": "paddy",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-24T22:00:09.120308Z",
-      "points": 32,
-      "ppg": 3.6,
-      "goals": 3,
-      "assists": 0,
-      "cleanSheets": 4,
-      "bonus": 5,
-      "positionRank": 10
     },
     {
       "id": 204,
@@ -1693,28 +1715,6 @@
       "cleanSheets": 3,
       "bonus": 3,
       "positionRank": 11
-    },
-    {
-      "id": 366,
-      "name": "Wirtz",
-      "position": "MID",
-      "club": "Liverpool",
-      "clubShort": "LIV",
-      "clubCode": 14,
-      "teamId": 14,
-      "photoCode": 494595,
-      "owner": "rushy",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-25T17:00:09.888666Z",
-      "points": 32,
-      "ppg": 3.6,
-      "goals": 0,
-      "assists": 4,
-      "cleanSheets": 4,
-      "bonus": 0,
-      "positionRank": 36
     },
     {
       "id": 544,
@@ -2245,6 +2245,28 @@
       "positionRank": 51
     },
     {
+      "id": 452,
+      "name": "Bruno G.",
+      "position": "MID",
+      "club": "Arsenal",
+      "clubShort": "ARS",
+      "clubCode": 3,
+      "teamId": 1,
+      "photoCode": 208706,
+      "owner": "jls",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-04T14:00:08.328779Z",
+      "points": 25,
+      "ppg": 3.6,
+      "goals": 2,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 4,
+      "positionRank": 57
+    },
+    {
       "id": 101,
       "name": "Henderson",
       "position": "MID",
@@ -2330,7 +2352,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 4,
-      "positionRank": 56
+      "positionRank": 57
     },
     {
       "id": 123,
@@ -2352,7 +2374,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 58
+      "positionRank": 59
     },
     {
       "id": 566,
@@ -2375,6 +2397,28 @@
       "cleanSheets": 2,
       "bonus": 1,
       "positionRank": 15
+    },
+    {
+      "id": 358,
+      "name": "Kerkez",
+      "position": "DEF",
+      "club": "Liverpool",
+      "clubShort": "LIV",
+      "clubCode": 14,
+      "teamId": 14,
+      "photoCode": 544877,
+      "owner": "jason",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 24,
+      "ppg": 2.7,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 3,
+      "bonus": 0,
+      "positionRank": 56
     },
     {
       "id": 200,
@@ -2465,28 +2509,6 @@
       "positionRank": 13
     },
     {
-      "id": 452,
-      "name": "Bruno G.",
-      "position": "MID",
-      "club": "Arsenal",
-      "clubShort": "ARS",
-      "clubCode": 3,
-      "teamId": 1,
-      "photoCode": 208706,
-      "owner": "jls",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-04T14:00:08.328779Z",
-      "points": 23,
-      "ppg": 3.3,
-      "goals": 2,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 4,
-      "positionRank": 65
-    },
-    {
       "id": 400,
       "name": "Doku",
       "position": "MID",
@@ -2506,29 +2528,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 4,
-      "positionRank": 64
-    },
-    {
-      "id": 358,
-      "name": "Kerkez",
-      "position": "DEF",
-      "club": "Liverpool",
-      "clubShort": "LIV",
-      "clubCode": 14,
-      "teamId": 14,
-      "photoCode": 544877,
-      "owner": "jason",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 23,
-      "ppg": 2.6,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 3,
-      "bonus": 0,
-      "positionRank": 57
+      "positionRank": 65
     },
     {
       "id": 336,
@@ -2550,7 +2550,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 1,
-      "positionRank": 63
+      "positionRank": 64
     },
     {
       "id": 514,
@@ -2795,6 +2795,28 @@
       "positionRank": 17
     },
     {
+      "id": 628,
+      "name": "Barcola",
+      "position": "MID",
+      "club": "Liverpool",
+      "clubShort": "LIV",
+      "clubCode": 14,
+      "teamId": 14,
+      "photoCode": 482616,
+      "owner": "dj",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 20,
+      "ppg": 2.9,
+      "goals": 0,
+      "assists": 2,
+      "cleanSheets": 3,
+      "bonus": 0,
+      "positionRank": 82
+    },
+    {
       "id": 149,
       "name": "Colwill",
       "position": "DEF",
@@ -2905,26 +2927,26 @@
       "positionRank": 17
     },
     {
-      "id": 628,
-      "name": "Barcola",
+      "id": 554,
+      "name": "Tzolis",
       "position": "MID",
-      "club": "Liverpool",
-      "clubShort": "LIV",
-      "clubCode": 14,
-      "teamId": 14,
-      "photoCode": 482616,
-      "owner": "dj",
+      "club": "Arsenal",
+      "clubShort": "ARS",
+      "clubCode": 3,
+      "teamId": 1,
+      "photoCode": 439509,
+      "owner": "ollie",
       "status": "a",
-      "chanceOfPlaying": null,
+      "chanceOfPlaying": 75,
       "news": null,
-      "newsAdded": null,
+      "newsAdded": "2026-10-02T15:00:11.091226Z",
       "points": 19,
-      "ppg": 2.7,
+      "ppg": 3.2,
       "goals": 0,
       "assists": 2,
       "cleanSheets": 3,
-      "bonus": 0,
-      "positionRank": 88
+      "bonus": 1,
+      "positionRank": 89
     },
     {
       "id": 464,
@@ -3059,28 +3081,6 @@
       "positionRank": 74
     },
     {
-      "id": 554,
-      "name": "Tzolis",
-      "position": "MID",
-      "club": "Arsenal",
-      "clubShort": "ARS",
-      "clubCode": 3,
-      "teamId": 1,
-      "photoCode": 439509,
-      "owner": "ollie",
-      "status": "a",
-      "chanceOfPlaying": 75,
-      "news": null,
-      "newsAdded": "2026-10-02T15:00:11.091226Z",
-      "points": 17,
-      "ppg": 2.8,
-      "goals": 0,
-      "assists": 2,
-      "cleanSheets": 2,
-      "bonus": 1,
-      "positionRank": 95
-    },
-    {
       "id": 445,
       "name": "Thiaw",
       "position": "DEF",
@@ -3188,7 +3188,29 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 106
+      "positionRank": 107
+    },
+    {
+      "id": 16,
+      "name": "Madueke",
+      "position": "MID",
+      "club": "Arsenal",
+      "clubShort": "ARS",
+      "clubCode": 3,
+      "teamId": 1,
+      "photoCode": 248857,
+      "owner": "jls",
+      "status": "a",
+      "chanceOfPlaying": 50,
+      "news": null,
+      "newsAdded": "2026-10-28T00:00:08.492716Z",
+      "points": 14,
+      "ppg": 2.3,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 0,
+      "positionRank": 104
     },
     {
       "id": 387,
@@ -3301,28 +3323,6 @@
       "positionRank": 87
     },
     {
-      "id": 16,
-      "name": "Madueke",
-      "position": "MID",
-      "club": "Arsenal",
-      "clubShort": "ARS",
-      "clubCode": 3,
-      "teamId": 1,
-      "photoCode": 248857,
-      "owner": "jls",
-      "status": "a",
-      "chanceOfPlaying": 50,
-      "news": null,
-      "newsAdded": "2026-10-28T00:00:08.492716Z",
-      "points": 12,
-      "ppg": 2,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 112
-    },
-    {
       "id": 499,
       "name": "Pedro Porro",
       "position": "DEF",
@@ -3387,6 +3387,28 @@
       "cleanSheets": 1,
       "bonus": 0,
       "positionRank": 32
+    },
+    {
+      "id": 5,
+      "name": "J.Timber",
+      "position": "DEF",
+      "club": "Arsenal",
+      "clubShort": "ARS",
+      "clubCode": 3,
+      "teamId": 1,
+      "photoCode": 445122,
+      "owner": "dj",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-07-23T12:01:23.272929Z",
+      "points": 9,
+      "ppg": 1.8,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 99
     },
     {
       "id": 14,
@@ -3543,28 +3565,6 @@
       "positionRank": 164
     },
     {
-      "id": 5,
-      "name": "J.Timber",
-      "position": "DEF",
-      "club": "Arsenal",
-      "clubShort": "ARS",
-      "clubCode": 3,
-      "teamId": 1,
-      "photoCode": 445122,
-      "owner": "dj",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-07-23T12:01:23.272929Z",
-      "points": 4,
-      "ppg": 0.8,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 122
-    },
-    {
       "id": 223,
       "name": "Mateta",
       "position": "FWD",
@@ -3674,7 +3674,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 5,
-      "positionRank": 16
+      "positionRank": 17
     },
     {
       "id": 116,
@@ -3740,7 +3740,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 1,
-      "positionRank": 26
+      "positionRank": 27
     },
     {
       "id": 214,
@@ -3806,7 +3806,7 @@
       "assists": 0,
       "cleanSheets": 6,
       "bonus": 3,
-      "positionRank": 35
+      "positionRank": 36
     },
     {
       "id": 173,
@@ -4290,7 +4290,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 59
+      "positionRank": 60
     },
     {
       "id": 43,
@@ -4312,7 +4312,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 57
+      "positionRank": 58
     },
     {
       "id": 608,
@@ -4334,7 +4334,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 60
+      "positionRank": 61
     },
     {
       "id": 244,
@@ -4356,7 +4356,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 62
+      "positionRank": 63
     },
     {
       "id": 579,
@@ -4400,7 +4400,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 61
+      "positionRank": 62
     },
     {
       "id": 619,
@@ -4708,7 +4708,7 @@
       "assists": 1,
       "cleanSheets": 4,
       "bonus": 0,
-      "positionRank": 82
+      "positionRank": 83
     },
     {
       "id": 280,
@@ -4818,7 +4818,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 83
+      "positionRank": 84
     },
     {
       "id": 454,
@@ -4840,7 +4840,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 85
+      "positionRank": 87
     },
     {
       "id": 525,
@@ -4862,7 +4862,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 86
+      "positionRank": 88
     },
     {
       "id": 145,
@@ -4887,6 +4887,28 @@
       "positionRank": 68
     },
     {
+      "id": 372,
+      "name": "Mac Allister",
+      "position": "MID",
+      "club": "Liverpool",
+      "clubShort": "LIV",
+      "clubCode": 14,
+      "teamId": 14,
+      "photoCode": 243016,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 19,
+      "ppg": 2.1,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 3,
+      "bonus": 0,
+      "positionRank": 85
+    },
+    {
       "id": 563,
       "name": "Maeda",
       "position": "MID",
@@ -4906,7 +4928,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 87
+      "positionRank": 90
     },
     {
       "id": 405,
@@ -4928,7 +4950,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 2,
-      "positionRank": 84
+      "positionRank": 86
     },
     {
       "id": 175,
@@ -4972,7 +4994,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 91
+      "positionRank": 93
     },
     {
       "id": 71,
@@ -4994,7 +5016,7 @@
       "assists": 1,
       "cleanSheets": 4,
       "bonus": 0,
-      "positionRank": 89
+      "positionRank": 91
     },
     {
       "id": 599,
@@ -5038,7 +5060,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 93
+      "positionRank": 94
     },
     {
       "id": 184,
@@ -5059,28 +5081,6 @@
       "goals": 0,
       "assists": 0,
       "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 90
-    },
-    {
-      "id": 372,
-      "name": "Mac Allister",
-      "position": "MID",
-      "club": "Liverpool",
-      "clubShort": "LIV",
-      "clubCode": 14,
-      "teamId": 14,
-      "photoCode": 243016,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 18,
-      "ppg": 2,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 3,
       "bonus": 0,
       "positionRank": 92
     },
@@ -5148,7 +5148,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 94
+      "positionRank": 95
     },
     {
       "id": 635,
@@ -5522,7 +5522,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 104
+      "positionRank": 105
     },
     {
       "id": 519,
@@ -5544,7 +5544,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 107
+      "positionRank": 108
     },
     {
       "id": 209,
@@ -5566,7 +5566,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 105
+      "positionRank": 106
     },
     {
       "id": 516,
@@ -5588,7 +5588,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 110
+      "positionRank": 111
     },
     {
       "id": 119,
@@ -5632,7 +5632,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 109
+      "positionRank": 110
     },
     {
       "id": 7,
@@ -5654,7 +5654,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 108
+      "positionRank": 109
     },
     {
       "id": 36,
@@ -5698,7 +5698,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 111
+      "positionRank": 112
     },
     {
       "id": 611,
@@ -6512,7 +6512,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 102
+      "positionRank": 103
     },
     {
       "id": 157,
@@ -6578,7 +6578,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 104
+      "positionRank": 105
     },
     {
       "id": 585,
@@ -6600,7 +6600,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 103
+      "positionRank": 104
     },
     {
       "id": 90,
@@ -6622,7 +6622,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 99
+      "positionRank": 100
     },
     {
       "id": 419,
@@ -6644,7 +6644,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 100
+      "positionRank": 101
     },
     {
       "id": 631,
@@ -6732,7 +6732,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 101
+      "positionRank": 102
     },
     {
       "id": 462,
@@ -6798,7 +6798,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 109
+      "positionRank": 110
     },
     {
       "id": 634,
@@ -6820,7 +6820,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 111
+      "positionRank": 112
     },
     {
       "id": 508,
@@ -6842,7 +6842,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 110
+      "positionRank": 111
     },
     {
       "id": 456,
@@ -6908,7 +6908,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 107
+      "positionRank": 108
     },
     {
       "id": 34,
@@ -6930,7 +6930,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 105
+      "positionRank": 106
     },
     {
       "id": 318,
@@ -6974,7 +6974,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 108
+      "positionRank": 109
     },
     {
       "id": 188,
@@ -7018,7 +7018,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 106
+      "positionRank": 107
     },
     {
       "id": 490,
@@ -7106,7 +7106,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 112
+      "positionRank": 113
     },
     {
       "id": 72,
@@ -7282,7 +7282,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 113
+      "positionRank": 114
     },
     {
       "id": 564,
@@ -7392,7 +7392,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 114
+      "positionRank": 115
     },
     {
       "id": 488,
@@ -7458,7 +7458,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 116
+      "positionRank": 117
     },
     {
       "id": 287,
@@ -7546,7 +7546,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 115
+      "positionRank": 116
     },
     {
       "id": 596,
@@ -7568,7 +7568,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 117
+      "positionRank": 118
     },
     {
       "id": 19,
@@ -7634,7 +7634,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 120
+      "positionRank": 121
     },
     {
       "id": 650,
@@ -7810,7 +7810,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 121
+      "positionRank": 122
     },
     {
       "id": 81,
@@ -7854,7 +7854,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 119
+      "positionRank": 120
     },
     {
       "id": 328,
@@ -7876,7 +7876,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 118
+      "positionRank": 119
     },
     {
       "id": 190,
@@ -14765,5 +14765,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-01T17:50:52.658Z"
+  "generatedAt": "2026-11-01T17:52:01.178Z"
 }
