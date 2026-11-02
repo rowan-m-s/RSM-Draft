@@ -155,28 +155,6 @@
       "positionRank": 1
     },
     {
-      "id": 8,
-      "name": "Calafiori",
-      "position": "DEF",
-      "club": "Arsenal",
-      "clubShort": "ARS",
-      "clubCode": 3,
-      "teamId": 1,
-      "photoCode": 466075,
-      "owner": "wood",
-      "status": "a",
-      "chanceOfPlaying": 75,
-      "news": null,
-      "newsAdded": "2026-10-24T18:30:08.735545Z",
-      "points": 53,
-      "ppg": 5.9,
-      "goals": 1,
-      "assists": 2,
-      "cleanSheets": 5,
-      "bonus": 3,
-      "positionRank": 4
-    },
-    {
       "id": 379,
       "name": "Isak",
       "position": "FWD",
@@ -218,7 +196,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 6,
-      "positionRank": 5
+      "positionRank": 4
     },
     {
       "id": 79,
@@ -263,6 +241,28 @@
       "cleanSheets": 5,
       "bonus": 6,
       "positionRank": 6
+    },
+    {
+      "id": 8,
+      "name": "Calafiori",
+      "position": "DEF",
+      "club": "Arsenal",
+      "clubShort": "ARS",
+      "clubCode": 3,
+      "teamId": 1,
+      "photoCode": 466075,
+      "owner": "wood",
+      "status": "a",
+      "chanceOfPlaying": 75,
+      "news": null,
+      "newsAdded": "2026-10-24T18:30:08.735545Z",
+      "points": 51,
+      "ppg": 5.7,
+      "goals": 1,
+      "assists": 2,
+      "cleanSheets": 5,
+      "bonus": 3,
+      "positionRank": 5
     },
     {
       "id": 109,
@@ -14765,5 +14765,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-02T00:06:58.895Z"
+  "generatedAt": "2026-11-02T10:25:16.318Z"
 }
