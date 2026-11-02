@@ -1504,16 +1504,16 @@
       "kochReady": true,
       "yetByManager": {
         "rushy": 0,
-        "kellett": 1,
-        "wallis": 1,
-        "jls": 1,
-        "paddy": 2,
-        "bennett": 2,
+        "kellett": 0,
+        "wallis": 0,
+        "jls": 0,
+        "paddy": 0,
+        "bennett": 0,
         "wood": 0,
-        "rowan": 3,
-        "jason": 1,
-        "dj": 1,
-        "ollie": 1
+        "rowan": 0,
+        "jason": 0,
+        "dj": 0,
+        "ollie": 0
       },
       "fixturesRemaining": true,
       "dataChecked": false,
@@ -1523,16 +1523,16 @@
       "revealFromUtc": "2026-11-03T00:10:00.000Z",
       "scores": {
         "rushy": 38,
-        "kellett": 30,
+        "kellett": 31,
         "wallis": 28,
-        "jls": 20,
-        "paddy": 29,
-        "bennett": 47,
+        "jls": 21,
+        "paddy": 31,
+        "bennett": 51,
         "wood": 50,
-        "rowan": 48,
-        "jason": 24,
+        "rowan": 58,
+        "jason": 25,
         "dj": 51,
-        "ollie": 26
+        "ollie": 27
       },
       "kochKeys": [],
       "charged": 0,
@@ -1619,10 +1619,10 @@
           "element": 330
         },
         "paddy": {
-          "playerName": "Cherki",
+          "playerName": "Barnes",
           "points": 1,
           "managerKey": "paddy",
-          "element": 399
+          "element": 453
         },
         "bennett": {
           "playerName": "Egan",
@@ -1637,10 +1637,10 @@
           "element": 124
         },
         "rowan": {
-          "playerName": "Gibbs-White",
-          "points": 2,
+          "playerName": "Dedić",
+          "points": 1,
           "managerKey": "rowan",
-          "element": 480
+          "element": 595
         },
         "jason": {
           "playerName": "Kerkez",
@@ -2401,5 +2401,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-11-02T10:25:16.318Z"
+  "generatedAt": "2026-11-02T21:10:32.993Z"
 }

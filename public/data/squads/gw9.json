@@ -210,7 +210,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 411,
@@ -226,7 +226,7 @@
         "starter": false,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 279,
@@ -430,7 +430,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 336,
@@ -536,7 +536,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 154,
@@ -560,7 +560,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 155,
@@ -642,7 +642,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 277,
@@ -674,7 +674,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 3
       },
       {
         "element": 68,
@@ -870,7 +870,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 112,
@@ -910,7 +910,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 556,
@@ -942,7 +942,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 8
       },
       {
         "element": 295,
@@ -1008,7 +1008,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 358,
@@ -1260,7 +1260,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 503,
@@ -2176,9 +2176,9 @@
       "clubShort": "EVE",
       "clubCode": 11,
       "photoCode": 480455,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 75,
-      "news": "Concussion - 75% chance of playing",
+      "news": null,
       "newsAdded": "2026-10-30T15:30:09.601963Z"
     },
     "233": {
@@ -2884,9 +2884,9 @@
       "clubShort": "NEW",
       "clubCode": 4,
       "photoCode": 538207,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 50,
-      "news": "Ankle injury - 50% chance of playing",
+      "news": null,
       "newsAdded": "2026-10-29T23:00:08.575179Z"
     },
     "467": {
@@ -3334,5 +3334,5 @@
       "newsAdded": "2026-10-23T14:30:10.429365Z"
     }
   },
-  "generatedAt": "2026-11-02T10:25:16.318Z"
+  "generatedAt": "2026-11-02T21:10:32.993Z"
 }
