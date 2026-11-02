@@ -3982,28 +3982,6 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 46
-    },
-    {
-      "id": 242,
-      "name": "George",
-      "position": "MID",
-      "club": "Everton",
-      "clubShort": "EVE",
-      "clubCode": 11,
-      "teamId": 9,
-      "photoCode": 550615,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 28,
-      "ppg": 3.1,
-      "goals": 1,
-      "assists": 1,
-      "cleanSheets": 2,
-      "bonus": 4,
       "positionRank": 45
     },
     {
@@ -4026,7 +4004,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 47
+      "positionRank": 46
     },
     {
       "id": 481,
@@ -4070,7 +4048,29 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 2,
-      "positionRank": 48
+      "positionRank": 47
+    },
+    {
+      "id": 242,
+      "name": "George",
+      "position": "MID",
+      "club": "Everton",
+      "clubShort": "EVE",
+      "clubCode": 11,
+      "teamId": 9,
+      "photoCode": 550615,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 27,
+      "ppg": 3,
+      "goals": 1,
+      "assists": 1,
+      "cleanSheets": 2,
+      "bonus": 4,
+      "positionRank": 50
     },
     {
       "id": 304,
@@ -4114,7 +4114,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 49
+      "positionRank": 48
     },
     {
       "id": 211,
@@ -4136,7 +4136,7 @@
       "assists": 2,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 50
+      "positionRank": 49
     },
     {
       "id": 432,
@@ -14765,5 +14765,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-02T21:10:32.993Z"
+  "generatedAt": "2026-11-02T21:15:32.782Z"
 }
