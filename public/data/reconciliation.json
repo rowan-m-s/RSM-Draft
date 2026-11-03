@@ -201,7 +201,110 @@
         "wood"
       ],
       "kochMatch": true
+    },
+    {
+      "event": 9,
+      "reconciledAt": "2026-11-03T13:26:01.416Z",
+      "perManager": {
+        "rushy": {
+          "xiMatch": true,
+          "ourTotal": 47,
+          "fplTotal": 47,
+          "totalMatch": true,
+          "totalDelta": 0,
+          "mismatchSource": null
+        },
+        "kellett": {
+          "xiMatch": true,
+          "ourTotal": 32,
+          "fplTotal": 32,
+          "totalMatch": true,
+          "totalDelta": 0,
+          "mismatchSource": null
+        },
+        "wallis": {
+          "xiMatch": true,
+          "ourTotal": 32,
+          "fplTotal": 32,
+          "totalMatch": true,
+          "totalDelta": 0,
+          "mismatchSource": null
+        },
+        "jls": {
+          "xiMatch": true,
+          "ourTotal": 27,
+          "fplTotal": 27,
+          "totalMatch": true,
+          "totalDelta": 0,
+          "mismatchSource": null
+        },
+        "paddy": {
+          "xiMatch": true,
+          "ourTotal": 49,
+          "fplTotal": 49,
+          "totalMatch": true,
+          "totalDelta": 0,
+          "mismatchSource": null
+        },
+        "bennett": {
+          "xiMatch": true,
+          "ourTotal": 57,
+          "fplTotal": 57,
+          "totalMatch": true,
+          "totalDelta": 0,
+          "mismatchSource": null
+        },
+        "wood": {
+          "xiMatch": true,
+          "ourTotal": 50,
+          "fplTotal": 50,
+          "totalMatch": true,
+          "totalDelta": 0,
+          "mismatchSource": null
+        },
+        "rowan": {
+          "xiMatch": true,
+          "ourTotal": 66,
+          "fplTotal": 66,
+          "totalMatch": true,
+          "totalDelta": 0,
+          "mismatchSource": null
+        },
+        "jason": {
+          "xiMatch": true,
+          "ourTotal": 27,
+          "fplTotal": 27,
+          "totalMatch": true,
+          "totalDelta": 0,
+          "mismatchSource": null
+        },
+        "dj": {
+          "xiMatch": true,
+          "ourTotal": 51,
+          "fplTotal": 51,
+          "totalMatch": true,
+          "totalDelta": 0,
+          "mismatchSource": null
+        },
+        "ollie": {
+          "xiMatch": true,
+          "ourTotal": 32,
+          "fplTotal": 32,
+          "totalMatch": true,
+          "totalDelta": 0,
+          "mismatchSource": null
+        }
+      },
+      "ourKochKeys": [
+        "jason",
+        "jls"
+      ],
+      "fplKochKeys": [
+        "jason",
+        "jls"
+      ],
+      "kochMatch": true
     }
   ],
-  "generatedAt": "2026-11-03T06:28:01.918Z"
+  "generatedAt": "2026-11-03T13:25:58.053Z"
 }
