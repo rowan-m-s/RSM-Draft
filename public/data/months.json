@@ -192,22 +192,24 @@
         9
       ],
       "totals": {
-        "rushy": 144,
-        "kellett": 160,
-        "wallis": 153,
-        "jls": 145,
-        "paddy": 167,
-        "bennett": 206,
+        "rushy": 153,
+        "kellett": 161,
+        "wallis": 157,
+        "jls": 151,
+        "paddy": 185,
+        "bennett": 212,
         "wood": 194,
-        "rowan": 165,
-        "jason": 145,
+        "rowan": 173,
+        "jason": 147,
         "dj": 168,
-        "ollie": 141
+        "ollie": 146
       },
-      "pot": 15,
-      "settled": false,
-      "winnerKeys": [],
-      "potPerWinner": 0,
+      "pot": 25,
+      "settled": true,
+      "winnerKeys": [
+        "bennett"
+      ],
+      "potPerWinner": 25,
       "topPerformer": {
         "playerName": "Evanilson",
         "points": 34,
@@ -272,5 +274,5 @@
       }
     }
   ],
-  "generatedAt": "2026-11-02T21:10:32.993Z"
+  "generatedAt": "2026-11-03T03:22:56.593Z"
 }

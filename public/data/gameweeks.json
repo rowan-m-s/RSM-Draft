@@ -1500,7 +1500,7 @@
       "month": "2026-10",
       "finished": false,
       "started": true,
-      "scoresProvisional": true,
+      "scoresProvisional": false,
       "kochReady": true,
       "yetByManager": {
         "rushy": 0,
@@ -1517,25 +1517,28 @@
       },
       "fixturesRemaining": true,
       "dataChecked": false,
-      "locallyFinalised": false,
-      "confirmed": false,
+      "locallyFinalised": true,
+      "confirmed": true,
       "confirmExpectedUtc": "2026-11-03T20:00:00.000Z",
       "revealFromUtc": "2026-11-03T00:10:00.000Z",
       "scores": {
-        "rushy": 38,
-        "kellett": 31,
-        "wallis": 28,
-        "jls": 21,
-        "paddy": 31,
-        "bennett": 51,
+        "rushy": 47,
+        "kellett": 32,
+        "wallis": 32,
+        "jls": 27,
+        "paddy": 49,
+        "bennett": 57,
         "wood": 50,
-        "rowan": 58,
-        "jason": 25,
+        "rowan": 66,
+        "jason": 27,
         "dj": 51,
-        "ollie": 27
+        "ollie": 32
       },
-      "kochKeys": [],
-      "charged": 0,
+      "kochKeys": [
+        "jls",
+        "jason"
+      ],
+      "charged": 10,
       "topPerformerByManager": {
         "rushy": {
           "playerName": "Rogers",
@@ -1558,7 +1561,7 @@
           "managerKey": "jls"
         },
         "paddy": {
-          "playerName": "Havertz",
+          "playerName": "Branthwaite",
           "points": 9,
           "managerKey": "paddy"
         },
@@ -1588,7 +1591,7 @@
           "managerKey": "dj"
         },
         "ollie": {
-          "playerName": "Van de Ven",
+          "playerName": "Mykolenko",
           "points": 6,
           "managerKey": "ollie"
         }
@@ -1619,10 +1622,10 @@
           "element": 330
         },
         "paddy": {
-          "playerName": "Barnes",
+          "playerName": "Cherki",
           "points": 1,
           "managerKey": "paddy",
-          "element": 453
+          "element": 399
         },
         "bennett": {
           "playerName": "Egan",
@@ -1638,7 +1641,7 @@
         },
         "rowan": {
           "playerName": "Dedić",
-          "points": 1,
+          "points": 2,
           "managerKey": "rowan",
           "element": 595
         },
@@ -1649,10 +1652,10 @@
           "element": 358
         },
         "dj": {
-          "playerName": "Suzuki",
-          "points": 1,
+          "playerName": "Muñoz",
+          "points": 0,
           "managerKey": "dj",
-          "element": 597
+          "element": 201
         },
         "ollie": {
           "playerName": "Mbeumo",
@@ -2401,5 +2404,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-11-02T21:10:32.993Z"
+  "generatedAt": "2026-11-03T03:22:56.593Z"
 }

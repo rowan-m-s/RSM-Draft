@@ -3,8 +3,8 @@
     {
       "key": "wood",
       "rank": 1,
-      "total": 446,
-      "gw": 50,
+      "total": 396,
+      "gw": 24,
       "month": 194,
       "kochCount": 1,
       "motmCount": 1,
@@ -18,28 +18,11 @@
       }
     },
     {
-      "key": "bennett",
-      "rank": 2,
-      "total": 420,
-      "gw": 51,
-      "month": 206,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "Tavernier",
-        "points": 55,
-        "managerKey": "bennett"
-      }
-    },
-    {
       "key": "paddy",
-      "rank": 3,
-      "total": 401,
-      "gw": 31,
-      "month": 167,
+      "rank": 2,
+      "total": 370,
+      "gw": 48,
+      "month": 185,
       "kochCount": 1,
       "motmCount": 1,
       "forfeits": 5,
@@ -52,16 +35,33 @@
       }
     },
     {
+      "key": "bennett",
+      "rank": 3,
+      "total": 369,
+      "gw": 63,
+      "month": 212,
+      "kochCount": 0,
+      "motmCount": 1,
+      "forfeits": 0,
+      "potsWon": 25,
+      "balance": 25,
+      "topPerformer": {
+        "playerName": "Tavernier",
+        "points": 55,
+        "managerKey": "bennett"
+      }
+    },
+    {
       "key": "jason",
       "rank": 4,
-      "total": 389,
-      "gw": 25,
-      "month": 145,
-      "kochCount": 1,
+      "total": 364,
+      "gw": 44,
+      "month": 147,
+      "kochCount": 2,
       "motmCount": 0,
-      "forfeits": 5,
+      "forfeits": 10,
       "potsWon": 0,
-      "balance": -5,
+      "balance": -10,
       "topPerformer": {
         "playerName": "Cunha",
         "points": 40,
@@ -69,28 +69,11 @@
       }
     },
     {
-      "key": "rowan",
-      "rank": 5,
-      "total": 366,
-      "gw": 58,
-      "month": 165,
-      "kochCount": 2,
-      "motmCount": 0,
-      "forfeits": 10,
-      "potsWon": 0,
-      "balance": -10,
-      "topPerformer": {
-        "playerName": "Van Hecke",
-        "points": 53,
-        "managerKey": "rowan"
-      }
-    },
-    {
       "key": "kellett",
-      "rank": 6,
-      "total": 357,
-      "gw": 31,
-      "month": 160,
+      "rank": 5,
+      "total": 326,
+      "gw": 48,
+      "month": 161,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -103,28 +86,11 @@
       }
     },
     {
-      "key": "dj",
-      "rank": 7,
-      "total": 346,
-      "gw": 51,
-      "month": 168,
-      "kochCount": 1,
-      "motmCount": 0,
-      "forfeits": 5,
-      "potsWon": 0,
-      "balance": -5,
-      "topPerformer": {
-        "playerName": "Schade",
-        "points": 45,
-        "managerKey": "dj"
-      }
-    },
-    {
       "key": "ollie",
-      "rank": 7,
-      "total": 346,
-      "gw": 27,
-      "month": 141,
+      "rank": 6,
+      "total": 319,
+      "gw": 41,
+      "month": 146,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -138,10 +104,10 @@
     },
     {
       "key": "wallis",
-      "rank": 9,
-      "total": 344,
-      "gw": 28,
-      "month": 153,
+      "rank": 7,
+      "total": 316,
+      "gw": 44,
+      "month": 157,
       "kochCount": 2,
       "motmCount": 0,
       "forfeits": 10,
@@ -154,11 +120,45 @@
       }
     },
     {
+      "key": "jls",
+      "rank": 8,
+      "total": 312,
+      "gw": 28,
+      "month": 151,
+      "kochCount": 3,
+      "motmCount": 0,
+      "forfeits": 15,
+      "potsWon": 0,
+      "balance": -15,
+      "topPerformer": {
+        "playerName": "João Pedro",
+        "points": 47,
+        "managerKey": "jls"
+      }
+    },
+    {
+      "key": "rowan",
+      "rank": 9,
+      "total": 308,
+      "gw": 40,
+      "month": 173,
+      "kochCount": 2,
+      "motmCount": 0,
+      "forfeits": 10,
+      "potsWon": 0,
+      "balance": -10,
+      "topPerformer": {
+        "playerName": "Van Hecke",
+        "points": 53,
+        "managerKey": "rowan"
+      }
+    },
+    {
       "key": "rushy",
       "rank": 10,
-      "total": 343,
-      "gw": 38,
-      "month": 144,
+      "total": 305,
+      "gw": 36,
+      "month": 153,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -171,24 +171,24 @@
       }
     },
     {
-      "key": "jls",
+      "key": "dj",
       "rank": 11,
-      "total": 333,
-      "gw": 21,
-      "month": 145,
-      "kochCount": 2,
+      "total": 295,
+      "gw": 51,
+      "month": 168,
+      "kochCount": 1,
       "motmCount": 0,
-      "forfeits": 10,
+      "forfeits": 5,
       "potsWon": 0,
-      "balance": -10,
+      "balance": -5,
       "topPerformer": {
-        "playerName": "João Pedro",
-        "points": 47,
-        "managerKey": "jls"
+        "playerName": "Schade",
+        "points": 45,
+        "managerKey": "dj"
       }
     }
   ],
-  "latestSettledGameweek": 8,
+  "latestSettledGameweek": 9,
   "currentMonth": "2026-10",
   "seasonPrize": 110,
   "leader": {
@@ -201,11 +201,11 @@
       "wood": 4
     },
     "asOf": 9,
-    "weeks": 5,
+    "weeks": 6,
     "displaced": "paddy",
     "changed": false
   },
-  "generatedAt": "2026-11-02T21:10:32.993Z",
+  "generatedAt": "2026-11-03T03:22:56.593Z",
   "graphics": {
     "koch": {
       "rushy": 244850,
@@ -264,12 +264,12 @@
     "rushy": 0,
     "kellett": 0,
     "wallis": 2,
-    "jls": 2,
+    "jls": 3,
     "paddy": 1,
     "bennett": 0,
     "wood": 1,
     "rowan": 2,
-    "jason": 1,
+    "jason": 2,
     "dj": 1,
     "ollie": 1
   }
