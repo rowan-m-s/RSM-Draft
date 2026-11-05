@@ -123,7 +123,7 @@
         "points": 0
       },
       {
-        "element": 222,
+        "element": 491,
         "starter": false,
         "position": 15,
         "subbedOn": false,
@@ -489,7 +489,7 @@
         "points": 0
       },
       {
-        "element": 224,
+        "element": 347,
         "starter": false,
         "position": 15,
         "subbedOn": false,
@@ -1528,10 +1528,10 @@
       "clubShort": "ARS",
       "clubCode": 3,
       "photoCode": 199798,
-      "status": "a",
+      "status": "d",
       "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-05T09:30:09.853316Z"
+      "news": "Knee injury - 75% chance of playing",
+      "newsAdded": "2026-11-05T20:30:09.025008Z"
     },
     "32": {
       "name": "Cash",
@@ -2145,18 +2145,6 @@
       "news": null,
       "newsAdded": null
     },
-    "222": {
-      "name": "Strand Larsen",
-      "position": "FWD",
-      "teamId": 8,
-      "clubShort": "CRY",
-      "clubCode": 31,
-      "photoCode": 247412,
-      "status": "d",
-      "chanceOfPlaying": 75,
-      "news": "Ankle injury - 75% chance of playing",
-      "newsAdded": "2026-10-23T17:00:09.672494Z"
-    },
     "223": {
       "name": "Mateta",
       "position": "FWD",
@@ -2168,18 +2156,6 @@
       "chanceOfPlaying": 100,
       "news": "Suspended until 2 Dec",
       "newsAdded": "2026-10-31T18:00:09.547671Z"
-    },
-    "224": {
-      "name": "Nketiah",
-      "position": "FWD",
-      "teamId": 8,
-      "clubShort": "CRY",
-      "clubCode": 31,
-      "photoCode": 205533,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-12T14:00:09.427136Z"
     },
     "226": {
       "name": "Pickford",
@@ -2480,6 +2456,18 @@
       "chanceOfPlaying": 100,
       "news": "Foot injury - 75% chance of playing",
       "newsAdded": "2026-11-05T18:30:07.960444Z"
+    },
+    "347": {
+      "name": "Nmecha",
+      "position": "FWD",
+      "teamId": 13,
+      "clubShort": "LEE",
+      "clubCode": 2,
+      "photoCode": 174594,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null
     },
     "350": {
       "name": "A.Becker",
@@ -2973,6 +2961,18 @@
       "news": null,
       "newsAdded": "2026-08-23T17:00:07.952697Z"
     },
+    "491": {
+      "name": "Igor Jesus",
+      "position": "FWD",
+      "teamId": 18,
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "photoCode": 482973,
+      "status": "d",
+      "chanceOfPlaying": 0,
+      "news": "Calf injury - 75% chance of playing",
+      "newsAdded": "2026-10-09T14:30:11.491800Z"
+    },
     "492": {
       "name": "Awoniyi",
       "position": "FWD",
@@ -3334,5 +3334,5 @@
       "newsAdded": "2026-10-23T14:30:10.429365Z"
     }
   },
-  "generatedAt": "2026-11-05T19:18:48.284Z"
+  "generatedAt": "2026-11-05T22:09:37.591Z"
 }
