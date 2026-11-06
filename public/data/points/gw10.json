@@ -235,7 +235,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 64,
+            "value": 65,
             "points": 2
           },
           {
@@ -252,7 +252,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 64,
+            "value": 65,
             "points": 2
           }
         ]
@@ -267,7 +267,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 64,
+            "value": 65,
             "points": 2
           },
           {
@@ -284,18 +284,24 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 64,
+            "value": 65,
             "points": 2
           }
         ]
       },
       "230": {
-        "total": 2,
+        "total": 4,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 64,
+            "value": 65,
+            "points": 2
+          },
+          {
+            "stat": "defensive_contribution",
+            "name": "Defensive Contribution",
+            "value": 10,
             "points": 2
           }
         ]
@@ -310,7 +316,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 64,
+            "value": 65,
             "points": 2
           },
           {
@@ -333,7 +339,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 64,
+            "value": 65,
             "points": 2
           }
         ]
@@ -344,7 +350,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 64,
+            "value": 65,
             "points": 2
           }
         ]
@@ -355,7 +361,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 64,
+            "value": 65,
             "points": 2
           }
         ]
@@ -366,7 +372,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 64,
+            "value": 65,
             "points": 2
           },
           {
@@ -389,7 +395,7 @@
           {
             "stat": "minutes",
             "name": "Minutes played",
-            "value": 64,
+            "value": 65,
             "points": 2
           }
         ]
@@ -800,5 +806,5 @@
       }
     }
   },
-  "generatedAt": "2026-11-06T21:24:12.142Z"
+  "generatedAt": "2026-11-06T21:25:20.076Z"
 }
