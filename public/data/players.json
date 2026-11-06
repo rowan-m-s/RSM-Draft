@@ -221,6 +221,28 @@
       "positionRank": 5
     },
     {
+      "id": 249,
+      "name": "Barry",
+      "position": "FWD",
+      "club": "Everton",
+      "clubShort": "EVE",
+      "clubCode": 11,
+      "teamId": 9,
+      "photoCode": 586309,
+      "owner": "rowan",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 52,
+      "ppg": 5.2,
+      "goals": 6,
+      "assists": 0,
+      "cleanSheets": 4,
+      "bonus": 8,
+      "positionRank": 4
+    },
+    {
       "id": 79,
       "name": "Evanilson",
       "position": "FWD",
@@ -375,28 +397,6 @@
       "positionRank": 4
     },
     {
-      "id": 249,
-      "name": "Barry",
-      "position": "FWD",
-      "club": "Everton",
-      "clubShort": "EVE",
-      "clubCode": 11,
-      "teamId": 9,
-      "photoCode": 586309,
-      "owner": "rowan",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 47,
-      "ppg": 4.7,
-      "goals": 5,
-      "assists": 0,
-      "cleanSheets": 4,
-      "bonus": 7,
-      "positionRank": 5
-    },
-    {
       "id": 165,
       "name": "João Pedro",
       "position": "FWD",
@@ -416,7 +416,7 @@
       "assists": 3,
       "cleanSheets": 1,
       "bonus": 9,
-      "positionRank": 4
+      "positionRank": 5
     },
     {
       "id": 13,
@@ -2154,7 +2154,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 46
+      "positionRank": 45
     },
     {
       "id": 566,
@@ -2220,7 +2220,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 47
+      "positionRank": 46
     },
     {
       "id": 447,
@@ -2289,28 +2289,6 @@
       "positionRank": 56
     },
     {
-      "id": 110,
-      "name": "Rushworth",
-      "position": "GKP",
-      "club": "Coventry City",
-      "clubShort": "COV",
-      "clubCode": 9,
-      "teamId": 7,
-      "photoCode": 472739,
-      "owner": "paddy",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 26,
-      "ppg": 2.6,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 2,
-      "positionRank": 14
-    },
-    {
       "id": 452,
       "name": "Bruno G.",
       "position": "MID",
@@ -2353,6 +2331,28 @@
       "cleanSheets": 3,
       "bonus": 0,
       "positionRank": 59
+    },
+    {
+      "id": 110,
+      "name": "Rushworth",
+      "position": "GKP",
+      "club": "Coventry City",
+      "clubShort": "COV",
+      "clubCode": 9,
+      "teamId": 7,
+      "photoCode": 472739,
+      "owner": "paddy",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 25,
+      "ppg": 2.5,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 2,
+      "positionRank": 14
     },
     {
       "id": 151,
@@ -2638,7 +2638,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 63
+      "positionRank": 62
     },
     {
       "id": 467,
@@ -2726,7 +2726,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 65
+      "positionRank": 64
     },
     {
       "id": 398,
@@ -3809,28 +3809,6 @@
       "positionRank": 31
     },
     {
-      "id": 176,
-      "name": "Dasilva",
-      "position": "DEF",
-      "club": "Coventry City",
-      "clubShort": "COV",
-      "clubCode": 9,
-      "teamId": 7,
-      "photoCode": 173878,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 31,
-      "ppg": 3.1,
-      "goals": 1,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 3,
-      "positionRank": 35
-    },
-    {
       "id": 556,
       "name": "M.Sangaré",
       "position": "MID",
@@ -3872,7 +3850,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 37
+      "positionRank": 36
     },
     {
       "id": 472,
@@ -3894,7 +3872,29 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 36
+      "positionRank": 35
+    },
+    {
+      "id": 176,
+      "name": "Dasilva",
+      "position": "DEF",
+      "club": "Coventry City",
+      "clubShort": "COV",
+      "clubCode": 9,
+      "teamId": 7,
+      "photoCode": 173878,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 30,
+      "ppg": 3,
+      "goals": 1,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 3,
+      "positionRank": 37
     },
     {
       "id": 282,
@@ -4114,28 +4114,6 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 3,
-      "positionRank": 45
-    },
-    {
-      "id": 91,
-      "name": "Pinnock",
-      "position": "DEF",
-      "club": "Coventry City",
-      "clubShort": "COV",
-      "clubCode": 9,
-      "teamId": 7,
-      "photoCode": 231065,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 27,
-      "ppg": 3,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
       "positionRank": 44
     },
     {
@@ -4247,6 +4225,28 @@
       "cleanSheets": 2,
       "bonus": 1,
       "positionRank": 55
+    },
+    {
+      "id": 91,
+      "name": "Pinnock",
+      "position": "DEF",
+      "club": "Coventry City",
+      "clubShort": "COV",
+      "clubCode": 9,
+      "teamId": 7,
+      "photoCode": 231065,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 26,
+      "ppg": 2.9,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 47
     },
     {
       "id": 202,
@@ -4730,7 +4730,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 2,
-      "positionRank": 62
+      "positionRank": 61
     },
     {
       "id": 454,
@@ -4774,7 +4774,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 64
+      "positionRank": 63
     },
     {
       "id": 240,
@@ -4865,28 +4865,6 @@
       "positionRank": 17
     },
     {
-      "id": 175,
-      "name": "van Ewijk",
-      "position": "DEF",
-      "club": "Coventry City",
-      "clubShort": "COV",
-      "clubCode": 9,
-      "teamId": 7,
-      "photoCode": 451284,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-19T16:00:09.486751Z",
-      "points": 21,
-      "ppg": 2.3,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 61
-    },
-    {
       "id": 632,
       "name": "Andrés",
       "position": "MID",
@@ -4953,28 +4931,6 @@
       "positionRank": 66
     },
     {
-      "id": 656,
-      "name": "Mfuni",
-      "position": "DEF",
-      "club": "Coventry City",
-      "clubShort": "COV",
-      "clubCode": 9,
-      "teamId": 7,
-      "photoCode": 566213,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 20,
-      "ppg": 4,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 69
-    },
-    {
       "id": 533,
       "name": "Mukiele",
       "position": "DEF",
@@ -5017,6 +4973,28 @@
       "cleanSheets": 2,
       "bonus": 1,
       "positionRank": 83
+    },
+    {
+      "id": 175,
+      "name": "van Ewijk",
+      "position": "DEF",
+      "club": "Coventry City",
+      "clubShort": "COV",
+      "clubCode": 9,
+      "teamId": 7,
+      "photoCode": 451284,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-19T16:00:09.486751Z",
+      "points": 20,
+      "ppg": 2.2,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 65
     },
     {
       "id": 574,
@@ -5104,7 +5082,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 70
+      "positionRank": 69
     },
     {
       "id": 563,
@@ -5127,6 +5105,28 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 90
+    },
+    {
+      "id": 656,
+      "name": "Mfuni",
+      "position": "DEF",
+      "club": "Coventry City",
+      "clubShort": "COV",
+      "clubCode": 9,
+      "teamId": 7,
+      "photoCode": 566213,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 19,
+      "ppg": 3.8,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 70
     },
     {
       "id": 313,
@@ -5918,7 +5918,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 119
+      "positionRank": 120
     },
     {
       "id": 52,
@@ -5943,28 +5943,6 @@
       "positionRank": 116
     },
     {
-      "id": 655,
-      "name": "Gboho",
-      "position": "MID",
-      "club": "Coventry City",
-      "clubShort": "COV",
-      "clubCode": 9,
-      "teamId": 7,
-      "photoCode": 242893,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 12,
-      "ppg": 6,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 3,
-      "positionRank": 121
-    },
-    {
       "id": 340,
       "name": "Gelhardt",
       "position": "MID",
@@ -5984,7 +5962,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 120
+      "positionRank": 121
     },
     {
       "id": 54,
@@ -6141,6 +6119,28 @@
       "positionRank": 92
     },
     {
+      "id": 188,
+      "name": "Torp",
+      "position": "MID",
+      "club": "Coventry City",
+      "clubShort": "COV",
+      "clubCode": 9,
+      "teamId": 7,
+      "photoCode": 226965,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 12,
+      "ppg": 2,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 119
+    },
+    {
       "id": 320,
       "name": "Akpom",
       "position": "FWD",
@@ -6227,6 +6227,28 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 129
+    },
+    {
+      "id": 655,
+      "name": "Gboho",
+      "position": "MID",
+      "club": "Coventry City",
+      "clubShort": "COV",
+      "clubCode": 9,
+      "teamId": 7,
+      "photoCode": 242893,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 11,
+      "ppg": 5.5,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 2,
+      "positionRank": 130
     },
     {
       "id": 371,
@@ -6402,7 +6424,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 131
+      "positionRank": 132
     },
     {
       "id": 162,
@@ -6424,7 +6446,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 132
+      "positionRank": 133
     },
     {
       "id": 84,
@@ -6534,7 +6556,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 133
+      "positionRank": 134
     },
     {
       "id": 17,
@@ -6556,7 +6578,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 130
+      "positionRank": 131
     },
     {
       "id": 403,
@@ -6623,28 +6645,6 @@
       "cleanSheets": 1,
       "bonus": 0,
       "positionRank": 138
-    },
-    {
-      "id": 188,
-      "name": "Torp",
-      "position": "MID",
-      "club": "Coventry City",
-      "clubShort": "COV",
-      "clubCode": 9,
-      "teamId": 7,
-      "photoCode": 226965,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 10,
-      "ppg": 1.7,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 134
     },
     {
       "id": 506,
@@ -14765,5 +14765,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-06T21:20:47.548Z"
+  "generatedAt": "2026-11-06T21:21:55.689Z"
 }
