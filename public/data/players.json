@@ -2154,7 +2154,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 45
+      "positionRank": 46
     },
     {
       "id": 566,
@@ -2220,7 +2220,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 46
+      "positionRank": 47
     },
     {
       "id": 447,
@@ -4073,6 +4073,28 @@
       "positionRank": 47
     },
     {
+      "id": 91,
+      "name": "Pinnock",
+      "position": "DEF",
+      "club": "Coventry City",
+      "clubShort": "COV",
+      "clubCode": 9,
+      "teamId": 7,
+      "photoCode": 231065,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 28,
+      "ppg": 3.1,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 44
+    },
+    {
       "id": 105,
       "name": "Anthony",
       "position": "MID",
@@ -4114,7 +4136,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 3,
-      "positionRank": 44
+      "positionRank": 45
     },
     {
       "id": 210,
@@ -4225,28 +4247,6 @@
       "cleanSheets": 2,
       "bonus": 1,
       "positionRank": 55
-    },
-    {
-      "id": 91,
-      "name": "Pinnock",
-      "position": "DEF",
-      "club": "Coventry City",
-      "clubShort": "COV",
-      "clubCode": 9,
-      "teamId": 7,
-      "photoCode": 231065,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 26,
-      "ppg": 2.9,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 47
     },
     {
       "id": 202,
@@ -14765,5 +14765,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-06T21:34:24.441Z"
+  "generatedAt": "2026-11-06T21:35:33.276Z"
 }
