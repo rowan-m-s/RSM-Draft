@@ -790,7 +790,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 6,
-      "positionRank": 14
+      "positionRank": 15
     },
     {
       "id": 332,
@@ -811,6 +811,28 @@
       "goals": 1,
       "assists": 0,
       "cleanSheets": 3,
+      "bonus": 4,
+      "positionRank": 14
+    },
+    {
+      "id": 233,
+      "name": "Mykolenko",
+      "position": "DEF",
+      "club": "Everton",
+      "clubShort": "EVE",
+      "clubCode": 11,
+      "teamId": 9,
+      "photoCode": 224967,
+      "owner": "ollie",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-24T19:00:09.907289Z",
+      "points": 42,
+      "ppg": 4.7,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 4,
       "bonus": 4,
       "positionRank": 13
     },
@@ -835,28 +857,6 @@
       "cleanSheets": 4,
       "bonus": 4,
       "positionRank": 12
-    },
-    {
-      "id": 233,
-      "name": "Mykolenko",
-      "position": "DEF",
-      "club": "Everton",
-      "clubShort": "EVE",
-      "clubCode": 11,
-      "teamId": 9,
-      "photoCode": 224967,
-      "owner": "ollie",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-24T19:00:09.907289Z",
-      "points": 41,
-      "ppg": 4.6,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 4,
-      "bonus": 3,
-      "positionRank": 15
     },
     {
       "id": 87,
@@ -14765,5 +14765,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-06T21:50:15.751Z"
+  "generatedAt": "2026-11-06T21:56:59.568Z"
 }

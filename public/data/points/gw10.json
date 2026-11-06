@@ -337,7 +337,7 @@
         ]
       },
       "233": {
-        "total": 7,
+        "total": 8,
         "components": [
           {
             "stat": "minutes",
@@ -350,6 +350,12 @@
             "name": "Assists",
             "value": 1,
             "points": 3
+          },
+          {
+            "stat": "bonus",
+            "name": "Bonus",
+            "value": 1,
+            "points": 1
           },
           {
             "stat": "defensive_contribution",
@@ -857,5 +863,5 @@
       }
     }
   },
-  "generatedAt": "2026-11-06T21:55:51.263Z"
+  "generatedAt": "2026-11-06T21:56:59.568Z"
 }
