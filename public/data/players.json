@@ -683,28 +683,6 @@
       "positionRank": 13
     },
     {
-      "id": 230,
-      "name": "Branthwaite",
-      "position": "DEF",
-      "club": "Everton",
-      "clubShort": "EVE",
-      "clubCode": 11,
-      "teamId": 9,
-      "photoCode": 480455,
-      "owner": "paddy",
-      "status": "a",
-      "chanceOfPlaying": 75,
-      "news": null,
-      "newsAdded": "2026-11-05T16:57:40.272082Z",
-      "points": 42,
-      "ppg": 4.7,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 4,
-      "bonus": 4,
-      "positionRank": 12
-    },
-    {
       "id": 236,
       "name": "Dewsbury-Hall",
       "position": "MID",
@@ -768,7 +746,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 6,
-      "positionRank": 14
+      "positionRank": 13
     },
     {
       "id": 332,
@@ -790,7 +768,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 4,
-      "positionRank": 13
+      "positionRank": 12
     },
     {
       "id": 10,
@@ -813,6 +791,28 @@
       "cleanSheets": 4,
       "bonus": 4,
       "positionRank": 11
+    },
+    {
+      "id": 230,
+      "name": "Branthwaite",
+      "position": "DEF",
+      "club": "Everton",
+      "clubShort": "EVE",
+      "clubCode": 11,
+      "teamId": 9,
+      "photoCode": 480455,
+      "owner": "paddy",
+      "status": "a",
+      "chanceOfPlaying": 75,
+      "news": null,
+      "newsAdded": "2026-11-05T16:57:40.272082Z",
+      "points": 41,
+      "ppg": 4.6,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 4,
+      "bonus": 3,
+      "positionRank": 14
     },
     {
       "id": 87,
@@ -1164,7 +1164,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 3,
-      "positionRank": 23
+      "positionRank": 24
     },
     {
       "id": 346,
@@ -1208,7 +1208,7 @@
       "assists": 2,
       "cleanSheets": 4,
       "bonus": 3,
-      "positionRank": 20
+      "positionRank": 21
     },
     {
       "id": 591,
@@ -1274,7 +1274,29 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 4,
-      "positionRank": 21
+      "positionRank": 22
+    },
+    {
+      "id": 233,
+      "name": "Mykolenko",
+      "position": "DEF",
+      "club": "Everton",
+      "clubShort": "EVE",
+      "clubCode": 11,
+      "teamId": 9,
+      "photoCode": 224967,
+      "owner": "ollie",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-24T19:00:09.907289Z",
+      "points": 37,
+      "ppg": 4.1,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 4,
+      "bonus": 5,
+      "positionRank": 20
     },
     {
       "id": 12,
@@ -1340,7 +1362,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 3,
-      "positionRank": 22
+      "positionRank": 23
     },
     {
       "id": 116,
@@ -1362,7 +1384,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 1,
-      "positionRank": 24
+      "positionRank": 25
     },
     {
       "id": 277,
@@ -1451,28 +1473,6 @@
       "cleanSheets": 3,
       "bonus": 5,
       "positionRank": 9
-    },
-    {
-      "id": 233,
-      "name": "Mykolenko",
-      "position": "DEF",
-      "club": "Everton",
-      "clubShort": "EVE",
-      "clubCode": 11,
-      "teamId": 9,
-      "photoCode": 224967,
-      "owner": "ollie",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-24T19:00:09.907289Z",
-      "points": 36,
-      "ppg": 4,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 4,
-      "bonus": 4,
-      "positionRank": 25
     },
     {
       "id": 502,
@@ -14765,5 +14765,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-06T21:08:10.496Z"
+  "generatedAt": "2026-11-06T21:09:20.770Z"
 }

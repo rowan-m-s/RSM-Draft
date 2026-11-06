@@ -1713,13 +1713,13 @@
         "kellett": 0,
         "wallis": 0,
         "jls": 1,
-        "paddy": 2,
+        "paddy": 1,
         "bennett": 3,
         "wood": 0,
         "rowan": 5,
         "jason": 0,
         "dj": 1,
-        "ollie": 2
+        "ollie": 3
       },
       "kochKeys": [],
       "charged": 0,
@@ -1746,7 +1746,7 @@
         },
         "paddy": {
           "playerName": "Branthwaite",
-          "points": 2,
+          "points": 1,
           "managerKey": "paddy"
         },
         "bennett": {
@@ -1776,7 +1776,7 @@
         },
         "ollie": {
           "playerName": "Mykolenko",
-          "points": 2,
+          "points": 3,
           "managerKey": "ollie"
         }
       },
@@ -1792,7 +1792,7 @@
         },
         "paddy": {
           "playerName": "Branthwaite",
-          "points": 2,
+          "points": 1,
           "managerKey": "paddy",
           "element": 230
         },
@@ -1818,7 +1818,7 @@
         },
         "ollie": {
           "playerName": "Mykolenko",
-          "points": 2,
+          "points": 3,
           "managerKey": "ollie",
           "element": 233
         }
@@ -2538,5 +2538,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-11-06T21:08:10.496Z"
+  "generatedAt": "2026-11-06T21:09:20.770Z"
 }
