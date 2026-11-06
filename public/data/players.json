@@ -2861,6 +2861,28 @@
       "positionRank": 71
     },
     {
+      "id": 598,
+      "name": "Cherif",
+      "position": "FWD",
+      "club": "Coventry City",
+      "clubShort": "COV",
+      "clubCode": 9,
+      "teamId": 7,
+      "photoCode": 627221,
+      "owner": "wood",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 18,
+      "ppg": 3,
+      "goals": 1,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 3,
+      "positionRank": 21
+    },
+    {
       "id": 553,
       "name": "Isidor",
       "position": "FWD",
@@ -2883,28 +2905,6 @@
       "positionRank": 20
     },
     {
-      "id": 598,
-      "name": "Cherif",
-      "position": "FWD",
-      "club": "Coventry City",
-      "clubShort": "COV",
-      "clubCode": 9,
-      "teamId": 7,
-      "photoCode": 627221,
-      "owner": "wood",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 17,
-      "ppg": 3.4,
-      "goals": 1,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 3,
-      "positionRank": 22
-    },
-    {
       "id": 167,
       "name": "Delap",
       "position": "FWD",
@@ -2924,7 +2924,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 21
+      "positionRank": 22
     },
     {
       "id": 393,
@@ -14765,5 +14765,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-06T21:46:52.587Z"
+  "generatedAt": "2026-11-06T21:48:00.938Z"
 }
