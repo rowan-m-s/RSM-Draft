@@ -961,7 +961,7 @@
         "points": 0
       },
       {
-        "element": 113,
+        "element": 119,
         "starter": false,
         "position": 13,
         "subbedOn": false,
@@ -1516,9 +1516,9 @@
       "clubShort": "CHE",
       "clubCode": 8,
       "photoCode": 98980,
-      "status": "i",
+      "status": "d",
       "chanceOfPlaying": 0,
-      "news": "Head injury - Unknown return date",
+      "news": "Head injury - 75% chance of playing",
       "newsAdded": "2026-10-17T13:30:08.724000Z"
     },
     "31": {
@@ -1528,9 +1528,9 @@
       "clubShort": "ARS",
       "clubCode": 3,
       "photoCode": 199798,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 100,
-      "news": "Knee injury - 75% chance of playing",
+      "news": null,
       "newsAdded": "2026-11-05T20:30:09.025008Z"
     },
     "32": {
@@ -1672,9 +1672,9 @@
       "clubShort": "BOU",
       "clubCode": 91,
       "photoCode": 503139,
-      "status": "i",
+      "status": "d",
       "chanceOfPlaying": 0,
-      "news": "Thigh injury - Expected back 21 Nov",
+      "news": "Thigh injury - 75% chance of playing",
       "newsAdded": "2026-10-05T09:30:09.910752Z"
     },
     "70": {
@@ -1833,18 +1833,6 @@
       "news": null,
       "newsAdded": "2026-09-30T16:00:09.552205Z"
     },
-    "113": {
-      "name": "F.Kadıoğlu",
-      "position": "DEF",
-      "teamId": 5,
-      "clubShort": "BHA",
-      "clubCode": 36,
-      "photoCode": 231416,
-      "status": "d",
-      "chanceOfPlaying": 75,
-      "news": "Hip injury - 75% chance of playing",
-      "newsAdded": "2026-10-25T17:30:09.883815Z"
-    },
     "114": {
       "name": "Boscagli",
       "position": "DEF",
@@ -1880,6 +1868,18 @@
       "chanceOfPlaying": 100,
       "news": null,
       "newsAdded": "2026-09-22T09:30:09.629652Z"
+    },
+    "119": {
+      "name": "Costinha",
+      "position": "DEF",
+      "teamId": 5,
+      "clubShort": "BHA",
+      "clubCode": 36,
+      "photoCode": 451490,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null
     },
     "123": {
       "name": "Hinshelwood",
@@ -3334,5 +3334,5 @@
       "newsAdded": "2026-10-23T14:30:10.429365Z"
     }
   },
-  "generatedAt": "2026-11-06T10:14:18.203Z"
+  "generatedAt": "2026-11-06T15:37:26.544Z"
 }
