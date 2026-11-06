@@ -221,7 +221,7 @@
         "points": 0
       },
       {
-        "element": 279,
+        "element": 69,
         "starter": false,
         "position": 12,
         "subbedOn": false,
@@ -229,7 +229,7 @@
         "points": 0
       },
       {
-        "element": 69,
+        "element": 149,
         "starter": false,
         "position": 13,
         "subbedOn": false,
@@ -237,7 +237,7 @@
         "points": 0
       },
       {
-        "element": 149,
+        "element": 36,
         "starter": false,
         "position": 14,
         "subbedOn": false,
@@ -1545,6 +1545,18 @@
       "news": "Suspended until 21 Nov",
       "newsAdded": "2026-10-31T22:00:07.593621Z"
     },
+    "36": {
+      "name": "Maatsen",
+      "position": "DEF",
+      "teamId": 2,
+      "clubShort": "AVL",
+      "clubCode": 7,
+      "photoCode": 441302,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-12T18:00:08.729468Z"
+    },
     "40": {
       "name": "Rogers",
       "position": "MID",
@@ -2324,18 +2336,6 @@
       "chanceOfPlaying": null,
       "news": null,
       "newsAdded": null
-    },
-    "279": {
-      "name": "Ajayi",
-      "position": "DEF",
-      "teamId": 11,
-      "clubShort": "HUL",
-      "clubCode": 88,
-      "photoCode": 146426,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-22T17:30:07.668197Z"
     },
     "286": {
       "name": "Belloumi",
@@ -3334,5 +3334,5 @@
       "newsAdded": "2026-10-23T14:30:10.429365Z"
     }
   },
-  "generatedAt": "2026-11-06T01:18:42.675Z"
+  "generatedAt": "2026-11-06T10:14:18.203Z"
 }

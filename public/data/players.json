@@ -1321,28 +1321,6 @@
       "positionRank": 22
     },
     {
-      "id": 279,
-      "name": "Ajayi",
-      "position": "DEF",
-      "club": "Hull City",
-      "clubShort": "HUL",
-      "clubCode": 88,
-      "teamId": 11,
-      "photoCode": 146426,
-      "owner": "kellett",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-22T17:30:07.668197Z",
-      "points": 36,
-      "ppg": 4,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 3,
-      "bonus": 2,
-      "positionRank": 26
-    },
-    {
       "id": 116,
       "name": "Dunk",
       "position": "DEF",
@@ -3213,6 +3191,28 @@
       "positionRank": 26
     },
     {
+      "id": 36,
+      "name": "Maatsen",
+      "position": "DEF",
+      "club": "Aston Villa",
+      "clubShort": "AVL",
+      "clubCode": 7,
+      "teamId": 2,
+      "photoCode": 441302,
+      "owner": "kellett",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-12T18:00:08.729468Z",
+      "points": 13,
+      "ppg": 2.2,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 1,
+      "positionRank": 86
+    },
+    {
       "id": 491,
       "name": "Igor Jesus",
       "position": "FWD",
@@ -3653,6 +3653,28 @@
       "cleanSheets": 3,
       "bonus": 5,
       "positionRank": 18
+    },
+    {
+      "id": 279,
+      "name": "Ajayi",
+      "position": "DEF",
+      "club": "Hull City",
+      "clubShort": "HUL",
+      "clubCode": 88,
+      "teamId": 11,
+      "photoCode": 146426,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-22T17:30:07.668197Z",
+      "points": 36,
+      "ppg": 4,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 3,
+      "bonus": 2,
+      "positionRank": 26
     },
     {
       "id": 257,
@@ -5765,28 +5787,6 @@
       "cleanSheets": 3,
       "bonus": 0,
       "positionRank": 109
-    },
-    {
-      "id": 36,
-      "name": "Maatsen",
-      "position": "DEF",
-      "club": "Aston Villa",
-      "clubShort": "AVL",
-      "clubCode": 7,
-      "teamId": 2,
-      "photoCode": 441302,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-12T18:00:08.729468Z",
-      "points": 13,
-      "ppg": 2.2,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 1,
-      "positionRank": 86
     },
     {
       "id": 246,
@@ -14765,5 +14765,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-06T01:18:42.675Z"
+  "generatedAt": "2026-11-06T10:14:18.203Z"
 }
