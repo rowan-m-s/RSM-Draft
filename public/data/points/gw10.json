@@ -1,6 +1,6 @@
 {
   "event": 10,
-  "started": false,
+  "started": true,
   "finished": false,
   "dataChecked": false,
   "locallyFinalised": false,
@@ -230,56 +230,157 @@
     },
     "94": {
       "110": {
-        "total": 0,
-        "components": []
+        "total": 1,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 47,
+            "points": 1
+          }
+        ]
       },
       "183": {
-        "total": 0,
-        "components": []
+        "total": 1,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 47,
+            "points": 1
+          }
+        ]
       },
       "194": {
         "total": 0,
         "components": []
       },
       "226": {
-        "total": 0,
-        "components": []
+        "total": 4,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 47,
+            "points": 1
+          },
+          {
+            "stat": "saves",
+            "name": "Saves",
+            "value": 3,
+            "points": 1
+          },
+          {
+            "stat": "bonus",
+            "name": "Bonus",
+            "value": 2,
+            "points": 2
+          }
+        ]
       },
       "229": {
-        "total": 0,
-        "components": []
+        "total": 1,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 47,
+            "points": 1
+          }
+        ]
       },
       "230": {
-        "total": 0,
-        "components": []
+        "total": 2,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 47,
+            "points": 1
+          },
+          {
+            "stat": "bonus",
+            "name": "Bonus",
+            "value": 1,
+            "points": 1
+          }
+        ]
       },
       "232": {
         "total": 0,
         "components": []
       },
       "233": {
-        "total": 0,
-        "components": []
+        "total": 2,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 47,
+            "points": 1
+          },
+          {
+            "stat": "bonus",
+            "name": "Bonus",
+            "value": 1,
+            "points": 1
+          }
+        ]
       },
       "236": {
-        "total": 0,
-        "components": []
+        "total": 1,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 47,
+            "points": 1
+          }
+        ]
       },
       "239": {
-        "total": 0,
-        "components": []
+        "total": 1,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 47,
+            "points": 1
+          }
+        ]
       },
       "242": {
-        "total": 0,
-        "components": []
+        "total": 1,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 47,
+            "points": 1
+          }
+        ]
       },
       "249": {
-        "total": 0,
-        "components": []
+        "total": 1,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 47,
+            "points": 1
+          }
+        ]
       },
       "492": {
-        "total": 0,
-        "components": []
+        "total": 1,
+        "components": [
+          {
+            "stat": "minutes",
+            "name": "Minutes played",
+            "value": 47,
+            "points": 1
+          }
+        ]
       },
       "598": {
         "total": 0,
@@ -687,5 +788,5 @@
       }
     }
   },
-  "generatedAt": "2026-11-06T18:45:16.142Z"
+  "generatedAt": "2026-11-06T21:08:10.496Z"
 }

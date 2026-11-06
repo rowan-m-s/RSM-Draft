@@ -272,7 +272,94 @@
           "managerKey": "ollie"
         }
       }
+    },
+    {
+      "id": "2026-11",
+      "label": "November 2026",
+      "shortLabel": "November",
+      "gameweekIds": [
+        10
+      ],
+      "totals": {
+        "rushy": 0,
+        "kellett": 0,
+        "wallis": 0,
+        "jls": 1,
+        "paddy": 2,
+        "bennett": 3,
+        "wood": 0,
+        "rowan": 5,
+        "jason": 0,
+        "dj": 1,
+        "ollie": 2
+      },
+      "pot": 0,
+      "settled": false,
+      "winnerKeys": [],
+      "potPerWinner": 0,
+      "topPerformer": {
+        "playerName": "Pickford",
+        "points": 4,
+        "managerKey": "rowan"
+      },
+      "topPerformerByManager": {
+        "rushy": {
+          "playerName": "Sels",
+          "points": 0,
+          "managerKey": "rushy"
+        },
+        "kellett": {
+          "playerName": "Horníček",
+          "points": 0,
+          "managerKey": "kellett"
+        },
+        "wallis": {
+          "playerName": "Lammens",
+          "points": 0,
+          "managerKey": "wallis"
+        },
+        "jls": {
+          "playerName": "Garner",
+          "points": 1,
+          "managerKey": "jls"
+        },
+        "paddy": {
+          "playerName": "Branthwaite",
+          "points": 2,
+          "managerKey": "paddy"
+        },
+        "bennett": {
+          "playerName": "Tarkowski",
+          "points": 1,
+          "managerKey": "bennett"
+        },
+        "wood": {
+          "playerName": "Penders",
+          "points": 0,
+          "managerKey": "wood"
+        },
+        "rowan": {
+          "playerName": "Pickford",
+          "points": 4,
+          "managerKey": "rowan"
+        },
+        "jason": {
+          "playerName": "Petrović",
+          "points": 0,
+          "managerKey": "jason"
+        },
+        "dj": {
+          "playerName": "George",
+          "points": 1,
+          "managerKey": "dj"
+        },
+        "ollie": {
+          "playerName": "Mykolenko",
+          "points": 2,
+          "managerKey": "ollie"
+        }
+      }
     }
   ],
-  "generatedAt": "2026-11-06T18:45:16.142Z"
+  "generatedAt": "2026-11-06T21:08:10.496Z"
 }
