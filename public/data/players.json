@@ -133,6 +133,28 @@
       "positionRank": 4
     },
     {
+      "id": 249,
+      "name": "Barry",
+      "position": "FWD",
+      "club": "Everton",
+      "clubShort": "EVE",
+      "clubCode": 11,
+      "teamId": 9,
+      "photoCode": 586309,
+      "owner": "rowan",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 55,
+      "ppg": 5.5,
+      "goals": 6,
+      "assists": 1,
+      "cleanSheets": 4,
+      "bonus": 8,
+      "positionRank": 2
+    },
+    {
       "id": 68,
       "name": "Tavernier",
       "position": "MID",
@@ -196,7 +218,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 14,
-      "positionRank": 2
+      "positionRank": 3
     },
     {
       "id": 112,
@@ -221,28 +243,6 @@
       "positionRank": 5
     },
     {
-      "id": 249,
-      "name": "Barry",
-      "position": "FWD",
-      "club": "Everton",
-      "clubShort": "EVE",
-      "clubCode": 11,
-      "teamId": 9,
-      "photoCode": 586309,
-      "owner": "rowan",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 52,
-      "ppg": 5.2,
-      "goals": 6,
-      "assists": 0,
-      "cleanSheets": 4,
-      "bonus": 8,
-      "positionRank": 4
-    },
-    {
       "id": 79,
       "name": "Evanilson",
       "position": "FWD",
@@ -262,7 +262,7 @@
       "assists": 4,
       "cleanSheets": 5,
       "bonus": 7,
-      "positionRank": 3
+      "positionRank": 4
     },
     {
       "id": 330,
@@ -14765,5 +14765,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-06T21:41:11.352Z"
+  "generatedAt": "2026-11-06T21:42:20.397Z"
 }
