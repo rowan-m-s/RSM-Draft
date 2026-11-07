@@ -1542,13 +1542,19 @@
         ]
       },
       "491": {
-        "total": 1,
+        "total": 0,
         "components": [
           {
             "stat": "minutes",
             "name": "Minutes played",
             "value": 3,
             "points": 1
+          },
+          {
+            "stat": "yellow_cards",
+            "name": "Yellow cards",
+            "value": 1,
+            "points": -1
           }
         ]
       }
@@ -1624,5 +1630,5 @@
       }
     }
   },
-  "generatedAt": "2026-11-07T19:24:25.321Z"
+  "generatedAt": "2026-11-07T21:18:35.108Z"
 }

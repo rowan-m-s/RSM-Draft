@@ -1110,10 +1110,10 @@
       "teamId": 10,
       "photoCode": 577725,
       "owner": "ollie",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
+      "status": "d",
+      "chanceOfPlaying": 75,
+      "news": "Groin injury - 75% chance of playing",
+      "newsAdded": "2026-11-07T20:00:09.169385Z",
       "points": 39,
       "ppg": 3.9,
       "goals": 2,
@@ -3235,28 +3235,6 @@
       "positionRank": 26
     },
     {
-      "id": 491,
-      "name": "Igor Jesus",
-      "position": "FWD",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 482973,
-      "owner": "rushy",
-      "status": "a",
-      "chanceOfPlaying": 75,
-      "news": null,
-      "newsAdded": "2026-10-09T14:30:11.491800Z",
-      "points": 13,
-      "ppg": 2.2,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 2,
-      "positionRank": 29
-    },
-    {
       "id": 36,
       "name": "Maatsen",
       "position": "DEF",
@@ -3321,6 +3299,28 @@
       "cleanSheets": 1,
       "bonus": 0,
       "positionRank": 92
+    },
+    {
+      "id": 491,
+      "name": "Igor Jesus",
+      "position": "FWD",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 482973,
+      "owner": "rushy",
+      "status": "a",
+      "chanceOfPlaying": 75,
+      "news": null,
+      "newsAdded": "2026-10-09T14:30:11.491800Z",
+      "points": 12,
+      "ppg": 2,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 2,
+      "positionRank": 30
     },
     {
       "id": 25,
@@ -6160,7 +6160,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 30
+      "positionRank": 29
     },
     {
       "id": 104,
@@ -7766,7 +7766,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 123
+      "positionRank": 122
     },
     {
       "id": 650,
@@ -7923,28 +7923,6 @@
       "positionRank": 173
     },
     {
-      "id": 478,
-      "name": "Netz",
-      "position": "DEF",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 470315,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 5,
-      "ppg": 1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 121
-    },
-    {
       "id": 643,
       "name": "Norton-Cuffy",
       "position": "DEF",
@@ -7964,7 +7942,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 124
+      "positionRank": 123
     },
     {
       "id": 81,
@@ -8008,7 +7986,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 122
+      "positionRank": 121
     },
     {
       "id": 328,
@@ -8140,7 +8118,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 125
+      "positionRank": 124
     },
     {
       "id": 568,
@@ -8228,7 +8206,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 128
+      "positionRank": 127
     },
     {
       "id": 160,
@@ -8294,7 +8272,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 127
+      "positionRank": 126
     },
     {
       "id": 482,
@@ -8404,6 +8382,28 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
+      "positionRank": 129
+    },
+    {
+      "id": 478,
+      "name": "Netz",
+      "position": "DEF",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 470315,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 4,
+      "ppg": 0.8,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
       "positionRank": 130
     },
     {
@@ -8426,7 +8426,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 126
+      "positionRank": 125
     },
     {
       "id": 364,
@@ -8448,7 +8448,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 129
+      "positionRank": 128
     },
     {
       "id": 463,
@@ -11905,6 +11905,28 @@
       "positionRank": 294
     },
     {
+      "id": 671,
+      "name": "Gunter",
+      "position": "GKP",
+      "club": "Spurs",
+      "clubShort": "TOT",
+      "clubCode": 6,
+      "teamId": 19,
+      "photoCode": 536108,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 0,
+      "ppg": 0,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 75
+    },
+    {
       "id": 297,
       "name": "Gyabi",
       "position": "MID",
@@ -14765,5 +14787,5 @@
     "bonus": 14,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-07T19:24:25.321Z"
+  "generatedAt": "2026-11-07T21:18:35.108Z"
 }
