@@ -529,6 +529,28 @@
       "positionRank": 7
     },
     {
+      "id": 571,
+      "name": "Tzolakis",
+      "position": "GKP",
+      "club": "Hull City",
+      "clubShort": "HUL",
+      "clubCode": 88,
+      "teamId": 11,
+      "photoCode": 473284,
+      "owner": "rushy",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 48,
+      "ppg": 4.8,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 3,
+      "bonus": 6,
+      "positionRank": 4
+    },
+    {
       "id": 165,
       "name": "João Pedro",
       "position": "FWD",
@@ -551,28 +573,6 @@
       "positionRank": 5
     },
     {
-      "id": 571,
-      "name": "Tzolakis",
-      "position": "GKP",
-      "club": "Hull City",
-      "clubShort": "HUL",
-      "clubCode": 88,
-      "teamId": 11,
-      "photoCode": 473284,
-      "owner": "rushy",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 47,
-      "ppg": 4.7,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 3,
-      "bonus": 6,
-      "positionRank": 4
-    },
-    {
       "id": 449,
       "name": "Hall",
       "position": "DEF",
@@ -593,28 +593,6 @@
       "cleanSheets": 2,
       "bonus": 6,
       "positionRank": 11
-    },
-    {
-      "id": 258,
-      "name": "Castagne",
-      "position": "DEF",
-      "club": "Fulham",
-      "clubShort": "FUL",
-      "clubCode": 54,
-      "teamId": 10,
-      "photoCode": 166477,
-      "owner": "ollie",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 45,
-      "ppg": 5,
-      "goals": 0,
-      "assists": 2,
-      "cleanSheets": 5,
-      "bonus": 5,
-      "positionRank": 12
     },
     {
       "id": 399,
@@ -724,6 +702,28 @@
       "assists": 3,
       "cleanSheets": 2,
       "bonus": 3,
+      "positionRank": 12
+    },
+    {
+      "id": 258,
+      "name": "Castagne",
+      "position": "DEF",
+      "club": "Fulham",
+      "clubShort": "FUL",
+      "clubCode": 54,
+      "teamId": 10,
+      "photoCode": 166477,
+      "owner": "ollie",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 44,
+      "ppg": 4.9,
+      "goals": 0,
+      "assists": 2,
+      "cleanSheets": 5,
+      "bonus": 4,
       "positionRank": 12
     },
     {
@@ -3721,28 +3721,6 @@
       "positionRank": 28
     },
     {
-      "id": 586,
-      "name": "Mendy",
-      "position": "DEF",
-      "club": "Hull City",
-      "clubShort": "HUL",
-      "clubCode": 88,
-      "teamId": 11,
-      "photoCode": 606930,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-16T12:30:09.976274Z",
-      "points": 35,
-      "ppg": 5,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 1,
-      "positionRank": 30
-    },
-    {
       "id": 214,
       "name": "Kamada",
       "position": "MID",
@@ -3763,6 +3741,28 @@
       "cleanSheets": 1,
       "bonus": 1,
       "positionRank": 32
+    },
+    {
+      "id": 586,
+      "name": "Mendy",
+      "position": "DEF",
+      "club": "Hull City",
+      "clubShort": "HUL",
+      "clubCode": 88,
+      "teamId": 11,
+      "photoCode": 606930,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-16T12:30:09.976274Z",
+      "points": 34,
+      "ppg": 4.9,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 1,
+      "positionRank": 30
     },
     {
       "id": 455,
@@ -7172,7 +7172,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 154
+      "positionRank": 155
     },
     {
       "id": 543,
@@ -7194,7 +7194,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 155
+      "positionRank": 156
     },
     {
       "id": 153,
@@ -7238,7 +7238,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 149
+      "positionRank": 150
     },
     {
       "id": 406,
@@ -7260,7 +7260,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 153
+      "positionRank": 154
     },
     {
       "id": 339,
@@ -7282,7 +7282,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 151
+      "positionRank": 152
     },
     {
       "id": 375,
@@ -7304,7 +7304,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 152
+      "positionRank": 153
     },
     {
       "id": 164,
@@ -7326,7 +7326,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 150
+      "positionRank": 151
     },
     {
       "id": 548,
@@ -7348,7 +7348,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 156
+      "positionRank": 157
     },
     {
       "id": 564,
@@ -7371,6 +7371,28 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 23
+    },
+    {
+      "id": 19,
+      "name": "Zubimendi",
+      "position": "MID",
+      "club": "Arsenal",
+      "clubShort": "ARS",
+      "clubCode": 3,
+      "teamId": 1,
+      "photoCode": 481655,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-12T15:00:07.563478Z",
+      "points": 7,
+      "ppg": 1,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 149
     },
     {
       "id": 520,
@@ -7679,28 +7701,6 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 159
-    },
-    {
-      "id": 19,
-      "name": "Zubimendi",
-      "position": "MID",
-      "club": "Arsenal",
-      "clubShort": "ARS",
-      "clubCode": 3,
-      "teamId": 1,
-      "photoCode": 481655,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-12T15:00:07.563478Z",
-      "points": 6,
-      "ppg": 1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 157
     },
     {
       "id": 616,
@@ -14765,5 +14765,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-07T16:49:16.745Z"
+  "generatedAt": "2026-11-07T16:50:24.955Z"
 }
