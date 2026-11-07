@@ -5767,28 +5767,6 @@
       "positionRank": 113
     },
     {
-      "id": 618,
-      "name": "Cho",
-      "position": "MID",
-      "club": "Hull City",
-      "clubShort": "HUL",
-      "clubCode": 88,
-      "teamId": 11,
-      "photoCode": 490884,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-16T17:30:09.623338Z",
-      "points": 14,
-      "ppg": 2,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 114
-    },
-    {
       "id": 247,
       "name": "Hackney",
       "position": "MID",
@@ -5874,7 +5852,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 117
+      "positionRank": 116
     },
     {
       "id": 97,
@@ -5896,7 +5874,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 116
+      "positionRank": 115
     },
     {
       "id": 7,
@@ -5918,7 +5896,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 115
+      "positionRank": 114
     },
     {
       "id": 462,
@@ -5940,7 +5918,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 118
+      "positionRank": 117
     },
     {
       "id": 644,
@@ -5962,7 +5940,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 119
+      "positionRank": 118
     },
     {
       "id": 85,
@@ -6028,7 +6006,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 125
+      "positionRank": 124
     },
     {
       "id": 52,
@@ -6050,7 +6028,29 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 120
+      "positionRank": 119
+    },
+    {
+      "id": 618,
+      "name": "Cho",
+      "position": "MID",
+      "club": "Hull City",
+      "clubShort": "HUL",
+      "clubCode": 88,
+      "teamId": 11,
+      "photoCode": 490884,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-16T17:30:09.623338Z",
+      "points": 12,
+      "ppg": 1.7,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 125
     },
     {
       "id": 54,
@@ -6072,7 +6072,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 121
+      "positionRank": 120
     },
     {
       "id": 471,
@@ -6160,7 +6160,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 122
+      "positionRank": 121
     },
     {
       "id": 446,
@@ -6226,7 +6226,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 123
+      "positionRank": 122
     },
     {
       "id": 260,
@@ -6248,7 +6248,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 124
+      "positionRank": 123
     },
     {
       "id": 320,
@@ -7915,7 +7915,7 @@
       "news": null,
       "newsAdded": "2026-09-21T08:30:09.561308Z",
       "points": 5,
-      "ppg": 1,
+      "ppg": 0.8,
       "goals": 0,
       "assists": 0,
       "cleanSheets": 0,
@@ -14765,5 +14765,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-07T16:21:57.014Z"
+  "generatedAt": "2026-11-07T16:23:05.075Z"
 }
