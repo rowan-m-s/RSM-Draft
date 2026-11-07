@@ -48,7 +48,7 @@
         ]
       },
       "5": {
-        "total": 7,
+        "total": 6,
         "components": [
           {
             "stat": "minutes",
@@ -61,12 +61,6 @@
             "name": "Clean sheets",
             "value": 1,
             "points": 4
-          },
-          {
-            "stat": "bonus",
-            "name": "Bonus",
-            "value": 1,
-            "points": 1
           }
         ]
       },
@@ -291,7 +285,7 @@
         ]
       },
       "571": {
-        "total": 5,
+        "total": 6,
         "components": [
           {
             "stat": "minutes",
@@ -304,6 +298,12 @@
             "name": "Saves",
             "value": 9,
             "points": 3
+          },
+          {
+            "stat": "bonus",
+            "name": "Bonus",
+            "value": 1,
+            "points": 1
           }
         ]
       }
@@ -1431,5 +1431,5 @@
       }
     }
   },
-  "generatedAt": "2026-11-07T16:56:07.172Z"
+  "generatedAt": "2026-11-07T17:16:08.973Z"
 }

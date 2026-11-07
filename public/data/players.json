@@ -507,6 +507,28 @@
       "positionRank": 5
     },
     {
+      "id": 571,
+      "name": "Tzolakis",
+      "position": "GKP",
+      "club": "Hull City",
+      "clubShort": "HUL",
+      "clubCode": 88,
+      "teamId": 11,
+      "photoCode": 473284,
+      "owner": "rushy",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 49,
+      "ppg": 4.9,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 3,
+      "bonus": 7,
+      "positionRank": 4
+    },
+    {
       "id": 286,
       "name": "Belloumi",
       "position": "MID",
@@ -527,28 +549,6 @@
       "cleanSheets": 3,
       "bonus": 2,
       "positionRank": 7
-    },
-    {
-      "id": 571,
-      "name": "Tzolakis",
-      "position": "GKP",
-      "club": "Hull City",
-      "clubShort": "HUL",
-      "clubCode": 88,
-      "teamId": 11,
-      "photoCode": 473284,
-      "owner": "rushy",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 48,
-      "ppg": 4.8,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 3,
-      "bonus": 6,
-      "positionRank": 4
     },
     {
       "id": 165,
@@ -3081,28 +3081,6 @@
       "positionRank": 79
     },
     {
-      "id": 5,
-      "name": "J.Timber",
-      "position": "DEF",
-      "club": "Arsenal",
-      "clubShort": "ARS",
-      "clubCode": 3,
-      "teamId": 1,
-      "photoCode": 445122,
-      "owner": "dj",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-07-23T12:01:23.272929Z",
-      "points": 15,
-      "ppg": 2.5,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 1,
-      "positionRank": 82
-    },
-    {
       "id": 646,
       "name": "Flemming",
       "position": "FWD",
@@ -3123,6 +3101,28 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 25
+    },
+    {
+      "id": 5,
+      "name": "J.Timber",
+      "position": "DEF",
+      "club": "Arsenal",
+      "clubShort": "ARS",
+      "clubCode": 3,
+      "teamId": 1,
+      "photoCode": 445122,
+      "owner": "dj",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-07-23T12:01:23.272929Z",
+      "points": 14,
+      "ppg": 2.3,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 0,
+      "positionRank": 85
     },
     {
       "id": 515,
@@ -5522,7 +5522,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 84
+      "positionRank": 83
     },
     {
       "id": 75,
@@ -5632,7 +5632,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 83
+      "positionRank": 82
     },
     {
       "id": 539,
@@ -5654,7 +5654,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 85
+      "positionRank": 84
     },
     {
       "id": 246,
@@ -7448,9 +7448,9 @@
       "teamId": 11,
       "photoCode": 101282,
       "owner": null,
-      "status": "s",
+      "status": "a",
       "chanceOfPlaying": 0,
-      "news": "Suspended until 22 Nov",
+      "news": null,
       "newsAdded": "2026-10-31T18:00:09.584315Z",
       "points": 6,
       "ppg": 1,
@@ -14765,5 +14765,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-07T16:56:07.172Z"
+  "generatedAt": "2026-11-07T17:16:08.973Z"
 }
