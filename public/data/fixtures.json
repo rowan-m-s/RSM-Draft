@@ -6696,7 +6696,7 @@
       "awayScore": 0,
       "started": true,
       "finished": false,
-      "finishedProvisional": false,
+      "finishedProvisional": true,
       "homeDifficulty": 2,
       "awayDifficulty": 5
     },
@@ -6710,7 +6710,7 @@
       "awayScore": 1,
       "started": true,
       "finished": false,
-      "finishedProvisional": false,
+      "finishedProvisional": true,
       "homeDifficulty": 3,
       "awayDifficulty": 3
     },
@@ -10841,5 +10841,5 @@
       "code": 56
     }
   ],
-  "generatedAt": "2026-11-07T16:44:47.692Z"
+  "generatedAt": "2026-11-07T17:00:34.735Z"
 }
