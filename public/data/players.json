@@ -58,12 +58,12 @@
       "chanceOfPlaying": null,
       "news": null,
       "newsAdded": null,
-      "points": 61,
-      "ppg": 6.1,
+      "points": 60,
+      "ppg": 6,
       "goals": 1,
       "assists": 0,
       "cleanSheets": 6,
-      "bonus": 7,
+      "bonus": 6,
       "positionRank": 2
     },
     {
@@ -542,12 +542,12 @@
       "chanceOfPlaying": null,
       "news": null,
       "newsAdded": null,
-      "points": 47,
-      "ppg": 4.7,
+      "points": 46,
+      "ppg": 4.6,
       "goals": 0,
       "assists": 0,
       "cleanSheets": 3,
-      "bonus": 8,
+      "bonus": 7,
       "positionRank": 4
     },
     {
@@ -2905,6 +2905,28 @@
       "positionRank": 20
     },
     {
+      "id": 16,
+      "name": "Madueke",
+      "position": "MID",
+      "club": "Arsenal",
+      "clubShort": "ARS",
+      "clubCode": 3,
+      "teamId": 1,
+      "photoCode": 248857,
+      "owner": "jls",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-28T00:00:08.492716Z",
+      "points": 18,
+      "ppg": 2.6,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 3,
+      "positionRank": 92
+    },
+    {
       "id": 167,
       "name": "Delap",
       "position": "FWD",
@@ -3057,28 +3079,6 @@
       "cleanSheets": 2,
       "bonus": 1,
       "positionRank": 79
-    },
-    {
-      "id": 16,
-      "name": "Madueke",
-      "position": "MID",
-      "club": "Arsenal",
-      "clubShort": "ARS",
-      "clubCode": 3,
-      "teamId": 1,
-      "photoCode": 248857,
-      "owner": "jls",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-28T00:00:08.492716Z",
-      "points": 15,
-      "ppg": 2.1,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 0,
-      "positionRank": 99
     },
     {
       "id": 646,
@@ -3314,13 +3314,13 @@
       "chanceOfPlaying": 100,
       "news": null,
       "newsAdded": "2026-07-23T12:01:23.272929Z",
-      "points": 12,
-      "ppg": 2,
+      "points": 11,
+      "ppg": 1.8,
       "goals": 0,
       "assists": 0,
       "cleanSheets": 1,
-      "bonus": 3,
-      "positionRank": 92
+      "bonus": 2,
+      "positionRank": 96
     },
     {
       "id": 25,
@@ -5192,7 +5192,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 93
+      "positionRank": 94
     },
     {
       "id": 71,
@@ -5214,7 +5214,7 @@
       "assists": 1,
       "cleanSheets": 4,
       "bonus": 0,
-      "positionRank": 92
+      "positionRank": 93
     },
     {
       "id": 572,
@@ -5236,7 +5236,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 95
+      "positionRank": 96
     },
     {
       "id": 372,
@@ -5258,7 +5258,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 94
+      "positionRank": 95
     },
     {
       "id": 33,
@@ -5302,7 +5302,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 96
+      "positionRank": 97
     },
     {
       "id": 417,
@@ -5346,7 +5346,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 97
+      "positionRank": 98
     },
     {
       "id": 474,
@@ -5434,7 +5434,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 98
+      "positionRank": 99
     },
     {
       "id": 203,
@@ -6050,7 +6050,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 96
+      "positionRank": 95
     },
     {
       "id": 11,
@@ -6072,7 +6072,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 93
+      "positionRank": 92
     },
     {
       "id": 224,
@@ -6138,7 +6138,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 95
+      "positionRank": 94
     },
     {
       "id": 423,
@@ -6160,7 +6160,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 94
+      "positionRank": 93
     },
     {
       "id": 188,
@@ -14765,5 +14765,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-07T16:10:35.729Z"
+  "generatedAt": "2026-11-07T16:12:50.224Z"
 }
