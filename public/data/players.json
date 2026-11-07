@@ -331,6 +331,28 @@
       "positionRank": 2
     },
     {
+      "id": 449,
+      "name": "Hall",
+      "position": "DEF",
+      "club": "Newcastle",
+      "clubShort": "NEW",
+      "clubCode": 4,
+      "teamId": 17,
+      "photoCode": 487838,
+      "owner": "jason",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 53,
+      "ppg": 5.3,
+      "goals": 1,
+      "assists": 1,
+      "cleanSheets": 3,
+      "bonus": 9,
+      "positionRank": 10
+    },
+    {
       "id": 379,
       "name": "Isak",
       "position": "FWD",
@@ -397,28 +419,6 @@
       "positionRank": 4
     },
     {
-      "id": 449,
-      "name": "Hall",
-      "position": "DEF",
-      "club": "Newcastle",
-      "clubShort": "NEW",
-      "clubCode": 4,
-      "teamId": 17,
-      "photoCode": 487838,
-      "owner": "jason",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 51,
-      "ppg": 5.1,
-      "goals": 1,
-      "assists": 1,
-      "cleanSheets": 3,
-      "bonus": 9,
-      "positionRank": 11
-    },
-    {
       "id": 332,
       "name": "Justin",
       "position": "DEF",
@@ -438,7 +438,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 5,
-      "positionRank": 10
+      "positionRank": 11
     },
     {
       "id": 109,
@@ -705,28 +705,6 @@
       "positionRank": 12
     },
     {
-      "id": 250,
-      "name": "Leno",
-      "position": "GKP",
-      "club": "Fulham",
-      "clubShort": "FUL",
-      "clubCode": 54,
-      "teamId": 10,
-      "photoCode": 80201,
-      "owner": "ollie",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 44,
-      "ppg": 4.4,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 4,
-      "bonus": 6,
-      "positionRank": 5
-    },
-    {
       "id": 427,
       "name": "Mbeumo",
       "position": "MID",
@@ -815,6 +793,28 @@
       "positionRank": 14
     },
     {
+      "id": 250,
+      "name": "Leno",
+      "position": "GKP",
+      "club": "Fulham",
+      "clubShort": "FUL",
+      "clubCode": 54,
+      "teamId": 10,
+      "photoCode": 80201,
+      "owner": "ollie",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 43,
+      "ppg": 4.3,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 4,
+      "bonus": 5,
+      "positionRank": 5
+    },
+    {
       "id": 166,
       "name": "N.Jackson",
       "position": "FWD",
@@ -900,7 +900,7 @@
       "assists": 1,
       "cleanSheets": 4,
       "bonus": 4,
-      "positionRank": 16
+      "positionRank": 17
     },
     {
       "id": 15,
@@ -944,7 +944,7 @@
       "assists": 3,
       "cleanSheets": 4,
       "bonus": 4,
-      "positionRank": 15
+      "positionRank": 16
     },
     {
       "id": 261,
@@ -1318,7 +1318,29 @@
       "assists": 2,
       "cleanSheets": 3,
       "bonus": 3,
-      "positionRank": 26
+      "positionRank": 25
+    },
+    {
+      "id": 640,
+      "name": "Affengruber",
+      "position": "DEF",
+      "club": "Fulham",
+      "clubShort": "FUL",
+      "clubCode": 54,
+      "teamId": 10,
+      "photoCode": 442299,
+      "owner": "wood",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-29T08:30:08.436091Z",
+      "points": 37,
+      "ppg": 5.3,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 4,
+      "bonus": 1,
+      "positionRank": 31
     },
     {
       "id": 580,
@@ -1475,28 +1497,6 @@
       "positionRank": 28
     },
     {
-      "id": 640,
-      "name": "Affengruber",
-      "position": "DEF",
-      "club": "Fulham",
-      "clubShort": "FUL",
-      "clubCode": 54,
-      "teamId": 10,
-      "photoCode": 442299,
-      "owner": "wood",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-29T08:30:08.436091Z",
-      "points": 36,
-      "ppg": 5.1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 4,
-      "bonus": 0,
-      "positionRank": 32
-    },
-    {
       "id": 116,
       "name": "Dunk",
       "position": "DEF",
@@ -1516,7 +1516,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 1,
-      "positionRank": 31
+      "positionRank": 32
     },
     {
       "id": 566,
@@ -3646,13 +3646,13 @@
       "chanceOfPlaying": 100,
       "news": null,
       "newsAdded": "2026-08-22T17:30:07.668197Z",
-      "points": 42,
-      "ppg": 4.2,
+      "points": 43,
+      "ppg": 4.3,
       "goals": 1,
       "assists": 0,
       "cleanSheets": 4,
-      "bonus": 2,
-      "positionRank": 19
+      "bonus": 3,
+      "positionRank": 15
     },
     {
       "id": 257,
@@ -3668,13 +3668,13 @@
       "chanceOfPlaying": null,
       "news": null,
       "newsAdded": null,
-      "points": 42,
-      "ppg": 4.2,
+      "points": 41,
+      "ppg": 4.1,
       "goals": 0,
       "assists": 1,
       "cleanSheets": 4,
-      "bonus": 3,
-      "positionRank": 17
+      "bonus": 2,
+      "positionRank": 19
     },
     {
       "id": 86,
@@ -3699,28 +3699,6 @@
       "positionRank": 21
     },
     {
-      "id": 254,
-      "name": "Robinson",
-      "position": "DEF",
-      "club": "Fulham",
-      "clubShort": "FUL",
-      "clubCode": 54,
-      "teamId": 10,
-      "photoCode": 169528,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-09T11:30:11.109085Z",
-      "points": 38,
-      "ppg": 4.2,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 4,
-      "bonus": 3,
-      "positionRank": 25
-    },
-    {
       "id": 586,
       "name": "Mendy",
       "position": "DEF",
@@ -3741,6 +3719,28 @@
       "cleanSheets": 3,
       "bonus": 1,
       "positionRank": 30
+    },
+    {
+      "id": 254,
+      "name": "Robinson",
+      "position": "DEF",
+      "club": "Fulham",
+      "clubShort": "FUL",
+      "clubCode": 54,
+      "teamId": 10,
+      "photoCode": 169528,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-09T11:30:11.109085Z",
+      "points": 37,
+      "ppg": 4.1,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 4,
+      "bonus": 2,
+      "positionRank": 26
     },
     {
       "id": 264,
@@ -6292,7 +6292,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 126
+      "positionRank": 127
     },
     {
       "id": 583,
@@ -6336,7 +6336,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 128
+      "positionRank": 129
     },
     {
       "id": 213,
@@ -6358,7 +6358,29 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 127
+      "positionRank": 128
+    },
+    {
+      "id": 17,
+      "name": "Merino",
+      "position": "MID",
+      "club": "Arsenal",
+      "clubShort": "ARS",
+      "clubCode": 3,
+      "teamId": 1,
+      "photoCode": 195384,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 11,
+      "ppg": 1.1,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 126
     },
     {
       "id": 429,
@@ -6380,7 +6402,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 129
+      "positionRank": 130
     },
     {
       "id": 461,
@@ -6402,7 +6424,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 130
+      "positionRank": 131
     },
     {
       "id": 420,
@@ -6601,28 +6623,6 @@
       "cleanSheets": 1,
       "bonus": 0,
       "positionRank": 134
-    },
-    {
-      "id": 17,
-      "name": "Merino",
-      "position": "MID",
-      "club": "Arsenal",
-      "clubShort": "ARS",
-      "clubCode": 3,
-      "teamId": 1,
-      "photoCode": 195384,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 10,
-      "ppg": 1.1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 131
     },
     {
       "id": 403,
@@ -14765,5 +14765,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-07T16:23:05.075Z"
+  "generatedAt": "2026-11-07T16:24:14.843Z"
 }
