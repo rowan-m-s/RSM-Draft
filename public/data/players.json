@@ -58,8 +58,8 @@
       "chanceOfPlaying": null,
       "news": null,
       "newsAdded": null,
-      "points": 64,
-      "ppg": 6.4,
+      "points": 66,
+      "ppg": 6.6,
       "goals": 1,
       "assists": 0,
       "cleanSheets": 7,
@@ -2047,6 +2047,28 @@
       "positionRank": 43
     },
     {
+      "id": 595,
+      "name": "Dedić",
+      "position": "DEF",
+      "club": "Newcastle",
+      "clubShort": "NEW",
+      "clubCode": 4,
+      "teamId": 17,
+      "photoCode": 463726,
+      "owner": "rowan",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-17T14:30:09.823731Z",
+      "points": 29,
+      "ppg": 3.6,
+      "goals": 0,
+      "assists": 2,
+      "cleanSheets": 2,
+      "bonus": 4,
+      "positionRank": 44
+    },
+    {
       "id": 552,
       "name": "Brobbey",
       "position": "FWD",
@@ -2110,7 +2132,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 45
+      "positionRank": 46
     },
     {
       "id": 70,
@@ -2223,28 +2245,6 @@
       "positionRank": 57
     },
     {
-      "id": 595,
-      "name": "Dedić",
-      "position": "DEF",
-      "club": "Newcastle",
-      "clubShort": "NEW",
-      "clubCode": 4,
-      "teamId": 17,
-      "photoCode": 463726,
-      "owner": "rowan",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-17T14:30:09.823731Z",
-      "points": 27,
-      "ppg": 3.4,
-      "goals": 0,
-      "assists": 2,
-      "cleanSheets": 2,
-      "bonus": 4,
-      "positionRank": 48
-    },
-    {
       "id": 377,
       "name": "Munoz",
       "position": "MID",
@@ -2286,7 +2286,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 47
+      "positionRank": 48
     },
     {
       "id": 447,
@@ -4114,7 +4114,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 44
+      "positionRank": 45
     },
     {
       "id": 105,
@@ -4158,7 +4158,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 3,
-      "positionRank": 46
+      "positionRank": 47
     },
     {
       "id": 345,
@@ -14765,5 +14765,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-07T16:52:41.231Z"
+  "generatedAt": "2026-11-07T16:56:07.172Z"
 }
