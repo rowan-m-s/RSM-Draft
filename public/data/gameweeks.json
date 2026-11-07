@@ -1711,8 +1711,8 @@
       "scores": {
         "rushy": 9,
         "kellett": 5,
-        "wallis": 11,
-        "jls": 14,
+        "wallis": 13,
+        "jls": 13,
         "paddy": 21,
         "bennett": 16,
         "wood": 2,
@@ -1794,16 +1794,16 @@
           "element": 31
         },
         "wallis": {
-          "playerName": "Gabriel",
+          "playerName": "Gonzalo",
           "points": 1,
           "managerKey": "wallis",
-          "element": 4
+          "element": 569
         },
         "jls": {
-          "playerName": "Madueke",
+          "playerName": "Bruno G.",
           "points": 1,
           "managerKey": "jls",
-          "element": 16
+          "element": 452
         },
         "paddy": {
           "playerName": "Barnes",
@@ -1851,7 +1851,7 @@
       "kochGraphicByManager": {
         "rushy": null,
         "kellett": null,
-        "wallis": 226597,
+        "wallis": null,
         "jls": null,
         "paddy": null,
         "bennett": null,
@@ -2563,5 +2563,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-11-07T16:01:36.024Z"
+  "generatedAt": "2026-11-07T16:08:21.364Z"
 }

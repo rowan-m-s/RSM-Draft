@@ -45,6 +45,28 @@
       "positionRank": 1
     },
     {
+      "id": 4,
+      "name": "Gabriel",
+      "position": "DEF",
+      "club": "Arsenal",
+      "clubShort": "ARS",
+      "clubCode": 3,
+      "teamId": 1,
+      "photoCode": 226597,
+      "owner": "wallis",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 61,
+      "ppg": 6.1,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 6,
+      "bonus": 7,
+      "positionRank": 2
+    },
+    {
       "id": 124,
       "name": "Groß",
       "position": "MID",
@@ -65,28 +87,6 @@
       "cleanSheets": 6,
       "bonus": 9,
       "positionRank": 1
-    },
-    {
-      "id": 4,
-      "name": "Gabriel",
-      "position": "DEF",
-      "club": "Arsenal",
-      "clubShort": "ARS",
-      "clubCode": 3,
-      "teamId": 1,
-      "photoCode": 226597,
-      "owner": "wallis",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 59,
-      "ppg": 5.9,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 6,
-      "bonus": 5,
-      "positionRank": 2
     },
     {
       "id": 330,
@@ -2198,28 +2198,6 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 57
-    },
-    {
-      "id": 452,
-      "name": "Bruno G.",
-      "position": "MID",
-      "club": "Arsenal",
-      "clubShort": "ARS",
-      "clubCode": 3,
-      "teamId": 1,
-      "photoCode": 208706,
-      "owner": "jls",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-04T14:00:08.328779Z",
-      "points": 27,
-      "ppg": 3.4,
-      "goals": 2,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 5,
       "positionRank": 56
     },
     {
@@ -2311,6 +2289,28 @@
       "positionRank": 50
     },
     {
+      "id": 452,
+      "name": "Bruno G.",
+      "position": "MID",
+      "club": "Arsenal",
+      "clubShort": "ARS",
+      "clubCode": 3,
+      "teamId": 1,
+      "photoCode": 208706,
+      "owner": "jls",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-04T14:00:08.328779Z",
+      "points": 26,
+      "ppg": 3.3,
+      "goals": 2,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 4,
+      "positionRank": 58
+    },
+    {
       "id": 110,
       "name": "Rushworth",
       "position": "GKP",
@@ -2352,7 +2352,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 63
+      "positionRank": 62
     },
     {
       "id": 151,
@@ -4139,28 +4139,6 @@
       "positionRank": 51
     },
     {
-      "id": 579,
-      "name": "Charles",
-      "position": "MID",
-      "club": "Fulham",
-      "clubShort": "FUL",
-      "clubCode": 54,
-      "teamId": 10,
-      "photoCode": 463210,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 27,
-      "ppg": 2.7,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 4,
-      "bonus": 3,
-      "positionRank": 58
-    },
-    {
       "id": 304,
       "name": "O'Shea",
       "position": "DEF",
@@ -4290,7 +4268,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 59
+      "positionRank": 57
     },
     {
       "id": 637,
@@ -4334,7 +4312,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 60
+      "positionRank": 59
     },
     {
       "id": 202,
@@ -4378,6 +4356,28 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 3,
+      "positionRank": 63
+    },
+    {
+      "id": 579,
+      "name": "Charles",
+      "position": "MID",
+      "club": "Fulham",
+      "clubShort": "FUL",
+      "clubCode": 54,
+      "teamId": 10,
+      "photoCode": 463210,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 25,
+      "ppg": 2.5,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 4,
+      "bonus": 1,
       "positionRank": 64
     },
     {
@@ -4422,7 +4422,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 62
+      "positionRank": 61
     },
     {
       "id": 95,
@@ -4444,7 +4444,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 61
+      "positionRank": 60
     },
     {
       "id": 592,
@@ -14765,5 +14765,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-07T16:01:36.024Z"
+  "generatedAt": "2026-11-07T16:08:21.364Z"
 }

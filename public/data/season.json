@@ -138,10 +138,10 @@
     },
     {
       "key": "wallis",
-      "rank": 9,
-      "total": 359,
-      "gw": 11,
-      "month": 11,
+      "rank": 8,
+      "total": 361,
+      "gw": 13,
+      "month": 13,
       "kochCount": 2,
       "motmCount": 0,
       "forfeits": 10,
@@ -149,25 +149,8 @@
       "balance": -10,
       "topPerformer": {
         "playerName": "Gabriel",
-        "points": 59,
+        "points": 61,
         "managerKey": "wallis"
-      }
-    },
-    {
-      "key": "jls",
-      "rank": 10,
-      "total": 353,
-      "gw": 14,
-      "month": 14,
-      "kochCount": 3,
-      "motmCount": 0,
-      "forfeits": 15,
-      "potsWon": 0,
-      "balance": -15,
-      "topPerformer": {
-        "playerName": "João Pedro",
-        "points": 47,
-        "managerKey": "jls"
       }
     },
     {
@@ -185,6 +168,23 @@
         "playerName": "Schade",
         "points": 45,
         "managerKey": "dj"
+      }
+    },
+    {
+      "key": "jls",
+      "rank": 11,
+      "total": 352,
+      "gw": 13,
+      "month": 13,
+      "kochCount": 3,
+      "motmCount": 0,
+      "forfeits": 15,
+      "potsWon": 0,
+      "balance": -15,
+      "topPerformer": {
+        "playerName": "João Pedro",
+        "points": 47,
+        "managerKey": "jls"
       }
     }
   ],
@@ -205,7 +205,7 @@
     "displaced": "paddy",
     "changed": false
   },
-  "generatedAt": "2026-11-07T16:01:36.024Z",
+  "generatedAt": "2026-11-07T16:08:21.364Z",
   "graphics": {
     "koch": {
       "rushy": 244850,
