@@ -815,6 +815,28 @@
       "positionRank": 14
     },
     {
+      "id": 250,
+      "name": "Leno",
+      "position": "GKP",
+      "club": "Fulham",
+      "clubShort": "FUL",
+      "clubCode": 54,
+      "teamId": 10,
+      "photoCode": 80201,
+      "owner": "ollie",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 43,
+      "ppg": 4.3,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 4,
+      "bonus": 4,
+      "positionRank": 5
+    },
+    {
       "id": 166,
       "name": "N.Jackson",
       "position": "FWD",
@@ -857,28 +879,6 @@
       "cleanSheets": 6,
       "bonus": 0,
       "positionRank": 14
-    },
-    {
-      "id": 250,
-      "name": "Leno",
-      "position": "GKP",
-      "club": "Fulham",
-      "clubShort": "FUL",
-      "clubCode": 54,
-      "teamId": 10,
-      "photoCode": 80201,
-      "owner": "ollie",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 42,
-      "ppg": 4.2,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 4,
-      "bonus": 4,
-      "positionRank": 5
     },
     {
       "id": 233,
@@ -1321,28 +1321,6 @@
       "positionRank": 25
     },
     {
-      "id": 640,
-      "name": "Affengruber",
-      "position": "DEF",
-      "club": "Fulham",
-      "clubShort": "FUL",
-      "clubCode": 54,
-      "teamId": 10,
-      "photoCode": 442299,
-      "owner": "wood",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-29T08:30:08.436091Z",
-      "points": 37,
-      "ppg": 5.3,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 4,
-      "bonus": 1,
-      "positionRank": 29
-    },
-    {
       "id": 580,
       "name": "Araujo",
       "position": "DEF",
@@ -1497,6 +1475,28 @@
       "positionRank": 27
     },
     {
+      "id": 640,
+      "name": "Affengruber",
+      "position": "DEF",
+      "club": "Fulham",
+      "clubShort": "FUL",
+      "clubCode": 54,
+      "teamId": 10,
+      "photoCode": 442299,
+      "owner": "wood",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-29T08:30:08.436091Z",
+      "points": 36,
+      "ppg": 5.1,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 4,
+      "bonus": 0,
+      "positionRank": 31
+    },
+    {
       "id": 116,
       "name": "Dunk",
       "position": "DEF",
@@ -1516,7 +1516,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 1,
-      "positionRank": 30
+      "positionRank": 29
     },
     {
       "id": 566,
@@ -1978,7 +1978,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 3,
-      "positionRank": 40
+      "positionRank": 41
     },
     {
       "id": 242,
@@ -2575,6 +2575,28 @@
       "positionRank": 74
     },
     {
+      "id": 445,
+      "name": "Thiaw",
+      "position": "DEF",
+      "club": "Newcastle",
+      "clubShort": "NEW",
+      "clubCode": 4,
+      "teamId": 17,
+      "photoCode": 465642,
+      "owner": "ollie",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 23,
+      "ppg": 2.6,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 1,
+      "positionRank": 60
+    },
+    {
       "id": 194,
       "name": "Thomas-Asante",
       "position": "FWD",
@@ -2639,28 +2661,6 @@
       "cleanSheets": 3,
       "bonus": 1,
       "positionRank": 79
-    },
-    {
-      "id": 445,
-      "name": "Thiaw",
-      "position": "DEF",
-      "club": "Newcastle",
-      "clubShort": "NEW",
-      "clubCode": 4,
-      "teamId": 17,
-      "photoCode": 465642,
-      "owner": "ollie",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 22,
-      "ppg": 2.4,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 0,
-      "positionRank": 62
     },
     {
       "id": 554,
@@ -3718,7 +3718,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 1,
-      "positionRank": 31
+      "positionRank": 30
     },
     {
       "id": 264,
@@ -3875,6 +3875,28 @@
       "positionRank": 38
     },
     {
+      "id": 282,
+      "name": "Giles",
+      "position": "DEF",
+      "club": "Hull City",
+      "clubShort": "HUL",
+      "clubCode": 88,
+      "teamId": 11,
+      "photoCode": 232351,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 31,
+      "ppg": 3.1,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 3,
+      "bonus": 2,
+      "positionRank": 39
+    },
+    {
       "id": 556,
       "name": "M.Sangaré",
       "position": "MID",
@@ -3916,7 +3938,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 39
+      "positionRank": 40
     },
     {
       "id": 176,
@@ -3938,28 +3960,6 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 41
-    },
-    {
-      "id": 282,
-      "name": "Giles",
-      "position": "DEF",
-      "club": "Hull City",
-      "clubShort": "HUL",
-      "clubCode": 88,
-      "teamId": 11,
-      "photoCode": 232351,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 30,
-      "ppg": 3.3,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 3,
-      "bonus": 2,
       "positionRank": 42
     },
     {
@@ -4796,7 +4796,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 61
+      "positionRank": 62
     },
     {
       "id": 64,
@@ -4818,7 +4818,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 60
+      "positionRank": 61
     },
     {
       "id": 327,
@@ -9771,6 +9771,28 @@
       "positionRank": 151
     },
     {
+      "id": 645,
+      "name": "Mouzakitis",
+      "position": "MID",
+      "club": "Hull City",
+      "clubShort": "HUL",
+      "clubCode": 88,
+      "teamId": 11,
+      "photoCode": 647839,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 1,
+      "ppg": 1,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 217
+    },
+    {
       "id": 578,
       "name": "Mudryk",
       "position": "MID",
@@ -9834,7 +9856,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 217
+      "positionRank": 218
     },
     {
       "id": 573,
@@ -10054,7 +10076,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 284
+      "positionRank": 285
     },
     {
       "id": 392,
@@ -10098,7 +10120,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 253
+      "positionRank": 254
     },
     {
       "id": 322,
@@ -10186,7 +10208,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 240
+      "positionRank": 241
     },
     {
       "id": 639,
@@ -10208,7 +10230,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 290
+      "positionRank": 291
     },
     {
       "id": 641,
@@ -10384,7 +10406,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 223
+      "positionRank": 224
     },
     {
       "id": 376,
@@ -10406,7 +10428,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 264
+      "positionRank": 265
     },
     {
       "id": 485,
@@ -10428,7 +10450,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 279
+      "positionRank": 280
     },
     {
       "id": 661,
@@ -10538,7 +10560,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 276
+      "positionRank": 277
     },
     {
       "id": 623,
@@ -10648,7 +10670,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 239
+      "positionRank": 240
     },
     {
       "id": 333,
@@ -10736,7 +10758,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 231
+      "positionRank": 232
     },
     {
       "id": 311,
@@ -10758,7 +10780,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 255
+      "positionRank": 256
     },
     {
       "id": 50,
@@ -10780,7 +10802,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 226
+      "positionRank": 227
     },
     {
       "id": 299,
@@ -10890,7 +10912,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 262
+      "positionRank": 263
     },
     {
       "id": 626,
@@ -11000,7 +11022,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 275
+      "positionRank": 276
     },
     {
       "id": 117,
@@ -11044,7 +11066,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 288
+      "positionRank": 289
     },
     {
       "id": 603,
@@ -11066,7 +11088,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 286
+      "positionRank": 287
     },
     {
       "id": 163,
@@ -11088,7 +11110,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 236
+      "positionRank": 237
     },
     {
       "id": 382,
@@ -11154,7 +11176,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 228
+      "positionRank": 229
     },
     {
       "id": 355,
@@ -11286,7 +11308,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 241
+      "positionRank": 242
     },
     {
       "id": 615,
@@ -11352,7 +11374,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 244
+      "positionRank": 245
     },
     {
       "id": 171,
@@ -11396,7 +11418,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 248
+      "positionRank": 249
     },
     {
       "id": 221,
@@ -11418,7 +11440,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 246
+      "positionRank": 247
     },
     {
       "id": 497,
@@ -11462,7 +11484,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 237
+      "positionRank": 238
     },
     {
       "id": 407,
@@ -11484,7 +11506,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 269
+      "positionRank": 270
     },
     {
       "id": 531,
@@ -11528,7 +11550,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 266
+      "positionRank": 267
     },
     {
       "id": 170,
@@ -11572,7 +11594,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 263
+      "positionRank": 264
     },
     {
       "id": 80,
@@ -11616,7 +11638,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 242
+      "positionRank": 243
     },
     {
       "id": 23,
@@ -11638,7 +11660,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 221
+      "positionRank": 222
     },
     {
       "id": 139,
@@ -11682,7 +11704,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 277
+      "positionRank": 278
     },
     {
       "id": 58,
@@ -11836,7 +11858,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 235
+      "positionRank": 236
     },
     {
       "id": 341,
@@ -11858,7 +11880,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 260
+      "positionRank": 261
     },
     {
       "id": 654,
@@ -11902,7 +11924,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 254
+      "positionRank": 255
     },
     {
       "id": 342,
@@ -11924,7 +11946,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 261
+      "positionRank": 262
     },
     {
       "id": 630,
@@ -12034,7 +12056,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 232
+      "positionRank": 233
     },
     {
       "id": 278,
@@ -12078,7 +12100,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 285
+      "positionRank": 286
     },
     {
       "id": 484,
@@ -12100,7 +12122,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 278
+      "positionRank": 279
     },
     {
       "id": 658,
@@ -12166,7 +12188,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 225
+      "positionRank": 226
     },
     {
       "id": 65,
@@ -12210,7 +12232,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 274
+      "positionRank": 275
     },
     {
       "id": 219,
@@ -12232,7 +12254,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 245
+      "positionRank": 246
     },
     {
       "id": 283,
@@ -12408,7 +12430,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 251
+      "positionRank": 252
     },
     {
       "id": 228,
@@ -12628,7 +12650,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 287
+      "positionRank": 288
     },
     {
       "id": 217,
@@ -12650,7 +12672,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 243
+      "positionRank": 244
     },
     {
       "id": 150,
@@ -12782,7 +12804,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 218
+      "positionRank": 219
     },
     {
       "id": 540,
@@ -12826,7 +12848,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 249
+      "positionRank": 250
     },
     {
       "id": 349,
@@ -12914,7 +12936,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 265
+      "positionRank": 266
     },
     {
       "id": 252,
@@ -12958,7 +12980,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 259
+      "positionRank": 260
     },
     {
       "id": 3,
@@ -13046,7 +13068,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 227
+      "positionRank": 228
     },
     {
       "id": 659,
@@ -13134,7 +13156,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 230
+      "positionRank": 231
     },
     {
       "id": 121,
@@ -13156,7 +13178,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 229
+      "positionRank": 230
     },
     {
       "id": 410,
@@ -13178,7 +13200,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 272
+      "positionRank": 273
     },
     {
       "id": 470,
@@ -13203,28 +13225,6 @@
       "positionRank": 195
     },
     {
-      "id": 645,
-      "name": "Mouzakitis",
-      "position": "MID",
-      "club": "Hull City",
-      "clubShort": "HUL",
-      "clubCode": 88,
-      "teamId": 11,
-      "photoCode": 647839,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 0,
-      "ppg": 0,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 291
-    },
-    {
       "id": 409,
       "name": "Mukasa",
       "position": "MID",
@@ -13244,7 +13244,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 271
+      "positionRank": 272
     },
     {
       "id": 466,
@@ -13310,7 +13310,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 222
+      "positionRank": 223
     },
     {
       "id": 21,
@@ -13332,7 +13332,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 219
+      "positionRank": 220
     },
     {
       "id": 657,
@@ -13376,7 +13376,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 220
+      "positionRank": 221
     },
     {
       "id": 476,
@@ -13442,7 +13442,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 281
+      "positionRank": 282
     },
     {
       "id": 314,
@@ -13464,7 +13464,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 257
+      "positionRank": 258
     },
     {
       "id": 524,
@@ -13486,7 +13486,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 283
+      "positionRank": 284
     },
     {
       "id": 292,
@@ -13508,7 +13508,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 250
+      "positionRank": 251
     },
     {
       "id": 48,
@@ -13530,7 +13530,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 224
+      "positionRank": 225
     },
     {
       "id": 134,
@@ -13552,7 +13552,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 234
+      "positionRank": 235
     },
     {
       "id": 518,
@@ -13574,7 +13574,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 282
+      "positionRank": 283
     },
     {
       "id": 301,
@@ -13728,7 +13728,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 270
+      "positionRank": 271
     },
     {
       "id": 507,
@@ -13860,7 +13860,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 247
+      "positionRank": 248
     },
     {
       "id": 404,
@@ -13882,7 +13882,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 268
+      "positionRank": 269
     },
     {
       "id": 402,
@@ -13904,7 +13904,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 267
+      "positionRank": 268
     },
     {
       "id": 500,
@@ -14168,7 +14168,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 238
+      "positionRank": 239
     },
     {
       "id": 205,
@@ -14300,7 +14300,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 258
+      "positionRank": 259
     },
     {
       "id": 312,
@@ -14322,7 +14322,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 256
+      "positionRank": 257
     },
     {
       "id": 667,
@@ -14432,7 +14432,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 273
+      "positionRank": 274
     },
     {
       "id": 83,
@@ -14542,7 +14542,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 233
+      "positionRank": 234
     },
     {
       "id": 172,
@@ -14674,7 +14674,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 280
+      "positionRank": 281
     },
     {
       "id": 294,
@@ -14696,7 +14696,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 252
+      "positionRank": 253
     },
     {
       "id": 625,
@@ -14718,7 +14718,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 289
+      "positionRank": 290
     },
     {
       "id": 627,
@@ -14765,5 +14765,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-07T16:37:56.948Z"
+  "generatedAt": "2026-11-07T16:39:05.028Z"
 }
