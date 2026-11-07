@@ -177,6 +177,28 @@
       "positionRank": 5
     },
     {
+      "id": 31,
+      "name": "Konsa",
+      "position": "DEF",
+      "club": "Arsenal",
+      "clubShort": "ARS",
+      "clubCode": 3,
+      "teamId": 1,
+      "photoCode": 199798,
+      "owner": "kellett",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-11-05T20:30:09.025008Z",
+      "points": 57,
+      "ppg": 6.3,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 5,
+      "bonus": 7,
+      "positionRank": 6
+    },
+    {
       "id": 112,
       "name": "Van Hecke",
       "position": "DEF",
@@ -196,7 +218,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 6,
-      "positionRank": 6
+      "positionRank": 7
     },
     {
       "id": 334,
@@ -218,7 +240,7 @@
       "assists": 2,
       "cleanSheets": 4,
       "bonus": 3,
-      "positionRank": 8
+      "positionRank": 9
     },
     {
       "id": 229,
@@ -240,7 +262,7 @@
       "assists": 1,
       "cleanSheets": 4,
       "bonus": 7,
-      "positionRank": 7
+      "positionRank": 8
     },
     {
       "id": 249,
@@ -263,28 +285,6 @@
       "cleanSheets": 4,
       "bonus": 8,
       "positionRank": 2
-    },
-    {
-      "id": 31,
-      "name": "Konsa",
-      "position": "DEF",
-      "club": "Arsenal",
-      "clubShort": "ARS",
-      "clubCode": 3,
-      "teamId": 1,
-      "photoCode": 199798,
-      "owner": "kellett",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-11-05T20:30:09.025008Z",
-      "points": 55,
-      "ppg": 6.1,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 5,
-      "bonus": 7,
-      "positionRank": 9
     },
     {
       "id": 68,
@@ -5811,6 +5811,28 @@
       "positionRank": 110
     },
     {
+      "id": 448,
+      "name": "Burn",
+      "position": "DEF",
+      "club": "Newcastle",
+      "clubShort": "NEW",
+      "clubCode": 4,
+      "teamId": 17,
+      "photoCode": 78916,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-23T18:00:08.367241Z",
+      "points": 13,
+      "ppg": 2.6,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 93
+    },
+    {
       "id": 340,
       "name": "Gelhardt",
       "position": "MID",
@@ -5899,6 +5921,28 @@
       "positionRank": 27
     },
     {
+      "id": 446,
+      "name": "Schär",
+      "position": "DEF",
+      "club": "Newcastle",
+      "clubShort": "NEW",
+      "clubCode": 4,
+      "teamId": 17,
+      "photoCode": 119471,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-15T16:30:07.209742Z",
+      "points": 13,
+      "ppg": 2.6,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 92
+    },
+    {
       "id": 462,
       "name": "Steur",
       "position": "MID",
@@ -5984,7 +6028,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 92
+      "positionRank": 94
     },
     {
       "id": 337,
@@ -6094,7 +6138,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 96
+      "positionRank": 97
     },
     {
       "id": 11,
@@ -6116,7 +6160,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 93
+      "positionRank": 95
     },
     {
       "id": 224,
@@ -6163,28 +6207,6 @@
       "positionRank": 121
     },
     {
-      "id": 446,
-      "name": "Schär",
-      "position": "DEF",
-      "club": "Newcastle",
-      "clubShort": "NEW",
-      "clubCode": 4,
-      "teamId": 17,
-      "photoCode": 119471,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-15T16:30:07.209742Z",
-      "points": 12,
-      "ppg": 3,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 95
-    },
-    {
       "id": 423,
       "name": "Shaw",
       "position": "DEF",
@@ -6204,7 +6226,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 94
+      "positionRank": 96
     },
     {
       "id": 188,
@@ -6271,28 +6293,6 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 32
-    },
-    {
-      "id": 448,
-      "name": "Burn",
-      "position": "DEF",
-      "club": "Newcastle",
-      "clubShort": "NEW",
-      "clubCode": 4,
-      "teamId": 17,
-      "photoCode": 78916,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-23T18:00:08.367241Z",
-      "points": 11,
-      "ppg": 2.2,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 98
     },
     {
       "id": 159,
@@ -6468,7 +6468,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 97
+      "positionRank": 98
     },
     {
       "id": 77,
@@ -14765,5 +14765,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-07T16:44:47.692Z"
+  "generatedAt": "2026-11-07T16:48:08.594Z"
 }
