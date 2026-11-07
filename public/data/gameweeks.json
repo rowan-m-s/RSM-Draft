@@ -1690,16 +1690,16 @@
       "scoresProvisional": true,
       "kochReady": true,
       "yetByManager": {
-        "rushy": 6,
-        "kellett": 7,
-        "wallis": 8,
-        "jls": 6,
-        "paddy": 5,
+        "rushy": 5,
+        "kellett": 5,
+        "wallis": 6,
+        "jls": 2,
+        "paddy": 2,
         "bennett": 6,
-        "wood": 8,
-        "rowan": 8,
+        "wood": 7,
+        "rowan": 7,
         "jason": 9,
-        "dj": 8,
+        "dj": 7,
         "ollie": 4
       },
       "fixturesRemaining": true,
@@ -1709,16 +1709,16 @@
       "confirmExpectedUtc": "2026-11-09T16:30:00.000Z",
       "revealFromUtc": "2026-11-09T00:00:00.000Z",
       "scores": {
-        "rushy": 11,
-        "kellett": 14,
-        "wallis": 19,
-        "jls": 22,
-        "paddy": 21,
+        "rushy": 13,
+        "kellett": 17,
+        "wallis": 22,
+        "jls": 27,
+        "paddy": 33,
         "bennett": 18,
         "wood": 8,
-        "rowan": 23,
+        "rowan": 28,
         "jason": 15,
-        "dj": 9,
+        "dj": 10,
         "ollie": 29
       },
       "kochKeys": [],
@@ -1788,28 +1788,28 @@
           "element": 14
         },
         "kellett": {
-          "playerName": "Tel",
+          "playerName": "Foden",
           "points": 1,
           "managerKey": "kellett",
-          "element": 514
+          "element": 398
         },
         "wallis": {
-          "playerName": "Gonzalo",
-          "points": 2,
+          "playerName": "O'Reilly",
+          "points": 1,
           "managerKey": "wallis",
-          "element": 569
+          "element": 387
         },
         "jls": {
-          "playerName": "Garner",
-          "points": 2,
+          "playerName": "Guéhi",
+          "points": 0,
           "managerKey": "jls",
-          "element": 239
+          "element": 388
         },
         "paddy": {
-          "playerName": "Barnes",
-          "points": 2,
+          "playerName": "Rúben",
+          "points": 1,
           "managerKey": "paddy",
-          "element": 453
+          "element": 390
         },
         "bennett": {
           "playerName": "Kinsky",
@@ -1818,10 +1818,10 @@
           "element": 496
         },
         "wood": {
-          "playerName": "Affengruber",
-          "points": 2,
+          "playerName": "Gvardiol",
+          "points": 0,
           "managerKey": "wood",
-          "element": 640
+          "element": 391
         },
         "rowan": {
           "playerName": "Pickford",
@@ -1836,10 +1836,10 @@
           "element": 449
         },
         "dj": {
-          "playerName": "O'Brien",
+          "playerName": "Matheus N.",
           "points": 1,
           "managerKey": "dj",
-          "element": 232
+          "element": 389
         },
         "ollie": {
           "playerName": "Van de Ven",
@@ -2563,5 +2563,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-11-07T17:16:08.973Z"
+  "generatedAt": "2026-11-07T19:24:25.321Z"
 }

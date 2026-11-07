@@ -16,7 +16,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 2
       },
       {
         "element": 499,
@@ -112,7 +112,7 @@
         "starter": false,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 2
       },
       {
         "element": 32,
@@ -128,7 +128,7 @@
         "starter": false,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       }
     ],
     "kellett": [
@@ -178,7 +178,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 123,
@@ -218,7 +218,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 2
       },
       {
         "element": 82,
@@ -292,7 +292,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 129,
@@ -308,7 +308,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 2
       },
       {
         "element": 45,
@@ -414,7 +414,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 16,
@@ -446,7 +446,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 2
       },
       {
         "element": 400,
@@ -454,7 +454,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 2
       },
       {
         "element": 401,
@@ -512,7 +512,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 334,
@@ -552,7 +552,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 9
       },
       {
         "element": 453,
@@ -568,7 +568,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 2
       },
       {
         "element": 346,
@@ -836,7 +836,7 @@
         "starter": false,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 552,
@@ -942,7 +942,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 5
       },
       {
         "element": 249,
@@ -1146,7 +1146,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
         "element": 418,
@@ -1340,7 +1340,7 @@
         "starter": false,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 13
       },
       {
         "element": 445,
@@ -2968,9 +2968,9 @@
       "clubShort": "NFO",
       "clubCode": 17,
       "photoCode": 482973,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 75,
-      "news": "Calf injury - 75% chance of playing",
+      "news": null,
       "newsAdded": "2026-10-09T14:30:11.491800Z"
     },
     "492": {
@@ -3064,10 +3064,10 @@
       "clubShort": "TOT",
       "clubCode": 6,
       "photoCode": 511499,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
+      "status": "d",
+      "chanceOfPlaying": 75,
+      "news": "Ankle injury - 75% chance of playing",
+      "newsAdded": "2026-11-07T18:30:09.104275Z"
     },
     "515": {
       "name": "Maddison",
@@ -3334,5 +3334,5 @@
       "newsAdded": "2026-10-23T14:30:10.429365Z"
     }
   },
-  "generatedAt": "2026-11-07T17:16:08.973Z"
+  "generatedAt": "2026-11-07T19:24:25.321Z"
 }
