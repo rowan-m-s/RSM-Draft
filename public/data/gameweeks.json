@@ -1710,16 +1710,16 @@
       "revealFromUtc": "2026-11-09T00:00:00.000Z",
       "scores": {
         "rushy": 9,
-        "kellett": 13,
-        "wallis": 12,
-        "jls": 16,
-        "paddy": 22,
-        "bennett": 16,
-        "wood": 7,
+        "kellett": 19,
+        "wallis": 18,
+        "jls": 17,
+        "paddy": 23,
+        "bennett": 18,
+        "wood": 12,
         "rowan": 23,
-        "jason": 10,
-        "dj": 5,
-        "ollie": 21
+        "jason": 12,
+        "dj": 11,
+        "ollie": 28
       },
       "kochKeys": [],
       "charged": 0,
@@ -1771,7 +1771,7 @@
         },
         "dj": {
           "playerName": "J.Timber",
-          "points": 2,
+          "points": 8,
           "managerKey": "dj"
         },
         "ollie": {
@@ -1788,40 +1788,40 @@
           "element": 512
         },
         "kellett": {
-          "playerName": "Konsa",
+          "playerName": "Tel",
           "points": 1,
           "managerKey": "kellett",
-          "element": 31
+          "element": 514
         },
         "wallis": {
-          "playerName": "Gabriel",
-          "points": 1,
+          "playerName": "Gonzalo",
+          "points": 2,
           "managerKey": "wallis",
-          "element": 4
+          "element": 569
         },
         "jls": {
-          "playerName": "Bruno G.",
-          "points": 1,
+          "playerName": "Garner",
+          "points": 2,
           "managerKey": "jls",
-          "element": 452
+          "element": 239
         },
         "paddy": {
-          "playerName": "Havertz",
-          "points": 1,
+          "playerName": "Calvert-Lewin",
+          "points": 2,
           "managerKey": "paddy",
-          "element": 26
+          "element": 346
         },
         "bennett": {
-          "playerName": "Rice",
-          "points": 1,
+          "playerName": "Kinsky",
+          "points": 2,
           "managerKey": "bennett",
-          "element": 13
+          "element": 496
         },
         "wood": {
-          "playerName": "Calafiori",
-          "points": 1,
+          "playerName": "Affengruber",
+          "points": 6,
           "managerKey": "wood",
-          "element": 8
+          "element": 640
         },
         "rowan": {
           "playerName": "Pickford",
@@ -1831,7 +1831,7 @@
         },
         "jason": {
           "playerName": "Ødegaard",
-          "points": 1,
+          "points": 3,
           "managerKey": "jason",
           "element": 15
         },
@@ -1851,7 +1851,7 @@
       "kochGraphicByManager": {
         "rushy": null,
         "kellett": null,
-        "wallis": 226597,
+        "wallis": null,
         "jls": null,
         "paddy": null,
         "bennett": null,
@@ -2563,5 +2563,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-11-07T16:20:49.013Z"
+  "generatedAt": "2026-11-07T16:21:57.014Z"
 }
