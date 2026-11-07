@@ -542,12 +542,12 @@
       "chanceOfPlaying": null,
       "news": null,
       "newsAdded": null,
-      "points": 46,
-      "ppg": 4.6,
+      "points": 47,
+      "ppg": 4.7,
       "goals": 0,
       "assists": 0,
       "cleanSheets": 3,
-      "bonus": 7,
+      "bonus": 8,
       "positionRank": 4
     },
     {
@@ -661,6 +661,28 @@
       "positionRank": 11
     },
     {
+      "id": 449,
+      "name": "Hall",
+      "position": "DEF",
+      "club": "Newcastle",
+      "clubShort": "NEW",
+      "clubCode": 4,
+      "teamId": 17,
+      "photoCode": 487838,
+      "owner": "jason",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 44,
+      "ppg": 4.4,
+      "goals": 1,
+      "assists": 1,
+      "cleanSheets": 2,
+      "bonus": 7,
+      "positionRank": 12
+    },
+    {
       "id": 427,
       "name": "Mbeumo",
       "position": "MID",
@@ -746,28 +768,6 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 3,
-      "positionRank": 12
-    },
-    {
-      "id": 449,
-      "name": "Hall",
-      "position": "DEF",
-      "club": "Newcastle",
-      "clubShort": "NEW",
-      "clubCode": 4,
-      "teamId": 17,
-      "photoCode": 487838,
-      "owner": "jason",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 43,
-      "ppg": 4.3,
-      "goals": 1,
-      "assists": 1,
-      "cleanSheets": 2,
-      "bonus": 6,
       "positionRank": 13
     },
     {
@@ -2198,7 +2198,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 56
+      "positionRank": 57
     },
     {
       "id": 595,
@@ -2242,7 +2242,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 55
+      "positionRank": 56
     },
     {
       "id": 390,
@@ -2396,7 +2396,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 65
+      "positionRank": 66
     },
     {
       "id": 200,
@@ -2484,7 +2484,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 3,
-      "positionRank": 66
+      "positionRank": 67
     },
     {
       "id": 400,
@@ -4139,14 +4139,14 @@
       "positionRank": 51
     },
     {
-      "id": 579,
-      "name": "Charles",
+      "id": 265,
+      "name": "Berge",
       "position": "MID",
       "club": "Fulham",
       "clubShort": "FUL",
       "clubCode": 54,
       "teamId": 10,
-      "photoCode": 463210,
+      "photoCode": 207189,
       "owner": null,
       "status": "a",
       "chanceOfPlaying": null,
@@ -4155,10 +4155,10 @@
       "points": 27,
       "ppg": 2.7,
       "goals": 0,
-      "assists": 0,
-      "cleanSheets": 4,
+      "assists": 1,
+      "cleanSheets": 3,
       "bonus": 3,
-      "positionRank": 57
+      "positionRank": 54
     },
     {
       "id": 304,
@@ -4202,7 +4202,7 @@
       "assists": 2,
       "cleanSheets": 4,
       "bonus": 0,
-      "positionRank": 54
+      "positionRank": 55
     },
     {
       "id": 210,
@@ -4359,6 +4359,28 @@
       "positionRank": 49
     },
     {
+      "id": 579,
+      "name": "Charles",
+      "position": "MID",
+      "club": "Fulham",
+      "clubShort": "FUL",
+      "clubCode": 54,
+      "teamId": 10,
+      "photoCode": 463210,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 25,
+      "ppg": 2.5,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 4,
+      "bonus": 1,
+      "positionRank": 64
+    },
+    {
       "id": 148,
       "name": "Hato",
       "position": "DEF",
@@ -4466,7 +4488,7 @@
       "assists": 1,
       "cleanSheets": 4,
       "bonus": 0,
-      "positionRank": 68
+      "positionRank": 69
     },
     {
       "id": 522,
@@ -4488,7 +4510,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 67
+      "positionRank": 68
     },
     {
       "id": 37,
@@ -4532,7 +4554,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 69
+      "positionRank": 70
     },
     {
       "id": 43,
@@ -4554,7 +4576,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 64
+      "positionRank": 65
     },
     {
       "id": 608,
@@ -4575,28 +4597,6 @@
       "goals": 2,
       "assists": 0,
       "cleanSheets": 1,
-      "bonus": 1,
-      "positionRank": 70
-    },
-    {
-      "id": 265,
-      "name": "Berge",
-      "position": "MID",
-      "club": "Fulham",
-      "clubShort": "FUL",
-      "clubCode": 54,
-      "teamId": 10,
-      "photoCode": 207189,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 23,
-      "ppg": 2.3,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 3,
       "bonus": 1,
       "positionRank": 71
     },
@@ -14765,5 +14765,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-07T16:16:18.189Z"
+  "generatedAt": "2026-11-07T16:18:32.975Z"
 }
