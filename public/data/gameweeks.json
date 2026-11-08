@@ -1709,24 +1709,24 @@
       "confirmExpectedUtc": "2026-11-09T16:30:00.000Z",
       "revealFromUtc": "2026-11-09T00:00:00.000Z",
       "scores": {
-        "rushy": 24,
-        "kellett": 23,
+        "rushy": 28,
+        "kellett": 25,
         "wallis": 49,
-        "jls": 40,
+        "jls": 33,
         "paddy": 44,
-        "bennett": 30,
+        "bennett": 38,
         "wood": 41,
         "rowan": 52,
-        "jason": 34,
+        "jason": 28,
         "dj": 19,
-        "ollie": 40
+        "ollie": 34
       },
       "kochKeys": [],
       "charged": 0,
       "topPerformerByManager": {
         "rushy": {
           "playerName": "Wirtz",
-          "points": 8,
+          "points": 13,
           "managerKey": "rushy"
         },
         "kellett": {
@@ -1740,8 +1740,8 @@
           "managerKey": "wallis"
         },
         "jls": {
-          "playerName": "A.Becker",
-          "points": 11,
+          "playerName": "Madueke",
+          "points": 8,
           "managerKey": "jls"
         },
         "paddy": {
@@ -1775,23 +1775,23 @@
           "managerKey": "dj"
         },
         "ollie": {
-          "playerName": "Jacquet",
-          "points": 10,
+          "playerName": "Mykolenko",
+          "points": 8,
           "managerKey": "ollie"
         }
       },
       "scapegoatByManager": {
         "rushy": {
-          "playerName": "Eze",
-          "points": 1,
+          "playerName": "Flemming",
+          "points": 0,
           "managerKey": "rushy",
-          "element": 14
+          "element": 646
         },
         "kellett": {
-          "playerName": "Davis",
-          "points": -1,
+          "playerName": "Colwill",
+          "points": 0,
           "managerKey": "kellett",
-          "element": 305
+          "element": 149
         },
         "wallis": {
           "playerName": "O'Reilly",
@@ -1812,10 +1812,10 @@
           "element": 390
         },
         "bennett": {
-          "playerName": "Tavernier",
-          "points": 1,
+          "playerName": "Janelt",
+          "points": 2,
           "managerKey": "bennett",
-          "element": 68
+          "element": 98
         },
         "wood": {
           "playerName": "Gvardiol",
@@ -2563,5 +2563,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-11-08T15:47:03.814Z"
+  "generatedAt": "2026-11-08T16:28:35.460Z"
 }
