@@ -1768,10 +1768,10 @@
       "clubShort": "BRE",
       "clubCode": 94,
       "photoCode": 502500,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
+      "status": "s",
+      "chanceOfPlaying": 0,
+      "news": "Suspended until 5 Dec",
+      "newsAdded": "2026-11-08T14:30:09.097484Z"
     },
     "109": {
       "name": "Verbruggen",
@@ -1972,9 +1972,9 @@
       "clubShort": "CHE",
       "clubCode": 8,
       "photoCode": 486672,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 75,
-      "news": "Calf injury - 75% chance of playing",
+      "news": null,
       "newsAdded": "2026-11-06T15:30:09.180442Z"
     },
     "165": {
@@ -3334,5 +3334,5 @@
       "newsAdded": null
     }
   },
-  "generatedAt": "2026-11-08T12:35:43.421Z"
+  "generatedAt": "2026-11-08T15:47:03.814Z"
 }
