@@ -6,8 +6,8 @@
   "started": true,
   "finished": false,
   "dataChecked": false,
-  "locallyFinalised": false,
-  "confirmed": false,
+  "locallyFinalised": true,
+  "confirmed": true,
   "squads": {
     "rushy": [
       {
@@ -29,9 +29,9 @@
       {
         "element": 151,
         "position": 3,
-        "starter": true,
+        "starter": false,
         "subbedOn": false,
-        "subbedOff": false,
+        "subbedOff": true,
         "points": 0
       },
       {
@@ -109,8 +109,8 @@
       {
         "element": 469,
         "position": 13,
-        "starter": false,
-        "subbedOn": false,
+        "starter": true,
+        "subbedOn": true,
         "subbedOff": false,
         "points": 2
       },
@@ -154,7 +154,7 @@
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 1
+        "points": -1
       },
       {
         "element": 116,
@@ -809,9 +809,9 @@
       {
         "element": 286,
         "position": 9,
-        "starter": true,
+        "starter": false,
         "subbedOn": false,
-        "subbedOff": false,
+        "subbedOff": true,
         "points": 0
       },
       {
@@ -841,8 +841,8 @@
       {
         "element": 552,
         "position": 13,
-        "starter": false,
-        "subbedOn": false,
+        "starter": true,
+        "subbedOn": true,
         "subbedOff": false,
         "points": 4
       },
@@ -1021,9 +1021,9 @@
       {
         "element": 200,
         "position": 5,
-        "starter": true,
+        "starter": false,
         "subbedOn": false,
-        "subbedOff": false,
+        "subbedOff": true,
         "points": 0
       },
       {
@@ -1085,8 +1085,8 @@
       {
         "element": 377,
         "position": 13,
-        "starter": false,
-        "subbedOn": false,
+        "starter": true,
+        "subbedOn": true,
         "subbedOff": false,
         "points": 0
       },
@@ -3126,7 +3126,7 @@
       "photoCode": 84450,
       "status": "d",
       "chanceOfPlaying": 75,
-      "news": "Unspecified injury - 75% chance of playing",
+      "news": "Calf injury - 75% chance of playing",
       "newsAdded": "2026-11-08T14:30:09.504002Z"
     },
     "552": {
@@ -3334,5 +3334,5 @@
       "newsAdded": "2026-10-23T14:30:10.429365Z"
     }
   },
-  "generatedAt": "2026-11-08T19:16:16.256Z"
+  "generatedAt": "2026-11-09T00:25:13.603Z"
 }

@@ -3,8 +3,8 @@
   "started": true,
   "finished": false,
   "dataChecked": false,
-  "locallyFinalised": false,
-  "confirmed": false,
+  "locallyFinalised": true,
+  "confirmed": true,
   "byFixture": {
     "91": {
       "1": {
@@ -1542,7 +1542,7 @@
         ]
       },
       "305": {
-        "total": 1,
+        "total": -1,
         "components": [
           {
             "stat": "minutes",
@@ -1561,12 +1561,6 @@
             "name": "Own goals",
             "value": 1,
             "points": -2
-          },
-          {
-            "stat": "defensive_contribution",
-            "name": "Defensive Contribution",
-            "value": 10,
-            "points": 2
           }
         ]
       },
@@ -1968,7 +1962,7 @@
           {
             "stat": "defensive_contribution",
             "name": "Defensive Contribution",
-            "value": 12,
+            "value": 14,
             "points": 2
           }
         ]
@@ -2641,5 +2635,5 @@
       }
     }
   },
-  "generatedAt": "2026-11-08T19:16:16.256Z"
+  "generatedAt": "2026-11-09T00:25:13.603Z"
 }

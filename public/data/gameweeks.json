@@ -1687,7 +1687,7 @@
       "month": "2026-11",
       "finished": false,
       "started": true,
-      "scoresProvisional": true,
+      "scoresProvisional": false,
       "kochReady": true,
       "yetByManager": {
         "rushy": 0,
@@ -1704,25 +1704,27 @@
       },
       "fixturesRemaining": true,
       "dataChecked": false,
-      "locallyFinalised": false,
-      "confirmed": false,
+      "locallyFinalised": true,
+      "confirmed": true,
       "confirmExpectedUtc": "2026-11-09T16:30:00.000Z",
       "revealFromUtc": "2026-11-09T00:00:00.000Z",
       "scores": {
-        "rushy": 30,
-        "kellett": 25,
+        "rushy": 32,
+        "kellett": 23,
         "wallis": 60,
         "jls": 33,
         "paddy": 44,
         "bennett": 51,
-        "wood": 51,
+        "wood": 55,
         "rowan": 52,
         "jason": 33,
         "dj": 19,
         "ollie": 40
       },
-      "kochKeys": [],
-      "charged": 0,
+      "kochKeys": [
+        "dj"
+      ],
+      "charged": 5,
       "topPerformerByManager": {
         "rushy": {
           "playerName": "Wirtz",
@@ -1788,10 +1790,10 @@
           "element": 646
         },
         "kellett": {
-          "playerName": "Colwill",
-          "points": 0,
+          "playerName": "Davis",
+          "points": -1,
           "managerKey": "kellett",
-          "element": 149
+          "element": 305
         },
         "wallis": {
           "playerName": "Lammens",
@@ -1830,10 +1832,10 @@
           "element": 157
         },
         "jason": {
-          "playerName": "Kayode",
-          "points": 1,
+          "playerName": "Munoz",
+          "points": 0,
           "managerKey": "jason",
-          "element": 88
+          "element": 377
         },
         "dj": {
           "playerName": "Thiago",
@@ -2563,5 +2565,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-11-08T19:16:16.256Z"
+  "generatedAt": "2026-11-09T00:25:13.603Z"
 }
