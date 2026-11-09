@@ -27,8 +27,8 @@
         "points": 0
       },
       {
-        "element": 151,
-        "starter": false,
+        "element": 469,
+        "starter": true,
         "position": 3,
         "subbedOn": false,
         "subbedOff": false,
@@ -43,7 +43,7 @@
         "points": 0
       },
       {
-        "element": 512,
+        "element": 40,
         "starter": true,
         "position": 5,
         "subbedOn": false,
@@ -51,7 +51,7 @@
         "points": 0
       },
       {
-        "element": 40,
+        "element": 366,
         "starter": true,
         "position": 6,
         "subbedOn": false,
@@ -75,7 +75,7 @@
         "points": 0
       },
       {
-        "element": 366,
+        "element": 512,
         "starter": true,
         "position": 9,
         "subbedOn": false,
@@ -83,7 +83,7 @@
         "points": 0
       },
       {
-        "element": 646,
+        "element": 25,
         "starter": true,
         "position": 10,
         "subbedOn": false,
@@ -91,7 +91,7 @@
         "points": 0
       },
       {
-        "element": 25,
+        "element": 646,
         "starter": true,
         "position": 11,
         "subbedOn": false,
@@ -107,8 +107,8 @@
         "points": 0
       },
       {
-        "element": 469,
-        "starter": true,
+        "element": 151,
+        "starter": false,
         "position": 13,
         "subbedOn": false,
         "subbedOff": false,
@@ -759,7 +759,7 @@
         "points": 0
       },
       {
-        "element": 640,
+        "element": 8,
         "starter": true,
         "position": 3,
         "subbedOn": false,
@@ -767,7 +767,7 @@
         "points": 0
       },
       {
-        "element": 115,
+        "element": 114,
         "starter": true,
         "position": 4,
         "subbedOn": false,
@@ -775,7 +775,7 @@
         "points": 0
       },
       {
-        "element": 8,
+        "element": 115,
         "starter": true,
         "position": 5,
         "subbedOn": false,
@@ -783,7 +783,7 @@
         "points": 0
       },
       {
-        "element": 114,
+        "element": 640,
         "starter": true,
         "position": 6,
         "subbedOn": false,
@@ -791,7 +791,7 @@
         "points": 0
       },
       {
-        "element": 124,
+        "element": 426,
         "starter": true,
         "position": 7,
         "subbedOn": false,
@@ -799,7 +799,7 @@
         "points": 0
       },
       {
-        "element": 426,
+        "element": 124,
         "starter": true,
         "position": 8,
         "subbedOn": false,
@@ -807,15 +807,15 @@
         "points": 0
       },
       {
-        "element": 286,
-        "starter": false,
+        "element": 78,
+        "starter": true,
         "position": 9,
         "subbedOn": false,
         "subbedOff": false,
         "points": 0
       },
       {
-        "element": 78,
+        "element": 552,
         "starter": true,
         "position": 10,
         "subbedOn": false,
@@ -839,8 +839,8 @@
         "points": 0
       },
       {
-        "element": 552,
-        "starter": true,
+        "element": 286,
+        "starter": false,
         "position": 13,
         "subbedOn": false,
         "subbedOff": false,
@@ -1003,7 +1003,7 @@
         "points": 0
       },
       {
-        "element": 449,
+        "element": 358,
         "starter": true,
         "position": 3,
         "subbedOn": false,
@@ -1011,7 +1011,7 @@
         "points": 0
       },
       {
-        "element": 358,
+        "element": 449,
         "starter": true,
         "position": 4,
         "subbedOn": false,
@@ -1019,15 +1019,15 @@
         "points": 0
       },
       {
-        "element": 200,
-        "starter": false,
+        "element": 88,
+        "starter": true,
         "position": 5,
         "subbedOn": false,
         "subbedOff": false,
         "points": 0
       },
       {
-        "element": 88,
+        "element": 377,
         "starter": true,
         "position": 6,
         "subbedOn": false,
@@ -1083,8 +1083,8 @@
         "points": 0
       },
       {
-        "element": 377,
-        "starter": true,
+        "element": 200,
+        "starter": false,
         "position": 13,
         "subbedOn": false,
         "subbedOff": false,
@@ -3334,5 +3334,5 @@
       "newsAdded": "2026-10-23T14:30:10.429365Z"
     }
   },
-  "generatedAt": "2026-11-09T04:45:10.951Z"
+  "generatedAt": "2026-11-09T10:45:54.495Z"
 }

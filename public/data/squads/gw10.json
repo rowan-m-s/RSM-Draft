@@ -4,8 +4,8 @@
   "isPreview": false,
   "deadlineUtc": "2026-11-06T18:30:00Z",
   "started": true,
-  "finished": false,
-  "dataChecked": false,
+  "finished": true,
+  "dataChecked": true,
   "locallyFinalised": true,
   "confirmed": true,
   "squads": {
@@ -27,12 +27,12 @@
         "points": 5
       },
       {
-        "element": 151,
+        "element": 469,
         "position": 3,
-        "starter": false,
-        "subbedOn": false,
-        "subbedOff": true,
-        "points": 0
+        "starter": true,
+        "subbedOn": true,
+        "subbedOff": false,
+        "points": 2
       },
       {
         "element": 502,
@@ -43,7 +43,7 @@
         "points": 2
       },
       {
-        "element": 512,
+        "element": 40,
         "position": 5,
         "starter": true,
         "subbedOn": false,
@@ -51,12 +51,12 @@
         "points": 2
       },
       {
-        "element": 40,
+        "element": 366,
         "position": 6,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 2
+        "points": 13
       },
       {
         "element": 14,
@@ -75,28 +75,28 @@
         "points": 2
       },
       {
-        "element": 366,
+        "element": 512,
         "position": 9,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 13
+        "points": 2
       },
       {
-        "element": 646,
+        "element": 25,
         "position": 10,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 0
+        "points": 1
       },
       {
-        "element": 25,
+        "element": 646,
         "position": 11,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 1
+        "points": 0
       },
       {
         "element": 571,
@@ -107,12 +107,12 @@
         "points": 6
       },
       {
-        "element": 469,
+        "element": 151,
         "position": 13,
-        "starter": true,
-        "subbedOn": true,
-        "subbedOff": false,
-        "points": 2
+        "starter": false,
+        "subbedOn": false,
+        "subbedOff": true,
+        "points": 0
       },
       {
         "element": 32,
@@ -759,24 +759,8 @@
         "points": 0
       },
       {
-        "element": 640,
-        "position": 3,
-        "starter": true,
-        "subbedOn": false,
-        "subbedOff": false,
-        "points": 2
-      },
-      {
-        "element": 115,
-        "position": 4,
-        "starter": true,
-        "subbedOn": false,
-        "subbedOff": false,
-        "points": 6
-      },
-      {
         "element": 8,
-        "position": 5,
+        "position": 3,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
@@ -784,14 +768,30 @@
       },
       {
         "element": 114,
-        "position": 6,
+        "position": 4,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
         "points": 5
       },
       {
-        "element": 124,
+        "element": 115,
+        "position": 5,
+        "starter": true,
+        "subbedOn": false,
+        "subbedOff": false,
+        "points": 6
+      },
+      {
+        "element": 640,
+        "position": 6,
+        "starter": true,
+        "subbedOn": false,
+        "subbedOff": false,
+        "points": 2
+      },
+      {
+        "element": 426,
         "position": 7,
         "starter": true,
         "subbedOn": false,
@@ -799,7 +799,7 @@
         "points": 10
       },
       {
-        "element": 426,
+        "element": 124,
         "position": 8,
         "starter": true,
         "subbedOn": false,
@@ -807,20 +807,20 @@
         "points": 10
       },
       {
-        "element": 286,
-        "position": 9,
-        "starter": false,
-        "subbedOn": false,
-        "subbedOff": true,
-        "points": 0
-      },
-      {
         "element": 78,
-        "position": 10,
+        "position": 9,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
         "points": 1
+      },
+      {
+        "element": 552,
+        "position": 10,
+        "starter": true,
+        "subbedOn": true,
+        "subbedOff": false,
+        "points": 4
       },
       {
         "element": 79,
@@ -839,12 +839,12 @@
         "points": 1
       },
       {
-        "element": 552,
+        "element": 286,
         "position": 13,
-        "starter": true,
-        "subbedOn": true,
-        "subbedOff": false,
-        "points": 4
+        "starter": false,
+        "subbedOn": false,
+        "subbedOff": true,
+        "points": 0
       },
       {
         "element": 542,
@@ -1003,36 +1003,36 @@
         "points": 4
       },
       {
-        "element": 449,
-        "position": 3,
-        "starter": true,
-        "subbedOn": false,
-        "subbedOff": false,
-        "points": 4
-      },
-      {
         "element": 358,
-        "position": 4,
+        "position": 3,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
         "points": 2
       },
       {
-        "element": 200,
-        "position": 5,
-        "starter": false,
+        "element": 449,
+        "position": 4,
+        "starter": true,
         "subbedOn": false,
-        "subbedOff": true,
-        "points": 0
+        "subbedOff": false,
+        "points": 4
       },
       {
         "element": 88,
-        "position": 6,
+        "position": 5,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
         "points": 1
+      },
+      {
+        "element": 377,
+        "position": 6,
+        "starter": true,
+        "subbedOn": true,
+        "subbedOff": false,
+        "points": 0
       },
       {
         "element": 428,
@@ -1083,11 +1083,11 @@
         "points": 10
       },
       {
-        "element": 377,
+        "element": 200,
         "position": 13,
-        "starter": true,
-        "subbedOn": true,
-        "subbedOff": false,
+        "starter": false,
+        "subbedOn": false,
+        "subbedOff": true,
         "points": 0
       },
       {
@@ -3334,5 +3334,5 @@
       "newsAdded": "2026-10-23T14:30:10.429365Z"
     }
   },
-  "generatedAt": "2026-11-09T04:45:10.951Z"
+  "generatedAt": "2026-11-09T10:45:54.495Z"
 }
