@@ -1516,9 +1516,9 @@
       "clubShort": "CHE",
       "clubCode": 8,
       "photoCode": 98980,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 75,
-      "news": "Head injury - 75% chance of playing",
+      "news": null,
       "newsAdded": "2026-10-17T13:30:08.724000Z"
     },
     "29": {
@@ -1552,9 +1552,9 @@
       "clubShort": "AVL",
       "clubCode": 7,
       "photoCode": 199796,
-      "status": "d",
+      "status": "i",
       "chanceOfPlaying": 0,
-      "news": "Concussion - 75% chance of playing",
+      "news": "Concussion - Expected back 28 Nov",
       "newsAdded": "2026-11-15T10:30:05.648897Z"
     },
     "40": {
@@ -1588,9 +1588,9 @@
       "clubShort": "AVL",
       "clubCode": 7,
       "photoCode": 614071,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 100,
-      "news": "Calf injury - 75% chance of playing",
+      "news": null,
       "newsAdded": "2026-11-12T13:00:05.872260Z"
     },
     "57": {
@@ -1912,9 +1912,9 @@
       "clubShort": "CHE",
       "clubCode": 8,
       "photoCode": 577016,
-      "status": "d",
-      "chanceOfPlaying": 75,
-      "news": "Unspecified injury - 75% chance of playing",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
       "newsAdded": "2026-11-08T15:00:09.230933Z"
     },
     "152": {
@@ -2380,9 +2380,9 @@
       "clubShort": "LIV",
       "clubCode": 14,
       "photoCode": 97032,
-      "status": "d",
-      "chanceOfPlaying": 75,
-      "news": "Unspecified injury - 75% chance of playing",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
       "newsAdded": "2026-11-09T18:00:09.325472Z"
     },
     "358": {
@@ -2536,10 +2536,10 @@
       "clubShort": "MCI",
       "clubCode": 43,
       "photoCode": 465351,
-      "status": "a",
+      "status": "d",
       "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-19T15:30:09.094655Z"
+      "news": "Unspecified injury - 50% chance of playing",
+      "newsAdded": "2026-11-20T15:30:06.460505Z"
     },
     "390": {
       "name": "Rúben",
@@ -2560,9 +2560,9 @@
       "clubShort": "MCI",
       "clubCode": 43,
       "photoCode": 477424,
-      "status": "d",
-      "chanceOfPlaying": 75,
-      "news": "Unspecified injury - 75% chance of playing",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
       "newsAdded": "2026-11-07T21:30:08.752464Z"
     },
     "393": {
@@ -2572,10 +2572,10 @@
       "clubShort": "MCI",
       "clubCode": 43,
       "photoCode": 578153,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
+      "status": "d",
+      "chanceOfPlaying": 50,
+      "news": "Unspecified injury - 50% chance of playing",
+      "newsAdded": "2026-11-20T15:30:06.486420Z"
     },
     "397": {
       "name": "Semenyo",
@@ -2644,9 +2644,9 @@
       "clubShort": "TOT",
       "clubCode": 6,
       "photoCode": 510281,
-      "status": "i",
+      "status": "a",
       "chanceOfPlaying": 0,
-      "news": "Muscular injury - Expected back 21 Nov",
+      "news": null,
       "newsAdded": "2026-10-18T13:00:09.266321Z"
     },
     "411": {
@@ -3028,9 +3028,9 @@
       "clubShort": "TOT",
       "clubCode": 6,
       "photoCode": 511499,
-      "status": "d",
-      "chanceOfPlaying": 75,
-      "news": "Ankle injury - 75% chance of playing",
+      "status": "i",
+      "chanceOfPlaying": 0,
+      "news": "Ankle injury - Expected back 6 Dec",
       "newsAdded": "2026-11-07T18:30:09.104275Z"
     },
     "526": {
@@ -3334,5 +3334,5 @@
       "newsAdded": "2026-10-23T14:30:10.429365Z"
     }
   },
-  "generatedAt": "2026-11-20T10:48:27.480Z"
+  "generatedAt": "2026-11-20T16:38:41.004Z"
 }
