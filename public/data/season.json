@@ -3,9 +3,9 @@
     {
       "key": "bennett",
       "rank": 1,
-      "total": 511,
-      "gw": 34,
-      "month": 85,
+      "total": 512,
+      "gw": 35,
+      "month": 86,
       "kochCount": 0,
       "motmCount": 1,
       "forfeits": 0,
@@ -20,9 +20,9 @@
     {
       "key": "wood",
       "rank": 2,
-      "total": 509,
-      "gw": 8,
-      "month": 63,
+      "total": 510,
+      "gw": 9,
+      "month": 64,
       "kochCount": 1,
       "motmCount": 1,
       "forfeits": 5,
@@ -37,9 +37,9 @@
     {
       "key": "paddy",
       "rank": 3,
-      "total": 487,
-      "gw": 24,
-      "month": 68,
+      "total": 494,
+      "gw": 31,
+      "month": 75,
       "kochCount": 1,
       "motmCount": 1,
       "forfeits": 5,
@@ -71,9 +71,9 @@
     {
       "key": "jason",
       "rank": 5,
-      "total": 435,
-      "gw": 11,
-      "month": 44,
+      "total": 438,
+      "gw": 14,
+      "month": 47,
       "kochCount": 2,
       "motmCount": 0,
       "forfeits": 10,
@@ -81,16 +81,16 @@
       "balance": -10,
       "topPerformer": {
         "playerName": "Ødegaard",
-        "points": 50,
+        "points": 52,
         "managerKey": "jason"
       }
     },
     {
       "key": "wallis",
       "rank": 6,
-      "total": 427,
-      "gw": 19,
-      "month": 79,
+      "total": 428,
+      "gw": 20,
+      "month": 80,
       "kochCount": 2,
       "motmCount": 0,
       "forfeits": 10,
@@ -98,16 +98,16 @@
       "balance": -10,
       "topPerformer": {
         "playerName": "Gabriel",
-        "points": 66,
+        "points": 67,
         "managerKey": "wallis"
       }
     },
     {
       "key": "rushy",
       "rank": 7,
-      "total": 407,
-      "gw": 23,
-      "month": 55,
+      "total": 416,
+      "gw": 32,
+      "month": 64,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -122,9 +122,9 @@
     {
       "key": "ollie",
       "rank": 8,
-      "total": 406,
-      "gw": 15,
-      "month": 55,
+      "total": 407,
+      "gw": 16,
+      "month": 56,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -132,16 +132,16 @@
       "balance": -5,
       "topPerformer": {
         "playerName": "Raya",
-        "points": 60,
+        "points": 61,
         "managerKey": "ollie"
       }
     },
     {
       "key": "dj",
       "rank": 9,
-      "total": 402,
-      "gw": 37,
-      "month": 56,
+      "total": 403,
+      "gw": 38,
+      "month": 57,
       "kochCount": 2,
       "motmCount": 0,
       "forfeits": 10,
@@ -154,28 +154,11 @@
       }
     },
     {
-      "key": "kellett",
-      "rank": 10,
-      "total": 392,
-      "gw": 11,
-      "month": 34,
-      "kochCount": 0,
-      "motmCount": 0,
-      "forfeits": 0,
-      "potsWon": 0,
-      "balance": 0,
-      "topPerformer": {
-        "playerName": "Haaland",
-        "points": 72,
-        "managerKey": "kellett"
-      }
-    },
-    {
       "key": "jls",
       "rank": 10,
-      "total": 392,
-      "gw": 20,
-      "month": 53,
+      "total": 394,
+      "gw": 22,
+      "month": 55,
       "kochCount": 3,
       "motmCount": 0,
       "forfeits": 15,
@@ -186,6 +169,23 @@
         "points": 47,
         "managerKey": "jls"
       }
+    },
+    {
+      "key": "kellett",
+      "rank": 11,
+      "total": 393,
+      "gw": 12,
+      "month": 35,
+      "kochCount": 0,
+      "motmCount": 0,
+      "forfeits": 0,
+      "potsWon": 0,
+      "balance": 0,
+      "topPerformer": {
+        "playerName": "Haaland",
+        "points": 72,
+        "managerKey": "kellett"
+      }
     }
   ],
   "latestSettledGameweek": 10,
@@ -195,7 +195,7 @@
     "keys": [
       "bennett"
     ],
-    "total": 511,
+    "total": 512,
     "since": null,
     "sinceByKey": {
       "bennett": null
@@ -205,7 +205,7 @@
     "displaced": null,
     "changed": false
   },
-  "generatedAt": "2026-11-21T17:03:15.315Z",
+  "generatedAt": "2026-11-21T18:33:13.586Z",
   "graphics": {
     "koch": {
       "rushy": 244850,
@@ -251,7 +251,7 @@
       "kellett": 223094,
       "wallis": 226597,
       "jls": 248875,
-      "paddy": 244851,
+      "paddy": 219847,
       "bennett": 204480,
       "wood": 444102,
       "rowan": 222531,
