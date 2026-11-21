@@ -1517,7 +1517,7 @@
       "clubCode": 8,
       "photoCode": 98980,
       "status": "a",
-      "chanceOfPlaying": 75,
+      "chanceOfPlaying": 100,
       "news": null,
       "newsAdded": "2026-10-17T13:30:08.724000Z"
     },
@@ -1685,7 +1685,7 @@
       "clubCode": 94,
       "photoCode": 432830,
       "status": "i",
-      "chanceOfPlaying": 100,
+      "chanceOfPlaying": 0,
       "news": "Knee injury - Expected back 2 Dec",
       "newsAdded": "2026-11-16T19:00:05.204970Z"
     },
@@ -2092,9 +2092,9 @@
       "clubShort": "CRY",
       "clubCode": 31,
       "photoCode": 247412,
-      "status": "d",
-      "chanceOfPlaying": 100,
-      "news": "Ankle injury - 75% chance of playing",
+      "status": "a",
+      "chanceOfPlaying": 75,
+      "news": null,
       "newsAdded": "2026-11-11T13:00:09.556609Z"
     },
     "223": {
@@ -2153,7 +2153,7 @@
       "clubCode": 11,
       "photoCode": 480455,
       "status": "a",
-      "chanceOfPlaying": 75,
+      "chanceOfPlaying": 100,
       "news": null,
       "newsAdded": "2026-11-05T16:57:40.272082Z"
     },
@@ -2345,7 +2345,7 @@
       "clubCode": 2,
       "photoCode": 466525,
       "status": "a",
-      "chanceOfPlaying": 50,
+      "chanceOfPlaying": 100,
       "news": null,
       "newsAdded": "2026-11-05T18:30:07.925529Z"
     },
@@ -2357,7 +2357,7 @@
       "clubCode": 2,
       "photoCode": 435997,
       "status": "a",
-      "chanceOfPlaying": 50,
+      "chanceOfPlaying": 100,
       "news": null,
       "newsAdded": "2026-10-31T20:00:10.014132Z"
     },
@@ -2381,7 +2381,7 @@
       "clubCode": 2,
       "photoCode": 177815,
       "status": "a",
-      "chanceOfPlaying": 75,
+      "chanceOfPlaying": 100,
       "news": null,
       "newsAdded": "2026-11-05T18:30:07.960444Z"
     },
@@ -2417,7 +2417,7 @@
       "clubCode": 14,
       "photoCode": 216094,
       "status": "d",
-      "chanceOfPlaying": 0,
+      "chanceOfPlaying": 75,
       "news": "Hamstring injury - 75% chance of playing",
       "newsAdded": "2026-10-17T15:30:09.979166Z"
     },
@@ -2560,9 +2560,9 @@
       "clubShort": "MCI",
       "clubCode": 43,
       "photoCode": 209036,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 75,
-      "news": "Hip injury - 75% chance of playing",
+      "news": null,
       "newsAdded": "2026-11-07T21:30:08.741792Z"
     },
     "389": {
@@ -2573,7 +2573,7 @@
       "clubCode": 43,
       "photoCode": 465351,
       "status": "d",
-      "chanceOfPlaying": 100,
+      "chanceOfPlaying": 50,
       "news": "Unspecified injury - 50% chance of playing",
       "newsAdded": "2026-11-20T15:30:06.460505Z"
     },
@@ -2608,9 +2608,9 @@
       "clubShort": "MCI",
       "clubCode": 43,
       "photoCode": 578153,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 50,
-      "news": "Unspecified injury - 50% chance of playing",
+      "news": null,
       "newsAdded": "2026-11-20T15:30:06.486420Z"
     },
     "397": {
@@ -2681,7 +2681,7 @@
       "clubCode": 6,
       "photoCode": 510281,
       "status": "a",
-      "chanceOfPlaying": 0,
+      "chanceOfPlaying": 100,
       "news": null,
       "newsAdded": "2026-10-18T13:00:09.266321Z"
     },
@@ -2860,10 +2860,10 @@
       "clubShort": "TOT",
       "clubCode": 6,
       "photoCode": 432422,
-      "status": "a",
+      "status": "d",
       "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-14T14:30:07.387706Z"
+      "news": "Illness - 75% chance of playing",
+      "newsAdded": "2026-11-21T16:30:05.729405Z"
     },
     "464": {
       "name": "Wissa",
@@ -2908,9 +2908,9 @@
       "clubShort": "NFO",
       "clubCode": 17,
       "photoCode": 215136,
-      "status": "d",
-      "chanceOfPlaying": 100,
-      "news": "Ankle injury - 75% chance of playing",
+      "status": "a",
+      "chanceOfPlaying": 75,
+      "news": null,
       "newsAdded": "2026-11-16T19:00:05.480350Z"
     },
     "471": {
@@ -2981,7 +2981,7 @@
       "clubCode": 17,
       "photoCode": 482973,
       "status": "a",
-      "chanceOfPlaying": 75,
+      "chanceOfPlaying": 100,
       "news": null,
       "newsAdded": "2026-10-09T14:30:11.491800Z"
     },
@@ -2992,10 +2992,10 @@
       "clubShort": "COV",
       "clubCode": 9,
       "photoCode": 210156,
-      "status": "a",
+      "status": "d",
       "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-13T15:00:09.305127Z"
+      "news": "Leg injury - 75% chance of playing",
+      "newsAdded": "2026-11-21T16:30:05.778377Z"
     },
     "496": {
       "name": "Kinsky",
@@ -3125,7 +3125,7 @@
       "clubCode": 56,
       "photoCode": 200834,
       "status": "a",
-      "chanceOfPlaying": 75,
+      "chanceOfPlaying": 100,
       "news": null,
       "newsAdded": "2026-10-29T18:30:09.458031Z"
     },
@@ -3161,7 +3161,7 @@
       "clubCode": 56,
       "photoCode": 441264,
       "status": "i",
-      "chanceOfPlaying": 100,
+      "chanceOfPlaying": 0,
       "news": "Muscular injury - Unknown return date",
       "newsAdded": "2026-11-10T11:30:10.818854Z"
     },
@@ -3334,5 +3334,5 @@
       "newsAdded": null
     }
   },
-  "generatedAt": "2026-11-21T10:31:59.646Z"
+  "generatedAt": "2026-11-21T17:03:15.315Z"
 }
