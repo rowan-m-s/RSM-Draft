@@ -2729,28 +2729,6 @@
       "positionRank": 86
     },
     {
-      "id": 389,
-      "name": "Matheus N.",
-      "position": "DEF",
-      "club": "Man City",
-      "clubShort": "MCI",
-      "clubCode": 43,
-      "teamId": 15,
-      "photoCode": 465351,
-      "owner": "dj",
-      "status": "d",
-      "chanceOfPlaying": 100,
-      "news": "Unspecified injury - 50% chance of playing",
-      "newsAdded": "2026-11-20T15:30:06.460505Z",
-      "points": 22,
-      "ppg": 3.1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 1,
-      "positionRank": 66
-    },
-    {
       "id": 526,
       "name": "Solanke",
       "position": "FWD",
@@ -2881,6 +2859,28 @@
       "cleanSheets": 2,
       "bonus": 0,
       "positionRank": 72
+    },
+    {
+      "id": 145,
+      "name": "Fofana",
+      "position": "DEF",
+      "club": "Chelsea",
+      "clubShort": "CHE",
+      "clubCode": 8,
+      "teamId": 6,
+      "photoCode": 444463,
+      "owner": "dj",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-07-23T12:01:23.464591Z",
+      "points": 20,
+      "ppg": 3.3,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 2,
+      "positionRank": 71
     },
     {
       "id": 28,
@@ -4997,6 +4997,28 @@
       "positionRank": 88
     },
     {
+      "id": 389,
+      "name": "Matheus N.",
+      "position": "DEF",
+      "club": "Man City",
+      "clubShort": "MCI",
+      "clubCode": 43,
+      "teamId": 15,
+      "photoCode": 465351,
+      "owner": null,
+      "status": "d",
+      "chanceOfPlaying": 100,
+      "news": "Unspecified injury - 50% chance of playing",
+      "newsAdded": "2026-11-20T15:30:06.460505Z",
+      "points": 22,
+      "ppg": 3.1,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 1,
+      "positionRank": 66
+    },
+    {
       "id": 551,
       "name": "N.Angulo",
       "position": "MID",
@@ -5237,28 +5259,6 @@
       "cleanSheets": 0,
       "bonus": 1,
       "positionRank": 95
-    },
-    {
-      "id": 145,
-      "name": "Fofana",
-      "position": "DEF",
-      "club": "Chelsea",
-      "clubShort": "CHE",
-      "clubCode": 8,
-      "teamId": 6,
-      "photoCode": 444463,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-07-23T12:01:23.464591Z",
-      "points": 20,
-      "ppg": 3.3,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 2,
-      "positionRank": 71
     },
     {
       "id": 539,
@@ -14809,5 +14809,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-21T01:54:55.338Z"
+  "generatedAt": "2026-11-21T10:31:59.646Z"
 }
