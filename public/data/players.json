@@ -375,6 +375,28 @@
       "positionRank": 3
     },
     {
+      "id": 366,
+      "name": "Wirtz",
+      "position": "MID",
+      "club": "Liverpool",
+      "clubShort": "LIV",
+      "clubCode": 14,
+      "teamId": 14,
+      "photoCode": 494595,
+      "owner": "rushy",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-25T17:00:09.888666Z",
+      "points": 57,
+      "ppg": 5.2,
+      "goals": 2,
+      "assists": 5,
+      "cleanSheets": 5,
+      "bonus": 6,
+      "positionRank": 4
+    },
+    {
       "id": 60,
       "name": "Hill",
       "position": "DEF",
@@ -460,28 +482,6 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 11,
-      "positionRank": 4
-    },
-    {
-      "id": 366,
-      "name": "Wirtz",
-      "position": "MID",
-      "club": "Liverpool",
-      "clubShort": "LIV",
-      "clubCode": 14,
-      "teamId": 14,
-      "photoCode": 494595,
-      "owner": "rushy",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-25T17:00:09.888666Z",
-      "points": 56,
-      "ppg": 5.1,
-      "goals": 2,
-      "assists": 5,
-      "cleanSheets": 5,
-      "bonus": 5,
       "positionRank": 4
     },
     {
@@ -2836,7 +2836,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 3,
-      "positionRank": 89
+      "positionRank": 88
     },
     {
       "id": 465,
@@ -2880,7 +2880,7 @@
       "assists": 2,
       "cleanSheets": 4,
       "bonus": 1,
-      "positionRank": 92
+      "positionRank": 91
     },
     {
       "id": 464,
@@ -5060,7 +5060,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 90
+      "positionRank": 89
     },
     {
       "id": 454,
@@ -5082,29 +5082,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 91
-    },
-    {
-      "id": 369,
-      "name": "Ngumoha",
-      "position": "MID",
-      "club": "Liverpool",
-      "clubShort": "LIV",
-      "clubCode": 14,
-      "teamId": 14,
-      "photoCode": 611922,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 23,
-      "ppg": 2.6,
-      "goals": 1,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 3,
-      "positionRank": 88
+      "positionRank": 90
     },
     {
       "id": 457,
@@ -5215,6 +5193,28 @@
       "cleanSheets": 2,
       "bonus": 0,
       "positionRank": 94
+    },
+    {
+      "id": 369,
+      "name": "Ngumoha",
+      "position": "MID",
+      "club": "Liverpool",
+      "clubShort": "LIV",
+      "clubCode": 14,
+      "teamId": 14,
+      "photoCode": 611922,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 22,
+      "ppg": 2.4,
+      "goals": 1,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 2,
+      "positionRank": 92
     },
     {
       "id": 93,
@@ -14853,5 +14853,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-22T18:05:52.317Z"
+  "generatedAt": "2026-11-22T18:07:00.195Z"
 }
