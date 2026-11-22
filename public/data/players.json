@@ -243,6 +243,28 @@
       "positionRank": 1
     },
     {
+      "id": 366,
+      "name": "Wirtz",
+      "position": "MID",
+      "club": "Liverpool",
+      "clubShort": "LIV",
+      "clubCode": 14,
+      "teamId": 14,
+      "photoCode": 494595,
+      "owner": "rushy",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-25T17:00:09.888666Z",
+      "points": 60,
+      "ppg": 5.5,
+      "goals": 2,
+      "assists": 6,
+      "cleanSheets": 5,
+      "bonus": 6,
+      "positionRank": 3
+    },
+    {
       "id": 571,
       "name": "Tzolakis",
       "position": "GKP",
@@ -372,28 +394,6 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 3
-    },
-    {
-      "id": 366,
-      "name": "Wirtz",
-      "position": "MID",
-      "club": "Liverpool",
-      "clubShort": "LIV",
-      "clubCode": 14,
-      "teamId": 14,
-      "photoCode": 494595,
-      "owner": "rushy",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-25T17:00:09.888666Z",
-      "points": 57,
-      "ppg": 5.2,
-      "goals": 2,
-      "assists": 5,
-      "cleanSheets": 5,
-      "bonus": 6,
       "positionRank": 4
     },
     {
@@ -14853,5 +14853,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-22T18:13:46.309Z"
+  "generatedAt": "2026-11-22T18:14:54.074Z"
 }
