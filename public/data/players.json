@@ -7021,6 +7021,28 @@
       "positionRank": 106
     },
     {
+      "id": 440,
+      "name": "Zirkzee",
+      "position": "FWD",
+      "club": "Man Utd",
+      "clubShort": "MUN",
+      "clubCode": 1,
+      "teamId": 16,
+      "photoCode": 458249,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 10,
+      "ppg": 1.4,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 35
+    },
+    {
       "id": 431,
       "name": "Amad",
       "position": "MID",
@@ -7084,7 +7106,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 35
+      "positionRank": 36
     },
     {
       "id": 613,
@@ -7327,28 +7349,6 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 37
-    },
-    {
-      "id": 440,
-      "name": "Zirkzee",
-      "position": "FWD",
-      "club": "Man Utd",
-      "clubShort": "MUN",
-      "clubCode": 1,
-      "teamId": 16,
-      "photoCode": 458249,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 9,
-      "ppg": 1.5,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 36
     },
     {
       "id": 131,
@@ -14853,5 +14853,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-22T17:33:14.309Z"
+  "generatedAt": "2026-11-22T17:35:29.270Z"
 }
