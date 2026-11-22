@@ -2773,6 +2773,28 @@
       "positionRank": 68
     },
     {
+      "id": 412,
+      "name": "Lammens",
+      "position": "GKP",
+      "club": "Man Utd",
+      "clubShort": "MUN",
+      "clubCode": 1,
+      "teamId": 16,
+      "photoCode": 465247,
+      "owner": "wallis",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 24,
+      "ppg": 2.2,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 17
+    },
+    {
       "id": 514,
       "name": "Tel",
       "position": "MID",
@@ -2815,28 +2837,6 @@
       "cleanSheets": 0,
       "bonus": 3,
       "positionRank": 89
-    },
-    {
-      "id": 412,
-      "name": "Lammens",
-      "position": "GKP",
-      "club": "Man Utd",
-      "clubShort": "MUN",
-      "clubCode": 1,
-      "teamId": 16,
-      "photoCode": 465247,
-      "owner": "wallis",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 23,
-      "ppg": 2.1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 17
     },
     {
       "id": 465,
@@ -14853,5 +14853,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-22T18:03:37.949Z"
+  "generatedAt": "2026-11-22T18:05:52.317Z"
 }
