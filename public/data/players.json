@@ -2440,7 +2440,7 @@
       "assists": 1,
       "cleanSheets": 5,
       "bonus": 0,
-      "positionRank": 69
+      "positionRank": 70
     },
     {
       "id": 499,
@@ -4620,7 +4620,29 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 0,
-      "positionRank": 71
+      "positionRank": 72
+    },
+    {
+      "id": 377,
+      "name": "Munoz",
+      "position": "MID",
+      "club": "Liverpool",
+      "clubShort": "LIV",
+      "clubCode": 14,
+      "teamId": 14,
+      "photoCode": 551499,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-20T18:30:09.999223Z",
+      "points": 28,
+      "ppg": 2.8,
+      "goals": 2,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 2,
+      "positionRank": 69
     },
     {
       "id": 536,
@@ -4664,7 +4686,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 1,
-      "positionRank": 70
+      "positionRank": 71
     },
     {
       "id": 105,
@@ -4686,7 +4708,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 2,
-      "positionRank": 72
+      "positionRank": 73
     },
     {
       "id": 313,
@@ -4708,7 +4730,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 3,
-      "positionRank": 74
+      "positionRank": 75
     },
     {
       "id": 541,
@@ -4733,28 +4755,6 @@
       "positionRank": 60
     },
     {
-      "id": 377,
-      "name": "Munoz",
-      "position": "MID",
-      "club": "Liverpool",
-      "clubShort": "LIV",
-      "clubCode": 14,
-      "teamId": 14,
-      "photoCode": 551499,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-20T18:30:09.999223Z",
-      "points": 27,
-      "ppg": 3,
-      "goals": 2,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 2,
-      "positionRank": 75
-    },
-    {
       "id": 290,
       "name": "Slater",
       "position": "MID",
@@ -4774,7 +4774,7 @@
       "assists": 1,
       "cleanSheets": 4,
       "bonus": 0,
-      "positionRank": 73
+      "positionRank": 74
     },
     {
       "id": 474,
@@ -7106,7 +7106,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 152
+      "positionRank": 153
     },
     {
       "id": 289,
@@ -7216,7 +7216,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 151
+      "positionRank": 152
     },
     {
       "id": 638,
@@ -7238,7 +7238,29 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 154
+      "positionRank": 155
+    },
+    {
+      "id": 375,
+      "name": "Nyoni",
+      "position": "MID",
+      "club": "Liverpool",
+      "clubShort": "LIV",
+      "clubCode": 14,
+      "teamId": 14,
+      "photoCode": 591386,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 9,
+      "ppg": 1,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 151
     },
     {
       "id": 318,
@@ -7326,7 +7348,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 153
+      "positionRank": 154
     },
     {
       "id": 490,
@@ -7370,7 +7392,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 156
+      "positionRank": 157
     },
     {
       "id": 634,
@@ -7436,7 +7458,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 155
+      "positionRank": 156
     },
     {
       "id": 589,
@@ -7501,28 +7523,6 @@
       "goals": 0,
       "assists": 0,
       "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 157
-    },
-    {
-      "id": 375,
-      "name": "Nyoni",
-      "position": "MID",
-      "club": "Liverpool",
-      "clubShort": "LIV",
-      "clubCode": 14,
-      "teamId": 14,
-      "photoCode": 591386,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 8,
-      "ppg": 1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 158
     },
@@ -14853,5 +14853,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-22T17:57:59.759Z"
+  "generatedAt": "2026-11-22T18:03:37.949Z"
 }
