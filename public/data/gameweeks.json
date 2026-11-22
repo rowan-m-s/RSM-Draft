@@ -1895,17 +1895,17 @@
       "confirmExpectedUtc": "2026-11-24T20:00:00.000Z",
       "revealFromUtc": "2026-11-24T00:10:00.000Z",
       "scores": {
-        "rushy": 32,
+        "rushy": 33,
         "kellett": 12,
         "wallis": 20,
-        "jls": 22,
-        "paddy": 31,
+        "jls": 30,
+        "paddy": 36,
         "bennett": 35,
         "wood": 9,
         "rowan": 20,
-        "jason": 14,
+        "jason": 17,
         "dj": 38,
-        "ollie": 16
+        "ollie": 17
       },
       "kochKeys": [],
       "charged": 0,
@@ -1968,10 +1968,10 @@
       },
       "scapegoatByManager": {
         "rushy": {
-          "playerName": "Acheampong",
-          "points": 1,
+          "playerName": "Gyökeres",
+          "points": 0,
           "managerKey": "rushy",
-          "element": 151
+          "element": 25
         },
         "kellett": {
           "playerName": "Colwill",
@@ -1986,16 +1986,16 @@
           "element": 4
         },
         "jls": {
-          "playerName": "Bruno G.",
+          "playerName": "Marmoush",
           "points": 1,
           "managerKey": "jls",
-          "element": 452
+          "element": 401
         },
         "paddy": {
-          "playerName": "Barnes",
+          "playerName": "Cherki",
           "points": 1,
           "managerKey": "paddy",
-          "element": 453
+          "element": 399
         },
         "bennett": {
           "playerName": "Mitchell",
@@ -2724,5 +2724,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-11-21T18:33:13.586Z"
+  "generatedAt": "2026-11-22T00:50:56.673Z"
 }
