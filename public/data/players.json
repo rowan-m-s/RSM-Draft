@@ -14,12 +14,34 @@
       "chanceOfPlaying": null,
       "news": null,
       "newsAdded": null,
-      "points": 75,
-      "ppg": 7.5,
+      "points": 76,
+      "ppg": 6.9,
       "goals": 2,
       "assists": 4,
       "cleanSheets": 7,
       "bonus": 9,
+      "positionRank": 1
+    },
+    {
+      "id": 124,
+      "name": "Groß",
+      "position": "MID",
+      "club": "Brighton",
+      "clubShort": "BHA",
+      "clubCode": 36,
+      "teamId": 5,
+      "photoCode": 60307,
+      "owner": "wood",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 74,
+      "ppg": 6.7,
+      "goals": 4,
+      "assists": 6,
+      "cleanSheets": 7,
+      "bonus": 11,
       "positionRank": 1
     },
     {
@@ -45,28 +67,6 @@
       "positionRank": 1
     },
     {
-      "id": 124,
-      "name": "Groß",
-      "position": "MID",
-      "club": "Brighton",
-      "clubShort": "BHA",
-      "clubCode": 36,
-      "teamId": 5,
-      "photoCode": 60307,
-      "owner": "wood",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 70,
-      "ppg": 7,
-      "goals": 4,
-      "assists": 6,
-      "cleanSheets": 7,
-      "bonus": 11,
-      "positionRank": 1
-    },
-    {
       "id": 504,
       "name": "Vuskovic",
       "position": "DEF",
@@ -81,7 +81,7 @@
       "news": null,
       "newsAdded": null,
       "points": 70,
-      "ppg": 7,
+      "ppg": 6.4,
       "goals": 1,
       "assists": 2,
       "cleanSheets": 7,
@@ -243,6 +243,50 @@
       "positionRank": 1
     },
     {
+      "id": 571,
+      "name": "Tzolakis",
+      "position": "GKP",
+      "club": "Hull City",
+      "clubShort": "HUL",
+      "clubCode": 88,
+      "teamId": 11,
+      "photoCode": 473284,
+      "owner": "rushy",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 59,
+      "ppg": 5.4,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 4,
+      "bonus": 9,
+      "positionRank": 3
+    },
+    {
+      "id": 109,
+      "name": "Verbruggen",
+      "position": "GKP",
+      "club": "Brighton",
+      "clubShort": "BHA",
+      "clubCode": 36,
+      "teamId": 5,
+      "photoCode": 489639,
+      "owner": "jls",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 59,
+      "ppg": 5.4,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 7,
+      "bonus": 5,
+      "positionRank": 2
+    },
+    {
       "id": 8,
       "name": "Calafiori",
       "position": "DEF",
@@ -331,28 +375,6 @@
       "positionRank": 3
     },
     {
-      "id": 109,
-      "name": "Verbruggen",
-      "position": "GKP",
-      "club": "Brighton",
-      "clubShort": "BHA",
-      "clubCode": 36,
-      "teamId": 5,
-      "photoCode": 489639,
-      "owner": "jls",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 57,
-      "ppg": 5.7,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 7,
-      "bonus": 5,
-      "positionRank": 2
-    },
-    {
       "id": 60,
       "name": "Hill",
       "position": "DEF",
@@ -438,7 +460,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 11,
-      "positionRank": 3
+      "positionRank": 4
     },
     {
       "id": 249,
@@ -463,6 +485,28 @@
       "positionRank": 5
     },
     {
+      "id": 286,
+      "name": "Belloumi",
+      "position": "MID",
+      "club": "Hull City",
+      "clubShort": "HUL",
+      "clubCode": 88,
+      "teamId": 11,
+      "photoCode": 540324,
+      "owner": "wood",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-11-10T19:00:09.431074Z",
+      "points": 55,
+      "ppg": 5.5,
+      "goals": 3,
+      "assists": 4,
+      "cleanSheets": 4,
+      "bonus": 3,
+      "positionRank": 5
+    },
+    {
       "id": 399,
       "name": "Cherki",
       "position": "MID",
@@ -482,7 +526,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 9,
-      "positionRank": 5
+      "positionRank": 6
     },
     {
       "id": 332,
@@ -529,6 +573,28 @@
       "positionRank": 4
     },
     {
+      "id": 127,
+      "name": "Gomez",
+      "position": "MID",
+      "club": "Brighton",
+      "clubShort": "BHA",
+      "clubCode": 36,
+      "teamId": 5,
+      "photoCode": 514254,
+      "owner": "wallis",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 54,
+      "ppg": 4.9,
+      "goals": 2,
+      "assists": 3,
+      "cleanSheets": 8,
+      "bonus": 1,
+      "positionRank": 7
+    },
+    {
       "id": 13,
       "name": "Rice",
       "position": "MID",
@@ -548,7 +614,7 @@
       "assists": 5,
       "cleanSheets": 7,
       "bonus": 7,
-      "positionRank": 6
+      "positionRank": 8
     },
     {
       "id": 453,
@@ -570,29 +636,51 @@
       "assists": 3,
       "cleanSheets": 2,
       "bonus": 4,
-      "positionRank": 8
+      "positionRank": 9
     },
     {
-      "id": 127,
-      "name": "Gomez",
-      "position": "MID",
+      "id": 114,
+      "name": "Boscagli",
+      "position": "DEF",
       "club": "Brighton",
       "clubShort": "BHA",
       "clubCode": 36,
       "teamId": 5,
-      "photoCode": 514254,
-      "owner": "wallis",
+      "photoCode": 204120,
+      "owner": "wood",
       "status": "a",
       "chanceOfPlaying": null,
       "news": null,
       "newsAdded": null,
       "points": 51,
-      "ppg": 5.1,
-      "goals": 2,
+      "ppg": 4.6,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 8,
+      "bonus": 2,
+      "positionRank": 12
+    },
+    {
+      "id": 295,
+      "name": "McBurnie",
+      "position": "FWD",
+      "club": "Hull City",
+      "clubShort": "HUL",
+      "clubCode": 88,
+      "teamId": 11,
+      "photoCode": 169432,
+      "owner": "rowan",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 51,
+      "ppg": 4.6,
+      "goals": 4,
       "assists": 3,
-      "cleanSheets": 7,
-      "bonus": 1,
-      "positionRank": 7
+      "cleanSheets": 4,
+      "bonus": 8,
+      "positionRank": 6
     },
     {
       "id": 236,
@@ -614,7 +702,29 @@
       "assists": 1,
       "cleanSheets": 4,
       "bonus": 9,
-      "positionRank": 9
+      "positionRank": 10
+    },
+    {
+      "id": 129,
+      "name": "Ayari",
+      "position": "MID",
+      "club": "Brighton",
+      "clubShort": "BHA",
+      "clubCode": 36,
+      "teamId": 5,
+      "photoCode": 509416,
+      "owner": "wallis",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-30T18:00:07.935334Z",
+      "points": 49,
+      "ppg": 4.9,
+      "goals": 3,
+      "assists": 1,
+      "cleanSheets": 8,
+      "bonus": 4,
+      "positionRank": 11
     },
     {
       "id": 542,
@@ -636,7 +746,7 @@
       "assists": 1,
       "cleanSheets": 4,
       "bonus": 5,
-      "positionRank": 12
+      "positionRank": 14
     },
     {
       "id": 154,
@@ -658,7 +768,7 @@
       "assists": 4,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 10
+      "positionRank": 12
     },
     {
       "id": 183,
@@ -680,50 +790,6 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 4,
-      "positionRank": 11
-    },
-    {
-      "id": 571,
-      "name": "Tzolakis",
-      "position": "GKP",
-      "club": "Hull City",
-      "clubShort": "HUL",
-      "clubCode": 88,
-      "teamId": 11,
-      "photoCode": 473284,
-      "owner": "rushy",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 49,
-      "ppg": 4.9,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 3,
-      "bonus": 7,
-      "positionRank": 4
-    },
-    {
-      "id": 286,
-      "name": "Belloumi",
-      "position": "MID",
-      "club": "Hull City",
-      "clubShort": "HUL",
-      "clubCode": 88,
-      "teamId": 11,
-      "photoCode": 540324,
-      "owner": "wood",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-11-10T19:00:09.431074Z",
-      "points": 48,
-      "ppg": 5.3,
-      "goals": 3,
-      "assists": 3,
-      "cleanSheets": 3,
-      "bonus": 2,
       "positionRank": 13
     },
     {
@@ -746,7 +812,29 @@
       "assists": 2,
       "cleanSheets": 5,
       "bonus": 7,
-      "positionRank": 6
+      "positionRank": 8
+    },
+    {
+      "id": 138,
+      "name": "Kostoulas",
+      "position": "FWD",
+      "club": "Brighton",
+      "clubShort": "BHA",
+      "clubCode": 36,
+      "teamId": 5,
+      "photoCode": 647850,
+      "owner": "jason",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 48,
+      "ppg": 4.4,
+      "goals": 3,
+      "assists": 4,
+      "cleanSheets": 5,
+      "bonus": 6,
+      "positionRank": 7
     },
     {
       "id": 555,
@@ -768,7 +856,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 3,
-      "positionRank": 12
+      "positionRank": 14
     },
     {
       "id": 449,
@@ -790,7 +878,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 6,
-      "positionRank": 13
+      "positionRank": 15
     },
     {
       "id": 165,
@@ -812,7 +900,7 @@
       "assists": 3,
       "cleanSheets": 1,
       "bonus": 9,
-      "positionRank": 8
+      "positionRank": 9
     },
     {
       "id": 496,
@@ -835,50 +923,6 @@
       "cleanSheets": 5,
       "bonus": 2,
       "positionRank": 5
-    },
-    {
-      "id": 138,
-      "name": "Kostoulas",
-      "position": "FWD",
-      "club": "Brighton",
-      "clubShort": "BHA",
-      "clubCode": 36,
-      "teamId": 5,
-      "photoCode": 647850,
-      "owner": "jason",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 47,
-      "ppg": 4.7,
-      "goals": 3,
-      "assists": 4,
-      "cleanSheets": 5,
-      "bonus": 6,
-      "positionRank": 7
-    },
-    {
-      "id": 129,
-      "name": "Ayari",
-      "position": "MID",
-      "club": "Brighton",
-      "clubShort": "BHA",
-      "clubCode": 36,
-      "teamId": 5,
-      "photoCode": 509416,
-      "owner": "wallis",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-30T18:00:07.935334Z",
-      "points": 46,
-      "ppg": 5.1,
-      "goals": 3,
-      "assists": 1,
-      "cleanSheets": 7,
-      "bonus": 4,
-      "positionRank": 15
     },
     {
       "id": 427,
@@ -922,7 +966,7 @@
       "assists": 2,
       "cleanSheets": 3,
       "bonus": 6,
-      "positionRank": 14
+      "positionRank": 15
     },
     {
       "id": 366,
@@ -1010,7 +1054,7 @@
       "assists": 4,
       "cleanSheets": 2,
       "bonus": 6,
-      "positionRank": 14
+      "positionRank": 16
     },
     {
       "id": 45,
@@ -1054,29 +1098,7 @@
       "assists": 0,
       "cleanSheets": 5,
       "bonus": 3,
-      "positionRank": 18
-    },
-    {
-      "id": 114,
-      "name": "Boscagli",
-      "position": "DEF",
-      "club": "Brighton",
-      "clubShort": "BHA",
-      "clubCode": 36,
-      "teamId": 5,
-      "photoCode": 204120,
-      "owner": "wood",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 44,
-      "ppg": 4.4,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 7,
-      "bonus": 1,
-      "positionRank": 15
+      "positionRank": 19
     },
     {
       "id": 258,
@@ -1098,7 +1120,7 @@
       "assists": 2,
       "cleanSheets": 5,
       "bonus": 4,
-      "positionRank": 16
+      "positionRank": 17
     },
     {
       "id": 362,
@@ -1120,7 +1142,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 3,
-      "positionRank": 17
+      "positionRank": 18
     },
     {
       "id": 529,
@@ -1164,7 +1186,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 3,
-      "positionRank": 19
+      "positionRank": 20
     },
     {
       "id": 356,
@@ -1186,7 +1208,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 1,
-      "positionRank": 20
+      "positionRank": 21
     },
     {
       "id": 350,
@@ -1230,7 +1252,29 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 1,
-      "positionRank": 22
+      "positionRank": 23
+    },
+    {
+      "id": 116,
+      "name": "Dunk",
+      "position": "DEF",
+      "club": "Brighton",
+      "clubShort": "BHA",
+      "clubCode": 36,
+      "teamId": 5,
+      "photoCode": 83299,
+      "owner": "kellett",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-22T09:30:09.629652Z",
+      "points": 42,
+      "ppg": 4.2,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 5,
+      "bonus": 1,
+      "positionRank": 24
     },
     {
       "id": 233,
@@ -1252,7 +1296,7 @@
       "assists": 1,
       "cleanSheets": 4,
       "bonus": 4,
-      "positionRank": 23
+      "positionRank": 25
     },
     {
       "id": 156,
@@ -1296,29 +1340,7 @@
       "assists": 3,
       "cleanSheets": 4,
       "bonus": 4,
-      "positionRank": 21
-    },
-    {
-      "id": 116,
-      "name": "Dunk",
-      "position": "DEF",
-      "club": "Brighton",
-      "clubShort": "BHA",
-      "clubCode": 36,
-      "teamId": 5,
-      "photoCode": 83299,
-      "owner": "kellett",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-22T09:30:09.629652Z",
-      "points": 41,
-      "ppg": 4.6,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 5,
-      "bonus": 1,
-      "positionRank": 25
+      "positionRank": 22
     },
     {
       "id": 480,
@@ -1472,7 +1494,7 @@
       "assists": 1,
       "cleanSheets": 6,
       "bonus": 5,
-      "positionRank": 9
+      "positionRank": 10
     },
     {
       "id": 70,
@@ -1626,29 +1648,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 1,
-      "positionRank": 29
-    },
-    {
-      "id": 295,
-      "name": "McBurnie",
-      "position": "FWD",
-      "club": "Hull City",
-      "clubShort": "HUL",
-      "clubCode": 88,
-      "teamId": 11,
-      "photoCode": 169432,
-      "owner": "rowan",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 38,
-      "ppg": 3.8,
-      "goals": 2,
-      "assists": 3,
-      "cleanSheets": 3,
-      "bonus": 5,
-      "positionRank": 10
+      "positionRank": 30
     },
     {
       "id": 98,
@@ -1868,7 +1868,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 34
+      "positionRank": 35
     },
     {
       "id": 88,
@@ -1890,7 +1890,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 1,
-      "positionRank": 36
+      "positionRank": 37
     },
     {
       "id": 204,
@@ -1912,7 +1912,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 37
+      "positionRank": 38
     },
     {
       "id": 335,
@@ -2088,7 +2088,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 3,
-      "positionRank": 44
+      "positionRank": 45
     },
     {
       "id": 452,
@@ -2198,7 +2198,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 46
+      "positionRank": 47
     },
     {
       "id": 390,
@@ -2220,7 +2220,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 47
+      "positionRank": 48
     },
     {
       "id": 69,
@@ -2286,7 +2286,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 51
+      "positionRank": 52
     },
     {
       "id": 113,
@@ -2303,12 +2303,12 @@
       "news": null,
       "newsAdded": "2026-10-25T17:30:09.883815Z",
       "points": 29,
-      "ppg": 4.1,
+      "ppg": 3.6,
       "goals": 0,
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 1,
-      "positionRank": 50
+      "positionRank": 51
     },
     {
       "id": 331,
@@ -2330,7 +2330,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 52
+      "positionRank": 53
     },
     {
       "id": 526,
@@ -2418,7 +2418,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 4,
-      "positionRank": 55
+      "positionRank": 56
     },
     {
       "id": 110,
@@ -2462,7 +2462,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 57
+      "positionRank": 58
     },
     {
       "id": 400,
@@ -2484,7 +2484,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 4,
-      "positionRank": 74
+      "positionRank": 75
     },
     {
       "id": 194,
@@ -2509,6 +2509,28 @@
       "positionRank": 17
     },
     {
+      "id": 123,
+      "name": "Hinshelwood",
+      "position": "MID",
+      "club": "Brighton",
+      "clubShort": "BHA",
+      "clubCode": 36,
+      "teamId": 5,
+      "photoCode": 532529,
+      "owner": "kellett",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-27T19:30:07.780933Z",
+      "points": 26,
+      "ppg": 4.3,
+      "goals": 3,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 3,
+      "positionRank": 77
+    },
+    {
       "id": 37,
       "name": "Lindelöf",
       "position": "DEF",
@@ -2528,7 +2550,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 59
+      "positionRank": 60
     },
     {
       "id": 151,
@@ -2550,7 +2572,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 64
+      "positionRank": 65
     },
     {
       "id": 628,
@@ -2572,7 +2594,7 @@
       "assists": 3,
       "cleanSheets": 4,
       "bonus": 0,
-      "positionRank": 81
+      "positionRank": 82
     },
     {
       "id": 239,
@@ -2594,7 +2616,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 78
+      "positionRank": 79
     },
     {
       "id": 569,
@@ -2617,28 +2639,6 @@
       "cleanSheets": 6,
       "bonus": 0,
       "positionRank": 19
-    },
-    {
-      "id": 123,
-      "name": "Hinshelwood",
-      "position": "MID",
-      "club": "Brighton",
-      "clubShort": "BHA",
-      "clubCode": 36,
-      "teamId": 5,
-      "photoCode": 532529,
-      "owner": "kellett",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-27T19:30:07.780933Z",
-      "points": 25,
-      "ppg": 5,
-      "goals": 3,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 3,
-      "positionRank": 77
     },
     {
       "id": 358,
@@ -2748,7 +2748,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 82
+      "positionRank": 83
     },
     {
       "id": 200,
@@ -2792,7 +2792,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 3,
-      "positionRank": 86
+      "positionRank": 87
     },
     {
       "id": 398,
@@ -3078,7 +3078,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 102
+      "positionRank": 103
     },
     {
       "id": 32,
@@ -3100,7 +3100,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 81
+      "positionRank": 80
     },
     {
       "id": 36,
@@ -3122,7 +3122,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 83
+      "positionRank": 82
     },
     {
       "id": 201,
@@ -3188,7 +3188,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 84
+      "positionRank": 83
     },
     {
       "id": 646,
@@ -3209,6 +3209,28 @@
       "goals": 2,
       "assists": 0,
       "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 28
+    },
+    {
+      "id": 125,
+      "name": "Georginio",
+      "position": "FWD",
+      "club": "Brighton",
+      "clubShort": "BHA",
+      "clubCode": 36,
+      "teamId": 5,
+      "photoCode": 463067,
+      "owner": "jason",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-26T16:00:07.608056Z",
+      "points": 16,
+      "ppg": 2,
+      "goals": 0,
+      "assists": 2,
+      "cleanSheets": 2,
       "bonus": 0,
       "positionRank": 27
     },
@@ -3232,7 +3254,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 113
+      "positionRank": 114
     },
     {
       "id": 5,
@@ -3277,28 +3299,6 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 19
-    },
-    {
-      "id": 125,
-      "name": "Georginio",
-      "position": "FWD",
-      "club": "Brighton",
-      "clubShort": "BHA",
-      "clubCode": 36,
-      "teamId": 5,
-      "photoCode": 463067,
-      "owner": "jason",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-26T16:00:07.608056Z",
-      "points": 14,
-      "ppg": 2,
-      "goals": 0,
-      "assists": 2,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 28
     },
     {
       "id": 199,
@@ -3540,7 +3540,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 161
+      "positionRank": 163
     },
     {
       "id": 223,
@@ -3584,7 +3584,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 205
+      "positionRank": 206
     },
     {
       "id": 380,
@@ -3633,6 +3633,28 @@
   ],
   "freeAgents": [
     {
+      "id": 279,
+      "name": "Ajayi",
+      "position": "DEF",
+      "club": "Hull City",
+      "clubShort": "HUL",
+      "clubCode": 88,
+      "teamId": 11,
+      "photoCode": 146426,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-22T17:30:07.668197Z",
+      "points": 48,
+      "ppg": 4.4,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 5,
+      "bonus": 2,
+      "positionRank": 13
+    },
+    {
       "id": 336,
       "name": "Okafor",
       "position": "MID",
@@ -3653,28 +3675,6 @@
       "cleanSheets": 3,
       "bonus": 4,
       "positionRank": 21
-    },
-    {
-      "id": 279,
-      "name": "Ajayi",
-      "position": "DEF",
-      "club": "Hull City",
-      "clubShort": "HUL",
-      "clubCode": 88,
-      "teamId": 11,
-      "photoCode": 146426,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-22T17:30:07.668197Z",
-      "points": 42,
-      "ppg": 4.2,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 4,
-      "bonus": 2,
-      "positionRank": 24
     },
     {
       "id": 264,
@@ -3787,6 +3787,28 @@
       "positionRank": 32
     },
     {
+      "id": 586,
+      "name": "Mendy",
+      "position": "DEF",
+      "club": "Hull City",
+      "clubShort": "HUL",
+      "clubCode": 88,
+      "teamId": 11,
+      "photoCode": 606930,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-11-16T19:00:05.574151Z",
+      "points": 39,
+      "ppg": 4.9,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 3,
+      "bonus": 1,
+      "positionRank": 29
+    },
+    {
       "id": 338,
       "name": "Ampadu",
       "position": "MID",
@@ -3850,7 +3872,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 1,
-      "positionRank": 30
+      "positionRank": 31
     },
     {
       "id": 533,
@@ -3872,7 +3894,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 2,
-      "positionRank": 31
+      "positionRank": 32
     },
     {
       "id": 640,
@@ -3894,7 +3916,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 32
+      "positionRank": 33
     },
     {
       "id": 472,
@@ -3916,7 +3938,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 35
+      "positionRank": 36
     },
     {
       "id": 173,
@@ -3938,7 +3960,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 33
+      "positionRank": 34
     },
     {
       "id": 460,
@@ -3961,28 +3983,6 @@
       "cleanSheets": 2,
       "bonus": 3,
       "positionRank": 41
-    },
-    {
-      "id": 586,
-      "name": "Mendy",
-      "position": "DEF",
-      "club": "Hull City",
-      "clubShort": "HUL",
-      "clubCode": 88,
-      "teamId": 11,
-      "photoCode": 606930,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-11-16T19:00:05.574151Z",
-      "points": 34,
-      "ppg": 4.9,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 1,
-      "positionRank": 38
     },
     {
       "id": 455,
@@ -4051,6 +4051,28 @@
       "positionRank": 45
     },
     {
+      "id": 282,
+      "name": "Giles",
+      "position": "DEF",
+      "club": "Hull City",
+      "clubShort": "HUL",
+      "clubCode": 88,
+      "teamId": 11,
+      "photoCode": 232351,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 32,
+      "ppg": 2.9,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 3,
+      "bonus": 2,
+      "positionRank": 40
+    },
+    {
       "id": 534,
       "name": "Hume",
       "position": "DEF",
@@ -4070,7 +4092,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 0,
-      "positionRank": 40
+      "positionRank": 41
     },
     {
       "id": 556,
@@ -4117,26 +4139,26 @@
       "positionRank": 47
     },
     {
-      "id": 282,
-      "name": "Giles",
+      "id": 280,
+      "name": "Coyle",
       "position": "DEF",
       "club": "Hull City",
       "clubShort": "HUL",
       "clubCode": 88,
       "teamId": 11,
-      "photoCode": 232351,
+      "photoCode": 193278,
       "owner": null,
       "status": "a",
-      "chanceOfPlaying": null,
+      "chanceOfPlaying": 100,
       "news": null,
-      "newsAdded": null,
+      "newsAdded": "2026-08-29T16:30:08.151841Z",
       "points": 31,
-      "ppg": 3.1,
+      "ppg": 2.8,
       "goals": 0,
-      "assists": 1,
-      "cleanSheets": 3,
-      "bonus": 2,
-      "positionRank": 42
+      "assists": 0,
+      "cleanSheets": 4,
+      "bonus": 0,
+      "positionRank": 43
     },
     {
       "id": 486,
@@ -4180,7 +4202,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 3,
-      "positionRank": 43
+      "positionRank": 44
     },
     {
       "id": 91,
@@ -4202,7 +4224,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 41
+      "positionRank": 42
     },
     {
       "id": 43,
@@ -4246,7 +4268,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 45
+      "positionRank": 46
     },
     {
       "id": 599,
@@ -4268,7 +4290,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 48
+      "positionRank": 49
     },
     {
       "id": 242,
@@ -4444,7 +4466,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 4,
-      "positionRank": 54
+      "positionRank": 55
     },
     {
       "id": 101,
@@ -4488,7 +4510,7 @@
       "assists": 3,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 53
+      "positionRank": 54
     },
     {
       "id": 64,
@@ -4510,7 +4532,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 0,
-      "positionRank": 49
+      "positionRank": 50
     },
     {
       "id": 345,
@@ -4598,7 +4620,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 0,
-      "positionRank": 56
+      "positionRank": 57
     },
     {
       "id": 545,
@@ -4664,7 +4686,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 3,
-      "positionRank": 71
+      "positionRank": 72
     },
     {
       "id": 372,
@@ -4686,7 +4708,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 1,
-      "positionRank": 72
+      "positionRank": 73
     },
     {
       "id": 541,
@@ -4708,7 +4730,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 58
+      "positionRank": 59
     },
     {
       "id": 377,
@@ -4730,7 +4752,29 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 73
+      "positionRank": 74
+    },
+    {
+      "id": 290,
+      "name": "Slater",
+      "position": "MID",
+      "club": "Hull City",
+      "clubShort": "HUL",
+      "clubCode": 88,
+      "teamId": 11,
+      "photoCode": 243413,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 27,
+      "ppg": 2.5,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 4,
+      "bonus": 0,
+      "positionRank": 71
     },
     {
       "id": 474,
@@ -4752,7 +4796,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 60
+      "positionRank": 61
     },
     {
       "id": 637,
@@ -4774,7 +4818,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 2,
-      "positionRank": 62
+      "positionRank": 63
     },
     {
       "id": 95,
@@ -4796,7 +4840,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 75
+      "positionRank": 76
     },
     {
       "id": 539,
@@ -4818,7 +4862,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 1,
-      "positionRank": 61
+      "positionRank": 62
     },
     {
       "id": 75,
@@ -4840,29 +4884,7 @@
       "assists": 1,
       "cleanSheets": 4,
       "bonus": 1,
-      "positionRank": 76
-    },
-    {
-      "id": 280,
-      "name": "Coyle",
-      "position": "DEF",
-      "club": "Hull City",
-      "clubShort": "HUL",
-      "clubCode": 88,
-      "teamId": 11,
-      "photoCode": 193278,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-29T16:30:08.151841Z",
-      "points": 25,
-      "ppg": 2.5,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 3,
-      "bonus": 0,
-      "positionRank": 65
+      "positionRank": 78
     },
     {
       "id": 522,
@@ -4884,7 +4906,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 79
+      "positionRank": 80
     },
     {
       "id": 148,
@@ -4906,7 +4928,7 @@
       "assists": 3,
       "cleanSheets": 2,
       "bonus": 2,
-      "positionRank": 63
+      "positionRank": 64
     },
     {
       "id": 608,
@@ -4928,7 +4950,29 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 80
+      "positionRank": 81
+    },
+    {
+      "id": 240,
+      "name": "Iroegbunam",
+      "position": "MID",
+      "club": "Hull City",
+      "clubShort": "HUL",
+      "clubCode": 88,
+      "teamId": 11,
+      "photoCode": 490094,
+      "owner": null,
+      "status": "d",
+      "chanceOfPlaying": 100,
+      "news": "Hamstring injury - 75% chance of playing",
+      "newsAdded": "2026-11-22T15:00:05.901794Z",
+      "points": 24,
+      "ppg": 2.7,
+      "goals": 1,
+      "assists": 1,
+      "cleanSheets": 0,
+      "bonus": 3,
+      "positionRank": 85
     },
     {
       "id": 588,
@@ -4972,7 +5016,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 83
+      "positionRank": 84
     },
     {
       "id": 405,
@@ -4994,29 +5038,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 2,
-      "positionRank": 85
-    },
-    {
-      "id": 290,
-      "name": "Slater",
-      "position": "MID",
-      "club": "Hull City",
-      "clubShort": "HUL",
-      "clubCode": 88,
-      "teamId": 11,
-      "photoCode": 243413,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 24,
-      "ppg": 2.4,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 3,
-      "bonus": 0,
-      "positionRank": 84
+      "positionRank": 86
     },
     {
       "id": 454,
@@ -5039,28 +5061,6 @@
       "cleanSheets": 1,
       "bonus": 2,
       "positionRank": 89
-    },
-    {
-      "id": 240,
-      "name": "Iroegbunam",
-      "position": "MID",
-      "club": "Hull City",
-      "clubShort": "HUL",
-      "clubCode": 88,
-      "teamId": 11,
-      "photoCode": 490094,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-15T20:00:06.878792Z",
-      "points": 23,
-      "ppg": 2.9,
-      "goals": 1,
-      "assists": 1,
-      "cleanSheets": 0,
-      "bonus": 3,
-      "positionRank": 87
     },
     {
       "id": 457,
@@ -5195,6 +5195,28 @@
       "positionRank": 70
     },
     {
+      "id": 632,
+      "name": "Andrés",
+      "position": "MID",
+      "club": "Brighton",
+      "clubShort": "BHA",
+      "clubCode": 36,
+      "teamId": 5,
+      "photoCode": 592984,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-11-14T15:00:05.235535Z",
+      "points": 21,
+      "ppg": 2.6,
+      "goals": 1,
+      "assists": 1,
+      "cleanSheets": 4,
+      "bonus": 0,
+      "positionRank": 98
+    },
+    {
       "id": 327,
       "name": "Bijol",
       "position": "DEF",
@@ -5248,9 +5270,9 @@
       "teamId": 16,
       "photoCode": 596777,
       "owner": null,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 75,
-      "news": "Hamstring injury - 75% chance of playing",
+      "news": null,
       "newsAdded": "2026-11-14T10:00:05.646862Z",
       "points": 21,
       "ppg": 3.5,
@@ -5327,6 +5349,28 @@
       "positionRank": 94
     },
     {
+      "id": 577,
+      "name": "Stroud",
+      "position": "MID",
+      "club": "Hull City",
+      "clubShort": "HUL",
+      "clubCode": 88,
+      "teamId": 11,
+      "photoCode": 608227,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 21,
+      "ppg": 2.3,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 3,
+      "bonus": 0,
+      "positionRank": 97
+    },
+    {
       "id": 175,
       "name": "van Ewijk",
       "position": "DEF",
@@ -5371,28 +5415,6 @@
       "positionRank": 77
     },
     {
-      "id": 632,
-      "name": "Andrés",
-      "position": "MID",
-      "club": "Brighton",
-      "clubShort": "BHA",
-      "clubCode": 36,
-      "teamId": 5,
-      "photoCode": 592984,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-11-14T15:00:05.235535Z",
-      "points": 20,
-      "ppg": 2.9,
-      "goals": 1,
-      "assists": 1,
-      "cleanSheets": 4,
-      "bonus": 0,
-      "positionRank": 100
-    },
-    {
       "id": 71,
       "name": "Cook",
       "position": "MID",
@@ -5412,7 +5434,7 @@
       "assists": 1,
       "cleanSheets": 4,
       "bonus": 0,
-      "positionRank": 97
+      "positionRank": 99
     },
     {
       "id": 184,
@@ -5434,7 +5456,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 98
+      "positionRank": 100
     },
     {
       "id": 570,
@@ -5456,7 +5478,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 99
+      "positionRank": 101
     },
     {
       "id": 635,
@@ -5478,7 +5500,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 101
+      "positionRank": 102
     },
     {
       "id": 337,
@@ -5500,29 +5522,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 105
-    },
-    {
-      "id": 119,
-      "name": "Costinha",
-      "position": "DEF",
-      "club": "Brighton",
-      "clubShort": "BHA",
-      "clubCode": 36,
-      "teamId": 5,
-      "photoCode": 451490,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 19,
-      "ppg": 2.1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 0,
-      "positionRank": 80
+      "positionRank": 106
     },
     {
       "id": 96,
@@ -5544,7 +5544,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 103
+      "positionRank": 104
     },
     {
       "id": 267,
@@ -5566,7 +5566,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 104
+      "positionRank": 105
     },
     {
       "id": 574,
@@ -5588,7 +5588,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 106
+      "positionRank": 107
     },
     {
       "id": 315,
@@ -5610,7 +5610,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 107
+      "positionRank": 108
     },
     {
       "id": 519,
@@ -5632,7 +5632,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 109
+      "positionRank": 110
     },
     {
       "id": 459,
@@ -5654,7 +5654,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 108
+      "positionRank": 109
     },
     {
       "id": 33,
@@ -5676,7 +5676,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 82
+      "positionRank": 81
     },
     {
       "id": 224,
@@ -5701,6 +5701,28 @@
       "positionRank": 26
     },
     {
+      "id": 119,
+      "name": "Costinha",
+      "position": "DEF",
+      "club": "Brighton",
+      "clubShort": "BHA",
+      "clubCode": 36,
+      "teamId": 5,
+      "photoCode": 451490,
+      "owner": null,
+      "status": "s",
+      "chanceOfPlaying": 0,
+      "news": "Suspended until 2 Dec",
+      "newsAdded": "2026-11-22T16:00:06.170652Z",
+      "points": 17,
+      "ppg": 1.7,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 0,
+      "positionRank": 84
+    },
+    {
       "id": 46,
       "name": "Barkley",
       "position": "MID",
@@ -5720,7 +5742,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 110
+      "positionRank": 111
     },
     {
       "id": 203,
@@ -5776,9 +5798,9 @@
       "teamId": 16,
       "photoCode": 95658,
       "owner": null,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 75,
-      "news": "Back injury - 75% chance of playing",
+      "news": null,
       "newsAdded": "2026-11-11T01:00:09.173434Z",
       "points": 16,
       "ppg": 1.6,
@@ -5787,28 +5809,6 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 89
-    },
-    {
-      "id": 577,
-      "name": "Stroud",
-      "position": "MID",
-      "club": "Hull City",
-      "clubShort": "HUL",
-      "clubCode": 88,
-      "teamId": 11,
-      "photoCode": 608227,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 16,
-      "ppg": 2,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 2,
-      "bonus": 0,
-      "positionRank": 114
     },
     {
       "id": 506,
@@ -5852,7 +5852,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 112
+      "positionRank": 113
     },
     {
       "id": 102,
@@ -5874,7 +5874,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 111
+      "positionRank": 112
     },
     {
       "id": 448,
@@ -6163,6 +6163,28 @@
       "positionRank": 123
     },
     {
+      "id": 644,
+      "name": "Thomas",
+      "position": "MID",
+      "club": "Hull City",
+      "clubShort": "HUL",
+      "clubCode": 88,
+      "teamId": 11,
+      "photoCode": 243951,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 14,
+      "ppg": 2.3,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 0,
+      "bonus": 2,
+      "positionRank": 126
+    },
+    {
       "id": 188,
       "name": "Torp",
       "position": "MID",
@@ -6229,6 +6251,28 @@
       "positionRank": 125
     },
     {
+      "id": 618,
+      "name": "Cho",
+      "position": "MID",
+      "club": "Hull City",
+      "clubShort": "HUL",
+      "clubCode": 88,
+      "teamId": 11,
+      "photoCode": 490884,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-16T17:30:09.623338Z",
+      "points": 13,
+      "ppg": 1.6,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 131
+    },
+    {
       "id": 340,
       "name": "Gelhardt",
       "position": "MID",
@@ -6248,7 +6292,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 128
+      "positionRank": 129
     },
     {
       "id": 54,
@@ -6270,7 +6314,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 126
+      "positionRank": 127
     },
     {
       "id": 617,
@@ -6292,7 +6336,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 129
+      "positionRank": 130
     },
     {
       "id": 347,
@@ -6358,7 +6402,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 127
+      "positionRank": 128
     },
     {
       "id": 498,
@@ -6381,28 +6425,6 @@
       "cleanSheets": 1,
       "bonus": 0,
       "positionRank": 99
-    },
-    {
-      "id": 644,
-      "name": "Thomas",
-      "position": "MID",
-      "club": "Hull City",
-      "clubShort": "HUL",
-      "clubCode": 88,
-      "teamId": 11,
-      "photoCode": 243951,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 13,
-      "ppg": 2.6,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 0,
-      "bonus": 2,
-      "positionRank": 130
     },
     {
       "id": 420,
@@ -6449,28 +6471,6 @@
       "positionRank": 31
     },
     {
-      "id": 618,
-      "name": "Cho",
-      "position": "MID",
-      "club": "Hull City",
-      "clubShort": "HUL",
-      "clubCode": 88,
-      "teamId": 11,
-      "photoCode": 490884,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-16T17:30:09.623338Z",
-      "points": 12,
-      "ppg": 1.7,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 133
-    },
-    {
       "id": 157,
       "name": "Estêvão",
       "position": "MID",
@@ -6490,7 +6490,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 132
+      "positionRank": 133
     },
     {
       "id": 655,
@@ -6534,7 +6534,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 131
+      "positionRank": 132
     },
     {
       "id": 11,
@@ -7018,7 +7018,29 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 151
+      "positionRank": 152
+    },
+    {
+      "id": 289,
+      "name": "Crooks",
+      "position": "MID",
+      "club": "Hull City",
+      "clubShort": "HUL",
+      "clubCode": 88,
+      "teamId": 11,
+      "photoCode": 101282,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-31T18:00:09.584315Z",
+      "points": 9,
+      "ppg": 1.3,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 0,
+      "positionRank": 148
     },
     {
       "id": 170,
@@ -7106,7 +7128,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 150
+      "positionRank": 151
     },
     {
       "id": 638,
@@ -7128,7 +7150,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 153
+      "positionRank": 154
     },
     {
       "id": 419,
@@ -7194,7 +7216,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 149
+      "positionRank": 150
     },
     {
       "id": 318,
@@ -7216,7 +7238,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 148
+      "positionRank": 149
     },
     {
       "id": 164,
@@ -7282,7 +7304,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 152
+      "positionRank": 153
     },
     {
       "id": 490,
@@ -7348,7 +7370,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 155
+      "positionRank": 156
     },
     {
       "id": 634,
@@ -7414,7 +7436,29 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 154
+      "positionRank": 155
+    },
+    {
+      "id": 589,
+      "name": "Gourna-Douath",
+      "position": "MID",
+      "club": "Hull City",
+      "clubShort": "HUL",
+      "clubCode": 88,
+      "teamId": 11,
+      "photoCode": 469266,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-16T13:00:08.314070Z",
+      "points": 8,
+      "ppg": 1.6,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 160
     },
     {
       "id": 144,
@@ -7458,7 +7502,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 156
+      "positionRank": 157
     },
     {
       "id": 375,
@@ -7480,7 +7524,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 157
+      "positionRank": 158
     },
     {
       "id": 636,
@@ -7502,7 +7546,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 159
+      "positionRank": 161
     },
     {
       "id": 548,
@@ -7524,7 +7568,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 158
+      "positionRank": 159
     },
     {
       "id": 256,
@@ -7590,7 +7634,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 165
+      "positionRank": 167
     },
     {
       "id": 616,
@@ -7612,7 +7656,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 168
+      "positionRank": 170
     },
     {
       "id": 543,
@@ -7634,7 +7678,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 166
+      "positionRank": 168
     },
     {
       "id": 584,
@@ -7656,7 +7700,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 167
+      "positionRank": 169
     },
     {
       "id": 630,
@@ -7700,7 +7744,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 164
+      "positionRank": 166
     },
     {
       "id": 456,
@@ -7722,7 +7766,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 163
+      "positionRank": 165
     },
     {
       "id": 406,
@@ -7744,7 +7788,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 162
+      "positionRank": 164
     },
     {
       "id": 564,
@@ -7788,7 +7832,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 160
+      "positionRank": 162
     },
     {
       "id": 100,
@@ -7810,29 +7854,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 169
-    },
-    {
-      "id": 289,
-      "name": "Crooks",
-      "position": "MID",
-      "club": "Hull City",
-      "clubShort": "HUL",
-      "clubCode": 88,
-      "teamId": 11,
-      "photoCode": 101282,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-31T18:00:09.584315Z",
-      "points": 6,
-      "ppg": 1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 172
+      "positionRank": 171
     },
     {
       "id": 620,
@@ -7876,7 +7898,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 176
+      "positionRank": 177
     },
     {
       "id": 310,
@@ -7898,7 +7920,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 174
+      "positionRank": 175
     },
     {
       "id": 287,
@@ -7920,7 +7942,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 171
+      "positionRank": 173
     },
     {
       "id": 430,
@@ -7942,7 +7964,29 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 175
+      "positionRank": 176
+    },
+    {
+      "id": 643,
+      "name": "Norton-Cuffy",
+      "position": "DEF",
+      "club": "Hull City",
+      "clubShort": "HUL",
+      "clubCode": 88,
+      "teamId": 11,
+      "photoCode": 496181,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-21T08:30:09.561308Z",
+      "points": 6,
+      "ppg": 0.9,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 123
     },
     {
       "id": 309,
@@ -7964,7 +8008,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 173
+      "positionRank": 174
     },
     {
       "id": 81,
@@ -8030,7 +8074,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 170
+      "positionRank": 172
     },
     {
       "id": 108,
@@ -8074,7 +8118,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 124
+      "positionRank": 125
     },
     {
       "id": 245,
@@ -8096,7 +8140,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 177
+      "positionRank": 178
     },
     {
       "id": 650,
@@ -8121,28 +8165,6 @@
       "positionRank": 182
     },
     {
-      "id": 589,
-      "name": "Gourna-Douath",
-      "position": "MID",
-      "club": "Hull City",
-      "clubShort": "HUL",
-      "clubCode": 88,
-      "teamId": 11,
-      "photoCode": 469266,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-16T13:00:08.314070Z",
-      "points": 5,
-      "ppg": 1.3,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 181
-    },
-    {
       "id": 306,
       "name": "Greaves",
       "position": "DEF",
@@ -8162,7 +8184,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 125
+      "positionRank": 126
     },
     {
       "id": 9,
@@ -8184,7 +8206,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 123
+      "positionRank": 124
     },
     {
       "id": 343,
@@ -8206,7 +8228,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 179
+      "positionRank": 180
     },
     {
       "id": 263,
@@ -8228,7 +8250,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 178
+      "positionRank": 179
     },
     {
       "id": 450,
@@ -8250,7 +8272,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 127
+      "positionRank": 128
     },
     {
       "id": 561,
@@ -8272,7 +8294,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 180
+      "positionRank": 181
     },
     {
       "id": 478,
@@ -8288,28 +8310,6 @@
       "chanceOfPlaying": null,
       "news": null,
       "newsAdded": null,
-      "points": 5,
-      "ppg": 0.8,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 128
-    },
-    {
-      "id": 643,
-      "name": "Norton-Cuffy",
-      "position": "DEF",
-      "club": "Hull City",
-      "clubShort": "HUL",
-      "clubCode": 88,
-      "teamId": 11,
-      "photoCode": 496181,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-21T08:30:09.561308Z",
       "points": 5,
       "ppg": 0.8,
       "goals": 0,
@@ -8338,7 +8338,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 126
+      "positionRank": 127
     },
     {
       "id": 642,
@@ -8504,9 +8504,9 @@
       "teamId": 14,
       "photoCode": 216094,
       "owner": null,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 75,
-      "news": "Hamstring injury - 75% chance of playing",
+      "news": null,
       "newsAdded": "2026-10-17T15:30:09.979166Z",
       "points": 4,
       "ppg": 0.8,
@@ -8625,6 +8625,28 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 190
+    },
+    {
+      "id": 600,
+      "name": "Osman",
+      "position": "MID",
+      "club": "Brighton",
+      "clubShort": "BHA",
+      "clubCode": 36,
+      "teamId": 5,
+      "photoCode": 612855,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 4,
+      "ppg": 1,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 192
     },
     {
       "id": 364,
@@ -8800,7 +8822,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 198
+      "positionRank": 199
     },
     {
       "id": 647,
@@ -8844,7 +8866,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 194
+      "positionRank": 195
     },
     {
       "id": 359,
@@ -8888,7 +8910,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 192
+      "positionRank": 193
     },
     {
       "id": 255,
@@ -8998,7 +9020,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 196
+      "positionRank": 197
     },
     {
       "id": 323,
@@ -9020,7 +9042,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 195
+      "positionRank": 196
     },
     {
       "id": 207,
@@ -9064,29 +9086,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 197
-    },
-    {
-      "id": 600,
-      "name": "Osman",
-      "position": "MID",
-      "club": "Brighton",
-      "clubShort": "BHA",
-      "clubCode": 36,
-      "teamId": 5,
-      "photoCode": 612855,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 3,
-      "ppg": 1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 199
+      "positionRank": 198
     },
     {
       "id": 262,
@@ -9108,7 +9108,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 193
+      "positionRank": 194
     },
     {
       "id": 575,
@@ -9262,7 +9262,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 206
+      "positionRank": 208
     },
     {
       "id": 421,
@@ -9274,9 +9274,9 @@
       "teamId": 16,
       "photoCode": 606745,
       "owner": null,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 75,
-      "news": "Unspecified injury - 75% chance of playing",
+      "news": null,
       "newsAdded": "2026-11-20T17:30:06.088714Z",
       "points": 2,
       "ppg": 0.4,
@@ -9285,6 +9285,28 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 147
+    },
+    {
+      "id": 576,
+      "name": "Hjertø-Dahl",
+      "position": "MID",
+      "club": "Hull City",
+      "clubShort": "HUL",
+      "clubCode": 88,
+      "teamId": 11,
+      "photoCode": 552946,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 2,
+      "ppg": 1,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 207
     },
     {
       "id": 395,
@@ -9350,7 +9372,29 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 207
+      "positionRank": 209
+    },
+    {
+      "id": 122,
+      "name": "Minteh",
+      "position": "MID",
+      "club": "Brighton",
+      "clubShort": "BHA",
+      "clubCode": 36,
+      "teamId": 5,
+      "photoCode": 592031,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-14T18:00:06.418033Z",
+      "points": 2,
+      "ppg": 1,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 204
     },
     {
       "id": 126,
@@ -9372,7 +9416,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 204
+      "positionRank": 205
     },
     {
       "id": 527,
@@ -9482,7 +9526,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 208
+      "positionRank": 210
     },
     {
       "id": 321,
@@ -9570,7 +9614,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 209
+      "positionRank": 211
     },
     {
       "id": 622,
@@ -9636,7 +9680,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 213
+      "positionRank": 214
     },
     {
       "id": 501,
@@ -9702,7 +9746,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 212
+      "positionRank": 213
     },
     {
       "id": 89,
@@ -9725,28 +9769,6 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 149
-    },
-    {
-      "id": 576,
-      "name": "Hjertø-Dahl",
-      "position": "MID",
-      "club": "Hull City",
-      "clubShort": "HUL",
-      "clubCode": 88,
-      "teamId": 11,
-      "photoCode": 552946,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 1,
-      "ppg": 1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 216
     },
     {
       "id": 651,
@@ -9790,7 +9812,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 215
+      "positionRank": 216
     },
     {
       "id": 177,
@@ -9881,28 +9903,6 @@
       "positionRank": 153
     },
     {
-      "id": 122,
-      "name": "Minteh",
-      "position": "MID",
-      "club": "Brighton",
-      "clubShort": "BHA",
-      "clubCode": 36,
-      "teamId": 5,
-      "photoCode": 592031,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-14T18:00:06.418033Z",
-      "points": 1,
-      "ppg": 1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 210
-    },
-    {
       "id": 645,
       "name": "Mouzakitis",
       "position": "MID",
@@ -9966,7 +9966,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 214
+      "positionRank": 215
     },
     {
       "id": 662,
@@ -10098,7 +10098,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 211
+      "positionRank": 212
     },
     {
       "id": 38,
@@ -14845,13 +14845,13 @@
     "chanceOfPlaying": null,
     "news": null,
     "newsAdded": null,
-    "points": 75,
-    "ppg": 7.5,
+    "points": 76,
+    "ppg": 6.9,
     "goals": 2,
     "assists": 4,
     "cleanSheets": 7,
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-22T10:36:46.654Z"
+  "generatedAt": "2026-11-22T16:10:01.975Z"
 }
