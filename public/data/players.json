@@ -529,6 +529,28 @@
       "positionRank": 4
     },
     {
+      "id": 13,
+      "name": "Rice",
+      "position": "MID",
+      "club": "Arsenal",
+      "clubShort": "ARS",
+      "clubCode": 3,
+      "teamId": 1,
+      "photoCode": 204480,
+      "owner": "bennett",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-28T00:00:08.477333Z",
+      "points": 53,
+      "ppg": 4.8,
+      "goals": 0,
+      "assists": 5,
+      "cleanSheets": 7,
+      "bonus": 7,
+      "positionRank": 6
+    },
+    {
       "id": 453,
       "name": "Barnes",
       "position": "MID",
@@ -571,28 +593,6 @@
       "cleanSheets": 7,
       "bonus": 1,
       "positionRank": 7
-    },
-    {
-      "id": 13,
-      "name": "Rice",
-      "position": "MID",
-      "club": "Arsenal",
-      "clubShort": "ARS",
-      "clubCode": 3,
-      "teamId": 1,
-      "photoCode": 204480,
-      "owner": "bennett",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-28T00:00:08.477333Z",
-      "points": 51,
-      "ppg": 4.6,
-      "goals": 0,
-      "assists": 5,
-      "cleanSheets": 7,
-      "bonus": 7,
-      "positionRank": 6
     },
     {
       "id": 236,
@@ -2278,7 +2278,7 @@
       "owner": "kellett",
       "status": "d",
       "chanceOfPlaying": 75,
-      "news": "Unspecified injury - 75% chance of playing",
+      "news": "Calf injury - 75% chance of playing",
       "newsAdded": "2026-11-21T17:00:05.582448Z",
       "points": 29,
       "ppg": 2.6,
@@ -2916,7 +2916,7 @@
       "owner": "paddy",
       "status": "d",
       "chanceOfPlaying": 100,
-      "news": "Leg injury - 75% chance of playing",
+      "news": "Ankle injury - 75% chance of playing",
       "newsAdded": "2026-11-21T16:30:05.778377Z",
       "points": 21,
       "ppg": 2.3,
@@ -3400,7 +3400,7 @@
       "owner": "rowan",
       "status": "d",
       "chanceOfPlaying": 100,
-      "news": "Unspecified injury - 75% chance of playing",
+      "news": "Hamstring injury - 75% chance of playing",
       "newsAdded": "2026-11-21T17:30:05.822258Z",
       "points": 11,
       "ppg": 2.2,
@@ -14853,5 +14853,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-22T00:50:56.673Z"
+  "generatedAt": "2026-11-22T10:36:46.654Z"
 }
