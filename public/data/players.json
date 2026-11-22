@@ -2399,28 +2399,6 @@
       "positionRank": 16
     },
     {
-      "id": 628,
-      "name": "Barcola",
-      "position": "MID",
-      "club": "Liverpool",
-      "clubShort": "LIV",
-      "clubCode": 14,
-      "teamId": 14,
-      "photoCode": 482616,
-      "owner": "dj",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 28,
-      "ppg": 3.1,
-      "goals": 0,
-      "assists": 3,
-      "cleanSheets": 5,
-      "bonus": 0,
-      "positionRank": 71
-    },
-    {
       "id": 525,
       "name": "Fernandes",
       "position": "MID",
@@ -2487,6 +2465,28 @@
       "positionRank": 15
     },
     {
+      "id": 628,
+      "name": "Barcola",
+      "position": "MID",
+      "club": "Liverpool",
+      "clubShort": "LIV",
+      "clubCode": 14,
+      "teamId": 14,
+      "photoCode": 482616,
+      "owner": "dj",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 27,
+      "ppg": 3,
+      "goals": 0,
+      "assists": 3,
+      "cleanSheets": 5,
+      "bonus": 0,
+      "positionRank": 76
+    },
+    {
       "id": 447,
       "name": "Botman",
       "position": "DEF",
@@ -2528,7 +2528,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 4,
-      "positionRank": 76
+      "positionRank": 75
     },
     {
       "id": 194,
@@ -4686,7 +4686,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 2,
-      "positionRank": 72
+      "positionRank": 71
     },
     {
       "id": 313,
@@ -4708,7 +4708,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 3,
-      "positionRank": 74
+      "positionRank": 73
     },
     {
       "id": 541,
@@ -4752,7 +4752,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 75
+      "positionRank": 74
     },
     {
       "id": 290,
@@ -4774,7 +4774,7 @@
       "assists": 1,
       "cleanSheets": 4,
       "bonus": 0,
-      "positionRank": 73
+      "positionRank": 72
     },
     {
       "id": 474,
@@ -14853,5 +14853,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-22T17:52:20.491Z"
+  "generatedAt": "2026-11-22T17:53:28.479Z"
 }
