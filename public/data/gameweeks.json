@@ -1876,17 +1876,17 @@
       "scoresProvisional": true,
       "kochReady": true,
       "yetByManager": {
-        "rushy": 1,
+        "rushy": 0,
         "kellett": 1,
-        "wallis": 1,
+        "wallis": 0,
         "jls": 2,
         "paddy": 1,
-        "bennett": 4,
-        "wood": 1,
-        "rowan": 4,
-        "jason": 4,
-        "dj": 2,
-        "ollie": 3
+        "bennett": 3,
+        "wood": 0,
+        "rowan": 2,
+        "jason": 1,
+        "dj": 1,
+        "ollie": 1
       },
       "fixturesRemaining": true,
       "dataChecked": false,
@@ -1895,17 +1895,17 @@
       "confirmExpectedUtc": "2026-11-24T20:00:00.000Z",
       "revealFromUtc": "2026-11-24T00:10:00.000Z",
       "scores": {
-        "rushy": 43,
+        "rushy": 51,
         "kellett": 14,
-        "wallis": 26,
+        "wallis": 27,
         "jls": 32,
         "paddy": 36,
-        "bennett": 37,
-        "wood": 28,
-        "rowan": 20,
-        "jason": 20,
-        "dj": 38,
-        "ollie": 17
+        "bennett": 41,
+        "wood": 29,
+        "rowan": 29,
+        "jason": 23,
+        "dj": 39,
+        "ollie": 19
       },
       "kochKeys": [],
       "charged": 0,
@@ -1946,8 +1946,8 @@
           "managerKey": "wood"
         },
         "rowan": {
-          "playerName": "Silva",
-          "points": 8,
+          "playerName": "Szoboszlai",
+          "points": 9,
           "managerKey": "rowan"
         },
         "jason": {
@@ -2724,5 +2724,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-11-22T16:10:01.975Z"
+  "generatedAt": "2026-11-22T17:33:14.309Z"
 }

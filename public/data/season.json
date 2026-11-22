@@ -3,9 +3,9 @@
     {
       "key": "wood",
       "rank": 1,
-      "total": 529,
-      "gw": 28,
-      "month": 83,
+      "total": 530,
+      "gw": 29,
+      "month": 84,
       "kochCount": 1,
       "motmCount": 1,
       "forfeits": 5,
@@ -20,9 +20,9 @@
     {
       "key": "bennett",
       "rank": 2,
-      "total": 514,
-      "gw": 37,
-      "month": 88,
+      "total": 518,
+      "gw": 41,
+      "month": 92,
       "kochCount": 0,
       "motmCount": 1,
       "forfeits": 0,
@@ -54,9 +54,9 @@
     {
       "key": "rowan",
       "rank": 4,
-      "total": 446,
-      "gw": 20,
-      "month": 72,
+      "total": 455,
+      "gw": 29,
+      "month": 81,
       "kochCount": 2,
       "motmCount": 0,
       "forfeits": 10,
@@ -71,9 +71,9 @@
     {
       "key": "jason",
       "rank": 5,
-      "total": 444,
-      "gw": 20,
-      "month": 53,
+      "total": 447,
+      "gw": 23,
+      "month": 56,
       "kochCount": 2,
       "motmCount": 0,
       "forfeits": 10,
@@ -86,28 +86,11 @@
       }
     },
     {
-      "key": "wallis",
-      "rank": 6,
-      "total": 434,
-      "gw": 26,
-      "month": 86,
-      "kochCount": 2,
-      "motmCount": 0,
-      "forfeits": 10,
-      "potsWon": 0,
-      "balance": -10,
-      "topPerformer": {
-        "playerName": "Gabriel",
-        "points": 67,
-        "managerKey": "wallis"
-      }
-    },
-    {
       "key": "rushy",
-      "rank": 7,
-      "total": 427,
-      "gw": 43,
-      "month": 75,
+      "rank": 6,
+      "total": 435,
+      "gw": 51,
+      "month": 83,
       "kochCount": 0,
       "motmCount": 0,
       "forfeits": 0,
@@ -120,11 +103,28 @@
       }
     },
     {
+      "key": "wallis",
+      "rank": 6,
+      "total": 435,
+      "gw": 27,
+      "month": 87,
+      "kochCount": 2,
+      "motmCount": 0,
+      "forfeits": 10,
+      "potsWon": 0,
+      "balance": -10,
+      "topPerformer": {
+        "playerName": "Gabriel",
+        "points": 67,
+        "managerKey": "wallis"
+      }
+    },
+    {
       "key": "ollie",
       "rank": 8,
-      "total": 408,
-      "gw": 17,
-      "month": 57,
+      "total": 410,
+      "gw": 19,
+      "month": 59,
       "kochCount": 1,
       "motmCount": 0,
       "forfeits": 5,
@@ -155,10 +155,10 @@
     },
     {
       "key": "dj",
-      "rank": 10,
-      "total": 403,
-      "gw": 38,
-      "month": 57,
+      "rank": 9,
+      "total": 404,
+      "gw": 39,
+      "month": 58,
       "kochCount": 2,
       "motmCount": 0,
       "forfeits": 10,
@@ -195,7 +195,7 @@
     "keys": [
       "wood"
     ],
-    "total": 529,
+    "total": 530,
     "since": 4,
     "sinceByKey": {
       "wood": 4
@@ -205,7 +205,7 @@
     "displaced": "paddy",
     "changed": false
   },
-  "generatedAt": "2026-11-22T16:10:01.975Z",
+  "generatedAt": "2026-11-22T17:33:14.309Z",
   "graphics": {
     "koch": {
       "rushy": 244850,
