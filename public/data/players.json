@@ -771,6 +771,28 @@
       "positionRank": 13
     },
     {
+      "id": 350,
+      "name": "A.Becker",
+      "position": "GKP",
+      "club": "Liverpool",
+      "clubShort": "LIV",
+      "clubCode": 14,
+      "teamId": 14,
+      "photoCode": 116535,
+      "owner": "jls",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 49,
+      "ppg": 4.5,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 5,
+      "bonus": 5,
+      "positionRank": 5
+    },
+    {
       "id": 129,
       "name": "Ayari",
       "position": "MID",
@@ -879,28 +901,6 @@
       "cleanSheets": 5,
       "bonus": 1,
       "positionRank": 15
-    },
-    {
-      "id": 350,
-      "name": "A.Becker",
-      "position": "GKP",
-      "club": "Liverpool",
-      "clubShort": "LIV",
-      "clubCode": 14,
-      "teamId": 14,
-      "photoCode": 116535,
-      "owner": "jls",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 48,
-      "ppg": 4.4,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 5,
-      "bonus": 5,
-      "positionRank": 5
     },
     {
       "id": 346,
@@ -14853,5 +14853,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-22T18:20:32.079Z"
+  "generatedAt": "2026-11-22T18:23:54.314Z"
 }

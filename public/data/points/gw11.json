@@ -1339,7 +1339,7 @@
     },
     "107": {
       "350": {
-        "total": 6,
+        "total": 7,
         "components": [
           {
             "stat": "minutes",
@@ -1352,6 +1352,12 @@
             "name": "Clean sheets",
             "value": 1,
             "points": 4
+          },
+          {
+            "stat": "saves",
+            "name": "Saves",
+            "value": 4,
+            "points": 1
           }
         ]
       },
@@ -2449,5 +2455,5 @@
       }
     }
   },
-  "generatedAt": "2026-11-22T18:21:40.052Z"
+  "generatedAt": "2026-11-22T18:23:54.314Z"
 }
