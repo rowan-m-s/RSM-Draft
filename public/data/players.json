@@ -3100,7 +3100,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 80
+      "positionRank": 81
     },
     {
       "id": 36,
@@ -3122,7 +3122,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 82
+      "positionRank": 83
     },
     {
       "id": 201,
@@ -3144,7 +3144,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 85
+      "positionRank": 86
     },
     {
       "id": 387,
@@ -3166,7 +3166,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 86
+      "positionRank": 87
     },
     {
       "id": 34,
@@ -3188,7 +3188,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 83
+      "positionRank": 84
     },
     {
       "id": 646,
@@ -5481,6 +5481,28 @@
       "positionRank": 101
     },
     {
+      "id": 418,
+      "name": "Maguire",
+      "position": "DEF",
+      "club": "Man Utd",
+      "clubShort": "MUN",
+      "clubCode": 1,
+      "teamId": 16,
+      "photoCode": 95658,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 75,
+      "news": null,
+      "newsAdded": "2026-11-11T01:00:09.173434Z",
+      "points": 20,
+      "ppg": 1.8,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 80
+    },
+    {
       "id": 570,
       "name": "Palacios",
       "position": "MID",
@@ -5698,7 +5720,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 81
+      "positionRank": 82
     },
     {
       "id": 224,
@@ -5742,7 +5764,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 84
+      "positionRank": 85
     },
     {
       "id": 417,
@@ -5762,28 +5784,6 @@
       "ppg": 1.5,
       "goals": 0,
       "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 87
-    },
-    {
-      "id": 418,
-      "name": "Maguire",
-      "position": "DEF",
-      "club": "Man Utd",
-      "clubShort": "MUN",
-      "clubCode": 1,
-      "teamId": 16,
-      "photoCode": 95658,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 75,
-      "news": null,
-      "newsAdded": "2026-11-11T01:00:09.173434Z",
-      "points": 17,
-      "ppg": 1.5,
-      "goals": 0,
-      "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 88
@@ -14853,5 +14853,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-22T18:11:30.113Z"
+  "generatedAt": "2026-11-22T18:12:37.995Z"
 }
