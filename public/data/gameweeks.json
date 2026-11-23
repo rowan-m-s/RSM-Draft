@@ -1877,16 +1877,16 @@
       "kochReady": true,
       "yetByManager": {
         "rushy": 0,
-        "kellett": 1,
+        "kellett": 0,
         "wallis": 0,
-        "jls": 2,
-        "paddy": 1,
-        "bennett": 3,
+        "jls": 0,
+        "paddy": 0,
+        "bennett": 0,
         "wood": 0,
-        "rowan": 2,
-        "jason": 1,
-        "dj": 1,
-        "ollie": 1
+        "rowan": 0,
+        "jason": 0,
+        "dj": 0,
+        "ollie": 0
       },
       "fixturesRemaining": true,
       "dataChecked": false,
@@ -1896,16 +1896,16 @@
       "revealFromUtc": "2026-11-24T00:10:00.000Z",
       "scores": {
         "rushy": 56,
-        "kellett": 14,
+        "kellett": 20,
         "wallis": 28,
-        "jls": 32,
-        "paddy": 36,
-        "bennett": 42,
+        "jls": 42,
+        "paddy": 38,
+        "bennett": 50,
         "wood": 30,
-        "rowan": 29,
-        "jason": 33,
-        "dj": 43,
-        "ollie": 24
+        "rowan": 32,
+        "jason": 39,
+        "dj": 44,
+        "ollie": 25
       },
       "kochKeys": [],
       "charged": 0,
@@ -1916,8 +1916,8 @@
           "managerKey": "rushy"
         },
         "kellett": {
-          "playerName": "Maatsen",
-          "points": 5,
+          "playerName": "Kelleher",
+          "points": 6,
           "managerKey": "kellett"
         },
         "wallis": {
@@ -1936,7 +1936,7 @@
           "managerKey": "paddy"
         },
         "bennett": {
-          "playerName": "Rudoni",
+          "playerName": "Janelt",
           "points": 10,
           "managerKey": "bennett"
         },
@@ -1998,10 +1998,10 @@
           "element": 399
         },
         "bennett": {
-          "playerName": "Mitchell",
-          "points": 1,
+          "playerName": "Tarkowski",
+          "points": -4,
           "managerKey": "bennett",
-          "element": 204
+          "element": 229
         },
         "wood": {
           "playerName": "Calafiori",
@@ -2028,10 +2028,10 @@
           "element": 5
         },
         "ollie": {
-          "playerName": "Delap",
+          "playerName": "Mykolenko",
           "points": 1,
           "managerKey": "ollie",
-          "element": 167
+          "element": 233
         }
       },
       "kochGraphicByManager": {
@@ -2724,5 +2724,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-11-23T11:37:57.847Z"
+  "generatedAt": "2026-11-23T23:12:15.708Z"
 }

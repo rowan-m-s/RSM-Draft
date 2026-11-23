@@ -1361,8 +1361,8 @@
       "clubCode": 3,
       "photoCode": 154561,
       "status": "d",
-      "chanceOfPlaying": 75,
-      "news": "Shoulder injury - 75% chance of playing",
+      "chanceOfPlaying": 50,
+      "news": "Shoulder injury - 50% chance of playing",
       "newsAdded": "2026-11-21T19:00:05.753960Z"
     },
     "4": {
@@ -1552,9 +1552,9 @@
       "clubShort": "AVL",
       "clubCode": 7,
       "photoCode": 199796,
-      "status": "i",
+      "status": "d",
       "chanceOfPlaying": 0,
-      "news": "Concussion - Expected back 28 Nov",
+      "news": "Concussion - 75% chance of playing",
       "newsAdded": "2026-11-15T10:30:05.648897Z"
     },
     "40": {
@@ -2140,10 +2140,10 @@
       "clubShort": "EVE",
       "clubCode": 11,
       "photoCode": 17761,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
+      "status": "s",
+      "chanceOfPlaying": 0,
+      "news": "Suspended until 13 Dec",
+      "newsAdded": "2026-11-23T21:00:06.268052Z"
     },
     "230": {
       "name": "Branthwaite",
@@ -2572,9 +2572,9 @@
       "clubShort": "MCI",
       "clubCode": 43,
       "photoCode": 465351,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 50,
-      "news": "Unspecified injury - 50% chance of playing",
+      "news": null,
       "newsAdded": "2026-11-20T15:30:06.460505Z"
     },
     "390": {
@@ -3334,5 +3334,5 @@
       "newsAdded": null
     }
   },
-  "generatedAt": "2026-11-23T11:37:57.847Z"
+  "generatedAt": "2026-11-23T23:12:15.708Z"
 }

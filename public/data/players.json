@@ -231,8 +231,8 @@
       "photoCode": 154561,
       "owner": "ollie",
       "status": "d",
-      "chanceOfPlaying": 75,
-      "news": "Shoulder injury - 75% chance of playing",
+      "chanceOfPlaying": 50,
+      "news": "Shoulder injury - 50% chance of playing",
       "newsAdded": "2026-11-21T19:00:05.753960Z",
       "points": 61,
       "ppg": 5.5,
@@ -375,6 +375,28 @@
       "positionRank": 8
     },
     {
+      "id": 249,
+      "name": "Barry",
+      "position": "FWD",
+      "club": "Everton",
+      "clubShort": "EVE",
+      "clubCode": 11,
+      "teamId": 9,
+      "photoCode": 586309,
+      "owner": "rowan",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 57,
+      "ppg": 5.2,
+      "goals": 6,
+      "assists": 1,
+      "cleanSheets": 4,
+      "bonus": 8,
+      "positionRank": 4
+    },
+    {
       "id": 40,
       "name": "Rogers",
       "position": "MID",
@@ -438,29 +460,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 12,
-      "positionRank": 4
-    },
-    {
-      "id": 229,
-      "name": "Tarkowski",
-      "position": "DEF",
-      "club": "Everton",
-      "clubShort": "EVE",
-      "clubCode": 11,
-      "teamId": 9,
-      "photoCode": 17761,
-      "owner": "bennett",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 56,
-      "ppg": 5.6,
-      "goals": 1,
-      "assists": 1,
-      "cleanSheets": 4,
-      "bonus": 7,
-      "positionRank": 10
+      "positionRank": 5
     },
     {
       "id": 385,
@@ -485,28 +485,6 @@
       "positionRank": 4
     },
     {
-      "id": 249,
-      "name": "Barry",
-      "position": "FWD",
-      "club": "Everton",
-      "clubShort": "EVE",
-      "clubCode": 11,
-      "teamId": 9,
-      "photoCode": 586309,
-      "owner": "rowan",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 55,
-      "ppg": 5.5,
-      "goals": 6,
-      "assists": 1,
-      "cleanSheets": 4,
-      "bonus": 8,
-      "positionRank": 5
-    },
-    {
       "id": 286,
       "name": "Belloumi",
       "position": "MID",
@@ -526,7 +504,7 @@
       "assists": 4,
       "cleanSheets": 4,
       "bonus": 3,
-      "positionRank": 6
+      "positionRank": 7
     },
     {
       "id": 399,
@@ -548,7 +526,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 9,
-      "positionRank": 7
+      "positionRank": 8
     },
     {
       "id": 332,
@@ -570,7 +548,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 5,
-      "positionRank": 11
+      "positionRank": 10
     },
     {
       "id": 15,
@@ -614,7 +592,7 @@
       "assists": 3,
       "cleanSheets": 8,
       "bonus": 1,
-      "positionRank": 8
+      "positionRank": 9
     },
     {
       "id": 13,
@@ -636,7 +614,51 @@
       "assists": 5,
       "cleanSheets": 7,
       "bonus": 7,
-      "positionRank": 9
+      "positionRank": 10
+    },
+    {
+      "id": 236,
+      "name": "Dewsbury-Hall",
+      "position": "MID",
+      "club": "Everton",
+      "clubShort": "EVE",
+      "clubCode": 11,
+      "teamId": 9,
+      "photoCode": 215413,
+      "owner": "bennett",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 52,
+      "ppg": 4.7,
+      "goals": 3,
+      "assists": 1,
+      "cleanSheets": 4,
+      "bonus": 9,
+      "positionRank": 11
+    },
+    {
+      "id": 229,
+      "name": "Tarkowski",
+      "position": "DEF",
+      "club": "Everton",
+      "clubShort": "EVE",
+      "clubCode": 11,
+      "teamId": 9,
+      "photoCode": 17761,
+      "owner": "bennett",
+      "status": "s",
+      "chanceOfPlaying": 0,
+      "news": "Suspended until 13 Dec",
+      "newsAdded": "2026-11-23T21:00:06.268052Z",
+      "points": 52,
+      "ppg": 4.7,
+      "goals": 1,
+      "assists": 1,
+      "cleanSheets": 4,
+      "bonus": 7,
+      "positionRank": 11
     },
     {
       "id": 453,
@@ -658,7 +680,7 @@
       "assists": 3,
       "cleanSheets": 2,
       "bonus": 4,
-      "positionRank": 10
+      "positionRank": 12
     },
     {
       "id": 114,
@@ -727,28 +749,6 @@
       "positionRank": 14
     },
     {
-      "id": 236,
-      "name": "Dewsbury-Hall",
-      "position": "MID",
-      "club": "Everton",
-      "clubShort": "EVE",
-      "clubCode": 11,
-      "teamId": 9,
-      "photoCode": 215413,
-      "owner": "bennett",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 50,
-      "ppg": 5,
-      "goals": 3,
-      "assists": 1,
-      "cleanSheets": 4,
-      "bonus": 9,
-      "positionRank": 11
-    },
-    {
       "id": 362,
       "name": "Jacquet",
       "position": "DEF",
@@ -812,7 +812,7 @@
       "assists": 1,
       "cleanSheets": 8,
       "bonus": 4,
-      "positionRank": 12
+      "positionRank": 13
     },
     {
       "id": 542,
@@ -834,7 +834,7 @@
       "assists": 1,
       "cleanSheets": 4,
       "bonus": 5,
-      "positionRank": 15
+      "positionRank": 16
     },
     {
       "id": 154,
@@ -856,7 +856,7 @@
       "assists": 4,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 13
+      "positionRank": 14
     },
     {
       "id": 183,
@@ -878,7 +878,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 4,
-      "positionRank": 14
+      "positionRank": 15
     },
     {
       "id": 356,
@@ -901,6 +901,28 @@
       "cleanSheets": 5,
       "bonus": 1,
       "positionRank": 15
+    },
+    {
+      "id": 87,
+      "name": "Ajer",
+      "position": "DEF",
+      "club": "Brentford",
+      "clubShort": "BRE",
+      "clubCode": 94,
+      "teamId": 4,
+      "photoCode": 191866,
+      "owner": "jls",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 48,
+      "ppg": 4.4,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 4,
+      "bonus": 1,
+      "positionRank": 16
     },
     {
       "id": 346,
@@ -966,7 +988,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 3,
-      "positionRank": 17
+      "positionRank": 18
     },
     {
       "id": 426,
@@ -988,7 +1010,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 3,
-      "positionRank": 16
+      "positionRank": 19
     },
     {
       "id": 449,
@@ -1010,6 +1032,28 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 6,
+      "positionRank": 19
+    },
+    {
+      "id": 98,
+      "name": "Janelt",
+      "position": "MID",
+      "club": "Brentford",
+      "clubShort": "BRE",
+      "clubCode": 94,
+      "teamId": 4,
+      "photoCode": 204580,
+      "owner": "bennett",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-17T16:30:09.272910Z",
+      "points": 47,
+      "ppg": 4.7,
+      "goals": 3,
+      "assists": 0,
+      "cleanSheets": 4,
+      "bonus": 5,
       "positionRank": 18
     },
     {
@@ -1076,6 +1120,28 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 5,
+      "positionRank": 20
+    },
+    {
+      "id": 94,
+      "name": "Schade",
+      "position": "MID",
+      "club": "Brentford",
+      "clubShort": "BRE",
+      "clubCode": 94,
+      "teamId": 4,
+      "photoCode": 513418,
+      "owner": "dj",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-10T16:30:08.848962Z",
+      "points": 47,
+      "ppg": 4.3,
+      "goals": 3,
+      "assists": 2,
+      "cleanSheets": 3,
+      "bonus": 6,
       "positionRank": 17
     },
     {
@@ -1098,29 +1164,29 @@
       "assists": 4,
       "cleanSheets": 1,
       "bonus": 7,
-      "positionRank": 19
+      "positionRank": 21
     },
     {
-      "id": 94,
-      "name": "Schade",
-      "position": "MID",
-      "club": "Brentford",
-      "clubShort": "BRE",
-      "clubCode": 94,
-      "teamId": 4,
-      "photoCode": 513418,
-      "owner": "dj",
+      "id": 230,
+      "name": "Branthwaite",
+      "position": "DEF",
+      "club": "Everton",
+      "clubShort": "EVE",
+      "clubCode": 11,
+      "teamId": 9,
+      "photoCode": 480455,
+      "owner": "paddy",
       "status": "a",
       "chanceOfPlaying": 100,
       "news": null,
-      "newsAdded": "2026-10-10T16:30:08.848962Z",
-      "points": 46,
-      "ppg": 4.6,
-      "goals": 3,
-      "assists": 2,
-      "cleanSheets": 3,
-      "bonus": 6,
-      "positionRank": 18
+      "newsAdded": "2026-11-05T16:57:40.272082Z",
+      "points": 45,
+      "ppg": 4.5,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 4,
+      "bonus": 3,
+      "positionRank": 20
     },
     {
       "id": 391,
@@ -1142,7 +1208,7 @@
       "assists": 4,
       "cleanSheets": 2,
       "bonus": 6,
-      "positionRank": 19
+      "positionRank": 21
     },
     {
       "id": 45,
@@ -1164,7 +1230,7 @@
       "assists": 4,
       "cleanSheets": 2,
       "bonus": 5,
-      "positionRank": 20
+      "positionRank": 22
     },
     {
       "id": 258,
@@ -1186,7 +1252,7 @@
       "assists": 2,
       "cleanSheets": 5,
       "bonus": 4,
-      "positionRank": 20
+      "positionRank": 22
     },
     {
       "id": 529,
@@ -1211,47 +1277,25 @@
       "positionRank": 7
     },
     {
-      "id": 230,
-      "name": "Branthwaite",
+      "id": 233,
+      "name": "Mykolenko",
       "position": "DEF",
       "club": "Everton",
       "clubShort": "EVE",
       "clubCode": 11,
       "teamId": 9,
-      "photoCode": 480455,
-      "owner": "paddy",
+      "photoCode": 224967,
+      "owner": "ollie",
       "status": "a",
       "chanceOfPlaying": 100,
       "news": null,
-      "newsAdded": "2026-11-05T16:57:40.272082Z",
+      "newsAdded": "2026-10-24T19:00:09.907289Z",
       "points": 43,
-      "ppg": 4.8,
+      "ppg": 4.3,
       "goals": 0,
-      "assists": 0,
+      "assists": 1,
       "cleanSheets": 4,
-      "bonus": 3,
-      "positionRank": 21
-    },
-    {
-      "id": 87,
-      "name": "Ajer",
-      "position": "DEF",
-      "club": "Brentford",
-      "clubShort": "BRE",
-      "clubCode": 94,
-      "teamId": 4,
-      "photoCode": 191866,
-      "owner": "jls",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 42,
-      "ppg": 4.2,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 3,
-      "bonus": 1,
+      "bonus": 4,
       "positionRank": 23
     },
     {
@@ -1274,28 +1318,6 @@
       "assists": 0,
       "cleanSheets": 5,
       "bonus": 1,
-      "positionRank": 24
-    },
-    {
-      "id": 233,
-      "name": "Mykolenko",
-      "position": "DEF",
-      "club": "Everton",
-      "clubShort": "EVE",
-      "clubCode": 11,
-      "teamId": 9,
-      "photoCode": 224967,
-      "owner": "ollie",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-24T19:00:09.907289Z",
-      "points": 42,
-      "ppg": 4.7,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 4,
-      "bonus": 4,
       "positionRank": 25
     },
     {
@@ -1318,7 +1340,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 22
+      "positionRank": 24
     },
     {
       "id": 10,
@@ -1340,7 +1362,7 @@
       "assists": 3,
       "cleanSheets": 4,
       "bonus": 4,
-      "positionRank": 22
+      "positionRank": 24
     },
     {
       "id": 480,
@@ -1362,7 +1384,29 @@
       "assists": 3,
       "cleanSheets": 1,
       "bonus": 6,
-      "positionRank": 27
+      "positionRank": 29
+    },
+    {
+      "id": 82,
+      "name": "Kelleher",
+      "position": "GKP",
+      "club": "Brentford",
+      "clubShort": "BRE",
+      "clubCode": 94,
+      "teamId": 4,
+      "photoCode": 200720,
+      "owner": "kellett",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 41,
+      "ppg": 3.7,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 4,
+      "bonus": 1,
+      "positionRank": 8
     },
     {
       "id": 268,
@@ -1384,7 +1428,7 @@
       "assists": 1,
       "cleanSheets": 6,
       "bonus": 3,
-      "positionRank": 26
+      "positionRank": 28
     },
     {
       "id": 250,
@@ -1406,7 +1450,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 4,
-      "positionRank": 8
+      "positionRank": 9
     },
     {
       "id": 53,
@@ -1428,7 +1472,7 @@
       "assists": 3,
       "cleanSheets": 2,
       "bonus": 7,
-      "positionRank": 23
+      "positionRank": 25
     },
     {
       "id": 591,
@@ -1450,7 +1494,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 5,
-      "positionRank": 31
+      "positionRank": 33
     },
     {
       "id": 367,
@@ -1472,7 +1516,7 @@
       "assists": 3,
       "cleanSheets": 4,
       "bonus": 5,
-      "positionRank": 30
+      "positionRank": 32
     },
     {
       "id": 26,
@@ -1497,6 +1541,28 @@
       "positionRank": 10
     },
     {
+      "id": 88,
+      "name": "Kayode",
+      "position": "DEF",
+      "club": "Brentford",
+      "clubShort": "BRE",
+      "clubCode": 94,
+      "teamId": 4,
+      "photoCode": 607464,
+      "owner": "jason",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 40,
+      "ppg": 3.6,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 4,
+      "bonus": 1,
+      "positionRank": 26
+    },
+    {
       "id": 70,
       "name": "Kluivert",
       "position": "MID",
@@ -1516,7 +1582,29 @@
       "assists": 2,
       "cleanSheets": 6,
       "bonus": 2,
-      "positionRank": 28
+      "positionRank": 30
+    },
+    {
+      "id": 226,
+      "name": "Pickford",
+      "position": "GKP",
+      "club": "Everton",
+      "clubShort": "EVE",
+      "clubCode": 11,
+      "teamId": 9,
+      "photoCode": 111234,
+      "owner": "rowan",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 40,
+      "ppg": 3.6,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 4,
+      "bonus": 2,
+      "positionRank": 10
     },
     {
       "id": 388,
@@ -1538,7 +1626,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 4,
-      "positionRank": 27
+      "positionRank": 28
     },
     {
       "id": 237,
@@ -1560,29 +1648,7 @@
       "assists": 4,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 33
-    },
-    {
-      "id": 226,
-      "name": "Pickford",
-      "position": "GKP",
-      "club": "Everton",
-      "clubShort": "EVE",
-      "clubCode": 11,
-      "teamId": 9,
-      "photoCode": 111234,
-      "owner": "rowan",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 39,
-      "ppg": 3.9,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 4,
-      "bonus": 2,
-      "positionRank": 9
+      "positionRank": 34
     },
     {
       "id": 502,
@@ -1604,7 +1670,7 @@
       "assists": 2,
       "cleanSheets": 3,
       "bonus": 3,
-      "positionRank": 28
+      "positionRank": 29
     },
     {
       "id": 61,
@@ -1626,7 +1692,7 @@
       "assists": 1,
       "cleanSheets": 4,
       "bonus": 3,
-      "positionRank": 26
+      "positionRank": 27
     },
     {
       "id": 277,
@@ -1648,7 +1714,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 1,
-      "positionRank": 30
+      "positionRank": 31
     },
     {
       "id": 368,
@@ -1670,29 +1736,7 @@
       "assists": 1,
       "cleanSheets": 5,
       "bonus": 3,
-      "positionRank": 37
-    },
-    {
-      "id": 98,
-      "name": "Janelt",
-      "position": "MID",
-      "club": "Brentford",
-      "clubShort": "BRE",
-      "clubCode": 94,
-      "teamId": 4,
-      "photoCode": 204580,
-      "owner": "bennett",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-17T16:30:09.272910Z",
-      "points": 37,
-      "ppg": 4.1,
-      "goals": 2,
-      "assists": 0,
-      "cleanSheets": 3,
-      "bonus": 3,
-      "positionRank": 40
+      "positionRank": 38
     },
     {
       "id": 47,
@@ -1714,7 +1758,7 @@
       "assists": 1,
       "cleanSheets": 4,
       "bonus": 0,
-      "positionRank": 39
+      "positionRank": 40
     },
     {
       "id": 12,
@@ -1736,7 +1780,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 4,
-      "positionRank": 38
+      "positionRank": 39
     },
     {
       "id": 397,
@@ -1758,7 +1802,7 @@
       "assists": 3,
       "cleanSheets": 3,
       "bonus": 2,
-      "positionRank": 41
+      "positionRank": 42
     },
     {
       "id": 597,
@@ -1780,7 +1824,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 5,
-      "positionRank": 10
+      "positionRank": 11
     },
     {
       "id": 57,
@@ -1802,7 +1846,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 0,
-      "positionRank": 11
+      "positionRank": 12
     },
     {
       "id": 384,
@@ -1849,28 +1893,6 @@
       "positionRank": 11
     },
     {
-      "id": 82,
-      "name": "Kelleher",
-      "position": "GKP",
-      "club": "Brentford",
-      "clubShort": "BRE",
-      "clubCode": 94,
-      "teamId": 4,
-      "photoCode": 200720,
-      "owner": "kellett",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 35,
-      "ppg": 3.5,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 3,
-      "bonus": 1,
-      "positionRank": 12
-    },
-    {
       "id": 469,
       "name": "N.Williams",
       "position": "DEF",
@@ -1890,29 +1912,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 35
-    },
-    {
-      "id": 88,
-      "name": "Kayode",
-      "position": "DEF",
-      "club": "Brentford",
-      "clubShort": "BRE",
-      "clubCode": 94,
-      "teamId": 4,
-      "photoCode": 607464,
-      "owner": "jason",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 34,
-      "ppg": 3.4,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 3,
-      "bonus": 1,
-      "positionRank": 37
+      "positionRank": 36
     },
     {
       "id": 204,
@@ -1956,7 +1956,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 3,
-      "positionRank": 44
+      "positionRank": 45
     },
     {
       "id": 67,
@@ -1978,7 +1978,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 0,
-      "positionRank": 47
+      "positionRank": 48
     },
     {
       "id": 222,
@@ -2044,7 +2044,7 @@
       "assists": 2,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 52
+      "positionRank": 53
     },
     {
       "id": 167,
@@ -2154,7 +2154,7 @@
       "assists": 4,
       "cleanSheets": 5,
       "bonus": 0,
-      "positionRank": 64
+      "positionRank": 66
     },
     {
       "id": 452,
@@ -2176,7 +2176,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 4,
-      "positionRank": 60
+      "positionRank": 62
     },
     {
       "id": 41,
@@ -2198,7 +2198,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 55
+      "positionRank": 57
     },
     {
       "id": 512,
@@ -2220,7 +2220,7 @@
       "assists": 3,
       "cleanSheets": 4,
       "bonus": 2,
-      "positionRank": 62
+      "positionRank": 64
     },
     {
       "id": 16,
@@ -2242,7 +2242,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 4,
-      "positionRank": 54
+      "positionRank": 56
     },
     {
       "id": 202,
@@ -2308,7 +2308,7 @@
       "assists": 2,
       "cleanSheets": 1,
       "bonus": 5,
-      "positionRank": 56
+      "positionRank": 58
     },
     {
       "id": 106,
@@ -2377,6 +2377,28 @@
       "positionRank": 52
     },
     {
+      "id": 239,
+      "name": "Garner",
+      "position": "MID",
+      "club": "Everton",
+      "clubShort": "EVE",
+      "clubCode": 11,
+      "teamId": 9,
+      "photoCode": 232928,
+      "owner": "jls",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-06T18:00:08.301702Z",
+      "points": 29,
+      "ppg": 2.6,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 3,
+      "bonus": 0,
+      "positionRank": 70
+    },
+    {
       "id": 331,
       "name": "Gudmundsson",
       "position": "DEF",
@@ -2440,7 +2462,7 @@
       "assists": 1,
       "cleanSheets": 5,
       "bonus": 0,
-      "positionRank": 70
+      "positionRank": 73
     },
     {
       "id": 110,
@@ -2506,7 +2528,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 4,
-      "positionRank": 76
+      "positionRank": 78
     },
     {
       "id": 499,
@@ -2572,7 +2594,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 78
+      "positionRank": 79
     },
     {
       "id": 37,
@@ -2617,28 +2639,6 @@
       "cleanSheets": 2,
       "bonus": 3,
       "positionRank": 66
-    },
-    {
-      "id": 239,
-      "name": "Garner",
-      "position": "MID",
-      "club": "Everton",
-      "clubShort": "EVE",
-      "clubCode": 11,
-      "teamId": 9,
-      "photoCode": 232928,
-      "owner": "jls",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-06T18:00:08.301702Z",
-      "points": 25,
-      "ppg": 2.5,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 3,
-      "bonus": 0,
-      "positionRank": 80
     },
     {
       "id": 569,
@@ -3012,7 +3012,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 78
+      "positionRank": 79
     },
     {
       "id": 393,
@@ -3034,7 +3034,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 79
+      "positionRank": 80
     },
     {
       "id": 598,
@@ -3078,7 +3078,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 104
+      "positionRank": 105
     },
     {
       "id": 32,
@@ -3090,9 +3090,9 @@
       "teamId": 2,
       "photoCode": 199796,
       "owner": "rushy",
-      "status": "i",
+      "status": "d",
       "chanceOfPlaying": 0,
-      "news": "Concussion - Expected back 28 Nov",
+      "news": "Concussion - 75% chance of playing",
       "newsAdded": "2026-11-15T10:30:05.648897Z",
       "points": 18,
       "ppg": 2.3,
@@ -3100,7 +3100,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 81
+      "positionRank": 82
     },
     {
       "id": 36,
@@ -3122,7 +3122,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 83
+      "positionRank": 84
     },
     {
       "id": 201,
@@ -3144,7 +3144,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 86
+      "positionRank": 87
     },
     {
       "id": 387,
@@ -3166,7 +3166,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 87
+      "positionRank": 88
     },
     {
       "id": 34,
@@ -3188,7 +3188,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 84
+      "positionRank": 85
     },
     {
       "id": 646,
@@ -3254,7 +3254,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 115
+      "positionRank": 118
     },
     {
       "id": 5,
@@ -3276,7 +3276,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 91
+      "positionRank": 92
     },
     {
       "id": 300,
@@ -3408,7 +3408,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 139
+      "positionRank": 141
     },
     {
       "id": 152,
@@ -3496,7 +3496,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 39
+      "positionRank": 40
     },
     {
       "id": 439,
@@ -3518,7 +3518,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 38
+      "positionRank": 39
     },
     {
       "id": 78,
@@ -3540,7 +3540,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 163
+      "positionRank": 164
     },
     {
       "id": 223,
@@ -3633,6 +3633,28 @@
   ],
   "freeAgents": [
     {
+      "id": 86,
+      "name": "Lewis-Potter",
+      "position": "MID",
+      "club": "Brentford",
+      "clubShort": "BRE",
+      "clubCode": 94,
+      "teamId": 4,
+      "photoCode": 249231,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 55,
+      "ppg": 5,
+      "goals": 4,
+      "assists": 1,
+      "cleanSheets": 4,
+      "bonus": 8,
+      "positionRank": 6
+    },
+    {
       "id": 279,
       "name": "Ajayi",
       "position": "DEF",
@@ -3652,7 +3674,7 @@
       "assists": 0,
       "cleanSheets": 5,
       "bonus": 2,
-      "positionRank": 16
+      "positionRank": 17
     },
     {
       "id": 336,
@@ -3674,7 +3696,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 4,
-      "positionRank": 21
+      "positionRank": 23
     },
     {
       "id": 264,
@@ -3696,7 +3718,7 @@
       "assists": 1,
       "cleanSheets": 7,
       "bonus": 4,
-      "positionRank": 25
+      "positionRank": 27
     },
     {
       "id": 261,
@@ -3718,7 +3740,7 @@
       "assists": 1,
       "cleanSheets": 5,
       "bonus": 7,
-      "positionRank": 24
+      "positionRank": 26
     },
     {
       "id": 211,
@@ -3740,7 +3762,7 @@
       "assists": 3,
       "cleanSheets": 1,
       "bonus": 6,
-      "positionRank": 29
+      "positionRank": 31
     },
     {
       "id": 481,
@@ -3762,29 +3784,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 3,
-      "positionRank": 34
-    },
-    {
-      "id": 86,
-      "name": "Lewis-Potter",
-      "position": "MID",
-      "club": "Brentford",
-      "clubShort": "BRE",
-      "clubCode": 94,
-      "teamId": 4,
-      "photoCode": 249231,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 39,
-      "ppg": 3.9,
-      "goals": 2,
-      "assists": 1,
-      "cleanSheets": 3,
-      "bonus": 5,
-      "positionRank": 32
+      "positionRank": 35
     },
     {
       "id": 586,
@@ -3806,7 +3806,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 1,
-      "positionRank": 29
+      "positionRank": 30
     },
     {
       "id": 338,
@@ -3828,7 +3828,7 @@
       "assists": 2,
       "cleanSheets": 4,
       "bonus": 0,
-      "positionRank": 36
+      "positionRank": 37
     },
     {
       "id": 214,
@@ -3850,7 +3850,29 @@
       "assists": 3,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 35
+      "positionRank": 36
+    },
+    {
+      "id": 105,
+      "name": "Anthony",
+      "position": "MID",
+      "club": "Brentford",
+      "clubShort": "BRE",
+      "clubCode": 94,
+      "teamId": 4,
+      "photoCode": 444180,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 37,
+      "ppg": 3.7,
+      "goals": 1,
+      "assists": 4,
+      "cleanSheets": 3,
+      "bonus": 3,
+      "positionRank": 41
     },
     {
       "id": 257,
@@ -3872,7 +3894,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 1,
-      "positionRank": 31
+      "positionRank": 32
     },
     {
       "id": 533,
@@ -3894,7 +3916,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 2,
-      "positionRank": 32
+      "positionRank": 33
     },
     {
       "id": 640,
@@ -3916,7 +3938,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 33
+      "positionRank": 34
     },
     {
       "id": 472,
@@ -3938,7 +3960,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 36
+      "positionRank": 37
     },
     {
       "id": 173,
@@ -3960,7 +3982,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 34
+      "positionRank": 35
     },
     {
       "id": 43,
@@ -3982,7 +4004,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 42
+      "positionRank": 43
     },
     {
       "id": 460,
@@ -4004,7 +4026,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 43
+      "positionRank": 44
     },
     {
       "id": 432,
@@ -4026,7 +4048,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 45
+      "positionRank": 46
     },
     {
       "id": 455,
@@ -4048,7 +4070,29 @@
       "assists": 1,
       "cleanSheets": 4,
       "bonus": 2,
-      "positionRank": 46
+      "positionRank": 47
+    },
+    {
+      "id": 556,
+      "name": "M.Sangaré",
+      "position": "MID",
+      "club": "Brentford",
+      "clubShort": "BRE",
+      "clubCode": 94,
+      "teamId": 4,
+      "photoCode": 513545,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 33,
+      "ppg": 3,
+      "goals": 0,
+      "assists": 2,
+      "cleanSheets": 2,
+      "bonus": 3,
+      "positionRank": 51
     },
     {
       "id": 377,
@@ -4070,7 +4114,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 48
+      "positionRank": 49
     },
     {
       "id": 254,
@@ -4114,7 +4158,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 5,
-      "positionRank": 49
+      "positionRank": 50
     },
     {
       "id": 282,
@@ -4161,28 +4205,6 @@
       "positionRank": 41
     },
     {
-      "id": 556,
-      "name": "M.Sangaré",
-      "position": "MID",
-      "club": "Brentford",
-      "clubShort": "BRE",
-      "clubCode": 94,
-      "teamId": 4,
-      "photoCode": 513545,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 32,
-      "ppg": 3.2,
-      "goals": 0,
-      "assists": 2,
-      "cleanSheets": 2,
-      "bonus": 3,
-      "positionRank": 50
-    },
-    {
       "id": 567,
       "name": "Schlager",
       "position": "MID",
@@ -4202,7 +4224,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 51
+      "positionRank": 52
     },
     {
       "id": 280,
@@ -4227,6 +4249,28 @@
       "positionRank": 43
     },
     {
+      "id": 242,
+      "name": "George",
+      "position": "MID",
+      "club": "Everton",
+      "clubShort": "EVE",
+      "clubCode": 11,
+      "teamId": 9,
+      "photoCode": 550615,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 31,
+      "ppg": 2.8,
+      "goals": 1,
+      "assists": 1,
+      "cleanSheets": 3,
+      "bonus": 3,
+      "positionRank": 54
+    },
+    {
       "id": 486,
       "name": "McAtee",
       "position": "MID",
@@ -4246,7 +4290,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 53
+      "positionRank": 55
     },
     {
       "id": 304,
@@ -4293,6 +4337,28 @@
       "positionRank": 42
     },
     {
+      "id": 244,
+      "name": "Armstrong",
+      "position": "MID",
+      "club": "Everton",
+      "clubShort": "EVE",
+      "clubCode": 11,
+      "teamId": 9,
+      "photoCode": 609873,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-17T08:30:08.942299Z",
+      "points": 30,
+      "ppg": 2.7,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 4,
+      "bonus": 0,
+      "positionRank": 60
+    },
+    {
       "id": 176,
       "name": "Dasilva",
       "position": "DEF",
@@ -4337,28 +4403,6 @@
       "positionRank": 50
     },
     {
-      "id": 242,
-      "name": "George",
-      "position": "MID",
-      "club": "Everton",
-      "clubShort": "EVE",
-      "clubCode": 11,
-      "teamId": 9,
-      "photoCode": 550615,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 30,
-      "ppg": 3,
-      "goals": 1,
-      "assists": 1,
-      "cleanSheets": 3,
-      "bonus": 3,
-      "positionRank": 58
-    },
-    {
       "id": 372,
       "name": "Mac Allister",
       "position": "MID",
@@ -4378,7 +4422,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 1,
-      "positionRank": 59
+      "positionRank": 61
     },
     {
       "id": 483,
@@ -4400,7 +4444,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 2,
-      "positionRank": 61
+      "positionRank": 63
     },
     {
       "id": 619,
@@ -4422,7 +4466,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 63
+      "positionRank": 65
     },
     {
       "id": 210,
@@ -4444,7 +4488,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 57
+      "positionRank": 59
     },
     {
       "id": 73,
@@ -4466,7 +4510,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 0,
-      "positionRank": 65
+      "positionRank": 67
     },
     {
       "id": 265,
@@ -4488,7 +4532,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 67
+      "positionRank": 71
     },
     {
       "id": 595,
@@ -4532,7 +4576,29 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 66
+      "positionRank": 69
+    },
+    {
+      "id": 95,
+      "name": "O.Dango",
+      "position": "MID",
+      "club": "Brentford",
+      "clubShort": "BRE",
+      "clubCode": 94,
+      "teamId": 4,
+      "photoCode": 533463,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 29,
+      "ppg": 2.6,
+      "goals": 1,
+      "assists": 1,
+      "cleanSheets": 3,
+      "bonus": 3,
+      "positionRank": 68
     },
     {
       "id": 592,
@@ -4598,29 +4664,7 @@
       "assists": 2,
       "cleanSheets": 4,
       "bonus": 0,
-      "positionRank": 68
-    },
-    {
-      "id": 244,
-      "name": "Armstrong",
-      "position": "MID",
-      "club": "Everton",
-      "clubShort": "EVE",
-      "clubCode": 11,
-      "teamId": 9,
-      "photoCode": 609873,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-17T08:30:08.942299Z",
-      "points": 28,
-      "ppg": 2.8,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 4,
-      "bonus": 0,
-      "positionRank": 69
+      "positionRank": 72
     },
     {
       "id": 579,
@@ -4642,7 +4686,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 0,
-      "positionRank": 72
+      "positionRank": 75
     },
     {
       "id": 536,
@@ -4686,29 +4730,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 1,
-      "positionRank": 71
-    },
-    {
-      "id": 105,
-      "name": "Anthony",
-      "position": "MID",
-      "club": "Brentford",
-      "clubShort": "BRE",
-      "clubCode": 94,
-      "teamId": 4,
-      "photoCode": 444180,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 27,
-      "ppg": 3,
-      "goals": 1,
-      "assists": 2,
-      "cleanSheets": 2,
-      "bonus": 2,
-      "positionRank": 73
+      "positionRank": 74
     },
     {
       "id": 313,
@@ -4730,7 +4752,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 3,
-      "positionRank": 75
+      "positionRank": 77
     },
     {
       "id": 541,
@@ -4774,7 +4796,7 @@
       "assists": 1,
       "cleanSheets": 4,
       "bonus": 0,
-      "positionRank": 74
+      "positionRank": 76
     },
     {
       "id": 474,
@@ -4821,28 +4843,6 @@
       "positionRank": 64
     },
     {
-      "id": 95,
-      "name": "O.Dango",
-      "position": "MID",
-      "club": "Brentford",
-      "clubShort": "BRE",
-      "clubCode": 94,
-      "teamId": 4,
-      "photoCode": 533463,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 26,
-      "ppg": 2.6,
-      "goals": 1,
-      "assists": 1,
-      "cleanSheets": 2,
-      "bonus": 3,
-      "positionRank": 77
-    },
-    {
       "id": 539,
       "name": "O'Nien",
       "position": "DEF",
@@ -4884,7 +4884,7 @@
       "assists": 1,
       "cleanSheets": 4,
       "bonus": 1,
-      "positionRank": 79
+      "positionRank": 80
     },
     {
       "id": 522,
@@ -4940,10 +4940,10 @@
       "teamId": 5,
       "photoCode": 611695,
       "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
+      "status": "i",
+      "chanceOfPlaying": 0,
+      "news": "Unspecified injury - Unknown return date",
+      "newsAdded": "2026-11-23T14:30:06.034940Z",
       "points": 25,
       "ppg": 2.5,
       "goals": 2,
@@ -4962,9 +4962,9 @@
       "teamId": 11,
       "photoCode": 490094,
       "owner": null,
-      "status": "d",
+      "status": "i",
       "chanceOfPlaying": 100,
-      "news": "Hamstring injury - 75% chance of playing",
+      "news": "Hamstring injury - Unknown return date",
       "newsAdded": "2026-11-22T15:00:05.901794Z",
       "points": 24,
       "ppg": 2.7,
@@ -5085,6 +5085,28 @@
       "positionRank": 90
     },
     {
+      "id": 96,
+      "name": "Damsgaard",
+      "position": "MID",
+      "club": "Brentford",
+      "clubShort": "BRE",
+      "clubCode": 94,
+      "teamId": 4,
+      "photoCode": 440089,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-03T19:30:08.141728Z",
+      "points": 22,
+      "ppg": 2.4,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 3,
+      "bonus": 3,
+      "positionRank": 92
+    },
+    {
       "id": 457,
       "name": "J.Murphy",
       "position": "MID",
@@ -5104,7 +5126,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 93
+      "positionRank": 94
     },
     {
       "id": 563,
@@ -5126,7 +5148,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 95
+      "positionRank": 96
     },
     {
       "id": 389,
@@ -5138,9 +5160,9 @@
       "teamId": 15,
       "photoCode": 465351,
       "owner": null,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 50,
-      "news": "Unspecified injury - 50% chance of playing",
+      "news": null,
       "newsAdded": "2026-11-20T15:30:06.460505Z",
       "points": 22,
       "ppg": 3.1,
@@ -5192,7 +5214,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 94
+      "positionRank": 95
     },
     {
       "id": 369,
@@ -5214,7 +5236,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 92
+      "positionRank": 93
     },
     {
       "id": 93,
@@ -5258,7 +5280,7 @@
       "assists": 1,
       "cleanSheets": 4,
       "bonus": 0,
-      "positionRank": 99
+      "positionRank": 100
     },
     {
       "id": 327,
@@ -5324,7 +5346,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 97
+      "positionRank": 98
     },
     {
       "id": 271,
@@ -5368,7 +5390,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 96
+      "positionRank": 97
     },
     {
       "id": 577,
@@ -5390,7 +5412,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 98
+      "positionRank": 99
     },
     {
       "id": 175,
@@ -5456,7 +5478,7 @@
       "assists": 1,
       "cleanSheets": 4,
       "bonus": 0,
-      "positionRank": 100
+      "positionRank": 101
     },
     {
       "id": 184,
@@ -5478,7 +5500,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 101
+      "positionRank": 102
     },
     {
       "id": 570,
@@ -5500,7 +5522,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 102
+      "positionRank": 103
     },
     {
       "id": 635,
@@ -5522,7 +5544,29 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 103
+      "positionRank": 104
+    },
+    {
+      "id": 85,
+      "name": "Van den Berg",
+      "position": "DEF",
+      "club": "Brentford",
+      "clubShort": "BRE",
+      "clubCode": 94,
+      "teamId": 4,
+      "photoCode": 444765,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-15T15:30:06.416627Z",
+      "points": 20,
+      "ppg": 4,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 2,
+      "positionRank": 78
     },
     {
       "id": 337,
@@ -5544,29 +5588,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 107
-    },
-    {
-      "id": 96,
-      "name": "Damsgaard",
-      "position": "MID",
-      "club": "Brentford",
-      "clubShort": "BRE",
-      "clubCode": 94,
-      "teamId": 4,
-      "photoCode": 440089,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-03T19:30:08.141728Z",
-      "points": 19,
-      "ppg": 2.4,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 2,
-      "bonus": 3,
-      "positionRank": 105
+      "positionRank": 108
     },
     {
       "id": 267,
@@ -5588,7 +5610,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 106
+      "positionRank": 107
     },
     {
       "id": 418,
@@ -5610,7 +5632,29 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 80
+      "positionRank": 81
+    },
+    {
+      "id": 102,
+      "name": "Yarmoliuk",
+      "position": "MID",
+      "club": "Brentford",
+      "clubShort": "BRE",
+      "clubCode": 94,
+      "teamId": 4,
+      "photoCode": 508395,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-17T15:00:07.992801Z",
+      "points": 19,
+      "ppg": 2.1,
+      "goals": 1,
+      "assists": 1,
+      "cleanSheets": 2,
+      "bonus": 1,
+      "positionRank": 106
     },
     {
       "id": 574,
@@ -5632,7 +5676,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 108
+      "positionRank": 109
     },
     {
       "id": 315,
@@ -5654,7 +5698,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 109
+      "positionRank": 111
     },
     {
       "id": 519,
@@ -5676,7 +5720,29 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 111
+      "positionRank": 113
+    },
+    {
+      "id": 97,
+      "name": "Jensen",
+      "position": "MID",
+      "club": "Brentford",
+      "clubShort": "BRE",
+      "clubCode": 94,
+      "teamId": 4,
+      "photoCode": 207283,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-30T12:30:08.176795Z",
+      "points": 18,
+      "ppg": 2.6,
+      "goals": 0,
+      "assists": 2,
+      "cleanSheets": 2,
+      "bonus": 0,
+      "positionRank": 110
     },
     {
       "id": 459,
@@ -5698,7 +5764,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 110
+      "positionRank": 112
     },
     {
       "id": 33,
@@ -5720,7 +5786,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 82
+      "positionRank": 83
     },
     {
       "id": 224,
@@ -5764,7 +5830,29 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 85
+      "positionRank": 86
+    },
+    {
+      "id": 246,
+      "name": "Röhl",
+      "position": "MID",
+      "club": "Everton",
+      "clubShort": "EVE",
+      "clubCode": 11,
+      "teamId": 9,
+      "photoCode": 513466,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-16T18:00:09.541933Z",
+      "points": 17,
+      "ppg": 2.1,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 0,
+      "positionRank": 114
     },
     {
       "id": 46,
@@ -5786,7 +5874,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 112
+      "positionRank": 115
     },
     {
       "id": 203,
@@ -5808,7 +5896,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 88
+      "positionRank": 89
     },
     {
       "id": 417,
@@ -5830,7 +5918,29 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 89
+      "positionRank": 90
+    },
+    {
+      "id": 209,
+      "name": "Johnson",
+      "position": "MID",
+      "club": "Everton",
+      "clubShort": "EVE",
+      "clubCode": 11,
+      "teamId": 9,
+      "photoCode": 242898,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 16,
+      "ppg": 1.5,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 0,
+      "positionRank": 116
     },
     {
       "id": 506,
@@ -5852,7 +5962,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 90
+      "positionRank": 91
     },
     {
       "id": 260,
@@ -5874,29 +5984,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 114
-    },
-    {
-      "id": 102,
-      "name": "Yarmoliuk",
-      "position": "MID",
-      "club": "Brentford",
-      "clubShort": "BRE",
-      "clubCode": 94,
-      "teamId": 4,
-      "photoCode": 508395,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-17T15:00:07.992801Z",
-      "points": 16,
-      "ppg": 2,
-      "goals": 1,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 1,
-      "positionRank": 113
+      "positionRank": 117
     },
     {
       "id": 448,
@@ -5918,7 +6006,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 92
+      "positionRank": 94
     },
     {
       "id": 159,
@@ -5940,29 +6028,29 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 116
+      "positionRank": 119
     },
     {
-      "id": 209,
-      "name": "Johnson",
+      "id": 247,
+      "name": "Hackney",
       "position": "MID",
       "club": "Everton",
       "clubShort": "EVE",
       "clubCode": 11,
       "teamId": 9,
-      "photoCode": 242898,
+      "photoCode": 244860,
       "owner": null,
       "status": "a",
-      "chanceOfPlaying": null,
+      "chanceOfPlaying": 100,
       "news": null,
-      "newsAdded": null,
+      "newsAdded": "2026-08-26T22:00:07.797766Z",
       "points": 15,
       "ppg": 1.5,
       "goals": 0,
-      "assists": 0,
-      "cleanSheets": 2,
+      "assists": 1,
+      "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 117
+      "positionRank": 121
     },
     {
       "id": 213,
@@ -5984,7 +6072,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 118
+      "positionRank": 120
     },
     {
       "id": 471,
@@ -6006,29 +6094,29 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 93
+      "positionRank": 95
     },
     {
-      "id": 246,
-      "name": "Röhl",
-      "position": "MID",
+      "id": 232,
+      "name": "O'Brien",
+      "position": "DEF",
       "club": "Everton",
       "clubShort": "EVE",
       "clubCode": 11,
       "teamId": 9,
-      "photoCode": 513466,
+      "photoCode": 512462,
       "owner": null,
       "status": "a",
-      "chanceOfPlaying": 100,
+      "chanceOfPlaying": null,
       "news": null,
-      "newsAdded": "2026-09-16T18:00:09.541933Z",
+      "newsAdded": null,
       "points": 15,
       "ppg": 2.1,
       "goals": 0,
       "assists": 0,
-      "cleanSheets": 2,
+      "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 119
+      "positionRank": 93
     },
     {
       "id": 604,
@@ -6050,7 +6138,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 120
+      "positionRank": 122
     },
     {
       "id": 532,
@@ -6072,7 +6160,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 95
+      "positionRank": 96
     },
     {
       "id": 516,
@@ -6116,51 +6204,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 96
-    },
-    {
-      "id": 247,
-      "name": "Hackney",
-      "position": "MID",
-      "club": "Everton",
-      "clubShort": "EVE",
-      "clubCode": 11,
-      "teamId": 9,
-      "photoCode": 244860,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-26T22:00:07.797766Z",
-      "points": 14,
-      "ppg": 1.6,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 124
-    },
-    {
-      "id": 97,
-      "name": "Jensen",
-      "position": "MID",
-      "club": "Brentford",
-      "clubShort": "BRE",
-      "clubCode": 94,
-      "teamId": 4,
-      "photoCode": 207283,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-30T12:30:08.176795Z",
-      "points": 14,
-      "ppg": 2.3,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 2,
-      "bonus": 0,
-      "positionRank": 122
+      "positionRank": 97
     },
     {
       "id": 7,
@@ -6182,7 +6226,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 121
+      "positionRank": 123
     },
     {
       "id": 462,
@@ -6248,29 +6292,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 123
-    },
-    {
-      "id": 85,
-      "name": "Van den Berg",
-      "position": "DEF",
-      "club": "Brentford",
-      "clubShort": "BRE",
-      "clubCode": 94,
-      "teamId": 4,
-      "photoCode": 444765,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-15T15:30:06.416627Z",
-      "points": 14,
-      "ppg": 3.5,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 2,
-      "positionRank": 94
+      "positionRank": 124
     },
     {
       "id": 618,
@@ -6304,10 +6326,10 @@
       "teamId": 11,
       "photoCode": 462635,
       "owner": null,
-      "status": "a",
+      "status": "i",
       "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-17T21:30:07.799839Z",
+      "news": "Thigh injury - Unknown return date",
+      "newsAdded": "2026-11-23T12:00:05.467109Z",
       "points": 13,
       "ppg": 2.2,
       "goals": 1,
@@ -6383,28 +6405,6 @@
       "positionRank": 29
     },
     {
-      "id": 232,
-      "name": "O'Brien",
-      "position": "DEF",
-      "club": "Everton",
-      "clubShort": "EVE",
-      "clubCode": 11,
-      "teamId": 9,
-      "photoCode": 512462,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 13,
-      "ppg": 2.2,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 97
-    },
-    {
       "id": 104,
       "name": "Onyeka",
       "position": "MID",
@@ -6471,6 +6471,28 @@
       "positionRank": 31
     },
     {
+      "id": 100,
+      "name": "Carvalho",
+      "position": "MID",
+      "club": "Brentford",
+      "clubShort": "BRE",
+      "clubCode": 94,
+      "teamId": 4,
+      "photoCode": 244858,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 75,
+      "news": null,
+      "newsAdded": "2026-10-30T14:30:09.456391Z",
+      "points": 12,
+      "ppg": 6,
+      "goals": 2,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 134
+    },
+    {
       "id": 157,
       "name": "Estêvão",
       "position": "MID",
@@ -6490,7 +6512,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 134
+      "positionRank": 135
     },
     {
       "id": 655,
@@ -6512,7 +6534,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 135
+      "positionRank": 136
     },
     {
       "id": 17,
@@ -6622,7 +6644,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 136
+      "positionRank": 137
     },
     {
       "id": 162,
@@ -6644,7 +6666,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 137
+      "positionRank": 138
     },
     {
       "id": 84,
@@ -6710,7 +6732,29 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 138
+      "positionRank": 140
+    },
+    {
+      "id": 238,
+      "name": "Grealish",
+      "position": "MID",
+      "club": "Everton",
+      "clubShort": "EVE",
+      "clubCode": 11,
+      "teamId": 9,
+      "photoCode": 114283,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-24T14:30:09.610430Z",
+      "points": 11,
+      "ppg": 1.6,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 139
     },
     {
       "id": 631,
@@ -6732,7 +6776,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 142
+      "positionRank": 144
     },
     {
       "id": 429,
@@ -6754,7 +6798,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 140
+      "positionRank": 142
     },
     {
       "id": 269,
@@ -6798,7 +6842,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 141
+      "positionRank": 143
     },
     {
       "id": 614,
@@ -6820,7 +6864,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 148
+      "positionRank": 149
     },
     {
       "id": 473,
@@ -6886,28 +6930,6 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 143
-    },
-    {
-      "id": 238,
-      "name": "Grealish",
-      "position": "MID",
-      "club": "Everton",
-      "clubShort": "EVE",
-      "clubCode": 11,
-      "teamId": 9,
-      "photoCode": 114283,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-24T14:30:09.610430Z",
-      "points": 10,
-      "ppg": 1.7,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
       "positionRank": 145
     },
     {
@@ -6952,7 +6974,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 147
+      "positionRank": 148
     },
     {
       "id": 186,
@@ -6974,7 +6996,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 144
+      "positionRank": 146
     },
     {
       "id": 241,
@@ -6996,7 +7018,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 146
+      "positionRank": 147
     },
     {
       "id": 195,
@@ -7062,7 +7084,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 153
+      "positionRank": 154
     },
     {
       "id": 289,
@@ -7084,7 +7106,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 150
+      "positionRank": 151
     },
     {
       "id": 170,
@@ -7172,7 +7194,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 155
+      "positionRank": 156
     },
     {
       "id": 419,
@@ -7238,7 +7260,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 152
+      "positionRank": 153
     },
     {
       "id": 318,
@@ -7260,7 +7282,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 151
+      "positionRank": 152
     },
     {
       "id": 164,
@@ -7282,7 +7304,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 149
+      "positionRank": 150
     },
     {
       "id": 329,
@@ -7326,7 +7348,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 154
+      "positionRank": 155
     },
     {
       "id": 490,
@@ -7392,7 +7414,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 157
+      "positionRank": 158
     },
     {
       "id": 634,
@@ -7458,7 +7480,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 156
+      "positionRank": 157
     },
     {
       "id": 589,
@@ -7480,7 +7502,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 160
+      "positionRank": 161
     },
     {
       "id": 144,
@@ -7524,7 +7546,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 158
+      "positionRank": 159
     },
     {
       "id": 636,
@@ -7546,7 +7568,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 161
+      "positionRank": 162
     },
     {
       "id": 548,
@@ -7568,7 +7590,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 159
+      "positionRank": 160
     },
     {
       "id": 256,
@@ -7615,6 +7637,28 @@
       "positionRank": 115
     },
     {
+      "id": 108,
+      "name": "Wilson",
+      "position": "FWD",
+      "club": "Brentford",
+      "clubShort": "BRE",
+      "clubCode": 94,
+      "teamId": 4,
+      "photoCode": 75115,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 8,
+      "ppg": 1,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 38
+    },
+    {
       "id": 520,
       "name": "Bergvall",
       "position": "MID",
@@ -7634,7 +7678,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 168
+      "positionRank": 169
     },
     {
       "id": 616,
@@ -7656,7 +7700,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 171
+      "positionRank": 172
     },
     {
       "id": 543,
@@ -7678,7 +7722,29 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 169
+      "positionRank": 170
+    },
+    {
+      "id": 620,
+      "name": "Diouf",
+      "position": "DEF",
+      "club": "Brentford",
+      "clubShort": "BRE",
+      "clubCode": 94,
+      "teamId": 4,
+      "photoCode": 613804,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 7,
+      "ppg": 1,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 120
     },
     {
       "id": 584,
@@ -7700,7 +7766,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 170
+      "positionRank": 171
     },
     {
       "id": 630,
@@ -7722,7 +7788,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 120
+      "positionRank": 121
     },
     {
       "id": 488,
@@ -7744,7 +7810,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 167
+      "positionRank": 168
     },
     {
       "id": 456,
@@ -7766,7 +7832,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 166
+      "positionRank": 167
     },
     {
       "id": 406,
@@ -7788,7 +7854,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 164
+      "positionRank": 165
     },
     {
       "id": 430,
@@ -7810,7 +7876,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 165
+      "positionRank": 166
     },
     {
       "id": 564,
@@ -7854,51 +7920,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 162
-    },
-    {
-      "id": 100,
-      "name": "Carvalho",
-      "position": "MID",
-      "club": "Brentford",
-      "clubShort": "BRE",
-      "clubCode": 94,
-      "teamId": 4,
-      "photoCode": 244858,
-      "owner": null,
-      "status": "d",
-      "chanceOfPlaying": 75,
-      "news": "Knock - 75% chance of playing",
-      "newsAdded": "2026-10-30T14:30:09.456391Z",
-      "points": 6,
-      "ppg": 6,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 172
-    },
-    {
-      "id": 620,
-      "name": "Diouf",
-      "position": "DEF",
-      "club": "Brentford",
-      "clubShort": "BRE",
-      "clubCode": 94,
-      "teamId": 4,
-      "photoCode": 613804,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 6,
-      "ppg": 1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 122
+      "positionRank": 163
     },
     {
       "id": 458,
@@ -8030,7 +8052,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 40
+      "positionRank": 41
     },
     {
       "id": 596,
@@ -8052,7 +8074,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 121
+      "positionRank": 122
     },
     {
       "id": 190,
@@ -8075,28 +8097,6 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 173
-    },
-    {
-      "id": 108,
-      "name": "Wilson",
-      "position": "FWD",
-      "club": "Brentford",
-      "clubShort": "BRE",
-      "clubCode": 94,
-      "teamId": 4,
-      "photoCode": 75115,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 6,
-      "ppg": 0.9,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 41
     },
     {
       "id": 62,
@@ -8558,7 +8558,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 132
+      "positionRank": 133
     },
     {
       "id": 482,
@@ -8627,6 +8627,28 @@
       "positionRank": 45
     },
     {
+      "id": 231,
+      "name": "Keane",
+      "position": "DEF",
+      "club": "Everton",
+      "clubShort": "EVE",
+      "clubCode": 11,
+      "teamId": 9,
+      "photoCode": 106611,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 4,
+      "ppg": 1,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 132
+    },
+    {
       "id": 521,
       "name": "Kulusevski",
       "position": "MID",
@@ -8690,7 +8712,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 133
+      "positionRank": 134
     },
     {
       "id": 463,
@@ -8954,7 +8976,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 134
+      "positionRank": 135
     },
     {
       "id": 607,
@@ -8977,28 +8999,6 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 47
-    },
-    {
-      "id": 231,
-      "name": "Keane",
-      "position": "DEF",
-      "club": "Everton",
-      "clubShort": "EVE",
-      "clubCode": 11,
-      "teamId": 9,
-      "photoCode": 106611,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 3,
-      "ppg": 1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 137
     },
     {
       "id": 435,
@@ -9064,7 +9064,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 136
+      "positionRank": 137
     },
     {
       "id": 523,
@@ -9152,7 +9152,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 135
+      "positionRank": 136
     },
     {
       "id": 248,
@@ -9636,7 +9636,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 211
+      "positionRank": 212
     },
     {
       "id": 622,
@@ -9702,7 +9702,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 214
+      "positionRank": 215
     },
     {
       "id": 501,
@@ -9768,7 +9768,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 213
+      "positionRank": 214
     },
     {
       "id": 89,
@@ -9834,7 +9834,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 216
+      "positionRank": 217
     },
     {
       "id": 177,
@@ -9944,7 +9944,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 218
+      "positionRank": 219
     },
     {
       "id": 578,
@@ -9966,7 +9966,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 217
+      "positionRank": 218
     },
     {
       "id": 547,
@@ -9988,7 +9988,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 215
+      "positionRank": 216
     },
     {
       "id": 662,
@@ -10010,7 +10010,29 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 219
+      "positionRank": 220
+    },
+    {
+      "id": 21,
+      "name": "Nørgaard",
+      "position": "MID",
+      "club": "Everton",
+      "clubShort": "EVE",
+      "clubCode": 11,
+      "teamId": 9,
+      "photoCode": 128295,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-15T20:00:06.779594Z",
+      "points": 1,
+      "ppg": 0.5,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 211
     },
     {
       "id": 573,
@@ -10120,7 +10142,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 212
+      "positionRank": 213
     },
     {
       "id": 38,
@@ -12914,7 +12936,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 220
+      "positionRank": 221
     },
     {
       "id": 540,
@@ -13236,7 +13258,7 @@
       "owner": null,
       "status": "i",
       "chanceOfPlaying": 0,
-      "news": "Thigh injury - Expected back 31 Oct",
+      "news": "Thigh injury - Unknown return date",
       "newsAdded": "2026-08-06T10:00:10.456051Z",
       "points": 0,
       "ppg": 0,
@@ -13399,28 +13421,6 @@
       "cleanSheets": 0,
       "bonus": 0,
       "positionRank": 224
-    },
-    {
-      "id": 21,
-      "name": "Nørgaard",
-      "position": "MID",
-      "club": "Everton",
-      "clubShort": "EVE",
-      "clubCode": 11,
-      "teamId": 9,
-      "photoCode": 128295,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-15T20:00:06.779594Z",
-      "points": 0,
-      "ppg": 0,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 221
     },
     {
       "id": 657,
@@ -14853,5 +14853,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-23T11:37:57.847Z"
+  "generatedAt": "2026-11-23T23:12:15.708Z"
 }
