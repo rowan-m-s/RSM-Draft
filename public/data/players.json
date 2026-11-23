@@ -2443,28 +2443,6 @@
       "positionRank": 70
     },
     {
-      "id": 499,
-      "name": "Pedro Porro",
-      "position": "DEF",
-      "club": "Spurs",
-      "clubShort": "TOT",
-      "clubCode": 6,
-      "teamId": 19,
-      "photoCode": 441164,
-      "owner": "rushy",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-19T12:00:08.823872Z",
-      "points": 28,
-      "ppg": 4,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 3,
-      "bonus": 4,
-      "positionRank": 57
-    },
-    {
       "id": 110,
       "name": "Rushworth",
       "position": "GKP",
@@ -2506,7 +2484,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 59
+      "positionRank": 58
     },
     {
       "id": 400,
@@ -2529,6 +2507,28 @@
       "cleanSheets": 0,
       "bonus": 4,
       "positionRank": 76
+    },
+    {
+      "id": 499,
+      "name": "Pedro Porro",
+      "position": "DEF",
+      "club": "Spurs",
+      "clubShort": "TOT",
+      "clubCode": 6,
+      "teamId": 19,
+      "photoCode": 441164,
+      "owner": "rushy",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-19T12:00:08.823872Z",
+      "points": 27,
+      "ppg": 3.9,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 3,
+      "bonus": 3,
+      "positionRank": 59
     },
     {
       "id": 194,
@@ -4664,7 +4664,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 0,
-      "positionRank": 58
+      "positionRank": 57
     },
     {
       "id": 545,
@@ -6031,6 +6031,28 @@
       "positionRank": 119
     },
     {
+      "id": 604,
+      "name": "Williams-Barnett",
+      "position": "MID",
+      "club": "Spurs",
+      "clubShort": "TOT",
+      "clubCode": 6,
+      "teamId": 19,
+      "photoCode": 611917,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 15,
+      "ppg": 5,
+      "goals": 1,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 3,
+      "positionRank": 120
+    },
+    {
       "id": 532,
       "name": "Ballard",
       "position": "DEF",
@@ -6072,7 +6094,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 125
+      "positionRank": 126
     },
     {
       "id": 583,
@@ -6116,7 +6138,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 123
+      "positionRank": 124
     },
     {
       "id": 97,
@@ -6138,7 +6160,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 121
+      "positionRank": 122
     },
     {
       "id": 7,
@@ -6160,7 +6182,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 120
+      "positionRank": 121
     },
     {
       "id": 462,
@@ -6182,7 +6204,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 124
+      "positionRank": 125
     },
     {
       "id": 644,
@@ -6226,7 +6248,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 122
+      "positionRank": 123
     },
     {
       "id": 85,
@@ -6249,28 +6271,6 @@
       "cleanSheets": 1,
       "bonus": 2,
       "positionRank": 94
-    },
-    {
-      "id": 604,
-      "name": "Williams-Barnett",
-      "position": "MID",
-      "club": "Spurs",
-      "clubShort": "TOT",
-      "clubCode": 6,
-      "teamId": 19,
-      "photoCode": 611917,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 14,
-      "ppg": 4.7,
-      "goals": 1,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 2,
-      "positionRank": 126
     },
     {
       "id": 618,
@@ -14853,5 +14853,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-23T01:19:05.799Z"
+  "generatedAt": "2026-11-23T11:37:57.847Z"
 }
