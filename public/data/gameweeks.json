@@ -1871,7 +1871,7 @@
       "waiversUtc": "2026-11-20T11:00:00Z",
       "tradesUtc": "2026-11-19T11:00:00Z",
       "month": "2026-11",
-      "finished": false,
+      "finished": true,
       "started": true,
       "scoresProvisional": false,
       "kochReady": true,
@@ -1888,8 +1888,8 @@
         "dj": 0,
         "ollie": 0
       },
-      "fixturesRemaining": true,
-      "dataChecked": false,
+      "fixturesRemaining": false,
+      "dataChecked": true,
       "locallyFinalised": true,
       "confirmed": true,
       "confirmExpectedUtc": "2026-11-24T20:00:00.000Z",
@@ -1963,7 +1963,7 @@
           "managerKey": "dj"
         },
         "ollie": {
-          "playerName": "Solanke",
+          "playerName": "Thiaw",
           "points": 7,
           "managerKey": "ollie"
         }
@@ -2726,5 +2726,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-11-24T08:30:09.733Z"
+  "generatedAt": "2026-11-24T09:40:45.206Z"
 }

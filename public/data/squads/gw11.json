@@ -4,8 +4,8 @@
   "isPreview": false,
   "deadlineUtc": "2026-11-21T11:00:00Z",
   "started": true,
-  "finished": false,
-  "dataChecked": false,
+  "finished": true,
+  "dataChecked": true,
   "locallyFinalised": true,
   "confirmed": true,
   "squads": {
@@ -743,12 +743,12 @@
     ],
     "wood": [
       {
-        "element": 557,
+        "element": 384,
         "position": 1,
-        "starter": false,
-        "subbedOn": false,
-        "subbedOff": true,
-        "points": 0
+        "starter": true,
+        "subbedOn": true,
+        "subbedOff": false,
+        "points": 2
       },
       {
         "element": 391,
@@ -759,7 +759,7 @@
         "points": 1
       },
       {
-        "element": 115,
+        "element": 8,
         "position": 3,
         "starter": true,
         "subbedOn": false,
@@ -767,60 +767,60 @@
         "points": 1
       },
       {
-        "element": 8,
-        "position": 4,
-        "starter": true,
-        "subbedOn": false,
-        "subbedOff": false,
-        "points": 1
-      },
-      {
         "element": 114,
-        "position": 5,
+        "position": 4,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
         "points": 7
       },
       {
-        "element": 37,
-        "position": 6,
-        "starter": false,
-        "subbedOn": false,
-        "subbedOff": true,
-        "points": 0
-      },
-      {
-        "element": 124,
-        "position": 7,
+        "element": 115,
+        "position": 5,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 4
+        "points": 1
+      },
+      {
+        "element": 542,
+        "position": 6,
+        "starter": true,
+        "subbedOn": true,
+        "subbedOff": false,
+        "points": 3
       },
       {
         "element": 426,
-        "position": 8,
+        "position": 7,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
         "points": 2
       },
       {
-        "element": 286,
+        "element": 124,
+        "position": 8,
+        "starter": true,
+        "subbedOn": false,
+        "subbedOff": false,
+        "points": 4
+      },
+      {
+        "element": 78,
         "position": 9,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 7
+        "points": 1
       },
       {
-        "element": 78,
+        "element": 286,
         "position": 10,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 1
+        "points": 7
       },
       {
         "element": 79,
@@ -831,20 +831,20 @@
         "points": 6
       },
       {
-        "element": 384,
+        "element": 557,
         "position": 12,
-        "starter": true,
-        "subbedOn": true,
-        "subbedOff": false,
-        "points": 2
+        "starter": false,
+        "subbedOn": false,
+        "subbedOff": true,
+        "points": 0
       },
       {
-        "element": 542,
+        "element": 37,
         "position": 13,
-        "starter": true,
-        "subbedOn": true,
-        "subbedOff": false,
-        "points": 3
+        "starter": false,
+        "subbedOn": false,
+        "subbedOff": true,
+        "points": 0
       },
       {
         "element": 552,
@@ -889,40 +889,32 @@
         "points": 8
       },
       {
-        "element": 152,
-        "position": 4,
-        "starter": false,
-        "subbedOn": false,
-        "subbedOff": true,
-        "points": 0
-      },
-      {
         "element": 113,
-        "position": 5,
+        "position": 4,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
         "points": 0
       },
       {
-        "element": 403,
+        "element": 201,
+        "position": 5,
+        "starter": true,
+        "subbedOn": true,
+        "subbedOff": false,
+        "points": 0
+      },
+      {
+        "element": 480,
         "position": 6,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 1
-      },
-      {
-        "element": 367,
-        "position": 7,
-        "starter": false,
-        "subbedOn": false,
-        "subbedOff": true,
-        "points": 0
+        "points": 2
       },
       {
         "element": 368,
-        "position": 8,
+        "position": 7,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
@@ -930,19 +922,27 @@
       },
       {
         "element": 67,
-        "position": 9,
+        "position": 8,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
         "points": 3
       },
       {
-        "element": 480,
-        "position": 10,
+        "element": 403,
+        "position": 9,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 2
+        "points": 1
+      },
+      {
+        "element": 295,
+        "position": 10,
+        "starter": true,
+        "subbedOn": true,
+        "subbedOff": false,
+        "points": 13
       },
       {
         "element": 249,
@@ -961,19 +961,19 @@
         "points": 3
       },
       {
-        "element": 295,
+        "element": 152,
         "position": 13,
-        "starter": true,
-        "subbedOn": true,
-        "subbedOff": false,
-        "points": 13
+        "starter": false,
+        "subbedOn": false,
+        "subbedOff": true,
+        "points": 0
       },
       {
-        "element": 201,
+        "element": 367,
         "position": 14,
-        "starter": true,
-        "subbedOn": true,
-        "subbedOff": false,
+        "starter": false,
+        "subbedOn": false,
+        "subbedOff": true,
         "points": 0
       },
       {
@@ -1247,40 +1247,32 @@
         "points": 6
       },
       {
-        "element": 233,
+        "element": 445,
         "position": 3,
+        "starter": true,
+        "subbedOn": true,
+        "subbedOff": false,
+        "points": 7
+      },
+      {
+        "element": 233,
+        "position": 4,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
         "points": 1
       },
       {
-        "element": 503,
-        "position": 4,
-        "starter": false,
-        "subbedOn": false,
-        "subbedOff": true,
-        "points": 0
-      },
-      {
-        "element": 515,
+        "element": 427,
         "position": 5,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 2
+        "points": 1
       },
       {
-        "element": 268,
+        "element": 554,
         "position": 6,
-        "starter": true,
-        "subbedOn": false,
-        "subbedOff": false,
-        "points": 2
-      },
-      {
-        "element": 427,
-        "position": 7,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
@@ -1288,19 +1280,27 @@
       },
       {
         "element": 47,
-        "position": 8,
+        "position": 7,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
         "points": 3
       },
       {
-        "element": 554,
+        "element": 515,
+        "position": 8,
+        "starter": true,
+        "subbedOn": false,
+        "subbedOff": false,
+        "points": 2
+      },
+      {
+        "element": 268,
         "position": 9,
         "starter": true,
         "subbedOn": false,
         "subbedOff": false,
-        "points": 1
+        "points": 2
       },
       {
         "element": 526,
@@ -1343,12 +1343,12 @@
         "points": 1
       },
       {
-        "element": 445,
+        "element": 503,
         "position": 15,
-        "starter": true,
-        "subbedOn": true,
-        "subbedOff": false,
-        "points": 7
+        "starter": false,
+        "subbedOn": false,
+        "subbedOff": true,
+        "points": 0
       }
     ]
   },
@@ -3334,5 +3334,5 @@
       "newsAdded": "2026-10-23T14:30:10.429365Z"
     }
   },
-  "generatedAt": "2026-11-24T08:30:09.733Z"
+  "generatedAt": "2026-11-24T09:40:45.206Z"
 }

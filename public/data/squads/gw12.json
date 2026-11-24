@@ -743,8 +743,8 @@
     ],
     "wood": [
       {
-        "element": 557,
-        "starter": false,
+        "element": 384,
+        "starter": true,
         "position": 1,
         "subbedOn": false,
         "subbedOff": false,
@@ -759,7 +759,7 @@
         "points": 0
       },
       {
-        "element": 115,
+        "element": 8,
         "starter": true,
         "position": 3,
         "subbedOn": false,
@@ -767,7 +767,7 @@
         "points": 0
       },
       {
-        "element": 8,
+        "element": 114,
         "starter": true,
         "position": 4,
         "subbedOn": false,
@@ -775,7 +775,7 @@
         "points": 0
       },
       {
-        "element": 114,
+        "element": 115,
         "starter": true,
         "position": 5,
         "subbedOn": false,
@@ -783,17 +783,9 @@
         "points": 0
       },
       {
-        "element": 37,
-        "starter": false,
-        "position": 6,
-        "subbedOn": false,
-        "subbedOff": false,
-        "points": 0
-      },
-      {
-        "element": 124,
+        "element": 542,
         "starter": true,
-        "position": 7,
+        "position": 6,
         "subbedOn": false,
         "subbedOff": false,
         "points": 0
@@ -801,13 +793,21 @@
       {
         "element": 426,
         "starter": true,
+        "position": 7,
+        "subbedOn": false,
+        "subbedOff": false,
+        "points": 0
+      },
+      {
+        "element": 124,
+        "starter": true,
         "position": 8,
         "subbedOn": false,
         "subbedOff": false,
         "points": 0
       },
       {
-        "element": 286,
+        "element": 78,
         "starter": true,
         "position": 9,
         "subbedOn": false,
@@ -815,7 +815,7 @@
         "points": 0
       },
       {
-        "element": 78,
+        "element": 286,
         "starter": true,
         "position": 10,
         "subbedOn": false,
@@ -831,16 +831,16 @@
         "points": 0
       },
       {
-        "element": 384,
-        "starter": true,
+        "element": 557,
+        "starter": false,
         "position": 12,
         "subbedOn": false,
         "subbedOff": false,
         "points": 0
       },
       {
-        "element": 542,
-        "starter": true,
+        "element": 37,
+        "starter": false,
         "position": 13,
         "subbedOn": false,
         "subbedOff": false,
@@ -889,15 +889,15 @@
         "points": 0
       },
       {
-        "element": 152,
-        "starter": false,
+        "element": 113,
+        "starter": true,
         "position": 4,
         "subbedOn": false,
         "subbedOff": false,
         "points": 0
       },
       {
-        "element": 113,
+        "element": 201,
         "starter": true,
         "position": 5,
         "subbedOn": false,
@@ -905,7 +905,7 @@
         "points": 0
       },
       {
-        "element": 403,
+        "element": 480,
         "starter": true,
         "position": 6,
         "subbedOn": false,
@@ -913,17 +913,9 @@
         "points": 0
       },
       {
-        "element": 367,
-        "starter": false,
-        "position": 7,
-        "subbedOn": false,
-        "subbedOff": false,
-        "points": 0
-      },
-      {
         "element": 368,
         "starter": true,
-        "position": 8,
+        "position": 7,
         "subbedOn": false,
         "subbedOff": false,
         "points": 0
@@ -931,13 +923,21 @@
       {
         "element": 67,
         "starter": true,
+        "position": 8,
+        "subbedOn": false,
+        "subbedOff": false,
+        "points": 0
+      },
+      {
+        "element": 403,
+        "starter": true,
         "position": 9,
         "subbedOn": false,
         "subbedOff": false,
         "points": 0
       },
       {
-        "element": 480,
+        "element": 295,
         "starter": true,
         "position": 10,
         "subbedOn": false,
@@ -961,16 +961,16 @@
         "points": 0
       },
       {
-        "element": 295,
-        "starter": true,
+        "element": 152,
+        "starter": false,
         "position": 13,
         "subbedOn": false,
         "subbedOff": false,
         "points": 0
       },
       {
-        "element": 201,
-        "starter": true,
+        "element": 367,
+        "starter": false,
         "position": 14,
         "subbedOn": false,
         "subbedOff": false,
@@ -1247,7 +1247,7 @@
         "points": 0
       },
       {
-        "element": 233,
+        "element": 445,
         "starter": true,
         "position": 3,
         "subbedOn": false,
@@ -1255,25 +1255,9 @@
         "points": 0
       },
       {
-        "element": 503,
-        "starter": false,
+        "element": 233,
+        "starter": true,
         "position": 4,
-        "subbedOn": false,
-        "subbedOff": false,
-        "points": 0
-      },
-      {
-        "element": 515,
-        "starter": true,
-        "position": 5,
-        "subbedOn": false,
-        "subbedOff": false,
-        "points": 0
-      },
-      {
-        "element": 268,
-        "starter": true,
-        "position": 6,
         "subbedOn": false,
         "subbedOff": false,
         "points": 0
@@ -1281,7 +1265,15 @@
       {
         "element": 427,
         "starter": true,
-        "position": 7,
+        "position": 5,
+        "subbedOn": false,
+        "subbedOff": false,
+        "points": 0
+      },
+      {
+        "element": 554,
+        "starter": true,
+        "position": 6,
         "subbedOn": false,
         "subbedOff": false,
         "points": 0
@@ -1289,13 +1281,21 @@
       {
         "element": 47,
         "starter": true,
+        "position": 7,
+        "subbedOn": false,
+        "subbedOff": false,
+        "points": 0
+      },
+      {
+        "element": 515,
+        "starter": true,
         "position": 8,
         "subbedOn": false,
         "subbedOff": false,
         "points": 0
       },
       {
-        "element": 554,
+        "element": 268,
         "starter": true,
         "position": 9,
         "subbedOn": false,
@@ -1343,8 +1343,8 @@
         "points": 0
       },
       {
-        "element": 445,
-        "starter": true,
+        "element": 503,
+        "starter": false,
         "position": 15,
         "subbedOn": false,
         "subbedOff": false,
@@ -3334,5 +3334,5 @@
       "newsAdded": "2026-10-23T14:30:10.429365Z"
     }
   },
-  "generatedAt": "2026-11-24T08:30:09.733Z"
+  "generatedAt": "2026-11-24T09:40:45.206Z"
 }
