@@ -3,8 +3,8 @@
   "started": true,
   "finished": false,
   "dataChecked": false,
-  "locallyFinalised": false,
-  "confirmed": false,
+  "locallyFinalised": true,
+  "confirmed": true,
   "byFixture": {
     "101": {
       "32": {
@@ -751,7 +751,7 @@
           {
             "stat": "defensive_contribution",
             "name": "Defensive Contribution",
-            "value": 22,
+            "value": 20,
             "points": 2
           }
         ]
@@ -2635,5 +2635,5 @@
       }
     }
   },
-  "generatedAt": "2026-11-23T23:12:15.708Z"
+  "generatedAt": "2026-11-24T05:47:05.282Z"
 }

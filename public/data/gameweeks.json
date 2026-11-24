@@ -1873,7 +1873,7 @@
       "month": "2026-11",
       "finished": false,
       "started": true,
-      "scoresProvisional": true,
+      "scoresProvisional": false,
       "kochReady": true,
       "yetByManager": {
         "rushy": 0,
@@ -1890,8 +1890,8 @@
       },
       "fixturesRemaining": true,
       "dataChecked": false,
-      "locallyFinalised": false,
-      "confirmed": false,
+      "locallyFinalised": true,
+      "confirmed": true,
       "confirmExpectedUtc": "2026-11-24T20:00:00.000Z",
       "revealFromUtc": "2026-11-24T00:10:00.000Z",
       "scores": {
@@ -1901,14 +1901,16 @@
         "jls": 42,
         "paddy": 38,
         "bennett": 50,
-        "wood": 30,
-        "rowan": 32,
+        "wood": 35,
+        "rowan": 45,
         "jason": 39,
         "dj": 44,
-        "ollie": 25
+        "ollie": 32
       },
-      "kochKeys": [],
-      "charged": 0,
+      "kochKeys": [
+        "kellett"
+      ],
+      "charged": 5,
       "topPerformerByManager": {
         "rushy": {
           "playerName": "Wirtz",
@@ -1946,8 +1948,8 @@
           "managerKey": "wood"
         },
         "rowan": {
-          "playerName": "Szoboszlai",
-          "points": 9,
+          "playerName": "McBurnie",
+          "points": 13,
           "managerKey": "rowan"
         },
         "jason": {
@@ -2010,10 +2012,10 @@
           "element": 8
         },
         "rowan": {
-          "playerName": "F.Kadıoğlu",
+          "playerName": "Muñoz",
           "points": 0,
           "managerKey": "rowan",
-          "element": 113
+          "element": 201
         },
         "jason": {
           "playerName": "Hall",
@@ -2724,5 +2726,5 @@
       "kochGraphicByManager": {}
     }
   ],
-  "generatedAt": "2026-11-23T23:12:15.708Z"
+  "generatedAt": "2026-11-24T05:47:05.282Z"
 }

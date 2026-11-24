@@ -6,8 +6,8 @@
   "started": true,
   "finished": false,
   "dataChecked": false,
-  "locallyFinalised": false,
-  "confirmed": false,
+  "locallyFinalised": true,
+  "confirmed": true,
   "squads": {
     "rushy": [
       {
@@ -745,9 +745,9 @@
       {
         "element": 557,
         "position": 1,
-        "starter": true,
+        "starter": false,
         "subbedOn": false,
-        "subbedOff": false,
+        "subbedOff": true,
         "points": 0
       },
       {
@@ -785,9 +785,9 @@
       {
         "element": 37,
         "position": 6,
-        "starter": true,
+        "starter": false,
         "subbedOn": false,
-        "subbedOff": false,
+        "subbedOff": true,
         "points": 0
       },
       {
@@ -833,16 +833,16 @@
       {
         "element": 384,
         "position": 12,
-        "starter": false,
-        "subbedOn": false,
+        "starter": true,
+        "subbedOn": true,
         "subbedOff": false,
         "points": 2
       },
       {
         "element": 542,
         "position": 13,
-        "starter": false,
-        "subbedOn": false,
+        "starter": true,
+        "subbedOn": true,
         "subbedOff": false,
         "points": 3
       },
@@ -891,9 +891,9 @@
       {
         "element": 152,
         "position": 4,
-        "starter": true,
+        "starter": false,
         "subbedOn": false,
-        "subbedOff": false,
+        "subbedOff": true,
         "points": 0
       },
       {
@@ -915,9 +915,9 @@
       {
         "element": 367,
         "position": 7,
-        "starter": true,
+        "starter": false,
         "subbedOn": false,
-        "subbedOff": false,
+        "subbedOff": true,
         "points": 0
       },
       {
@@ -963,16 +963,16 @@
       {
         "element": 295,
         "position": 13,
-        "starter": false,
-        "subbedOn": false,
+        "starter": true,
+        "subbedOn": true,
         "subbedOff": false,
         "points": 13
       },
       {
         "element": 201,
         "position": 14,
-        "starter": false,
-        "subbedOn": false,
+        "starter": true,
+        "subbedOn": true,
         "subbedOff": false,
         "points": 0
       },
@@ -1257,9 +1257,9 @@
       {
         "element": 503,
         "position": 4,
-        "starter": true,
+        "starter": false,
         "subbedOn": false,
-        "subbedOff": false,
+        "subbedOff": true,
         "points": 0
       },
       {
@@ -1345,8 +1345,8 @@
       {
         "element": 445,
         "position": 15,
-        "starter": false,
-        "subbedOn": false,
+        "starter": true,
+        "subbedOn": true,
         "subbedOff": false,
         "points": 7
       }
@@ -3334,5 +3334,5 @@
       "newsAdded": "2026-10-23T14:30:10.429365Z"
     }
   },
-  "generatedAt": "2026-11-23T23:12:15.708Z"
+  "generatedAt": "2026-11-24T05:47:05.282Z"
 }

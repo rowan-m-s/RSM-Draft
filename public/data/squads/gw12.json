@@ -744,7 +744,7 @@
     "wood": [
       {
         "element": 557,
-        "starter": true,
+        "starter": false,
         "position": 1,
         "subbedOn": false,
         "subbedOff": false,
@@ -784,7 +784,7 @@
       },
       {
         "element": 37,
-        "starter": true,
+        "starter": false,
         "position": 6,
         "subbedOn": false,
         "subbedOff": false,
@@ -832,7 +832,7 @@
       },
       {
         "element": 384,
-        "starter": false,
+        "starter": true,
         "position": 12,
         "subbedOn": false,
         "subbedOff": false,
@@ -840,7 +840,7 @@
       },
       {
         "element": 542,
-        "starter": false,
+        "starter": true,
         "position": 13,
         "subbedOn": false,
         "subbedOff": false,
@@ -890,7 +890,7 @@
       },
       {
         "element": 152,
-        "starter": true,
+        "starter": false,
         "position": 4,
         "subbedOn": false,
         "subbedOff": false,
@@ -914,7 +914,7 @@
       },
       {
         "element": 367,
-        "starter": true,
+        "starter": false,
         "position": 7,
         "subbedOn": false,
         "subbedOff": false,
@@ -962,7 +962,7 @@
       },
       {
         "element": 295,
-        "starter": false,
+        "starter": true,
         "position": 13,
         "subbedOn": false,
         "subbedOff": false,
@@ -970,7 +970,7 @@
       },
       {
         "element": 201,
-        "starter": false,
+        "starter": true,
         "position": 14,
         "subbedOn": false,
         "subbedOff": false,
@@ -1256,7 +1256,7 @@
       },
       {
         "element": 503,
-        "starter": true,
+        "starter": false,
         "position": 4,
         "subbedOn": false,
         "subbedOff": false,
@@ -1344,7 +1344,7 @@
       },
       {
         "element": 445,
-        "starter": false,
+        "starter": true,
         "position": 15,
         "subbedOn": false,
         "subbedOff": false,
@@ -3334,5 +3334,5 @@
       "newsAdded": "2026-10-23T14:30:10.429365Z"
     }
   },
-  "generatedAt": "2026-11-23T23:12:15.708Z"
+  "generatedAt": "2026-11-24T05:47:05.282Z"
 }
