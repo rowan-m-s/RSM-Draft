@@ -953,7 +953,7 @@
         "points": 0
       },
       {
-        "element": 152,
+        "element": 367,
         "starter": false,
         "position": 12,
         "subbedOn": false,
@@ -961,7 +961,7 @@
         "points": 0
       },
       {
-        "element": 367,
+        "element": 472,
         "starter": false,
         "position": 13,
         "subbedOn": false,
@@ -1361,8 +1361,8 @@
       "clubCode": 3,
       "photoCode": 154561,
       "status": "d",
-      "chanceOfPlaying": 50,
-      "news": "Shoulder injury - 50% chance of playing",
+      "chanceOfPlaying": 75,
+      "news": "Shoulder injury - 75% chance of playing",
       "newsAdded": "2026-11-21T19:00:05.753960Z"
     },
     "2": {
@@ -1552,9 +1552,9 @@
       "clubShort": "AVL",
       "clubCode": 7,
       "photoCode": 199796,
-      "status": "d",
+      "status": "a",
       "chanceOfPlaying": 0,
-      "news": "Concussion - 75% chance of playing",
+      "news": null,
       "newsAdded": "2026-11-15T10:30:05.648897Z"
     },
     "34": {
@@ -2037,18 +2037,6 @@
       "news": null,
       "newsAdded": "2026-11-08T15:00:09.230933Z"
     },
-    "152": {
-      "name": "Palestra",
-      "position": "DEF",
-      "teamId": 6,
-      "clubShort": "CHE",
-      "clubCode": 8,
-      "photoCode": 620109,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-24T18:30:07.421239Z"
-    },
     "154": {
       "name": "Palmer",
       "position": "MID",
@@ -2452,9 +2440,9 @@
       "clubShort": "IPS",
       "clubCode": 40,
       "photoCode": 455084,
-      "status": "d",
-      "chanceOfPlaying": 75,
-      "news": "Calf injury - 75% chance of playing",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
       "newsAdded": "2026-11-21T17:00:05.582448Z"
     },
     "316": {
@@ -2754,7 +2742,7 @@
       "photoCode": 437730,
       "status": "i",
       "chanceOfPlaying": 0,
-      "news": "Knee injury - Unknown return date",
+      "news": "Knee injury - Expected back 2 Dec",
       "newsAdded": "2026-10-17T17:30:09.977110Z"
     },
     "398": {
@@ -2836,10 +2824,10 @@
       "clubShort": "MUN",
       "clubCode": 1,
       "photoCode": 141746,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
+      "status": "d",
+      "chanceOfPlaying": 75,
+      "news": "Illness - 75% chance of playing",
+      "newsAdded": "2026-11-27T13:00:06.141043Z"
     },
     "427": {
       "name": "Mbeumo",
@@ -2984,6 +2972,18 @@
       "chanceOfPlaying": 75,
       "news": null,
       "newsAdded": "2026-11-16T19:00:05.480350Z"
+    },
+    "472": {
+      "name": "Murillo",
+      "position": "DEF",
+      "teamId": 18,
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "photoCode": 575476,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-07-23T12:01:23.801183Z"
     },
     "480": {
       "name": "Gibbs-White",
@@ -3334,5 +3334,5 @@
       "newsAdded": null
     }
   },
-  "generatedAt": "2026-11-27T01:51:10.696Z"
+  "generatedAt": "2026-11-27T15:57:07.819Z"
 }

@@ -1856,8 +1856,8 @@
       "clubCode": 3,
       "photoCode": 154561,
       "status": "d",
-      "chanceOfPlaying": 50,
-      "news": "Shoulder injury - 50% chance of playing",
+      "chanceOfPlaying": 75,
+      "news": "Shoulder injury - 75% chance of playing",
       "newsAdded": "2026-11-21T19:00:05.753960Z"
     },
     "4": {
@@ -2971,9 +2971,9 @@
       "clubShort": "LIV",
       "clubCode": 14,
       "photoCode": 441266,
-      "status": "i",
+      "status": "d",
       "chanceOfPlaying": 75,
-      "news": "Foot injury - Unknown return date",
+      "news": "Foot injury - 25% chance of playing",
       "newsAdded": "2026-11-03T17:00:09.626695Z"
     },
     "379": {
@@ -3093,7 +3093,7 @@
       "photoCode": 437730,
       "status": "i",
       "chanceOfPlaying": 0,
-      "news": "Knee injury - Unknown return date",
+      "news": "Knee injury - Expected back 2 Dec",
       "newsAdded": "2026-10-17T17:30:09.977110Z"
     },
     "398": {
@@ -3151,9 +3151,9 @@
       "clubShort": "TOT",
       "clubCode": 6,
       "photoCode": 510281,
-      "status": "d",
+      "status": "i",
       "chanceOfPlaying": 100,
-      "news": "Hamstring injury - 75% chance of playing",
+      "news": "Hamstring injury - Unknown return date",
       "newsAdded": "2026-11-21T17:30:05.822258Z"
     },
     "411": {
@@ -3247,10 +3247,10 @@
       "clubShort": "MUN",
       "clubCode": 1,
       "photoCode": 141746,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null
+      "status": "d",
+      "chanceOfPlaying": 75,
+      "news": "Illness - 75% chance of playing",
+      "newsAdded": "2026-11-27T13:00:06.141043Z"
     },
     "427": {
       "name": "Mbeumo",
@@ -3829,5 +3829,5 @@
       "newsAdded": "2026-08-15T16:00:07.974271Z"
     }
   },
-  "generatedAt": "2026-11-27T01:51:10.696Z"
+  "generatedAt": "2026-11-27T15:57:07.819Z"
 }
