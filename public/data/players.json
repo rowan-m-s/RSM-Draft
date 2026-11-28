@@ -265,6 +265,28 @@
       "positionRank": 3
     },
     {
+      "id": 40,
+      "name": "Rogers",
+      "position": "MID",
+      "club": "Chelsea",
+      "clubShort": "CHE",
+      "clubCode": 8,
+      "teamId": 6,
+      "photoCode": 244850,
+      "owner": "rushy",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 59,
+      "ppg": 4.9,
+      "goals": 5,
+      "assists": 2,
+      "cleanSheets": 2,
+      "bonus": 3,
+      "positionRank": 4
+    },
+    {
       "id": 571,
       "name": "Tzolakis",
       "position": "GKP",
@@ -394,28 +416,6 @@
       "assists": 1,
       "cleanSheets": 4,
       "bonus": 8,
-      "positionRank": 4
-    },
-    {
-      "id": 40,
-      "name": "Rogers",
-      "position": "MID",
-      "club": "Chelsea",
-      "clubShort": "CHE",
-      "clubCode": 8,
-      "teamId": 6,
-      "photoCode": 244850,
-      "owner": "rushy",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 57,
-      "ppg": 5.2,
-      "goals": 5,
-      "assists": 2,
-      "cleanSheets": 2,
-      "bonus": 3,
       "positionRank": 4
     },
     {
@@ -573,6 +573,28 @@
       "positionRank": 5
     },
     {
+      "id": 480,
+      "name": "Gibbs-White",
+      "position": "MID",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 222531,
+      "owner": "rowan",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-16T17:30:09.546992Z",
+      "points": 54,
+      "ppg": 4.9,
+      "goals": 3,
+      "assists": 3,
+      "cleanSheets": 1,
+      "bonus": 7,
+      "positionRank": 10
+    },
+    {
       "id": 127,
       "name": "Gomez",
       "position": "MID",
@@ -614,7 +636,7 @@
       "assists": 5,
       "cleanSheets": 7,
       "bonus": 7,
-      "positionRank": 10
+      "positionRank": 11
     },
     {
       "id": 236,
@@ -636,7 +658,7 @@
       "assists": 1,
       "cleanSheets": 4,
       "bonus": 9,
-      "positionRank": 11
+      "positionRank": 12
     },
     {
       "id": 229,
@@ -680,7 +702,7 @@
       "assists": 3,
       "cleanSheets": 2,
       "bonus": 4,
-      "positionRank": 12
+      "positionRank": 15
     },
     {
       "id": 114,
@@ -725,6 +747,50 @@
       "cleanSheets": 4,
       "bonus": 8,
       "positionRank": 6
+    },
+    {
+      "id": 156,
+      "name": "Neto",
+      "position": "MID",
+      "club": "Chelsea",
+      "clubShort": "CHE",
+      "clubCode": 8,
+      "teamId": 6,
+      "photoCode": 247632,
+      "owner": "jason",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 51,
+      "ppg": 4.3,
+      "goals": 3,
+      "assists": 3,
+      "cleanSheets": 2,
+      "bonus": 5,
+      "positionRank": 14
+    },
+    {
+      "id": 154,
+      "name": "Palmer",
+      "position": "MID",
+      "club": "Chelsea",
+      "clubShort": "CHE",
+      "clubCode": 8,
+      "teamId": 6,
+      "photoCode": 244851,
+      "owner": "paddy",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-21T13:00:09.022726Z",
+      "points": 51,
+      "ppg": 4.3,
+      "goals": 3,
+      "assists": 4,
+      "cleanSheets": 2,
+      "bonus": 3,
+      "positionRank": 13
     },
     {
       "id": 580,
@@ -812,7 +878,7 @@
       "assists": 1,
       "cleanSheets": 8,
       "bonus": 4,
-      "positionRank": 13
+      "positionRank": 16
     },
     {
       "id": 542,
@@ -834,29 +900,7 @@
       "assists": 1,
       "cleanSheets": 4,
       "bonus": 5,
-      "positionRank": 16
-    },
-    {
-      "id": 154,
-      "name": "Palmer",
-      "position": "MID",
-      "club": "Chelsea",
-      "clubShort": "CHE",
-      "clubCode": 8,
-      "teamId": 6,
-      "photoCode": 244851,
-      "owner": "paddy",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-21T13:00:09.022726Z",
-      "points": 49,
-      "ppg": 4.5,
-      "goals": 3,
-      "assists": 4,
-      "cleanSheets": 2,
-      "bonus": 3,
-      "positionRank": 14
+      "positionRank": 18
     },
     {
       "id": 183,
@@ -878,7 +922,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 4,
-      "positionRank": 15
+      "positionRank": 17
     },
     {
       "id": 356,
@@ -1010,7 +1054,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 3,
-      "positionRank": 19
+      "positionRank": 21
     },
     {
       "id": 449,
@@ -1054,7 +1098,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 5,
-      "positionRank": 18
+      "positionRank": 20
     },
     {
       "id": 165,
@@ -1120,7 +1164,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 5,
-      "positionRank": 20
+      "positionRank": 22
     },
     {
       "id": 94,
@@ -1142,7 +1186,7 @@
       "assists": 2,
       "cleanSheets": 3,
       "bonus": 6,
-      "positionRank": 17
+      "positionRank": 19
     },
     {
       "id": 428,
@@ -1164,7 +1208,7 @@
       "assists": 4,
       "cleanSheets": 1,
       "bonus": 7,
-      "positionRank": 21
+      "positionRank": 23
     },
     {
       "id": 230,
@@ -1230,7 +1274,7 @@
       "assists": 4,
       "cleanSheets": 2,
       "bonus": 5,
-      "positionRank": 22
+      "positionRank": 24
     },
     {
       "id": 258,
@@ -1318,7 +1362,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 4,
-      "positionRank": 23
+      "positionRank": 25
     },
     {
       "id": 116,
@@ -1343,28 +1387,6 @@
       "positionRank": 25
     },
     {
-      "id": 156,
-      "name": "Neto",
-      "position": "MID",
-      "club": "Chelsea",
-      "clubShort": "CHE",
-      "clubCode": 8,
-      "teamId": 6,
-      "photoCode": 247632,
-      "owner": "jason",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 42,
-      "ppg": 3.8,
-      "goals": 3,
-      "assists": 1,
-      "cleanSheets": 2,
-      "bonus": 3,
-      "positionRank": 24
-    },
-    {
       "id": 10,
       "name": "White",
       "position": "DEF",
@@ -1385,28 +1407,6 @@
       "cleanSheets": 4,
       "bonus": 4,
       "positionRank": 24
-    },
-    {
-      "id": 480,
-      "name": "Gibbs-White",
-      "position": "MID",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 222531,
-      "owner": "rowan",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-16T17:30:09.546992Z",
-      "points": 41,
-      "ppg": 4.1,
-      "goals": 1,
-      "assists": 3,
-      "cleanSheets": 1,
-      "bonus": 6,
-      "positionRank": 29
     },
     {
       "id": 82,
@@ -1450,7 +1450,7 @@
       "assists": 1,
       "cleanSheets": 6,
       "bonus": 3,
-      "positionRank": 28
+      "positionRank": 29
     },
     {
       "id": 250,
@@ -1494,7 +1494,7 @@
       "assists": 3,
       "cleanSheets": 2,
       "bonus": 7,
-      "positionRank": 25
+      "positionRank": 26
     },
     {
       "id": 591,
@@ -1529,7 +1529,7 @@
       "photoCode": 243298,
       "owner": "rowan",
       "status": "i",
-      "chanceOfPlaying": 100,
+      "chanceOfPlaying": 0,
       "news": "Calf injury - Expected back 2 Dec",
       "newsAdded": "2026-11-22T16:30:05.520808Z",
       "points": 40,
@@ -1639,7 +1639,7 @@
       "photoCode": 209036,
       "owner": "dj",
       "status": "a",
-      "chanceOfPlaying": 75,
+      "chanceOfPlaying": 100,
       "news": null,
       "newsAdded": "2026-11-07T21:30:08.741792Z",
       "points": 39,
@@ -1737,6 +1737,28 @@
       "cleanSheets": 3,
       "bonus": 1,
       "positionRank": 31
+    },
+    {
+      "id": 472,
+      "name": "Murillo",
+      "position": "DEF",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 575476,
+      "owner": "rowan",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-07-23T12:01:23.801183Z",
+      "points": 38,
+      "ppg": 3.2,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 32
     },
     {
       "id": 368,
@@ -1849,6 +1871,28 @@
       "positionRank": 11
     },
     {
+      "id": 469,
+      "name": "N.Williams",
+      "position": "DEF",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 215136,
+      "owner": "rushy",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-11-16T19:00:05.480350Z",
+      "points": 36,
+      "ppg": 3,
+      "goals": 1,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 1,
+      "positionRank": 35
+    },
+    {
       "id": 57,
       "name": "Petrović",
       "position": "GKP",
@@ -1869,6 +1913,28 @@
       "cleanSheets": 4,
       "bonus": 0,
       "positionRank": 12
+    },
+    {
+      "id": 167,
+      "name": "Delap",
+      "position": "FWD",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 463034,
+      "owner": "ollie",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 35,
+      "ppg": 3.2,
+      "goals": 3,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 3,
+      "positionRank": 11
     },
     {
       "id": 384,
@@ -1912,51 +1978,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 6,
-      "positionRank": 11
-    },
-    {
-      "id": 472,
-      "name": "Murillo",
-      "position": "DEF",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 575476,
-      "owner": "rowan",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-07-23T12:01:23.801183Z",
-      "points": 35,
-      "ppg": 3.2,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 37
-    },
-    {
-      "id": 469,
-      "name": "N.Williams",
-      "position": "DEF",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 215136,
-      "owner": "rushy",
-      "status": "a",
-      "chanceOfPlaying": 75,
-      "news": null,
-      "newsAdded": "2026-11-16T19:00:05.480350Z",
-      "points": 35,
-      "ppg": 3.2,
-      "goals": 1,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 1,
-      "positionRank": 36
+      "positionRank": 12
     },
     {
       "id": 204,
@@ -2000,7 +2022,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 0,
-      "positionRank": 48
+      "positionRank": 50
     },
     {
       "id": 222,
@@ -2013,7 +2035,7 @@
       "photoCode": 247412,
       "owner": "dj",
       "status": "a",
-      "chanceOfPlaying": 75,
+      "chanceOfPlaying": 100,
       "news": null,
       "newsAdded": "2026-11-11T13:00:09.556609Z",
       "points": 33,
@@ -2022,7 +2044,7 @@
       "assists": 2,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 12
+      "positionRank": 13
     },
     {
       "id": 552,
@@ -2044,7 +2066,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 3,
-      "positionRank": 13
+      "positionRank": 14
     },
     {
       "id": 52,
@@ -2066,29 +2088,7 @@
       "assists": 2,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 53
-    },
-    {
-      "id": 167,
-      "name": "Delap",
-      "position": "FWD",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 463034,
-      "owner": "ollie",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 31,
-      "ppg": 3.1,
-      "goals": 3,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 3,
-      "positionRank": 14
+      "positionRank": 54
     },
     {
       "id": 566,
@@ -2176,7 +2176,7 @@
       "assists": 4,
       "cleanSheets": 5,
       "bonus": 0,
-      "positionRank": 66
+      "positionRank": 67
     },
     {
       "id": 452,
@@ -2198,7 +2198,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 4,
-      "positionRank": 62
+      "positionRank": 64
     },
     {
       "id": 41,
@@ -2220,7 +2220,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 57
+      "positionRank": 58
     },
     {
       "id": 599,
@@ -2264,7 +2264,7 @@
       "assists": 3,
       "cleanSheets": 4,
       "bonus": 2,
-      "positionRank": 64
+      "positionRank": 65
     },
     {
       "id": 16,
@@ -2286,7 +2286,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 4,
-      "positionRank": 56
+      "positionRank": 57
     },
     {
       "id": 202,
@@ -2352,7 +2352,7 @@
       "assists": 2,
       "cleanSheets": 1,
       "bonus": 5,
-      "positionRank": 58
+      "positionRank": 59
     },
     {
       "id": 106,
@@ -2506,7 +2506,7 @@
       "assists": 1,
       "cleanSheets": 5,
       "bonus": 0,
-      "positionRank": 73
+      "positionRank": 74
     },
     {
       "id": 110,
@@ -2572,7 +2572,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 4,
-      "positionRank": 78
+      "positionRank": 79
     },
     {
       "id": 499,
@@ -2594,7 +2594,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 3,
-      "positionRank": 59
+      "positionRank": 60
     },
     {
       "id": 194,
@@ -2619,6 +2619,28 @@
       "positionRank": 17
     },
     {
+      "id": 151,
+      "name": "Acheampong",
+      "position": "DEF",
+      "club": "Chelsea",
+      "clubShort": "CHE",
+      "clubCode": 8,
+      "teamId": 6,
+      "photoCode": 577016,
+      "owner": "rushy",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-11-08T15:00:09.230933Z",
+      "points": 26,
+      "ppg": 2.6,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 3,
+      "positionRank": 63
+    },
+    {
       "id": 123,
       "name": "Hinshelwood",
       "position": "MID",
@@ -2638,7 +2660,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 79
+      "positionRank": 80
     },
     {
       "id": 37,
@@ -2660,29 +2682,29 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 61
+      "positionRank": 62
     },
     {
-      "id": 151,
-      "name": "Acheampong",
-      "position": "DEF",
-      "club": "Chelsea",
-      "clubShort": "CHE",
-      "clubCode": 8,
-      "teamId": 6,
-      "photoCode": 577016,
+      "id": 467,
+      "name": "Sels",
+      "position": "GKP",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 85633,
       "owner": "rushy",
       "status": "a",
-      "chanceOfPlaying": 100,
+      "chanceOfPlaying": null,
       "news": null,
-      "newsAdded": "2026-11-08T15:00:09.230933Z",
-      "points": 25,
-      "ppg": 2.8,
+      "newsAdded": null,
+      "points": 26,
+      "ppg": 2.2,
       "goals": 0,
       "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 3,
-      "positionRank": 66
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 16
     },
     {
       "id": 569,
@@ -2729,28 +2751,6 @@
       "positionRank": 18
     },
     {
-      "id": 467,
-      "name": "Sels",
-      "position": "GKP",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 85633,
-      "owner": "rushy",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 25,
-      "ppg": 2.3,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 16
-    },
-    {
       "id": 445,
       "name": "Thiaw",
       "position": "DEF",
@@ -2792,7 +2792,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 83
+      "positionRank": 84
     },
     {
       "id": 200,
@@ -2858,6 +2858,28 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
+      "positionRank": 18
+    },
+    {
+      "id": 28,
+      "name": "Martinez",
+      "position": "GKP",
+      "club": "Chelsea",
+      "clubShort": "CHE",
+      "clubCode": 8,
+      "teamId": 6,
+      "photoCode": 98980,
+      "owner": "wallis",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-17T13:30:08.724000Z",
+      "points": 23,
+      "ppg": 2.9,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 1,
       "positionRank": 17
     },
     {
@@ -2959,7 +2981,7 @@
       "photoCode": 210156,
       "owner": "paddy",
       "status": "i",
-      "chanceOfPlaying": 100,
+      "chanceOfPlaying": 0,
       "news": "Ankle injury - Unknown return date",
       "newsAdded": "2026-11-21T16:30:05.778377Z",
       "points": 21,
@@ -2968,7 +2990,51 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 3,
-      "positionRank": 23
+      "positionRank": 24
+    },
+    {
+      "id": 149,
+      "name": "Colwill",
+      "position": "DEF",
+      "club": "Chelsea",
+      "clubShort": "CHE",
+      "clubCode": 8,
+      "teamId": 6,
+      "photoCode": 460028,
+      "owner": "kellett",
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 21,
+      "ppg": 1.9,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 0,
+      "positionRank": 74
+    },
+    {
+      "id": 170,
+      "name": "Emegha",
+      "position": "FWD",
+      "club": "Chelsea",
+      "clubShort": "CHE",
+      "clubCode": 8,
+      "teamId": 6,
+      "photoCode": 503037,
+      "owner": "wood",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-09T15:00:09.063849Z",
+      "points": 21,
+      "ppg": 7,
+      "goals": 3,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 5,
+      "positionRank": 22
     },
     {
       "id": 553,
@@ -2990,29 +3056,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 24
-    },
-    {
-      "id": 28,
-      "name": "Martinez",
-      "position": "GKP",
-      "club": "Chelsea",
-      "clubShort": "CHE",
-      "clubCode": 8,
-      "teamId": 6,
-      "photoCode": 98980,
-      "owner": "wallis",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-17T13:30:08.724000Z",
-      "points": 21,
-      "ppg": 3,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 1,
-      "positionRank": 18
+      "positionRank": 25
     },
     {
       "id": 271,
@@ -3034,29 +3078,29 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 4,
-      "positionRank": 22
+      "positionRank": 23
     },
     {
-      "id": 149,
-      "name": "Colwill",
+      "id": 201,
+      "name": "Muñoz",
       "position": "DEF",
-      "club": "Chelsea",
-      "clubShort": "CHE",
-      "clubCode": 8,
-      "teamId": 6,
-      "photoCode": 460028,
-      "owner": "kellett",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 247348,
+      "owner": "rowan",
       "status": "a",
       "chanceOfPlaying": null,
       "news": null,
       "newsAdded": null,
-      "points": 20,
-      "ppg": 2,
+      "points": 21,
+      "ppg": 1.9,
       "goals": 0,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 0,
-      "positionRank": 79
+      "assists": 2,
+      "cleanSheets": 0,
+      "bonus": 2,
+      "positionRank": 76
     },
     {
       "id": 393,
@@ -3069,7 +3113,7 @@
       "photoCode": 578153,
       "owner": "jls",
       "status": "a",
-      "chanceOfPlaying": 50,
+      "chanceOfPlaying": 100,
       "news": null,
       "newsAdded": "2026-11-20T15:30:06.486420Z",
       "points": 20,
@@ -3078,7 +3122,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 80
+      "positionRank": 81
     },
     {
       "id": 14,
@@ -3103,6 +3147,28 @@
       "positionRank": 105
     },
     {
+      "id": 491,
+      "name": "Igor Jesus",
+      "position": "FWD",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 482973,
+      "owner": "rushy",
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-09T14:30:11.491800Z",
+      "points": 19,
+      "ppg": 2.4,
+      "goals": 2,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 2,
+      "positionRank": 26
+    },
+    {
       "id": 32,
       "name": "Cash",
       "position": "DEF",
@@ -3113,7 +3179,7 @@
       "photoCode": 199796,
       "owner": "rushy",
       "status": "a",
-      "chanceOfPlaying": 0,
+      "chanceOfPlaying": 100,
       "news": null,
       "newsAdded": "2026-11-15T10:30:05.648897Z",
       "points": 18,
@@ -3122,7 +3188,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 82
+      "positionRank": 83
     },
     {
       "id": 36,
@@ -3144,29 +3210,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 84
-    },
-    {
-      "id": 201,
-      "name": "Muñoz",
-      "position": "DEF",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 247348,
-      "owner": "rowan",
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 17,
-      "ppg": 1.7,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 0,
-      "bonus": 2,
-      "positionRank": 87
+      "positionRank": 85
     },
     {
       "id": 387,
@@ -3210,7 +3254,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 85
+      "positionRank": 86
     },
     {
       "id": 646,
@@ -3232,7 +3276,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 28
+      "positionRank": 30
     },
     {
       "id": 125,
@@ -3254,7 +3298,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 27
+      "positionRank": 29
     },
     {
       "id": 515,
@@ -3276,7 +3320,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 118
+      "positionRank": 119
     },
     {
       "id": 5,
@@ -3298,7 +3342,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 92
+      "positionRank": 93
     },
     {
       "id": 300,
@@ -3345,28 +3389,6 @@
       "positionRank": 122
     },
     {
-      "id": 491,
-      "name": "Igor Jesus",
-      "position": "FWD",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 482973,
-      "owner": "rushy",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-09T14:30:11.491800Z",
-      "points": 13,
-      "ppg": 1.9,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 2,
-      "positionRank": 30
-    },
-    {
       "id": 198,
       "name": "Henderson",
       "position": "GKP",
@@ -3408,29 +3430,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 32
-    },
-    {
-      "id": 170,
-      "name": "Emegha",
-      "position": "FWD",
-      "club": "Chelsea",
-      "clubShort": "CHE",
-      "clubCode": 8,
-      "teamId": 6,
-      "photoCode": 503037,
-      "owner": "wood",
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-09T15:00:09.063849Z",
-      "points": 9,
-      "ppg": 4.5,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 2,
-      "positionRank": 36
+      "positionRank": 33
     },
     {
       "id": 557,
@@ -3509,7 +3509,7 @@
       "photoCode": 560262,
       "owner": "wood",
       "status": "d",
-      "chanceOfPlaying": 100,
+      "chanceOfPlaying": 75,
       "news": "Illness - 75% chance of playing",
       "newsAdded": "2026-11-26T21:00:05.979236Z",
       "points": 7,
@@ -3696,7 +3696,7 @@
       "assists": 1,
       "cleanSheets": 7,
       "bonus": 4,
-      "positionRank": 27
+      "positionRank": 28
     },
     {
       "id": 261,
@@ -3718,7 +3718,7 @@
       "assists": 1,
       "cleanSheets": 5,
       "bonus": 7,
-      "positionRank": 26
+      "positionRank": 27
     },
     {
       "id": 211,
@@ -3872,7 +3872,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 1,
-      "positionRank": 32
+      "positionRank": 33
     },
     {
       "id": 533,
@@ -3894,7 +3894,29 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 2,
-      "positionRank": 33
+      "positionRank": 34
+    },
+    {
+      "id": 567,
+      "name": "Schlager",
+      "position": "MID",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 204561,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-11-15T17:00:06.045512Z",
+      "points": 37,
+      "ppg": 3.1,
+      "goals": 0,
+      "assists": 2,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 43
     },
     {
       "id": 640,
@@ -3916,7 +3938,29 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 34
+      "positionRank": 36
+    },
+    {
+      "id": 486,
+      "name": "McAtee",
+      "position": "MID",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 432714,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 35,
+      "ppg": 2.9,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 1,
+      "positionRank": 46
     },
     {
       "id": 173,
@@ -3929,7 +3973,7 @@
       "photoCode": 461102,
       "owner": null,
       "status": "a",
-      "chanceOfPlaying": 75,
+      "chanceOfPlaying": 100,
       "news": null,
       "newsAdded": "2026-10-24T17:00:09.115906Z",
       "points": 35,
@@ -3938,7 +3982,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 35
+      "positionRank": 37
     },
     {
       "id": 43,
@@ -3960,7 +4004,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 43
+      "positionRank": 44
     },
     {
       "id": 460,
@@ -3982,7 +4026,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 44
+      "positionRank": 45
     },
     {
       "id": 432,
@@ -4004,7 +4048,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 2,
-      "positionRank": 46
+      "positionRank": 48
     },
     {
       "id": 335,
@@ -4026,7 +4070,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 3,
-      "positionRank": 45
+      "positionRank": 47
     },
     {
       "id": 455,
@@ -4048,7 +4092,7 @@
       "assists": 1,
       "cleanSheets": 4,
       "bonus": 2,
-      "positionRank": 47
+      "positionRank": 49
     },
     {
       "id": 556,
@@ -4070,7 +4114,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 3,
-      "positionRank": 51
+      "positionRank": 53
     },
     {
       "id": 377,
@@ -4083,7 +4127,7 @@
       "photoCode": 551499,
       "owner": null,
       "status": "d",
-      "chanceOfPlaying": 100,
+      "chanceOfPlaying": 75,
       "news": "Knee injury - 75% chance of playing",
       "newsAdded": "2026-11-26T03:30:05.640103Z",
       "points": 33,
@@ -4092,7 +4136,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 49
+      "positionRank": 51
     },
     {
       "id": 254,
@@ -4136,7 +4180,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 5,
-      "positionRank": 50
+      "positionRank": 52
     },
     {
       "id": 282,
@@ -4183,28 +4227,6 @@
       "positionRank": 41
     },
     {
-      "id": 567,
-      "name": "Schlager",
-      "position": "MID",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 204561,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 75,
-      "news": null,
-      "newsAdded": "2026-11-15T17:00:06.045512Z",
-      "points": 32,
-      "ppg": 2.9,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 52
-    },
-    {
       "id": 280,
       "name": "Coyle",
       "position": "DEF",
@@ -4246,29 +4268,29 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 3,
-      "positionRank": 54
+      "positionRank": 55
     },
     {
-      "id": 486,
-      "name": "McAtee",
+      "id": 483,
+      "name": "Ndoye",
       "position": "MID",
       "club": "Nott'm Forest",
       "clubShort": "NFO",
       "clubCode": 17,
       "teamId": 18,
-      "photoCode": 432714,
+      "photoCode": 456512,
       "owner": null,
       "status": "a",
-      "chanceOfPlaying": null,
+      "chanceOfPlaying": 100,
       "news": null,
-      "newsAdded": null,
+      "newsAdded": "2026-10-29T15:00:10.057610Z",
       "points": 31,
-      "ppg": 2.8,
-      "goals": 0,
+      "ppg": 2.6,
+      "goals": 2,
       "assists": 0,
       "cleanSheets": 2,
-      "bonus": 1,
-      "positionRank": 55
+      "bonus": 2,
+      "positionRank": 56
     },
     {
       "id": 304,
@@ -4334,7 +4356,7 @@
       "assists": 1,
       "cleanSheets": 4,
       "bonus": 0,
-      "positionRank": 60
+      "positionRank": 62
     },
     {
       "id": 176,
@@ -4359,6 +4381,28 @@
       "positionRank": 47
     },
     {
+      "id": 101,
+      "name": "Henderson",
+      "position": "MID",
+      "club": "Chelsea",
+      "clubShort": "CHE",
+      "clubCode": 8,
+      "teamId": 6,
+      "photoCode": 56979,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-10-31T13:30:08.172741Z",
+      "points": 30,
+      "ppg": 4.3,
+      "goals": 2,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 3,
+      "positionRank": 60
+    },
+    {
       "id": 372,
       "name": "Mac Allister",
       "position": "MID",
@@ -4378,28 +4422,6 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 1,
-      "positionRank": 61
-    },
-    {
-      "id": 483,
-      "name": "Ndoye",
-      "position": "MID",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 456512,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-29T15:00:10.057610Z",
-      "points": 30,
-      "ppg": 2.7,
-      "goals": 2,
-      "assists": 0,
-      "cleanSheets": 2,
-      "bonus": 2,
       "positionRank": 63
     },
     {
@@ -4422,7 +4444,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 65
+      "positionRank": 66
     },
     {
       "id": 210,
@@ -4444,7 +4466,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 2,
-      "positionRank": 59
+      "positionRank": 61
     },
     {
       "id": 73,
@@ -4466,7 +4488,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 0,
-      "positionRank": 67
+      "positionRank": 68
     },
     {
       "id": 265,
@@ -4513,28 +4535,6 @@
       "positionRank": 56
     },
     {
-      "id": 101,
-      "name": "Henderson",
-      "position": "MID",
-      "club": "Chelsea",
-      "clubShort": "CHE",
-      "clubCode": 8,
-      "teamId": 6,
-      "photoCode": 56979,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-31T13:30:08.172741Z",
-      "points": 29,
-      "ppg": 4.8,
-      "goals": 2,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 3,
-      "positionRank": 69
-    },
-    {
       "id": 95,
       "name": "O.Dango",
       "position": "MID",
@@ -4554,7 +4554,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 3,
-      "positionRank": 68
+      "positionRank": 69
     },
     {
       "id": 592,
@@ -4642,7 +4642,29 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 0,
-      "positionRank": 75
+      "positionRank": 76
+    },
+    {
+      "id": 161,
+      "name": "Lavia",
+      "position": "MID",
+      "club": "Chelsea",
+      "clubShort": "CHE",
+      "clubCode": 8,
+      "teamId": 6,
+      "photoCode": 514356,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": null,
+      "news": null,
+      "newsAdded": null,
+      "points": 28,
+      "ppg": 2.8,
+      "goals": 1,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 73
     },
     {
       "id": 536,
@@ -4686,7 +4708,7 @@
       "assists": 0,
       "cleanSheets": 4,
       "bonus": 1,
-      "positionRank": 74
+      "positionRank": 75
     },
     {
       "id": 313,
@@ -4708,7 +4730,29 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 3,
-      "positionRank": 77
+      "positionRank": 78
+    },
+    {
+      "id": 474,
+      "name": "Jair Cunha",
+      "position": "DEF",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 575458,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-12T14:00:09.724349Z",
+      "points": 27,
+      "ppg": 2.7,
+      "goals": 1,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 1,
+      "positionRank": 59
     },
     {
       "id": 541,
@@ -4730,7 +4774,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 60
+      "positionRank": 61
     },
     {
       "id": 290,
@@ -4752,29 +4796,7 @@
       "assists": 1,
       "cleanSheets": 4,
       "bonus": 0,
-      "positionRank": 76
-    },
-    {
-      "id": 474,
-      "name": "Jair Cunha",
-      "position": "DEF",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 575458,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-12T14:00:09.724349Z",
-      "points": 26,
-      "ppg": 2.9,
-      "goals": 1,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 1,
-      "positionRank": 62
+      "positionRank": 77
     },
     {
       "id": 637,
@@ -4796,7 +4818,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 2,
-      "positionRank": 64
+      "positionRank": 65
     },
     {
       "id": 539,
@@ -4818,7 +4840,7 @@
       "assists": 1,
       "cleanSheets": 3,
       "bonus": 1,
-      "positionRank": 63
+      "positionRank": 64
     },
     {
       "id": 75,
@@ -4840,7 +4862,7 @@
       "assists": 1,
       "cleanSheets": 4,
       "bonus": 1,
-      "positionRank": 80
+      "positionRank": 81
     },
     {
       "id": 522,
@@ -4862,7 +4884,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 81
+      "positionRank": 82
     },
     {
       "id": 148,
@@ -4884,7 +4906,7 @@
       "assists": 3,
       "cleanSheets": 2,
       "bonus": 2,
-      "positionRank": 65
+      "positionRank": 66
     },
     {
       "id": 608,
@@ -4906,7 +4928,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 1,
-      "positionRank": 82
+      "positionRank": 83
     },
     {
       "id": 240,
@@ -4919,7 +4941,7 @@
       "photoCode": 490094,
       "owner": null,
       "status": "i",
-      "chanceOfPlaying": 100,
+      "chanceOfPlaying": 0,
       "news": "Hamstring injury - Unknown return date",
       "newsAdded": "2026-11-22T15:00:05.901794Z",
       "points": 24,
@@ -4951,28 +4973,6 @@
       "cleanSheets": 1,
       "bonus": 0,
       "positionRank": 69
-    },
-    {
-      "id": 161,
-      "name": "Lavia",
-      "position": "MID",
-      "club": "Chelsea",
-      "clubShort": "CHE",
-      "clubCode": 8,
-      "teamId": 6,
-      "photoCode": 514356,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 24,
-      "ppg": 2.7,
-      "goals": 1,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 84
     },
     {
       "id": 405,
@@ -5029,7 +5029,7 @@
       "photoCode": 596777,
       "owner": null,
       "status": "a",
-      "chanceOfPlaying": 75,
+      "chanceOfPlaying": 100,
       "news": null,
       "newsAdded": "2026-11-14T10:00:05.646862Z",
       "points": 23,
@@ -5083,28 +5083,6 @@
       "cleanSheets": 3,
       "bonus": 3,
       "positionRank": 92
-    },
-    {
-      "id": 145,
-      "name": "Fofana",
-      "position": "DEF",
-      "club": "Chelsea",
-      "clubShort": "CHE",
-      "clubCode": 8,
-      "teamId": 6,
-      "photoCode": 444463,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-07-23T12:01:23.464591Z",
-      "points": 22,
-      "ppg": 3.1,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 1,
-      "bonus": 2,
-      "positionRank": 71
     },
     {
       "id": 457,
@@ -5161,7 +5139,7 @@
       "photoCode": 465351,
       "owner": null,
       "status": "a",
-      "chanceOfPlaying": 50,
+      "chanceOfPlaying": 100,
       "news": null,
       "newsAdded": "2026-11-20T15:30:06.460505Z",
       "points": 22,
@@ -5170,7 +5148,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 72
+      "positionRank": 71
     },
     {
       "id": 656,
@@ -5192,7 +5170,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 73
+      "positionRank": 72
     },
     {
       "id": 551,
@@ -5280,7 +5258,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 2,
-      "positionRank": 76
+      "positionRank": 78
     },
     {
       "id": 259,
@@ -5302,7 +5280,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 75
+      "positionRank": 77
     },
     {
       "id": 572,
@@ -5325,6 +5303,28 @@
       "cleanSheets": 0,
       "bonus": 1,
       "positionRank": 98
+    },
+    {
+      "id": 145,
+      "name": "Fofana",
+      "position": "DEF",
+      "club": "Chelsea",
+      "clubShort": "CHE",
+      "clubCode": 8,
+      "teamId": 6,
+      "photoCode": 444463,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-07-23T12:01:23.464591Z",
+      "points": 21,
+      "ppg": 2.6,
+      "goals": 0,
+      "assists": 1,
+      "cleanSheets": 1,
+      "bonus": 2,
+      "positionRank": 73
     },
     {
       "id": 185,
@@ -5390,7 +5390,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 74
+      "positionRank": 75
     },
     {
       "id": 611,
@@ -5412,7 +5412,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 2,
-      "positionRank": 77
+      "positionRank": 79
     },
     {
       "id": 71,
@@ -5522,7 +5522,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 2,
-      "positionRank": 78
+      "positionRank": 80
     },
     {
       "id": 337,
@@ -5544,7 +5544,29 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 108
+      "positionRank": 109
+    },
+    {
+      "id": 159,
+      "name": "Caicedo",
+      "position": "MID",
+      "club": "Chelsea",
+      "clubShort": "CHE",
+      "clubCode": 8,
+      "teamId": 6,
+      "photoCode": 486672,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-11-21T16:30:05.451902Z",
+      "points": 19,
+      "ppg": 2.4,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 2,
+      "bonus": 0,
+      "positionRank": 107
     },
     {
       "id": 598,
@@ -5566,7 +5588,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 3,
-      "positionRank": 25
+      "positionRank": 27
     },
     {
       "id": 267,
@@ -5588,7 +5610,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 107
+      "positionRank": 108
     },
     {
       "id": 418,
@@ -5601,7 +5623,7 @@
       "photoCode": 95658,
       "owner": null,
       "status": "a",
-      "chanceOfPlaying": 75,
+      "chanceOfPlaying": 100,
       "news": null,
       "newsAdded": "2026-11-11T01:00:09.173434Z",
       "points": 19,
@@ -5610,7 +5632,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 81
+      "positionRank": 82
     },
     {
       "id": 102,
@@ -5654,7 +5676,7 @@
       "assists": 0,
       "cleanSheets": 3,
       "bonus": 0,
-      "positionRank": 109
+      "positionRank": 110
     },
     {
       "id": 315,
@@ -5676,7 +5698,7 @@
       "assists": 2,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 111
+      "positionRank": 112
     },
     {
       "id": 519,
@@ -5698,7 +5720,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 113
+      "positionRank": 114
     },
     {
       "id": 97,
@@ -5720,7 +5742,7 @@
       "assists": 2,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 110
+      "positionRank": 111
     },
     {
       "id": 459,
@@ -5742,7 +5764,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 112
+      "positionRank": 113
     },
     {
       "id": 33,
@@ -5764,7 +5786,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 1,
-      "positionRank": 83
+      "positionRank": 84
     },
     {
       "id": 224,
@@ -5786,7 +5808,7 @@
       "assists": 1,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 26
+      "positionRank": 28
     },
     {
       "id": 119,
@@ -5808,7 +5830,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 86
+      "positionRank": 87
     },
     {
       "id": 246,
@@ -5830,7 +5852,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 114
+      "positionRank": 115
     },
     {
       "id": 46,
@@ -5852,7 +5874,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 115
+      "positionRank": 116
     },
     {
       "id": 203,
@@ -5918,7 +5940,29 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 116
+      "positionRank": 117
+    },
+    {
+      "id": 471,
+      "name": "Milenković",
+      "position": "DEF",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 227444,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-09-12T14:00:09.705107Z",
+      "points": 16,
+      "ppg": 2,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 91
     },
     {
       "id": 506,
@@ -5940,7 +5984,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 91
+      "positionRank": 92
     },
     {
       "id": 260,
@@ -5962,7 +6006,7 @@
       "assists": 1,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 117
+      "positionRank": 118
     },
     {
       "id": 448,
@@ -5984,29 +6028,29 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 94
+      "positionRank": 95
     },
     {
-      "id": 159,
-      "name": "Caicedo",
-      "position": "MID",
+      "id": 583,
+      "name": "Chavarria",
+      "position": "DEF",
       "club": "Chelsea",
       "clubShort": "CHE",
       "clubCode": 8,
       "teamId": 6,
-      "photoCode": 486672,
+      "photoCode": 498444,
       "owner": null,
       "status": "a",
       "chanceOfPlaying": 100,
       "news": null,
-      "newsAdded": "2026-11-21T16:30:05.451902Z",
+      "newsAdded": "2026-10-17T12:00:10.154091Z",
       "points": 15,
-      "ppg": 2.1,
+      "ppg": 1.5,
       "goals": 0,
-      "assists": 0,
-      "cleanSheets": 2,
+      "assists": 1,
+      "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 119
+      "positionRank": 96
     },
     {
       "id": 247,
@@ -6053,28 +6097,6 @@
       "positionRank": 120
     },
     {
-      "id": 471,
-      "name": "Milenković",
-      "position": "DEF",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 227444,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-09-12T14:00:09.705107Z",
-      "points": 15,
-      "ppg": 2.1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 95
-    },
-    {
       "id": 232,
       "name": "O'Brien",
       "position": "DEF",
@@ -6094,7 +6116,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 93
+      "positionRank": 94
     },
     {
       "id": 532,
@@ -6116,7 +6138,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 96
+      "positionRank": 97
     },
     {
       "id": 516,
@@ -6139,28 +6161,6 @@
       "cleanSheets": 2,
       "bonus": 0,
       "positionRank": 126
-    },
-    {
-      "id": 583,
-      "name": "Chavarria",
-      "position": "DEF",
-      "club": "Chelsea",
-      "clubShort": "CHE",
-      "clubCode": 8,
-      "teamId": 6,
-      "photoCode": 498444,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-10-17T12:00:10.154091Z",
-      "points": 14,
-      "ppg": 1.6,
-      "goals": 0,
-      "assists": 1,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 97
     },
     {
       "id": 7,
@@ -6305,7 +6305,7 @@
       "photoCode": 462635,
       "owner": null,
       "status": "i",
-      "chanceOfPlaying": 100,
+      "chanceOfPlaying": 0,
       "news": "Thigh injury - Unknown return date",
       "newsAdded": "2026-11-23T12:00:05.467109Z",
       "points": 13,
@@ -6380,7 +6380,7 @@
       "assists": 1,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 29
+      "positionRank": 31
     },
     {
       "id": 104,
@@ -6393,7 +6393,7 @@
       "photoCode": 428580,
       "owner": null,
       "status": "a",
-      "chanceOfPlaying": 75,
+      "chanceOfPlaying": 100,
       "news": null,
       "newsAdded": "2026-11-05T09:00:09.236330Z",
       "points": 13,
@@ -6446,7 +6446,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 31
+      "positionRank": 32
     },
     {
       "id": 100,
@@ -6459,7 +6459,7 @@
       "photoCode": 244858,
       "owner": null,
       "status": "a",
-      "chanceOfPlaying": 75,
+      "chanceOfPlaying": 100,
       "news": null,
       "newsAdded": "2026-10-30T14:30:09.456391Z",
       "points": 12,
@@ -6591,7 +6591,7 @@
       "photoCode": 106760,
       "owner": null,
       "status": "a",
-      "chanceOfPlaying": 0,
+      "chanceOfPlaying": 100,
       "news": null,
       "newsAdded": "2026-10-12T21:30:08.995810Z",
       "points": 12,
@@ -6688,7 +6688,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 103
+      "positionRank": 104
     },
     {
       "id": 371,
@@ -6701,7 +6701,7 @@
       "photoCode": 441266,
       "owner": null,
       "status": "d",
-      "chanceOfPlaying": 75,
+      "chanceOfPlaying": 25,
       "news": "Foot injury - 25% chance of playing",
       "newsAdded": "2026-11-03T17:00:09.626695Z",
       "points": 11,
@@ -6757,6 +6757,28 @@
       "positionRank": 144
     },
     {
+      "id": 152,
+      "name": "Palestra",
+      "position": "DEF",
+      "club": "Chelsea",
+      "clubShort": "CHE",
+      "clubCode": 8,
+      "teamId": 6,
+      "photoCode": 620109,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-24T18:30:07.421239Z",
+      "points": 11,
+      "ppg": 1.8,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 1,
+      "bonus": 0,
+      "positionRank": 103
+    },
+    {
       "id": 429,
       "name": "Rashford",
       "position": "MID",
@@ -6789,7 +6811,7 @@
       "photoCode": 510281,
       "owner": null,
       "status": "i",
-      "chanceOfPlaying": 100,
+      "chanceOfPlaying": 0,
       "news": "Hamstring injury - Unknown return date",
       "newsAdded": "2026-11-21T17:30:05.822258Z",
       "points": 11,
@@ -6820,7 +6842,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 104
+      "positionRank": 105
     },
     {
       "id": 461,
@@ -6845,6 +6867,28 @@
       "positionRank": 143
     },
     {
+      "id": 136,
+      "name": "Welbeck",
+      "position": "FWD",
+      "club": "Chelsea",
+      "clubShort": "CHE",
+      "clubCode": 8,
+      "teamId": 6,
+      "photoCode": 50175,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-20T14:00:07.949090Z",
+      "points": 11,
+      "ppg": 1.1,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 34
+    },
+    {
       "id": 614,
       "name": "Ahoka",
       "position": "MID",
@@ -6864,7 +6908,7 @@
       "assists": 0,
       "cleanSheets": 2,
       "bonus": 0,
-      "positionRank": 149
+      "positionRank": 150
     },
     {
       "id": 473,
@@ -6974,7 +7018,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 148
+      "positionRank": 149
     },
     {
       "id": 186,
@@ -6996,7 +7040,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 146
+      "positionRank": 147
     },
     {
       "id": 241,
@@ -7018,29 +7062,29 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 147
+      "positionRank": 148
     },
     {
-      "id": 152,
-      "name": "Palestra",
-      "position": "DEF",
+      "id": 164,
+      "name": "Quenda",
+      "position": "MID",
       "club": "Chelsea",
       "clubShort": "CHE",
       "clubCode": 8,
       "teamId": 6,
-      "photoCode": 620109,
+      "photoCode": 593117,
       "owner": null,
       "status": "a",
       "chanceOfPlaying": 100,
       "news": null,
-      "newsAdded": "2026-08-24T18:30:07.421239Z",
+      "newsAdded": "2026-07-24T20:30:10.609931Z",
       "points": 10,
-      "ppg": 2,
+      "ppg": 1.3,
       "goals": 0,
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 105
+      "positionRank": 146
     },
     {
       "id": 195,
@@ -7062,29 +7106,29 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 1,
-      "positionRank": 34
+      "positionRank": 35
     },
     {
-      "id": 136,
-      "name": "Welbeck",
+      "id": 490,
+      "name": "Wood",
       "position": "FWD",
-      "club": "Chelsea",
-      "clubShort": "CHE",
-      "clubCode": 8,
-      "teamId": 6,
-      "photoCode": 50175,
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 60689,
       "owner": null,
       "status": "a",
-      "chanceOfPlaying": 100,
+      "chanceOfPlaying": null,
       "news": null,
-      "newsAdded": "2026-08-20T14:00:07.949090Z",
+      "newsAdded": null,
       "points": 10,
-      "ppg": 1.1,
+      "ppg": 1,
       "goals": 0,
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 33
+      "positionRank": 37
     },
     {
       "id": 440,
@@ -7106,7 +7150,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 35
+      "positionRank": 36
     },
     {
       "id": 431,
@@ -7307,28 +7351,6 @@
       "positionRank": 152
     },
     {
-      "id": 164,
-      "name": "Quenda",
-      "position": "MID",
-      "club": "Chelsea",
-      "clubShort": "CHE",
-      "clubCode": 8,
-      "teamId": 6,
-      "photoCode": 593117,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-07-24T20:30:10.609931Z",
-      "points": 9,
-      "ppg": 1.3,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 1,
-      "bonus": 0,
-      "positionRank": 150
-    },
-    {
       "id": 329,
       "name": "Rodon",
       "position": "DEF",
@@ -7371,28 +7393,6 @@
       "cleanSheets": 2,
       "bonus": 0,
       "positionRank": 155
-    },
-    {
-      "id": 490,
-      "name": "Wood",
-      "position": "FWD",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 60689,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": null,
-      "news": null,
-      "newsAdded": null,
-      "points": 9,
-      "ppg": 1,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 37
     },
     {
       "id": 420,
@@ -7691,7 +7691,7 @@
       "photoCode": 570526,
       "owner": null,
       "status": "d",
-      "chanceOfPlaying": 100,
+      "chanceOfPlaying": 75,
       "news": "Illness - 75% chance of playing",
       "newsAdded": "2026-11-27T15:30:06.712878Z",
       "points": 7,
@@ -7827,7 +7827,7 @@
       "news": null,
       "newsAdded": "2026-08-28T09:30:07.471668Z",
       "points": 7,
-      "ppg": 1.2,
+      "ppg": 1,
       "goals": 0,
       "assists": 0,
       "cleanSheets": 0,
@@ -8184,7 +8184,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 182
+      "positionRank": 183
     },
     {
       "id": 357,
@@ -8197,7 +8197,7 @@
       "photoCode": 216094,
       "owner": null,
       "status": "a",
-      "chanceOfPlaying": 75,
+      "chanceOfPlaying": 100,
       "news": null,
       "newsAdded": "2026-10-17T15:30:09.979166Z",
       "points": 5,
@@ -8338,7 +8338,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 181
+      "positionRank": 182
     },
     {
       "id": 478,
@@ -8407,6 +8407,28 @@
       "positionRank": 42
     },
     {
+      "id": 489,
+      "name": "Yates",
+      "position": "MID",
+      "club": "Nott'm Forest",
+      "clubShort": "NFO",
+      "clubCode": 17,
+      "teamId": 18,
+      "photoCode": 204968,
+      "owner": null,
+      "status": "a",
+      "chanceOfPlaying": 100,
+      "news": null,
+      "newsAdded": "2026-08-17T20:30:08.195072Z",
+      "points": 5,
+      "ppg": 1.3,
+      "goals": 0,
+      "assists": 0,
+      "cleanSheets": 0,
+      "bonus": 0,
+      "positionRank": 181
+    },
+    {
       "id": 56,
       "name": "Abraham",
       "position": "FWD",
@@ -8448,7 +8470,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 186
+      "positionRank": 187
     },
     {
       "id": 182,
@@ -8514,7 +8536,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 183
+      "positionRank": 184
     },
     {
       "id": 487,
@@ -8536,7 +8558,7 @@
       "assists": 0,
       "cleanSheets": 1,
       "bonus": 0,
-      "positionRank": 188
+      "positionRank": 189
     },
     {
       "id": 160,
@@ -8558,7 +8580,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 184
+      "positionRank": 185
     },
     {
       "id": 359,
@@ -8593,7 +8615,7 @@
       "photoCode": 209046,
       "owner": null,
       "status": "a",
-      "chanceOfPlaying": 0,
+      "chanceOfPlaying": 100,
       "news": null,
       "newsAdded": "2026-11-19T15:30:05.816247Z",
       "points": 4,
@@ -8602,7 +8624,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 187
+      "positionRank": 188
     },
     {
       "id": 212,
@@ -8624,7 +8646,7 @@
       "assists": 0,
       "cleanSheets": 0,
       "bonus": 0,
-      "positionRank": 185
+      "positionRank": 186
     },
     {
       "id": 493,
@@ -8759,28 +8781,6 @@
       "positionRank": 44
     },
     {
-      "id": 489,
-      "name": "Yates",
-      "position": "MID",
-      "club": "Nott'm Forest",
-      "clubShort": "NFO",
-      "clubCode": 17,
-      "teamId": 18,
-      "photoCode": 204968,
-      "owner": null,
-      "status": "a",
-      "chanceOfPlaying": 100,
-      "news": null,
-      "newsAdded": "2026-08-17T20:30:08.195072Z",
-      "points": 4,
-      "ppg": 1.3,
-      "goals": 0,
-      "assists": 0,
-      "cleanSheets": 0,
-      "bonus": 0,
-      "positionRank": 189
-    },
-    {
       "id": 633,
       "name": "Ahanor",
       "position": "DEF",
@@ -8835,7 +8835,7 @@
       "photoCode": 174874,
       "owner": null,
       "status": "i",
-      "chanceOfPlaying": 100,
+      "chanceOfPlaying": 0,
       "news": "Unspecified injury - Unknown return date",
       "newsAdded": "2026-11-27T13:00:06.047138Z",
       "points": 3,
@@ -9165,7 +9165,7 @@
       "photoCode": 109646,
       "owner": null,
       "status": "d",
-      "chanceOfPlaying": 0,
+      "chanceOfPlaying": 75,
       "news": "Calf injury - 75% chance of playing",
       "newsAdded": "2026-11-20T15:30:06.265590Z",
       "points": 3,
@@ -9231,7 +9231,7 @@
       "photoCode": 616077,
       "owner": null,
       "status": "a",
-      "chanceOfPlaying": 0,
+      "chanceOfPlaying": 100,
       "news": null,
       "newsAdded": "2026-10-27T22:30:09.534466Z",
       "points": 2,
@@ -9319,7 +9319,7 @@
       "photoCode": 606745,
       "owner": null,
       "status": "a",
-      "chanceOfPlaying": 75,
+      "chanceOfPlaying": 100,
       "news": null,
       "newsAdded": "2026-11-20T17:30:06.088714Z",
       "points": 2,
@@ -9715,7 +9715,7 @@
       "photoCode": 135720,
       "owner": null,
       "status": "n",
-      "chanceOfPlaying": 100,
+      "chanceOfPlaying": 0,
       "news": "Ineligible to face parent club - Expected back 2 Dec",
       "newsAdded": "2026-11-21T17:00:05.766153Z",
       "points": 1,
@@ -10397,7 +10397,7 @@
       "photoCode": 626751,
       "owner": null,
       "status": "d",
-      "chanceOfPlaying": 0,
+      "chanceOfPlaying": 50,
       "news": "Back injury - 50% chance of playing",
       "newsAdded": "2026-09-09T10:00:08.919489Z",
       "points": 0,
@@ -11321,7 +11321,7 @@
       "photoCode": 59735,
       "owner": null,
       "status": "a",
-      "chanceOfPlaying": 75,
+      "chanceOfPlaying": 100,
       "news": null,
       "newsAdded": "2026-11-20T17:00:04.943349Z",
       "points": 0,
@@ -12201,7 +12201,7 @@
       "photoCode": 501902,
       "owner": null,
       "status": "d",
-      "chanceOfPlaying": 0,
+      "chanceOfPlaying": 50,
       "news": "Groin injury - 50% chance of playing",
       "newsAdded": "2026-08-02T09:00:11.030017Z",
       "points": 0,
@@ -13147,7 +13147,7 @@
       "photoCode": 638411,
       "owner": null,
       "status": "d",
-      "chanceOfPlaying": 100,
+      "chanceOfPlaying": 75,
       "news": "Illness - 75% chance of playing",
       "newsAdded": "2026-11-26T21:00:06.487816Z",
       "points": 0,
@@ -13257,7 +13257,7 @@
       "photoCode": 620487,
       "owner": null,
       "status": "a",
-      "chanceOfPlaying": 0,
+      "chanceOfPlaying": 100,
       "news": null,
       "newsAdded": "2026-08-06T10:00:10.456051Z",
       "points": 0,
@@ -14853,5 +14853,5 @@
     "bonus": 9,
     "positionRank": 1
   },
-  "generatedAt": "2026-11-27T17:47:48.573Z"
+  "generatedAt": "2026-11-28T00:56:36.240Z"
 }
